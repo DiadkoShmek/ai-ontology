@@ -1,0 +1,22 @@
+{
+  "schema": "gpt-profile-pilot-interruption/1",
+  "status": "partial-instrument-failure",
+  "observed_complete_rows": 53,
+  "scheduled_scored_calls": 100,
+  "requested_model": "gpt-6.1-sol",
+  "reason": "CLI startup code-mode-unavailable error item misclassified by frozen runner as model tool use",
+  "strict_frozen_scores_retained": true,
+  "inflight_responses_not_captured": "unknown; at most three controller workers",
+  "owned_controller_pid": 2821468,
+  "terminated_descendant_pids": [
+    2833736,
+    2833749,
+    2833911,
+    2833918,
+    2834160,
+    2834168
+  ],
+  "raw_sha256": "e08563a2a4e1bffcb2a3db6eba12424f3378af68e8ba60906aa92418b49971a3",
+  "first_source_commit": "fa59a88",
+  "counts_do_not_include_unobserved_inflight_calls": true
+}

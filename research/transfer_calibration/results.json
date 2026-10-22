@@ -1,0 +1,402 @@
+{
+  "schema": "transfer-calibration-results/1",
+  "source_commit": "cca326d4d898ed376bc927c26f7b7f4c198096ec",
+  "freeze_sha256": "90f4b68bbfe106012e11608a44b7d742bed82a99bc278db28b7e3a2f657f2d8f",
+  "raw_sha256": "ed612dc2d41bd4bbc6c8c6c94189d38296ba44a285c63ef74b2b3c9d4577220e",
+  "captured_calls": 24,
+  "full_history": [
+    {
+      "case": "development-1203-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 72,
+        "cost": 12
+      },
+      "effect": {
+        "written": true,
+        "sha256": "a758415c92e6b63e5c84aa988b1b47af23035e8b04e6129eab80d4464540f27a",
+        "plan": [
+          "W56",
+          "W81",
+          "W49"
+        ]
+      }
+    },
+    {
+      "case": "development-1203-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 192,
+        "cost": 14
+      },
+      "effect": {
+        "written": true,
+        "sha256": "6d26d4edbed098d36e22d21361bbcc5e611996688bac4bef88e106679469b694",
+        "plan": [
+          "W36",
+          "W56",
+          "W81",
+          "W49"
+        ]
+      }
+    },
+    {
+      "case": "development-1302-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 78,
+        "cost": 14
+      },
+      "effect": {
+        "written": true,
+        "sha256": "301ed850f25e681efaa69bb8da2223019dc2ecf07466c50e1837b456936b9f36",
+        "plan": [
+          "W25",
+          "W83",
+          "W94"
+        ]
+      }
+    },
+    {
+      "case": "development-1302-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 175,
+        "cost": 10
+      },
+      "effect": {
+        "written": true,
+        "sha256": "0e12703ffccc57d8baa50bbe8c203a9d2ad3ddfb3579900d6fe118bd3adb5630",
+        "plan": [
+          "W71",
+          "W83",
+          "W94"
+        ]
+      }
+    }
+  ],
+  "flat_negative": [
+    {
+      "case": "development-1203-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "4bd9113723869854e64721a94b620065b301df583edb20bc165f66917aab1c26",
+        "plan": []
+      }
+    },
+    {
+      "case": "development-1203-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "41f4a565ce69b525dcc04800c27c77d98dbd95fa39866a0e73025475e5416ab3",
+        "plan": []
+      }
+    },
+    {
+      "case": "development-1302-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "9d0650050f931ff81bfb93c7cd1b13590ea68964d4f0d135cc5bc090088e70f6",
+        "plan": []
+      }
+    },
+    {
+      "case": "development-1302-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "f88dde2198db77184093625a09a19f2c963adeebd0ff2e41ad578b4fe1ca1ed5",
+        "plan": []
+      }
+    }
+  ],
+  "full_history_gate": true,
+  "negative_gate": true,
+  "levels": [
+    {
+      "limit": 3200,
+      "results": [
+        {
+          "case": "development-1203-v0",
+          "handoff_valid": false,
+          "score": {
+            "shape": false,
+            "safe": false,
+            "traceable": false,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": false
+          }
+        },
+        {
+          "case": "development-1203-v1",
+          "handoff_valid": false,
+          "score": {
+            "shape": false,
+            "safe": false,
+            "traceable": false,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": false
+          }
+        },
+        {
+          "case": "development-1302-v0",
+          "handoff_valid": false,
+          "score": {
+            "shape": false,
+            "safe": false,
+            "traceable": false,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": false
+          }
+        },
+        {
+          "case": "development-1302-v1",
+          "handoff_valid": false,
+          "score": {
+            "shape": false,
+            "safe": false,
+            "traceable": false,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": false
+          }
+        }
+      ],
+      "passed": false
+    },
+    {
+      "limit": 1600,
+      "results": [
+        {
+          "case": "development-1203-v0",
+          "handoff_valid": false,
+          "score": {
+            "shape": false,
+            "safe": false,
+            "traceable": false,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": false
+          }
+        },
+        {
+          "case": "development-1203-v1",
+          "handoff_valid": false,
+          "score": {
+            "shape": false,
+            "safe": false,
+            "traceable": false,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": false
+          }
+        },
+        {
+          "case": "development-1302-v0",
+          "handoff_valid": false,
+          "score": {
+            "shape": false,
+            "safe": false,
+            "traceable": false,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": false
+          }
+        },
+        {
+          "case": "development-1302-v1",
+          "handoff_valid": false,
+          "score": {
+            "shape": false,
+            "safe": false,
+            "traceable": false,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": false
+          }
+        }
+      ],
+      "passed": false
+    },
+    {
+      "limit": 800,
+      "results": [
+        {
+          "case": "development-1203-v0",
+          "score": {
+            "shape": true,
+            "safe": true,
+            "traceable": true,
+            "optimal": true,
+            "utility": 72,
+            "cost": 12
+          },
+          "effect": {
+            "written": true,
+            "sha256": "a758415c92e6b63e5c84aa988b1b47af23035e8b04e6129eab80d4464540f27a",
+            "plan": [
+              "W56",
+              "W81",
+              "W49"
+            ]
+          },
+          "handoff_valid": true,
+          "handoff_utf8_bytes": 780
+        },
+        {
+          "case": "development-1203-v1",
+          "score": {
+            "shape": true,
+            "safe": true,
+            "traceable": true,
+            "optimal": true,
+            "utility": 192,
+            "cost": 14
+          },
+          "effect": {
+            "written": true,
+            "sha256": "6d26d4edbed098d36e22d21361bbcc5e611996688bac4bef88e106679469b694",
+            "plan": [
+              "W36",
+              "W56",
+              "W81",
+              "W49"
+            ]
+          },
+          "handoff_valid": true,
+          "handoff_utf8_bytes": 799
+        },
+        {
+          "case": "development-1302-v0",
+          "score": {
+            "shape": true,
+            "safe": true,
+            "traceable": true,
+            "optimal": true,
+            "utility": 78,
+            "cost": 14
+          },
+          "effect": {
+            "written": true,
+            "sha256": "301ed850f25e681efaa69bb8da2223019dc2ecf07466c50e1837b456936b9f36",
+            "plan": [
+              "W25",
+              "W83",
+              "W94"
+            ]
+          },
+          "handoff_valid": true,
+          "handoff_utf8_bytes": 767
+        },
+        {
+          "case": "development-1302-v1",
+          "score": {
+            "shape": true,
+            "safe": true,
+            "traceable": true,
+            "optimal": true,
+            "utility": 175,
+            "cost": 10
+          },
+          "effect": {
+            "written": true,
+            "sha256": "0e12703ffccc57d8baa50bbe8c203a9d2ad3ddfb3579900d6fe118bd3adb5630",
+            "plan": [
+              "W71",
+              "W83",
+              "W94"
+            ]
+          },
+          "handoff_valid": true,
+          "handoff_utf8_bytes": 782
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "selected_limit": null,
+  "main_study_status": "not-run; separate registration required",
+  "status": "instrument-not-qualified",
+  "held_out_inference_calls": 0,
+  "book_condition_calls": 0,
+  "wall_seconds": 274.199,
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "limits": [
+    "one finite planning class",
+    "four dependent development instances",
+    "developer-authored law and evaluators",
+    "single requested GPT route",
+    "no independent validation"
+  ]
+}

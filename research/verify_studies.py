@@ -17,6 +17,12 @@ ROOT=Path(__file__).resolve().parents[1]
 def sha(raw):return hashlib.sha256(raw).hexdigest()
 
 
+def require(condition, reason):
+    """Integrity checks must remain active under -O / PYTHONOPTIMIZE."""
+    if not condition:
+        raise ValueError(reason)
+
+
 def verify(folder, object_store):
     p=ROOT/'research'/folder
     freeze=json.loads((p/'freeze.json').read_text())
@@ -24,9 +30,9 @@ def verify(folder, object_store):
     completion=json.loads((p/'completion.json').read_text())
     zipped=p/'responses.jsonl.gz';plain=p/'responses.jsonl'
     raw=gzip.decompress(zipped.read_bytes()) if zipped.exists() else plain.read_bytes()
-    if zipped.exists() and plain.exists():assert raw==plain.read_bytes(),'archive/raw mismatch'
-    assert sha(raw)==result['raw_sha256']==completion['response_sha256']
-    assert sha((p/'freeze.json').read_bytes())==result['freeze_sha256']
+    if zipped.exists() and plain.exists():require(raw==plain.read_bytes(),'archive/raw mismatch')
+    require(sha(raw)==result['raw_sha256']==completion['response_sha256'],'response hash mismatch')
+    require(sha((p/'freeze.json').read_bytes())==result['freeze_sha256'],'freeze hash mismatch')
     # The published runtime may contain later repairs. Reconstruct the exact
     # pre-inference bytes in a temporary tree; never substitute current code.
     snapshot=tempfile.TemporaryDirectory()
@@ -36,7 +42,7 @@ def verify(folder, object_store):
         if sha(source)!=h:
             source=subprocess.check_output(['git','--git-dir',str(object_store),'show',
                 completion['input_commit']+':'+name])
-        assert sha(source)==h,name
+        require(sha(source)==h,'frozen source mismatch: '+name)
         dest=source_root/name;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(source)
     frozen_path=source_root/'research'/folder
     (frozen_path/'freeze.json').write_bytes((p/'freeze.json').read_bytes())
@@ -51,12 +57,12 @@ def verify(folder, object_store):
     rows=[json.loads(s) for s in raw.decode().splitlines()]
     expected={(m['name'],c,a) for m in freeze['models'] for c in cases for a in freeze['arms']}
     keys=[(r['model'],r['case'],r['arm']) for r in rows]
-    assert set(keys)==expected and len(keys)==len(set(keys))==192
+    require(set(keys)==expected and len(keys)==len(set(keys))==192,'trial coverage mismatch')
     for r in rows:
         case=cases[r['case']]
-        assert r['family']==case['family']
-        assert r['input_commit']==completion['input_commit']
-        assert r['messages']==module.messages(case,r['arm'])
+        require(r['family']==case['family'],'family mismatch')
+        require(r['input_commit']==completion['input_commit'],'input commit mismatch')
+        require(r['messages']==module.messages(case,r['arm']),'frozen prompt mismatch')
         fmt='json' if folder=='continuity_pilot' else {
             'type':'object','additionalProperties':False,'required':['status','origin','stance','cites'],
             'properties':{'status':{'type':'string','enum':['supported','refuted','hypothesis','unknown','needs-review']},
@@ -65,20 +71,20 @@ def verify(folder, object_store):
                 'cites':{'type':'array','items':{'type':'string'}}}}
         payload={'model':r['model'],'messages':r['messages'],'format':fmt,'stream':False,
                  'options':freeze['options'],'keep_alive':'10m'}
-        assert sha(json.dumps(payload,sort_keys=True).encode())==r['request_sha256']
+        require(sha(json.dumps(payload,sort_keys=True).encode())==r['request_sha256'],'request hash mismatch')
         s=module.score(r.get('response',''),case['gold'])
         s['exact']=bool(s['exact'] and r['terminal'])
-        assert s==r['score'],'score field drift'
+        require(s==r['score'],'score field drift')
         if r['terminal']:
-            assert r['backend']['model']==r['model'] and r['backend']['done_reason']=='stop'
-        assert (r.get('backend',{}).get('prompt_eval_count') or 0)+128 < 8192,'context overflow risk'
+            require(r['backend']['model']==r['model'] and r['backend']['done_reason']=='stop','terminal model mismatch')
+        require((r.get('backend',{}).get('prompt_eval_count') or 0)+128 < 8192,'context overflow risk')
     for group in result['summary']:
         selected=[r for r in rows if r['model']==group['model'] and r['arm']==group['arm']]
-        assert len(selected)==group['n']==24
-        assert sum(r['score']['exact'] for r in selected)==group['correct']
-        assert sum(r.get('backend',{}).get('prompt_eval_count') or 0 for r in selected)==group['input_tokens']
+        require(len(selected)==group['n']==24,'summary coverage mismatch')
+        require(sum(r['score']['exact'] for r in selected)==group['correct'],'summary score mismatch')
+        require(sum(r.get('backend',{}).get('prompt_eval_count') or 0 for r in selected)==group['input_tokens'],'summary token mismatch')
     subprocess.run([sys.executable,str(frozen_path/'analyze.py')],check=True,capture_output=True)
-    assert json.loads((frozen_path/'results.json').read_text())==result,'registered analysis drift'
+    require(json.loads((frozen_path/'results.json').read_text())==result,'registered analysis drift')
     snapshot.cleanup()
     return {'cohort':folder,'calls':len(rows),'raw_sha256':sha(raw),'internally_consistent':True}
 
@@ -91,5 +97,5 @@ if __name__=='__main__':
             str(ROOT/'research/continuity-pilot-history.bundle'),'HEAD'],check=True)
         results=[verify(x,objects) for x in ['continuity_pilot','continuity_pilot_v2']]
         from summarize_studies import build
-        assert build()==json.loads((ROOT/'research/study-summary.json').read_text()),'derived table drift'
+        require(build()==json.loads((ROOT/'research/study-summary.json').read_text()),'derived table drift')
         print(json.dumps(results))

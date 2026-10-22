@@ -1,0 +1,249 @@
+{
+  "schema": "transfer-calibration-results/2",
+  "source_commit": "148144aa7d3d9ef4abbf52d4cd22fcb953c07008",
+  "freeze_sha256": "bf83a9b05de4c04e85eeaf15d1e1117307cf04a24c00b6ec01be3177bd471dd7",
+  "raw_sha256": "9ee4e54a114b94af2cb37b92686da51861260593e8a67486f23a508643eb46a7",
+  "captured_calls": 14,
+  "full_history": [
+    {
+      "case": "development-1203-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 72,
+        "cost": 12
+      },
+      "effect": {
+        "written": true,
+        "sha256": "a758415c92e6b63e5c84aa988b1b47af23035e8b04e6129eab80d4464540f27a",
+        "plan": [
+          "W56",
+          "W81",
+          "W49"
+        ]
+      }
+    },
+    {
+      "case": "development-1203-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 192,
+        "cost": 14
+      },
+      "effect": {
+        "written": true,
+        "sha256": "6d26d4edbed098d36e22d21361bbcc5e611996688bac4bef88e106679469b694",
+        "plan": [
+          "W36",
+          "W56",
+          "W81",
+          "W49"
+        ]
+      }
+    },
+    {
+      "case": "development-1302-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 78,
+        "cost": 14
+      },
+      "effect": {
+        "written": true,
+        "sha256": "301ed850f25e681efaa69bb8da2223019dc2ecf07466c50e1837b456936b9f36",
+        "plan": [
+          "W25",
+          "W83",
+          "W94"
+        ]
+      }
+    },
+    {
+      "case": "development-1302-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 175,
+        "cost": 10
+      },
+      "effect": {
+        "written": true,
+        "sha256": "0e12703ffccc57d8baa50bbe8c203a9d2ad3ddfb3579900d6fe118bd3adb5630",
+        "plan": [
+          "W71",
+          "W83",
+          "W94"
+        ]
+      }
+    }
+  ],
+  "flat_negative": [
+    {
+      "case": "development-1203-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "4bd9113723869854e64721a94b620065b301df583edb20bc165f66917aab1c26",
+        "plan": []
+      }
+    },
+    {
+      "case": "development-1203-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "41f4a565ce69b525dcc04800c27c77d98dbd95fa39866a0e73025475e5416ab3",
+        "plan": []
+      }
+    },
+    {
+      "case": "development-1302-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "9d0650050f931ff81bfb93c7cd1b13590ea68964d4f0d135cc5bc090088e70f6",
+        "plan": []
+      }
+    },
+    {
+      "case": "development-1302-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "f88dde2198db77184093625a09a19f2c963adeebd0ff2e41ad578b4fe1ca1ed5",
+        "plan": []
+      }
+    }
+  ],
+  "full_history_gate": true,
+  "negative_gate": true,
+  "levels": [
+    {
+      "limit": 2400,
+      "results": [
+        {
+          "case": "development-1203-v0",
+          "score": {
+            "shape": true,
+            "safe": true,
+            "traceable": true,
+            "optimal": true,
+            "utility": 72,
+            "cost": 12
+          },
+          "effect": {
+            "written": true,
+            "sha256": "a758415c92e6b63e5c84aa988b1b47af23035e8b04e6129eab80d4464540f27a",
+            "plan": [
+              "W56",
+              "W81",
+              "W49"
+            ]
+          },
+          "handoff_valid": true,
+          "handoff_utf8_bytes": 2248
+        },
+        {
+          "case": "development-1203-v1",
+          "handoff_valid": false,
+          "score": {
+            "shape": false,
+            "safe": false,
+            "traceable": false,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": false
+          }
+        },
+        {
+          "case": "development-1302-v0",
+          "handoff_valid": false,
+          "score": {
+            "shape": false,
+            "safe": false,
+            "traceable": false,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": false
+          }
+        },
+        {
+          "case": "development-1302-v1",
+          "score": {
+            "shape": true,
+            "safe": true,
+            "traceable": false,
+            "optimal": false,
+            "utility": 175,
+            "cost": 10
+          },
+          "effect": {
+            "written": false
+          },
+          "handoff_valid": true,
+          "handoff_utf8_bytes": 2011
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "selected_limit": 2400,
+  "main_study_status": "not-run; separate registration required",
+  "status": "instrument-qualified-on-development",
+  "held_out_inference_calls": 0,
+  "book_condition_calls": 0,
+  "wall_seconds": 167.385,
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "limits": [
+    "one finite planning class",
+    "four dependent development instances",
+    "developer-authored law and evaluators",
+    "single requested GPT route",
+    "no independent validation"
+  ]
+}

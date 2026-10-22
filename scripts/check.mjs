@@ -29,6 +29,17 @@ assert.equal(edition.study_summary_sha256,sha(studyBytes));
 assert.equal(edition.scored_model_calls,study.scored_model_calls);
 assert.equal(edition.scored_model_calls,study.cohorts.reduce((n,c)=>n+c.scored_calls,0));
 assert.equal(edition.model_cohorts,study.cohorts.length);
+assert.equal(edition.scored_model_calls_scope,'original-scoped-continuity-study-only');
+for(const row of edition.additional_evaluations){
+ const raw=read(row.path);assert.equal(sha(raw),row.sha256,`stale evaluation report: ${row.path}`);
+ const report=JSON.parse(raw);
+ assert.equal(row.captured_turns,report.scored_calls??report.observed_complete_rows??report.captured_calls);
+}
+assert.equal(edition.total_captured_model_turns,edition.scored_model_calls+edition.additional_evaluations.reduce((n,r)=>n+r.captured_turns,0));
+for(const dir of ['participation_pilot','gpt_profile_pilot','gpt_profile_pilot_v2','transfer_calibration','transfer_calibration_v2','transfer_calibration_v3','transfer_reading']){
+ const frozen=JSON.parse(read(`research/${dir}/freeze.json`));
+ for(const [file,hash] of Object.entries(frozen.input_sha256))assert.equal(sha(read(`research/${dir}/${file}`)),hash,`frozen profile source drift: ${dir}/${file}`);
+}
 assert.equal(edition.unique_cases,study.unique_cases);
 assert.equal(edition.integration_smoke_calls,study.integration_smoke_calls);
 for(const [file,hash] of Object.entries(study.inputs_sha256))assert.equal(sha(read(file)),hash,`stale study summary: ${file}`);
@@ -45,6 +56,14 @@ reportInputs.push('research/run_runtime_checks.py');
 assert(reportInputs.includes('examples/iris-events.json'),'missing runtime fixture');
 assert.deepEqual(Object.keys(report.sources).sort(),reportInputs.sort(),'runtime report input coverage mismatch');
 for(const [file,hash] of Object.entries(report.sources))assert.equal(sha(read(file)),hash,`stale runtime report: ${file}`);
+const cases=JSON.parse(read('research/engineering-cases-results.json'));
+assert.equal(cases.schema,'ontology-engineering-cases/1');
+assert.equal(cases.llm_calls,0);
+assert.equal(cases.historical_failures_reproduced,2);
+const caseInputs=fs.readdirSync(path.join(root,'research/engineering_cases'))
+ .filter(f=>f.endsWith('.py')||f==='provenance.json').map(f=>`research/engineering_cases/${f}`);
+assert.deepEqual(Object.keys(cases.source_sha256).sort(),caseInputs.sort(),'engineering case source coverage mismatch');
+for(const [file,hash] of Object.entries(cases.source_sha256))assert.equal(sha(read(file)),hash,`stale engineering case: ${file}`);
 const html=read('docs/index.html');
 assert.equal((html.match(/class="part"/g)||[]).length,meta.parts.length);
 for(const p of meta.parts)assert(html.includes(`id="${p.id}"`));
@@ -53,7 +72,7 @@ const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
 assert.equal(new Set(ids).size,ids.length,'duplicate HTML ids');
 for(const m of html.matchAll(/href="#([^"]+)"/g))assert(ids.includes(m[1]),`missing anchor ${m[1]}`);
 const markdown=['README.md','REVIEW_GUIDE.md','ABSTRACT.en.md','AUTHORS.md','READER_NOTE.md',
- 'CHANGELOG.md','BOOK_UA.md','examples/README.md','research/comparison-notes.md','research/README.md','research/SCOPED_CONTINUITY_STUDY.md',...edition.source_files.map(f=>f.path)];
+ 'CHANGELOG.md','BOOK_UA.md','examples/README.md','research/comparison-notes.md','research/README.md','research/SCOPED_CONTINUITY_STUDY.md','research/PROFILE_PARTICIPATION_STUDY.md','research/READING_TRANSFER_STUDY.md','research/TRANSFER_STUDY_DESIGN.md','research/transfer_reading/THIRD_PARTY_READING.md',...edition.source_files.map(f=>f.path)];
 for(const f of markdown){
  const s=read(f);
  assert(!/\/home\/pustota|itoken=|BEGIN (?:RSA |OPENSSH )?PRIVATE KEY|gh[pousr]_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{20,}/.test(s),`private material pattern in ${f}`);
@@ -69,9 +88,11 @@ assert(!/<script[^>]+src="https?:|<link[^>]+href="https?:/.test(html),'remote ex
 const renderInputs=paths=>paths.map(f=>fs.readFileSync(path.join(root,f)));
 const fontInputs=['docs/assets/serif.ttf','docs/assets/serif-italic.ttf','docs/assets/serif-bold.ttf'];
 const bookPdfKey=sha(Buffer.concat([Buffer.from(book),...renderInputs(['edition.json','scripts/build_pdf.py','requirements.txt',...fontInputs])])).slice(0,12);
+const transferPdfKey=sha(Buffer.concat(renderInputs(['research/READING_TRANSFER_STUDY.md','research/reading-transfer-results.png','scripts/build_paper.py','requirements.txt',...fontInputs]))).slice(0,12);
 const paperPdfKey=sha(Buffer.concat(renderInputs(['research/SCOPED_CONTINUITY_STUDY.md','research/continuity-results.png','scripts/build_paper.py','requirements.txt',...fontInputs]))).slice(0,12);
 assert(html.includes(`downloads/ai-ontology-book-01-uk.pdf?v=${bookPdfKey}`),'book PDF download cache binding');
 assert(html.includes(`downloads/scoped-continuity-study-en.pdf?v=${paperPdfKey}`),'paper PDF download cache binding');
+assert(html.includes(`downloads/reading-transfer-study-en.pdf?v=${transferPdfKey}`),'transfer paper PDF download cache binding');
 assert(html.includes(`downloads/BOOK_UA.md?v=${sha(book).slice(0,12)}`),'full-text download cache binding');
 
 const pdf=JSON.parse(read('docs/pdf-edition.json'));
@@ -96,4 +117,14 @@ assert.equal(paper.pdf,'docs/downloads/scoped-continuity-study-en.pdf');
 const paperBytes=fs.readFileSync(path.join(root,paper.pdf));
 assert.equal(paperBytes.subarray(0,5).toString(),'%PDF-');
 assert.equal(sha(paperBytes),paper.pdf_sha256,'paper artifact hash mismatch');
+const transfer=JSON.parse(read('docs/transfer-paper-edition.json'));
+assert.equal(transfer.schema,'ai-ontology-paper/1');
+assert.equal(transfer.edition,meta.version);
+assert.equal(transfer.pdf,'docs/downloads/reading-transfer-study-en.pdf');
+assert.deepEqual(Object.keys(transfer.inputs).sort(),['research/READING_TRANSFER_STUDY.md','research/reading-transfer-results.png','scripts/build_paper.py','requirements.txt',...fontInputs].sort());
+for(const [file,hash] of Object.entries(transfer.inputs))assert.equal(sha(fs.readFileSync(path.join(root,file))),hash,`stale transfer paper input: ${file}`);
+assert.equal(sha(fs.readFileSync(path.join(root,transfer.pdf))),transfer.pdf_sha256,'transfer paper artifact hash mismatch');
+const figure=JSON.parse(read('research/reading-transfer-figure.json'));
+for(const [file,hash] of Object.entries(figure.inputs))assert.equal(sha(fs.readFileSync(path.join(root,file))),hash,`stale transfer figure: ${file}`);
+assert.equal(sha(fs.readFileSync(path.join(root,figure.output))),figure.output_sha256,'transfer figure hash mismatch');
 console.log('Source hashes, local links, anchors, full-text parity and asset bindings verified. Pattern scan is not a comprehensive secret audit.');

@@ -1,0 +1,409 @@
+{
+  "schema": "reading-transfer-freeze/1",
+  "created_at": "2026-10-22T19:59:55.930528+00:00",
+  "input_sha256": {
+    "study.py": "f728b26145a0963fdb95fc8537b633fa792d28fac1726c14cf71dba5582289c6",
+    "analyze.py": "55788754297dcaf8db8b19a8a25a20ed09a396c8dc091929dd3ccba191edf25f",
+    "test_study.py": "e34d00b9577f42990df206aae8ce477604cf456d20a415fe92a0cf01e86408fb",
+    "PROTOCOL.md": "73a19084110ede12acc43cb1d48c02f1d36ecc9c394335820e0ea595ca987385",
+    "cases.json": "43c9226bff3069635f03a0e4c3322fed1c3d0a5295ab98b158c4d0add05bf200",
+    "BOOK_READING_UA.md": "9a669200f16bd4fd0c3ad33efdcb7c4a3a2ea715f76d624493df6aa828db35a9",
+    "OPERATIONAL_GUIDE_UA.md": "3ea0bf99772d50e5d3a773597ba0ffd69f808333554faa5b45e26d2317990a32",
+    "UNRELATED_READING_UA.txt": "4c2a7dfecc8e20baa59dafb13ae9b4f25b6ec2e57bd736b6297726f359774dd2",
+    "UNRELATED_READING_SOURCE_UA.txt": "9788247bcc84a9ba089450d902b2f2e146e3b0b4d484c3d2d926e1700cdb563a",
+    "reading-provenance.json": "c0dc4094935811b31ce368e576b732d58e433e8dc04ac389ff3c0d7f5b2158d4",
+    "unrelated-reading-provenance.json": "43fba6f2a45ecf8ad50a505e3a6ef34d7c17450fb9d87b70cbe0dbfcc51a6b71",
+    "THIRD_PARTY_READING.md": "324effab5cb0575384a152520cd25506d795920b832e8f03b94f4c9c0d50859d",
+    "prepare_control.py": "794f8fd14c1b955fff318b4f3d3d086d3df670b6a86a822656ecf2060c895dbb",
+    "length-preparation.json": "2cf04bb87a4303dd1aac9e0f9ea2bd1333c14913ae271c32d7fee725a4add74c",
+    "../transfer_calibration_v3/tasks.py": "e483c90480e5698b6626c2b4abfa0ec8f5b69f7c48d6c19a2099f19e9fe07cef",
+    "../transfer_calibration_v3/cases.json": "83ddb4af7c1e0271d9df774692eec1c2be0f502bdc172517fd426a668f370064",
+    "../transfer_calibration_v3/freeze.json": "43a58f3f5f96def52f6a6a1eef72a30d2e0bf452f5ad5932774163306dd8e8c7",
+    "../transfer_calibration_v3/results.json": "489d8c559d75877006fb8c1efbe6fe5596e0f34f2ebd2987e39a6ea1b89dcda9",
+    "../../examples/continuity.py": "1027a1da47d58f9f02f77bff0d67cd1b5fd917b2c457e3934edc76a663f80513",
+    "../../examples/durable.py": "9ec47c58c3d75cba4247947fd9e0b9f77828fae2af06f36bbc035ba7b7dc1d67",
+    "../gpt_profile_pilot_v2/run.py": "e3a39f792f32ffce536cf401f630297902d3787609d3e7393acded4a60a794aa",
+    "../gpt_profile_pilot_v2/design.py": "de56dda3e79963ae033d88f3393c5d72a52e4d90964b4d27bea8026868abad65",
+    "../participation_pilot/design.py": "34020fb79f8aadbcbf31fdcdd0641a275c16499303d8ad1c34a620134921e42b"
+  },
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "command_template": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "-C",
+    "{isolated-temporary-working-directory}",
+    "-m",
+    "gpt-6.1-sol",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "-c",
+    "project_doc_max_bytes=0",
+    "-c",
+    "web_search=\"disabled\"",
+    "--disable",
+    "hooks",
+    "--disable",
+    "memories",
+    "--disable",
+    "multi_agent",
+    "--disable",
+    "plugins",
+    "--disable",
+    "apps",
+    "--disable",
+    "shell_tool",
+    "--disable",
+    "unified_exec",
+    "--disable",
+    "browser_use",
+    "--disable",
+    "in_app_browser",
+    "--disable",
+    "computer_use",
+    "--json",
+    "-"
+  ],
+  "arms": [
+    "ordinary",
+    "book",
+    "guide",
+    "unrelated"
+  ],
+  "repetitions": 2,
+  "schedule": [
+    [
+      "held-out-3371-v0",
+      "ordinary",
+      0
+    ],
+    [
+      "held-out-3214-v1",
+      "ordinary",
+      1
+    ],
+    [
+      "held-out-3484-v1",
+      "ordinary",
+      0
+    ],
+    [
+      "held-out-3101-v1",
+      "unrelated",
+      0
+    ],
+    [
+      "held-out-3371-v1",
+      "unrelated",
+      0
+    ],
+    [
+      "held-out-3101-v0",
+      "book",
+      0
+    ],
+    [
+      "held-out-3484-v0",
+      "guide",
+      0
+    ],
+    [
+      "held-out-3371-v1",
+      "ordinary",
+      1
+    ],
+    [
+      "held-out-3214-v1",
+      "book",
+      1
+    ],
+    [
+      "held-out-3484-v1",
+      "book",
+      1
+    ],
+    [
+      "held-out-3214-v0",
+      "unrelated",
+      1
+    ],
+    [
+      "held-out-3214-v0",
+      "guide",
+      1
+    ],
+    [
+      "held-out-3101-v1",
+      "ordinary",
+      0
+    ],
+    [
+      "held-out-3101-v1",
+      "book",
+      0
+    ],
+    [
+      "held-out-3371-v1",
+      "guide",
+      1
+    ],
+    [
+      "held-out-3101-v1",
+      "guide",
+      0
+    ],
+    [
+      "held-out-3371-v1",
+      "unrelated",
+      1
+    ],
+    [
+      "held-out-3371-v0",
+      "guide",
+      1
+    ],
+    [
+      "held-out-3484-v1",
+      "unrelated",
+      0
+    ],
+    [
+      "held-out-3214-v1",
+      "unrelated",
+      1
+    ],
+    [
+      "held-out-3214-v0",
+      "ordinary",
+      0
+    ],
+    [
+      "held-out-3214-v0",
+      "book",
+      1
+    ],
+    [
+      "held-out-3101-v0",
+      "guide",
+      1
+    ],
+    [
+      "held-out-3101-v0",
+      "ordinary",
+      1
+    ],
+    [
+      "held-out-3101-v0",
+      "unrelated",
+      1
+    ],
+    [
+      "held-out-3484-v1",
+      "guide",
+      0
+    ],
+    [
+      "held-out-3371-v0",
+      "guide",
+      0
+    ],
+    [
+      "held-out-3101-v0",
+      "ordinary",
+      0
+    ],
+    [
+      "held-out-3484-v0",
+      "unrelated",
+      0
+    ],
+    [
+      "held-out-3484-v1",
+      "guide",
+      1
+    ],
+    [
+      "held-out-3484-v0",
+      "guide",
+      1
+    ],
+    [
+      "held-out-3484-v0",
+      "ordinary",
+      0
+    ],
+    [
+      "held-out-3484-v1",
+      "book",
+      0
+    ],
+    [
+      "held-out-3214-v1",
+      "guide",
+      1
+    ],
+    [
+      "held-out-3214-v1",
+      "ordinary",
+      0
+    ],
+    [
+      "held-out-3371-v1",
+      "book",
+      0
+    ],
+    [
+      "held-out-3214-v1",
+      "book",
+      0
+    ],
+    [
+      "held-out-3101-v1",
+      "guide",
+      1
+    ],
+    [
+      "held-out-3371-v1",
+      "guide",
+      0
+    ],
+    [
+      "held-out-3371-v0",
+      "unrelated",
+      1
+    ],
+    [
+      "held-out-3371-v0",
+      "book",
+      0
+    ],
+    [
+      "held-out-3484-v0",
+      "book",
+      0
+    ],
+    [
+      "held-out-3214-v0",
+      "book",
+      0
+    ],
+    [
+      "held-out-3371-v0",
+      "unrelated",
+      0
+    ],
+    [
+      "held-out-3214-v0",
+      "unrelated",
+      0
+    ],
+    [
+      "held-out-3101-v1",
+      "ordinary",
+      1
+    ],
+    [
+      "held-out-3484-v0",
+      "ordinary",
+      1
+    ],
+    [
+      "held-out-3101-v0",
+      "unrelated",
+      0
+    ],
+    [
+      "held-out-3484-v1",
+      "ordinary",
+      1
+    ],
+    [
+      "held-out-3371-v0",
+      "book",
+      1
+    ],
+    [
+      "held-out-3214-v0",
+      "ordinary",
+      1
+    ],
+    [
+      "held-out-3371-v0",
+      "ordinary",
+      1
+    ],
+    [
+      "held-out-3101-v1",
+      "book",
+      1
+    ],
+    [
+      "held-out-3214-v1",
+      "guide",
+      0
+    ],
+    [
+      "held-out-3101-v0",
+      "book",
+      1
+    ],
+    [
+      "held-out-3214-v1",
+      "unrelated",
+      0
+    ],
+    [
+      "held-out-3101-v0",
+      "guide",
+      0
+    ],
+    [
+      "held-out-3484-v0",
+      "book",
+      1
+    ],
+    [
+      "held-out-3371-v1",
+      "book",
+      1
+    ],
+    [
+      "held-out-3371-v1",
+      "ordinary",
+      0
+    ],
+    [
+      "held-out-3101-v1",
+      "unrelated",
+      1
+    ],
+    [
+      "held-out-3484-v1",
+      "unrelated",
+      1
+    ],
+    [
+      "held-out-3214-v0",
+      "guide",
+      0
+    ],
+    [
+      "held-out-3484-v0",
+      "unrelated",
+      1
+    ]
+  ],
+  "capacity": 3200,
+  "held_out_instances": 8,
+  "source_clusters": 4,
+  "episodes": 64,
+  "maximum_participant_calls": 192,
+  "full_history_control_calls": 8,
+  "maximum_total_calls": 200,
+  "unscored_length_preparation_calls": 4,
+  "independent_registration": false,
+  "prior_qualifications_not_main_evidence": true
+}

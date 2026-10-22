@@ -1,6 +1,6 @@
 # Technical review guide
 
-*AI Ontology* combines a conceptual methodology, an executable specification and a local exploratory study. The book is in Ukrainian; the [abstract](ABSTRACT.en.md) and [research paper](research/SCOPED_CONTINUITY_STUDY.md) are in English.
+*AI Ontology* combines a conceptual methodology, an executable specification and several bounded evaluations. The book is in Ukrainian; the [abstract](ABSTRACT.en.md) and research papers on [scoped continuity](research/SCOPED_CONTINUITY_STUDY.md) and [reading-mediated transfer](research/READING_TRANSFER_STUDY.md) are in English.
 
 ## The proposition
 
@@ -12,15 +12,21 @@ Identity, voice, memory and relationships can be examined as interacting aspects
 
 **Engineering:** [runtime chapter](book/ua/09-runtime.md) → [modules and commands](examples/README.md) → [systems report](research/runtime-results.json) → actual `durable.py` and `agent_cycle.py` contracts.
 
+**Practice:** [historical function excerpts and replay](research/engineering_cases/receipt_replay.py) → [extraction provenance](research/engineering_cases/provenance.json) → [two reproduced failure comparisons](research/engineering-cases-results.json). These are retrospective component tests with injected faults around real temporary SQLite/file effects, separate from the constructed Iris dialogue and the LLM cohorts.
+
 **Empirical evaluation:** [working paper](research/SCOPED_CONTINUITY_STUDY.md) → [protocols and raw data](research/README.md) → [follow-up results](research/continuity_pilot_v2/results.json) → [offline verifier](research/verify_studies.py).
 
+**Instrument validity:** [profile qualification](research/PROFILE_PARTICIPATION_STUDY.md) → [replacement transfer design](research/TRANSFER_STUDY_DESIGN.md) → [accepted V3 calibration](research/transfer_calibration_v3/PROTOCOL.md) → [main registered pipeline](research/transfer_reading/PROTOCOL.md). The 100/100 GPT ceiling does not validate the broader book-reading hypothesis.
+
 ## Results to challenge
+
+The reading-transfer primary is a partial-task measure: ordinary 12/16, book 8/16, guide 10/16, unrelated 10/16. Fully traced optimal completion is 0/16, 0/16, 1/16 and 0/16. Five empty book answers name the optimal work set while withholding the plan for missing citations. Challenge the endpoint’s construct validity and the lossy communication channel as well as the observed condition difference. The post-cohort diagnosis does not replace registered scores.
 
 The follow-up exact scores are 20/16/16/20 for Qwen3 4B and 5/2/12/12 for Granite 3.3 2B across journal, ontology wrapper, compiled context and simple index. There is no observed aggregate advantage over the information-matched simple index. Compilation includes deterministic preprocessing; ontology framing adds text. The cases are authored, short, dependent and reused after the first instrument failure.
 
 Both compact conditions use the same compiler and preserve the substantive relations. This is a presentation control, not an independent memory implementation or a test of removing provenance, scope and revision. Sorted keys also leave naming and ordering confounded.
 
-The 49 systems tests establish bounded transition behavior. The 384 scored model calls evaluate structured decisions. The two integration smoke calls exercise a live adapter path. These are different evidence classes. Voice, the effect of reading, identity, long-run interaction and natural-task benefit are not measured by those counts.
+The 49 systems tests establish bounded transition behavior. The original 384 scored model calls evaluate structured decisions. A separate 136-call local qualification and 100-call completed GPT qualification retain their own denominators; a 53-reply interrupted GPT instrument is preserved. The main reading-transfer study has a separate denominator, actual preparation before the unseen task, and a common receiver behind a truncated handoff. It concerns ten selected book parts, not the entire book. Original-count references below are scoped to the continuity study. The two integration smoke calls exercise a live adapter path. These are different evidence classes. Natural voice, subjective identity, long-run interaction and natural-task benefit are not measured by those earlier counts. The reading-transfer estimand is narrower than those questions.
 
 ## Reproduce without inference
 
@@ -28,7 +34,13 @@ The 49 systems tests establish bounded transition behavior. The 384 scored model
 python3 -m unittest discover -s examples -q
 python3 -m unittest discover -s research/continuity_pilot -q
 python3 -m unittest discover -s research/continuity_pilot_v2 -q
+python3 -m unittest discover -s research -p 'test_integrity.py' -q
+python3 -m unittest discover -s research/engineering_cases -q
 python3 research/verify_studies.py
+python3 research/verify_participation.py
+python3 research/verify_gpt_profiles.py gpt_profile_pilot
+python3 research/verify_gpt_profiles.py gpt_profile_pilot_v2
+python3 -O research/verify_reading_transfer.py
 ```
 
 Python 3.11+ and Git. These checks make no network or model calls. The verifier reconstructs frozen source from the local history bundle, checks all prompts and scores, and reruns the registered analysis in temporary storage.
@@ -39,6 +51,7 @@ Python 3.11+ and Git. These checks make no network or model calls. The verifier 
 - Does the continuity contract remain useful while leaving numerical identity unresolved?
 - Are deterministic state guarantees kept separate from model use and useful completion?
 - Does the simple index control preserve the information relevant to the stated question?
+- Does the reading result depend on preparation, reference-runtime rehearsal, truncation order or exact citation copying?
 - Which unseen cases would falsify the proposed practical interpretation?
 
 A valid citation does not establish semantic support. An anchor detects inconsistency with a trusted prefix but does not authenticate every claim. The runtime uses bounded full replay; indexed scaling is a specified extension, not a million-record benchmark. The model adapter is trusted executable code, not a sandbox.

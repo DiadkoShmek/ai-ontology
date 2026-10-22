@@ -16,5 +16,24 @@ jobs:
       - run: python3 -m unittest discover -s examples -v
       - run: python3 -m unittest discover -s research/continuity_pilot -q
       - run: python3 -m unittest discover -s research/continuity_pilot_v2 -q
+      - run: python3 -m unittest discover -s research -p 'test_integrity.py' -q
+      - run: python3 -m unittest discover -s research/engineering_cases -q
+      - run: python3 -m unittest discover -s research/participation_pilot -q
+      - run: python3 -m unittest discover -s research -p 'test_participation_verifier.py' -q
       - run: python3 research/verify_studies.py
+      - run: python3 research/verify_participation.py
+      - run: python3 -m unittest discover -s research/gpt_profile_pilot -q
+      - run: python3 -m unittest discover -s research/gpt_profile_pilot_v2 -q
+      - run: python3 -m unittest discover -s research -p 'test_gpt_integrity.py' -q
+      - run: python3 research/verify_gpt_profiles.py gpt_profile_pilot
+      - run: python3 research/verify_gpt_profiles.py gpt_profile_pilot_v2
+      - run: python3 -m unittest discover -s research/transfer_calibration -q
+      - run: python3 -m unittest discover -s research/transfer_calibration_v2 -q
+      - run: python3 -m unittest discover -s research/transfer_calibration_v3 -q
+      - run: python3 -m unittest discover -s research/transfer_reading -q
+      - run: python3 -O research/verify_transfer_calibration.py transfer_calibration
+      - run: python3 -O research/verify_transfer_calibration.py transfer_calibration_v2
+      - run: python3 -O research/verify_transfer_calibration.py transfer_calibration_v3
+      - run: python3 -O research/verify_reading_transfer.py
+      - run: python3 -m unittest discover -s research -p 'test_reading_integrity.py' -q
       - run: git diff --exit-code -- BOOK_UA.md docs/index.html docs/downloads/BOOK_UA.md docs/edition.json

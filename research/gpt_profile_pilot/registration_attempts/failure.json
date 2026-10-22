@@ -1,0 +1,7 @@
+{
+  "stage": "pre-inference freeze guard",
+  "error": "frozen-input-drift",
+  "reason": "JSON list versus generated tuple schedule pairs",
+  "scored_calls": 0,
+  "freeze_sha256": "cef5d7b5ff28d35a7b664323e88cdc9e6576c427dbf5e2bb227e20f29c42b766"
+}

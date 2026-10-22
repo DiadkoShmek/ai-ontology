@@ -1,0 +1,16 @@
+{
+  "schema": "ai-ontology-paper/1",
+  "edition": "3.2.0",
+  "pdf": "docs/downloads/reading-transfer-study-en.pdf",
+  "pdf_sha256": "d7c53bc4d90375e9b08e6f5f33078526238d72b091e5e0d5cc81afb034e831e9",
+  "reportlab": "4.4.9",
+  "inputs": {
+    "research/READING_TRANSFER_STUDY.md": "a331b2544b0de94bab1040cafd790d3addbc87b7a91a071f5319ac20e46d108f",
+    "research/reading-transfer-results.png": "39e3dd9210d872c6261eb01374a31dac8d007ba4adae3d0b74a9da6ec5333b1b",
+    "scripts/build_paper.py": "ec4354eb454f553ea00ffb774f8d08deb6b6355840ff1f1bec57a0629be02dff",
+    "requirements.txt": "054e7483ed0899a13425d3ff89d0ae162290c88989825c77d22174ceb36f33f1",
+    "docs/assets/serif.ttf": "8f2c103bfa3fd5de71f1b92b18f21906b5a26871fb7e19a9a4c9af539c3cc7ab",
+    "docs/assets/serif-bold.ttf": "847b33e13925f19ff87e4d934d6b3cf7cac35ce16424f6f670e40c2f377cf2df",
+    "docs/assets/serif-italic.ttf": "1d7476da447f9455a47c41adfd6ac2b1fc1b65e660f3ea4bf36128506c7e094c"
+  }
+}
