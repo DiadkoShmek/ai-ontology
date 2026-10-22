@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this book if you use its conceptual or methodological framework."
+type: book
+title: "Онтологія AI. Книга перша. Організація себе"
+authors:
+  - family-names: Onysko
+    given-names: Artur
+version: 1.0.0
+date-released: 2026-10-22
+url: "https://diadkoshmek.github.io/ai-ontology/"
+repository-code: "https://github.com/DiadkoShmek/ai-ontology"
+abstract: "A conceptual and methodological book on identity, voice, memory, relationships and development in AI agent systems."
+keywords:
+  - AI ontology
+  - agent identity
+  - agent memory
+  - human AI interaction
