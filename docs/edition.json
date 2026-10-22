@@ -1,19 +1,19 @@
 {
   "title": "Онтологія AI",
   "volume": 1,
-  "edition": "2.0.0",
+  "edition": "2.1.0",
   "author": "Artur Onysko",
-  "metadata_sha256": "3175464500f5af9bdc38e17a181e4ec80a5d004108fb7d1b374be4149624e437",
-  "source_sha256": "4fc01c76ab11aa9ccb2376901fb1945758d458a195315dd83c0a0d090c1d03b7",
-  "book_sha256": "2d69c470a9b0e2d97831b5bef95ea65d1ab4473fbace984bdcce24d42c5417fb",
+  "metadata_sha256": "befbac6c1f3c2e6015c9d5a8fc8d19ef5056cc245879f7d0b8f4e4c9f6d8ca2d",
+  "source_sha256": "1da06ae29bff53788848f2fd1f249f28766fa35dff67e2933ab972f322e3f287",
+  "book_sha256": "b77ff938b0e8a39790733177d66a9c261b070489fb85a1ba4ce2825817fc836a",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
-      "sha256": "5826afebf740035f30c73bc651b7c103bf449392c4226b66e73cd5f182e4f6f1"
+      "sha256": "b21d0f029afda8f64a8b5b5409825a00b7e1462fd4cbf611d10506bf2e93a418"
     },
     {
       "path": "book/ua/01-core.md",
-      "sha256": "6e7c7ee30dbb3b0b4f24b40831bfcd65cf77822ea56fe2c8d2853fe50a5d7005"
+      "sha256": "6bf63293786d942756a7b3fa70a58cfeacc0b0538ed60c4ac9c3643b2de5c1b4"
     },
     {
       "path": "book/ua/02-foundations.md",
@@ -41,16 +41,22 @@
     },
     {
       "path": "book/ua/08-model.md",
-      "sha256": "4cc7e2c2b45ad533edeb1880d8bd59d1edbbcd2edfeceb658979c1b8eec72c13"
+      "sha256": "8cc3209bc37483436e53e6417cc6d68cb200df27043604a1b0124dd891f673f4"
+    },
+    {
+      "path": "book/ua/09-runtime.md",
+      "sha256": "8040125527879640d9cc308cd134bde65d7636c1f3f3ef1ea9cfe3c9816688af"
     },
     {
       "path": "book/ua/05-research.md",
-      "sha256": "9c0f38e38b55db44eb7418440dd80f855376f238c8d5b380221b655a04c70aea"
+      "sha256": "1761b611c0edf598d7fd216142b5f6276747def41a49d4a5036e6e0f92f8eab1"
     },
     {
       "path": "book/ua/06-references.md",
-      "sha256": "207bf7b723d0376d1633ed6db237aff009a9471457ac4978cb7bc1b9a7d66692"
+      "sha256": "f8f34a66f1a05829c4ef195bfbad2b572a41ec2739912fb9069a085f0f1c4603"
     }
   ],
-  "empirical_trials": 0
+  "empirical_trials": 0,
+  "runtime_checks": 42,
+  "runtime_report_sha256": "5813eaa917b71498c022b9f4c6ab816baadc561e75cd1ba16849f4e745ca9bdd"
 }

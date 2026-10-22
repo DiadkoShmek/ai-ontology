@@ -1,6 +1,6 @@
 # A short route for technical review
 
-This is a conceptual and methodological book with a small executable example. It is not an empirical paper, an implementation of the entire proposed architecture or a claim to machine consciousness. Ukrainian full text; [English abstract](ABSTRACT.en.md).
+This book combines an ontological framework with a runnable reference architecture. It contains bounded systems tests, a provider-independent model-turn interface and a separate research programme for agent behavior. It does not claim consciousness or measured behavioral benefit. Ukrainian full text; [English abstract](ABSTRACT.en.md).
 
 ## The claim to examine
 
@@ -18,10 +18,11 @@ Identity, voice, memory and relationships can be examined as interacting aspects
 
 ```sh
 python3 -m unittest discover -s examples -v
-python3 examples/continuity.py
+python3 examples/durable_demo.py
+python3 research/run_runtime_checks.py
 ```
 
-The example has no external dependencies or network access. Its intentional negative entailment case demonstrates that a valid reference is insufficient to establish support for arbitrary prose. Fixed voice renderers do not evaluate LLM voice. Actor and snapshot labels are not authentication.
+The included runtime and replay adapter have no network access or external dependencies. An explicitly supplied real model adapter is trusted executable code and must have its own effect and budget policy. Its intentional negative entailment case demonstrates that a valid reference is insufficient to establish support for arbitrary prose. Fixed voice renderers do not evaluate LLM voice. Actor and snapshot labels are not authentication.
 
 ## Useful objections
 
@@ -32,3 +33,7 @@ The example has no external dependencies or network access. Its intentional nega
 - Which concept could be removed without loss, and what concrete counterexample would reveal the loss?
 
 The source of each chapter is listed in [edition.json](edition.json). [Sources and contribution](book/ua/06-references.md) distinguish definitions, arguments, implementation facts and untested hypotheses. [AUTHORS.md](AUTHORS.md) discloses substantial AI-assisted writing. No independent peer review is claimed.
+
+## Engineering entry
+
+Read [the runtime chapter](book/ua/09-runtime.md), [code and run guide](examples/README.md), [test report](research/runtime-results.json), and the actual `durable.py` / `agent_cycle.py` paths. Verify systems correctness separately from source delivery, model behavior and human benefit. The current implementation is bounded full replay; its indexed scaling design is specified, not benchmarked at a million records.

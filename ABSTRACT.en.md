@@ -2,7 +2,7 @@
 
 ## Book One. Organization of Self
 
-**Artur Onysko · Expanded second edition · v2.0.0 · Ukrainian full text**
+**Artur Onysko · Second edition, engineering expansion · v2.1.0 · Ukrainian full text**
 
 This conceptual and methodological book examines how identity, voice, memory, commitments, relationships and development can form an organization of participation across tasks. Its central question is how an agent can revise beliefs, change roles or migrate between models while retaining an intelligible connection to its previous organization.
 
@@ -12,7 +12,11 @@ The edition distinguishes structural, epistemic and normative descriptions. It i
 
 An engineering architecture connects profiles, events, claims, memory retrieval, context construction, voice and revision. A constructed multi-session case follows Iris through interruption, refutation, harmful compression, collaboration, branching and model migration. Strong objections address unnecessary complexity, circular evaluation, anthropomorphic language, normative choices and behavioral indistinguishability.
 
-A standard-library Python example demonstrates finite in-memory revision and branch contracts. Its negative entailment test intentionally accepts unsupported prose with a structurally valid reference, exposing the boundary between structural validation and semantic support. It neither calls an LLM nor measures agent identity or interaction quality.
+The standard-library Python package combines a finite belief reducer with a durable SQLite journal, atomic append, idempotent retry, a compare-and-swap head, branch recovery, explicit orientation revisions and a dependency-closed context compiler. A provider-independent model-turn interface binds messages, model route and response to the current journal state; stale or forged contexts are rejected before decision commit. The included model is an authored replay double, not live inference.
+
+A source-pinned developer-run report records 42 passing systems tests, including fresh-process reconstruction, concurrent writers, uncommitted process death, byte corruption, anchored truncation detection, profile delivery and stale-response rejection. Intentional negative cases show that coherent rewriting without an independent anchor and semantically unsupported prose remain possible. These are bounded runtime guarantees, not measurements of identity, consciousness or interaction benefit.
+
+An additional engineering chapter specifies trust boundaries, voice as observable relations across changed situations, failure recovery, model migration and the transition from bounded full replay to indexed storage. It situates the approach alongside Locke, Parfit, MemGPT/Letta, RLM, LongMemEval and LoCoMo without claiming their results as its own.
 
 The research programme separates immediate reading effects, grounded reconstruction, subsequent decisions and persistent state changes. It calls for strong simple baselines, matched information budgets, ablations, isolated states, scenario families, independent rubrics and negative results. No comparative LLM trials have been conducted for this edition. General benefit, consciousness and historical priority are not established.
 

@@ -1,21 +1,70 @@
 {
-  "version": "2.0.0",
-  "label": "Друга розширена редакція",
+  "version": "2.1.0",
+  "label": "Друга редакція · інженерне доповнення",
   "date": "2026-10-22",
   "title": "Онтологія AI",
   "volume": "Книга перша. Організація себе",
   "author": "Artur Onysko",
   "parts": [
-    {"id":"opening","title":"Вступ","file":"00-opening.md"},
-    {"id":"core","title":"Онтологічне ядро","file":"01-core.md"},
-    {"id":"foundations","title":"Смисл, опис і реальність","file":"02-foundations.md"},
-    {"id":"relations","title":"Відносини й окремість","file":"03-relations.md"},
-    {"id":"continuity","title":"Тяглість без незмінності","file":"04-continuity.md"},
-    {"id":"engineering","title":"Інженерне втілення","file":"02-engineering.md"},
-    {"id":"iris","title":"Ірис: історія переходів","file":"07-iris.md"},
-    {"id":"cases","title":"Контрприклади й заперечення","file":"04-cases.md"},
-    {"id":"model","title":"Виконувана модель і її межа","file":"08-model.md"},
-    {"id":"research","title":"Дослідницька програма","file":"05-research.md"},
-    {"id":"references","title":"Джерела й авторство","file":"06-references.md"}
+    {
+      "id": "opening",
+      "title": "Вступ",
+      "file": "00-opening.md"
+    },
+    {
+      "id": "core",
+      "title": "Онтологічне ядро",
+      "file": "01-core.md"
+    },
+    {
+      "id": "foundations",
+      "title": "Смисл, опис і реальність",
+      "file": "02-foundations.md"
+    },
+    {
+      "id": "relations",
+      "title": "Відносини й окремість",
+      "file": "03-relations.md"
+    },
+    {
+      "id": "continuity",
+      "title": "Тяглість без незмінності",
+      "file": "04-continuity.md"
+    },
+    {
+      "id": "engineering",
+      "title": "Інженерне втілення",
+      "file": "02-engineering.md"
+    },
+    {
+      "id": "iris",
+      "title": "Ірис: історія переходів",
+      "file": "07-iris.md"
+    },
+    {
+      "id": "cases",
+      "title": "Контрприклади й заперечення",
+      "file": "04-cases.md"
+    },
+    {
+      "id": "model",
+      "title": "Виконувана модель і її межа",
+      "file": "08-model.md"
+    },
+    {
+      "id": "runtime",
+      "title": "Виконавча архітектура",
+      "file": "09-runtime.md"
+    },
+    {
+      "id": "research",
+      "title": "Дослідницька програма",
+      "file": "05-research.md"
+    },
+    {
+      "id": "references",
+      "title": "Джерела й авторство",
+      "file": "06-references.md"
+    }
   ]
 }
