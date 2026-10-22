@@ -1,40 +1,44 @@
-# A short route for technical review
+# Technical review guide
 
-This book combines an ontological framework with a runnable reference architecture. It contains bounded systems tests, a provider-independent model-turn interface and a separate research programme for agent behavior. It does not claim consciousness or measured behavioral benefit. Ukrainian full text; [English abstract](ABSTRACT.en.md).
+*AI Ontology* combines a conceptual methodology, an executable specification and a local exploratory study. The book is in Ukrainian; the [abstract](ABSTRACT.en.md) and [research paper](research/SCOPED_CONTINUITY_STUDY.md) are in English.
 
-## The claim to examine
+## The proposition
 
-Identity, voice, memory and relationships can be examined as interacting aspects of an agent's organization across tasks. A coherent account should explain both continuity and justified revision. The proposed composition is open to comparison with simpler designs; its practical benefit remains unmeasured.
+Identity, voice, memory and relationships can be examined as interacting aspects of an agent's organization across tasks. A useful account should explain continuity, justified revision, provenance and the conditions of change. Each implemented distinction should reach a concrete transition, and each claimed benefit should survive a simpler matched-information baseline.
 
-## A focused reading route
+## Reading routes
 
-1. [Five central theses](https://diadkoshmek.github.io/ai-ontology/#foundations-3): the conceptual position.
-2. [Continuity](https://diadkoshmek.github.io/ai-ontology/#continuity): perspective-specific contracts, witnesses, non-transitivity and information loss.
-3. [Implementation](https://diadkoshmek.github.io/ai-ontology/#engineering): mapping to state, context, memory and revision, with concrete failures and costs.
-4. [Iris](https://diadkoshmek.github.io/ai-ontology/#iris): one constructed history across multiple kinds of change.
-5. [Objections](https://diadkoshmek.github.io/ai-ontology/#cases-7): parsimony, circular evaluation, language, normative choices and identifiability.
-6. [Runnable architecture](https://diadkoshmek.github.io/ai-ontology/#runtime): the journal, context compiler, model-turn boundary, recovery and scaling limits.
+**Methodology:** [conceptual foundations](https://diadkoshmek.github.io/ai-ontology/#foundations) → [continuity](https://diadkoshmek.github.io/ai-ontology/#continuity) → [objections](https://diadkoshmek.github.io/ai-ontology/#cases) → [implementation method](https://diadkoshmek.github.io/ai-ontology/#method).
 
-## What is executable
+**Engineering:** [runtime chapter](book/ua/09-runtime.md) → [modules and commands](examples/README.md) → [systems report](research/runtime-results.json) → actual `durable.py` and `agent_cycle.py` contracts.
+
+**Empirical evaluation:** [working paper](research/SCOPED_CONTINUITY_STUDY.md) → [protocols and raw data](research/README.md) → [follow-up results](research/continuity_pilot_v2/results.json) → [offline verifier](research/verify_studies.py).
+
+## Results to challenge
+
+The follow-up exact scores are 20/16/16/20 for Qwen3 4B and 5/2/12/12 for Granite 3.3 2B across journal, ontology wrapper, compiled context and simple index. There is no observed aggregate advantage over the information-matched simple index. Compilation includes deterministic preprocessing; ontology framing adds text. The cases are authored, short, dependent and reused after the first instrument failure.
+
+The 49 systems tests establish bounded transition behavior. The 384 scored model calls evaluate structured decisions. The two integration smoke calls exercise a live adapter path. These are different evidence classes. Voice, the effect of reading, identity, long-run interaction and natural-task benefit are not measured by those counts.
+
+## Reproduce without inference
 
 ```sh
-python3 -m unittest discover -s examples -v
-python3 examples/durable_demo.py
-python3 research/run_runtime_checks.py
+python3 -m unittest discover -s examples -q
+python3 -m unittest discover -s research/continuity_pilot -q
+python3 -m unittest discover -s research/continuity_pilot_v2 -q
+python3 research/verify_studies.py
 ```
 
-The included runtime and replay adapter have no network access or external dependencies. An explicitly supplied real model adapter is trusted executable code and must have its own effect and budget policy. Its intentional negative entailment case demonstrates that a valid reference is insufficient to establish support for arbitrary prose. Fixed voice renderers do not evaluate LLM voice. Actor and snapshot labels are not authentication.
+Python 3.11+ and Git. These checks make no network or model calls. The verifier reconstructs frozen source from the local history bundle, checks all prompts and scores, and reruns the registered analysis in temporary storage.
 
 ## Useful objections
 
-- Does the proposed ontology explain a relevant distinction that a simpler profile and event store do not?
-- Does the perspective-specific continuity relation remain useful without pretending to solve numerical identity?
-- Are constructed examples clearly separated from observed system behavior?
-- Do the research conditions control for extra information, style and resource budget?
-- Which concept could be removed without loss, and what concrete counterexample would reveal the loss?
+- Which proposed distinction changes a relevant transition, and which can be removed without loss?
+- Does the continuity contract remain useful while leaving numerical identity unresolved?
+- Are deterministic state guarantees kept separate from model use and useful completion?
+- Does the simple index control preserve the information relevant to the stated question?
+- Which unseen cases would falsify the proposed practical interpretation?
 
-The source of each chapter is listed in [edition.json](edition.json). [Sources and contribution](book/ua/06-references.md) distinguish definitions, arguments, implementation facts and untested hypotheses. [AUTHORS.md](AUTHORS.md) discloses substantial AI-assisted writing. No independent peer review is claimed.
+A valid citation does not establish semantic support. An anchor detects inconsistency with a trusted prefix but does not authenticate every claim. The runtime uses bounded full replay; indexed scaling is a specified extension, not a million-record benchmark. The model adapter is trusted executable code, not a sandbox.
 
-## Engineering entry
-
-Read [the runtime chapter](book/ua/09-runtime.md), [code and run guide](examples/README.md), [test report](research/runtime-results.json), and the actual [durable.py](examples/durable.py) / [agent_cycle.py](examples/agent_cycle.py) paths. Verify systems correctness separately from source delivery, model behavior and human benefit. The current implementation is bounded full replay; its indexed scaling design is specified, not benchmarked at a million records.
+[Chapter sources](edition.json) · [Authorship and AI contribution](AUTHORS.md). Independent review and replication remain welcome; neither is claimed in this edition.

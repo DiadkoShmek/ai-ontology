@@ -1,15 +1,15 @@
 {
   "title": "Онтологія AI",
   "volume": 1,
-  "edition": "2.1.0",
+  "edition": "3.0.0",
   "author": "Artur Onysko",
-  "metadata_sha256": "befbac6c1f3c2e6015c9d5a8fc8d19ef5056cc245879f7d0b8f4e4c9f6d8ca2d",
-  "source_sha256": "4650b09d9a29d3eef082d5846921ec7535f3d2659328da09f5b7e30ba18cf5ae",
-  "book_sha256": "e0b5f9d2f89b6ff8d0157fab328c8495f75e4cb64ae12b2aa0c49fe80013f410",
+  "metadata_sha256": "db0538883cade9dd3289c2e1b9386a3a71cc46329c99b378a7ee7dabfe3b7cf3",
+  "source_sha256": "b5c8f64783fcc2e349351e204138ee6bae08282dc8f15cf35c95e7cad159cc1a",
+  "book_sha256": "62edd6542b171315f8f4855e5d757050c6322de23fc0831ff366495345cb2474",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
-      "sha256": "263125c72b9b749d58279c6694a1cd871f7fc212d25527ac636c537d3fdb0245"
+      "sha256": "67f7aee76bc37f9bf0f922429af62153b73ff5431a73794e4b04d31af7df3729"
     },
     {
       "path": "book/ua/01-core.md",
@@ -45,18 +45,30 @@
     },
     {
       "path": "book/ua/09-runtime.md",
-      "sha256": "8040125527879640d9cc308cd134bde65d7636c1f3f3ef1ea9cfe3c9816688af"
+      "sha256": "52a8add0d9a44e853dd2da3b841e63f98d8af231f7f797600e41d249c9dbc7f7"
+    },
+    {
+      "path": "book/ua/10-method.md",
+      "sha256": "78b802cc3872ad2377e28fa3c8c87e000a41e7afaf05a4332db0d99b6913e5b7"
+    },
+    {
+      "path": "book/ua/11-study.md",
+      "sha256": "1df568a17b6118658faa9129f4ccae764e76988e8227f2b27d17b5784aac3884"
     },
     {
       "path": "book/ua/05-research.md",
-      "sha256": "371a765bb5334d05f6962152822f880b9a89ec81811c9a8a0776ad37e4a0a960"
+      "sha256": "37b6f2cb2beeb8afe24b192156d209df2506e8d659651058269619c6afb7a87b"
     },
     {
       "path": "book/ua/06-references.md",
-      "sha256": "de3f3d1a0c7047b86d8dd8bd847951c72947f28519c99bb520cfd821fad4984d"
+      "sha256": "dd373d0e593fbb192339b9a7d2e53de1509e416bae971b0a502c4a9eefb6d95b"
     }
   ],
-  "empirical_trials": 0,
-  "runtime_checks": 42,
-  "runtime_report_sha256": "b808bc7458ebb4ec7be8964228647a5d7407561714e8b37edd04141036279dbd"
+  "scored_model_calls": 384,
+  "model_cohorts": 2,
+  "unique_cases": 24,
+  "integration_smoke_calls": 2,
+  "study_summary_sha256": "e19cdf10f7faaba6e99b4d8fcca73c6db9b348bec6a10bf82258907dacd4460c",
+  "runtime_checks": 49,
+  "runtime_report_sha256": "ba99625a927376afcdef841128eaa1a540cdc561ab37ecc426ae2abc98daf77f"
 }

@@ -21,7 +21,15 @@ for(const f of edition.source_files){
  const numbers=[...source.matchAll(/^## (\d+) /gm)].map(m=>Number(m[1]));
  assert.deepEqual(numbers,numbers.map((_,i)=>i+1),`section numbering mismatch: ${f.path}`);
 }
-assert.equal(edition.empirical_trials,0);
+const studyBytes=read('research/study-summary.json');
+const study=JSON.parse(studyBytes);
+assert.equal(edition.study_summary_sha256,sha(studyBytes));
+assert.equal(edition.scored_model_calls,study.scored_model_calls);
+assert.equal(edition.scored_model_calls,study.cohorts.reduce((n,c)=>n+c.scored_calls,0));
+assert.equal(edition.model_cohorts,study.cohorts.length);
+assert.equal(edition.unique_cases,study.unique_cases);
+assert.equal(edition.integration_smoke_calls,study.integration_smoke_calls);
+for(const [file,hash] of Object.entries(study.inputs_sha256))assert.equal(sha(read(file)),hash,`stale study summary: ${file}`);
 const report=JSON.parse(read('research/runtime-results.json'));
 assert.equal(edition.runtime_report_sha256,sha(read('research/runtime-results.json')));
 assert.equal(edition.runtime_checks,report.tests_run);
@@ -43,7 +51,7 @@ const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
 assert.equal(new Set(ids).size,ids.length,'duplicate HTML ids');
 for(const m of html.matchAll(/href="#([^"]+)"/g))assert(ids.includes(m[1]),`missing anchor ${m[1]}`);
 const markdown=['README.md','REVIEW_GUIDE.md','ABSTRACT.en.md','AUTHORS.md','READER_NOTE.md',
- 'CHANGELOG.md','BOOK_UA.md','examples/README.md','research/comparison-notes.md',...edition.source_files.map(f=>f.path)];
+ 'CHANGELOG.md','BOOK_UA.md','examples/README.md','research/comparison-notes.md','research/README.md','research/SCOPED_CONTINUITY_STUDY.md',...edition.source_files.map(f=>f.path)];
 for(const f of markdown){
  const s=read(f);
  assert(!/\/home\/pustota|itoken=|BEGIN (?:RSA |OPENSSH )?PRIVATE KEY|gh[pousr]_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{20,}/.test(s),`private material pattern in ${f}`);
@@ -67,4 +75,15 @@ for(const [file,hash] of Object.entries(pdf.inputs))assert.equal(sha(fs.readFile
 const pdfBytes=fs.readFileSync(path.join(root,pdf.pdf));
 assert.equal(pdfBytes.subarray(0,5).toString(),'%PDF-');
 assert.equal(sha(pdfBytes),pdf.pdf_sha256,'PDF artifact hash mismatch');
+const paper=JSON.parse(read('docs/paper-edition.json'));
+assert.equal(paper.schema,'ai-ontology-paper/1');
+assert.equal(paper.edition,meta.version);
+const paperInputs=['research/SCOPED_CONTINUITY_STUDY.md','research/continuity-results.png',
+ 'scripts/build_paper.py','requirements.txt','docs/assets/serif.ttf','docs/assets/serif-bold.ttf','docs/assets/serif-italic.ttf'];
+assert.deepEqual(Object.keys(paper.inputs).sort(),paperInputs.sort(),'paper input coverage mismatch');
+for(const [file,hash] of Object.entries(paper.inputs))assert.equal(sha(fs.readFileSync(path.join(root,file))),hash,`stale paper input: ${file}`);
+assert.equal(paper.pdf,'docs/downloads/scoped-continuity-study-en.pdf');
+const paperBytes=fs.readFileSync(path.join(root,paper.pdf));
+assert.equal(paperBytes.subarray(0,5).toString(),'%PDF-');
+assert.equal(sha(paperBytes),paper.pdf_sha256,'paper artifact hash mismatch');
 console.log('Source hashes, local links, anchors, full-text parity and asset bindings verified. Pattern scan is not a comprehensive secret audit.');

@@ -1,0 +1,12 @@
+{
+  "model": "granite3.3:2b",
+  "created_at": "2026-10-22T16:11:51.951093594Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1564273578,
+  "load_duration": 1407768618,
+  "prompt_eval_count": 50,
+  "prompt_eval_duration": 23769046,
+  "eval_count": 9,
+  "eval_duration": 60333008
+}

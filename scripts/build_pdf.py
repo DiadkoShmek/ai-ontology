@@ -60,9 +60,9 @@ def inline(text):
 tokens=json.loads((ROOT/'build/tokens.json').read_text())
 story=[]
 story += [Spacer(1,62),Paragraph('КНИГА ПЕРША',styles['SmallBook']),Spacer(1,18),Paragraph('Онтологія<br/>AI',ParagraphStyle(name='Cover',fontName='Book',fontSize=48,leading=51,textColor=INK)),Spacer(1,22),Paragraph('Організація себе',styles['PartBook']),Spacer(1,16),Paragraph('Ідентичність, голос, пам’ять, відносини та становлення агентних систем',styles['BodyBook']),Spacer(1,30),Paragraph('Artur Onysko',styles['ChapterBook']),Paragraph(f"{META['label']} · v{META['version']} · 2026",styles['SmallBook']),PageBreak()]
-story += [Paragraph('Про видання',styles['PartBook']),Paragraph('Автор концепції та постановки дослідження — Artur Onysko. Підготовка тексту, дослідницька допомога, технічне редагування та випуск — за участю Codex під керівництвом автора.',styles['BodyBook']),Paragraph('Книга поєднує онтологічну постановку й виконавчу архітектуру. Публічний Python-код реалізує довговічну історію, контекст і цикл інтеграції моделі. Системні перевірки відтворювані. Сконструйовані випадки й відповіді тестового адаптера позначені явно; порівняльні випробування LLM та ефект самозгадування для цього видання ще не вимірювалися.',styles['BodyBook']),Paragraph('© 2026 Artur Onysko. All rights reserved.',styles['SmallBook']),Paragraph('https://github.com/DiadkoShmek/ai-ontology',styles['SmallBook']),Spacer(1,20),Paragraph('Зміст',styles['ChapterBook'])]
+story += [Paragraph('Про видання',styles['PartBook']),Paragraph('Автор концепції та постановки дослідження — Artur Onysko. Підготовка тексту, дослідницька допомога, технічне редагування та випуск — за участю Codex під керівництвом автора.',styles['BodyBook']),Paragraph('Книга поєднує онтологічну постановку й виконавчу архітектуру. Публічний Python-код реалізує довговічну історію, контекст і цикл інтеграції моделі. Системні перевірки відтворювані. Сконструйовані випадки й відповіді тестового адаптера позначені явно. Окремий локальний дослід містить 384 оцінені модельні виклики у двох серіях; він дав змішані результати й не встановив загальної переваги над простим індексом. Голос і ефект самозгадування потребують власної перевірки.',styles['BodyBook']),Paragraph('© 2026 Artur Onysko. All rights reserved.',styles['SmallBook']),Paragraph('https://github.com/DiadkoShmek/ai-ontology',styles['SmallBook']),Spacer(1,20),Paragraph('Зміст',styles['ChapterBook'])]
 toc=TableOfContents()
-toc.levelStyles=[ParagraphStyle(name='ContentsBook',fontName='Book',fontSize=9,leading=14,spaceBefore=8,textColor=INK)]
+toc.levelStyles=[ParagraphStyle(name='ContentsBook',fontName='Book',fontSize=8.4,leading=12.5,spaceBefore=5,textColor=INK)]
 story.append(toc)
 started=False
 for t in tokens:
@@ -82,7 +82,9 @@ for t in tokens:
         width=A5[0]-80
         table=Table([header]+rows,colWidths=[width/len(header)]*len(header),repeatRows=1,hAlign='LEFT')
         table.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#e9e6db')),('LINEBELOW',(0,0),(-1,-1),.4,LINE),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7)]))
-        story += [Spacer(1,8),table,Spacer(1,12)]
+        before=Spacer(1,8)
+        before.keepWithNext=True
+        story += [before,table,Spacer(1,12)]
     elif kind=='code': story.append(Preformatted(t['text'],styles['CodeBook'],maxLineLength=68))
     elif kind not in ('space','hr'): raise ValueError(f'Unrendered token type: {kind}')
 

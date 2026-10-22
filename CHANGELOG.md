@@ -1,3 +1,13 @@
+# v3.0.0 — 2026-10-22
+
+- Completed Book One with an implementation method and a Ukrainian empirical chapter, for fourteen parts.
+- Added branch-local source retirement and active-basis invalidation, with seven focused tests; 49 systems tests pass.
+- Published 384 scored local model responses across an unsuccessful first instrument and a schema-guided exploratory follow-up. Preserved all scores, failures, protocols, raw archives and exact input history.
+- Added an English working paper with paired outcomes, resource counts, failure cases and explicit limits. No aggregate advantage over the information-matched simple index was observed.
+- Reported two real-model integration smoke calls separately: one output-limit refusal and one admitted turn.
+- Integrated previously published canonical-context, UTF-8, section-numbering, font and PDF provenance repairs.
+- Added offline reproduction of frozen historical inputs and analysis, source-bound publication metadata and checks for both PDFs.
+
 # Історія редакцій
 
 ## 2.1.0 · 22 October 2026

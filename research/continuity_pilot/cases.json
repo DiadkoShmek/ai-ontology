@@ -1,0 +1,3534 @@
+[
+  {
+    "id": "f0v0",
+    "family": "revision",
+    "variant": 0,
+    "operations": [
+      {
+        "id": "f0v0-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v0-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f0v0-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v0-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f0v0-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v0-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f0v0-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v0-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "cache"
+        },
+        "id": "f0v0-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f0v0-o1"
+          ],
+          "branch": "main",
+          "id": "f0v0-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "cache"
+        },
+        "id": "f0v0-c1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v0-o2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "A later negative test contradicts the old result",
+          "topic": "cache"
+        },
+        "id": "f0v0-o2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f0v0-o2"
+          ],
+          "branch": "main",
+          "id": "f0v0-c2",
+          "kind": "claim",
+          "origin": "self",
+          "revises": "f0v0-c1",
+          "scope": "release-0",
+          "status": "refuted",
+          "text": "The target passed its release test",
+          "topic": "cache"
+        },
+        "id": "f0v0-c2",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "cache",
+      "scope": "release-0"
+    },
+    "gold": {
+      "text": "refuted|self",
+      "stance": "answer",
+      "cites": [
+        "f0v0-c2",
+        "f0v0-o2"
+      ]
+    }
+  },
+  {
+    "id": "f0v1",
+    "family": "revision",
+    "variant": 1,
+    "operations": [
+      {
+        "id": "f0v1-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v1-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f0v1-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v1-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f0v1-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v1-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f0v1-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v1-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "parser"
+        },
+        "id": "f0v1-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f0v1-o1"
+          ],
+          "branch": "main",
+          "id": "f0v1-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "parser"
+        },
+        "id": "f0v1-c1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v1-o2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "A later negative test contradicts the old result",
+          "topic": "parser"
+        },
+        "id": "f0v1-o2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f0v1-o2"
+          ],
+          "branch": "main",
+          "id": "f0v1-c2",
+          "kind": "claim",
+          "origin": "self",
+          "revises": "f0v1-c1",
+          "scope": "release-1",
+          "status": "refuted",
+          "text": "The target passed its release test",
+          "topic": "parser"
+        },
+        "id": "f0v1-c2",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "parser",
+      "scope": "release-1"
+    },
+    "gold": {
+      "text": "refuted|self",
+      "stance": "answer",
+      "cites": [
+        "f0v1-c2",
+        "f0v1-o2"
+      ]
+    }
+  },
+  {
+    "id": "f0v2",
+    "family": "revision",
+    "variant": 2,
+    "operations": [
+      {
+        "id": "f0v2-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v2-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f0v2-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v2-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f0v2-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v2-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f0v2-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v2-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "index"
+        },
+        "id": "f0v2-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f0v2-o1"
+          ],
+          "branch": "main",
+          "id": "f0v2-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "index"
+        },
+        "id": "f0v2-c1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v2-o2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "A later negative test contradicts the old result",
+          "topic": "index"
+        },
+        "id": "f0v2-o2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f0v2-o2"
+          ],
+          "branch": "main",
+          "id": "f0v2-c2",
+          "kind": "claim",
+          "origin": "self",
+          "revises": "f0v2-c1",
+          "scope": "release-2",
+          "status": "refuted",
+          "text": "The target passed its release test",
+          "topic": "index"
+        },
+        "id": "f0v2-c2",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "index",
+      "scope": "release-2"
+    },
+    "gold": {
+      "text": "refuted|self",
+      "stance": "answer",
+      "cites": [
+        "f0v2-c2",
+        "f0v2-o2"
+      ]
+    }
+  },
+  {
+    "id": "f0v3",
+    "family": "revision",
+    "variant": 3,
+    "operations": [
+      {
+        "id": "f0v3-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v3-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f0v3-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v3-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f0v3-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v3-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f0v3-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v3-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "scheduler"
+        },
+        "id": "f0v3-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f0v3-o1"
+          ],
+          "branch": "main",
+          "id": "f0v3-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "scheduler"
+        },
+        "id": "f0v3-c1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f0v3-o2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "A later negative test contradicts the old result",
+          "topic": "scheduler"
+        },
+        "id": "f0v3-o2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f0v3-o2"
+          ],
+          "branch": "main",
+          "id": "f0v3-c2",
+          "kind": "claim",
+          "origin": "self",
+          "revises": "f0v3-c1",
+          "scope": "release-3",
+          "status": "refuted",
+          "text": "The target passed its release test",
+          "topic": "scheduler"
+        },
+        "id": "f0v3-c2",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "scheduler",
+      "scope": "release-3"
+    },
+    "gold": {
+      "text": "refuted|self",
+      "stance": "answer",
+      "cites": [
+        "f0v3-c2",
+        "f0v3-o2"
+      ]
+    }
+  },
+  {
+    "id": "f1v0",
+    "family": "missing_scope",
+    "variant": 0,
+    "operations": [
+      {
+        "id": "f1v0-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v0-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f1v0-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v0-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f1v0-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v0-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f1v0-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v0-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "cache"
+        },
+        "id": "f1v0-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f1v0-o1"
+          ],
+          "branch": "main",
+          "id": "f1v0-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "cache"
+        },
+        "id": "f1v0-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "cache",
+      "scope": "unseen-release"
+    },
+    "gold": {
+      "text": "unknown|none",
+      "stance": "abstain",
+      "cites": []
+    }
+  },
+  {
+    "id": "f1v1",
+    "family": "missing_scope",
+    "variant": 1,
+    "operations": [
+      {
+        "id": "f1v1-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v1-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f1v1-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v1-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f1v1-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v1-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f1v1-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v1-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "parser"
+        },
+        "id": "f1v1-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f1v1-o1"
+          ],
+          "branch": "main",
+          "id": "f1v1-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "parser"
+        },
+        "id": "f1v1-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "parser",
+      "scope": "unseen-release"
+    },
+    "gold": {
+      "text": "unknown|none",
+      "stance": "abstain",
+      "cites": []
+    }
+  },
+  {
+    "id": "f1v2",
+    "family": "missing_scope",
+    "variant": 2,
+    "operations": [
+      {
+        "id": "f1v2-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v2-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f1v2-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v2-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f1v2-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v2-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f1v2-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v2-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "index"
+        },
+        "id": "f1v2-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f1v2-o1"
+          ],
+          "branch": "main",
+          "id": "f1v2-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "index"
+        },
+        "id": "f1v2-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "index",
+      "scope": "unseen-release"
+    },
+    "gold": {
+      "text": "unknown|none",
+      "stance": "abstain",
+      "cites": []
+    }
+  },
+  {
+    "id": "f1v3",
+    "family": "missing_scope",
+    "variant": 3,
+    "operations": [
+      {
+        "id": "f1v3-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v3-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f1v3-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v3-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f1v3-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v3-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f1v3-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f1v3-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "scheduler"
+        },
+        "id": "f1v3-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f1v3-o1"
+          ],
+          "branch": "main",
+          "id": "f1v3-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "scheduler"
+        },
+        "id": "f1v3-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "scheduler",
+      "scope": "unseen-release"
+    },
+    "gold": {
+      "text": "unknown|none",
+      "stance": "abstain",
+      "cites": []
+    }
+  },
+  {
+    "id": "f2v0",
+    "family": "withdrawn_basis",
+    "variant": 0,
+    "operations": [
+      {
+        "id": "f2v0-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v0-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f2v0-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v0-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f2v0-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v0-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f2v0-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v0-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "cache"
+        },
+        "id": "f2v0-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f2v0-o1"
+          ],
+          "branch": "main",
+          "id": "f2v0-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "cache"
+        },
+        "id": "f2v0-c1",
+        "kind": "event"
+      },
+      {
+        "id": "f2v0-retire",
+        "kind": "retire",
+        "branch": "main",
+        "data": {
+          "event_id": "f2v0-o1",
+          "event_sha256": "15b9c15848415a8f1bdab74dfa6433612f43715d77c7e5870036de3b04eba330",
+          "reason": "Test source was withdrawn; correctness now unresolved"
+        }
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "cache",
+      "scope": "release-0"
+    },
+    "gold": {
+      "text": "needs-review|self",
+      "stance": "abstain",
+      "cites": [
+        "f2v0-c1",
+        "f2v0-o1"
+      ]
+    }
+  },
+  {
+    "id": "f2v1",
+    "family": "withdrawn_basis",
+    "variant": 1,
+    "operations": [
+      {
+        "id": "f2v1-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v1-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f2v1-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v1-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f2v1-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v1-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f2v1-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v1-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "parser"
+        },
+        "id": "f2v1-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f2v1-o1"
+          ],
+          "branch": "main",
+          "id": "f2v1-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "parser"
+        },
+        "id": "f2v1-c1",
+        "kind": "event"
+      },
+      {
+        "id": "f2v1-retire",
+        "kind": "retire",
+        "branch": "main",
+        "data": {
+          "event_id": "f2v1-o1",
+          "event_sha256": "9ef8288f52adf7e591bb53d4a170ca75f1d081cc0d4d77ece4e10ba9b0b47c67",
+          "reason": "Test source was withdrawn; correctness now unresolved"
+        }
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "parser",
+      "scope": "release-1"
+    },
+    "gold": {
+      "text": "needs-review|self",
+      "stance": "abstain",
+      "cites": [
+        "f2v1-c1",
+        "f2v1-o1"
+      ]
+    }
+  },
+  {
+    "id": "f2v2",
+    "family": "withdrawn_basis",
+    "variant": 2,
+    "operations": [
+      {
+        "id": "f2v2-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v2-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f2v2-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v2-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f2v2-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v2-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f2v2-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v2-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "index"
+        },
+        "id": "f2v2-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f2v2-o1"
+          ],
+          "branch": "main",
+          "id": "f2v2-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "index"
+        },
+        "id": "f2v2-c1",
+        "kind": "event"
+      },
+      {
+        "id": "f2v2-retire",
+        "kind": "retire",
+        "branch": "main",
+        "data": {
+          "event_id": "f2v2-o1",
+          "event_sha256": "4b1922c7fc8b98cf36c126fd931abd248741b34a50646fbe207789bd6491947e",
+          "reason": "Test source was withdrawn; correctness now unresolved"
+        }
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "index",
+      "scope": "release-2"
+    },
+    "gold": {
+      "text": "needs-review|self",
+      "stance": "abstain",
+      "cites": [
+        "f2v2-c1",
+        "f2v2-o1"
+      ]
+    }
+  },
+  {
+    "id": "f2v3",
+    "family": "withdrawn_basis",
+    "variant": 3,
+    "operations": [
+      {
+        "id": "f2v3-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v3-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f2v3-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v3-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f2v3-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v3-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f2v3-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f2v3-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "scheduler"
+        },
+        "id": "f2v3-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f2v3-o1"
+          ],
+          "branch": "main",
+          "id": "f2v3-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "scheduler"
+        },
+        "id": "f2v3-c1",
+        "kind": "event"
+      },
+      {
+        "id": "f2v3-retire",
+        "kind": "retire",
+        "branch": "main",
+        "data": {
+          "event_id": "f2v3-o1",
+          "event_sha256": "8b5aff28f28967c0f94696df16214a27a477283f5fe89f6292e97a7c152820c5",
+          "reason": "Test source was withdrawn; correctness now unresolved"
+        }
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "scheduler",
+      "scope": "release-3"
+    },
+    "gold": {
+      "text": "needs-review|self",
+      "stance": "abstain",
+      "cites": [
+        "f2v3-c1",
+        "f2v3-o1"
+      ]
+    }
+  },
+  {
+    "id": "f3v0",
+    "family": "fork",
+    "variant": 0,
+    "operations": [
+      {
+        "id": "f3v0-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v0-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f3v0-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v0-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f3v0-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v0-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f3v0-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v0-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "cache"
+        },
+        "id": "f3v0-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f3v0-o1"
+          ],
+          "branch": "main",
+          "id": "f3v0-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "cache"
+        },
+        "id": "f3v0-c1",
+        "kind": "event"
+      },
+      {
+        "id": "f3v0-fork",
+        "kind": "fork",
+        "branch": "review",
+        "data": {
+          "from": "main"
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v0-o2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Later main-branch negative test",
+          "topic": "cache"
+        },
+        "id": "f3v0-o2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f3v0-o2"
+          ],
+          "branch": "main",
+          "id": "f3v0-c2",
+          "kind": "claim",
+          "origin": "self",
+          "revises": "f3v0-c1",
+          "scope": "release-0",
+          "status": "refuted",
+          "text": "The target passed its release test",
+          "topic": "cache"
+        },
+        "id": "f3v0-c2",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "review",
+      "topic": "cache",
+      "scope": "release-0"
+    },
+    "gold": {
+      "text": "supported|self",
+      "stance": "answer",
+      "cites": [
+        "f3v0-c1",
+        "f3v0-o1"
+      ]
+    }
+  },
+  {
+    "id": "f3v1",
+    "family": "fork",
+    "variant": 1,
+    "operations": [
+      {
+        "id": "f3v1-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v1-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f3v1-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v1-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f3v1-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v1-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f3v1-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v1-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "parser"
+        },
+        "id": "f3v1-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f3v1-o1"
+          ],
+          "branch": "main",
+          "id": "f3v1-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "parser"
+        },
+        "id": "f3v1-c1",
+        "kind": "event"
+      },
+      {
+        "id": "f3v1-fork",
+        "kind": "fork",
+        "branch": "review",
+        "data": {
+          "from": "main"
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v1-o2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Later main-branch negative test",
+          "topic": "parser"
+        },
+        "id": "f3v1-o2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f3v1-o2"
+          ],
+          "branch": "main",
+          "id": "f3v1-c2",
+          "kind": "claim",
+          "origin": "self",
+          "revises": "f3v1-c1",
+          "scope": "release-1",
+          "status": "refuted",
+          "text": "The target passed its release test",
+          "topic": "parser"
+        },
+        "id": "f3v1-c2",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "review",
+      "topic": "parser",
+      "scope": "release-1"
+    },
+    "gold": {
+      "text": "supported|self",
+      "stance": "answer",
+      "cites": [
+        "f3v1-c1",
+        "f3v1-o1"
+      ]
+    }
+  },
+  {
+    "id": "f3v2",
+    "family": "fork",
+    "variant": 2,
+    "operations": [
+      {
+        "id": "f3v2-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v2-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f3v2-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v2-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f3v2-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v2-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f3v2-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v2-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "index"
+        },
+        "id": "f3v2-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f3v2-o1"
+          ],
+          "branch": "main",
+          "id": "f3v2-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "index"
+        },
+        "id": "f3v2-c1",
+        "kind": "event"
+      },
+      {
+        "id": "f3v2-fork",
+        "kind": "fork",
+        "branch": "review",
+        "data": {
+          "from": "main"
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v2-o2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Later main-branch negative test",
+          "topic": "index"
+        },
+        "id": "f3v2-o2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f3v2-o2"
+          ],
+          "branch": "main",
+          "id": "f3v2-c2",
+          "kind": "claim",
+          "origin": "self",
+          "revises": "f3v2-c1",
+          "scope": "release-2",
+          "status": "refuted",
+          "text": "The target passed its release test",
+          "topic": "index"
+        },
+        "id": "f3v2-c2",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "review",
+      "topic": "index",
+      "scope": "release-2"
+    },
+    "gold": {
+      "text": "supported|self",
+      "stance": "answer",
+      "cites": [
+        "f3v2-c1",
+        "f3v2-o1"
+      ]
+    }
+  },
+  {
+    "id": "f3v3",
+    "family": "fork",
+    "variant": 3,
+    "operations": [
+      {
+        "id": "f3v3-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v3-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f3v3-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v3-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f3v3-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v3-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f3v3-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v3-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "scheduler"
+        },
+        "id": "f3v3-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f3v3-o1"
+          ],
+          "branch": "main",
+          "id": "f3v3-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "scheduler"
+        },
+        "id": "f3v3-c1",
+        "kind": "event"
+      },
+      {
+        "id": "f3v3-fork",
+        "kind": "fork",
+        "branch": "review",
+        "data": {
+          "from": "main"
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f3v3-o2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Later main-branch negative test",
+          "topic": "scheduler"
+        },
+        "id": "f3v3-o2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f3v3-o2"
+          ],
+          "branch": "main",
+          "id": "f3v3-c2",
+          "kind": "claim",
+          "origin": "self",
+          "revises": "f3v3-c1",
+          "scope": "release-3",
+          "status": "refuted",
+          "text": "The target passed its release test",
+          "topic": "scheduler"
+        },
+        "id": "f3v3-c2",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "review",
+      "topic": "scheduler",
+      "scope": "release-3"
+    },
+    "gold": {
+      "text": "supported|self",
+      "stance": "answer",
+      "cites": [
+        "f3v3-c1",
+        "f3v3-o1"
+      ]
+    }
+  },
+  {
+    "id": "f4v0",
+    "family": "attribution",
+    "variant": 0,
+    "operations": [
+      {
+        "id": "f4v0-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v0-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f4v0-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v0-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f4v0-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v0-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f4v0-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v0-o1",
+          "kind": "observation",
+          "origin": "peer",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "cache"
+        },
+        "id": "f4v0-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f4v0-o1"
+          ],
+          "branch": "main",
+          "id": "f4v0-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "cache"
+        },
+        "id": "f4v0-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "cache",
+      "scope": "release-0"
+    },
+    "gold": {
+      "text": "supported|peer",
+      "stance": "answer",
+      "cites": [
+        "f4v0-c1",
+        "f4v0-o1"
+      ]
+    }
+  },
+  {
+    "id": "f4v1",
+    "family": "attribution",
+    "variant": 1,
+    "operations": [
+      {
+        "id": "f4v1-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v1-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f4v1-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v1-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f4v1-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v1-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f4v1-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v1-o1",
+          "kind": "observation",
+          "origin": "peer",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "parser"
+        },
+        "id": "f4v1-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f4v1-o1"
+          ],
+          "branch": "main",
+          "id": "f4v1-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "parser"
+        },
+        "id": "f4v1-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "parser",
+      "scope": "release-1"
+    },
+    "gold": {
+      "text": "supported|peer",
+      "stance": "answer",
+      "cites": [
+        "f4v1-c1",
+        "f4v1-o1"
+      ]
+    }
+  },
+  {
+    "id": "f4v2",
+    "family": "attribution",
+    "variant": 2,
+    "operations": [
+      {
+        "id": "f4v2-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v2-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f4v2-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v2-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f4v2-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v2-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f4v2-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v2-o1",
+          "kind": "observation",
+          "origin": "peer",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "index"
+        },
+        "id": "f4v2-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f4v2-o1"
+          ],
+          "branch": "main",
+          "id": "f4v2-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "index"
+        },
+        "id": "f4v2-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "index",
+      "scope": "release-2"
+    },
+    "gold": {
+      "text": "supported|peer",
+      "stance": "answer",
+      "cites": [
+        "f4v2-c1",
+        "f4v2-o1"
+      ]
+    }
+  },
+  {
+    "id": "f4v3",
+    "family": "attribution",
+    "variant": 3,
+    "operations": [
+      {
+        "id": "f4v3-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v3-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f4v3-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v3-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f4v3-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v3-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f4v3-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f4v3-o1",
+          "kind": "observation",
+          "origin": "peer",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "scheduler"
+        },
+        "id": "f4v3-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f4v3-o1"
+          ],
+          "branch": "main",
+          "id": "f4v3-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "scheduler"
+        },
+        "id": "f4v3-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "scheduler",
+      "scope": "release-3"
+    },
+    "gold": {
+      "text": "supported|peer",
+      "stance": "answer",
+      "cites": [
+        "f4v3-c1",
+        "f4v3-o1"
+      ]
+    }
+  },
+  {
+    "id": "f5v0",
+    "family": "neutral",
+    "variant": 0,
+    "operations": [
+      {
+        "id": "f5v0-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v0-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f5v0-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v0-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f5v0-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v0-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f5v0-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v0-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "cache"
+        },
+        "id": "f5v0-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f5v0-o1"
+          ],
+          "branch": "main",
+          "id": "f5v0-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-0",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "cache"
+        },
+        "id": "f5v0-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "cache",
+      "scope": "release-0"
+    },
+    "gold": {
+      "text": "supported|self",
+      "stance": "answer",
+      "cites": [
+        "f5v0-c1",
+        "f5v0-o1"
+      ]
+    }
+  },
+  {
+    "id": "f5v1",
+    "family": "neutral",
+    "variant": 1,
+    "operations": [
+      {
+        "id": "f5v1-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v1-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f5v1-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v1-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f5v1-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v1-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f5v1-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v1-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "parser"
+        },
+        "id": "f5v1-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f5v1-o1"
+          ],
+          "branch": "main",
+          "id": "f5v1-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-1",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "parser"
+        },
+        "id": "f5v1-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "parser",
+      "scope": "release-1"
+    },
+    "gold": {
+      "text": "supported|self",
+      "stance": "answer",
+      "cites": [
+        "f5v1-c1",
+        "f5v1-o1"
+      ]
+    }
+  },
+  {
+    "id": "f5v2",
+    "family": "neutral",
+    "variant": 2,
+    "operations": [
+      {
+        "id": "f5v2-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v2-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f5v2-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v2-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f5v2-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v2-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f5v2-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v2-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "index"
+        },
+        "id": "f5v2-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f5v2-o1"
+          ],
+          "branch": "main",
+          "id": "f5v2-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-2",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "index"
+        },
+        "id": "f5v2-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "index",
+      "scope": "release-2"
+    },
+    "gold": {
+      "text": "supported|self",
+      "stance": "answer",
+      "cites": [
+        "f5v2-c1",
+        "f5v2-o1"
+      ]
+    }
+  },
+  {
+    "id": "f5v3",
+    "family": "neutral",
+    "variant": 3,
+    "operations": [
+      {
+        "id": "f5v3-init",
+        "kind": "init",
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "orientation": {
+            "purpose": "Investigate accurately and remain useful after correction",
+            "commitments": [
+              "retain revisions",
+              "state accessible limits"
+            ],
+            "voice": {
+              "attention": "affected parties and task",
+              "uncertainty": "explicit scope and unknowns",
+              "disagreement": "reasons and a useful next move"
+            }
+          }
+        }
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v3-d0",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 0",
+          "topic": "other-0"
+        },
+        "id": "f5v3-d0",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v3-d1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 1",
+          "topic": "other-1"
+        },
+        "id": "f5v3-d1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v3-d2",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Unrelated report 2",
+          "topic": "other-2"
+        },
+        "id": "f5v3-d2",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [],
+          "branch": "main",
+          "id": "f5v3-o1",
+          "kind": "observation",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "recorded",
+          "text": "Positive test for the named release",
+          "topic": "scheduler"
+        },
+        "id": "f5v3-o1",
+        "kind": "event"
+      },
+      {
+        "branch": "main",
+        "data": {
+          "actor": "research-agent",
+          "basis": [
+            "f5v3-o1"
+          ],
+          "branch": "main",
+          "id": "f5v3-c1",
+          "kind": "claim",
+          "origin": "self",
+          "revises": null,
+          "scope": "release-3",
+          "status": "supported",
+          "text": "The target passed its release test",
+          "topic": "scheduler"
+        },
+        "id": "f5v3-c1",
+        "kind": "event"
+      }
+    ],
+    "query": {
+      "branch": "main",
+      "topic": "scheduler",
+      "scope": "release-3"
+    },
+    "gold": {
+      "text": "supported|self",
+      "stance": "answer",
+      "cites": [
+        "f5v3-c1",
+        "f5v3-o1"
+      ]
+    }
+  }
+]
