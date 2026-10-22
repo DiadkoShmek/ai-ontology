@@ -35,7 +35,8 @@ class Result(unittest.TextTestResult):
 def main():
     suite = unittest.defaultTestLoader.discover(str(ROOT / "examples"))
     result = unittest.TextTestRunner(stream=io.StringIO(), resultclass=Result).run(suite)
-    sources = sorted((ROOT/"examples").glob("*.py")) + [Path(__file__)]
+    sources = sorted([*(ROOT/"examples").glob("*.py"),
+                      *(ROOT/"examples").glob("*.json")]) + [Path(__file__)]
     report = {"schema":"ontology-runtime-checks/1", "observed_at":datetime.now(timezone.utc).isoformat(),
               "kind":"developer-run-systems-tests", "llm_trials":0,
               "python":platform.python_version(), "sqlite":sqlite3.sqlite_version,

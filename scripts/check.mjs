@@ -24,6 +24,11 @@ assert.equal(report.success,true);
 assert.equal(report.llm_trials,0);
 assert.equal(report.results.length,report.tests_run);
 assert(report.results.every(r=>r.status==='passed'));
+const reportInputs=fs.readdirSync(path.join(root,'examples'))
+ .filter(f=>/\.(?:py|json)$/.test(f)).map(f=>`examples/${f}`);
+reportInputs.push('research/run_runtime_checks.py');
+assert(reportInputs.includes('examples/iris-events.json'),'missing runtime fixture');
+assert.deepEqual(Object.keys(report.sources).sort(),reportInputs.sort(),'runtime report input coverage mismatch');
 for(const [file,hash] of Object.entries(report.sources))assert.equal(sha(read(file)),hash,`stale runtime report: ${file}`);
 const html=read('docs/index.html');
 assert.equal((html.match(/class="part"/g)||[]).length,meta.parts.length);

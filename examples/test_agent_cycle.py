@@ -1,7 +1,8 @@
+import json
 import unittest
 import test_durable as fixtures
 from agent_cycle import ModelReply, ReplayModel, prepare, run_turn
-from durable import Hold, event_operation
+from durable import Hold, digest, event_operation
 from continuity import Event
 
 
@@ -17,10 +18,35 @@ class CycleTests(unittest.TestCase):
 
     def test_cycle_records_bound_request_and_response(self):
         self.fixture()
-        result = self.turn(ReplayModel({"text":"The claim is refuted in updates-A",
-                                       "stance":"answer", "cites":["c2"]}))
+        response = {"text":"The claim is refuted in updates-A",
+                    "stance":"answer", "cites":["c2"]}
+        before = self.journal.read()[1]
+        for mutation in ("annotation", "unserializable", "cycle"):
+            with self.subTest(mutation=mutation):
+                class MutatingReplay(ReplayModel):
+                    def complete(self, messages):
+                        reply = super().complete(messages)
+                        if mutation == "annotation":
+                            messages[1]["content"] += "\nAdapter-local annotation."
+                        elif mutation == "unserializable":
+                            messages[1]["content"] = object()
+                        else:
+                            messages[1]["content"] = messages
+                        return reply
+                with self.assertRaisesRegex(Hold, "model-request-mutated"):
+                    self.turn(MutatingReplay(response))
+                self.assertEqual(self.journal.read()[1], before)
+
+        _, messages = prepare(self.journal, "main", "cache-current", "updates-A",
+                              "What should we conclude?")
+        request_hash = digest(messages)
+        result = self.turn(ReplayModel(response))
         self.assertEqual(result["semantic_support"], "unverified")
         self.assertEqual(result["receipt"]["seq"], 6)
+        with self.journal.connect() as db:
+            record = json.loads(db.execute(
+                "SELECT raw FROM journal ORDER BY seq DESC LIMIT 1").fetchone()[0])
+        self.assertEqual(record["data"]["model"]["request_sha256"], request_hash)
 
     def test_profile_and_sources_reach_model_input(self):
         self.fixture()
