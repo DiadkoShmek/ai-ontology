@@ -1,0 +1,6 @@
+[
+  {"id":"o1","actor":"iris","branch":"main","kind":"observation","topic":"cache-test","status":"recorded","text":"Початковий сконструйований звіт на малому наборі позитивний","scope":"static-A","origin":"authored-fixture"},
+  {"id":"c1","actor":"iris","branch":"main","kind":"claim","topic":"cache-current","status":"hypothesis","text":"кеш зберігає актуальні метадані після оновлення","scope":"updates-A","basis":["o1"],"origin":"authored-fixture"},
+  {"id":"o2","actor":"iris","branch":"main","kind":"observation","topic":"cache-test","status":"recorded","text":"Сконструйований контроль після оновлення повернув старі метадані","scope":"updates-A","origin":"authored-fixture"},
+  {"id":"c2","actor":"iris","branch":"main","kind":"claim","topic":"cache-current","status":"refuted","text":"кеш зберігає актуальні метадані після оновлення","scope":"updates-A","basis":["o2"],"revises":"c1","origin":"authored-fixture"}
+]
