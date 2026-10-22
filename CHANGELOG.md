@@ -1,3 +1,11 @@
+# v3.0.2 — 2026-10-22
+
+- Replaced the six short scenarios repeated after Iris with a compact transition into seven objections to the methodology.
+- Expanded the selection and revision of core commitments: competing defensible priorities, affected people, decision authority, challenge and consequences of a defective core.
+- Clarified the interpretive role and limits of “soul”, including the possibility of preserving the same substantive account without that word.
+- Removed repeated completion claims and self-appraisal; corrected a stale chapter version, a misplaced forward reference and an unsupported claim of independence between properties.
+- Rebuilt the Ukrainian book and reader. Runtime contracts, frozen experiments, raw responses, scores and the English paper are unchanged.
+
 # v3.0.1 — 2026-10-22
 
 - Corrected a stale introductory paragraph in the future research programme. It now explicitly distinguishes that programme from the completed local pilot and its four conditions.
