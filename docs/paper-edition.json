@@ -1,6 +1,6 @@
 {
   "schema": "ai-ontology-paper/1",
-  "edition": "3.0.1",
+  "edition": "3.0.2",
   "pdf": "docs/downloads/scoped-continuity-study-en.pdf",
   "pdf_sha256": "fafa35a7587fbb92a9e729e7c429b7516e3ccf247c7cea56581e2bf3bc16d9f0",
   "reportlab": "4.4.9",

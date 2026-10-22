@@ -1,11 +1,11 @@
 {
   "title": "Онтологія AI",
   "volume": 1,
-  "edition": "3.0.1",
+  "edition": "3.0.2",
   "author": "Artur Onysko",
-  "metadata_sha256": "824030459a773da60f32219cfb13853f50914f238d2fa13d3dbf168ac4f1d3a8",
-  "source_sha256": "0900e36e8e2e1f741ffd4417b0ec4072f3f69351f6ca54c65738eb31a80ec6cf",
-  "book_sha256": "6514e1c5325e0d341a40cc080bb4bd42a6068d18e5f1db45ae64cc4a58b91f6e",
+  "metadata_sha256": "fd004873410aceb76930624166358ca510aa6055ee3658a1de495e8c5f8f29e9",
+  "source_sha256": "22a4fe9bc6887b6aff798f9fd8826b959e7ef50365987bc55733c501a6e07a86",
+  "book_sha256": "36b493ac1ce0a260651c8b212b4f20acd83d0f4d585d9c8ab09dd19e4a080939",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
@@ -13,11 +13,11 @@
     },
     {
       "path": "book/ua/01-core.md",
-      "sha256": "3d2068c28c53dc064ed4014410043a87fdc0142abb66f3f45ba7c02af204177c"
+      "sha256": "a038cef44a4c4ed95728a5cb8ccc2613aafee118459a046ccf8e8a089c9bcba2"
     },
     {
       "path": "book/ua/02-foundations.md",
-      "sha256": "4a8faa623cc6f9c66e20b26a42320186e1bfcb15400fcb38294f18ac56de911b"
+      "sha256": "38b5e5f7229b1f4ddbbd2d5f57ea8f0faaa15fd22f24769e857e85fe27adbc9c"
     },
     {
       "path": "book/ua/03-relations.md",
@@ -33,11 +33,11 @@
     },
     {
       "path": "book/ua/07-iris.md",
-      "sha256": "bc23f39b7342f32fbb5c6c93ecda2941c235cc7943d81bace0ded898a02d07b1"
+      "sha256": "77ef14920212d5fd6ce9b141ccfe4370d3af09e18ff7dc8d4b29f31c65300bbc"
     },
     {
       "path": "book/ua/04-cases.md",
-      "sha256": "d621a5753baad7fdf18dcd93956180f85b37903abb15de4c3161d56ffe429f3e"
+      "sha256": "a217f475f757be9d4ebd1a69a7daf2d02eabfc473e63463b613307ff98dbf3a8"
     },
     {
       "path": "book/ua/08-model.md",
@@ -49,7 +49,7 @@
     },
     {
       "path": "book/ua/10-method.md",
-      "sha256": "78b802cc3872ad2377e28fa3c8c87e000a41e7afaf05a4332db0d99b6913e5b7"
+      "sha256": "fc61724a424371041df6f2b23afc8b63147d3b2020ca74a6b489e961e68ae00e"
     },
     {
       "path": "book/ua/11-study.md",
