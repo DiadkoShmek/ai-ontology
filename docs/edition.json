@@ -1,0 +1,39 @@
+{
+  "title": "Онтологія AI",
+  "volume": 1,
+  "edition": "1.0.0",
+  "author": "Artur Onysko",
+  "source_sha256": "aa454a2ccd2fbc529141a26d418328d742e7d4b25b05cd3e3ed0e24bcdce3ce5",
+  "book_sha256": "eab301550993bea07392f4a1b74af4e69fdff14e03d39c3b1fc0d956acd9ed6d",
+  "source_files": [
+    {
+      "path": "book/ua/00-opening.md",
+      "sha256": "62fc4646c9246a9d9fa1520ef7d0c1a69850655cbf1ea17c46496198dbc05b5e"
+    },
+    {
+      "path": "book/ua/01-core.md",
+      "sha256": "0246de1119baffe1a963a2cf495accd564bf1c2497b2eee75e18c6ac3ef922d1"
+    },
+    {
+      "path": "book/ua/02-engineering.md",
+      "sha256": "09be5de8cf742597cdfbaee299e850d2777fb2a8ce7a16133123b78e1e2daae1"
+    },
+    {
+      "path": "book/ua/03-relations.md",
+      "sha256": "dfb5a44e30102f736cba537a84c2c99d0020bb18b187d1212613c131fe5b8a9e"
+    },
+    {
+      "path": "book/ua/04-cases.md",
+      "sha256": "6f3e7935c43cf36691a6f10720fcb5dfa69a2b915852d6542e586e01d48d2c72"
+    },
+    {
+      "path": "book/ua/05-research.md",
+      "sha256": "e570ff24b1d7ba75739a950cd2d34d3a29043968637082a058557c930b06786f"
+    },
+    {
+      "path": "book/ua/06-references.md",
+      "sha256": "bc94ee92b2654d27332293c0d893c9c5bf17cbf02588d78456099fca6bd7605d"
+    }
+  ],
+  "empirical_trials": 0
+}
