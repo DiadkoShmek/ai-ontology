@@ -1,3 +1,8 @@
+# v3.0.1 — 2026-10-22
+
+- Corrected a stale introductory paragraph in the future research programme. It now explicitly distinguishes that programme from the completed local pilot and its four conditions.
+- Rebuilt the book and paper artifacts with consistent edition metadata. Experiment materials, raw responses, scores and conclusions are unchanged.
+
 # v3.0.0 — 2026-10-22
 
 - Completed Book One with an implementation method and a Ukrainian empirical chapter, for fourteen parts.
