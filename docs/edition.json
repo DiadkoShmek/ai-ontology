@@ -1,38 +1,55 @@
 {
   "title": "Онтологія AI",
   "volume": 1,
-  "edition": "1.0.0",
+  "edition": "2.0.0",
   "author": "Artur Onysko",
-  "source_sha256": "aa454a2ccd2fbc529141a26d418328d742e7d4b25b05cd3e3ed0e24bcdce3ce5",
-  "book_sha256": "eab301550993bea07392f4a1b74af4e69fdff14e03d39c3b1fc0d956acd9ed6d",
+  "metadata_sha256": "3175464500f5af9bdc38e17a181e4ec80a5d004108fb7d1b374be4149624e437",
+  "source_sha256": "4fc01c76ab11aa9ccb2376901fb1945758d458a195315dd83c0a0d090c1d03b7",
+  "book_sha256": "2d69c470a9b0e2d97831b5bef95ea65d1ab4473fbace984bdcce24d42c5417fb",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
-      "sha256": "62fc4646c9246a9d9fa1520ef7d0c1a69850655cbf1ea17c46496198dbc05b5e"
+      "sha256": "5826afebf740035f30c73bc651b7c103bf449392c4226b66e73cd5f182e4f6f1"
     },
     {
       "path": "book/ua/01-core.md",
-      "sha256": "0246de1119baffe1a963a2cf495accd564bf1c2497b2eee75e18c6ac3ef922d1"
+      "sha256": "6e7c7ee30dbb3b0b4f24b40831bfcd65cf77822ea56fe2c8d2853fe50a5d7005"
     },
     {
-      "path": "book/ua/02-engineering.md",
-      "sha256": "09be5de8cf742597cdfbaee299e850d2777fb2a8ce7a16133123b78e1e2daae1"
+      "path": "book/ua/02-foundations.md",
+      "sha256": "15cdb9e827bbc85637fcabb51dda9002b90eaee7df95de03bc40fa5329ed300c"
     },
     {
       "path": "book/ua/03-relations.md",
-      "sha256": "dfb5a44e30102f736cba537a84c2c99d0020bb18b187d1212613c131fe5b8a9e"
+      "sha256": "afd5af31b7c88fdea9b83dfc30da7272a4c92de6ddc3aaeeffdb73ab44cda242"
+    },
+    {
+      "path": "book/ua/04-continuity.md",
+      "sha256": "a106a2925b06e1856dd9517698cf3622cee06a8784593226ed1e14bac6b4d7c4"
+    },
+    {
+      "path": "book/ua/02-engineering.md",
+      "sha256": "0184ac13029ba8fc588f8fbaf579e41c50b439594ce4069450d94c2e6d8a8a29"
+    },
+    {
+      "path": "book/ua/07-iris.md",
+      "sha256": "6cdde807da3f60d4d6c0a0c5fac83a141d715218e503d11b0dfc8d9e28bf0a0d"
     },
     {
       "path": "book/ua/04-cases.md",
-      "sha256": "6f3e7935c43cf36691a6f10720fcb5dfa69a2b915852d6542e586e01d48d2c72"
+      "sha256": "e1595993c59477496f9c9359158c7d1caab916ed2d76191304c57c5a3dea849c"
+    },
+    {
+      "path": "book/ua/08-model.md",
+      "sha256": "4cc7e2c2b45ad533edeb1880d8bd59d1edbbcd2edfeceb658979c1b8eec72c13"
     },
     {
       "path": "book/ua/05-research.md",
-      "sha256": "e570ff24b1d7ba75739a950cd2d34d3a29043968637082a058557c930b06786f"
+      "sha256": "9c0f38e38b55db44eb7418440dd80f855376f238c8d5b380221b655a04c70aea"
     },
     {
       "path": "book/ua/06-references.md",
-      "sha256": "bc94ee92b2654d27332293c0d893c9c5bf17cbf02588d78456099fca6bd7605d"
+      "sha256": "207bf7b723d0376d1633ed6db237aff009a9471457ac4978cb7bc1b9a7d66692"
     }
   ],
   "empirical_trials": 0
