@@ -1,3 +1,13 @@
+# v3.1.0 — 2026-10-22
+
+- Added an epistemic intake procedure distinguishing received material, interpretation, scope, alternatives and a discriminating next check. The existing runtime still receives authored typed inputs.
+- Developed revision of continuity criteria: preserve assessments under old and new requirements, the authority and reason for change, and recognized losses without retrospectively relabeling failure as success.
+- Extended Iris and Orion through a sustained disagreement over privacy and reproducibility, a consequential pilot decision and revision of their distinct patterns of attention. All dialogue remains explicitly constructed.
+- Connected these additions to the implementation method and a proposed evaluation of distinct, equally admissible voices. No live voice study is claimed.
+- Clarified the empirical comparison in the book, paper, abstract and review guide: both compact conditions use the same compiler and retain substantive relations; naming, wrapping and sorted field order remain confounded.
+- Bound the current paper and research-index edition labels to the publication checks after finding a stale label during visual review.
+- Rebuilt both PDFs and the reader. Runtime code, frozen protocols, raw responses, answer keys and scores are unchanged; there are no additional model trials.
+
 # v3.0.2 — 2026-10-22
 
 - Replaced the six short scenarios repeated after Iris with a compact transition into seven objections to the methodology.

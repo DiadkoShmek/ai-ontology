@@ -12,6 +12,8 @@ assert.equal(edition.metadata_sha256,sha(read('edition.json')));
 assert.equal(edition.edition,meta.version);
 assert.equal(edition.edition,JSON.parse(read('package.json')).version);
 assert(read('CITATION.cff').includes(`version: ${meta.version}`));
+assert(read('research/README.md').includes(`accompanying book v${meta.version}**`),'research README edition mismatch');
+assert(read('research/SCOPED_CONTINUITY_STUDY.md').includes(`Organization of Self*, v${meta.version}.`),'working paper edition mismatch');
 const book=read('BOOK_UA.md');
 assert.equal(sha(book),edition.book_sha256);
 assert.equal(book,read('docs/downloads/BOOK_UA.md'));

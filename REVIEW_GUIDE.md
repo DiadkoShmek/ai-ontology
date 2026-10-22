@@ -18,6 +18,8 @@ Identity, voice, memory and relationships can be examined as interacting aspects
 
 The follow-up exact scores are 20/16/16/20 for Qwen3 4B and 5/2/12/12 for Granite 3.3 2B across journal, ontology wrapper, compiled context and simple index. There is no observed aggregate advantage over the information-matched simple index. Compilation includes deterministic preprocessing; ontology framing adds text. The cases are authored, short, dependent and reused after the first instrument failure.
 
+Both compact conditions use the same compiler and preserve the substantive relations. This is a presentation control, not an independent memory implementation or a test of removing provenance, scope and revision. Sorted keys also leave naming and ordering confounded.
+
 The 49 systems tests establish bounded transition behavior. The 384 scored model calls evaluate structured decisions. The two integration smoke calls exercise a live adapter path. These are different evidence classes. Voice, the effect of reading, identity, long-run interaction and natural-task benefit are not measured by those counts.
 
 ## Reproduce without inference
