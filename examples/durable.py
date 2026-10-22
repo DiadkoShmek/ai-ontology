@@ -27,8 +27,11 @@ class Hold(ValueError):
 
 
 def canonical(value):
-    return json.dumps(value, ensure_ascii=False, sort_keys=True,
-                      separators=(",", ":"), allow_nan=False).encode("utf-8")
+    try:
+        return json.dumps(value, ensure_ascii=False, sort_keys=True,
+                          separators=(",", ":"), allow_nan=False).encode("utf-8")
+    except UnicodeEncodeError as exc:
+        raise Hold("invalid-utf8") from exc
 
 
 def digest(value):
@@ -41,7 +44,13 @@ def closed(value, keys):
 
 
 def text(value, cap=4096):
-    if type(value) is not str or not value.strip() or len(value.encode()) > cap:
+    if type(value) is not str or not value.strip():
+        raise Hold("invalid-text")
+    try:
+        size = len(value.encode("utf-8"))
+    except UnicodeEncodeError as exc:
+        raise Hold("invalid-text") from exc
+    if size > cap:
         raise Hold("invalid-text")
 
 
@@ -168,7 +177,9 @@ def reduce(world, op, head):
             expected = packet(world, branch, ctx["topic"], ctx["scope"], head, ctx["budget"])
         except (KeyError, TypeError) as exc:
             raise Hold("invalid-context") from exc
-        if ctx != expected:
+        # Python equality conflates JSON false/0 and 0.0/0. Context binding
+        # requires the canonical representation, including those types.
+        if canonical(ctx) != canonical(expected):
             raise Hold("stale-or-forged-context")
         answer = data["response"]
         closed(answer, ("text", "stance", "cites"))

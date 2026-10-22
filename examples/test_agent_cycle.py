@@ -76,4 +76,14 @@ class CycleTests(unittest.TestCase):
         with self.assertRaisesRegex(Hold,"model-json-invalid"):
             self.turn(Broken(), "fake/1")
 
+        class InvalidUnicode:
+            def complete(self, messages):
+                return ModelReply("fake/1", r'{"text":"\ud800","stance":"answer","cites":[]}')
+        before = self.journal.read()[1]
+        with self.assertRaisesRegex(Hold, "invalid-utf8"):
+            self.turn(InvalidUnicode(), "fake/1")
+        self.assertEqual(self.journal.read()[1], before)
+        with self.assertRaisesRegex(Hold, "invalid-text"):
+            prepare(self.journal, "main", "x", "s", "\ud800")
+
 

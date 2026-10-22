@@ -181,10 +181,19 @@ os._exit(17)
     def test_forged_context_rejected(self):
         self.fixture()
         ctx = self.journal.context("main", "cache-current", "updates-A")
-        ctx["view"]["status"] = "supported"
-        ctx["context_sha256"] = "forged"
-        with self.assertRaisesRegex(Hold, "stale-or-forged-context"):
-            self.add(self.decision(ctx))
+        before = self.journal.read()[1]
+        for mutation in ("status", "boolean-count", "float-count"):
+            with self.subTest(mutation=mutation):
+                changed = copy.deepcopy(ctx)
+                if mutation == "status":
+                    changed["view"]["status"] = "supported"
+                    changed["context_sha256"] = "forged"
+                else:
+                    self.assertEqual(changed["omitted_event_count"], 0)
+                    changed["omitted_event_count"] = False if mutation == "boolean-count" else 0.0
+                with self.assertRaisesRegex(Hold, "stale-or-forged-context"):
+                    self.add(self.decision(changed))
+                self.assertEqual(self.journal.read()[1], before)
 
     def test_unavailable_citation_rejected(self):
         self.fixture()
