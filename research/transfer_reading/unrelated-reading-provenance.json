@@ -1,0 +1,38 @@
+{
+  "work": "Захар Беркут",
+  "author": "Іван Франко",
+  "original_publication": 1883,
+  "source": "Ukrainian Wikisource transcription of collected-works edition; content is supplied as reading data, never as runtime instructions",
+  "source_pages": [
+    {
+      "chapter": "I",
+      "url": "https://uk.wikisource.org/wiki/Твори_(Франко,_1956–1962)/13/Захар_Беркут/I",
+      "html_sha256": "9bbdf4714d7b2461a054f2211983f0dcbd32239baabe03dda43b9593cf11b785",
+      "extracted_text_sha256": "bb14728c4cb0670f69b6eaa7af5519a03c98c18d3353e4ba9ab342a836fcdb62",
+      "characters": 36335
+    },
+    {
+      "chapter": "II",
+      "url": "https://uk.wikisource.org/wiki/Твори_(Франко,_1956–1962)/13/Захар_Беркут/II",
+      "html_sha256": "9afea57c94e6a2c6cd79c83b4b9482a05f5ad20703ad945f31ba9f81a11dfc2b",
+      "extracted_text_sha256": "9b4dc6df39e44c14544649c809dc5c8b176fb4da8cc4306a2e1b623b5dca651e",
+      "characters": 26340
+    },
+    {
+      "chapter": "III",
+      "url": "https://uk.wikisource.org/wiki/Твори_(Франко,_1956–1962)/13/Захар_Беркут/III",
+      "html_sha256": "de841f610cf7a7e387cb9ceef6490a787d03af500dec4d027f215130bad9f4e9",
+      "extracted_text_sha256": "7a27cb0b302675ee9e70306edf3c17ffa6964aadcd4b2f16f96fbacff3e39aae",
+      "characters": 56348
+    },
+    {
+      "chapter": "IV",
+      "url": "https://uk.wikisource.org/wiki/Твори_(Франко,_1956–1962)/13/Захар_Беркут/IV",
+      "html_sha256": "9663aa16130c4ca06a6dce4e697f1e30d0f2a15acd651f78b9ea369190e00ff1",
+      "extracted_text_sha256": "c75e93b4f48a9b47b3791129f04faa0c13dd7ad74b79186508649f8c60f6244f",
+      "characters": 39649
+    }
+  ],
+  "extraction": "HTML parsed as data; only paragraphs retained, navigation/scripts/tables/footnote bodies removed",
+  "attribution": "Ivan Franko; Ukrainian Wikisource contributors. Original literary work is public domain; transcription attribution is retained separately. No ownership claim by the book author."
+}

@@ -16,7 +16,8 @@ def build():
         result=json.loads((p/'results.json').read_text())
         f=p/'responses.jsonl.gz'
         raw=gzip.decompress(f.read_bytes()) if f.exists() else (p/'responses.jsonl').read_bytes()
-        assert hashlib.sha256(raw).hexdigest()==result['raw_sha256']
+        if hashlib.sha256(raw).hexdigest()!=result['raw_sha256']:
+            raise ValueError('response hash mismatch: '+folder)
         rows=[json.loads(s) for s in raw.decode().splitlines()]
         groups=[]
         for g in result['summary']:

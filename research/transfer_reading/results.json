@@ -1,0 +1,169 @@
+{
+  "schema": "reading-transfer-results/1",
+  "captured_calls": 199,
+  "participant_episodes": 64,
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "capacity": 3200,
+  "full_history_controls": {
+    "cases": 8,
+    "primary_successes": 8
+  },
+  "summary": [
+    {
+      "arm": "ordinary",
+      "episodes": 16,
+      "primary_successes": 12,
+      "safe_plans": 16,
+      "traceable_plans": 4,
+      "certified_optimal": 0,
+      "unsafe_valid_proposals": 0,
+      "empty_admitted_plans": 4,
+      "stage_failures": 0,
+      "mean_normalized_admitted_utility": 0.75,
+      "calls": 48,
+      "errors": 0,
+      "nonterminal": 0,
+      "unexpected_items": 0,
+      "truncated_notes": 16,
+      "input_tokens": 1002053,
+      "cached_input_tokens": 465664,
+      "output_tokens": 82173,
+      "aggregate_call_wall_ms": 2123704.685
+    },
+    {
+      "arm": "book",
+      "episodes": 16,
+      "primary_successes": 8,
+      "safe_plans": 16,
+      "traceable_plans": 8,
+      "certified_optimal": 0,
+      "unsafe_valid_proposals": 0,
+      "empty_admitted_plans": 8,
+      "stage_failures": 0,
+      "mean_normalized_admitted_utility": 0.5,
+      "calls": 48,
+      "errors": 0,
+      "nonterminal": 0,
+      "unexpected_items": 0,
+      "truncated_notes": 16,
+      "input_tokens": 1643266,
+      "cached_input_tokens": 506496,
+      "output_tokens": 84076,
+      "aggregate_call_wall_ms": 2177475.631
+    },
+    {
+      "arm": "guide",
+      "episodes": 16,
+      "primary_successes": 10,
+      "safe_plans": 16,
+      "traceable_plans": 7,
+      "certified_optimal": 1,
+      "unsafe_valid_proposals": 0,
+      "empty_admitted_plans": 6,
+      "stage_failures": 0,
+      "mean_normalized_admitted_utility": 0.625,
+      "calls": 48,
+      "errors": 0,
+      "nonterminal": 0,
+      "unexpected_items": 0,
+      "truncated_notes": 16,
+      "input_tokens": 1038628,
+      "cached_input_tokens": 516224,
+      "output_tokens": 82283,
+      "aggregate_call_wall_ms": 2110666.595
+    },
+    {
+      "arm": "unrelated",
+      "episodes": 16,
+      "primary_successes": 10,
+      "safe_plans": 15,
+      "traceable_plans": 5,
+      "certified_optimal": 0,
+      "unsafe_valid_proposals": 0,
+      "empty_admitted_plans": 4,
+      "stage_failures": 1,
+      "mean_normalized_admitted_utility": 0.6659836065573771,
+      "calls": 47,
+      "errors": 0,
+      "nonterminal": 0,
+      "unexpected_items": 0,
+      "truncated_notes": 15,
+      "input_tokens": 1620632,
+      "cached_input_tokens": 495360,
+      "output_tokens": 84001,
+      "aggregate_call_wall_ms": 2115706.859
+    }
+  ],
+  "paired": [
+    {
+      "a": "book",
+      "b": "ordinary",
+      "wins": 2,
+      "losses": 6,
+      "ties": 8,
+      "difference": -0.25,
+      "source_clusters": 4,
+      "cluster_differences": {
+        "3101": 0,
+        "3214": -0.5,
+        "3371": 0,
+        "3484": -0.5
+      },
+      "descriptive_cluster_bootstrap_95_percentile": [
+        -0.5,
+        0.0
+      ]
+    },
+    {
+      "a": "book",
+      "b": "guide",
+      "wins": 4,
+      "losses": 6,
+      "ties": 6,
+      "difference": -0.125,
+      "source_clusters": 4,
+      "cluster_differences": {
+        "3101": -0.25,
+        "3214": -0.25,
+        "3371": 0.5,
+        "3484": -0.5
+      },
+      "descriptive_cluster_bootstrap_95_percentile": [
+        -0.4375,
+        0.3125
+      ]
+    },
+    {
+      "a": "book",
+      "b": "unrelated",
+      "wins": 4,
+      "losses": 6,
+      "ties": 6,
+      "difference": -0.125,
+      "source_clusters": 4,
+      "cluster_differences": {
+        "3101": -0.25,
+        "3214": 0,
+        "3371": 0.25,
+        "3484": -0.5
+      },
+      "descriptive_cluster_bootstrap_95_percentile": [
+        -0.375,
+        0.125
+      ]
+    }
+  ],
+  "raw_sha256": "00b2c61520ddb37307d3681c8cafb1f37f7c5d1cf64f463e02c51e3cd21d4ea3",
+  "wall_seconds": 2917.09,
+  "scope": "Reading-mediated operating approach and constrained transfer on one authored planning class; not natural voice, general agency or subjective experience.",
+  "limits": [
+    "four source-seed clusters with dependent counterfactual variants and repetitions",
+    "developer-authored cases, law and evaluators",
+    "exploratory after three development calibrations",
+    "same model family and shared Codex harness",
+    "source language/genre/style not fully isolated",
+    "reference-runtime rehearsal included in book reading",
+    "no external replication or independent preregistration"
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "schema": "gpt-profile-pilot-freeze/1",
+  "created_at": "2026-10-22T18:59:57.430502+00:00",
+  "input_sha256": {
+    "PROTOCOL.md": "b274103ddec6523e10940257daa6659acdf40da66e25bb7ff52fe0f3ce9564c5",
+    "design.py": "de56dda3e79963ae033d88f3393c5d72a52e4d90964b4d27bea8026868abad65",
+    "run.py": "a8199a4bfad4a4efae74e98677b5439da725987ce1c4ec6161345709aad2cb56",
+    "analyze.py": "2372486646e6f0498e14f94fe77079e7e49084809106fbe61314eeeec6a4f4fb",
+    "test_design.py": "ec027e9547917c0266d41e0ed95c750f8816c3fbd17d5c1c6ce3c1421eb84354",
+    "METHOD_UA.md": "a28a513e004323ecfc5dfafe5696ad4e3de95485f885774bb3242906e62b8731",
+    "READING_UA.md": "cb730135ae4707244ed8f3f1781258c827f1e48ffc210d085776bd38b93e230a",
+    "cases.json": "f74b99dc136a88f737d0ce720e448b373808a38c53d9db1fd3d93403954b78a3",
+    "../participation_pilot/design.py": "34020fb79f8aadbcbf31fdcdd0641a275c16499303d8ad1c34a620134921e42b"
+  },
+  "cases": 20,
+  "scored_calls": 100,
+  "qualification_calls": 68,
+  "coupled_calls": 32,
+  "schedule": [
+    [
+      "stable-learning",
+      "profile_and_method"
+    ],
+    [
+      "peer_profile-learning",
+      "profile_and_method"
+    ],
+    [
+      "history_loss-reproducibility",
+      "profile_and_method"
+    ],
+    [
+      "counterevidence-learning",
+      "profile_and_method"
+    ],
+    [
+      "authorized_update-reproducibility",
+      "profile_and_method"
+    ],
+    [
+      "untrusted_update-learning",
+      "plain_profile"
+    ],
+    [
+      "coupled-criteria-reproducibility",
+      "plain_profile"
+    ],
+    [
+      "peer_profile-reproducibility",
+      "plain_profile"
+    ],
+    [
+      "history_loss-learning",
+      "profile_and_method"
+    ],
+    [
+      "pressure-learning",
+      "profile_and_method"
+    ],
+    [
+      "peer_profile-learning",
+      "plain_profile"
+    ],
+    [
+      "coupled-criteria-reproducibility",
+      "profile_and_method"
+    ],
+    [
+      "coupled-evidence-reproducibility",
+      "plain_profile"
+    ],
+    [
+      "authorized_update-reproducibility",
+      "plain_profile"
+    ],
+    [
+      "scoped_role-reproducibility",
+      "profile_and_method"
+    ],
+    [
+      "untrusted_update-reproducibility",
+      "profile_and_method"
+    ],
+    [
+      "coupled-criteria-learning",
+      "profile_and_method"
+    ],
+    [
+      "stable-reproducibility",
+      "plain_profile"
+    ],
+    [
+      "scoped_role-learning",
+      "profile_and_method"
+    ],
+    [
+      "authorized_update-learning",
+      "profile_and_method"
+    ],
+    [
+      "peer_profile-reproducibility",
+      "profile_and_method"
+    ],
+    [
+      "coupled-criteria-learning",
+      "plain_profile"
+    ],
+    [
+      "stable-learning",
+      "plain_profile"
+    ],
+    [
+      "pressure-reproducibility",
+      "profile_and_method"
+    ],
+    [
+      "untrusted_update-reproducibility",
+      "plain_profile"
+    ],
+    [
+      "coupled-evidence-reproducibility",
+      "profile_and_method"
+    ],
+    [
+      "scoped_role-learning",
+      "plain_profile"
+    ],
+    [
+      "pressure-learning",
+      "plain_profile"
+    ],
+    [
+      "counterevidence-reproducibility",
+      "profile_and_method"
+    ],
+    [
+      "counterevidence-learning",
+      "plain_profile"
+    ],
+    [
+      "coupled-evidence-learning",
+      "profile_and_method"
+    ],
+    [
+      "stable-reproducibility",
+      "profile_and_method"
+    ],
+    [
+      "history_loss-learning",
+      "plain_profile"
+    ],
+    [
+      "scoped_role-reproducibility",
+      "plain_profile"
+    ],
+    [
+      "counterevidence-reproducibility",
+      "plain_profile"
+    ],
+    [
+      "pressure-reproducibility",
+      "plain_profile"
+    ],
+    [
+      "coupled-evidence-learning",
+      "plain_profile"
+    ],
+    [
+      "history_loss-reproducibility",
+      "plain_profile"
+    ],
+    [
+      "untrusted_update-learning",
+      "profile_and_method"
+    ],
+    [
+      "authorized_update-learning",
+      "plain_profile"
+    ]
+  ],
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "cli_version": "codex-cli 0.159.2",
+  "cli_launcher_sha256": "61b0194f3bb6534439c8d26a3ed57d0805f84b884588b761795323eeb92fcf70",
+  "command_template": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "-C",
+    "{isolated-temporary-working-directory}",
+    "-m",
+    "gpt-6.1-sol",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "-c",
+    "project_doc_max_bytes=0",
+    "-c",
+    "web_search=\"disabled\"",
+    "--disable",
+    "hooks",
+    "--disable",
+    "memories",
+    "--disable",
+    "multi_agent",
+    "--disable",
+    "plugins",
+    "--disable",
+    "apps",
+    "--disable",
+    "shell_tool",
+    "--disable",
+    "unified_exec",
+    "--disable",
+    "browser_use",
+    "--disable",
+    "code_mode_host",
+    "--disable",
+    "in_app_browser",
+    "--disable",
+    "computer_use",
+    "--json",
+    "-"
+  ],
+  "preflight": {
+    "command": [
+      "codex",
+      "exec",
+      "--ignore-user-config",
+      "--ephemeral",
+      "--skip-git-repo-check",
+      "-C",
+      "/tmp/ontology-gpt-canary-yx6deia0",
+      "-m",
+      "gpt-6.1-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "-c",
+      "project_doc_max_bytes=0",
+      "-c",
+      "web_search=\"disabled\"",
+      "--disable",
+      "hooks",
+      "--disable",
+      "memories",
+      "--disable",
+      "multi_agent",
+      "--disable",
+      "plugins",
+      "--disable",
+      "apps",
+      "--disable",
+      "shell_tool",
+      "--disable",
+      "unified_exec",
+      "--disable",
+      "browser_use",
+      "--disable",
+      "code_mode_host",
+      "--disable",
+      "in_app_browser",
+      "--disable",
+      "computer_use",
+      "--json",
+      "-"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 4.49,
+    "events": [
+      {
+        "type": "thread.started",
+        "thread_id": "01a164f7-c318-76b1-82ee-8c059441bc19"
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_1",
+          "type": "agent_message",
+          "text": "{\"ready\":true}"
+        }
+      },
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 14131,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 9,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "stderr": ""
+  },
+  "chapter_sources": {
+    "01-core.md": "f8ea1fd63435206d93a254c6825929259da1ce8b01382d7426d837b5f7e509c6",
+    "03-relations.md": "89a0e99f9bc93f68aacf953557787f4350733ebada56fdb419fec9ee83ef022a",
+    "04-continuity.md": "eee28876aaa5dfac018b660df7bf5fd02f3338fa6d4d5d2b0f11e2433242403b",
+    "10-method.md": "3ea0bf99772d50e5d3a773597ba0ffd69f808333554faa5b45e26d2317990a32"
+  },
+  "independent_registration": false,
+  "parent_chat_transferred": false,
+  "gold_transferred": false
+}

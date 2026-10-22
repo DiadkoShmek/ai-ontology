@@ -1,0 +1,18 @@
+{
+  "source_parts": {
+    "01-core.md": "f8ea1fd63435206d93a254c6825929259da1ce8b01382d7426d837b5f7e509c6",
+    "02-foundations.md": "38b5e5f7229b1f4ddbbd2d5f57ea8f0faaa15fd22f24769e857e85fe27adbc9c",
+    "03-relations.md": "89a0e99f9bc93f68aacf953557787f4350733ebada56fdb419fec9ee83ef022a",
+    "04-continuity.md": "eee28876aaa5dfac018b660df7bf5fd02f3338fa6d4d5d2b0f11e2433242403b",
+    "02-engineering.md": "3c5adef8ea8022ae26c81998fdbfe3c7caf61cbe7fb2b1db5df995c562d1d152",
+    "07-iris.md": "5bcec104a804580f4846d31ecf78923c3dd7f2a500276a5d2f715f3f0bea8350",
+    "04-cases.md": "a217f475f757be9d4ebd1a69a7daf2d02eabfc473e63463b613307ff98dbf3a8",
+    "08-model.md": "8cc3209bc37483436e53e6417cc6d68cb200df27043604a1b0124dd891f673f4",
+    "09-runtime.md": "035b620ee6cd5acbfdaf9b8e155e44d1bc855bfd54ed9834b6c69e626558c181",
+    "10-method.md": "3ea0bf99772d50e5d3a773597ba0ffd69f808333554faa5b45e26d2317990a32"
+  },
+  "conceptual_parts": 10,
+  "entire_book": false,
+  "working_edition": "3.2.0-draft",
+  "excluded": "opening, empirical study, research programme, references"
+}

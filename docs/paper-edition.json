@@ -1,13 +1,13 @@
 {
   "schema": "ai-ontology-paper/1",
-  "edition": "3.1.0",
+  "edition": "3.2.0",
   "pdf": "docs/downloads/scoped-continuity-study-en.pdf",
-  "pdf_sha256": "c191f0781926cd5f97e652966914dbb41d1c56e1890699232089b6fcae6a5616",
+  "pdf_sha256": "23c55030aaae16cd12268dab7940365c35b0476f2933a28d441c79b5ef58e004",
   "reportlab": "4.4.9",
   "inputs": {
-    "research/SCOPED_CONTINUITY_STUDY.md": "27e5c8dfca0663116b0bac82b88074f9f8e48910960c021886ddb581c12ac0c3",
+    "research/SCOPED_CONTINUITY_STUDY.md": "f671235cd6bc7864829ea9887c08334598bc30ec507aa7f25a57ae7e57cbe5be",
     "research/continuity-results.png": "50f976301468365f4498bfc561c23c46bba4b71b40b916afa7235bfa067ff965",
-    "scripts/build_paper.py": "cb35a09b44277dad5d918d54d899f7be17c12aa62f9e210d6027011da225f9f2",
+    "scripts/build_paper.py": "ec4354eb454f553ea00ffb774f8d08deb6b6355840ff1f1bec57a0629be02dff",
     "requirements.txt": "054e7483ed0899a13425d3ff89d0ae162290c88989825c77d22174ceb36f33f1",
     "docs/assets/serif.ttf": "8f2c103bfa3fd5de71f1b92b18f21906b5a26871fb7e19a9a4c9af539c3cc7ab",
     "docs/assets/serif-bold.ttf": "847b33e13925f19ff87e4d934d6b3cf7cac35ce16424f6f670e40c2f377cf2df",

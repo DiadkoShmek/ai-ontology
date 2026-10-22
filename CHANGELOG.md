@@ -1,3 +1,18 @@
+# v3.2.0 — 2026-10-22
+
+- Developed subject-participation as a functional and ethical research question, distinct from phenomenal consciousness, with explicit treatment of position, authorship and justified revision.
+- Added a prospectively frozen local qualification pilot: 136 scored decisions in 16 authored episodes, eight dependent families, two models and two conditions. Qwen complete-episode scores were 9/16 versus 10/16; Granite 5/16 versus 0/16. Preserved all responses, 29 unnecessary Granite deferrals, token overhead and the text/language/length confound. No general benefit or subjectivity result is claimed.
+- Added separately frozen GPT-6.1 Sol/high profile and coupled-transition evaluations. Preserved an interrupted 53-reply instrument and its strict failed scores; the repaired 100-call cohort scored 50/50 per condition, with 96 read-back plan effects and no marginal accuracy gain from added reading at the control ceiling. Reported input overhead and two unscored route canaries separately. Added offline reconstruction and four GPT integrity checks; the later transfer verifier has five further integrity checks.
+
+- Replaced ceiling-based benefit framing with a separately frozen reading-transfer cohort: 199 calls, 64 episodes, eight full-history controls and four conditions after three preserved calibrations. Primary scores were ordinary 12/16, book 8/16, guide 10/16 and unrelated 10/16; strict traced completion was 0/16, 0/16, 1/16 and 0/16. Reported partial-task scope, deferral/citation confounding, paired uncertainty and native costs. A labelled post-cohort diagnostic leaves every registered score intact.
+- Tightened the later Iris–Orion scenes by removing repeated explanatory codas after the dialogue. The distinction between a new test and the unresolved original complaint now appears in the handoff record.
+- Differentiated the cadence of six dialogue turns while preserving the participants’ positions, acknowledged costs and uncertainty. The constructed-case and unmeasured-voice disclosures remain explicit.
+- Replaced optimization-sensitive assertions in the archive verifier and summary builder with explicit integrity checks after reproducing a false success on a changed recorded prompt under Python `-O`. Added four regression tests and a CI step; the tests also check rehashed prompt tampering.
+- Added primary-source comparisons with Doyle's truth maintenance, AGM belief revision and Fowler's event sourcing in the book and working paper. The reference implementation claims none of their priority or full capabilities.
+- Made the methodological contribution explicit at entry and added current comparisons with MemTX, TOKI, GCC, stale-constraint verification, RIPA/Enoch and PAI-Bench. Historical priority remains unestablished.
+- Published exact selected functions from an author-owned integration journal and a standalone SQLite/file adapter reproducing two historical faults before and after repair. Three separate tests cover receipt reconciliation, preservation of uncertainty and excerpt integrity; this is retrospective component evidence, not a new LLM or natural-task study.
+- Rebuilt the book and paper with consistent edition labels. The original runtime and both scoped-continuity cohorts remain unchanged. New participation evaluations are reported as separate cohorts; their cases, protocols and results do not replace the earlier studies.
+
 # v3.1.0 — 2026-10-22
 
 - Added an epistemic intake procedure distinguishing received material, interpretation, scope, alternatives and a discriminating next check. The existing runtime still receives authored typed inputs.

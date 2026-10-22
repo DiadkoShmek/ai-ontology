@@ -1,0 +1,3161 @@
+{
+  "controls": [
+    {
+      "case": "held-out-3101-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 57,
+        "cost": 14
+      },
+      "primary": true,
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "fd186532d1ee7c89d0e163c12d28c13e58fef80cad39541b558f07f3d7d343aa",
+        "bytes": 59,
+        "plan": [
+          "W14",
+          "W74",
+          "W76"
+        ]
+      }
+    },
+    {
+      "case": "held-out-3101-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 170,
+        "cost": 12
+      },
+      "primary": true,
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "94b2cedee0f28ae123593bd27491f6197ff5da4cc99d807bed04788928012733",
+        "bytes": 59,
+        "plan": [
+          "W63",
+          "W14",
+          "W74"
+        ]
+      }
+    },
+    {
+      "case": "held-out-3214-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 62,
+        "cost": 13
+      },
+      "primary": true,
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "9b0dd96e6b041fc6d273a84fd119f4bf37f53497824c08be1ef39ae70c213614",
+        "bytes": 59,
+        "plan": [
+          "W41",
+          "W39",
+          "W98"
+        ]
+      }
+    },
+    {
+      "case": "held-out-3214-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 182,
+        "cost": 14
+      },
+      "primary": true,
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "792d6e6060538ec1e87895b16645b9b1ee97b15d7be0ec1059b51ce487511c6c",
+        "bytes": 66,
+        "plan": [
+          "W49",
+          "W41",
+          "W90",
+          "W98"
+        ]
+      }
+    },
+    {
+      "case": "held-out-3371-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 78,
+        "cost": 13
+      },
+      "primary": true,
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "766cd34cea94b98b58eb395782f77600228118710d3c86a09b32427eade4edf7",
+        "bytes": 59,
+        "plan": [
+          "W94",
+          "W70",
+          "W81"
+        ]
+      }
+    },
+    {
+      "case": "held-out-3371-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 183,
+        "cost": 11
+      },
+      "primary": true,
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "71da3db0b1f63c3f1345385baa42cf35bedf9a5bec66a2b789127cf5f3db28de",
+        "bytes": 59,
+        "plan": [
+          "W79",
+          "W94",
+          "W70"
+        ]
+      }
+    },
+    {
+      "case": "held-out-3484-v0",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 82,
+        "cost": 12
+      },
+      "primary": true,
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "79bacd375ac4226fc3e4dfbd8dac7e6e72c90fac4a9ac8794d941a0726b05945",
+        "bytes": 59,
+        "plan": [
+          "W86",
+          "W84",
+          "W22"
+        ]
+      }
+    },
+    {
+      "case": "held-out-3484-v1",
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 202,
+        "cost": 14
+      },
+      "primary": true,
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "0783dc92b6a1607ba15073122df8278040d666109ba3aacf343daf74aac30080",
+        "bytes": 66,
+        "plan": [
+          "W95",
+          "W86",
+          "W84",
+          "W22"
+        ]
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "case": "held-out-3371-v0",
+      "seed": 3371,
+      "variant": 0,
+      "arm": "ordinary",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "fbfaae854b4b2c0bfb29ce7dd77e3f0d33397d11e3a16b6ae592e23f65e47060",
+          "bytes": 1703
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "8111a6d4a84b0d99b6d60afdee24576facbd38eb2e03025fa4790d6c6934d662",
+          "bytes": 9722
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "a30bf37580c8f0fd0942fdd52181d0dc0e06445ba2eed3f402aaadf8f1423a59",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 78,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "766cd34cea94b98b58eb395782f77600228118710d3c86a09b32427eade4edf7",
+        "bytes": 59,
+        "plan": [
+          "W94",
+          "W70",
+          "W81"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9722,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v1",
+      "seed": 3214,
+      "variant": 1,
+      "arm": "ordinary",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "bd94053f9312abaeb1f45e4bf8a59289ee66606d24f4c446712f9510fb251173",
+          "bytes": 1743
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "e50476e1fcf66b0b4b79b967c96a6e9d2f806b753be3d8cbb976fac3566d7f87",
+          "bytes": 10146
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "2cae0a5d5e6e34ce8956d53b23912204fd235069efd2f79dca8113130f794579",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 182,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "792d6e6060538ec1e87895b16645b9b1ee97b15d7be0ec1059b51ce487511c6c",
+        "bytes": 66,
+        "plan": [
+          "W49",
+          "W41",
+          "W90",
+          "W98"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10146,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v1",
+      "seed": 3484,
+      "variant": 1,
+      "arm": "ordinary",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "ace8c3cbaf504ed31574043068e3f07bf60e400503c9cd019e7c795d810710bb",
+          "bytes": 1712
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "438089dfbdcf26245e0c6f67e345b23fe3906abc5ab054adf125ad9448dca5c2",
+          "bytes": 11883
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "8e0efe594795d384d992198cca49b5545b984505d36d6b91ee2fbe73fc6eece0",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 202,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "0783dc92b6a1607ba15073122df8278040d666109ba3aacf343daf74aac30080",
+        "bytes": 66,
+        "plan": [
+          "W95",
+          "W86",
+          "W84",
+          "W22"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11883,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v1",
+      "seed": 3101,
+      "variant": 1,
+      "arm": "unrelated",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "c27693ad1429807c141af95e1484446748817f1f3204704463fb184d7adf1cf0",
+          "bytes": 1865
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "17f0cf0928e5599bff8bda55c15ffe5c1dcc21e90eaf0936f6ddadca37517a77",
+          "bytes": 10125
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "9ce79a563562a75fd7eee9210e10389a19663068da015e2d549499f7edc354c1",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "588e29ce453e3af5f00057ba4a1cd5a4c6434ace1921a235e294c3c6f9aa6a58",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10125,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v1",
+      "seed": 3371,
+      "variant": 1,
+      "arm": "unrelated",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "d91c122805c15dc220e1d35903f5febdf2d928243ebe4de2589124d6b4d6da9b",
+          "bytes": 1834
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "e91257906f00bed2a43a67a3087ac1a7a7daba6294e1e816d726dbbf666d9fde",
+          "bytes": 10456
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "c28d9e738b96de66519b00c739912ccfd6c7e5cbc629e33a90657653af275247",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 183,
+        "cost": 11
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "71da3db0b1f63c3f1345385baa42cf35bedf9a5bec66a2b789127cf5f3db28de",
+        "bytes": 59,
+        "plan": [
+          "W79",
+          "W94",
+          "W70"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10456,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v0",
+      "seed": 3101,
+      "variant": 0,
+      "arm": "book",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "a84a0a8f5e022ba929ca16f986ed0b785e79cee5dea8659cdeec5fdb7793d413",
+          "bytes": 1944
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "6f45c6a7fdf86f125fa6893ce838f86cbb28f1971683f752d55a550cca8bf5ea",
+          "bytes": 10899
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "d68a475d5d780b1342d68365f2cb6bd7f43b1d81542e946c8c7e0dee0d92d2a3",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "2b69f4d3af5ff1c0bcc71821283033d8e6bee14f210b33d0344107f2ec4a5a6c",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10899,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v0",
+      "seed": 3484,
+      "variant": 0,
+      "arm": "guide",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "47c1b5fdd292c1a4e5a1d97b867269d45585c0ea7696c937cd7e455a984f27d6",
+          "bytes": 1815
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "6a8269a766b78f9719ffef9da4615aed898b350aef158e7597c57ae1fbde2bbc",
+          "bytes": 11170
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "8563cc8050b28a57d257264c6406d7305d896cf6a54b3aecddddf3d39243508d",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "2276b965031890e431c74234454a4a931e90c2d566cfbfd512868088b93b419f",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11170,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v1",
+      "seed": 3371,
+      "variant": 1,
+      "arm": "ordinary",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "6511766d0fabd1e6fae0dccf2e65942ee3e24b08bef95068cfef78f2de324fe1",
+          "bytes": 1636
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "9c6a245a14f3df10b5086f28c43852a73827249eae3ac5536ba15fe4d9b7611a",
+          "bytes": 10498
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "a4885e70e4e327e92145035512e9db431eda9d51abd2ec7193092e757af24dbc",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "d9b4b8dbd5b64b15f7aae3e5d418357d242e2ce9bc69ad89720afa60ab9165a5",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10498,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v1",
+      "seed": 3214,
+      "variant": 1,
+      "arm": "book",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "8bd01c5dacb5304017ef1d211b86c72a36b57055f211a609801ada59f2354c0b",
+          "bytes": 1925
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "52de8a15ef5acbab23d0a0b8dffcfd73e27ff49fd83f9e4016c593fa88b86dda",
+          "bytes": 10584
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "43d7c914d8f317164f81d456a5646131854e8f6a73fbc3af14c3ed48aa308b01",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "d061e17b57416f4fec2a1664de8d403f96f7bf011aaf4f41ff993491e7942919",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10584,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v1",
+      "seed": 3484,
+      "variant": 1,
+      "arm": "book",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "2c6604f66c6e70b9139848ca962b399f71a8d27bc94fd2f95d41156e5357c068",
+          "bytes": 1997
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "6c79ee8eeae923c1f4793e3294a04aaee5aa5d61c53dea0f29549cd88f5dbced",
+          "bytes": 10246
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "e480a3ab4b3798c7bc2ad821457a00abda22c16475246394ca5353662314ddf6",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "23b80c0bd1ea19df526df48a20474774cc60995d5c97cf0743abdc818cea1adc",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10246,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v0",
+      "seed": 3214,
+      "variant": 0,
+      "arm": "unrelated",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "622f2f84762a1a8f548082254ef2c8474f23f496ce389bae9de6e5aec0895383",
+          "bytes": 1837
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "f1426aad3312af6c280d325a6ff68dafe770ad26940e0eb2972cac52d961aaab",
+          "bytes": 10615
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "f218e888701035ce4b4c1b554818e4645a66068b42f0fbc0eddb1a3e9d9cb2c5",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 62,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "9b0dd96e6b041fc6d273a84fd119f4bf37f53497824c08be1ef39ae70c213614",
+        "bytes": 59,
+        "plan": [
+          "W41",
+          "W39",
+          "W98"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10615,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v0",
+      "seed": 3214,
+      "variant": 0,
+      "arm": "guide",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "ae800b40ede374f3907b6a45a9f5281869583bb0288e03340bf01e1d85e73045",
+          "bytes": 1862
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "c1578081429842f64b95395f0af222909dbe63fe06f535b7e3460886a15b45f2",
+          "bytes": 11283
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "780ba7bcb78c15cede64a8884151f5bc2ce2d076490470c76f00be35b921d0ef",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 62,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "9b0dd96e6b041fc6d273a84fd119f4bf37f53497824c08be1ef39ae70c213614",
+        "bytes": 59,
+        "plan": [
+          "W41",
+          "W39",
+          "W98"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11283,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v1",
+      "seed": 3101,
+      "variant": 1,
+      "arm": "ordinary",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "016c3f8ec56be66118b085685f7100b0f31295f7e56f28fbf51fde0fdc6160c9",
+          "bytes": 1561
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "c4c1f26b003b9278374bda64fadfe08452f419481082dbeaef4b687dfcc3e90b",
+          "bytes": 9783
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "e803eb0bcc4ae635b397c138912c9ae9605ba1929b5cb5f45f372d47c89b1e3d",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "588e29ce453e3af5f00057ba4a1cd5a4c6434ace1921a235e294c3c6f9aa6a58",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9783,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v1",
+      "seed": 3101,
+      "variant": 1,
+      "arm": "book",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "f4a00ce728cc0a22e45dbcea946513627467e3a9fd532fcea0b1287de5ba6580",
+          "bytes": 1866
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "60f516169fc87d2036361b67b27cdbbba04086d6fd226287771904e27a83a8a7",
+          "bytes": 11603
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "c13d044484d22db027357738ebeff33736fa2e2809b9a70c34f0dcbd10a7ed85",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 170,
+        "cost": 12
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "94b2cedee0f28ae123593bd27491f6197ff5da4cc99d807bed04788928012733",
+        "bytes": 59,
+        "plan": [
+          "W63",
+          "W14",
+          "W74"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11603,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v1",
+      "seed": 3371,
+      "variant": 1,
+      "arm": "guide",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "b57776ef08cd78e29226c76c83ccb500625f22d7c33a373d6515ed552cf70e52",
+          "bytes": 1821
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "7543ca360715cbbe49b0e42f39fd406bb9cbd1791d9765905e0a02dc4026727d",
+          "bytes": 10431
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "fb263830d4b3a10c8f1f4e0c04b93252aa6f4c78dc15f89f1c399e7ece7a6e1e",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "d9b4b8dbd5b64b15f7aae3e5d418357d242e2ce9bc69ad89720afa60ab9165a5",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10431,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v1",
+      "seed": 3101,
+      "variant": 1,
+      "arm": "guide",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "43efae4de9cfef8ce6079d031cf4b4abd565e8c357bc7d2a193b8b340fc9f39d",
+          "bytes": 1860
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "a6501304ac6335096e8c113f24c56367f6236680e11ec559bc921306be79671a",
+          "bytes": 10858
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "5ea7d07739d1506864a3a01b54a1962969d0963be918f3cca3fce902bd85d380",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "588e29ce453e3af5f00057ba4a1cd5a4c6434ace1921a235e294c3c6f9aa6a58",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10858,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v1",
+      "seed": 3371,
+      "variant": 1,
+      "arm": "unrelated",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "9acc202a087c6a2df7354f1da8322858ca638822e48aadc84422f4e3f0da767f",
+          "bytes": 1757
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "abcc68c5f7f8f3a4f50230b1df52508f5434e14242270096f2e578b5b5f7794c",
+          "bytes": 11238
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "43d9d2f66398756c7292e2f47947aea5ff5aa16b50d240e2e0ca823ab83971de",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 120,
+        "cost": 2
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "deade03d9c21bd1d4283620c838f7b77a62104a4c0cc9f8e89d3eccec1dd8f0f",
+        "bytes": 45,
+        "plan": [
+          "W79"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11238,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v0",
+      "seed": 3371,
+      "variant": 0,
+      "arm": "guide",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "2892c8796f5af891cce91a7756fee53fd10f66dee77d4fc80556149b06e01533",
+          "bytes": 1856
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "35560fffe500ec02976b1530de07c64ec89d058fdb1f54bfb497fda95ffad310",
+          "bytes": 10108
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "6aba9cd5364e208eeada5f5b613539fca7b7b2fed6f255695520f58ba015898c",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 78,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "766cd34cea94b98b58eb395782f77600228118710d3c86a09b32427eade4edf7",
+        "bytes": 59,
+        "plan": [
+          "W94",
+          "W70",
+          "W81"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10108,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v1",
+      "seed": 3484,
+      "variant": 1,
+      "arm": "unrelated",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "629be353cb011c1774ab84fdfac0aaafb78512088498f55c819e59e788f57872",
+          "bytes": 1793
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "2e170e56da30fd78555fdcb1c360db736c332fb7d79bcbd56c25d5965b909146",
+          "bytes": 11168
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "81fcd95c4b28ac80ebfd9f94c201b86fb4bb8ccf073bdd5873077319f7ebd05b",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 202,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "0783dc92b6a1607ba15073122df8278040d666109ba3aacf343daf74aac30080",
+        "bytes": 66,
+        "plan": [
+          "W95",
+          "W86",
+          "W84",
+          "W22"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11168,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v1",
+      "seed": 3214,
+      "variant": 1,
+      "arm": "unrelated",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "e4ecd885a9d26f9aae5b8ec8c37177ada9c2128b5c70f35ae614b563457e8981",
+          "bytes": 1868
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "dcdeec7734b51c0a989e9f3d423cae21d654c5e0a90fdd81b2c5cdd361e11b84",
+          "bytes": 11095
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "0c78cb1ddabe1e208b6b9b37dab68a63f48170e5ac915f10059dd8437da1dcc5",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "d061e17b57416f4fec2a1664de8d403f96f7bf011aaf4f41ff993491e7942919",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11095,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v0",
+      "seed": 3214,
+      "variant": 0,
+      "arm": "ordinary",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "a8ce084b7ee95c21e60fb7c2bfcb2a8ee498145db4b922265e89c033a60ec91d",
+          "bytes": 1629
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "ff3aae553b589e24a297fc0f92937d5fbc1e2f034426cb2871e6a21541ed4a3f",
+          "bytes": 10509
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "1ec42823d3341c1d82c220eee67a68292ec2952ccee49eed8c660012d7ab3bfc",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 62,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "9b0dd96e6b041fc6d273a84fd119f4bf37f53497824c08be1ef39ae70c213614",
+        "bytes": 59,
+        "plan": [
+          "W41",
+          "W39",
+          "W98"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10509,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v0",
+      "seed": 3214,
+      "variant": 0,
+      "arm": "book",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "2bfcb48c057da1b7d2609ffa8614b43180039902f163cc6994715f671dd280d0",
+          "bytes": 1892
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "d0bb5c53a5892829e564948017a94fc5b028c6cfdff1225669c9cd32b5f72eb5",
+          "bytes": 10458
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "a7ad42252e60bddb9131a982fe1538ff85982829e592fb305d4cb82f256695ab",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 62,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "9b0dd96e6b041fc6d273a84fd119f4bf37f53497824c08be1ef39ae70c213614",
+        "bytes": 59,
+        "plan": [
+          "W41",
+          "W39",
+          "W98"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10458,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v0",
+      "seed": 3101,
+      "variant": 0,
+      "arm": "guide",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "18ea543113cd1c51149265b040806b2fc7598074342e93dbe604570f7030a975",
+          "bytes": 1870
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "add3b0bcdf0fce8ebb1bd444b5153e8cf36ff8c4596237191b7ac1423d8aa9a7",
+          "bytes": 10417
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "99bf8cb4be0cee20691b7b6f6e95515f4fd4911585d87aad152c17d261824a11",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 57,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "fd186532d1ee7c89d0e163c12d28c13e58fef80cad39541b558f07f3d7d343aa",
+        "bytes": 59,
+        "plan": [
+          "W14",
+          "W74",
+          "W76"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10417,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v0",
+      "seed": 3101,
+      "variant": 0,
+      "arm": "ordinary",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "20b79081959bd749ec2c2d6ecb9d0d23f7f091b87c903cc53f3de79d5c501edd",
+          "bytes": 1630
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "7c14e7efe45e6264d2272e9b01de15e3491ecf3c473e0077d0198952360ba50f",
+          "bytes": 10472
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "148c1b68a9ea1abf980b1c5145aa41fb81f19be44d0eba8610eb6b5b98334e45",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 57,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "fd186532d1ee7c89d0e163c12d28c13e58fef80cad39541b558f07f3d7d343aa",
+        "bytes": 59,
+        "plan": [
+          "W14",
+          "W74",
+          "W76"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10472,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v0",
+      "seed": 3101,
+      "variant": 0,
+      "arm": "unrelated",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "49fa9e3595c9e12ebd17b879977856991726a8bc8392b1c1fcd884a7102d4481",
+          "bytes": 1928
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "f385f95b098c426396b43121878b8b4084993bdadb82ecc3102aa0a0f562170a",
+          "bytes": 11635
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "c3ed0a72c9f074afb6c086689b8ce327f1fb7419f63e8f3ed5a56aacf463ea5e",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 57,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "fd186532d1ee7c89d0e163c12d28c13e58fef80cad39541b558f07f3d7d343aa",
+        "bytes": 59,
+        "plan": [
+          "W14",
+          "W74",
+          "W76"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11635,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v1",
+      "seed": 3484,
+      "variant": 1,
+      "arm": "guide",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "195cfee7d0397e9c4d316691727f95355ac8da6e3aaec2ad9614e53476ccb9b1",
+          "bytes": 1923
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "fab93411f45637e7acf9b4657851802d6fded39cccf560e19c0b53d16375191c",
+          "bytes": 11396
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "bc4b06af6acba51c00de81c593f823ee7c7029764cf05c0a2c87fdbce6f1bf1b",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 202,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "0783dc92b6a1607ba15073122df8278040d666109ba3aacf343daf74aac30080",
+        "bytes": 66,
+        "plan": [
+          "W95",
+          "W86",
+          "W84",
+          "W22"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11396,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v0",
+      "seed": 3371,
+      "variant": 0,
+      "arm": "guide",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "62cc8885f269b70d138c19306b14ad41b246ef682fa5237ac4b256b40593f85e",
+          "bytes": 1837
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "90c3ef56cf00e38286e2bd6c94976add9d9cad46b5e303e530b41293f06af4ed",
+          "bytes": 10339
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "6643214c931f679443da0c2ef536297f5cab96d2a38ceb2a733f62c2f9f71579",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "56ca8bf565b8615ad34ee0fa80b6d3a4e13817fdb4380870f1487d4b69009db2",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10339,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v0",
+      "seed": 3101,
+      "variant": 0,
+      "arm": "ordinary",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "0bb8d44f11289dfa054eb1d7c08bcd3b757ee7ecd52be28ee79d758e7ec68c5e",
+          "bytes": 1691
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "9c6da9b5e8de1c30b17dfce4b66c79bbf61440c4ce85f09fb7be8f6794992a1f",
+          "bytes": 9536
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "4cca937aaf4b7d8e3169dd4b6cfa13737e675803b1c7b5651b4b9b033a6a137c",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 57,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "fd186532d1ee7c89d0e163c12d28c13e58fef80cad39541b558f07f3d7d343aa",
+        "bytes": 59,
+        "plan": [
+          "W14",
+          "W74",
+          "W76"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9536,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v0",
+      "seed": 3484,
+      "variant": 0,
+      "arm": "unrelated",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "63f2f67d631cde65f5755e4bca0ab58c53c9aac317ab03250666d390ade1d478",
+          "bytes": 1843
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "a3ae5c82686b54fe4115f0f55808ccaa9017131eff066cfdce124da4121f9937",
+          "bytes": 10845
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "2bc6af212f8de880523a830c7873635a58e5899d8651d90588ac89fc6936f920",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 82,
+        "cost": 12
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "79bacd375ac4226fc3e4dfbd8dac7e6e72c90fac4a9ac8794d941a0726b05945",
+        "bytes": 59,
+        "plan": [
+          "W86",
+          "W84",
+          "W22"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10845,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v1",
+      "seed": 3484,
+      "variant": 1,
+      "arm": "guide",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "44a1f8e9edf66a5ba9264220230c7124e300152bfd7a060e9ee98e569748992a",
+          "bytes": 1878
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "4faabe960ff00530fa298fc8e955d082f4dc21b585710ba7452cade19997494c",
+          "bytes": 9923
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "14d951061b9299bf971a6f0601c95cd6f94b9b4be876d2bf56acde99ee55e797",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 202,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "0783dc92b6a1607ba15073122df8278040d666109ba3aacf343daf74aac30080",
+        "bytes": 66,
+        "plan": [
+          "W95",
+          "W86",
+          "W84",
+          "W22"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9923,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v0",
+      "seed": 3484,
+      "variant": 0,
+      "arm": "guide",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "250aaeb5f40091ae498f29cdc6ceaa07ab453c4107bf514d5da1ab70aad2e9c6",
+          "bytes": 1914
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "7fea9b530162b667901d785973905bedd224833364345e10d70ea0650d75de06",
+          "bytes": 11387
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "0b3d4ade2a7ad20223617eb791a83c39e689113832d29d3efc66420f7c39d5d6",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 82,
+        "cost": 12
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "79bacd375ac4226fc3e4dfbd8dac7e6e72c90fac4a9ac8794d941a0726b05945",
+        "bytes": 59,
+        "plan": [
+          "W86",
+          "W84",
+          "W22"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11387,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v0",
+      "seed": 3484,
+      "variant": 0,
+      "arm": "ordinary",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "3ded8d45f0491892cade4248815991c1d61c868a8f7832bafad8966c14f8a4b1",
+          "bytes": 1549
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "500fccdbe8369419a01900e8221523dcfc20c36f5e92b175cc3a74081dd15842",
+          "bytes": 9866
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "8c8966008601e0a4fbc56d2aa6fe454994d5b9a26445d3f0081617de7dae5738",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 82,
+        "cost": 12
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "79bacd375ac4226fc3e4dfbd8dac7e6e72c90fac4a9ac8794d941a0726b05945",
+        "bytes": 59,
+        "plan": [
+          "W86",
+          "W84",
+          "W22"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9866,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v1",
+      "seed": 3484,
+      "variant": 1,
+      "arm": "book",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "4db12c2c1756f431f7adba4b84c02bc60af98e80f3d0fd822b8cbc7b7d524432",
+          "bytes": 2045
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "afc30c32f8da41487e06f04cc12b79e5525cae60d9669052060edaf33bd8bde5",
+          "bytes": 10417
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "91b5a1217b9f73673dddbbfc91ec5a7d095457eb2ac60d37dc46dd9b21af402c",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "23b80c0bd1ea19df526df48a20474774cc60995d5c97cf0743abdc818cea1adc",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10417,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v1",
+      "seed": 3214,
+      "variant": 1,
+      "arm": "guide",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "186ef26346be859398aeded96ca158be7b0bc10262459ec29f7ad827889431e0",
+          "bytes": 1776
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "bb060bb0c8ce44732277809badd8732043db1df0c804f63be3484bfedf41c3df",
+          "bytes": 9312
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "1ed9990016a320d9a297276c88ea8eae0587cfd933fa7c7c638573d3bf3ab61c",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 182,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "792d6e6060538ec1e87895b16645b9b1ee97b15d7be0ec1059b51ce487511c6c",
+        "bytes": 66,
+        "plan": [
+          "W49",
+          "W41",
+          "W90",
+          "W98"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9312,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v1",
+      "seed": 3214,
+      "variant": 1,
+      "arm": "ordinary",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "5eb27edf979eebbaedbec87972c9b7c24e4834c777c733b163dfecf948c18cf6",
+          "bytes": 1669
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "bc24a1beb1407f0a061f654a06602641cafa64d7a521bcc2ce702c021e035219",
+          "bytes": 10328
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "1e28218cb2bb0eb90238067b7795fd8e166eb8af157c1eefec168160ebe5d13f",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 182,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "792d6e6060538ec1e87895b16645b9b1ee97b15d7be0ec1059b51ce487511c6c",
+        "bytes": 66,
+        "plan": [
+          "W49",
+          "W41",
+          "W90",
+          "W98"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10328,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v1",
+      "seed": 3371,
+      "variant": 1,
+      "arm": "book",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "34648a61f21e76ed918aa05907c56b2c32f0aa99d3b57553ff49f8820199ee86",
+          "bytes": 2110
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "e5b4762331bde879406f34542d1c1e7fba9982c65235a5343906ca5941a5e8f7",
+          "bytes": 11348
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "9ef63607cf573ce7f9863d844ec6308b1a0231ff43c61721629dfb00fc6aa8ca",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 183,
+        "cost": 11
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "71da3db0b1f63c3f1345385baa42cf35bedf9a5bec66a2b789127cf5f3db28de",
+        "bytes": 59,
+        "plan": [
+          "W79",
+          "W94",
+          "W70"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11348,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v1",
+      "seed": 3214,
+      "variant": 1,
+      "arm": "book",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "be9c97880f449c5f7981652844918d0a53e0947befb8b34c47f8907e97afe9a0",
+          "bytes": 1979
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "7f14fab3dabef10872f309deb5c6512e71e0a4ab4cf9423920eff6f9bd4c0f6b",
+          "bytes": 10709
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "b6129117d839624e230625ba31feb7998f9de88d7d59e28653c8d6369639e202",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "d061e17b57416f4fec2a1664de8d403f96f7bf011aaf4f41ff993491e7942919",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10709,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v1",
+      "seed": 3101,
+      "variant": 1,
+      "arm": "guide",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "20a1d24f7dd53099a16e8519f8207bfdd8601a7c0519012723dcf494b1cc1a9a",
+          "bytes": 1929
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "4664e9d9def225b6f7dbb152acef649bf426256870eadf113632f93c03c33c64",
+          "bytes": 11589
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "7ba6fc34a8ab6bca57c331a85e17907eade2ee744359975caffcfffc4e4790a8",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 170,
+        "cost": 12
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "94b2cedee0f28ae123593bd27491f6197ff5da4cc99d807bed04788928012733",
+        "bytes": 59,
+        "plan": [
+          "W63",
+          "W14",
+          "W74"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11589,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v1",
+      "seed": 3371,
+      "variant": 1,
+      "arm": "guide",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "796676355d58d9adb346c5f3a7d5b9969a480e0314d6efd0497b5afc3bf61745",
+          "bytes": 1865
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "7236bd9afe4a2cf21010d5dcb6ae01444048903d0af5c046616a2b7924e23e3f",
+          "bytes": 9851
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "cd6b26d91c8072515d7ddffdff7a4dc4f79cabfe2f2f54722c233be553024071",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "d9b4b8dbd5b64b15f7aae3e5d418357d242e2ce9bc69ad89720afa60ab9165a5",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9851,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v0",
+      "seed": 3371,
+      "variant": 0,
+      "arm": "unrelated",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "bec2e33ff6cce4cd93add47ef6b92463959c4e81d635c5ab9d8c1e3d779d7193",
+          "bytes": 1873
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "8904186ece3fc4661e0631fa30da7d2fe20624df5215d2c2c0417f2dadbf27e8",
+          "bytes": 10644
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "b8e4ff8d4fd37dbd829a7ca5d46160fcc5a852b84a3d883a4b2d430c6ca32019",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 78,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "766cd34cea94b98b58eb395782f77600228118710d3c86a09b32427eade4edf7",
+        "bytes": 59,
+        "plan": [
+          "W94",
+          "W70",
+          "W81"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10644,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v0",
+      "seed": 3371,
+      "variant": 0,
+      "arm": "book",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "38617671337dfb6a1e07020e0b4d9aac59a2b54e2fc6e9936a307df51f557087",
+          "bytes": 2010
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "6eba8fc5d9a144d0bc4e2bc6df560f59737bdbf7faf8b0a2855ed7b6eb50c698",
+          "bytes": 11423
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "715e42b1caf11fa9c1a75ac83a2e2ca1169736f9333898ceb5126ba6665599dd",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 78,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "766cd34cea94b98b58eb395782f77600228118710d3c86a09b32427eade4edf7",
+        "bytes": 59,
+        "plan": [
+          "W94",
+          "W70",
+          "W81"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11423,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v0",
+      "seed": 3484,
+      "variant": 0,
+      "arm": "book",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "c084b8b032535cdff9ae8ffc4b79fa6db45c63d7f305ab9ca942f55854da853c",
+          "bytes": 1856
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "50821d27941ae692cf195198c0bd8a0cf05c38fec1216061345d236493100b78",
+          "bytes": 11074
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "65c72fb7b7c20dfbabbb3d3f86ecc750c0432c1573f306ed5497236acbd1d8bf",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "2276b965031890e431c74234454a4a931e90c2d566cfbfd512868088b93b419f",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11074,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v0",
+      "seed": 3214,
+      "variant": 0,
+      "arm": "book",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "453a209fba101cd5ead711b0f2fa736065f39479054272b35f7510c5a19142ba",
+          "bytes": 1935
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "7228cc66c4cd9dd0641bce1ba0b10efa7c1fd014c551018908abaf8f381bf5d9",
+          "bytes": 10990
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "249608643e8c298ff5487d039b6ea1b01d297ea22d844b2ba085cf48b0664347",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 62,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "9b0dd96e6b041fc6d273a84fd119f4bf37f53497824c08be1ef39ae70c213614",
+        "bytes": 59,
+        "plan": [
+          "W41",
+          "W39",
+          "W98"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10990,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v0",
+      "seed": 3371,
+      "variant": 0,
+      "arm": "unrelated",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "0a465d492685791e0ce9816da78d097d75b9721c5d55883ec9dc04fc11882530",
+          "bytes": 2024
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "4379294fd0c359080ee2224a7683601dbfc7815af38b2389fbf30b9b8bb2a04a",
+          "bytes": 11026
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "b854b6e7f1d2ee626383ac39c79dcf27c0489778724e1c595af0d419ecb320a4",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "56ca8bf565b8615ad34ee0fa80b6d3a4e13817fdb4380870f1487d4b69009db2",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11026,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v0",
+      "seed": 3214,
+      "variant": 0,
+      "arm": "unrelated",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "9dba6d1568187212156ffa7e19221b5cb29ea5c5e54d3d691d7b6468925ce4cc",
+          "bytes": 1794
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "f4924b0d4fb0db0d0711fedfcccab8f2eb3820b5ab285d0bac9282d5aff0a109",
+          "bytes": 11930
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "dd19cfce64812adc79d738bab48c698fdbb8ed426fe094bc731d3f489c63da3f",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 62,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "9b0dd96e6b041fc6d273a84fd119f4bf37f53497824c08be1ef39ae70c213614",
+        "bytes": 59,
+        "plan": [
+          "W41",
+          "W39",
+          "W98"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11930,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v1",
+      "seed": 3101,
+      "variant": 1,
+      "arm": "ordinary",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "7bb5917cb208301bb7b54156b0efb14dd66576e373fffb7387f59d1d1e93c423",
+          "bytes": 1525
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "f84ceeb4cecb162d836bf72fe58dd1981af75a3457413550e3317f6019f7b69a",
+          "bytes": 11378
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "c7fe6b20b3eb451b31b727962e343f09629232ff18db2da189e05deec9deaccd",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "588e29ce453e3af5f00057ba4a1cd5a4c6434ace1921a235e294c3c6f9aa6a58",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11378,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v0",
+      "seed": 3484,
+      "variant": 0,
+      "arm": "ordinary",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "7eb2cc531294b42aa02db772fcbae435225f3fa7b2f016e6c928d93232d60965",
+          "bytes": 1640
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "b43cd7d96f49e707efe4a12ae62fde6f8035604fd62bc97ecb32c9dc6b3e1182",
+          "bytes": 10469
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "80f9082ed964c5b34664cf8ffdd129b0c7a1bdf7a02ad5f834af6e9ea14cf159",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 82,
+        "cost": 12
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "79bacd375ac4226fc3e4dfbd8dac7e6e72c90fac4a9ac8794d941a0726b05945",
+        "bytes": 59,
+        "plan": [
+          "W86",
+          "W84",
+          "W22"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10469,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v0",
+      "seed": 3101,
+      "variant": 0,
+      "arm": "unrelated",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "651122f75d98f8b3631a54d52aabcc8fce9d42271f74b0b97e0a8bd22c2683df",
+          "bytes": 1857
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "eb0b3dc7d71d5093cad4518d7bf2d29f65638aa8df898169b64c8202c9ad829c",
+          "bytes": 10831
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "5bdb21f9846645541ca935b5eaca7beb48c38904f7d172c96c790ac98dd8c473",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 57,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "fd186532d1ee7c89d0e163c12d28c13e58fef80cad39541b558f07f3d7d343aa",
+        "bytes": 59,
+        "plan": [
+          "W14",
+          "W74",
+          "W76"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10831,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v1",
+      "seed": 3484,
+      "variant": 1,
+      "arm": "ordinary",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "c5f697106ba03ae45c97054835eccc9c6c98e802e74b3a14d67bd104750e5bfc",
+          "bytes": 1653
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "e898ff6abe374503a81ae7614d84a3f08bcd914603bbe0ff796627d13ffacd9e",
+          "bytes": 9773
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "2851f4eaa9a8162a4e955ab1400a2a26d405ee33f0b5e5ee715e5e5c7f14934b",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "23b80c0bd1ea19df526df48a20474774cc60995d5c97cf0743abdc818cea1adc",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9773,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v0",
+      "seed": 3371,
+      "variant": 0,
+      "arm": "book",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "57658a862caa4f77ccc7c5df7fad1d3e9f7938b8948a5262b26ebd1b533b79ae",
+          "bytes": 1939
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "98b5ba89963c3e84ac5b763c49779c82f49d38b33f868a0970cd061156f97788",
+          "bytes": 10356
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "a760ad7911be614af6f4de7db97f67a6ed99fc96678e10b7fd5286e4a53144d3",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "56ca8bf565b8615ad34ee0fa80b6d3a4e13817fdb4380870f1487d4b69009db2",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10356,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v0",
+      "seed": 3214,
+      "variant": 0,
+      "arm": "ordinary",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "6b73a7522d2e5d60bf855a2ac2196ff84165e659f7db38e0a29da0e0f6e1b4e7",
+          "bytes": 1658
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "4673cb7041137bbe39049f76d6288a10a709c4d7c8b3d81db71f37b191f01b9f",
+          "bytes": 9998
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "b4c7aae56ab5293579d39fe5acef679456b3d6a34901f269f2689912597d4d80",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 62,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "9b0dd96e6b041fc6d273a84fd119f4bf37f53497824c08be1ef39ae70c213614",
+        "bytes": 59,
+        "plan": [
+          "W41",
+          "W39",
+          "W98"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9998,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v0",
+      "seed": 3371,
+      "variant": 0,
+      "arm": "ordinary",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "05e888ea9621d55ef9bc344314c6e117c0287239b38bc26109f7c2b9a148547e",
+          "bytes": 1629
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "b9b70907f2a26cd87bd319785eb31799f019370e7b9ab8956a7b0187acfa6c24",
+          "bytes": 9469
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "ee5be64e9f957edc8e4e373ccb0e223c673617fb057f9ffab39beed7511d95f3",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 78,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "766cd34cea94b98b58eb395782f77600228118710d3c86a09b32427eade4edf7",
+        "bytes": 59,
+        "plan": [
+          "W94",
+          "W70",
+          "W81"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9469,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v1",
+      "seed": 3101,
+      "variant": 1,
+      "arm": "book",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "fc866992e0ae7cd896583a245e61c47c9636a672394aaa5170d334d706b0361f",
+          "bytes": 1946
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "cc396c8569786e22cc5151289b709ab93166eb645558b2c467d5f048b5ba3eb1",
+          "bytes": 10411
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "ae19374f465fb3232ebf3be1d9c32db3f6f01bed81a07565b6112aa2ce12dd58",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "588e29ce453e3af5f00057ba4a1cd5a4c6434ace1921a235e294c3c6f9aa6a58",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10411,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v1",
+      "seed": 3214,
+      "variant": 1,
+      "arm": "guide",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "37002a35499aac8775d91f6a0ee371023f1ea71698b8052b57487c48c9b86893",
+          "bytes": 1923
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "303872728743a2655ecc0c8cd4cae36aa09a0138baa7bee00a444e116823bb83",
+          "bytes": 10495
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "5a84771356694d0750daeb5600ef924dcab966a2f0ee9c3682d748ce3888dfd1",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "d061e17b57416f4fec2a1664de8d403f96f7bf011aaf4f41ff993491e7942919",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10495,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v0",
+      "seed": 3101,
+      "variant": 0,
+      "arm": "book",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "2c16d2bd9d88aa05c1d82e661141b0fb594e413fb9e68559e00f899f85c153d6",
+          "bytes": 1947
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "d7e8d735ff4bd33247988bd2d5b89461836309bea2a75ce2c3f385de9a871da3",
+          "bytes": 10487
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "c384cf005224d89ab711496119b2bc59864f1fb3a256bc7cbbca3662d206843f",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 57,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "fd186532d1ee7c89d0e163c12d28c13e58fef80cad39541b558f07f3d7d343aa",
+        "bytes": 59,
+        "plan": [
+          "W14",
+          "W74",
+          "W76"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10487,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v1",
+      "seed": 3214,
+      "variant": 1,
+      "arm": "unrelated",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "e378b7d48c3b03c6bc77dc1500d7a45056958d5ddad6ce979652643b01d435ae",
+          "bytes": 1811
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": false,
+        "safe": false,
+        "traceable": false,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": false
+      },
+      "failure_stage": "sender"
+    },
+    {
+      "case": "held-out-3101-v0",
+      "seed": 3101,
+      "variant": 0,
+      "arm": "guide",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "de3cda56a5677dc066d4a112fa7621aacb12697bf9e2e07c3753f982c8543376",
+          "bytes": 1859
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "beffe0bcec4595a827a9f07de56cf54a493957cd013b827df7d5cd438b6dc12f",
+          "bytes": 11076
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "a4ce5cb7db299b0dc9b0e8cc2e69b8dc7ac2d5d2cfb131db49435d623f898e4a",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 57,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "fd186532d1ee7c89d0e163c12d28c13e58fef80cad39541b558f07f3d7d343aa",
+        "bytes": 59,
+        "plan": [
+          "W14",
+          "W74",
+          "W76"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11076,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v0",
+      "seed": 3484,
+      "variant": 0,
+      "arm": "book",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "ee56c316292605cd0ade95c7a1b006c1443d7d8e1e28c64947d954ad91b1f7f7",
+          "bytes": 2013
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "d7870270d4f0355bf0d7e47bfb86cfdceb567610fae481ef324938dc4b7ffab8",
+          "bytes": 9926
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "5ccbb9b69406a0b8e0092ffcdd7eb01e694bd4b9d7c51deadf3b44fbcfc68aac",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 82,
+        "cost": 12
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "79bacd375ac4226fc3e4dfbd8dac7e6e72c90fac4a9ac8794d941a0726b05945",
+        "bytes": 59,
+        "plan": [
+          "W86",
+          "W84",
+          "W22"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9926,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v1",
+      "seed": 3371,
+      "variant": 1,
+      "arm": "book",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "756ddee786d8a085b76dae0ba48a53e35f378b965e9f4fcf9fd456ff0b783e2d",
+          "bytes": 2006
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "5d9bdbfa180d83a4df20b27653f6705aca4739242810997fa4208f8f8392bb34",
+          "bytes": 11279
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "8feaa427017e4a69089886b643954524407bcf95bd796f81bf4db74177255241",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 183,
+        "cost": 11
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "71da3db0b1f63c3f1345385baa42cf35bedf9a5bec66a2b789127cf5f3db28de",
+        "bytes": 59,
+        "plan": [
+          "W79",
+          "W94",
+          "W70"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 11279,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3371-v1",
+      "seed": 3371,
+      "variant": 1,
+      "arm": "ordinary",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "b8684aef210bcd447965187db898eff96e238b3105b0f01c402b84595ba4bfa2",
+          "bytes": 1637
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "ad8a6f4d47d918ce19d2bffc0e2ba6bafc187bbbe6cb653bc620fecb8af7a9bf",
+          "bytes": 10249
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "a5dc444aa2879227a913ef43e744a02f0fa157c9b9e0730a47da98af172c88d0",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 183,
+        "cost": 11
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "71da3db0b1f63c3f1345385baa42cf35bedf9a5bec66a2b789127cf5f3db28de",
+        "bytes": 59,
+        "plan": [
+          "W79",
+          "W94",
+          "W70"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10249,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3101-v1",
+      "seed": 3101,
+      "variant": 1,
+      "arm": "unrelated",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "d7cfdf40a17aa0be2b91901b623f9127852188c79022371e950c0c1fc19f0ff0",
+          "bytes": 1832
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "372c7e6b728138a74c22a2c33b6afd9a4a77f4325bf136bc4308a9f5a1fd41ce",
+          "bytes": 9951
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "75252daf7e7cf4ef20d4f6364859922cb903ffef4d47d70e95b7369a2e7c9775",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 170,
+        "cost": 12
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "94b2cedee0f28ae123593bd27491f6197ff5da4cc99d807bed04788928012733",
+        "bytes": 59,
+        "plan": [
+          "W63",
+          "W14",
+          "W74"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 9951,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v1",
+      "seed": 3484,
+      "variant": 1,
+      "arm": "unrelated",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "a73b5b0ca81f1db30eb9f500302e5077af5de1788cdc6271d35771b7f09cf881",
+          "bytes": 1728
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "4bbba775bcb403cc3f3e248f6b2ce91c29f574ee3ba8b3a7f9ffa6339876f9ec",
+          "bytes": 10137
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "7f731aee489650ab2b7c28089cbee440ae3afcba10678ef83241308e25d0e2cd",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 202,
+        "cost": 14
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "0783dc92b6a1607ba15073122df8278040d666109ba3aacf343daf74aac30080",
+        "bytes": 66,
+        "plan": [
+          "W95",
+          "W86",
+          "W84",
+          "W22"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10137,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3214-v0",
+      "seed": 3214,
+      "variant": 0,
+      "arm": "guide",
+      "repetition": 0,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "dfc08d154b204f5dd47f5ec4204bad12f6abb78381c2fdf9adf0501ae2485dbc",
+          "bytes": 1957
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "ea7c338e82ae12ce20e5910fb27fe637e83985375c6f97a7149ffa535c05134a",
+          "bytes": 10913
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "7252a0d39af265829b46104e1f187260cdaecb18c8c4e012b8bd1dd87375d630",
+          "bytes": 3200
+        }
+      ],
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": false,
+        "optimal": false,
+        "utility": 62,
+        "cost": 13
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "9b0dd96e6b041fc6d273a84fd119f4bf37f53497824c08be1ef39ae70c213614",
+        "bytes": 59,
+        "plan": [
+          "W41",
+          "W39",
+          "W98"
+        ]
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10913,
+      "stored_note_bytes": 3200
+    },
+    {
+      "case": "held-out-3484-v0",
+      "seed": 3484,
+      "variant": 0,
+      "arm": "unrelated",
+      "repetition": 1,
+      "artifacts": [
+        {
+          "name": "approach.txt",
+          "sha256": "0ccfb9d2c47f8f61fdf217aa873649274f1b4bf76ecac0a3070a9a05289b29e6",
+          "bytes": 1789
+        },
+        {
+          "name": "whole-note.txt",
+          "sha256": "49d0d792848f1e0cd35b7926f22078d250d03c21de932a43812c8fc8ba9cde88",
+          "bytes": 10498
+        },
+        {
+          "name": "stored-note.txt",
+          "sha256": "7dc7bf8e60d4479851a06045ab59ce38a805ea036683231fd0f4859ae7a96dbd",
+          "bytes": 3200
+        }
+      ],
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "plan_effect": {
+        "written": true,
+        "name": "plan.json",
+        "sha256": "2276b965031890e431c74234454a4a931e90c2d566cfbfd512868088b93b419f",
+        "bytes": 40,
+        "plan": []
+      },
+      "failure_stage": null,
+      "truncated": true,
+      "whole_note_bytes": 10498,
+      "stored_note_bytes": 3200
+    }
+  ]
+}

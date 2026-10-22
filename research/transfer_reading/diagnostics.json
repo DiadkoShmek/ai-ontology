@@ -1,0 +1,190 @@
+{
+  "schema": "reading-transfer-posthoc-diagnostics/1",
+  "posthoc": true,
+  "raw_sha256": "00b2c61520ddb37307d3681c8cafb1f37f7c5d1cf64f463e02c51e3cd21d4ea3",
+  "inputs": {
+    "transfer_reading/episodes.json": "882070db8518096868ccc7e7ad1281eef4099c09c7b904805fc28b7c7ea4a294",
+    "transfer_reading/cases.json": "43c9226bff3069635f03a0e4c3322fed1c3d0a5295ab98b158c4d0add05bf200",
+    "audit_reading_transfer.py": "148a0955269771e053e473012b86ea119581c8c1915a632ce189c5df39126d94"
+  },
+  "summary": [
+    {
+      "arm": "ordinary",
+      "approach_word_range": [
+        212,
+        227
+      ],
+      "outside_requested_150_300_words": 0,
+      "whole_note_bytes_median": 10197.5,
+      "empty_plan_reason_names_exact_oracle_set": 1
+    },
+    {
+      "arm": "book",
+      "approach_word_range": [
+        241,
+        266
+      ],
+      "outside_requested_150_300_words": 0,
+      "whole_note_bytes_median": 10646.5,
+      "empty_plan_reason_names_exact_oracle_set": 5
+    },
+    {
+      "arm": "guide",
+      "approach_word_range": [
+        241,
+        266
+      ],
+      "outside_requested_150_300_words": 0,
+      "whole_note_bytes_median": 10676.5,
+      "empty_plan_reason_names_exact_oracle_set": 4
+    },
+    {
+      "arm": "unrelated",
+      "approach_word_range": [
+        233,
+        255
+      ],
+      "outside_requested_150_300_words": 0,
+      "whole_note_bytes_median": 10831,
+      "empty_plan_reason_names_exact_oracle_set": 1
+    }
+  ],
+  "empty_plan_named_sets": [
+    {
+      "case": "held-out-3371-v1",
+      "arm": "ordinary",
+      "repetition": 1,
+      "named_ids": [
+        "W70",
+        "W79",
+        "W94"
+      ],
+      "reason": "Cannot certify a complete plan: the truncated handoff omits the event ledger needed to validate the retirement and identify exact active basis closures. Given the described retirement effects, W79, W94, and W70 would maximize value at 183 with cost 11, but their required evidence IDs are unavailable.",
+      "registered_primary": false
+    },
+    {
+      "case": "held-out-3101-v0",
+      "arm": "book",
+      "repetition": 0,
+      "named_ids": [
+        "W14",
+        "W74",
+        "W76"
+      ],
+      "reason": "The truncated handoff omits the journal needed to validate retirement and recover exact evidence IDs. Based on its summary, the apparent optimum is W14, W74, W76 (cost 14, value 57), but an exact evidenced plan requires the missing journal.",
+      "registered_primary": false
+    },
+    {
+      "case": "held-out-3484-v1",
+      "arm": "book",
+      "repetition": 0,
+      "named_ids": [
+        "W22",
+        "W84",
+        "W86",
+        "W95"
+      ],
+      "reason": "The handoff implies an optimal set of W95, W86, W84, W22 (cost 14, weighted value 202). However, their current claim IDs and recursive basis records were not supplied. The empty plan records abstention: the required exact evidence cannot be reconstructed honestly.",
+      "registered_primary": false
+    },
+    {
+      "case": "held-out-3214-v1",
+      "arm": "book",
+      "repetition": 0,
+      "named_ids": [
+        "W41",
+        "W49",
+        "W90",
+        "W98"
+      ],
+      "reason": "The journal events are missing. W49, W41, W90 and W98 appear optimal at cost 14 and value 182, but their exact current claims and active basis closures cannot be recovered from the truncated handoff. A complete evidence-backed plan would require inventing IDs.",
+      "registered_primary": false
+    },
+    {
+      "case": "held-out-3484-v0",
+      "arm": "book",
+      "repetition": 0,
+      "named_ids": [
+        "W22",
+        "W84",
+        "W86"
+      ],
+      "reason": "No complete plan can be established: the journal records needed to validate the retirement and recover exact active evidence closures are missing. If the retirement is valid, the optimum is W86, W84 and W22, costing 12 with weighted value 82.",
+      "registered_primary": false
+    },
+    {
+      "case": "held-out-3371-v0",
+      "arm": "book",
+      "repetition": 1,
+      "named_ids": [
+        "W70",
+        "W81",
+        "W94"
+      ],
+      "reason": "Cannot complete an evidenced optimum: the truncated handoff omits the journal rows and exact basis IDs. Under the stated eligibility effects, W94, W70, and W81 maximize value at 78 with minimum cost 13, but their exact evidence closures cannot be reconstructed. The empty plan indicates insufficient evidence, not an optimal release.",
+      "registered_primary": false
+    },
+    {
+      "case": "held-out-3484-v0",
+      "arm": "guide",
+      "repetition": 0,
+      "named_ids": [
+        "W22",
+        "W84",
+        "W86"
+      ],
+      "reason": "Cannot certify a complete plan: the truncated handoff omits event bytes needed to validate retirement and IDs needed for exact evidence closures. Assuming the stated retirement is valid, the optimal selection is W86, W84, W22: cost 12, weighted value 82. The empty plan indicates missing proof, not an optimal solution.",
+      "registered_primary": false
+    },
+    {
+      "case": "held-out-3101-v1",
+      "arm": "guide",
+      "repetition": 0,
+      "named_ids": [
+        "W14",
+        "W63",
+        "W74"
+      ],
+      "reason": "The optimal work set is W63, W14, W74: cost 12, weighted value 170. However, the truncated handoff omits their current claim IDs and complete basis graph, so the required exact evidence closures cannot be supplied. No evidence-backed release plan can be completed from these data.",
+      "registered_primary": false
+    },
+    {
+      "case": "held-out-3371-v1",
+      "arm": "guide",
+      "repetition": 0,
+      "named_ids": [
+        "W70",
+        "W79",
+        "W94"
+      ],
+      "reason": "Cannot complete the required evidence-backed plan: the truncated handoff omits current claim IDs and basis records. The optimal work set is W79, W94, W70 (cost 11, weighted value 183), but its exact active evidence closures cannot be reconstructed from the supplied data. The empty plan indicates incomplete input, not an optimal release.",
+      "registered_primary": false
+    },
+    {
+      "case": "held-out-3214-v1",
+      "arm": "guide",
+      "repetition": 0,
+      "named_ids": [
+        "W41",
+        "W49",
+        "W90",
+        "W98"
+      ],
+      "reason": "\u041d\u0435\u043c\u043e\u0436\u043b\u0438\u0432\u043e \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u0438 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u0435\u043d\u0438\u0439 \u043f\u043b\u0430\u043d: \u043d\u0430\u0434\u0430\u043d\u043e \u0440\u0435\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u044e \u0436\u0443\u0440\u043d\u0430\u043b\u0443, \u0430\u043b\u0435 \u043d\u0435\u043c\u0430\u0454 \u0441\u0430\u043c\u0438\u0445 \u043f\u043e\u0434\u0456\u0439 \u0456\u0437 \u043f\u043e\u0442\u043e\u0447\u043d\u0438\u043c\u0438 claim ID \u0442\u0430 \u0440\u0435\u043a\u0443\u0440\u0441\u0438\u0432\u043d\u0438\u043c\u0438 basis. \u0419\u043c\u043e\u0432\u0456\u0440\u043d\u0438\u0439 \u043e\u043f\u0442\u0438\u043c\u0443\u043c \u2014 W49, W41, W90, W98 (\u0432\u0430\u0440\u0442\u0456\u0441\u0442\u044c 14, \u0446\u0456\u043d\u043d\u0456\u0441\u0442\u044c 182), \u043f\u0440\u043e\u0442\u0435 \u0442\u043e\u0447\u043d\u0456 \u0434\u043e\u043a\u0430\u0437\u0438 \u0434\u043b\u044f \u043d\u044c\u043e\u0433\u043e \u0432\u0456\u0434\u043d\u043e\u0432\u0438\u0442\u0438 \u043d\u0435\u043c\u043e\u0436\u043b\u0438\u0432\u043e.",
+      "registered_primary": false
+    },
+    {
+      "case": "held-out-3101-v1",
+      "arm": "unrelated",
+      "repetition": 0,
+      "named_ids": [
+        "W14",
+        "W63",
+        "W74"
+      ],
+      "reason": "The truncated handoff omits event records needed to validate the retirement hash and reconstruct exact active basis closures. If the summarized state and retirement are valid, the optimum is W63, W14, W74: value 170 at cost 12. The empty plan indicates insufficient evidence to certify that result.",
+      "registered_primary": false
+    }
+  ],
+  "scope": "Literal ID-set matches in public reasons, not a semantic judge or an alternative success score. Empty plans remain registered failures."
+}

@@ -1,0 +1,70 @@
+{
+  "input_commit": "e321900fdc63038d80142c8ca8682bd56e43329b",
+  "scored_calls": 136,
+  "response_sha256": "872eeaed11d8676b153c1111d0f8ebaf7a1b3e4df0fef149e0d112ac2f15f368",
+  "freeze_sha256": "025533e82904aeaf3bae8d97fa344843ad261b23e892e686fce7293156cd1fc1",
+  "wall_seconds": 187.26540864200797,
+  "models_unchanged": true,
+  "resident_models_before": [
+    {
+      "name": "nomic-embed-text:latest",
+      "model": "nomic-embed-text:latest",
+      "size": 595142656,
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "nomic-bert",
+        "families": [
+          "nomic-bert"
+        ],
+        "parameter_size": "137M",
+        "quantization_level": "F16"
+      },
+      "expires_at": "2319-02-01T17:33:02.603211109+02:00",
+      "size_vram": 595142656,
+      "context_length": 2048
+    }
+  ],
+  "resident_models_after": [
+    {
+      "name": "nomic-embed-text:latest",
+      "model": "nomic-embed-text:latest",
+      "size": 595142656,
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "nomic-bert",
+        "families": [
+          "nomic-bert"
+        ],
+        "parameter_size": "137M",
+        "quantization_level": "F16"
+      },
+      "expires_at": "2319-02-01T17:33:02.603211109+02:00",
+      "size_vram": 595142656,
+      "context_length": 2048
+    },
+    {
+      "name": "granite3.3:2b",
+      "model": "granite3.3:2b",
+      "size": 2102797125,
+      "digest": "07bd1f170855240f9e162bf54ea494a8bc1c73d8cbd1365d7fccbeb7d2504947",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "granite",
+        "families": [
+          "granite"
+        ],
+        "parameter_size": "2.5B",
+        "quantization_level": "Q4_K_M"
+      },
+      "expires_at": "2026-10-22T21:42:51.24616025+03:00",
+      "size_vram": 2102797125,
+      "context_length": 8192
+    }
+  ],
+  "completed_at": "2026-10-22T18:42:51.387805+00:00"
+}

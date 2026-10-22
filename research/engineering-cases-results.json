@@ -1,0 +1,45 @@
+{
+  "schema": "ontology-engineering-cases/1",
+  "cases": {
+    "commit_before_receipt_error": {
+      "before": {
+        "first_status": "REFUSED",
+        "last_status": "REFUSED",
+        "events": 1,
+        "append_calls": 1
+      },
+      "after": {
+        "first_status": "recorded",
+        "last_status": "recorded",
+        "events": 1,
+        "append_calls": 1
+      }
+    },
+    "uncertainty_survives_input_read_failure": {
+      "intermediate": {
+        "first_status": "UNCONFIRMED",
+        "last_status": "recorded",
+        "events": 1,
+        "append_calls": 2
+      },
+      "after": {
+        "first_status": "UNCONFIRMED",
+        "last_status": "UNCONFIRMED",
+        "events": 0,
+        "append_calls": 1
+      }
+    },
+    "scope": "Retrospective source-excerpt replay; injected faults around real temporary SQLite/file effects. No LLM or deployment execution."
+  },
+  "llm_calls": 0,
+  "historical_failures_reproduced": 2,
+  "source_sha256": {
+    "research/engineering_cases/after.py": "54ef6d98ac3d889e0e04987b3f4da92b9a532bc15d1f5a0be07c2314e4951329",
+    "research/engineering_cases/before.py": "c944347d12aa7a2048e829103fee8f5f06f872f14898ca51786c8eb62becb7e1",
+    "research/engineering_cases/common.py": "6c8ca230c120cc0ad57083f171a8d580a649ca0114f3176d9b67be7f3152b7d8",
+    "research/engineering_cases/intermediate.py": "8de626bd8ae7482ae0cc1649de14ee2338363707e10e33b114c3eeb7952605f6",
+    "research/engineering_cases/receipt_replay.py": "2140c4f0f636d6d86bccf6ecb6b0e1528736adc6dbe124d005b6be1febfab744",
+    "research/engineering_cases/test_replay.py": "26167b17647560b7625032b88c6737bbf547edb077e0d3fecf730e8de153161f",
+    "research/engineering_cases/provenance.json": "c6d0f7eba895c37f5cc23893c692005eef4f9f256f2d8fd4ef29df9c0577db3d"
+  }
+}

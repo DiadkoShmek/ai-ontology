@@ -1,19 +1,19 @@
 {
   "title": "Онтологія AI",
   "volume": 1,
-  "edition": "3.1.0",
+  "edition": "3.2.0",
   "author": "Artur Onysko",
-  "metadata_sha256": "26a498d68d4dc76d19bde88f293b90bcee03badb96515d9905fb62d275a364b7",
-  "source_sha256": "b27760c6a35e60f39d74089884f9a13f51869344394cf5418c8a6a91d84cceea",
-  "book_sha256": "1f15e9825457b80bef42151b3e4be115b4d255f081be9eb9eb53b4fb15e91d3a",
+  "metadata_sha256": "86646042fdb2adbc923a20ea640430ba8e38a7e79ffb344b41dccbf84206218d",
+  "source_sha256": "c13fe6e6db2a8d19b89d6678e20b2afebec1fc6132e86a54cef47d16a6b61d7c",
+  "book_sha256": "6b62a460ae9d4d597f20dabaf13653917f14d488adcdd2d8ed0e59273178b887",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
-      "sha256": "67f7aee76bc37f9bf0f922429af62153b73ff5431a73794e4b04d31af7df3729"
+      "sha256": "a5e13939e31ae289eee499114067d699863431826d9ffe24571cc68028014b15"
     },
     {
       "path": "book/ua/01-core.md",
-      "sha256": "a038cef44a4c4ed95728a5cb8ccc2613aafee118459a046ccf8e8a089c9bcba2"
+      "sha256": "f8ea1fd63435206d93a254c6825929259da1ce8b01382d7426d837b5f7e509c6"
     },
     {
       "path": "book/ua/02-foundations.md",
@@ -33,7 +33,7 @@
     },
     {
       "path": "book/ua/07-iris.md",
-      "sha256": "44472b44dcbec6d9a25024b36886f2c2c07200f3b2803e8ee0125d313403a19b"
+      "sha256": "5bcec104a804580f4846d31ecf78923c3dd7f2a500276a5d2f715f3f0bea8350"
     },
     {
       "path": "book/ua/04-cases.md",
@@ -45,7 +45,7 @@
     },
     {
       "path": "book/ua/09-runtime.md",
-      "sha256": "52a8add0d9a44e853dd2da3b841e63f98d8af231f7f797600e41d249c9dbc7f7"
+      "sha256": "035b620ee6cd5acbfdaf9b8e155e44d1bc855bfd54ed9834b6c69e626558c181"
     },
     {
       "path": "book/ua/10-method.md",
@@ -53,15 +53,15 @@
     },
     {
       "path": "book/ua/11-study.md",
-      "sha256": "fd04e9d9637d4899a15164fbe631b5be16cdb11fdcb786c4f7dcccd8fed205c1"
+      "sha256": "af6f840beeadbd54dca18c58b00fe2a74b33b7767da5fbb8ee2a453704d61f3f"
     },
     {
       "path": "book/ua/05-research.md",
-      "sha256": "fba35b2b3da5a144deaf621afc4d15c513277cb3a77fe24854804f0b1ad4a005"
+      "sha256": "a5f93f38975aa4dd214d1b1332585ac2b8191534adf96edbd2bcc9ebbbdd29f8"
     },
     {
       "path": "book/ua/06-references.md",
-      "sha256": "70377c269b2007ac4e4df2caf2f10de57ac307b7071b83b0fb8f4b376ab8c0fe"
+      "sha256": "cd8cfc28abcc465e42967ce1ae45648af148d53bfb42ec524c74febdec1d198c"
     }
   ],
   "scored_model_calls": 384,
@@ -70,5 +70,53 @@
   "integration_smoke_calls": 2,
   "study_summary_sha256": "e19cdf10f7faaba6e99b4d8fcca73c6db9b348bec6a10bf82258907dacd4460c",
   "runtime_checks": 49,
-  "runtime_report_sha256": "ba99625a927376afcdef841128eaa1a540cdc561ab37ecc426ae2abc98daf77f"
+  "runtime_report_sha256": "ba99625a927376afcdef841128eaa1a540cdc561ab37ecc426ae2abc98daf77f",
+  "scored_model_calls_scope": "original-scoped-continuity-study-only",
+  "model_cohorts_scope": "original-scoped-continuity-study-only",
+  "additional_evaluations": [
+    {
+      "kind": "local-profile-qualification",
+      "path": "research/participation_pilot/results.json",
+      "sha256": "8b1d3364ee3a393e0ea2560f8ad75316dd2c3ac25097596a487d10b6a98d2815",
+      "captured_turns": 136
+    },
+    {
+      "kind": "interrupted-gpt-instrument",
+      "path": "research/gpt_profile_pilot/interruption.json",
+      "sha256": "2e71468d010e0a0188448c66cca25c051d78c093480508ecdeab09f274f33674",
+      "captured_turns": 53
+    },
+    {
+      "kind": "gpt-profile-qualification-and-coupled-transitions",
+      "path": "research/gpt_profile_pilot_v2/results.json",
+      "sha256": "8274600ef2ab921077b3b3eb5ef8276f04d3a9a2f0d16f20d75626b616c7416d",
+      "captured_turns": 100
+    },
+    {
+      "kind": "transfer-calibration-v1",
+      "path": "research/transfer_calibration/results.json",
+      "sha256": "3e95f911a0354cca8689280aedb6af8e0a5913b843870ba62b658311731d2347",
+      "captured_turns": 24
+    },
+    {
+      "kind": "transfer-calibration-v2",
+      "path": "research/transfer_calibration_v2/results.json",
+      "sha256": "998983e1237498255a038076dbb3d2d8dc2c69c7fc8522c43b21049f15da6790",
+      "captured_turns": 14
+    },
+    {
+      "kind": "transfer-calibration-v3",
+      "path": "research/transfer_calibration_v3/results.json",
+      "sha256": "489d8c559d75877006fb8c1efbe6fe5596e0f34f2ebd2987e39a6ea1b89dcda9",
+      "captured_turns": 20
+    },
+    {
+      "kind": "reading-mediated-transfer",
+      "path": "research/transfer_reading/results.json",
+      "sha256": "ee74cd8d84c10baad9815783c5c69bcdebc44ed9e58ebb1ea715c0ec3bd259ce",
+      "captured_turns": 199
+    }
+  ],
+  "total_captured_model_turns_scope": "Sum of listed evaluation archives; excludes unscored warmups, canaries, length probes and integration smoke calls. Turns are not independent samples.",
+  "total_captured_model_turns": 930
 }

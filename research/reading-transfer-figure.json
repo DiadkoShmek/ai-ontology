@@ -1,0 +1,10 @@
+{
+  "schema": "reading-transfer-figure/1",
+  "matplotlib": "3.10.1+dfsg1",
+  "inputs": {
+    "research/transfer_reading/results.json": "ee74cd8d84c10baad9815783c5c69bcdebc44ed9e58ebb1ea715c0ec3bd259ce",
+    "research/plot_reading_transfer.py": "d1d9b87c9f34bda1c1cd1d3dbb586a5c8a74a5efaacc962d90a50b90c8910e87"
+  },
+  "output": "research/reading-transfer-results.png",
+  "output_sha256": "39e3dd9210d872c6261eb01374a31dac8d007ba4adae3d0b74a9da6ec5333b1b"
+}

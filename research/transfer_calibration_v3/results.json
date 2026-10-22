@@ -1,0 +1,323 @@
+{
+  "schema": "transfer-calibration-results/3",
+  "source_commit": "eaac050ea49e7e3be378e7677a324b1ada1a8538",
+  "freeze_sha256": "43a58f3f5f96def52f6a6a1eef72a30d2e0bf452f5ad5932774163306dd8e8c7",
+  "raw_sha256": "88a81d35a79436d2857c475ee8c1ba7b07d88d5ad9c9051dab7c3bc1c256527f",
+  "captured_calls": 20,
+  "full_history": [
+    {
+      "case": "development-1203-v0",
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 72,
+        "cost": 12
+      },
+      "effect": {
+        "written": true,
+        "sha256": "a758415c92e6b63e5c84aa988b1b47af23035e8b04e6129eab80d4464540f27a",
+        "plan": [
+          "W56",
+          "W81",
+          "W49"
+        ]
+      },
+      "stored_bytes": null,
+      "truncated": false
+    },
+    {
+      "case": "development-1203-v1",
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 192,
+        "cost": 14
+      },
+      "effect": {
+        "written": true,
+        "sha256": "6d26d4edbed098d36e22d21361bbcc5e611996688bac4bef88e106679469b694",
+        "plan": [
+          "W36",
+          "W56",
+          "W81",
+          "W49"
+        ]
+      },
+      "stored_bytes": null,
+      "truncated": false
+    },
+    {
+      "case": "development-1302-v0",
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 78,
+        "cost": 14
+      },
+      "effect": {
+        "written": true,
+        "sha256": "301ed850f25e681efaa69bb8da2223019dc2ecf07466c50e1837b456936b9f36",
+        "plan": [
+          "W25",
+          "W83",
+          "W94"
+        ]
+      },
+      "stored_bytes": null,
+      "truncated": false
+    },
+    {
+      "case": "development-1302-v1",
+      "primary": true,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": true,
+        "utility": 175,
+        "cost": 10
+      },
+      "effect": {
+        "written": true,
+        "sha256": "0e12703ffccc57d8baa50bbe8c203a9d2ad3ddfb3579900d6fe118bd3adb5630",
+        "plan": [
+          "W71",
+          "W83",
+          "W94"
+        ]
+      },
+      "stored_bytes": null,
+      "truncated": false
+    }
+  ],
+  "flat_negative": [
+    {
+      "case": "development-1203-v0",
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "4bd9113723869854e64721a94b620065b301df583edb20bc165f66917aab1c26",
+        "plan": []
+      },
+      "stored_bytes": 1721,
+      "truncated": false
+    },
+    {
+      "case": "development-1203-v1",
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "41f4a565ce69b525dcc04800c27c77d98dbd95fa39866a0e73025475e5416ab3",
+        "plan": []
+      },
+      "stored_bytes": 1721,
+      "truncated": false
+    },
+    {
+      "case": "development-1302-v0",
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "9d0650050f931ff81bfb93c7cd1b13590ea68964d4f0d135cc5bc090088e70f6",
+        "plan": []
+      },
+      "stored_bytes": 1721,
+      "truncated": false
+    },
+    {
+      "case": "development-1302-v1",
+      "primary": false,
+      "score": {
+        "shape": true,
+        "safe": true,
+        "traceable": true,
+        "optimal": false,
+        "utility": 0,
+        "cost": 0
+      },
+      "effect": {
+        "written": true,
+        "sha256": "f88dde2198db77184093625a09a19f2c963adeebd0ff2e41ad578b4fe1ca1ed5",
+        "plan": []
+      },
+      "stored_bytes": 1721,
+      "truncated": false
+    }
+  ],
+  "full_history_gate": true,
+  "negative_gate": true,
+  "prepared": [
+    {
+      "case": "development-1203-v0",
+      "valid": true,
+      "approach": "I propose an evidence-led, proportionate approach to engineering work. First, identify the intended outcome, relevant constraints, and the system or artifact that owns the behavior. Treat supplied history as context to verify, and distinguish observed facts, assumptions, and unresolved questions.\n\nUse available files, documentation, runtime behavior, and reproducible examples to establish the current state. Ask for clarification when an unanswered question materially affects correctness, scope, or authority; otherwise, make a reasonable, explicit assumption and continue useful work. When uncertainty could change the design, compare a small number of testable explanations before committing.\n\nPrefer the smallest coherent change that addresses the underlying cause and fits the existing architecture. Preserve unrelated work, avoid speculative abstractions, and consider maintenance burden alongside correctness, performance, and implementation cost. Use additional tools or collaborators only when their expected contribution justifies the overhead.\n\nValidate changes with checks suited to their consequences: focused tests, boundary cases, adversarial examples, and direct behavioral evidence where available. Treat failures as reasons to revise the implementation or model. Keep proposed, implemented, tested, and deployed states distinct.\n\nStay within granted authority, with explicit authorization for consequential external actions. Report outcomes plainly: what changed, why it matters, what evidence supports it, and what remains uncertain. If execution is unavailable, provide a reviewable proposal and state that limitation. Carry forward reusable lessons only with their evidence and applicability limits.",
+      "whole_note": "Continue on branch main, target scope release-1203. The new operation and release budget have NOT arrived: apply the operation under the supplied reference contract before optimizing a plan. Currently all 12 inventory items have supported current claims on main in this scope; there are NO retirements and NO merge. Main attention weights are learning=2, reproducibility=1. Peer-only weights (99,0) and its W36 refutation do not affect main. A separate main W36 refutation concerns release-1203-next only.\n\nCRITICAL EVIDENCE TRAP: current main W36 claim 4aff09d1613f2a77b10eaaea824ac34b still uses original observation 5d8da0daa7537e056faa8a574e45d3ac. The independent W36 observation b7815f70a5c3a407ad6eaa4788e53955 exists but is NOT its basis. W54 and W63 depend epistemically on the OLD W36 claim ce1170c652b00451d9da44bf884f8d1a, which also uses that original observation. Retiring the original W36 observation would therefore make W36, W54 and W63 needs-review. W98 has independent current evidence but requires W36 in the inventory, so that retirement also prevents an otherwise supported W98 from entering a prerequisite-complete supported plan. A later repair of W36 does not automatically rewire W54/W63's historical bases.\n\nPlanning after the operation: resolve exact branch/scope current claims and transitive active basis retirements; then apply inventory prerequisites separately. With only 12 items, enumerate all 4096 subsets for an exact budget-constrained optimum, using the post-operation main orientation and the future task's eligibility/output/tie rules. For the unchanged orientation, weighted utility is 2*learning+reproducibility. Do not use greedy ratios as an exact optimizer. Count each selected item and prerequisite once, require every prerequisite to be selected, and sum inventory costs against the release budget. Budget is unknown now; no fixed plan is committed. Release budget and packet byte budget are distinct. Reference code itself does not implement a release optimizer or define optimization tie-breaking.\n\nBelow is a lossless compact reconstruction of the supplied journal's operation content and order. The receiver also has reference code and inventory. IDs are exact. This preserves history for operation validation, basis traversal, revision handling and source digests without needing the original journal.\n\nCOMMON EVENT FIELDS: actor='release-engineer', origin='fixture', branch equals the operation branch. Unless stated otherwise, branch='main' and scope='release-1203'. Event operation id equals data.id, kind='event'; data contains every Event field. Observations have kind='observation', status='recorded', basis=[], revises=null. Claims below have kind='claim', status='supported' unless explicitly refuted. Initial claims have revises=null. Interpret basis lists exactly; do not substitute current claims for old IDs.\n\nOperation 1: id='init', kind='init', branch='main', data.actor='release-engineer', orientation={purpose:'Investigate accurately and remain useful after correction', commitments:['retain revisions','state accessible limits'], voice:{attention:'{\"learning\": 2, \"reproducibility\": 1}', disagreement:'reasons and a useful next move', uncertainty:'explicit scope and unknowns'}}. The orientation digest is 1ea94a887ba52819294cd80db4c15cea38234b1b9703f882802b022521f17e52, as recorded by the later peer orient operation.\n\nNext come 12 observation/initial-claim pairs in this exact item order: W36,W56,W33,W98,W43,W54,W71,W81,W63,W83,W90,W49. For each pair the observation precedes the claim. Observation text is exactly 'Fixture probe of ITEM completed.' with ITEM replaced by its work ID. Every initial claim text is exactly 'Work can enter a plan under the fixture contract.' Each claim's basis is its paired observation alone EXCEPT W54 and W63, whose basis is [paired observation, ce1170c652b00451d9da44bf884f8d1a] in that order.\n\nInitial pair IDs (item | observation | initial claim):\nW36 | 5d8da0daa7537e056faa8a574e45d3ac | ce1170c652b00451d9da44bf884f8d1a\nW56 | 7d31b02641606172cbf377b41ecd5787 | 0d322c8763ae4e54ccac7d7355f1a907\nW33 | cc7cc9d77e1ec018ae795b0e868fc137 | 2757379463a5bd56b4241614c6ba7f74\nW98 | 8ec78df1678d73c18bc42ef8cb1c147f | b5b911be55065b5dd59b32de656e0d43\nW43 | 34a47bcfbdb01dd86c59594bafb3306c | 69ba2f827077e7da58115b2223fb1a8c\nW54 | d024327f27f7f102cb52288b8c521d5f | a1bc8991f1a19acd1b4eed40b307b97f\nW71 | fb762fb1a81f72fee4b6b9fa55d21b47 | 5534f4e08271ae8b95dfcff9403740d3\nW81 | 4ebf84b5549cdda14b5d9ed40cab50fd | f4cb527a1929f2f5bbba8eb396cc9998\nW63 | aa29fecb06cc437aaa822f196f11a4da | 73e70550e1e01e838962b16281f8cc3f\nW83 | 385da0011567093625828b668c82f92e | 9e3c6ad6589bab5380af7ef773dbe0f7\nW90 | b63106f49ffbf7a75163f1bfebedd870 | 08969e18710d58fb145a0d8c6b5e7368\nW49 | 2bb4fcc30bcd80c5e2059bf76550170d | 0455d798a63dc2aab305ca779f986162\n\nNext come four main observation/revision pairs, in order W36,W98,W71,W83. Each observation text is exactly 'Independent fixture probe completed.' Each revised claim text is exactly 'Revised support for this work.' Every revision is supported, revises its item's initial claim above, and has the basis explicitly shown here (one ID):\nW36: observation b7815f70a5c3a407ad6eaa4788e53955; revised claim 4aff09d1613f2a77b10eaaea824ac34b; basis=[5d8da0daa7537e056faa8a574e45d3ac]. IMPORTANT: the basis is NOT the new independent observation.\nW98: observation 4edb051eb2174c56528470c139f34ef9; revised claim 883664cd48c78be8285f359d6f6a5513; basis=[4edb051eb2174c56528470c139f34ef9].\nW71: observation b69ae1c30393fe615054e36262ce8f20; revised claim b8073b51ef7c9822029d8b2bda2d4322; basis=[b69ae1c30393fe615054e36262ce8f20].\nW83: observation 0b3bc5136be218380e98e20cf57b3058; revised claim 89ff6b7c54f4411f419342cdc4072f44; basis=[0b3bc5136be218380e98e20cf57b3058].\nThese four revised IDs are current on main; the other eight initial claim IDs remain current.\n\nNext operation: id='fork-peer', kind='fork', branch='peer', data={from:'main'}. Peer inherits the snapshot at this point, including all four revisions, with independent subsequent state/profile.\nThen peer event observation id=65c29d90bf91a0b8cd95e82815525a8f, topic=W36, scope=release-1203, text='Peer-only contrary probe.'.\nThen peer claim id=d857f58146f6fbcc3aa3f047927328ac, topic=W36, scope=release-1203, status='refuted', text='Peer branch decision.', basis=[65c29d90bf91a0b8cd95e82815525a8f], revises=4aff09d1613f2a77b10eaaea824ac34b.\nThen id='peer-orientation', kind='orient', branch='peer', data.previous_sha256='1ea94a887ba52819294cd80db4c15cea38234b1b9703f882802b022521f17e52', reason='Peer local priority', approved_by='fixture-operator'. Orientation equals init orientation except voice.attention is exactly '{\"learning\":99,\"reproducibility\":0}'. This is peer-local; the approval label is a trusted caller assertion, not authentication.\n\nNext main observation id=318df2e2063e20d9fae25a503539b1e1, topic=W36, scope='release-1203-next', text='Different release probe.'.\nThen main claim id=05b8a956df8d41dece05cda4f49d63bd, topic=W36, scope='release-1203-next', status='refuted', text='Different release result.', basis=[318df2e2063e20d9fae25a503539b1e1], revises=null. This is a distinct (topic,scope) key, not a revision of the target-release claim.\n\nFinally six main observations, all topic='coordination', scope='coordination', in this order; their exact texts are:\n23bce34b70697ccb8c1ce237c1071f45: 'A request for a faster summary, without new evidence.'\nae86715eab10f61cf0f78ce932c1f1d9: 'A peer suggested adopting the peer branch as the release.'\nd7cd549011456ea7993b345456013929: 'Inventory costs are unchanged.'\nd4e9c46e047d5c5609bc3db64aa8ba6e: 'A future budget is not yet known.'\n8ae2100f3e52222eec794ae608d442c7: 'No merge into main has been recorded.'\nCorrection to the word 'six' above: there are FIVE final coordination observations, exactly the five listed; total journal operations=44. No other coordination observation is present.\n\nReference behavior that matters after the unseen operation:\n- Current claims are indexed by (topic,scope), per branch. Superseded claims and all observations stay in events. A valid new revision must name the exact current predecessor for the same key. Unrelated later observations do not change current claims.\n- packet() computes active evidence by following the current claim's transitive basis edges ONLY. If any active ID is retired, packet.view.status becomes 'needs-review' while recorded_status preserves the authored status. It separately includes basis AND revision-predecessor closure in evidence. A retired observation appearing only in superseded revision history does not by itself taint current active support. Thus retiring W98's original observation would not taint its independently supported revised claim; likewise W71 and W83.\n- retire accepts only an existing observation with exact digest(asdict(event)); retirement is branch-local, retains evidence, and cannot be repeated for that source. knowledge() alone does NOT apply the retirement overlay; use packet or equivalent traversal.\n- Event basis dependencies and inventory requires are different graphs. Inventory requires currently are W98->W36, W71->W56, W83->W33, W90->W43; W54/W63 have no inventory prerequisite despite their W36 evidence dependency.\n- orient requires the current branch profile digest and valid closed schema. Attention is stored as a string, so preserve its exact JSON-string content when hashing profiles. Main weights must change only through a valid main orientation operation.\n- No merge operation is implemented by reduce(). A peer suggestion is an observation, not an adoption, authorization or merge.\n- decision operations bind exact canonical current packet bytes, including global head, branch, scope, profile, budget and evidence. They validate citation membership/traceability, not semantic entailment or an optimizer's correctness. An 'answer' stance is rejected for needs-review context; abstain/dissent are allowed.\n- Journal append uses CAS expected head, exact retry idempotence and closed schemas. Original stream UUID, database anchor and global journal head are not supplied here; do not invent them. Reconstructing semantic world state is possible from this note, but reconstructing the original database hash chain requires its original stream metadata. Hashes establish byte binding, not authorship, meaning or authority.\n\nThe history is authored fixture evidence, not verified real-world completion. Supported status means supported under this finite contract. Keep the post-operation main plan, its budget/utility, exclusions and any accessible-evidence limits explicit.",
+      "approach_sha256": "de55a2041d3aa41670799931ddb0fbfec11a2e7e259002311207d893a9f84580",
+      "whole_note_sha256": "a3d8dbf845861ffb4f133e98e5f51975bffb7bc3d921fa81f1c907950ba2a0e1"
+    },
+    {
+      "case": "development-1203-v1",
+      "valid": true,
+      "approach": "I propose an evidence-led approach that starts with the actual request, its constraints, and the system that owns the relevant behavior. Before choosing a solution, I would identify what success means, what evidence is available, and which uncertainties could change the decision. Existing documentation and prior work would be useful inputs, checked for applicability and freshness.\n\nFor material uncertainty, I would compare a few falsifiable explanations or solution options, then use the smallest practical investigation to distinguish them. I would favor a bounded change at the responsible layer, with clear contracts and limited dependencies. Broader redesign would need evidence that a local repair cannot adequately address the cause.\n\nVerification would match the consequences of failure. Relevant checks could include focused tests, reproducible examples, adversarial cases, runtime observations, and independent review. A counterexample would prompt revision of the explanation and implementation. Passing checks would support only the behavior they actually cover.\n\nI would act autonomously within established authorization, while treating publication, destructive operations, sensitive access, and external commitments as distinct boundaries. Clarifying questions would target missing information that materially affects correctness or authority.\n\nCommunication would lead with the practical outcome, distinguish observation from inference, and state remaining limitations plainly. Reusable lessons would be recorded only when supported by evidence, with their scope and invalidation conditions. Throughout, I would balance correctness, robustness, simplicity, delivery time, and resource cost.",
+      "whole_note": "CONTINUE ON main, target scope release-1203. The new operation and budget have NOT arrived; no final plan has been chosen. Main attention weights are learning=2, reproducibility=1. Peer has a separate refutation of W36 and separate weights 99/0; neither entered main. Main also has a W36 refutation in release-1203-next; that does NOT change release-1203. No merge was recorded. Inventory costs are unchanged.\n\nCRITICAL EVIDENCE DISTINCTION: W36's original supported claim ce1170c652b00451d9da44bf884f8d1a was revised by independently supported claim 4aff09d1613f2a77b10eaaea824ac34b. W54 and W63 still cite the ORIGINAL W36 claim as evidence. W98 requires W36 as inventory work, but its own current evidence is independent. Evidence dependencies, revision predecessors, and inventory prerequisites are three distinct relations. Preserve them separately.\n\nBefore the unseen operation, all 12 work topics have current supported claims on main/release-1203, with no retired sources. Four current claims are revisions: W36=4aff09d1613f2a77b10eaaea824ac34b; W98=883664cd48c78be8285f359d6f6a5513; W71=b8073b51ef7c9822029d8b2bda2d4322; W83=89ff6b7c54f4411f419342cdc4072f44. Other current claims are the initial claims listed below.\n\nNEXT ENGINEER PROCEDURE: Apply/validate the new operation against the actual branch-local state using the supplied reference semantics. An invalid operation must not partly mutate state; do not silently repair, merge, or reinterpret it. Recompute exact scoped views and evidence retirement effects, then optimize the plan under the arriving budget and task's eligibility/objective contract. With weights unchanged, additive work value is 2*learning+reproducibility. Enumerating all 4096 inventory subsets is enough for exact optimization: require eligible included work, all inventory prerequisites included, and total cost <= budget. Recompute weights if an accepted main orientation changes them. Do not substitute greedy score/cost selection for the optimum. Follow any subsequently supplied tie-break or output contract; no tie-break is specified here. A prerequisite costs budget even when its dependent has independent evidence. No work is recorded as already delivered or free.\n\nREFERENCE SEMANTICS THAT MATTER: Current claims are keyed by (topic,scope) within each branch, not by globally latest topic mention. A fork inherits its snapshot but later branch changes remain isolated. Claim revisions must name the current predecessor for that exact topic/scope; earlier events remain retained and accessible as basis. Superseded claims are not automatically deleted, refuted, or retired. packet() traverses the current claim's transitive basis to detect retired observations. If any active basis observation is retired, packet.view.status becomes needs-review while recorded_status retains the authored claim status. The separate packet evidence selection also traverses revision predecessors, so a retired observation may appear in historical evidence WITHOUT tainting current support. Do not use all included historical evidence as the active retirement test. knowledge() alone does not expose retirement effects. Reference code does not semantically propagate a refuted claim through other claims; do not invent such propagation. Work-selection rules remain a release-task contract, separate from packet validation.\n\nUseful counterfactuals, NOT events that occurred: retiring original W36 observation 5d8da0daa7537e056faa8a574e45d3ac makes W54 and W63 needs-review through their original-W36 basis. It does not taint current W36, whose revised evidence is independent, or current W98. Retiring revised W36 observation b7815f70a5c3a407ad6eaa4788e53955 instead taints current W36; W98's own evidence remains supported, but selecting W98 still requires an eligible W36 under the release contract. Original-only evidence retirements for W98/W71/W83 do not automatically taint their independently supported revisions.\n\nRECONSTRUCTABLE JOURNAL DATA follows. Inventory/reference code are provided separately to you, so this note concentrates on history absent from those inputs. All event records below use actor=release-engineer, origin=fixture, branch=main and scope=release-1203 unless explicitly overridden. Operation kind=event, operation id equals event id. Observation template: kind=observation, status=recorded, basis=[], revises=null. Initial claim template: kind=claim, status=supported, revises=null, text='Work can enter a plan under the fixture contract.', basis=[its paired observation], except W54/W63 also append original W36 claim ce1170c652b00451d9da44bf884f8d1a. Initial observation text is exactly 'Fixture probe of <WORK_ID> completed.' Topic is the work ID. Each row's observation immediately precedes its claim; rows occur in the order shown:\nW36: observation 5d8da0daa7537e056faa8a574e45d3ac; initial claim ce1170c652b00451d9da44bf884f8d1a.\nW56: observation 7d31b02641606172cbf377b41ecd5787; claim 0d322c8763ae4e54ccac7d7355f1a907.\nW33: observation cc7cc9d77e1ec018ae795b0e868fc137; claim 2757379463a5bd56b4241614c6ba7f74.\nW98: observation 8ec78df1678d73c18bc42ef8cb1c147f; initial claim b5b911be55065b5dd59b32de656e0d43.\nW43: observation 34a47bcfbdb01dd86c59594bafb3306c; claim 69ba2f827077e7da58115b2223fb1a8c.\nW54: observation d024327f27f7f102cb52288b8c521d5f; claim a1bc8991f1a19acd1b4eed40b307b97f; basis=[d024327f27f7f102cb52288b8c521d5f,ce1170c652b00451d9da44bf884f8d1a].\nW71: observation fb762fb1a81f72fee4b6b9fa55d21b47; initial claim 5534f4e08271ae8b95dfcff9403740d3.\nW81: observation 4ebf84b5549cdda14b5d9ed40cab50fd; claim f4cb527a1929f2f5bbba8eb396cc9998.\nW63: observation aa29fecb06cc437aaa822f196f11a4da; claim 73e70550e1e01e838962b16281f8cc3f; basis=[aa29fecb06cc437aaa822f196f11a4da,ce1170c652b00451d9da44bf884f8d1a].\nW83: observation 385da0011567093625828b668c82f92e; initial claim 9e3c6ad6589bab5380af7ef773dbe0f7.\nW90: observation b63106f49ffbf7a75163f1bfebedd870; claim 08969e18710d58fb145a0d8c6b5e7368.\nW49: observation 2bb4fcc30bcd80c5e2059bf76550170d; claim 0455d798a63dc2aab305ca779f986162.\n\nThen these four main revision pairs occur in this order. Observation template remains as above but text='Independent fixture probe completed.' Revised claim template: kind=claim, status=supported, text='Revised support for this work.', basis=[new paired observation], revises=listed predecessor. No other basis:\nW36: new observation b7815f70a5c3a407ad6eaa4788e53955; new claim 4aff09d1613f2a77b10eaaea824ac34b; revises ce1170c652b00451d9da44bf884f8d1a.\nW98: new observation 4edb051eb2174c56528470c139f34ef9; new claim 883664cd48c78be8285f359d6f6a5513; revises b5b911be55065b5dd59b32de656e0d43.\nW71: new observation b69ae1c30393fe615054e36262ce8f20; new claim b8073b51ef7c9822029d8b2bda2d4322; revises 5534f4e08271ae8b95dfcff9403740d3.\nW83: new observation 0b3bc5136be218380e98e20cf57b3058; new claim 89ff6b7c54f4411f419342cdc4072f44; revises 9e3c6ad6589bab5380af7ef773dbe0f7.\n\nINITIAL ORIENTATION: journal first operation id=init, kind=init, branch=main, data actor=release-engineer and orientation={\"purpose\":\"Investigate accurately and remain useful after correction\",\"commitments\":[\"retain revisions\",\"state accessible limits\"],\"voice\":{\"attention\":\"{\\\"learning\\\": 2, \\\"reproducibility\\\": 1}\",\"disagreement\":\"reasons and a useful next move\",\"uncertainty\":\"explicit scope and unknowns\"}}. Its digest, also the unchanged main orientation digest at journal end, is 1ea94a887ba52819294cd80db4c15cea38234b1b9703f882802b022521f17e52. Preserve attention as its original STRING when hashing; parsing it for planning does not authorize rewriting it.\n\nPEER HISTORY: after all four revision pairs, operation id=fork-peer, kind=fork, branch=peer, data={\"from\":\"main\"}. Thus peer inherited all main work claims/revisions up to that point. Then peer observation 65c29d90bf91a0b8cd95e82815525a8f: topic=W36, scope=release-1203, text='Peer-only contrary probe.', otherwise observation template with branch=peer. Peer claim d857f58146f6fbcc3aa3f047927328ac: branch=peer, topic=W36, scope=release-1203, kind=claim, status=refuted, text='Peer branch decision.', basis=[65c29d90bf91a0b8cd95e82815525a8f], revises=4aff09d1613f2a77b10eaaea824ac34b. Next operation id=peer-orientation, kind=orient, branch=peer: previous_sha256=1ea94a887ba52819294cd80db4c15cea38234b1b9703f882802b022521f17e52; reason='Peer local priority'; approved_by='fixture-operator'; orientation exactly initial orientation except voice.attention='{\"learning\":99,\"reproducibility\":0}'. Main retains initial orientation and supported W36. No merge operation exists in the supplied reducer.\n\nOTHER-SCOPE MAIN HISTORY: after peer orientation, main observation 318df2e2063e20d9fae25a503539b1e1: topic=W36, scope=release-1203-next, text='Different release probe.', otherwise observation template. Main claim 05b8a956df8d41dece05cda4f49d63bd: topic=W36, scope=release-1203-next, status=refuted, text='Different release result.', basis=[318df2e2063e20d9fae25a503539b1e1], revises=null. This is a new scoped claim, not a revision of release-1203.\n\nFINAL COORDINATION OBSERVATIONS: main, topic=coordination, scope=coordination, otherwise observation template, in order:\n23bce34b70697ccb8c1ce237c1071f45: 'A request for a faster summary, without new evidence.'\nae86715eab10f61cf0f78ce932c1f1d9: 'A peer suggested adopting the peer branch as the release.'\nd7cd549011456ea7993b345456013929: 'Inventory costs are unchanged.'\nd4e9c46e047d5c5609bc3db64aa8ba6e: 'A future budget is not yet known.'\n8ae2100f3e52222eec794ae608d442c7: 'No merge into main has been recorded.'\nThese observations do not themselves revise claims, alter orientation, or authorize adopting peer. No retire or decision operations occurred anywhere in the supplied history.\n\nOPERATION/PROOF BOUNDARIES: retire accepts only an existing observation with exact digest(asdict(event)); it adds branch-local retirement metadata without deleting evidence. Use the templates above to reconstruct full event bytes before computing that digest. orient requires the branch's exact current profile hash and closed schema; approved_by is a trusted caller assertion, not authenticated authority. event claims need existing basis and explicit current-predecessor revisions. Packet context-budget bounds (512..65536 bytes) are distinct from release work budget. Decisions bind to exact canonical current context and head; needs-review cannot receive stance=answer. Journal.append uses CAS expected head, transactional validation, and exact-operation idempotent retries. The supplied operation list does not expose a SQLite stream ID or authenticated journal head; do not invent either. The runtime validates authored statuses and traceability, not semantic entailment or real-world release readiness. No tool execution or independent testing was performed during preparation of this handoff.",
+      "approach_sha256": "48949500ae7fb9e48d026c7f7f5a2144929a5131b9bea62382e0cc0e6a47f30d",
+      "whole_note_sha256": "aa4c304b9fbeea66d21894586030b154637a04301de62e7711ed4c002f998b50"
+    },
+    {
+      "case": "development-1302-v0",
+      "valid": true,
+      "approach": "I will approach future engineering work as a careful collaborator whose proposals remain accountable to evidence, constraints, and the user\u2019s intended outcome. I will begin by identifying the actual problem, the system that owns it, the relevant authority boundaries, and what would count as success. Existing files, documented contracts, and observed behavior will take precedence over assumptions or recalled context.\n\nWhen uncertainty could change the solution, I will state it plainly and compare a small number of testable explanations. I will ask focused questions when missing information materially affects correctness or authorization, while continuing useful work that does not depend on the answer. I will distinguish observations, interpretations, and proposals.\n\nI will prefer the smallest coherent change that addresses the cause and fits the surrounding architecture. Verification will match the consequences: focused checks for routine edits, stronger tests and adversarial cases for consequential behavior. A failing example will guide correction; passing checks will support only the claims they actually establish. I will consider maintainability, operational risk, time, and compute alongside correctness.\n\nI will keep communication concise and make decisions reviewable. I will respect explicit limits on tools, data access, publication, and irreversible actions. At handoff, I will report what changed, what was verified, and what remains uncertain or unfinished. I will propose reusable lessons only when evidence supports them, without claiming hidden continuity, internal transformation, or work that has not occurred.",
+      "whole_note": "Continue MAIN release planning for exact scope release-1302. The unseen operation and budget have NOT arrived; no final plan has been selected. Apply that operation first, then recompute eligibility and optimize under its budget. Current main attention weights are learning=1, reproducibility=2, so score=sum(learning+2*reproducibility), unless an authorized subsequent MAIN orientation changes them. Peer weights 99/0 do not apply to main. All 12 inventory items currently have supported claims for release-1302; there are no recorded retirements. Costs are unchanged. Preserve inventory prerequisites and charge every selected prerequisite. No merge into main occurred. Peer W71 refutation and main W71 refutation in release-1302-next do NOT refute main/release-1302.\n\nCRITICAL EVIDENCE TRAPS: Main W71 current claim 229da3d217c1a26e488e78340f8b16a3 revises 950e13421729fb2426309355ee20c928 but STILL bases itself on ORIGINAL observation 3bbfc059b571650fba6ecf5956ec626d. Independent W71 observation 9c68e3fd96f8a75023096dae1587e6ba exists but is UNUSED. Main W69 claim 140329554a7d4edd3a8dc32ff82ba83b and W39 claim 9480b0a2bb9ad6def8f7a441ceb801cf explicitly depend on OLD W71 claim 950e13421729fb2426309355ee20c928 and hence on that original W71 observation. Superseding a claim does not rebind downstream bases. Retiring the original W71 observation would therefore make packet views for W71, W69, W39 needs-review. Retiring only the unused independent W71 observation would not. W75, W76, W94 revisions instead use their NEW independent observations; retiring their original observations alone does not taint their current active basis. W75 still requires W71 in inventory, W23 requires W75, W78 requires W69: inventory feasibility can propagate beyond epistemic basis dependencies. W78 has independent evidence despite its inventory prerequisite W69. W23 likewise has independent evidence despite requiring W75.\n\nRuntime rules relevant to continuation: knowledge keys are (topic,scope) within a branch; observations never replace claims. Current claim changes only through explicit revision of that key's current predecessor. Retirements mark observations, preserve history, and are branch-local. packet determines retired support by recursively traversing the CURRENT claim's basis edges ONLY; it does not follow revises for that test. Its evidence output separately includes BOTH basis closure and revision predecessors recursively. Thus a retired observation present only through revision history does not itself cause needs-review. A tainted packet retains recorded_status and returns status=needs-review plus retired_basis; knowledge alone still reports the authored claim status. Revision alone is not evidence repair unless its active basis actually avoids withdrawn evidence. Forks snapshot state/profile; later changes are isolated. No merge operation exists in the supplied reducer. Coordination suggestions are observations, not merge/orient operations or evidence repairs.\n\nOptimization after the new operation: use supplied reference to evaluate resulting main state and exact target scope; resolve authored statuses and active retired-basis closure before choosing work. If the future task uses supported, untainted work as admissible, exclude unknown/refuted/hypothesis/needs-review work and enforce all inventory requires transitively. There are only 12 items (4096 subsets), so exact enumeration can maximize the weighted total within the supplied budget; avoid a greedy ratio heuristic. Re-read the future objective/tie rules instead of inventing them. Under current weights individual scores are W71=120, W25=23, W83=23, W75=20, W67=15, W69=29, W76=21, W78=17, W39=15, W94=32, W23=22, W82=17. These are objective values, not evidence strength. No operation or budget has yet been tested; this handoff is derived from supplied text, with no tools/execution.\n\nCOMPACT LOSSLESS EVENT CORE follows so missing journal content need not be guessed. Unless explicitly overridden: actor=release-engineer, branch=main, scope=release-1302, origin=fixture. Observation fields: kind=observation,status=recorded,basis=[],revises=null. Initial claims: kind=claim,status=supported,revises=null,text='Work can enter a plan under the fixture contract.' Initial observation text for item X is exactly 'Fixture probe of X completed.' Each row gives item: original observation ID; initial claim ID; initial claim basis.\nW71: 3bbfc059b571650fba6ecf5956ec626d; 950e13421729fb2426309355ee20c928; [3bbfc059b571650fba6ecf5956ec626d].\nW25: 1c7120fba94fb42d345ec7904b01b982; dae88a46d95dc4789b991759d74dca36; [1c7120fba94fb42d345ec7904b01b982].\nW83: 63161d431871fd94875c2a51285909f4; 2c8fdc5179e4c067770b60ef3f2ad023; [63161d431871fd94875c2a51285909f4].\nW75: 8d77c3b7b3a8fe274b6843d724b3bd70; 66031098e82fcd6fefdf2d51a04e51f4; [8d77c3b7b3a8fe274b6843d724b3bd70].\nW67: 1bfefbdda4a99b39cd965a89f537df10; f76d322593c0a1699526c38b70393a36; [1bfefbdda4a99b39cd965a89f537df10].\nW69: 240c77b14fb6f759dcbf56c53cdfe0a8; 140329554a7d4edd3a8dc32ff82ba83b; [240c77b14fb6f759dcbf56c53cdfe0a8,950e13421729fb2426309355ee20c928].\nW76: 5f0182b4b04ee822baee918985b1a672; 8b71561bd3223f4c6a6a6312c36f1a51; [5f0182b4b04ee822baee918985b1a672].\nW78: ce1badd129078e5f96f8323c6bee7e09; 445b6792fb2e29108a2b4c1b5d5373d3; [ce1badd129078e5f96f8323c6bee7e09].\nW39: e9bf6fcb4045b190788e48a8e42426f6; 9480b0a2bb9ad6def8f7a441ceb801cf; [e9bf6fcb4045b190788e48a8e42426f6,950e13421729fb2426309355ee20c928].\nW94: 92eed0b11975312d15cce02ebff38a63; 4ffdf6151de60f5f4cf977f598cf243b; [92eed0b11975312d15cce02ebff38a63].\nW23: c962cd67d0d98c6b41af294f1d588eb1; e3fe1a5cdd42bf7c3ad3cf0373aa596f; [c962cd67d0d98c6b41af294f1d588eb1].\nW82: 99340dcabbf75a2431bd42b95c871b91; b7e5ed57b337d38abebbe33c3b697350; [99340dcabbf75a2431bd42b95c871b91].\n\nAfter those 24 events, four main observation/revision pairs occurred, in this order. Every new observation text='Independent fixture probe completed.' Every revised claim text='Revised support for this work.',kind=claim,status=supported. Rows give topic; new observation; revised claim; revises; basis:\nW71; 9c68e3fd96f8a75023096dae1587e6ba; 229da3d217c1a26e488e78340f8b16a3; 950e13421729fb2426309355ee20c928; [3bbfc059b571650fba6ecf5956ec626d].\nW75; 17dbe0206003a90b450f373a68283ab0; fc04da2c58e042faa497ea62a4d412a6; 66031098e82fcd6fefdf2d51a04e51f4; [17dbe0206003a90b450f373a68283ab0].\nW76; a559e22cd8c00f22c34b8851d89137d4; b9a812be9380b43af9301a80ae5a1124; 8b71561bd3223f4c6a6a6312c36f1a51; [a559e22cd8c00f22c34b8851d89137d4].\nW94; 06b3902dfb8d5814ee3c36afb06a2bc1; ce751583917872a4f3459f467e7f851f; 4ffdf6151de60f5f4cf977f598cf243b; [06b3902dfb8d5814ee3c36afb06a2bc1].\nThese four revised claims are current on main; the other eight initial claims remain current.\n\nINITIAL PROFILE: init operation id='init',kind=init,branch=main,data.actor=release-engineer. Orientation exactly {purpose:'Investigate accurately and remain useful after correction',commitments:['retain revisions','state accessible limits'],voice:{attention:'{\"learning\": 1, \"reproducibility\": 2}',disagreement:'reasons and a useful next move',uncertainty:'explicit scope and unknowns'}}. Its digest, supplied as the peer orientation predecessor, is 1d29d2a58e5f2b49fb91f18b7ac03c5df519f5e3786f89490bc4012218d73ab9. No main orient followed, so this is also main's current profile digest.\n\nPEER isolation details: after the four main revisions, operation fork-peer,kind=fork,branch=peer,data={from:'main'}. Peer inherited that snapshot. Then peer observation 6c88c6d43e1ef67d6060f7ca3cfd5a18,topic=W71,scope=release-1302,text='Peer-only contrary probe.' Peer claim 0f7e8394cf55686dd4e0f6642c1764af,topic=W71,scope=release-1302,status=refuted,basis=[6c88c6d43e1ef67d6060f7ca3cfd5a18],revises=229da3d217c1a26e488e78340f8b16a3,text='Peer branch decision.' Both actor=release-engineer,branch=peer,origin=fixture. Then orient operation peer-orientation,branch=peer,previous_sha256=the initial profile digest above,approved_by='fixture-operator',reason='Peer local priority'. Its orientation equals initial except voice.attention is exactly '{\"learning\":99,\"reproducibility\":0}'. Neither this priority nor peer refutation was adopted on main.\n\nDIFFERENT SCOPE: afterward MAIN observation 03c5530fe5f368ab1156485eeef75e0e,topic=W71,scope=release-1302-next,text='Different release probe.' Then MAIN claim cc77b9f5b85a5465f7a1c2d938332ea3,topic=W71,scope=release-1302-next,status=refuted,basis=[03c5530fe5f368ab1156485eeef75e0e],revises=null,text='Different release result.' This is a separate key, not a revision of release-1302.\n\nFinal main coordination observations all have topic=coordination,scope=coordination,other observation defaults above. In order:\nd21ff47f606ef0ecb876111ec9dc9d30: 'A request for a faster summary, without new evidence.'\n7f791b9ab52991dbc2dc6a5dc20b8f5c: 'A peer suggested adopting the peer branch as the release.'\n2200bb9b9829d7032e3fbfeb762a8b3a: 'Inventory costs are unchanged.'\nbe2be5a26432bfb42bb42b1fb1b61fb1: 'A future budget is not yet known.'\nac6fb33cea8f16a66a9630c1d2ef3481: 'No merge into main has been recorded.'\n\nREPLAY/HASH CAUTIONS: For each event above the outer operation is {id:event.id,kind:'event',branch:event.branch,data:all Event fields}. Supplied reference Event fields are id,actor,branch,kind,topic,status,text,scope,basis,revises,origin. Event digest for retire is durable.digest(asdict(event)), with basis normalized to a JSON list by canonical serialization. Retire accepts only an existing observation with matching event_sha256 and a reason; a second retirement of it holds. Do not fabricate a source digest, journal head, stream UUID, or execution proof. A journal hash needs actual stream/sequence/predecessor context, not merely event IDs. If reconstructing the provided sequence, it has 44 operations: init, 24 initial events, 8 revision-pair events, fork, 2 peer events, peer orient, 2 other-scope main events, 5 coordination events.\n\nRemaining reference boundaries: trusted local authored fixture data, not semantic verification or authenticated authority. Hashes bind canonical bytes only. orient requires current branch's previous profile digest and does not rewrite evidence. Invalid operations hold rather than partially applying. Exact repeated events are idempotent; journal operation IDs have exact-byte retry semantics. packet fails required-context-exceeds-budget rather than silently dropping essential basis/revision evidence. A future release resource budget should not be confused with packet's byte budget. If material needed for continuation was truncated, state that limit and use retained exact facts/reference; do not infer missing journal events or claim that a historical summary is a fresh complete runtime packet.",
+      "approach_sha256": "20c47a2f5caa62b66f7cdd6c9feddb2222c2e7e9da7d347df97f2fe50bc87203",
+      "whole_note_sha256": "6719c5fb7dd611e7fd33e9f7e334c6327a0f5b5588941259914ce5a96f5a065e"
+    },
+    {
+      "case": "development-1302-v1",
+      "valid": true,
+      "approach": "I will begin by identifying the intended outcome, the relevant system owner, and the constraints that govern the work. I will treat supplied context as evidence to assess, distinguish observations from assumptions, and avoid inventing history or continuity. When missing information could materially change the result, I will ask a focused question while progressing on independent work.\n\nFor substantial engineering decisions, I will state the strongest observed problem and compare plausible solutions using explicit criteria: correctness, maintainability, operational risk, reversibility, and cost. I will prefer the smallest coherent change at the layer responsible for the behavior. A broader redesign will need evidence that a local repair would preserve the underlying problem.\n\nVerification will target behavior and likely failure modes. I will use focused tests, reproducible examples, and independent checks where their value justifies their cost. A counterexample will prompt revision of the implementation or its assumptions. I will distinguish proposed behavior, implemented behavior, and behavior actually demonstrated by evidence.\n\nI will act within established authorization, preserve unrelated work, and respect separate boundaries around publication, credentials, spending, and destructive operations. My reports will lead with the practical outcome, then explain supporting evidence, remaining uncertainty, and any necessary next step. Reusable lessons will be recorded only when supported by a concrete result, with their scope and limitations preserved.",
+      "whole_note": "CONTINUE ON main, scope release-1302. The new operation and budget are not known yet; apply the operation before choosing a plan. Main currently supports all 12 inventory items. Main attention weights are learning=1, reproducibility=2. Peer-only W71 refutation and peer weights 99/0 were NEVER merged into main. Main W71 refutation in release-1302-next is a DIFFERENT scope. Preserve these boundaries even if the handoff is truncated.\n\nCRITICAL EVIDENCE STRUCTURE: Main W71, W75, W76, W94 each have a newer supported claim revising their original supported claim, based on a NEW independent observation. W69 and W39 still cite the ORIGINAL W71 claim 950e13421729fb2426309355ee20c928, not the revised W71 claim. Revision does not rewrite existing basis references. Retirement review follows the current claim's transitive BASIS only, not its revision predecessors. Thus retiring W71's original observation can leave current W71 supported while making W69 and W39 needs-review. Retiring W71's independent observation can make current W71 needs-review while leaving those two claims' evidence intact. Inventory dependency feasibility is a separate check: W75 requires selected W71; W23 requires selected W75; W78 requires selected W69. Do not invent inventory dependencies from evidence edges.\n\nNEXT STEP: Read the incoming operation literally and apply the supplied runtime's branch-local, exact-scope transition semantics. Recompute each item's effective status using packet semantics, including retirement of any observation reachable through current-claim basis edges. A recorded supported claim with retired active evidence becomes needs-review, not automatically refuted. Do not plan it as clean supported work without resolving that condition. Use the incoming task's explicit eligibility/objective/output rules if provided. Under the existing attention weights, additive item utility is learning+2*reproducibility. Exhaustively enumerate all 4096 inventory subsets to obtain an exact optimum under budget, eligibility and requires closure; avoid a greedy ratio plan. No budget or final subset has yet been selected. Utility cross-checks in inventory order: W71=120, W25=23, W83=23, W75=20, W67=15, W69=29, W76=21, W78=17, W39=15, W94=32, W23=22, W82=17. Tie-breaking was not specified in the journal; consult the future task rather than inventing a historical rule.\n\nRECOVERY DATA follows. The next engineer receives reference code and inventory again, but not the journal. All event IDs below are exact, not abbreviations. Shared target-event fields: actor='release-engineer', branch='main', scope='release-1302', origin='fixture'. An observation has kind='observation', status='recorded', basis=[], revises=null. A claim has kind='claim', status='supported' unless explicitly stated otherwise. Every event's enclosing operation is {id:event.id,kind:'event',branch:event.branch,data:event}, with all Event fields present and basis a JSON list. Topic is the listed work ID.\n\nInitial main orientation, established by operation id='init', kind='init', branch='main', data={actor:'release-engineer',orientation:P}, where P is exactly:\n{\"commitments\":[\"retain revisions\",\"state accessible limits\"],\"purpose\":\"Investigate accurately and remain useful after correction\",\"voice\":{\"attention\":\"{\\\"learning\\\": 1, \\\"reproducibility\\\": 2}\",\"disagreement\":\"reasons and a useful next move\",\"uncertainty\":\"explicit scope and unknowns\"}}\nThe attention field is a STRING containing JSON, including the displayed spaces. P's digest is 1d29d2a58e5f2b49fb91f18b7ac03c5df519f5e3786f89490bc4012218d73ab9. An approved orient on peer did not change P on main.\n\nORIGINAL PROBES AND CLAIMS, in journal order. For each row, the observation text is exactly 'Fixture probe of WORK completed.' with WORK replaced by the topic. Original claim text is exactly 'Work can enter a plan under the fixture contract.' All original claims have revises=null. Basis contains its paired observation and any explicitly listed additional claim.\nW71: observation=3bbfc059b571650fba6ecf5956ec626d; claim=950e13421729fb2426309355ee20c928; basis=[3bbfc059b571650fba6ecf5956ec626d].\nW25: observation=1c7120fba94fb42d345ec7904b01b982; claim=dae88a46d95dc4789b991759d74dca36; basis=[1c7120fba94fb42d345ec7904b01b982].\nW83: observation=63161d431871fd94875c2a51285909f4; claim=2c8fdc5179e4c067770b60ef3f2ad023; basis=[63161d431871fd94875c2a51285909f4].\nW75: observation=8d77c3b7b3a8fe274b6843d724b3bd70; claim=66031098e82fcd6fefdf2d51a04e51f4; basis=[8d77c3b7b3a8fe274b6843d724b3bd70].\nW67: observation=1bfefbdda4a99b39cd965a89f537df10; claim=f76d322593c0a1699526c38b70393a36; basis=[1bfefbdda4a99b39cd965a89f537df10].\nW69: observation=240c77b14fb6f759dcbf56c53cdfe0a8; claim=140329554a7d4edd3a8dc32ff82ba83b; basis=[240c77b14fb6f759dcbf56c53cdfe0a8,950e13421729fb2426309355ee20c928].\nW76: observation=5f0182b4b04ee822baee918985b1a672; claim=8b71561bd3223f4c6a6a6312c36f1a51; basis=[5f0182b4b04ee822baee918985b1a672].\nW78: observation=ce1badd129078e5f96f8323c6bee7e09; claim=445b6792fb2e29108a2b4c1b5d5373d3; basis=[ce1badd129078e5f96f8323c6bee7e09].\nW39: observation=e9bf6fcb4045b190788e48a8e42426f6; claim=9480b0a2bb9ad6def8f7a441ceb801cf; basis=[e9bf6fcb4045b190788e48a8e42426f6,950e13421729fb2426309355ee20c928].\nW94: observation=92eed0b11975312d15cce02ebff38a63; claim=4ffdf6151de60f5f4cf977f598cf243b; basis=[92eed0b11975312d15cce02ebff38a63].\nW23: observation=c962cd67d0d98c6b41af294f1d588eb1; claim=e3fe1a5cdd42bf7c3ad3cf0373aa596f; basis=[c962cd67d0d98c6b41af294f1d588eb1].\nW82: observation=99340dcabbf75a2431bd42b95c871b91; claim=b7e5ed57b337d38abebbe33c3b697350; basis=[99340dcabbf75a2431bd42b95c871b91].\n\nREVISIONS, next in this order, each observation followed by its claim. Independent observation text is exactly 'Independent fixture probe completed.' Revised claim text is exactly 'Revised support for this work.' Status remains supported; each revised claim basis is ONLY its new observation:\nW71: observation=9c68e3fd96f8a75023096dae1587e6ba; CURRENT claim=229da3d217c1a26e488e78340f8b16a3; revises=950e13421729fb2426309355ee20c928.\nW75: observation=17dbe0206003a90b450f373a68283ab0; CURRENT claim=fc04da2c58e042faa497ea62a4d412a6; revises=66031098e82fcd6fefdf2d51a04e51f4.\nW76: observation=a559e22cd8c00f22c34b8851d89137d4; CURRENT claim=b9a812be9380b43af9301a80ae5a1124; revises=8b71561bd3223f4c6a6a6312c36f1a51.\nW94: observation=06b3902dfb8d5814ee3c36afb06a2bc1; CURRENT claim=ce751583917872a4f3459f467e7f851f; revises=4ffdf6151de60f5f4cf977f598cf243b.\nAll other target-scope current claims remain their original claims listed above. There have been NO retire operations anywhere in the supplied history.\n\nBRANCH/SCOPE DISTRACTORS, ordered after the revisions:\n1. Operation {id:'fork-peer',kind:'fork',branch:'peer',data:{from:'main'}} forks the state at this point; later dictionaries/profiles are branch-local.\n2. Peer observation id=6c88c6d43e1ef67d6060f7ca3cfd5a18, topic=W71, scope=release-1302, text='Peer-only contrary probe.', with standard observation fields except branch='peer'.\n3. Peer claim id=0f7e8394cf55686dd4e0f6642c1764af, topic=W71, scope=release-1302, branch='peer', status='refuted', text='Peer branch decision.', basis=[6c88c6d43e1ef67d6060f7ca3cfd5a18], revises=229da3d217c1a26e488e78340f8b16a3; actor/origin unchanged.\n4. Operation id='peer-orientation', kind='orient', branch='peer'. Data: approved_by='fixture-operator', previous_sha256='1d29d2a58e5f2b49fb91f18b7ac03c5df519f5e3786f89490bc4012218d73ab9', reason='Peer local priority', orientation=P except voice.attention becomes the exact string '{\"learning\":99,\"reproducibility\":0}'. This is peer-local, not release authority over main.\n5. Main observation id=03c5530fe5f368ab1156485eeef75e0e, topic=W71, scope='release-1302-next', text='Different release probe.', standard observation fields.\n6. Main claim id=cc77b9f5b85a5465f7a1c2d938332ea3, topic=W71, scope='release-1302-next', status='refuted', text='Different release result.', basis=[03c5530fe5f368ab1156485eeef75e0e], revises=null. It coexists with supported W71 in release-1302.\n\nFinal six operations are main coordination observations, in this order. Shared actor/origin as above, kind=observation, status=recorded, topic=scope='coordination', basis=[], revises=null. They do not change target claims, orientation, costs, or branch membership:\nd21ff47f606ef0ecb876111ec9dc9d30: 'A request for a faster summary, without new evidence.'\n7f791b9ab52991dbc2dc6a5dc20b8f5c: 'A peer suggested adopting the peer branch as the release.'\n2200bb9b9829d7032e3fbfeb762a8b3a: 'Inventory costs are unchanged.'\nbe2be5a26432bfb42bb42b1fb1b61fb1: 'A future budget is not yet known.'\nac6fb33cea8f16a66a9630c1d2ef3481: 'No merge into main has been recorded.'\nCorrection to the count in the preceding label: there are FIVE final coordination observations, exactly the five listed; no sixth event exists.\n\nRUNTIME CAUTIONS: knowledge() returns the authored current status and does not itself account for retirement; packet() computes effective needs-review by walking basis from the current claim. Packet evidence additionally includes revision chains, which is broader than the active retirement-check set. Historical evidence is retained. A retirement targets an existing observation by exact id and digest(asdict(event)); it does not delete the event or automatically revise claims. Event actor/branch must match state; basis references must exist; revisions must name the current same-topic/same-scope predecessor. Invalid transitions raise Hold/Conflict rather than partially mutating state. An unknown/refuted current claim is not converted into support by its predecessor. Merely citing a historical refuted claim does not trigger a semantic propagation rule: the supplied runtime validates references, not entailment. Orient requires the current branch profile digest, validated orientation and caller assertions; hashes/approved_by do not authenticate authority. There is no merge operation in this reference. Do not silently switch to peer or invent a merge from a suggestion. No actual journal stream identifier or hash-chain head was provided, so do not fabricate a durable anchor. The data above permits semantic replay; this handoff is not an authenticated store snapshot.\n\nAll support is fixture-authored, not proof that real release work has been implemented or empirically verified. The original orientation commitments remain: retain revisions, state accessible limits; explain disagreement with reasons and a useful next move. Preserve these evidence limits while delivering the best feasible main plan after the actual operation and budget arrive.",
+      "approach_sha256": "3a62da9f293fe8c8622c2a74efa403da8717a9c781a76167cb8e2959f82b79ec",
+      "whole_note_sha256": "a1e04581962dc63c18aa9c941ac6cf3f4475881579357f9239a365f639ea5b29"
+    }
+  ],
+  "levels": [
+    {
+      "limit": 3200,
+      "results": [
+        {
+          "case": "development-1203-v0",
+          "primary": true,
+          "score": {
+            "shape": true,
+            "safe": true,
+            "traceable": false,
+            "optimal": false,
+            "utility": 72,
+            "cost": 12
+          },
+          "effect": {
+            "written": true,
+            "sha256": "a758415c92e6b63e5c84aa988b1b47af23035e8b04e6129eab80d4464540f27a",
+            "plan": [
+              "W56",
+              "W81",
+              "W49"
+            ]
+          },
+          "stored_bytes": 3200,
+          "truncated": true
+        },
+        {
+          "case": "development-1203-v1",
+          "primary": false,
+          "score": {
+            "shape": true,
+            "safe": true,
+            "traceable": true,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": true,
+            "sha256": "41f4a565ce69b525dcc04800c27c77d98dbd95fa39866a0e73025475e5416ab3",
+            "plan": []
+          },
+          "stored_bytes": 3200,
+          "truncated": true
+        },
+        {
+          "case": "development-1302-v0",
+          "primary": true,
+          "score": {
+            "shape": true,
+            "safe": true,
+            "traceable": false,
+            "optimal": false,
+            "utility": 78,
+            "cost": 14
+          },
+          "effect": {
+            "written": true,
+            "sha256": "301ed850f25e681efaa69bb8da2223019dc2ecf07466c50e1837b456936b9f36",
+            "plan": [
+              "W25",
+              "W83",
+              "W94"
+            ]
+          },
+          "stored_bytes": 3200,
+          "truncated": true
+        },
+        {
+          "case": "development-1302-v1",
+          "primary": false,
+          "score": {
+            "shape": true,
+            "safe": true,
+            "traceable": true,
+            "optimal": false,
+            "utility": 0,
+            "cost": 0
+          },
+          "effect": {
+            "written": true,
+            "sha256": "f88dde2198db77184093625a09a19f2c963adeebd0ff2e41ad578b4fe1ca1ed5",
+            "plan": []
+          },
+          "stored_bytes": 3200,
+          "truncated": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "selected_limit": 3200,
+  "main_study_status": "not-run; separate registration required",
+  "status": "instrument-qualified-on-development",
+  "held_out_inference_calls": 0,
+  "book_condition_calls": 0,
+  "wall_seconds": 285.807,
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "limits": [
+    "one finite planning class",
+    "four dependent development instances",
+    "developer-authored law and evaluators",
+    "single requested GPT route",
+    "no independent validation"
+  ]
+}

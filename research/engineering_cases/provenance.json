@@ -1,0 +1,110 @@
+{
+  "schema": "ontology-engineering-excerpts/1",
+  "status": "retrospective-developer-case-replay",
+  "origin_date": "2026-10-21",
+  "scope": "Exact selected function bodies from an author-owned integration journal. Fixture identities and SQLite append adapter replace deployment bindings. No private conversation, native agent execution or natural-fault frequency is published.",
+  "sources": [
+    {
+      "published_file": "before.py",
+      "symbol": "drain",
+      "original_module_sha256": "5439435dbf1c3f18eb2ca5ad0eb4f12a8f8e20cf59e315512e3f2024b48eb5e3",
+      "body_sha256": "525b5bed85426bd3b2f97998030e25d129df6368c46a820b4c9c62374aacd4f3"
+    },
+    {
+      "published_file": "intermediate.py",
+      "symbol": "_reconcile_inbox",
+      "original_module_sha256": "857a854bb9cd641783906c117bd4ed7957d15df3317c27fdc1c5a8663d1ac9c3",
+      "body_sha256": "4c26ee79d0c50026133cfd3a94966285027bc5f7b0b46fe0206baf3f41caebd3"
+    },
+    {
+      "published_file": "intermediate.py",
+      "symbol": "drain",
+      "original_module_sha256": "857a854bb9cd641783906c117bd4ed7957d15df3317c27fdc1c5a8663d1ac9c3",
+      "body_sha256": "c83069408a66d541cd9be4e7a820f9bd41d5385be957ec9eedce41b58ee71f3f"
+    },
+    {
+      "published_file": "after.py",
+      "symbol": "_reconcile_inbox",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "4c26ee79d0c50026133cfd3a94966285027bc5f7b0b46fe0206baf3f41caebd3"
+    },
+    {
+      "published_file": "after.py",
+      "symbol": "_inbox_status",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "c3ed4af65fedf613a79eb2d66f9b5cfbb5d638be4ef28f69646fa989b21ee50d"
+    },
+    {
+      "published_file": "after.py",
+      "symbol": "drain",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "7e9ff04f061c75721ef7caa2c105488bd6ba16fef310d1e247ce8044e9848c76"
+    },
+    {
+      "published_file": "common.py",
+      "symbol": "digest",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "9fb90e75a3fa51c6705ac79119ed84196af7ea53a216e638aad327d6af01244a"
+    },
+    {
+      "published_file": "common.py",
+      "symbol": "wire",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "1c30737f35a1e6b01ca058736066bcda8e66269a3c775e08a8c5cda71194bbd0"
+    },
+    {
+      "published_file": "common.py",
+      "symbol": "read_file",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "15e4718b14fd4da97e2b7483f768a83f44b07f52251bb70d16a7d9a77bf98a74"
+    },
+    {
+      "published_file": "common.py",
+      "symbol": "atomic",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "93577436c46cafd53717e25904618d8ae602bbb97df08cf0f74320ca2b09cdca"
+    },
+    {
+      "published_file": "common.py",
+      "symbol": "strict_json",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "0ee7e02d524d610b86be4c794b5b610b1f58c1de58d7d173f4071e12b5bd8968"
+    },
+    {
+      "published_file": "common.py",
+      "symbol": "exact_uuid",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "08f19e304ba668658571ea242368d1a20090edcf72871953f8ff535b8ab6a350"
+    },
+    {
+      "published_file": "common.py",
+      "symbol": "fields",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "33e906009d9f9a7f3b0095e8275101d7112dbea00cadf196a3a3429c5a7793d7"
+    },
+    {
+      "published_file": "common.py",
+      "symbol": "ReferenceValidationError",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "8b3a245b07f38fe7c2a69fab55036e7a313cefcf625d5bbf127f66adf65c0337"
+    },
+    {
+      "published_file": "common.py",
+      "symbol": "RecordedEventConflict",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "4e908b4886d204c4d905261d05c598b152b4dfcf7e442f5ec6a2bc952541c0e1"
+    },
+    {
+      "published_file": "common.py",
+      "symbol": "_reference_details",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "ea06b846c8a0361d7fc9c13d5de6d7f695a88eece623ed0e3fa3adbdb6175846"
+    },
+    {
+      "published_file": "common.py",
+      "symbol": "recorded_event",
+      "original_module_sha256": "7ac2973fe0792b15bdfc614f080faf17bb92dd9b068f58d8d79a74dd66a3a87e",
+      "body_sha256": "a4986de921517d28a494c349b338c21cd33f301ba37a2d7f572a8297b9a5761e"
+    }
+  ]
+}

@@ -4,7 +4,9 @@
 
 Artur Onysko · Independent research · 22 October 2026
 
-Working paper accompanying *AI Ontology. Book One: Organization of Self*, v3.1.0. Research, implementation, execution, analysis and manuscript preparation were substantially assisted by Codex under the author's direction. No independent peer review is claimed.
+Working paper accompanying *AI Ontology. Book One: Organization of Self*, v3.2.0. Research, implementation, execution, analysis and manuscript preparation were substantially assisted by Codex under the author's direction. No independent peer review is claimed.
+
+Companion profile evaluations, including GPT-6.1 Sol, have separate questions, protocols and results in [Position, justified revision and methodological reading](PROFILE_PARTICIPATION_STUDY.md). The 384-call results in this paper remain unchanged.
 
 ## Abstract
 
@@ -19,6 +21,12 @@ This work asks a narrow question: under a fixed transition law and the same auth
 The accompanying book offers a broader methodology relating identity, memory, voice, commitments and relationships. This study tests one operational slice. It neither validates that whole account nor reduces its conceptual claims to a status-classification score. The executable contribution is a finite, inspectable reference design rather than a novel storage algorithm. Its principal empirical result is that gains from deterministic context preparation were model-specific and did not require the ontology presentation in the tested aggregate outcomes.
 
 ## 2. Relation to existing work
+
+The journal and replay follow the established event-sourcing pattern described by Fowler. Doyle's truth-maintenance work is a direct predecessor for recording reasons and revising dependent beliefs. Our narrower reference mechanism traverses declared dependencies, marks review requirements and guards decision admission; it does not implement a general justification engine or dependency-directed backtracking.
+
+AGM studies contraction and revision of logically closed theories. Our caller-labelled natural-language records have no logical consequence operator or implementation of the AGM postulates. An explicit revision link is therefore not an AGM implementation. These predecessors locate the mechanisms; no comparative advantage over them was measured.
+
+Contemporary overlaps extend beyond storage. [MemTX](https://arxiv.org/abs/2607.23929v2) stages belief commits and gates actions; [TOKI](https://arxiv.org/abs/2606.06240v1) specifies isolation and provenance for contradiction resolution. [RIPA/Enoch](https://arxiv.org/abs/2609.00546v2) governs migration of identity, memory and software body, while [PAI-Bench](https://arxiv.org/abs/2609.13637v1) separates recall, expression and enactment of a versioned identity contract. These are related scopes, not evaluated baselines here. Their existence rules out treating either explicit belief state or governed identity as an unexplored field.
 
 [MemGPT](https://arxiv.org/abs/2310.08560v2) organizes interaction with memory beyond a model's immediate context through a hierarchy of storage and control flow. Our implementation instead specifies a small transition system and exposes exact current-state and provenance relationships. We did not reproduce MemGPT's evaluations or compare against a deployed MemGPT/Letta system.
 
@@ -39,6 +47,8 @@ This is a rule about the state represented by records. It is not a semantic trut
 The model-turn interface supplies orientation and evidence, snapshots its request, checks the returned route label and structured response, and rejects stale decisions or unavailable citations. A declared ordinary answer using retired current basis is refused. That guard cannot infer whether arbitrary prose entails its citations or whether a nominal abstention secretly asserts a conclusion. The reference package includes a negative test in which unsupported prose passes structural checks.
 
 Forty-nine systems tests pass in the published source-pinned report. They include cooperative concurrent writers, fresh-process recovery, termination before transaction commit and seven retirement tests. These systems tests perform no LLM inference. They establish bounded implementation behavior under authored fixtures, not empirical interaction benefit. Full replay is limited to 4,096 operations; immutable map copying gives a quadratic worst-case replay cost and potentially cubic cumulative append cost. Million-record scaling is a separate design, not a measured property of this implementation.
+
+The edition additionally supplies two retrospective engineering cases from an author-owned integration component. Selected historical function bodies are published unchanged with a fixture SQLite/file adapter. Under an injected post-commit exception, the baseline reports refusal despite one durable event; the repair reconciles the exact record without a second append. A second replay shows an intermediate repair losing an uncertainty fence after transient input-read failure and automatically appending when the input returns; the final repair preserves uncertainty and performs no second append. Three separate tests cover these outcomes and excerpt hashes. Deployment bindings and append policy are replaced by the declared adapter, and historical origin is developer-reported. These comparisons demonstrate the selected mechanisms under specified faults, not natural fault frequency, whole-agent benefit or a new LLM cohort.
 
 ## 4. Cases, conditions and frozen design
 
@@ -142,10 +152,14 @@ Offline consistency checks require Python 3.11+ and Git, with no network or mode
 python3 -m unittest discover -s examples -q
 python3 -m unittest discover -s research/continuity_pilot -q
 python3 -m unittest discover -s research/continuity_pilot_v2 -q
+python3 -m unittest discover -s research -p 'test_integrity.py' -q
+python3 -m unittest discover -s research/engineering_cases -q
 python3 research/verify_studies.py
 ```
 
 The research README documents archive extraction, exact-score regeneration, historical inputs and a fresh output directory for prospective reruns. The original runner refuses to append to existing results. Inference reruns require the exact model bundles and an explicitly operated local backend; they may yield different bytes on other platforms.
+
+An audit of v3.1.0 found that Python optimization could disable assertion-based archive checks. A changed recorded prompt was rejected by the normal command but incorrectly passed with `-O`. In v3.2.0 these checks use explicit exceptions, including the summary's archive hash check. Four regression tests cover unchanged archives, prompt tampering, coherently rehashed prompt tampering and optimized summary validation. Frozen experiment inputs and results are unchanged.
 
 The study reports 384 scored decisions, four unscored warm-ups and two separate integration smoke calls. Forty-nine systems tests and ten design tests are separate code checks. None of these counts is a count of independent natural episodes or demonstrations of consciousness.
 
@@ -154,6 +168,12 @@ The study reports 384 scored decisions, four unscored warm-ups and two separate 
 A continuity architecture should make scope, revision, evidence origin and invalidation inspectable. That specification alone does not guarantee that a model will use it correctly. In this local exploratory study, compilation helped Granite relative to the complete journal, yielded a lower aggregate Qwen exact score, and failed to outperform a simple information-matched index in aggregate for either model. The ontology wrapper did not improve the baseline. The implementation, unsuccessful first instrument, follow-up data and failure cases are published together so that the method can be criticized, simplified and tested beyond its initial setting.
 
 ## References and contribution statement
+
+Doyle, J. *A Truth Maintenance System*. Artificial Intelligence 12(3), 1979, pp. 231–272. DOI: 10.1016/0004-3702(79)90008-0. [Author's MIT report AIM-521](https://dspace.mit.edu/handle/1721.1/5733); report abstract consulted.
+
+Alchourrón, C. E., Gärdenfors, P. and Makinson, D. *On the Logic of Theory Change: Partial Meet Contraction and Revision Functions*. The Journal of Symbolic Logic 50(2), 1985, pp. 510–530. DOI: 10.2307/2274239. [Published article](https://fitelson.org/piksi/piksi_22/agm.pdf), abstract and §§1–2 consulted.
+
+Fowler, M. *Event Sourcing*. 2005, draft architecture essay. [Author's text](https://www.martinfowler.com/eaaDev/EventSourcing.html), event-log and reconstruction sections consulted.
 
 Packer et al. *MemGPT: Towards LLMs as Operating Systems*. arXiv:2310.08560v2, 2024. [Primary source](https://arxiv.org/abs/2310.08560v2).
 
