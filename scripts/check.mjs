@@ -64,6 +64,14 @@ for(const f of markdown){
  }
 }
 assert(!/<script[^>]+src="https?:|<link[^>]+href="https?:/.test(html),'remote executable/style dependency');
+const renderInputs=paths=>paths.map(f=>fs.readFileSync(path.join(root,f)));
+const fontInputs=['docs/assets/serif.ttf','docs/assets/serif-italic.ttf','docs/assets/serif-bold.ttf'];
+const bookPdfKey=sha(Buffer.concat([Buffer.from(book),...renderInputs(['edition.json','scripts/build_pdf.py','requirements.txt',...fontInputs])])).slice(0,12);
+const paperPdfKey=sha(Buffer.concat(renderInputs(['research/SCOPED_CONTINUITY_STUDY.md','research/continuity-results.png','scripts/build_paper.py','requirements.txt',...fontInputs]))).slice(0,12);
+assert(html.includes(`downloads/ai-ontology-book-01-uk.pdf?v=${bookPdfKey}`),'book PDF download cache binding');
+assert(html.includes(`downloads/scoped-continuity-study-en.pdf?v=${paperPdfKey}`),'paper PDF download cache binding');
+assert(html.includes(`downloads/BOOK_UA.md?v=${sha(book).slice(0,12)}`),'full-text download cache binding');
+
 const pdf=JSON.parse(read('docs/pdf-edition.json'));
 assert.equal(pdf.schema,'ai-ontology-pdf/1');
 assert.equal(pdf.edition,meta.version);
