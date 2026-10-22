@@ -1,6 +1,6 @@
 {
   "schema": "ontology-runtime-checks/1",
-  "observed_at": "2026-10-22T15:14:10.846967+00:00",
+  "observed_at": "2026-10-22T15:49:24.577723+00:00",
   "kind": "developer-run-systems-tests",
   "llm_trials": 0,
   "python": "3.13.7",
@@ -11,52 +11,52 @@
     {
       "test": "test_agent_cycle.CycleTests.test_adapter_advancing_memory_makes_answer_stale",
       "status": "passed",
-      "wall_ms": 4.177
+      "wall_ms": 4.583
     },
     {
       "test": "test_agent_cycle.CycleTests.test_cycle_records_bound_request_and_response",
       "status": "passed",
-      "wall_ms": 4.092
+      "wall_ms": 9.231
     },
     {
       "test": "test_agent_cycle.CycleTests.test_invalid_json_is_not_automatically_repaired",
       "status": "passed",
-      "wall_ms": 1.346
+      "wall_ms": 1.748
     },
     {
       "test": "test_agent_cycle.CycleTests.test_model_drift_rejected",
       "status": "passed",
-      "wall_ms": 1.244
+      "wall_ms": 1.626
     },
     {
       "test": "test_agent_cycle.CycleTests.test_profile_and_sources_reach_model_input",
       "status": "passed",
-      "wall_ms": 3.595
+      "wall_ms": 3.552
     },
     {
       "test": "test_continuity.ContinuityContract.test_collision_cannot_replace_history",
       "status": "passed",
-      "wall_ms": 0.187
+      "wall_ms": 0.223
     },
     {
       "test": "test_continuity.ContinuityContract.test_conflicting_head_requires_explicit_revision",
       "status": "passed",
-      "wall_ms": 0.171
+      "wall_ms": 0.176
     },
     {
       "test": "test_continuity.ContinuityContract.test_exact_delivery_repeat_is_idempotent",
       "status": "passed",
-      "wall_ms": 0.124
+      "wall_ms": 0.13
     },
     {
       "test": "test_continuity.ContinuityContract.test_failed_batch_leaves_caller_unchanged",
       "status": "passed",
-      "wall_ms": 0.13
+      "wall_ms": 0.142
     },
     {
       "test": "test_continuity.ContinuityContract.test_fixed_voice_rendering_preserves_status_text",
       "status": "passed",
-      "wall_ms": 0.112
+      "wall_ms": 0.118
     },
     {
       "test": "test_continuity.ContinuityContract.test_fork_knows_inherited_origin",
@@ -66,168 +66,169 @@
     {
       "test": "test_continuity.ContinuityContract.test_forward_reference_is_not_silently_accepted",
       "status": "passed",
-      "wall_ms": 0.142
+      "wall_ms": 0.145
     },
     {
       "test": "test_continuity.ContinuityContract.test_invalid_status_and_missing_basis_refused",
       "status": "passed",
-      "wall_ms": 0.168
+      "wall_ms": 0.167
     },
     {
       "test": "test_continuity.ContinuityContract.test_lossy_summary_cannot_distinguish_two_histories",
       "status": "passed",
-      "wall_ms": 0.11
+      "wall_ms": 0.113
     },
     {
       "test": "test_continuity.ContinuityContract.test_malformed_event_is_typed_conflict",
       "status": "passed",
-      "wall_ms": 0.199
+      "wall_ms": 0.174
     },
     {
       "test": "test_continuity.ContinuityContract.test_missing_history_stays_unknown",
       "status": "passed",
-      "wall_ms": 0.138
+      "wall_ms": 0.109
     },
     {
       "test": "test_continuity.ContinuityContract.test_new_branch_event_does_not_reach_sibling",
       "status": "passed",
-      "wall_ms": 0.134
+      "wall_ms": 0.121
     },
     {
       "test": "test_continuity.ContinuityContract.test_revision_cannot_change_topic_or_scope",
       "status": "passed",
-      "wall_ms": 0.205
+      "wall_ms": 0.196
     },
     {
       "test": "test_continuity.ContinuityContract.test_revision_preserves_history_and_commitments",
       "status": "passed",
-      "wall_ms": 0.118
+      "wall_ms": 0.115
     },
     {
       "test": "test_continuity.ContinuityContract.test_scope_does_not_silently_generalize",
       "status": "passed",
-      "wall_ms": 0.104
+      "wall_ms": 0.121
     },
     {
       "test": "test_continuity.ContinuityContract.test_stale_predecessor_cannot_overwrite_new_head",
       "status": "passed",
-      "wall_ms": 0.149
+      "wall_ms": 0.212
     },
     {
       "test": "test_continuity.ContinuityContract.test_structural_validity_does_not_check_entailment",
       "status": "passed",
-      "wall_ms": 0.136
+      "wall_ms": 0.163
     },
     {
       "test": "test_continuity.ContinuityContract.test_wrong_actor_or_branch_rejected",
       "status": "passed",
-      "wall_ms": 0.169
+      "wall_ms": 0.191
     },
     {
       "test": "test_durable.DurableTests.test_budget_failure_is_explicit",
       "status": "passed",
-      "wall_ms": 3.352
+      "wall_ms": 3.69
     },
     {
       "test": "test_durable.DurableTests.test_changed_profile_needs_explicit_revision",
       "status": "passed",
-      "wall_ms": 1.953
+      "wall_ms": 1.992
     },
     {
       "test": "test_durable.DurableTests.test_coherent_rewrite_without_anchor_is_not_authentication",
       "status": "passed",
-      "wall_ms": 1.483
+      "wall_ms": 1.44
     },
     {
       "test": "test_durable.DurableTests.test_current_decision_commits",
       "status": "passed",
-      "wall_ms": 3.842
+      "wall_ms": 4.03
     },
     {
       "test": "test_durable.DurableTests.test_exact_retry_after_later_event_does_not_duplicate",
       "status": "passed",
-      "wall_ms": 2.177
+      "wall_ms": 2.215
     },
     {
       "test": "test_durable.DurableTests.test_forged_context_rejected",
       "status": "passed",
-      "wall_ms": 3.824
+      "wall_ms": 4.003
     },
     {
       "test": "test_durable.DurableTests.test_fork_retains_origin_but_no_future_sibling_events",
       "status": "passed",
-      "wall_ms": 4.151
+      "wall_ms": 4.418
     },
     {
       "test": "test_durable.DurableTests.test_id_collision_rejected",
       "status": "passed",
-      "wall_ms": 1.734
+      "wall_ms": 1.843
     },
     {
       "test": "test_durable.DurableTests.test_invalid_event_transaction_does_not_advance_head",
       "status": "passed",
-      "wall_ms": 1.694
+      "wall_ms": 1.733
     },
     {
       "test": "test_durable.DurableTests.test_new_process_reconstructs_revision_and_orientation",
       "status": "passed",
-      "wall_ms": 43.575
+      "wall_ms": 46.58
     },
     {
       "test": "test_durable.DurableTests.test_old_anchor_accepts_valid_append",
       "status": "passed",
-      "wall_ms": 2.154
+      "wall_ms": 2.143
     },
     {
       "test": "test_durable.DurableTests.test_parallel_processes_have_exactly_one_winner",
       "status": "passed",
-      "wall_ms": 49.934
+      "wall_ms": 57.578
     },
     {
       "test": "test_durable.DurableTests.test_process_death_with_uncommitted_insert_rolls_back",
       "status": "passed",
-      "wall_ms": 33.206
+      "wall_ms": 33.311
     },
     {
       "test": "test_durable.DurableTests.test_scope_missing_is_unknown",
       "status": "passed",
-      "wall_ms": 3.293
+      "wall_ms": 3.574
     },
     {
       "test": "test_durable.DurableTests.test_semantically_wrong_prose_can_pass_structural_guard",
       "status": "passed",
-      "wall_ms": 3.876
+      "wall_ms": 4.005
     },
     {
       "test": "test_durable.DurableTests.test_stale_context_rejected_even_if_caller_refreshes_head",
       "status": "passed",
-      "wall_ms": 4.696
+      "wall_ms": 4.563
     },
     {
       "test": "test_durable.DurableTests.test_tail_deletion_requires_anchor_to_detect",
       "status": "passed",
-      "wall_ms": 4.044
+      "wall_ms": 4.151
     },
     {
       "test": "test_durable.DurableTests.test_tampered_bytes_rejected",
       "status": "passed",
-      "wall_ms": 1.443
+      "wall_ms": 1.496
     },
     {
       "test": "test_durable.DurableTests.test_unavailable_citation_rejected",
       "status": "passed",
-      "wall_ms": 3.8
+      "wall_ms": 3.924
     }
   ],
   "sources": {
-    "examples/agent_cycle.py": "2f064198a9c61575afce93a76344974fcd792c10c820d96d60114c05de4d176c",
+    "examples/agent_cycle.py": "db2c4b4a0eeb7c62beead6430012ae041d11119c04d2ab64921fafe9faf86104",
     "examples/continuity.py": "cd561038b3d470e891284ab615ca72594a0a23edd3263ed94201721564e7aafc",
     "examples/durable.py": "97dfd83af71a1a3bb8e42acdf28c1b669d6ab51839604dd782216c2054e36282",
     "examples/durable_demo.py": "869a0bc7d4f62b3486f4054d619ca494b2cd73997cb883d83fb26ccf5b0b1b48",
-    "examples/test_agent_cycle.py": "d1b8f4ee109cc62b142fa116fd629d202b1e44182716b4b50689310a541a04ef",
+    "examples/iris-events.json": "328638673a2cd47d7fa56623762d550ec6c51b53a8570a54329386e691894d02",
+    "examples/test_agent_cycle.py": "63e44c70e909f107bb6bb86df312891e6192a82d8fe34325b86a083ab72bf342",
     "examples/test_continuity.py": "1da5564daac08d038525669e9f0a61060196bd984dc4fc3c84aba020d9a9479f",
     "examples/test_durable.py": "b97b07077c0a86cf895f8d62b4afe2b99e1ec870bef79204f5a06689815954b2",
-    "research/run_runtime_checks.py": "a198e489b475ae630bd3688f609347f2aa273880ec949ef8547924e7054a9f45"
+    "research/run_runtime_checks.py": "76ae9049e16c251289bc77eda2c4581e03afc812fc23f032c3b61e041e4f9cef"
   },
   "limits": [
     "authored fixtures",

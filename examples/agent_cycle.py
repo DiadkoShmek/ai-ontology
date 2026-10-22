@@ -32,6 +32,7 @@ class ModelReply:
 
 
 class Model(Protocol):
+    """An adapter must leave the supplied request messages unchanged."""
     def complete(self, messages: tuple[dict, ...]) -> ModelReply: ...
 
 
@@ -59,9 +60,18 @@ def run_turn(journal: Journal, *, turn_id, branch, topic, scope, question,
     # validates the same head afterwards; stale output is not retried silently.
     ctx, messages = prepare(journal, branch, topic, scope, question,
                             budget=budget, anchor=anchor)
+    request_sha256 = digest(messages)
     started = time.perf_counter()
     reply = model.complete(messages)
     elapsed = (time.perf_counter() - started) * 1000
+    # Bind the input at the adapter boundary, not its possibly changed return
+    # value. This is not proof of what a trusted adapter sent to its provider.
+    try:
+        unchanged = digest(messages) == request_sha256
+    except (TypeError, ValueError, RecursionError) as exc:
+        raise Hold("model-request-mutated") from exc
+    if not unchanged:
+        raise Hold("model-request-mutated")
     if not isinstance(reply, ModelReply) or reply.model_id != expected_model_id:
         raise Hold("model-route-mismatch")
     text(reply.raw, 16384)
@@ -78,7 +88,7 @@ def run_turn(journal: Journal, *, turn_id, branch, topic, scope, question,
         raise Hold("model-json-invalid") from exc
     receipt = journal.append(operation(turn_id, "decision", branch,
         context=ctx, question=question, response=response,
-        model={"id": reply.model_id, "request_sha256": digest(messages),
+        model={"id": reply.model_id, "request_sha256": request_sha256,
                "response_sha256": hashlib.sha256(reply.raw.encode()).hexdigest()}),
         expected=ctx["head"], anchor=anchor)
     return {"response": response, "receipt": receipt,
