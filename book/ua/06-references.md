@@ -10,7 +10,7 @@
 
 3. Joon Sung Park et al. **Generative Agents: Interactive Simulacra of Human Behavior.** 2023, arXiv:2304.03442v2. [Робота](https://arxiv.org/abs/2304.03442v2). Поєднання пам’яті, рефлексії та планування в симуляції правдоподібної поведінки. Це важлива суміжна архітектура; її результати не встановлюють суб’єктивної ідентичності.
 
-4. Noah Shinn et al. **Reflexion: Language Agents with Verbal Reinforcement Learning.** 2023, arXiv:2303.11366. [Робота](https://arxiv.org/abs/2303.11366). Мовний зворотний зв’язок і пам’ять для наступних спроб без зміни ваг. У книзі цей механізм зіставлено з ширшим питанням прийняття досвіду й області уроку.
+4. Noah Shinn et al. **Reflexion: Language Agents with Verbal Reinforcement Learning.** 2023, arXiv:2303.11366v4. [Робота](https://arxiv.org/abs/2303.11366v4). Мовний зворотний зв’язок і пам’ять для наступних спроб без зміни ваг. У книзі цей механізм зіставлено з ширшим питанням прийняття досвіду й області уроку.
 
 5. Letta. **Memory blocks, core memory.** V1 SDK documentation. [Документація](https://docs.letta.com/v1-sdk/memory/memory-blocks), переглянуто 22 October 2026. Сторінка належить до legacy V1 SDK. Використана як приклад структурованих постійно доступних блоків, зокрема persona і human; це не рекомендація починати нову систему на старому SDK.
 
@@ -33,7 +33,7 @@
 
 14. Di Wu et al. **LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory.** ICLR 2025, arXiv:2410.10813v2. [Робота](https://arxiv.org/abs/2410.10813v2). Розділення вилучення інформації, міжсесійного й часового міркування, оновлення знання та утримання від відповіді. Порівняльний запуск виконавця книги на цьому benchmark ще не проведено.
 
-15. Adyasha Maharana et al. **Evaluating Very Long-Term Conversational Memory of LLM Agents.** 2024, arXiv:2402.17753. [Робота](https://arxiv.org/abs/2402.17753). LoCoMo: багатосесійні розмови й оцінювання пам’яті через кілька видів задач. Якість відтворення фактів і якість голосу лишаються окремими предметами перевірки.
+15. Adyasha Maharana et al. **Evaluating Very Long-Term Conversational Memory of LLM Agents.** 2024, arXiv:2402.17753v1. [Робота](https://arxiv.org/abs/2402.17753v1). LoCoMo: багатосесійні розмови й оцінювання пам’яті через кілька видів задач. Якість відтворення фактів і якість голосу лишаються окремими предметами перевірки.
 
 ## 2 Що саме пропонує книга
 

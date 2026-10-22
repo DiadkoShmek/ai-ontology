@@ -4,24 +4,24 @@
   "edition": "2.1.0",
   "author": "Artur Onysko",
   "metadata_sha256": "befbac6c1f3c2e6015c9d5a8fc8d19ef5056cc245879f7d0b8f4e4c9f6d8ca2d",
-  "source_sha256": "1da06ae29bff53788848f2fd1f249f28766fa35dff67e2933ab972f322e3f287",
-  "book_sha256": "b77ff938b0e8a39790733177d66a9c261b070489fb85a1ba4ce2825817fc836a",
+  "source_sha256": "4650b09d9a29d3eef082d5846921ec7535f3d2659328da09f5b7e30ba18cf5ae",
+  "book_sha256": "e0b5f9d2f89b6ff8d0157fab328c8495f75e4cb64ae12b2aa0c49fe80013f410",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
-      "sha256": "b21d0f029afda8f64a8b5b5409825a00b7e1462fd4cbf611d10506bf2e93a418"
+      "sha256": "263125c72b9b749d58279c6694a1cd871f7fc212d25527ac636c537d3fdb0245"
     },
     {
       "path": "book/ua/01-core.md",
-      "sha256": "6bf63293786d942756a7b3fa70a58cfeacc0b0538ed60c4ac9c3643b2de5c1b4"
+      "sha256": "3d2068c28c53dc064ed4014410043a87fdc0142abb66f3f45ba7c02af204177c"
     },
     {
       "path": "book/ua/02-foundations.md",
-      "sha256": "15cdb9e827bbc85637fcabb51dda9002b90eaee7df95de03bc40fa5329ed300c"
+      "sha256": "4a8faa623cc6f9c66e20b26a42320186e1bfcb15400fcb38294f18ac56de911b"
     },
     {
       "path": "book/ua/03-relations.md",
-      "sha256": "afd5af31b7c88fdea9b83dfc30da7272a4c92de6ddc3aaeeffdb73ab44cda242"
+      "sha256": "89a0e99f9bc93f68aacf953557787f4350733ebada56fdb419fec9ee83ef022a"
     },
     {
       "path": "book/ua/04-continuity.md",
@@ -33,11 +33,11 @@
     },
     {
       "path": "book/ua/07-iris.md",
-      "sha256": "6cdde807da3f60d4d6c0a0c5fac83a141d715218e503d11b0dfc8d9e28bf0a0d"
+      "sha256": "bc23f39b7342f32fbb5c6c93ecda2941c235cc7943d81bace0ded898a02d07b1"
     },
     {
       "path": "book/ua/04-cases.md",
-      "sha256": "e1595993c59477496f9c9359158c7d1caab916ed2d76191304c57c5a3dea849c"
+      "sha256": "d621a5753baad7fdf18dcd93956180f85b37903abb15de4c3161d56ffe429f3e"
     },
     {
       "path": "book/ua/08-model.md",
@@ -49,14 +49,14 @@
     },
     {
       "path": "book/ua/05-research.md",
-      "sha256": "1761b611c0edf598d7fd216142b5f6276747def41a49d4a5036e6e0f92f8eab1"
+      "sha256": "371a765bb5334d05f6962152822f880b9a89ec81811c9a8a0776ad37e4a0a960"
     },
     {
       "path": "book/ua/06-references.md",
-      "sha256": "f8f34a66f1a05829c4ef195bfbad2b572a41ec2739912fb9069a085f0f1c4603"
+      "sha256": "de3f3d1a0c7047b86d8dd8bd847951c72947f28519c99bb520cfd821fad4984d"
     }
   ],
   "empirical_trials": 0,
   "runtime_checks": 42,
-  "runtime_report_sha256": "115ef36b1fddb2612428ac19e3d2fae017432f4fa91b1c8644bb732d1b3a8065"
+  "runtime_report_sha256": "b808bc7458ebb4ec7be8964228647a5d7407561714e8b37edd04141036279dbd"
 }

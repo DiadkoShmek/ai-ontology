@@ -4,9 +4,9 @@ from html import escape
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle, Preformatted
 from reportlab.platypus.tableofcontents import TableOfContents
 import hashlib
+import reportlab
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import A5
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
@@ -61,7 +61,6 @@ tokens=json.loads((ROOT/'build/tokens.json').read_text())
 story=[]
 story += [Spacer(1,62),Paragraph('КНИГА ПЕРША',styles['SmallBook']),Spacer(1,18),Paragraph('Онтологія<br/>AI',ParagraphStyle(name='Cover',fontName='Book',fontSize=48,leading=51,textColor=INK)),Spacer(1,22),Paragraph('Організація себе',styles['PartBook']),Spacer(1,16),Paragraph('Ідентичність, голос, пам’ять, відносини та становлення агентних систем',styles['BodyBook']),Spacer(1,30),Paragraph('Artur Onysko',styles['ChapterBook']),Paragraph(f"{META['label']} · v{META['version']} · 2026",styles['SmallBook']),PageBreak()]
 story += [Paragraph('Про видання',styles['PartBook']),Paragraph('Автор концепції та постановки дослідження — Artur Onysko. Підготовка тексту, дослідницька допомога, технічне редагування та випуск — за участю Codex під керівництвом автора.',styles['BodyBook']),Paragraph('Книга поєднує онтологічну постановку й виконавчу архітектуру. Публічний Python-код реалізує довговічну історію, контекст і цикл інтеграції моделі. Системні перевірки відтворювані. Сконструйовані випадки й відповіді тестового адаптера позначені явно; порівняльні випробування LLM та ефект самозгадування для цього видання ще не вимірювалися.',styles['BodyBook']),Paragraph('© 2026 Artur Onysko. All rights reserved.',styles['SmallBook']),Paragraph('https://github.com/DiadkoShmek/ai-ontology',styles['SmallBook']),Spacer(1,20),Paragraph('Зміст',styles['ChapterBook'])]
-parts=[t['text'] for t in tokens if t['type']=='heading' and t.get('depth')==2 and t['text'].startswith('Частина ')]
 toc=TableOfContents()
 toc.levelStyles=[ParagraphStyle(name='ContentsBook',fontName='Book',fontSize=9,leading=14,spaceBefore=8,textColor=INK)]
 story.append(toc)
@@ -99,4 +98,16 @@ def page(canvas,doc):
 output=ROOT/'docs/downloads/ai-ontology-book-01-uk.pdf'
 doc=BookDocument(str(output),pagesize=A5,rightMargin=40,leftMargin=40,topMargin=44,bottomMargin=49,title='Онтологія AI. Книга перша. Організація себе',author='Artur Onysko',subject='Ідентичність, голос, пам’ять і становлення агентних систем')
 doc.multiBuild(story,onFirstPage=page,onLaterPages=page)
+inputs=['edition.json','BOOK_UA.md','build/tokens.json','scripts/build_pdf.py',
+        'requirements.txt','docs/assets/serif.ttf','docs/assets/serif-italic.ttf',
+        'docs/assets/serif-bold.ttf']
+input_hashes={}
+for relative in inputs:
+    source=FONTS/Path(relative).name if relative.startswith('docs/assets/') else ROOT/relative
+    input_hashes[relative]=hashlib.sha256(source.read_bytes()).hexdigest()
+manifest={'schema':'ai-ontology-pdf/1','edition':META['version'],
+          'pdf':str(output.relative_to(ROOT)),
+          'pdf_sha256':hashlib.sha256(output.read_bytes()).hexdigest(),
+          'reportlab':reportlab.Version,'inputs':input_hashes}
+(ROOT/'docs/pdf-edition.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({'pdf':str(output),'bytes':output.stat().st_size,'edition':META['version']},ensure_ascii=False))

@@ -1,4 +1,6 @@
-# v2.1.0 — 2026-10-22
+# Історія редакцій
+
+## 2.1.0 · 22 October 2026
 
 - Added a durable SQLite continuity runtime reusing the existing belief reducer.
 - Added source-bound context compilation and a provider-independent model cycle with explicit stale-response rejection; included adapter is authored replay.
@@ -6,8 +8,6 @@
 - Added a full engineering chapter: orientation, epistemic state, concurrency, crash recovery, hash-chain limits, branching, voice and scale.
 - Added primary-source engagement with Locke, Parfit, RLM, LongMemEval and LoCoMo.
 - Replaced the small-example-only description with an accurate account of the executable package. Comparative LLM trials remain unperformed.
-
-# Історія редакцій
 
 ## 2.0.0 · 22 October 2026
 

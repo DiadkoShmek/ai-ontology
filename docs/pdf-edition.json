@@ -1,0 +1,17 @@
+{
+  "schema": "ai-ontology-pdf/1",
+  "edition": "2.1.0",
+  "pdf": "docs/downloads/ai-ontology-book-01-uk.pdf",
+  "pdf_sha256": "d89dd8cd2a095da9e60ea49f24520589f19b872f8b932dea3e6832f563d6b487",
+  "reportlab": "4.4.9",
+  "inputs": {
+    "edition.json": "befbac6c1f3c2e6015c9d5a8fc8d19ef5056cc245879f7d0b8f4e4c9f6d8ca2d",
+    "BOOK_UA.md": "e0b5f9d2f89b6ff8d0157fab328c8495f75e4cb64ae12b2aa0c49fe80013f410",
+    "build/tokens.json": "5a26455d22d0222965838f2936f2815d7e7ea8b9e69f46a2ee41580b3af9a627",
+    "scripts/build_pdf.py": "0438f581bb815f4fed49cc59abffc869f74adb395026bb23d7f77f61a8c9da4c",
+    "requirements.txt": "054e7483ed0899a13425d3ff89d0ae162290c88989825c77d22174ceb36f33f1",
+    "docs/assets/serif.ttf": "8f2c103bfa3fd5de71f1b92b18f21906b5a26871fb7e19a9a4c9af539c3cc7ab",
+    "docs/assets/serif-italic.ttf": "1d7476da447f9455a47c41adfd6ac2b1fc1b65e660f3ea4bf36128506c7e094c",
+    "docs/assets/serif-bold.ttf": "847b33e13925f19ff87e4d934d6b3cf7cac35ce16424f6f670e40c2f377cf2df"
+  }
+}

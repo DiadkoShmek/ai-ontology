@@ -13,6 +13,7 @@ Identity, voice, memory and relationships can be examined as interacting aspects
 3. [Implementation](https://diadkoshmek.github.io/ai-ontology/#engineering): mapping to state, context, memory and revision, with concrete failures and costs.
 4. [Iris](https://diadkoshmek.github.io/ai-ontology/#iris): one constructed history across multiple kinds of change.
 5. [Objections](https://diadkoshmek.github.io/ai-ontology/#cases-7): parsimony, circular evaluation, language, normative choices and identifiability.
+6. [Runnable architecture](https://diadkoshmek.github.io/ai-ontology/#runtime): the journal, context compiler, model-turn boundary, recovery and scaling limits.
 
 ## What is executable
 
@@ -36,4 +37,4 @@ The source of each chapter is listed in [edition.json](edition.json). [Sources a
 
 ## Engineering entry
 
-Read [the runtime chapter](book/ua/09-runtime.md), [code and run guide](examples/README.md), [test report](research/runtime-results.json), and the actual `durable.py` / `agent_cycle.py` paths. Verify systems correctness separately from source delivery, model behavior and human benefit. The current implementation is bounded full replay; its indexed scaling design is specified, not benchmarked at a million records.
+Read [the runtime chapter](book/ua/09-runtime.md), [code and run guide](examples/README.md), [test report](research/runtime-results.json), and the actual [durable.py](examples/durable.py) / [agent_cycle.py](examples/agent_cycle.py) paths. Verify systems correctness separately from source delivery, model behavior and human benefit. The current implementation is bounded full replay; its indexed scaling design is specified, not benchmarked at a million records.
