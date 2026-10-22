@@ -14,4 +14,7 @@ jobs:
       - run: npm run build
       - run: npm run check
       - run: python3 -m unittest discover -s examples -v
+      - run: python3 -m unittest discover -s research/continuity_pilot -q
+      - run: python3 -m unittest discover -s research/continuity_pilot_v2 -q
+      - run: python3 research/verify_studies.py
       - run: git diff --exit-code -- BOOK_UA.md docs/index.html docs/downloads/BOOK_UA.md docs/edition.json

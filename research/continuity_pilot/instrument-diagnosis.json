@@ -1,0 +1,16 @@
+{
+  "kind": "post-run-diagnostic",
+  "counts": {
+    "granite3.3:2b": {
+      "n": 96,
+      "literal_placeholder": 46,
+      "shape_valid": 49
+    },
+    "qwen3:4b-instruct-2507-q4_K_M": {
+      "n": 96,
+      "literal_placeholder": 96,
+      "shape_valid": 96
+    }
+  },
+  "next": "separate schema-guided follow-up; original outcomes preserved"
+}

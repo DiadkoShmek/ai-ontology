@@ -5,7 +5,7 @@ Events are authored fixture data. Replay is ordered and transactional per call.
 """
 from __future__ import annotations
 
-from dataclasses import dataclass, replace
+from dataclasses import dataclass, field, replace
 import json
 from pathlib import Path
 from types import MappingProxyType
@@ -40,6 +40,7 @@ class State:
     events: Mapping[str, Event]
     current: Mapping[tuple[str, str], str]
     parent: str | None = None
+    retired: Mapping[str, str] = field(default_factory=lambda: MappingProxyType({}))
 
 
 def empty(actor: str = "iris", branch: str = "main") -> State:

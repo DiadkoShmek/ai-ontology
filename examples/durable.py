@@ -13,6 +13,7 @@ import json
 from pathlib import Path
 import sqlite3
 import uuid
+from types import MappingProxyType
 
 from continuity import Conflict, Event, apply, empty, fork, knowledge
 
@@ -89,6 +90,17 @@ def packet(world, branch, topic, scope, head, budget=8192):
         raise Hold("unknown-branch")
     state, profile = world[branch]
     view = knowledge(state, topic, scope)
+    active = set()
+    todo = [view["claim"]] if "claim" in view else []
+    while todo:
+        ref = todo.pop()
+        if ref not in active:
+            active.add(ref)
+            todo.extend(state.events[ref].basis)
+    withdrawn = sorted(active.intersection(state.retired))
+    if withdrawn:
+        view = {**view, "recorded_status": view["status"], "status": "needs-review",
+                "retired_basis": withdrawn}
     # Include the transitive basis and revision chain: content-addressable
     # references without available content would not suffice for recovery.
     selected = set()
@@ -106,6 +118,7 @@ def packet(world, branch, topic, scope, head, budget=8192):
               "actor": state.actor, "profile": profile,
               "profile_sha256": digest(profile), "topic": topic, "scope": scope,
               "budget": budget, "view": view,
+              "retirements": {k: v for k, v in state.retired.items() if k in selected},
               "evidence": [asdict(e) for k, e in state.events.items() if k in selected],
               "omitted_event_count": len(state.events) - len(selected),
               "limits": ["input statuses are authored", "no semantic entailment",
@@ -154,6 +167,17 @@ def reduce(world, op, head):
             result[branch] = (apply(state, event), profile)
         except (Conflict, TypeError) as exc:
             raise Hold(str(exc)) from exc
+    elif kind == "retire":
+        closed(data, ("event_id", "event_sha256", "reason"))
+        text(data["event_id"], 256)
+        text(data["reason"])
+        event = state.events.get(data["event_id"])
+        if event is None or event.kind != "observation" or digest(asdict(event)) != data["event_sha256"]:
+            raise Hold("retirement-source-mismatch")
+        if event.id in state.retired:
+            raise Hold("source-already-retired")
+        result[branch] = (replace(state, retired=MappingProxyType(
+            {**state.retired, event.id: data["reason"]})), profile)
     elif kind == "orient":
         closed(data, ("previous_sha256", "orientation", "reason", "approved_by"))
         if data["previous_sha256"] != digest(profile):
@@ -187,6 +211,8 @@ def reduce(world, op, head):
         strings(answer["cites"])
         if answer["stance"] not in ("answer", "abstain", "dissent"):
             raise Hold("invalid-stance")
+        if ctx["view"]["status"] == "needs-review" and answer["stance"] == "answer":
+            raise Hold("retired-basis-needs-review")
         available = {e["id"] for e in ctx["evidence"]}
         if not set(answer["cites"]) <= available:
             raise Hold("citation-outside-context")
@@ -197,7 +223,7 @@ def reduce(world, op, head):
 
 
 class Journal:
-    """O(n) verified replay, one global CAS head, max 4096 operations.
+    """Bounded full replay (dictionary-copy cost up to O(n²)), one CAS head.
 
     Do not expose a caller-controlled database path to untrusted users. The
     database and its directory must be owned and protected by the operator.

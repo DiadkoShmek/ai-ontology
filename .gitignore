@@ -3,3 +3,5 @@ build/
 .DS_Store
 __pycache__/
 *.pyc
+research/continuity_pilot/responses.jsonl
+research/continuity_pilot_v2/responses.jsonl

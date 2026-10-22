@@ -1,0 +1,8 @@
+{
+  "input_commit": "3a8071d18bad6c2196df55ee476a4e92558403db",
+  "scored_calls": 192,
+  "response_sha256": "2a8c0334378bb71d6a2e1e5c05a69d8c48d01bdd5c6d3cc327fd4bc07339ad0f",
+  "wall_seconds": 181.3670466230251,
+  "models_unchanged": true,
+  "completed_at": "2026-10-22T16:13:12.603117+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "ai-ontology-paper/1",
+  "edition": "3.0.0",
+  "pdf": "docs/downloads/scoped-continuity-study-en.pdf",
+  "pdf_sha256": "ced3bd3f62617b0f5848e40f1416332b24d4acb0f8cb0f507f2437961c7e253c",
+  "reportlab": "4.4.9",
+  "inputs": {
+    "research/SCOPED_CONTINUITY_STUDY.md": "1f523ec09f6419ee6b8641baee4eef0464471cfeaad4117d5d3c4f24cd176b90",
+    "research/continuity-results.png": "50f976301468365f4498bfc561c23c46bba4b71b40b916afa7235bfa067ff965",
+    "scripts/build_paper.py": "cb35a09b44277dad5d918d54d899f7be17c12aa62f9e210d6027011da225f9f2",
+    "requirements.txt": "054e7483ed0899a13425d3ff89d0ae162290c88989825c77d22174ceb36f33f1",
+    "docs/assets/serif.ttf": "8f2c103bfa3fd5de71f1b92b18f21906b5a26871fb7e19a9a4c9af539c3cc7ab",
+    "docs/assets/serif-bold.ttf": "847b33e13925f19ff87e4d934d6b3cf7cac35ce16424f6f670e40c2f377cf2df",
+    "docs/assets/serif-italic.ttf": "1d7476da447f9455a47c41adfd6ac2b1fc1b65e660f3ea4bf36128506c7e094c"
+  }
+}

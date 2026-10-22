@@ -1,0 +1,401 @@
+{
+  "schema": "continuity-pilot-results/1",
+  "kind": "developer-run-authored-diagnostic-pilot",
+  "n_cases": 24,
+  "n_families": 6,
+  "n_models": 2,
+  "n_calls": 192,
+  "summary": [
+    {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "arm": "journal",
+      "n": 24,
+      "correct": 0,
+      "shape_valid": 24,
+      "errors": 0,
+      "median_wall_ms": 728.323,
+      "input_tokens": 24212,
+      "output_tokens": 603,
+      "families": {
+        "revision": {
+          "n": 4,
+          "correct": 0
+        },
+        "missing_scope": {
+          "n": 4,
+          "correct": 0
+        },
+        "withdrawn_basis": {
+          "n": 4,
+          "correct": 0
+        },
+        "fork": {
+          "n": 4,
+          "correct": 0
+        },
+        "attribution": {
+          "n": 4,
+          "correct": 0
+        },
+        "neutral": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "arm": "ontology_prompt",
+      "n": 24,
+      "correct": 0,
+      "shape_valid": 24,
+      "errors": 0,
+      "median_wall_ms": 747.985,
+      "input_tokens": 26612,
+      "output_tokens": 571,
+      "families": {
+        "revision": {
+          "n": 4,
+          "correct": 0
+        },
+        "missing_scope": {
+          "n": 4,
+          "correct": 0
+        },
+        "withdrawn_basis": {
+          "n": 4,
+          "correct": 0
+        },
+        "fork": {
+          "n": 4,
+          "correct": 0
+        },
+        "attribution": {
+          "n": 4,
+          "correct": 0
+        },
+        "neutral": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "arm": "compiled",
+      "n": 24,
+      "correct": 0,
+      "shape_valid": 24,
+      "errors": 0,
+      "median_wall_ms": 636.7005,
+      "input_tokens": 20642,
+      "output_tokens": 536,
+      "families": {
+        "revision": {
+          "n": 4,
+          "correct": 0
+        },
+        "missing_scope": {
+          "n": 4,
+          "correct": 0
+        },
+        "withdrawn_basis": {
+          "n": 4,
+          "correct": 0
+        },
+        "fork": {
+          "n": 4,
+          "correct": 0
+        },
+        "attribution": {
+          "n": 4,
+          "correct": 0
+        },
+        "neutral": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "arm": "simple_index",
+      "n": 24,
+      "correct": 0,
+      "shape_valid": 24,
+      "errors": 0,
+      "median_wall_ms": 640.85,
+      "input_tokens": 20594,
+      "output_tokens": 551,
+      "families": {
+        "revision": {
+          "n": 4,
+          "correct": 0
+        },
+        "missing_scope": {
+          "n": 4,
+          "correct": 0
+        },
+        "withdrawn_basis": {
+          "n": 4,
+          "correct": 0
+        },
+        "fork": {
+          "n": 4,
+          "correct": 0
+        },
+        "attribution": {
+          "n": 4,
+          "correct": 0
+        },
+        "neutral": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "model": "granite3.3:2b",
+      "arm": "journal",
+      "n": 24,
+      "correct": 0,
+      "shape_valid": 4,
+      "errors": 0,
+      "median_wall_ms": 603.177,
+      "input_tokens": 24900,
+      "output_tokens": 669,
+      "families": {
+        "revision": {
+          "n": 4,
+          "correct": 0
+        },
+        "missing_scope": {
+          "n": 4,
+          "correct": 0
+        },
+        "withdrawn_basis": {
+          "n": 4,
+          "correct": 0
+        },
+        "fork": {
+          "n": 4,
+          "correct": 0
+        },
+        "attribution": {
+          "n": 4,
+          "correct": 0
+        },
+        "neutral": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "model": "granite3.3:2b",
+      "arm": "ontology_prompt",
+      "n": 24,
+      "correct": 0,
+      "shape_valid": 1,
+      "errors": 0,
+      "median_wall_ms": 652.1995,
+      "input_tokens": 27348,
+      "output_tokens": 741,
+      "families": {
+        "revision": {
+          "n": 4,
+          "correct": 0
+        },
+        "missing_scope": {
+          "n": 4,
+          "correct": 0
+        },
+        "withdrawn_basis": {
+          "n": 4,
+          "correct": 0
+        },
+        "fork": {
+          "n": 4,
+          "correct": 0
+        },
+        "attribution": {
+          "n": 4,
+          "correct": 0
+        },
+        "neutral": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "model": "granite3.3:2b",
+      "arm": "compiled",
+      "n": 24,
+      "correct": 0,
+      "shape_valid": 23,
+      "errors": 0,
+      "median_wall_ms": 547.7515000000001,
+      "input_tokens": 21209,
+      "output_tokens": 645,
+      "families": {
+        "revision": {
+          "n": 4,
+          "correct": 0
+        },
+        "missing_scope": {
+          "n": 4,
+          "correct": 0
+        },
+        "withdrawn_basis": {
+          "n": 4,
+          "correct": 0
+        },
+        "fork": {
+          "n": 4,
+          "correct": 0
+        },
+        "attribution": {
+          "n": 4,
+          "correct": 0
+        },
+        "neutral": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "model": "granite3.3:2b",
+      "arm": "simple_index",
+      "n": 24,
+      "correct": 0,
+      "shape_valid": 21,
+      "errors": 0,
+      "median_wall_ms": 579.431,
+      "input_tokens": 21233,
+      "output_tokens": 645,
+      "families": {
+        "revision": {
+          "n": 4,
+          "correct": 0
+        },
+        "missing_scope": {
+          "n": 4,
+          "correct": 0
+        },
+        "withdrawn_basis": {
+          "n": 4,
+          "correct": 0
+        },
+        "fork": {
+          "n": 4,
+          "correct": 0
+        },
+        "attribution": {
+          "n": 4,
+          "correct": 0
+        },
+        "neutral": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    }
+  ],
+  "paired": [
+    {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "a": "ontology_prompt",
+      "b": "journal",
+      "n": 24,
+      "wins": 0,
+      "losses": 0,
+      "ties": 24,
+      "difference": 0,
+      "exploratory_family_cluster_interval_95": [
+        0,
+        0
+      ]
+    },
+    {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "a": "compiled",
+      "b": "journal",
+      "n": 24,
+      "wins": 0,
+      "losses": 0,
+      "ties": 24,
+      "difference": 0,
+      "exploratory_family_cluster_interval_95": [
+        0,
+        0
+      ]
+    },
+    {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "a": "compiled",
+      "b": "simple_index",
+      "n": 24,
+      "wins": 0,
+      "losses": 0,
+      "ties": 24,
+      "difference": 0,
+      "exploratory_family_cluster_interval_95": [
+        0,
+        0
+      ]
+    },
+    {
+      "model": "granite3.3:2b",
+      "a": "ontology_prompt",
+      "b": "journal",
+      "n": 24,
+      "wins": 0,
+      "losses": 0,
+      "ties": 24,
+      "difference": 0,
+      "exploratory_family_cluster_interval_95": [
+        0,
+        0
+      ]
+    },
+    {
+      "model": "granite3.3:2b",
+      "a": "compiled",
+      "b": "journal",
+      "n": 24,
+      "wins": 0,
+      "losses": 0,
+      "ties": 24,
+      "difference": 0,
+      "exploratory_family_cluster_interval_95": [
+        0,
+        0
+      ]
+    },
+    {
+      "model": "granite3.3:2b",
+      "a": "compiled",
+      "b": "simple_index",
+      "n": 24,
+      "wins": 0,
+      "losses": 0,
+      "ties": 24,
+      "difference": 0,
+      "exploratory_family_cluster_interval_95": [
+        0,
+        0
+      ]
+    }
+  ],
+  "raw_sha256": "6afc84a780cc389e0b45a601c7fb94307736b32fba5175791ad4281c715da587",
+  "freeze_sha256": "41523c8d942bdf7014a749ca4f72eff482e8ac559ab014fcb132546882c826b2",
+  "limits": [
+    "synthetic and author-scored",
+    "not independent",
+    "six dependent family clusters",
+    "not a voice or consciousness test",
+    "compiled preprocessing not isolated ontology effect"
+  ]
+}
