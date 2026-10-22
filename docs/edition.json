@@ -1,11 +1,11 @@
 {
   "title": "Онтологія AI",
   "volume": 1,
-  "edition": "3.0.2",
+  "edition": "3.1.0",
   "author": "Artur Onysko",
-  "metadata_sha256": "fd004873410aceb76930624166358ca510aa6055ee3658a1de495e8c5f8f29e9",
-  "source_sha256": "22a4fe9bc6887b6aff798f9fd8826b959e7ef50365987bc55733c501a6e07a86",
-  "book_sha256": "36b493ac1ce0a260651c8b212b4f20acd83d0f4d585d9c8ab09dd19e4a080939",
+  "metadata_sha256": "26a498d68d4dc76d19bde88f293b90bcee03badb96515d9905fb62d275a364b7",
+  "source_sha256": "b27760c6a35e60f39d74089884f9a13f51869344394cf5418c8a6a91d84cceea",
+  "book_sha256": "1f15e9825457b80bef42151b3e4be115b4d255f081be9eb9eb53b4fb15e91d3a",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
@@ -25,15 +25,15 @@
     },
     {
       "path": "book/ua/04-continuity.md",
-      "sha256": "a106a2925b06e1856dd9517698cf3622cee06a8784593226ed1e14bac6b4d7c4"
+      "sha256": "eee28876aaa5dfac018b660df7bf5fd02f3338fa6d4d5d2b0f11e2433242403b"
     },
     {
       "path": "book/ua/02-engineering.md",
-      "sha256": "0184ac13029ba8fc588f8fbaf579e41c50b439594ce4069450d94c2e6d8a8a29"
+      "sha256": "3c5adef8ea8022ae26c81998fdbfe3c7caf61cbe7fb2b1db5df995c562d1d152"
     },
     {
       "path": "book/ua/07-iris.md",
-      "sha256": "77ef14920212d5fd6ce9b141ccfe4370d3af09e18ff7dc8d4b29f31c65300bbc"
+      "sha256": "44472b44dcbec6d9a25024b36886f2c2c07200f3b2803e8ee0125d313403a19b"
     },
     {
       "path": "book/ua/04-cases.md",
@@ -49,19 +49,19 @@
     },
     {
       "path": "book/ua/10-method.md",
-      "sha256": "fc61724a424371041df6f2b23afc8b63147d3b2020ca74a6b489e961e68ae00e"
+      "sha256": "3ea0bf99772d50e5d3a773597ba0ffd69f808333554faa5b45e26d2317990a32"
     },
     {
       "path": "book/ua/11-study.md",
-      "sha256": "1df568a17b6118658faa9129f4ccae764e76988e8227f2b27d17b5784aac3884"
+      "sha256": "fd04e9d9637d4899a15164fbe631b5be16cdb11fdcb786c4f7dcccd8fed205c1"
     },
     {
       "path": "book/ua/05-research.md",
-      "sha256": "f161fa2fa9efa18cb28779769ad76d2895322c4382f0ce0b34a635f3200c8b4f"
+      "sha256": "fba35b2b3da5a144deaf621afc4d15c513277cb3a77fe24854804f0b1ad4a005"
     },
     {
       "path": "book/ua/06-references.md",
-      "sha256": "dd373d0e593fbb192339b9a7d2e53de1509e416bae971b0a502c4a9eefb6d95b"
+      "sha256": "70377c269b2007ac4e4df2caf2f10de57ac307b7071b83b0fb8f4b376ab8c0fe"
     }
   ],
   "scored_model_calls": 384,

@@ -1,6 +1,6 @@
 # Scoped continuity: research materials
 
-**Working paper · 22 October 2026 · accompanying book v3.0.1**
+**Working paper · 22 October 2026 · accompanying book v3.1.0**
 
 [Paper, English](SCOPED_CONTINUITY_STUDY.md) · [PDF](../docs/downloads/scoped-continuity-study-en.pdf) · [Book](https://diadkoshmek.github.io/ai-ontology/#study)
 
