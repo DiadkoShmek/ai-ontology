@@ -4,7 +4,7 @@
 
 Artur Onysko · Independent research · 22 October 2026
 
-Working paper accompanying *AI Ontology. Book One: Organization of Self*, v3.0.0. Research, implementation, execution, analysis and manuscript preparation were substantially assisted by Codex under the author's direction. No independent peer review is claimed.
+Working paper accompanying *AI Ontology. Book One: Organization of Self*, v3.0.1. Research, implementation, execution, analysis and manuscript preparation were substantially assisted by Codex under the author's direction. No independent peer review is claimed.
 
 ## Abstract
 
