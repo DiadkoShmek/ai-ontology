@@ -5,8 +5,8 @@ title: "Онтологія AI. Книга перша. Організація с�
 authors:
   - family-names: Onysko
     given-names: Artur
-version: 3.2.0
-date-released: 2026-10-22
+version: 3.3.0
+date-released: 2026-10-23
 url: "https://diadkoshmek.github.io/ai-ontology/"
 repository-code: "https://github.com/DiadkoShmek/ai-ontology"
 abstract: "A conceptual and methodological book on identity, voice, memory, relationships and development in AI agent systems."

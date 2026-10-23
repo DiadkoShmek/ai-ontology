@@ -1,3 +1,12 @@
+# v3.3.0 — 2026-10-23
+
+- Added a separately frozen 24-call transport-repair cohort: exact handoff completed 8/8 fully traced optimal plans versus 0/8 freeform, with 5/8 freeform planning-only successes. Whole-workflow native input fell 44.1%; both arms received no book reading.
+- Added an ordinary-file control: decoded data and receiver prompts are identical when the same full history is accessible. This is zero-call input parity, not another model-performance result.
+- Exposed the codec capacity boundary: eight variable logs exceed the fixed 3200-byte channel for all source instances; no silent truncation or fallback follows.
+- Added a usable fresh-process continuation of actual repository gates, with controlled source drift, a shared checkout and a separate explicit 16 KiB transport contract.
+- Added a claim-to-evidence map, raw responses, transport artifacts, offline verification and adversarial measurement checks.
+- Integrated the repair, controls and practical limits into the book, web reader and a separate English PDF. Prior cohorts and their scores remain unchanged. No general reading benefit, codec novelty, live House adoption or consciousness claim is introduced.
+
 # v3.2.0 — 2026-10-22
 
 - Developed subject-participation as a functional and ethical research question, distinct from phenomenal consciousness, with explicit treatment of position, authorship and justified revision.

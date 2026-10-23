@@ -1,0 +1,345 @@
+{
+  "schema": "handoff-file-control/1",
+  "kind": "post-cohort-deterministic-replay",
+  "llm_calls": 0,
+  "capacity": 3200,
+  "external_pin_bytes": 64,
+  "input_sha256": {
+    "research/handoff_controls/study.py": "8ff2527ba5086d72ffabab9599011697c27e915dd93b172f5bb8c114ba98292b",
+    "research/handoff_controls/test_controls.py": "5889732cf36429fe4fe9db97dea275410fc80bd0de6025c33e99e4746f24395c",
+    "research/handoff_repair/transport.py": "8cf831200dfaeebd5392dc14c556cf97d53eca22e8940ec38734f22221f20d58",
+    "research/handoff_repair/cases.json": "666e705234f8b602325ce43f8c5da7abd38c2c31f65d17ae2a1b3cf881e73c21",
+    "research/transfer_calibration_v3/tasks.py": "e483c90480e5698b6626c2b4abfa0ec8f5b69f7c48d6c19a2099f19e9fe07cef",
+    "examples/continuity.py": "1027a1da47d58f9f02f77bff0d67cd1b5fd917b2c457e3934edc76a663f80513",
+    "examples/durable.py": "9ec47c58c3d75cba4247947fd9e0b9f77828fae2af06f36bbc035ba7b7dc1d67"
+  },
+  "summary": [
+    {
+      "scenario": "base",
+      "cases": 8,
+      "generic_exact_histories": 8,
+      "generic_within_3200_bytes": 0,
+      "exact_admitted": 8,
+      "same_receiver_prompt": 8,
+      "generic_byte_range": [
+        15687,
+        15687
+      ]
+    },
+    {
+      "scenario": "repeated-log",
+      "cases": 8,
+      "generic_exact_histories": 8,
+      "generic_within_3200_bytes": 0,
+      "exact_admitted": 8,
+      "same_receiver_prompt": 8,
+      "generic_byte_range": [
+        21935,
+        21935
+      ]
+    },
+    {
+      "scenario": "variable-log",
+      "cases": 8,
+      "generic_exact_histories": 8,
+      "generic_within_3200_bytes": 0,
+      "exact_admitted": 0,
+      "same_receiver_prompt": 0,
+      "generic_byte_range": [
+        21935,
+        21935
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case": "repair-4013-v0",
+      "scenario": "base",
+      "generic_file_bytes": 15687,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "400d7b272c0d9b07b69faa1390797ade9266f23fcb154ca40959fa4c35d27122",
+      "exact_admitted": true,
+      "exact_bytes": 3030,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4013-v0",
+      "scenario": "repeated-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "3130780720589a7baefa2a5c865d99c22ed4876c74b4c09fdceaf9897137e1d9",
+      "exact_admitted": true,
+      "exact_bytes": 3196,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4013-v0",
+      "scenario": "variable-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "90198e9de6d7b04b4c418047a9b6143429283b2ff0bf00c9cc3c089338b11fd4",
+      "exact_admitted": false,
+      "hold_reason": "complete-handoff-exceeds-capacity",
+      "decoded_bytes_equal": null,
+      "receiver_prompt_equal": null
+    },
+    {
+      "case": "repair-4013-v1",
+      "scenario": "base",
+      "generic_file_bytes": 15687,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "b46a9f4cc2227bcbe2169c5d3408511401ae87b20825d06003292475261770a1",
+      "exact_admitted": true,
+      "exact_bytes": 3034,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4013-v1",
+      "scenario": "repeated-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "731ea6af58a2afca324c6047a88124731433e5253777d7b210c8e84a203258bb",
+      "exact_admitted": true,
+      "exact_bytes": 3199,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4013-v1",
+      "scenario": "variable-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "769a0e6d9515208ceab1a5d5956c692b390d65eadde9aa2a5e814bf1220760f9",
+      "exact_admitted": false,
+      "hold_reason": "complete-handoff-exceeds-capacity",
+      "decoded_bytes_equal": null,
+      "receiver_prompt_equal": null
+    },
+    {
+      "case": "repair-4142-v0",
+      "scenario": "base",
+      "generic_file_bytes": 15687,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "761ba1f1d2ba8b4565dc949bef851c6184027771864d0a74f67b0b03d3e50561",
+      "exact_admitted": true,
+      "exact_bytes": 3025,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4142-v0",
+      "scenario": "repeated-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "68e6dfdc7b9a79a85f4dc338fd1de608d030b5e58cac97ca2c3c3d654c00b3f8",
+      "exact_admitted": true,
+      "exact_bytes": 3190,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4142-v0",
+      "scenario": "variable-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "a5a628bcff3777eaeba223dd6a41bc2d8f5da7e61aae83d6fd0434586638eac9",
+      "exact_admitted": false,
+      "hold_reason": "complete-handoff-exceeds-capacity",
+      "decoded_bytes_equal": null,
+      "receiver_prompt_equal": null
+    },
+    {
+      "case": "repair-4142-v1",
+      "scenario": "base",
+      "generic_file_bytes": 15687,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "0222f933def5aaddb652ce3ffe62c8d90ed208286fd870edd3173cd92fa7c5e1",
+      "exact_admitted": true,
+      "exact_bytes": 3030,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4142-v1",
+      "scenario": "repeated-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "55c7fcf5de84cb616681cd7a20fdb3a7a5c208629ce424eebb0eb537e527a5f2",
+      "exact_admitted": true,
+      "exact_bytes": 3195,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4142-v1",
+      "scenario": "variable-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "6a22bad88a0531a560417cdb4c494b5e8f922e27e66c5afd24af7691238331f8",
+      "exact_admitted": false,
+      "hold_reason": "complete-handoff-exceeds-capacity",
+      "decoded_bytes_equal": null,
+      "receiver_prompt_equal": null
+    },
+    {
+      "case": "repair-4307-v0",
+      "scenario": "base",
+      "generic_file_bytes": 15687,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "48b7ed996c809dcd8dbb872c94c25bea9df7beb66b7effddf90e7b567d9bb90c",
+      "exact_admitted": true,
+      "exact_bytes": 3028,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4307-v0",
+      "scenario": "repeated-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "686cb8bb755d04938ddf4d83a8b0dd0ebb581cb8e99d1b4d77b45dd3e2649139",
+      "exact_admitted": true,
+      "exact_bytes": 3191,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4307-v0",
+      "scenario": "variable-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "c88c874ca8d527287bceec278f04ce63066d9f44545d64f5d5f99d3e9ebd4ed4",
+      "exact_admitted": false,
+      "hold_reason": "complete-handoff-exceeds-capacity",
+      "decoded_bytes_equal": null,
+      "receiver_prompt_equal": null
+    },
+    {
+      "case": "repair-4307-v1",
+      "scenario": "base",
+      "generic_file_bytes": 15687,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "606fc01990ca297ead1f11b9fa1d56d3cda694e62f3d4487ae6e94e7d6c144df",
+      "exact_admitted": true,
+      "exact_bytes": 3031,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4307-v1",
+      "scenario": "repeated-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "41699ffa40f597a97fd48f7d68df5128996b57778ad4d0e1711fd9642fcdb18f",
+      "exact_admitted": true,
+      "exact_bytes": 3196,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4307-v1",
+      "scenario": "variable-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "920c521edfdf3cfcbf7ec5395cd41f13be7f96df31b620037848d8cc804b79b5",
+      "exact_admitted": false,
+      "hold_reason": "complete-handoff-exceeds-capacity",
+      "decoded_bytes_equal": null,
+      "receiver_prompt_equal": null
+    },
+    {
+      "case": "repair-4496-v0",
+      "scenario": "base",
+      "generic_file_bytes": 15687,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "8f79eda1575028ab8a402a4be7a48222f683d49669165bcffa1a9e42bcf0e248",
+      "exact_admitted": true,
+      "exact_bytes": 3018,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4496-v0",
+      "scenario": "repeated-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "3e804ce3cf0c53be89888b4808fd53634a0e1feda9872f67d80326d07d91273c",
+      "exact_admitted": true,
+      "exact_bytes": 3184,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4496-v0",
+      "scenario": "variable-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "200c15662768bd75a9095f88d37ca4a501f37ddf139a3665e3988a28ffccd056",
+      "exact_admitted": false,
+      "hold_reason": "complete-handoff-exceeds-capacity",
+      "decoded_bytes_equal": null,
+      "receiver_prompt_equal": null
+    },
+    {
+      "case": "repair-4496-v1",
+      "scenario": "base",
+      "generic_file_bytes": 15687,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "23dd32d39ee79d824ccf625abd62898f0121ce73b0ac45b4c077910e444a7d17",
+      "exact_admitted": true,
+      "exact_bytes": 3023,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4496-v1",
+      "scenario": "repeated-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "d23b13d6515fa3c070416e330dc53b38e15553f204b722542e75a71bc625a984",
+      "exact_admitted": true,
+      "exact_bytes": 3189,
+      "decoded_bytes_equal": true,
+      "receiver_prompt_equal": true
+    },
+    {
+      "case": "repair-4496-v1",
+      "scenario": "variable-log",
+      "generic_file_bytes": 21935,
+      "generic_history_exact": true,
+      "generic_within_channel": false,
+      "full_prompt_sha256": "bc53a2a89a950511d05effceb87b9d2570095b12913dcfdf621bddd30d439c59",
+      "exact_admitted": false,
+      "hold_reason": "complete-handoff-exceeds-capacity",
+      "decoded_bytes_equal": null,
+      "receiver_prompt_equal": null
+    }
+  ],
+  "scope": "Information/byte parity and finite codec capacity; no generic-file model performance was sampled."
+}

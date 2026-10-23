@@ -1,6 +1,6 @@
 # Research materials: continuity and participation
 
-**Working paper · 22 October 2026 · accompanying book v3.2.0**
+**Working paper · 22 October 2026 · accompanying book v3.3.0**
 
 [Scoped-continuity paper](SCOPED_CONTINUITY_STUDY.md) · [PDF](../docs/downloads/scoped-continuity-study-en.pdf) · [Reading-transfer paper](READING_TRANSFER_STUDY.md) · [Transfer PDF](../docs/downloads/reading-transfer-study-en.pdf) · [Book](https://diadkoshmek.github.io/ai-ontology/#study)
 
@@ -97,6 +97,33 @@ The original descriptive figure can be regenerated with the optional packages in
 The compiler performs deterministic current-state preparation. Its comparison with a complete journal includes that preprocessing. The simple index carries the same substantive compiled information with ordinary field names. The ontology wrapper adds instruction text as well as framing. These distinctions prevent attributing a result to terminology alone.
 
 Six families provide only limited variation. The follow-up is exploratory, developer-run and based on known cases, with no independent evaluator. The full paper reports pairwise outcomes, individual failures, costs, limits and a confirmatory extension. A successful commit or a passing systems check does not establish semantic correctness or useful completion.
+
+## Exact-transport engineering follow-up
+
+The separate [23 October repair report](HANDOFF_REPAIR_REPORT.md) applies the
+record-loss diagnosis to a host-side lossless journal transport. On eight new
+instances of the familiar planning class it yielded 8/8 fully traced optimal
+completions versus 0/8 through freeform prefix delivery, using fewer whole-workflow
+native input tokens. Both arms received no book reading. This result concerns
+conventional exact transport; all earlier reading results remain unchanged.
+The [adapter, registered protocol and data](handoff_repair/README.md) are separate
+from the frozen v3.2.0 book/PDF evidence. Offline verification:
+
+```sh
+python3 -m unittest discover -s research/handoff_repair -q
+python3 -O research/verify_handoff_repair.py
+python3 -m unittest discover -s research -p test_handoff_repair_integrity.py -q
+python3 -m unittest discover -s research/handoff_controls -q
+python3 -O research/verify_handoff_controls.py
+git bundle verify research/handoff-repair-history.bundle
+```
+
+The incremental repair-history bundle retains input commit `ff80b89998d0a9e007cdc371d1bc679d64fab66c`
+over the previously public base `f592059bb6cbcf7df06cfd579cba007305157ec9`.
+A full clone contains that base. Fetching the bundle's `snapshot/handoff-repair-inputs`
+ref exposes the exact local pre-inference source; it does not independently
+authenticate the recorded execution time. Generic-file controls and the
+practical command make no new model calls.
 
 ## Reading-transfer reproduction boundary
 

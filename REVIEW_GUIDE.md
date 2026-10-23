@@ -20,6 +20,16 @@ Identity, voice, memory and relationships can be examined as interacting aspects
 
 ## Results to challenge
 
+[Claims and evidence](CLAIMS.md) is the short route from each assertion to its
+status, executable check and limit. The [transport repair](research/HANDOFF_REPAIR_REPORT.md)
+has a separate 24-call cohort: 8/8 fully traced completions versus 0/8 freeform,
+with 5/8 freeform planning-only successes. Neither arm read the book. The
+[generic-file control](research/handoff_controls/README.md) establishes input
+parity without new model calls and exposes a capacity failure. The
+[practical command](practical/README.md) exercises actual repository gates and
+controlled source drift, with a larger explicit transport bound and a shared
+checkout. These observations do not replace the negative reading result below.
+
 The reading-transfer primary is a partial-task measure: ordinary 12/16, book 8/16, guide 10/16, unrelated 10/16. Fully traced optimal completion is 0/16, 0/16, 1/16 and 0/16. Five empty book answers name the optimal work set while withholding the plan for missing citations. Challenge the endpoint’s construct validity and the lossy communication channel as well as the observed condition difference. The post-cohort diagnosis does not replace registered scores.
 
 The follow-up exact scores are 20/16/16/20 for Qwen3 4B and 5/2/12/12 for Granite 3.3 2B across journal, ontology wrapper, compiled context and simple index. There is no observed aggregate advantage over the information-matched simple index. Compilation includes deterministic preprocessing; ontology framing adds text. The cases are authored, short, dependent and reused after the first instrument failure.

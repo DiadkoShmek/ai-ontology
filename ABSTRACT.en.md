@@ -2,7 +2,7 @@
 
 ## Book One. Organization of Self
 
-**Artur Onysko · First completed edition · v3.2.0 · Ukrainian full text**
+**Artur Onysko · First completed edition · v3.3.0 · Ukrainian full text**
 
 This book examines how identity, voice, memory, commitments, relationships and development form an organization of participation across tasks. Its central question is how an agent can revise beliefs, change roles or migrate between models while retaining an intelligible connection to its previous organization.
 

@@ -36,7 +36,7 @@ for(const row of edition.additional_evaluations){
  assert.equal(row.captured_turns,report.scored_calls??report.observed_complete_rows??report.captured_calls);
 }
 assert.equal(edition.total_captured_model_turns,edition.scored_model_calls+edition.additional_evaluations.reduce((n,r)=>n+r.captured_turns,0));
-for(const dir of ['participation_pilot','gpt_profile_pilot','gpt_profile_pilot_v2','transfer_calibration','transfer_calibration_v2','transfer_calibration_v3','transfer_reading']){
+for(const dir of ['participation_pilot','gpt_profile_pilot','gpt_profile_pilot_v2','transfer_calibration','transfer_calibration_v2','transfer_calibration_v3','transfer_reading','handoff_repair']){
  const frozen=JSON.parse(read(`research/${dir}/freeze.json`));
  for(const [file,hash] of Object.entries(frozen.input_sha256))assert.equal(sha(read(`research/${dir}/${file}`)),hash,`frozen profile source drift: ${dir}/${file}`);
 }
@@ -71,7 +71,7 @@ for(const a of ['style.css','reader.js']){const raw=fs.readFileSync(path.join(ro
 const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
 assert.equal(new Set(ids).size,ids.length,'duplicate HTML ids');
 for(const m of html.matchAll(/href="#([^"]+)"/g))assert(ids.includes(m[1]),`missing anchor ${m[1]}`);
-const markdown=['README.md','REVIEW_GUIDE.md','ABSTRACT.en.md','AUTHORS.md','READER_NOTE.md',
+const markdown=['README.md','REVIEW_GUIDE.md','ABSTRACT.en.md','AUTHORS.md','READER_NOTE.md','CLAIMS.md','practical/README.md','research/HANDOFF_REPAIR_REPORT.md','research/handoff_controls/README.md','research/handoff_repair/README.md',
  'CHANGELOG.md','BOOK_UA.md','examples/README.md','research/comparison-notes.md','research/README.md','research/SCOPED_CONTINUITY_STUDY.md','research/PROFILE_PARTICIPATION_STUDY.md','research/READING_TRANSFER_STUDY.md','research/TRANSFER_STUDY_DESIGN.md','research/transfer_reading/THIRD_PARTY_READING.md',...edition.source_files.map(f=>f.path)];
 for(const f of markdown){
  const s=read(f);
@@ -89,10 +89,12 @@ const renderInputs=paths=>paths.map(f=>fs.readFileSync(path.join(root,f)));
 const fontInputs=['docs/assets/serif.ttf','docs/assets/serif-italic.ttf','docs/assets/serif-bold.ttf'];
 const bookPdfKey=sha(Buffer.concat([Buffer.from(book),...renderInputs(['edition.json','scripts/build_pdf.py','requirements.txt',...fontInputs])])).slice(0,12);
 const transferPdfKey=sha(Buffer.concat(renderInputs(['research/READING_TRANSFER_STUDY.md','research/reading-transfer-results.png','scripts/build_paper.py','requirements.txt',...fontInputs]))).slice(0,12);
+const repairPdfKey=sha(Buffer.concat(renderInputs(['research/HANDOFF_REPAIR_REPORT.md','scripts/build_paper.py','requirements.txt',...fontInputs]))).slice(0,12);
 const paperPdfKey=sha(Buffer.concat(renderInputs(['research/SCOPED_CONTINUITY_STUDY.md','research/continuity-results.png','scripts/build_paper.py','requirements.txt',...fontInputs]))).slice(0,12);
 assert(html.includes(`downloads/ai-ontology-book-01-uk.pdf?v=${bookPdfKey}`),'book PDF download cache binding');
 assert(html.includes(`downloads/scoped-continuity-study-en.pdf?v=${paperPdfKey}`),'paper PDF download cache binding');
 assert(html.includes(`downloads/reading-transfer-study-en.pdf?v=${transferPdfKey}`),'transfer paper PDF download cache binding');
+assert(html.includes(`downloads/handoff-repair-study-en.pdf?v=${repairPdfKey}`),'repair paper PDF download cache binding');
 assert(html.includes(`downloads/BOOK_UA.md?v=${sha(book).slice(0,12)}`),'full-text download cache binding');
 
 const pdf=JSON.parse(read('docs/pdf-edition.json'));
@@ -124,6 +126,13 @@ assert.equal(transfer.pdf,'docs/downloads/reading-transfer-study-en.pdf');
 assert.deepEqual(Object.keys(transfer.inputs).sort(),['research/READING_TRANSFER_STUDY.md','research/reading-transfer-results.png','scripts/build_paper.py','requirements.txt',...fontInputs].sort());
 for(const [file,hash] of Object.entries(transfer.inputs))assert.equal(sha(fs.readFileSync(path.join(root,file))),hash,`stale transfer paper input: ${file}`);
 assert.equal(sha(fs.readFileSync(path.join(root,transfer.pdf))),transfer.pdf_sha256,'transfer paper artifact hash mismatch');
+const repair=JSON.parse(read('docs/repair-paper-edition.json'));
+assert.equal(repair.schema,'ai-ontology-paper/1');
+assert.equal(repair.edition,meta.version);
+assert.equal(repair.pdf,'docs/downloads/handoff-repair-study-en.pdf');
+assert.deepEqual(Object.keys(repair.inputs).sort(),['research/HANDOFF_REPAIR_REPORT.md','scripts/build_paper.py','requirements.txt',...fontInputs].sort());
+for(const [file,hash] of Object.entries(repair.inputs))assert.equal(sha(fs.readFileSync(path.join(root,file))),hash,`stale repair paper input: ${file}`);
+assert.equal(sha(fs.readFileSync(path.join(root,repair.pdf))),repair.pdf_sha256,'repair paper artifact hash mismatch');
 const figure=JSON.parse(read('research/reading-transfer-figure.json'));
 for(const [file,hash] of Object.entries(figure.inputs))assert.equal(sha(fs.readFileSync(path.join(root,file))),hash,`stale transfer figure: ${file}`);
 assert.equal(sha(fs.readFileSync(path.join(root,figure.output))),figure.output_sha256,'transfer figure hash mismatch');

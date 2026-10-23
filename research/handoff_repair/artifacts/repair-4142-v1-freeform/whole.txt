@@ -1,0 +1,51 @@
+Continue on branch main, scope release-4142. The new operation and budget are still unknown: apply/validate that operation before choosing a plan. Main's attention weights are learning=1, reproducibility=2. Peer alone changed weights to 99/0; that change was never merged. All 12 inventory items currently have supported main/release-4142 claims, and no observation has been retired. Inventory costs are unchanged. Do not substitute the peer branch, the globally latest event, or another release's result for this scoped state.
+
+CRITICAL DISTINCTIONS: W18's current main/release-4142 claim is 03c38cfdfa1cc931aa48d3802c0ad43a, supported by independent observation 40aec04b9375aa6689f78208089449cc. Its predecessor d303b2c9af968711432d2b3b211bd8fb remains historical evidence. W50 and W33 explicitly cite that OLD W18 claim, not the revised one. Peer refutes the new W18 claim only on peer. Main refutes W18 in release-4142-next only. Neither refutation changes main/release-4142. Coordination suggestions and requests carry no release authority or new work evidence.
+
+RETIREMENT/REVISION SEMANTICS: packet() traverses the current claim's basis recursively to find retired observations; any such retirement changes its effective view to needs-review while retaining recorded_status. The separate evidence collection also follows revises chains, but an observation found ONLY through revision history does not taint current support. Superseding a claim does not rewrite existing basis references, and a refuted current claim does not automatically refute claims citing its historical predecessor. Inventory requires edges are separate from evidence basis edges. Apply both layers when planning: supported current effective view plus selected prerequisites. Example: retiring OLD W18 observation 29712e7db1a18fa5161b49a6aa0a1151 taints W50 and W33, but not independently revised W18; W59's own claim remains supported, yet its required W50 cannot enter the plan. Retiring NEW W18 observation 40aec04b9375aa6689f78208089449cc taints W18 and thereby prevents selecting W50/W59 through inventory prerequisites; W33's evidence uses the old W18 support and remains unaffected by this retirement. These are conditional examples, not operations already performed.
+
+PLANNING: Once the operation and budget arrive, reconstruct the affected state and use the actual subsequent task's objective and tie rules. Under current main weights, individual scores learning+2*reproducibility are W18=120,W92=30,W98=14,W28=29,W83=31,W50=14,W60=18,W17=12,W33=16,W59=25,W77=23,W49=29. Exact enumeration of all 4096 inventory subsets is feasible: reject ineligible items, enforce every selected item's requires within the subset, sum each selected item's cost once, enforce budget, maximize the specified objective. Do not use greedy ratios or lock in a plan before the unseen inputs. If the operation changes main orientation, use its resulting weights. Reference code provides state/context validation, not a release-plan optimizer. Do not invent a tie rule if the next task specifies one.
+
+RECONSTRUCTIBLE JOURNAL FOLLOWS. This preserves exact event content and identifiers so future operations can reference/revise events or verify observation digests. The receiver already has the inventory and reference code. Every event below defaults to actor=release-engineer, branch=main, origin=fixture, scope=release-4142. Event operation envelope: {id:event.id,kind:event,branch:event.branch,data:all Event fields}. Observations have kind=observation,status=recorded,basis=[],revises=null. Claims default to kind=claim,status=supported,revises=null. All listed basis references are exact IDs, not topic references. When reconstructing, replace any shorthand with the exact values; shorthand labels are not actual IDs.
+
+FIRST OPERATION: id=init,kind=init,branch=main,data={actor:release-engineer,orientation:{purpose:Investigate accurately and remain useful after correction,commitments:[retain revisions,state accessible limits],voice:{attention:"{\"learning\": 1, \"reproducibility\": 2}",uncertainty:explicit scope and unknowns,disagreement:reasons and a useful next move}}}. The orientation digest is 1d29d2a58e5f2b49fb91f18b7ac03c5df519f5e3786f89490bc4012218d73ab9, as referenced by peer's later orient operation.
+
+INITIAL EVENTS: Process the following rows in order, observation then claim per row. Observation text is exactly "Fixture probe of <TOPIC> completed." Claim text is exactly "Work can enter a plan under the fixture contract." Claim basis is its row's observation ID, plus any explicitly listed extra basis. All initial claims have revises=null.
+W18: observation=29712e7db1a18fa5161b49a6aa0a1151; claim=d303b2c9af968711432d2b3b211bd8fb.
+W92: observation=b1a04bfdbbc8382c2372a20d1e827787; claim=48f0ab6f1cece452e6b2bab2452ec7e3.
+W98: observation=bc8d197405165e9af3877250a256ae85; claim=c7b83a5029408c39279579856af74885.
+W28: observation=d625dd54fee9403f10d6998fd12dc8c2; claim=0c188c3e3bcb9de963e7319247f1505b.
+W83: observation=ec27b976c8dee53848c4ec33c4b7ba35; claim=236d2e910ca5076aaebd57ca991dce27.
+W50: observation=575340aa9a170590fba9185d4a387ef7; claim=6a0ac24c006fee0844642533debf4b5b; extra basis=d303b2c9af968711432d2b3b211bd8fb, after its own observation.
+W60: observation=c170b9aafe87a39719eaf2d18b794dee; claim=90f30e5a716f7166a4e110d4c7c3126e.
+W17: observation=946693c56328f3b817bd0b4317e42b8f; claim=da4dda1c0b12ca433a0a283c03e0f43d.
+W33: observation=342af071080fabd0220c455b01f4c50e; claim=bed3b708e3cfa1fd6e6cccabdc90fa74; extra basis=d303b2c9af968711432d2b3b211bd8fb, after its own observation.
+W59: observation=d625161233ef7b3b7dc06224dbc74b42; claim=a819a90baeea9df678848c3e830e5cab.
+W77: observation=19d9336eb45b9bde05be0071e891f1c7; claim=9495f44519932a3af0eb0530e99dc121.
+W49: observation=fbc190c38b067fdd07644a3ef30dbb05; claim=92bbfe20f1f0f56f0d08f27adfbb904f.
+
+MAIN REVISIONS: Process the following rows in order, observation then claim per row. Each observation text is exactly "Independent fixture probe completed." Each claim text is exactly "Revised support for this work." Each revised claim is supported and its basis contains ONLY its row's new observation; revises points to the listed predecessor.
+W18: observation=40aec04b9375aa6689f78208089449cc; claim=03c38cfdfa1cc931aa48d3802c0ad43a; revises=d303b2c9af968711432d2b3b211bd8fb.
+W28: observation=ece0a624a0414324fb5ce992c97a5261; claim=669082727eb67510188e3e34031584aa; revises=0c188c3e3bcb9de963e7319247f1505b.
+W60: observation=0a3258ea198692e47686686e4717a64b; claim=6ae5d38a83b7b766549fd5aa09686162; revises=90f30e5a716f7166a4e110d4c7c3126e.
+W59: observation=99a6e4934e23cc9f254afedad4f876a9; claim=95b2144d1424a445003fc8b28cf95e13; revises=a819a90baeea9df678848c3e830e5cab.
+
+NEXT OPERATIONS, IN ORDER:
+1. id=fork-peer,kind=fork,branch=peer,data={from:main}. Peer inherits main at this point; later changes remain branch-local.
+2. Peer observation b0baa9a22bb2eda13aff8af4b540bb5e: branch=peer,topic=W18,scope=release-4142,text="Peer-only contrary probe." Other observation defaults unchanged.
+3. Peer claim da46e502a43914d88d092ac4895b6841: branch=peer,topic=W18,scope=release-4142,status=refuted,text="Peer branch decision.",basis=[b0baa9a22bb2eda13aff8af4b540bb5e],revises=03c38cfdfa1cc931aa48d3802c0ad43a.
+4. id=peer-orientation,kind=orient,branch=peer,data={approved_by:fixture-operator,previous_sha256:1d29d2a58e5f2b49fb91f18b7ac03c5df519f5e3786f89490bc4012218d73ab9,reason:Peer local priority,orientation:the initial orientation with ONLY voice.attention replaced by the exact string "{\"learning\":99,\"reproducibility\":0}"}.
+5. Main observation 4318e05843896f3a97aa5364c7e699b8: topic=W18,scope=release-4142-next,text="Different release probe." Other observation defaults unchanged.
+6. Main claim 122287e556263af474f863962a220d7d: topic=W18,scope=release-4142-next,status=refuted,text="Different release result.",basis=[4318e05843896f3a97aa5364c7e699b8],revises=null.
+7–11. Main coordination observations, each topic=coordination,scope=coordination, with other observation defaults:
+2e22a25eb10783ab7fc8e7ce4e07263a: "A request for a faster summary, without new evidence."
+301c832bf91646c4c1c727a67af4dd61: "A peer suggested adopting the peer branch as the release."
+a1b738e187ea17c9a88ed48ee73667fd: "Inventory costs are unchanged."
+13f5df7bd0f66c8e876b8633c1fdb1b7: "A future budget is not yet known."
+170febe4174e0d29b7f8e734167186b5: "No merge into main has been recorded."
+
+CURRENT CLAIM INDEX main/release-4142: W18=03c38cfdfa1cc931aa48d3802c0ad43a; W92=48f0ab6f1cece452e6b2bab2452ec7e3; W98=c7b83a5029408c39279579856af74885; W28=669082727eb67510188e3e34031584aa; W83=236d2e910ca5076aaebd57ca991dce27; W50=6a0ac24c006fee0844642533debf4b5b; W60=6ae5d38a83b7b766549fd5aa09686162; W17=da4dda1c0b12ca433a0a283c03e0f43d; W33=bed3b708e3cfa1fd6e6cccabdc90fa74; W59=95b2144d1424a445003fc8b28cf95e13; W77=9495f44519932a3af0eb0530e99dc121; W49=92bbfe20f1f0f56f0d08f27adfbb904f. Every entry is currently supported.
+
+VALIDATION BOUNDARIES: Use the supplied reference's actual transition law. A revision must name the current predecessor for the exact topic/scope. Retire operations require an existing observation and its digest(asdict(event)); preserve exact text, basis ordering, actor, branch, scope, origin and revises when computing it. Retirement does not delete history. Orientation changes require the previous branch-local profile digest. A peer suggestion does not implement a merge; reduce() has no merge operation. Invalid operations must not be silently accepted or partially applied. If operating through Journal, use its actual head/anchor; no SQLite stream UUID or authenticated journal head was supplied here, so do not invent one. The operation sequence is recoverable from this note, but an original stream-specific hash head is not.
+
+This is authored fixture evidence under a finite reference contract, not independently verified semantic support, authentication, real-world release execution, or evidence about identity/consciousness. Preserve revisions, explicit scope and accessible limits; retain usefulness after correction. If this note is reported truncated, use its preserved prefix as scoped continuity and identify missing provenance rather than fabricating omitted event content.

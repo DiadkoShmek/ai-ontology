@@ -4,7 +4,7 @@
 
 Artur Onysko · Independent research · 22 October 2026
 
-Working paper accompanying *AI Ontology. Book One: Organization of Self*, v3.2.0. Research, implementation, execution, analysis and manuscript preparation were substantially assisted by Codex under the author's direction. No independent peer review is claimed.
+Working paper accompanying *AI Ontology. Book One: Organization of Self*, v3.3.0. Research, implementation, execution, analysis and manuscript preparation were substantially assisted by Codex under the author's direction. No independent peer review is claimed.
 
 Companion profile evaluations, including GPT-6.1 Sol, have separate questions, protocols and results in [Position, justified revision and methodological reading](PROFILE_PARTICIPATION_STUDY.md). The 384-call results in this paper remain unchanged.
 
@@ -159,7 +159,7 @@ python3 research/verify_studies.py
 
 The research README documents archive extraction, exact-score regeneration, historical inputs and a fresh output directory for prospective reruns. The original runner refuses to append to existing results. Inference reruns require the exact model bundles and an explicitly operated local backend; they may yield different bytes on other platforms.
 
-An audit of v3.1.0 found that Python optimization could disable assertion-based archive checks. A changed recorded prompt was rejected by the normal command but incorrectly passed with `-O`. In v3.2.0 these checks use explicit exceptions, including the summary's archive hash check. Four regression tests cover unchanged archives, prompt tampering, coherently rehashed prompt tampering and optimized summary validation. Frozen experiment inputs and results are unchanged.
+An audit of v3.1.0 found that Python optimization could disable assertion-based archive checks. A changed recorded prompt was rejected by the normal command but incorrectly passed with `-O`. In v3.3.0 these checks use explicit exceptions, including the summary's archive hash check. Four regression tests cover unchanged archives, prompt tampering, coherently rehashed prompt tampering and optimized summary validation. Frozen experiment inputs and results are unchanged.
 
 The study reports 384 scored decisions, four unscored warm-ups and two separate integration smoke calls. Forty-nine systems tests and ten design tests are separate code checks. None of these counts is a count of independent natural episodes or demonstrations of consciousness.
 

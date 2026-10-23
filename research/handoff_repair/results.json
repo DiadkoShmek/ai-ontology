@@ -1,0 +1,74 @@
+{
+  "schema": "handoff-repair-results/1",
+  "captured_calls": 24,
+  "episodes": 16,
+  "summary": [
+    {
+      "arm": "freeform",
+      "episodes": 8,
+      "fully_traced_optimal": 0,
+      "planning_only": 5,
+      "failed_stages": 0,
+      "calls": 16,
+      "native_usage": {
+        "input_tokens": 385323,
+        "cached_input_tokens": 26496,
+        "output_tokens": 39081
+      },
+      "input_tokens_per_completion": null,
+      "retained_byte_range": [
+        3200,
+        3200
+      ]
+    },
+    {
+      "arm": "exact",
+      "episodes": 8,
+      "fully_traced_optimal": 8,
+      "planning_only": 8,
+      "failed_stages": 0,
+      "calls": 8,
+      "native_usage": {
+        "input_tokens": 215343,
+        "cached_input_tokens": 11776,
+        "output_tokens": 4870
+      },
+      "input_tokens_per_completion": 26917.875,
+      "retained_byte_range": [
+        3018,
+        3034
+      ]
+    }
+  ],
+  "paired_exact_minus_freeform": {
+    "wins": 8,
+    "losses": 0,
+    "ties": 0
+  },
+  "source_clusters": [
+    {
+      "seed": 4013,
+      "freeform": 0,
+      "exact": 2
+    },
+    {
+      "seed": 4142,
+      "freeform": 0,
+      "exact": 2
+    },
+    {
+      "seed": 4307,
+      "freeform": 0,
+      "exact": 2
+    },
+    {
+      "seed": 4496,
+      "freeform": 0,
+      "exact": 2
+    }
+  ],
+  "raw_sha256": "595137e21e339d2a31bf7b51b00cb81108ffd04606bbacedee5870c26a0e115c",
+  "source_commit": "ff80b89998d0a9e007cdc371d1bc679d64fab66c",
+  "wall_seconds": 588.354,
+  "scope": "Conventional lossless host transport on eight new instances of one familiar task class; no reading-effect or live House benefit claim."
+}

@@ -1,11 +1,11 @@
 {
   "title": "Онтологія AI",
   "volume": 1,
-  "edition": "3.2.0",
+  "edition": "3.3.0",
   "author": "Artur Onysko",
-  "metadata_sha256": "86646042fdb2adbc923a20ea640430ba8e38a7e79ffb344b41dccbf84206218d",
-  "source_sha256": "c13fe6e6db2a8d19b89d6678e20b2afebec1fc6132e86a54cef47d16a6b61d7c",
-  "book_sha256": "6b62a460ae9d4d597f20dabaf13653917f14d488adcdd2d8ed0e59273178b887",
+  "metadata_sha256": "3e848fd1d32075ee55064203a62a300f5a797a1ff68b0b7658e75c3e693dc1c0",
+  "source_sha256": "21709039ad2a95a8e808c081f92301d810f03d4496c139c47f38e0fc945cd3b2",
+  "book_sha256": "73cdad730458cdb6fa008a66646e3e78a96ca865de28bbfcd3db2d8d6797d44a",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
@@ -53,7 +53,7 @@
     },
     {
       "path": "book/ua/11-study.md",
-      "sha256": "af6f840beeadbd54dca18c58b00fe2a74b33b7767da5fbb8ee2a453704d61f3f"
+      "sha256": "b77426c4292deaecbcf9fcbdf94459d8338643918f444977840566b450f80c04"
     },
     {
       "path": "book/ua/05-research.md",
@@ -115,8 +115,14 @@
       "path": "research/transfer_reading/results.json",
       "sha256": "ee74cd8d84c10baad9815783c5c69bcdebc44ed9e58ebb1ea715c0ec3bd259ce",
       "captured_turns": 199
+    },
+    {
+      "kind": "exact-transport-repair",
+      "path": "research/handoff_repair/results.json",
+      "sha256": "19e18fd0529575eb4864e6c31ee8e73cfb2bfc0d9cc0973ac77cea911eab1242",
+      "captured_turns": 24
     }
   ],
   "total_captured_model_turns_scope": "Sum of listed evaluation archives; excludes unscored warmups, canaries, length probes and integration smoke calls. Turns are not independent samples.",
-  "total_captured_model_turns": 930
+  "total_captured_model_turns": 954
 }
