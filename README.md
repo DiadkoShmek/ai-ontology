@@ -56,10 +56,15 @@ This is a developer-controlled research reference and proposed profile, not a pr
 | [Executable-method cycle](research/CLOSED_LOOP_STUDY.md) | Both arms reached the ceiling; M0 and M1 each 192/192 optimal transfer per arm; zero changed plans | No beneficial revision or added-view advantage observed |
 | [Scoped evidence return](research/EPISTEMIC_RETURN_STUDY.md) | 72 scored GPT calls plus one canary; free notes 77/80, linked notes 71/80 | Same 2048-byte allowance; 6/8 versus 2/8 actual-feedback notes admitted |
 | [Scoped-contract adaptation](research/SCOPED_CLEARANCE_STUDY.md) | 48 scored generations plus one canary; separate 960-execution reproduction: M0 120/160, every revision/fresh arm 160/160 | Original interrupted, primary null; explicit new rule sufficed, no added scaffold or diagnostic-feedback score |
+| [Own-source induction](research/PROGRAM_INDUCTION_STUDY.md) | One M0 trajectory; transfer Brier ordinary 0.25174, linked 0.25249, fresh 0.00869; lower is better | Informative feedback, no linked gain; diagnostic leaves actual M0 alternatives unresolved, not proof of irrational anchoring |
 
 The scoped evidence-return result is negative: over-budget notes were unavailable, and actual feedback changed source decisions while masked branches retained uncertainty. The separate contract-adaptation result is a ceiling: all revised and fresh programs solved the explicit new rule. Source changes and complete records do not establish beneficial formation or general ontology gain. Ukrainian reports: [evidence return](research/EPISTEMIC_RETURN_STUDY.uk.md) · [contract adaptation](research/SCOPED_CLEARANCE_STUDY.uk.md).
 
 [Protocols, raw outputs, costs and offline reanalysis](research/README.md) are available. The supplementary data do not change book v3.6.0. Claim IDs include **C03 unsupported**, **C06 refuted** and **C10 not-claimed**; see [the exact ledger and history](CLAIMS.md).
+
+The latest [induction readback](research/program_induction/README.md) separates
+changed source, changed predictive distributions and improved outcomes. Its
+selected archive can be regraded offline without executing candidate code.
 
 ## Reproduce and inspect
 
