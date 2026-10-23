@@ -225,9 +225,14 @@ python3 -m unittest discover -s examples -q
 The first two commands regenerate derived results from saved outputs; neither
 calls a model. Their report bytes should match the committed results. The
 foundation check writes environment/timing metadata and may differ there.
-Scored `run.py run` refuses to overwrite the cohort and checks frozen source,
-launcher, CLI version, canary and committed inputs before an explicitly new
-inference run. Do not mistake analysis for an instruction to spend inference.
+The archived inference runner checks frozen source, launcher, CLI version,
+canary and committed inputs, but is preserved verbatim rather than offered as
+a safe rerun interface. Its exclusive plain-output check does not protect a
+fresh clone containing only the compressed archive: invoking it could spend
+inference and overwrite derived archive bytes before a later exclusive write
+fails. Do not run it in this sealed cohort. Any new inference requires a new
+registered cohort directory and a separately reviewed output guard. The offline
+analysis commands above do not invoke it and do not spend inference.
 
 Concept and research direction: Artur Onysko. Codex substantially contributed
 the ontology profile, software, study design, execution, analysis and writing.
