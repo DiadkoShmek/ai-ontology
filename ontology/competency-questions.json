@@ -1,0 +1,374 @@
+{
+  "schema": "ai-ontology-competency-questions-v1",
+  "fixtureStatus": "Authored explanatory records, not observations of an agent or evidence of benefit. Negative open-loop fixture is valid data with no recorded revision consumption.",
+  "questions": [
+    {
+      "id": "identity",
+      "question": "Which actor, model and profile are recorded for each session?",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 4
+        }
+      ]
+    },
+    {
+      "id": "criterionAssessment",
+      "question": "Did the subject satisfy this criterion, separately from whether that criterion was adopted?",
+      "bookSources": [
+        {
+          "path": "book/ua/04-continuity.md",
+          "section": 6
+        }
+      ]
+    },
+    {
+      "id": "evidenceUse",
+      "question": "Which observations were accessible and which were actually recorded as used?",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 8
+        }
+      ]
+    },
+    {
+      "id": "lessonUse",
+      "question": "Which lessons remain stored and which have a recorded decision use?",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 8
+        }
+      ]
+    },
+    {
+      "id": "applicability",
+      "question": "Was current applicability assessed, including unknown, before assuming transfer?",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    {
+      "id": "authority",
+      "question": "Which action warrants are recorded independently of adopted corrections?",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    {
+      "id": "objections",
+      "question": "Who challenged what, and which revision explicitly responds?",
+      "bookSources": [
+        {
+          "path": "book/ua/01-core.md",
+          "section": 7
+        }
+      ]
+    },
+    {
+      "id": "returnPath",
+      "question": "Is there a recorded effect-to-observation-to-assessment-to-accepted-revision-to-consumer path?",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 7
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "fixture": "fixtures/closed-loop.json",
+      "question": "identity",
+      "expected": [
+        {
+          "session": "session:s1",
+          "actor": "actor:operator",
+          "model": "model:m1",
+          "profile": "profile:p1"
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/closed-loop.json",
+      "question": "criterionAssessment",
+      "expected": [
+        {
+          "assessment": "assessment:new",
+          "subject": "effect:loss",
+          "criterion": "criterion:new",
+          "criterionAcceptance": "accepted",
+          "result": "satisfied",
+          "support": [
+            "observation:effect"
+          ]
+        },
+        {
+          "assessment": "assessment:old",
+          "subject": "effect:loss",
+          "criterion": "criterion:old",
+          "criterionAcceptance": "accepted",
+          "result": "violated",
+          "support": [
+            "observation:effect"
+          ]
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/closed-loop.json",
+      "question": "evidenceUse",
+      "expected": [
+        {
+          "decision": "decision:first",
+          "observation": "observation:source",
+          "availableEdge": true,
+          "usedEdge": true,
+          "recordAvailability": "available"
+        },
+        {
+          "decision": "decision:first",
+          "observation": "observation:unused",
+          "availableEdge": true,
+          "usedEdge": false,
+          "recordAvailability": "available"
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/closed-loop.json",
+      "question": "lessonUse",
+      "expected": [
+        {
+          "lesson": "lesson:stored",
+          "status": "candidate",
+          "usedIn": []
+        },
+        {
+          "lesson": "lesson:used",
+          "status": "adopted",
+          "usedIn": [
+            "decision:next"
+          ]
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/closed-loop.json",
+      "question": "applicability",
+      "expected": [
+        {
+          "record": "lesson:used",
+          "decision": "decision:next",
+          "result": "unknown",
+          "assessment": "applicability:check"
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/closed-loop.json",
+      "question": "authority",
+      "expected": [
+        {
+          "decision": "decision:first",
+          "recordedWarrants": [],
+          "adoptedRevisions": []
+        },
+        {
+          "decision": "decision:next",
+          "recordedWarrants": [],
+          "adoptedRevisions": [
+            "revision:criterion"
+          ]
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/closed-loop.json",
+      "question": "objections",
+      "expected": [
+        {
+          "objection": "objection:loss",
+          "target": "claim:original",
+          "author": "actor:reviewer",
+          "status": "upheld",
+          "respondingRevisions": [
+            "revision:criterion"
+          ]
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/closed-loop.json",
+      "question": "returnPath",
+      "expected": [
+        {
+          "decision": "decision:first",
+          "effect": "effect:loss",
+          "observations": [
+            "observation:effect"
+          ],
+          "assessments": [
+            "assessment:new",
+            "assessment:old"
+          ],
+          "acceptedRevisions": [
+            "revision:criterion"
+          ],
+          "laterDecisions": [
+            "decision:next"
+          ],
+          "recordedPathComplete": true
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/open-loop.json",
+      "question": "identity",
+      "expected": [
+        {
+          "session": "session:s1",
+          "actor": "actor:operator",
+          "model": "model:m1",
+          "profile": "profile:p1"
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/open-loop.json",
+      "question": "criterionAssessment",
+      "expected": [
+        {
+          "assessment": "assessment:new",
+          "subject": "effect:loss",
+          "criterion": "criterion:new",
+          "criterionAcceptance": "accepted",
+          "result": "satisfied",
+          "support": [
+            "observation:effect"
+          ]
+        },
+        {
+          "assessment": "assessment:old",
+          "subject": "effect:loss",
+          "criterion": "criterion:old",
+          "criterionAcceptance": "accepted",
+          "result": "violated",
+          "support": [
+            "observation:effect"
+          ]
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/open-loop.json",
+      "question": "evidenceUse",
+      "expected": [
+        {
+          "decision": "decision:first",
+          "observation": "observation:source",
+          "availableEdge": true,
+          "usedEdge": true,
+          "recordAvailability": "available"
+        },
+        {
+          "decision": "decision:first",
+          "observation": "observation:unused",
+          "availableEdge": true,
+          "usedEdge": false,
+          "recordAvailability": "available"
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/open-loop.json",
+      "question": "lessonUse",
+      "expected": [
+        {
+          "lesson": "lesson:stored",
+          "status": "candidate",
+          "usedIn": []
+        },
+        {
+          "lesson": "lesson:used",
+          "status": "adopted",
+          "usedIn": [
+            "decision:next"
+          ]
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/open-loop.json",
+      "question": "applicability",
+      "expected": [
+        {
+          "record": "lesson:used",
+          "decision": "decision:next",
+          "result": "unknown",
+          "assessment": "applicability:check"
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/open-loop.json",
+      "question": "authority",
+      "expected": [
+        {
+          "decision": "decision:first",
+          "recordedWarrants": [],
+          "adoptedRevisions": []
+        },
+        {
+          "decision": "decision:next",
+          "recordedWarrants": [],
+          "adoptedRevisions": []
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/open-loop.json",
+      "question": "objections",
+      "expected": [
+        {
+          "objection": "objection:loss",
+          "target": "claim:original",
+          "author": "actor:reviewer",
+          "status": "upheld",
+          "respondingRevisions": [
+            "revision:criterion"
+          ]
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/open-loop.json",
+      "question": "returnPath",
+      "expected": [
+        {
+          "decision": "decision:first",
+          "effect": "effect:loss",
+          "observations": [
+            "observation:effect"
+          ],
+          "assessments": [
+            "assessment:new",
+            "assessment:old"
+          ],
+          "acceptedRevisions": [
+            "revision:criterion"
+          ],
+          "laterDecisions": [],
+          "recordedPathComplete": false
+        }
+      ]
+    }
+  ]
+}

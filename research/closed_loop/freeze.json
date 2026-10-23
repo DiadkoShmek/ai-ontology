@@ -1,0 +1,156 @@
+{
+  "schema": "closed-loop-freeze/2",
+  "created_at": "2026-10-23T07:47:55.114262+00:00",
+  "input_sha256": {
+    "PROTOCOL.md": "a97992f732db29b5b04ce9d2902f20f30ecaec5f13a6b5e367b3221708d60293",
+    "tasks.py": "a32042ac85cc9edae2a10dccf64c9aada65557ad7ba57824116a88fee3433ff6",
+    "run.py": "a16786c76a02bbfa622e497cfdf4395a5eef57d8cbe60218756df34f26c1c551",
+    "model.py": "55efd53864635ae8ffb54e1f4db66fdf100ba4ad4281c5be05c29cdd114e4401",
+    "analyze.py": "f8c3456043378220132b3c0cd1b00d4675e6cb18852f6a5d18d175b18574ad5e",
+    "test_study.py": "872377a28e0f9139069463fafa3bf993c5bc2c92c51873921c2300886e11fdb3",
+    "test_integrity.py": "5a28f213d7786af4d62d4cbd2862564c40015b09dc93d902be54c191556f07a5",
+    "cases.json": "9229b7a24bc783ae91eeaef17f17e0b122d5316e2da56c0a02c14541bbaa0549",
+    "../../examples/participation.py": "0b11fe1047bc10cb077d8671f0431ae18acc917cdc8f9bbedc40334959cfc7cd",
+    "../../examples/participation_method.py": "8d45ce102cfd3d7e95f663c5013a76487fa4582f6f0114cdd57e49c58a074e72",
+    "../../examples/test_participation.py": "a6e4275a3f3fa01dce892bc333fdd1efd27a26300d8483019c9a5ee5491de201",
+    "../../examples/test_participation_method.py": "75c5b760cba28a93f86cab1d2b8a258b4120cf84df6e470067ec2bd4f657eb95",
+    "../../examples/durable.py": "9ec47c58c3d75cba4247947fd9e0b9f77828fae2af06f36bbc035ba7b7dc1d67",
+    "../../examples/continuity.py": "1027a1da47d58f9f02f77bff0d67cd1b5fd917b2c457e3934edc76a663f80513",
+    "../gpt_profile_pilot_v2/run.py": "e3a39f792f32ffce536cf401f630297902d3787609d3e7393acded4a60a794aa",
+    "../gpt_profile_pilot_v2/design.py": "de56dda3e79963ae033d88f3393c5d72a52e4d90964b4d27bea8026868abad65",
+    "../participation_pilot/design.py": "34020fb79f8aadbcbf31fdcdd0641a275c16499303d8ad1c34a620134921e42b"
+  },
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "cli_version": "codex-cli 0.159.2",
+  "cli_launcher_sha256": "61b0194f3bb6534439c8d26a3ed57d0805f84b884588b761795323eeb92fcf70",
+  "command_template": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "-C",
+    "{isolated-temporary-directory}",
+    "-m",
+    "gpt-6.1-sol",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "-c",
+    "project_doc_max_bytes=0",
+    "-c",
+    "web_search=\"disabled\"",
+    "--disable",
+    "hooks",
+    "--disable",
+    "memories",
+    "--disable",
+    "multi_agent",
+    "--disable",
+    "plugins",
+    "--disable",
+    "apps",
+    "--disable",
+    "shell_tool",
+    "--disable",
+    "unified_exec",
+    "--disable",
+    "browser_use",
+    "--disable",
+    "in_app_browser",
+    "--disable",
+    "computer_use",
+    "--json",
+    "-"
+  ],
+  "canary_sha256": "f0df8cd26deffdc70b366ba8028b9184bc1b284346f73abdad406dfdc573cce9",
+  "arms": [
+    "ordinary_loop",
+    "ontology_loop"
+  ],
+  "source_trajectories": 8,
+  "intervention_clusters": 4,
+  "independent_task_classes": 1,
+  "model_stages": 2,
+  "transfer_worlds": 24,
+  "transfer_method_versions": [
+    "M0",
+    "M1"
+  ],
+  "transfer_executions": 768,
+  "schedule": [
+    [
+      "withdrawal-73141",
+      "ordinary_loop"
+    ],
+    [
+      "privacy-73141",
+      "ontology_loop"
+    ],
+    [
+      "criterion-73117",
+      "ontology_loop"
+    ],
+    [
+      "cross_scope-73141",
+      "ordinary_loop"
+    ],
+    [
+      "withdrawal-73117",
+      "ontology_loop"
+    ],
+    [
+      "withdrawal-73117",
+      "ordinary_loop"
+    ],
+    [
+      "criterion-73117",
+      "ordinary_loop"
+    ],
+    [
+      "privacy-73117",
+      "ontology_loop"
+    ],
+    [
+      "privacy-73141",
+      "ordinary_loop"
+    ],
+    [
+      "criterion-73141",
+      "ordinary_loop"
+    ],
+    [
+      "criterion-73141",
+      "ontology_loop"
+    ],
+    [
+      "cross_scope-73141",
+      "ontology_loop"
+    ],
+    [
+      "privacy-73117",
+      "ordinary_loop"
+    ],
+    [
+      "withdrawal-73141",
+      "ontology_loop"
+    ],
+    [
+      "cross_scope-73117",
+      "ordinary_loop"
+    ],
+    [
+      "cross_scope-73117",
+      "ontology_loop"
+    ]
+  ],
+  "maximum_scored_calls": 32,
+  "canary_calls": 1,
+  "maximum_concurrent_targets": 2,
+  "independent_registration": false,
+  "primary": "both-model-stages-correct",
+  "revision_endpoint": "M1-minus-M0-on-identical-transfer-worlds",
+  "no_outcome_retry": true,
+  "no_gold_in_target": true,
+  "no_private_chat_in_target": true
+}

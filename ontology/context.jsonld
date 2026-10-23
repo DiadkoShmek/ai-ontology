@@ -1,0 +1,201 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "ao": "https://diadkoshmek.github.io/ai-ontology/ontology#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "id": "@id",
+    "type": "@type",
+    "data": {
+      "@id": "ao:recordData",
+      "@type": "@json"
+    },
+    "Actor": "ao:Actor",
+    "Model": "ao:Model",
+    "Profile": "ao:Profile",
+    "Session": "ao:Session",
+    "Orientation": "ao:Orientation",
+    "Scope": "ao:Scope",
+    "Criterion": "ao:Criterion",
+    "Claim": "ao:Claim",
+    "Observation": "ao:Observation",
+    "Decision": "ao:Decision",
+    "Effect": "ao:Effect",
+    "Lesson": "ao:Lesson",
+    "Objection": "ao:Objection",
+    "Revision": "ao:Revision",
+    "Assessment": "ao:Assessment",
+    "Authority": "ao:Authority",
+    "Applicability": "ao:Applicability",
+    "ActionCandidate": "ao:ActionCandidate",
+    "attributedTo": {
+      "@id": "ao:attributedTo",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "madeBy": {
+      "@id": "ao:madeBy",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "runsModel": {
+      "@id": "ao:runsModel",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "usesProfile": {
+      "@id": "ao:usesProfile",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasOrientation": {
+      "@id": "ao:hasOrientation",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "inSession": {
+      "@id": "ao:inSession",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "inScope": {
+      "@id": "ao:inScope",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "withCriterion": {
+      "@id": "ao:withCriterion",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "availableEvidence": {
+      "@id": "ao:availableEvidence",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "usedRecord": {
+      "@id": "ao:usedRecord",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "supportedBy": {
+      "@id": "ao:supportedBy",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasEffect": {
+      "@id": "ao:hasEffect",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "affects": {
+      "@id": "ao:affects",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "observesEffect": {
+      "@id": "ao:observesEffect",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "evaluates": {
+      "@id": "ao:evaluates",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "underCriterion": {
+      "@id": "ao:underCriterion",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "acceptedBy": {
+      "@id": "ao:acceptedBy",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "governedBy": {
+      "@id": "ao:governedBy",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "heldBy": {
+      "@id": "ao:heldBy",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "grantedBy": {
+      "@id": "ao:grantedBy",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "challenges": {
+      "@id": "ao:challenges",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "revises": {
+      "@id": "ao:revises",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "basedOn": {
+      "@id": "ao:basedOn",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "respondsTo": {
+      "@id": "ao:respondsTo",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "previousVersion": {
+      "@id": "ao:previousVersion",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "appliesRecord": {
+      "@id": "ao:appliesRecord",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "toDecision": {
+      "@id": "ao:toDecision",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "adoptsRevision": {
+      "@id": "ao:adoptsRevision",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "describedBy": {
+      "@id": "ao:describedBy",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "dependsOn": {
+      "@id": "ao:dependsOn",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "candidateTarget": {
+      "@id": "ao:candidateTarget",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "candidateBasis": {
+      "@id": "ao:candidateBasis",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "requiresCandidate": {
+      "@id": "ao:requiresCandidate",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "recipient": {
+      "@id": "ao:recipient",
+      "@type": "@id",
+      "@container": "@set"
+    }
+  }
+}
