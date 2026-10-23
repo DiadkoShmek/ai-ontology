@@ -32,12 +32,30 @@ is inapplicable. JSONL is already-projected record transport: source-specific
 instrumentation must supply its own justified nodes and links. Unrecognized
 raw provider events are rejected rather than converted into guessed relations.
 
-Every report includes the input digest, profile, all eight query row sets,
+Every report includes the input digest, profile, all nine query row sets,
 orphan effects, available/use gaps and the limited graph Claim status counts.
 No URLs or file references are followed. Record completeness does not establish
 chronology, causal influence, behavioral change, benefit, permission or truth.
 The [runtime adapter](../ontology/runtime_adapter.py) separately projects actual
 compatible SQLite readback.
+
+## Exact claim-version use
+
+```sh
+python3 -m audit.cli report ontology/fixtures/historical-claim-use.json --question claimUse
+```
+
+Inspect `queries.claimUse`. An old Decision can explicitly name `claim:v1`
+while an independent `claim:v2` remains accepted in the supplied records.
+The query preserves each version, its recorded use and reported Effects/affected
+Actors. It never substitutes the current version or infers use from a dependency.
+Empty effect/actor lists mean unrecorded links. Reported effects do not establish
+delivery, an outstanding recipient repair, consent or read/write/contact rights.
+
+This synthetic fixture is not an LLM trial or evidence of useful learning.
+`evidenceUse` remains Observation-only; Claim use does not invent an availability
+record. The overall report status still measures the separate recorded return
+path, not whether the historical effect has been remedied.
 
 ## Native LangGraph checkpoint observations
 

@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    {"id": "scope:synthetic", "type": "Scope", "data": {"label": "Synthetic history", "description": "Authored inspection fixture only; no real person, artifact or contact."}},
+    {"id": "actor:operator", "type": "Actor", "data": {"label": "Synthetic selector", "kind": "software"}},
+    {"id": "actor:affected", "type": "Actor", "data": {"label": "Synthetic affected actor", "kind": "software"}},
+    {"id": "observation:retired", "type": "Observation", "data": {"label": "Retired source", "sourceRef": "fixture:retired-source", "availability": "withdrawn"}},
+    {"id": "observation:independent", "type": "Observation", "data": {"label": "Independent current source", "sourceRef": "fixture:independent-source", "availability": "available"}},
+    {"id": "claim:v1", "type": "Claim", "data": {"label": "Historical version", "text": "Authored old proposition used by the old decision.", "status": "superseded"}},
+    {"id": "claim:v2", "type": "Claim", "data": {"label": "Current version", "text": "Authored current proposition with independent support.", "status": "accepted"}},
+    {"id": "decision:old", "type": "Decision", "data": {"label": "Historical selection", "action": "Use the historical claim version", "actionStatus": "executed", "rationale": "Synthetic recorded choice; no inferred success or contact."}},
+    {"id": "effect:reported", "type": "Effect", "data": {"label": "Reported historical consequence", "description": "Authored account associated with the old decision; no causal identification or delivery evidence.", "state": "reported"}}
+  ],
+  "edges": [
+    {"source": "claim:v1", "relation": "inScope", "target": "scope:synthetic"},
+    {"source": "claim:v2", "relation": "inScope", "target": "scope:synthetic"},
+    {"source": "claim:v1", "relation": "supportedBy", "target": "observation:retired"},
+    {"source": "claim:v2", "relation": "supportedBy", "target": "observation:independent"},
+    {"source": "claim:v2", "relation": "previousVersion", "target": "claim:v1"},
+    {"source": "decision:old", "relation": "inScope", "target": "scope:synthetic"},
+    {"source": "decision:old", "relation": "madeBy", "target": "actor:operator"},
+    {"source": "decision:old", "relation": "usedRecord", "target": "claim:v1"},
+    {"source": "decision:old", "relation": "hasEffect", "target": "effect:reported"},
+    {"source": "effect:reported", "relation": "affects", "target": "actor:affected"}
+  ]
+}

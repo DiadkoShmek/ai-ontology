@@ -81,6 +81,16 @@
           "section": 7
         }
       ]
+    },
+    {
+      "id": "claimUse",
+      "question": "Which exact Claim versions/statuses, direct support and prior versions have explicit Decision uses and reported Effects/affected Actors, including unrecorded links?",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 7
+        }
+      ]
     }
   ],
   "cases": [
@@ -367,6 +377,38 @@
           ],
           "laterDecisions": [],
           "recordedPathComplete": false
+        }
+      ]
+    },
+    {
+      "fixture": "fixtures/historical-claim-use.json",
+      "question": "claimUse",
+      "expected": [
+        {
+          "claim": "claim:v1",
+          "claimStatus": "superseded",
+          "previousVersions": [],
+          "supportingObservations": ["observation:retired"],
+          "usedIn": [
+            {
+              "decision": "decision:old",
+              "decisionActionStatus": "executed",
+              "effects": [
+                {
+                  "effect": "effect:reported",
+                  "state": "reported",
+                  "affectedActors": ["actor:affected"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "claim": "claim:v2",
+          "claimStatus": "accepted",
+          "previousVersions": ["claim:v1"],
+          "supportingObservations": ["observation:independent"],
+          "usedIn": []
         }
       ]
     }
