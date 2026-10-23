@@ -1,10 +1,39 @@
 # Research materials: continuity and participation
 
-**Working paper · 22 October 2026 · accompanying book v3.6.0**
+**Research materials · updated 23 October 2026 · accompanying book v3.6.0**
 
 [Scoped-continuity paper](SCOPED_CONTINUITY_STUDY.md) · [PDF](../docs/downloads/scoped-continuity-study-en.pdf) · [Reading-transfer paper](READING_TRANSFER_STUDY.md) · [Transfer PDF](../docs/downloads/reading-transfer-study-en.pdf) · [Book](https://diadkoshmek.github.io/ai-ontology/#study)
 
+For the connected methodological proposal, start with the [short note](../papers/inspectable-continuity.md)
+or its [Ukrainian counterpart](../papers/inspectable-continuity.uk.md), then inspect
+the [proposed record-audit profile](../protocols/continuity-audit-v1.md). The audit
+is a new entry to existing relations, not a new positive model result.
+
 ## New: executable methods and an observed return cycle
+
+### Newer supplementary cohort: scoped evidence return
+
+The [English report](EPISTEMIC_RETURN_STUDY.md) and
+[Ukrainian report](EPISTEMIC_RETURN_STUDY.uk.md) publish 72 scored GPT-6.1
+Sol/high calls plus one canary. Actual evidence changed eight source decisions
+per actual-feedback format; masked branches changed none. After fresh-session
+readback, free notes achieved 77/80 and linked notes 71/80 full-information-optimal
+transfer choices. Six of eight linked actual notes exceeded the 2048-byte bound,
+compared with two free notes. No simulated harmful effects occurred.
+
+This is a negative incremental-format result and a concrete retention failure.
+Masked branches retain appropriate uncertainty; their lower full-information
+utility is not bad reasoning. No new-algorithm formation or full-book benefit
+is inferred. [Frozen protocol](epistemic_return/PROTOCOL.md) ·
+[raw archive](epistemic_return/responses.jsonl.gz) ·
+[results](epistemic_return/results.json) ·
+[post-cohort literal diagnosis](epistemic-return-diagnosis.json).
+
+Offline: `python3 -O research/epistemic_return/analyze.py` and
+`python3 research/epistemic_return_diagnosis.py`. This supplementary cohort does
+not change the book edition.
+
+### v3.6 executable-method cohort
 
 The [closed-loop report](CLOSED_LOOP_STUDY.md) publishes 32 GPT-6.1 Sol/high calls and 768 frozen-method executions, with a strong ordinary baseline and actual durable feedback. Both arms completed 8/8 trajectories; M0 already passed all transfer worlds, and M1 changed no selected transfer plans. This is a ceiling, with no observed added-view advantage or beneficial revision. The typed [ontology profile](../ontology/README.md), actual interpreter/store adapter and [foundation map](../ontology/FOUNDATION.md) keep conceptual representation, implemented flow and measured outcome separate. [Supplement](closed-loop-supplement.json) · [source-publication mapping](closed-loop-publication.json).
 

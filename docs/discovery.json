@@ -17,10 +17,19 @@
     {
       "url": "https://diadkoshmek.github.io/ai-ontology/ontology/",
       "language": "en"
+    },
+    {
+      "url": "https://diadkoshmek.github.io/ai-ontology/note/",
+      "language": "en"
     }
   ],
   "sitemap": "https://diadkoshmek.github.io/ai-ontology/sitemap.xml",
+  "plain_text_index": "https://diadkoshmek.github.io/ai-ontology/llms.txt",
+  "complete_texts": {
+    "en": "https://diadkoshmek.github.io/ai-ontology/downloads/BOOK_EN.md",
+    "uk": "https://diadkoshmek.github.io/ai-ontology/downloads/BOOK_UA.md"
+  },
   "indexing_observed": false,
   "search_traffic_observed": false,
-  "boundary": "Static discoverability metadata and crawlable content; no search-engine indexing, ranking, AI citation or income guarantee."
+  "boundary": "Static discoverability metadata and crawlable content; no search-engine indexing or ranking guarantee."
 }

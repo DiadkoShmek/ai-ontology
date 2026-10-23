@@ -1,0 +1,9 @@
+{
+  "schema": "epistemic-return-completion/1",
+  "status": "complete",
+  "captured_calls_including_canary": 73,
+  "source_commit": "7ba497b08c5081ef6855740f61095415ce20221f",
+  "raw_sha256": "4961a6a7ac9bb384fde53b66cdcc191cf3ed2ca59addf49e5de4858eeb974454",
+  "wall_seconds": 1031.183,
+  "completed_at": "2026-10-23T09:11:13.915480+00:00"
+}

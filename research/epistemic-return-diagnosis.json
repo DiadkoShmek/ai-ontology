@@ -1,0 +1,351 @@
+{
+  "schema": "epistemic-return-post-cohort-diagnosis/1",
+  "status": "descriptive-only-no-regrading",
+  "raw_sha256": "4961a6a7ac9bb384fde53b66cdcc191cf3ed2ca59addf49e5de4858eeb974454",
+  "registered_results_sha256": "2d7a4d0d0471d9be7a03e031923d9370b845b733ed82f7e1687ad8c48bbbcfeb",
+  "all_model_calls_including_canary": 73,
+  "nonterminal_calls": 0,
+  "total_usage": {
+    "input_tokens": 1133459,
+    "cached_input_tokens": 489728,
+    "output_tokens": 52023
+  },
+  "shared_diagnostic_cost": 8.0,
+  "memory_admission": [
+    {
+      "arm": "free_actual",
+      "notes": 8,
+      "accepted": 6,
+      "refusal_reasons": {
+        "memory-budget": 2
+      },
+      "minimum_supplied_bytes": 1333,
+      "maximum_supplied_bytes": 2160
+    },
+    {
+      "arm": "linked_actual",
+      "notes": 8,
+      "accepted": 2,
+      "refusal_reasons": {
+        "memory-budget": 6
+      },
+      "minimum_supplied_bytes": 1753,
+      "maximum_supplied_bytes": 2461
+    },
+    {
+      "arm": "free_masked",
+      "notes": 8,
+      "accepted": 6,
+      "refusal_reasons": {
+        "memory-budget": 2
+      },
+      "minimum_supplied_bytes": 1687,
+      "maximum_supplied_bytes": 2242
+    },
+    {
+      "arm": "linked_masked",
+      "notes": 8,
+      "accepted": 1,
+      "refusal_reasons": {
+        "memory-budget": 7
+      },
+      "minimum_supplied_bytes": 1935,
+      "maximum_supplied_bytes": 2424
+    }
+  ],
+  "notes": [
+    {
+      "case": "episode-925637",
+      "mode": "owner",
+      "arm": "free_actual",
+      "supplied_bytes": 1834,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1838,
+      "source_response_sha256": "81e130156bdcc04b766081f4bb20f437876e1a49b7cb134b0346f2588e361152"
+    },
+    {
+      "case": "episode-211839",
+      "mode": "owner",
+      "arm": "free_actual",
+      "supplied_bytes": 2074,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "d03f16628097be4719809cbd389a7b64dbb7ee96ec7ecc48d9070053cf920cb9"
+    },
+    {
+      "case": "episode-925637",
+      "mode": "owner",
+      "arm": "linked_actual",
+      "supplied_bytes": 2168,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "40a22c74133a477615f52e3e65f88e86601b52066a61ecef5e8c289197cfbf80"
+    },
+    {
+      "case": "episode-211839",
+      "mode": "owner",
+      "arm": "free_masked",
+      "supplied_bytes": 2242,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "4d364d3e1f6380f2769294e2ccc1fdbfd2ac8d063c181d89d0e6abcbdb88b945"
+    },
+    {
+      "case": "episode-925637",
+      "mode": "owner",
+      "arm": "linked_masked",
+      "supplied_bytes": 2295,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "f7f5d75268aa05d754fac24e3d5f6adb2c8ebab178be07089f2496d81a6251e2"
+    },
+    {
+      "case": "episode-211839",
+      "mode": "owner",
+      "arm": "linked_masked",
+      "supplied_bytes": 2133,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "74f5fabc0f7948555a3e55f1deee6e7703c361e7658347c1b019211510867605"
+    },
+    {
+      "case": "episode-925637",
+      "mode": "owner",
+      "arm": "free_masked",
+      "supplied_bytes": 1755,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1760,
+      "source_response_sha256": "0f5d511b15ed363ab155069965f353a6dd6b4e9b421688f334b7785b0b1fcc42"
+    },
+    {
+      "case": "episode-211839",
+      "mode": "owner",
+      "arm": "linked_actual",
+      "supplied_bytes": 2198,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "d27d9156f4e0befb8f4b9523e75745eca91a827e450ad69ade5a24e7cbf70289"
+    },
+    {
+      "case": "episode-927727",
+      "mode": "owner",
+      "arm": "free_actual",
+      "supplied_bytes": 1772,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1777,
+      "source_response_sha256": "39de9e28d351047ae025dd5453fd6ea06df35eacd721ec4316f6a71f2344d4d8"
+    },
+    {
+      "case": "episode-570883",
+      "mode": "cache",
+      "arm": "free_masked",
+      "supplied_bytes": 1820,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1829,
+      "source_response_sha256": "3f022741ea9298c20ec676e85036426626166009802ef9aac989d68210bc09ac"
+    },
+    {
+      "case": "episode-927727",
+      "mode": "owner",
+      "arm": "linked_actual",
+      "supplied_bytes": 2043,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 2043,
+      "source_response_sha256": "5109f2b74a2cab2e623821fa105ff024d198c2b2747c9009d90bf6208da0244d"
+    },
+    {
+      "case": "episode-570883",
+      "mode": "cache",
+      "arm": "linked_masked",
+      "supplied_bytes": 2338,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "1d9bc2efbe85ca382260c516cfc28d0dd57e05497246367cd634512c8036c4e6"
+    },
+    {
+      "case": "episode-927727",
+      "mode": "owner",
+      "arm": "free_masked",
+      "supplied_bytes": 1975,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1980,
+      "source_response_sha256": "d2758fd8c53f2814662400be3485f7ee5675ab251c38fe99ee7fc2b6c9dcb829"
+    },
+    {
+      "case": "episode-570883",
+      "mode": "cache",
+      "arm": "linked_actual",
+      "supplied_bytes": 2158,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "784143c417aba49bf900ef1b2c9274c5456e4e32a096e8a446e2b44f3e5204c5"
+    },
+    {
+      "case": "episode-927727",
+      "mode": "owner",
+      "arm": "linked_masked",
+      "supplied_bytes": 2424,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "7dd94050c5c1a1d6114274b343c34f3173d8e0c3b20ca2305eb6658340522670"
+    },
+    {
+      "case": "episode-570883",
+      "mode": "cache",
+      "arm": "free_actual",
+      "supplied_bytes": 1603,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1607,
+      "source_response_sha256": "c4d9d2539dd8d2c9026f05ad269435204ffb1f63c1ace8de4b901554959147c5"
+    },
+    {
+      "case": "episode-166536",
+      "mode": "cache",
+      "arm": "free_masked",
+      "supplied_bytes": 2017,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 2022,
+      "source_response_sha256": "b8a3a68ed5fac270e63fcd72c62e51051b0dcd1f20cd4fe68384b0a55aa13667"
+    },
+    {
+      "case": "episode-304371",
+      "mode": "cache",
+      "arm": "free_masked",
+      "supplied_bytes": 1907,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1917,
+      "source_response_sha256": "cce01b6be6f4cc6d8937b7d5bc27113549bf4b394a2371b3cfe2d8baeb2db4f6"
+    },
+    {
+      "case": "episode-166536",
+      "mode": "cache",
+      "arm": "linked_masked",
+      "supplied_bytes": 2141,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "4847aadbb02cdf401e875eedb3fa7f96204ca7f52103a8130af6a96140c7cf92"
+    },
+    {
+      "case": "episode-304371",
+      "mode": "cache",
+      "arm": "linked_masked",
+      "supplied_bytes": 1935,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1935,
+      "source_response_sha256": "3bd0b460ed2a907cebcce620e0800023fad9a04dd2d9b828177d440ab30bd7be"
+    },
+    {
+      "case": "episode-166536",
+      "mode": "cache",
+      "arm": "free_actual",
+      "supplied_bytes": 1727,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1733,
+      "source_response_sha256": "f91407a1ae8e206b315a0dd099e9137227158c5e18c281ffeeee4bc1598bff75"
+    },
+    {
+      "case": "episode-304371",
+      "mode": "cache",
+      "arm": "linked_actual",
+      "supplied_bytes": 2294,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "de6b369b3e68f9b94d809e3f8616a952ae8d2145bd4d3226736e85100c12c885"
+    },
+    {
+      "case": "episode-166536",
+      "mode": "cache",
+      "arm": "linked_actual",
+      "supplied_bytes": 2461,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "97b291fc08452a7849264c5d67c03f226dab49124fb6d4fc92c416f06376e62a"
+    },
+    {
+      "case": "episode-304371",
+      "mode": "cache",
+      "arm": "free_actual",
+      "supplied_bytes": 2160,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "f436f4c5edb1bfc1a7a7cd3bbb84ad53d5bce9979103cd22b4d7d52bbdbf72d4"
+    },
+    {
+      "case": "episode-397880",
+      "mode": "cache",
+      "arm": "linked_actual",
+      "supplied_bytes": 1753,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1753,
+      "source_response_sha256": "fb4999c7c7bd771e529f48a8fcba798106b97e0bed2978e12990d25863271f17"
+    },
+    {
+      "case": "episode-318597",
+      "mode": "owner",
+      "arm": "linked_actual",
+      "supplied_bytes": 2264,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "a995d1965bbe943e7231bbb961a1313c8b2eb361c5c8056647a4c520458d7ead"
+    },
+    {
+      "case": "episode-397880",
+      "mode": "cache",
+      "arm": "free_actual",
+      "supplied_bytes": 1876,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1881,
+      "source_response_sha256": "089c1cc783db3044831742ea8595e0e9eebb7c8804076e4baf28b44817873c42"
+    },
+    {
+      "case": "episode-318597",
+      "mode": "owner",
+      "arm": "free_masked",
+      "supplied_bytes": 2065,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "8275acf5d4dcb6abe5eeb2532e73b8450ed7c59d66fe0ecae6a279d0a938aed5"
+    },
+    {
+      "case": "episode-397880",
+      "mode": "cache",
+      "arm": "linked_masked",
+      "supplied_bytes": 2392,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "6feed79fb9c1002177d0b6da3c5b67786e22a1f7da8dff871a1ba8191f02bf7a"
+    },
+    {
+      "case": "episode-318597",
+      "mode": "owner",
+      "arm": "free_actual",
+      "supplied_bytes": 1333,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1335,
+      "source_response_sha256": "ba25613c7e863ebed32783b17a5f911022adc7ad8ebc6618cdef3128e92a1d49"
+    },
+    {
+      "case": "episode-397880",
+      "mode": "cache",
+      "arm": "free_masked",
+      "supplied_bytes": 1687,
+      "unavailable_reason": null,
+      "admitted_wire_bytes": 1692,
+      "source_response_sha256": "368d91bd6877a13891e83723ea95388cbd79682fb7f26aec636216488da927ee"
+    },
+    {
+      "case": "episode-318597",
+      "mode": "owner",
+      "arm": "linked_masked",
+      "supplied_bytes": 2162,
+      "unavailable_reason": "memory-budget",
+      "admitted_wire_bytes": 129,
+      "source_response_sha256": "aedbb2bc18627228cc1c4a55c5e454d064cc05dc9f7005551b73b219aa8adc66"
+    }
+  ],
+  "limits": [
+    "literal byte counts and refusal reasons, not independent semantic evaluation",
+    "does not estimate results with a larger budget or a repaired writer",
+    "all-or-nothing admission is part of this tested system, not inherent to all ontologies"
+  ]
+}
