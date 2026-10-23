@@ -47,7 +47,7 @@ for(const row of edition.additional_evaluations){
  assert.equal(row.captured_turns,report.scored_calls??report.observed_complete_rows??report.captured_calls);
 }
 assert.equal(edition.total_captured_model_turns,edition.scored_model_calls+edition.additional_evaluations.reduce((n,r)=>n+r.captured_turns,0));
-for(const dir of ['participation_pilot','gpt_profile_pilot','gpt_profile_pilot_v2','transfer_calibration','transfer_calibration_v2','transfer_calibration_v3','transfer_reading','handoff_repair']){
+for(const dir of ['participation_pilot','gpt_profile_pilot','gpt_profile_pilot_v2','transfer_calibration','transfer_calibration_v2','transfer_calibration_v3','transfer_reading','handoff_repair','closed_loop']){
  const frozen=JSON.parse(read(`research/${dir}/freeze.json`));
  for(const [file,hash] of Object.entries(frozen.input_sha256))assert.equal(sha(read(`research/${dir}/${file}`)),hash,`frozen profile source drift: ${dir}/${file}`);
 }
@@ -67,6 +67,11 @@ reportInputs.push('research/run_runtime_checks.py');
 assert(reportInputs.includes('examples/iris-events.json'),'missing runtime fixture');
 assert.deepEqual(Object.keys(report.sources).sort(),reportInputs.sort(),'runtime report input coverage mismatch');
 for(const [file,hash] of Object.entries(report.sources))assert.equal(sha(read(file)),hash,`stale runtime report: ${file}`);
+const foundation=JSON.parse(read('research/foundation-checks.json'));
+assert.equal(foundation.success,true);assert.equal(foundation.llm_calls,0);
+for(const [file,hash] of Object.entries(foundation.sources))assert.equal(sha(read(file)),hash,`stale foundation check: ${file}`);
+const supplement=JSON.parse(read('research/closed-loop-supplement.json'));
+for(const [file,hash] of Object.entries(supplement.source_sha256))assert.equal(sha(read(file)),hash,`stale closed-loop supplement: ${file}`);
 const cases=JSON.parse(read('research/engineering-cases-results.json'));
 assert.equal(cases.schema,'ontology-engineering-cases/1');
 assert.equal(cases.llm_calls,0);
@@ -83,6 +88,7 @@ const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
 assert.equal(new Set(ids).size,ids.length,'duplicate HTML ids');
 for(const m of html.matchAll(/href="#([^"]+)"/g))assert(ids.includes(m[1]),`missing anchor ${m[1]}`);
 const markdown=['README.md','REVIEW_GUIDE.md','ABSTRACT.en.md','AUTHORS.md','READER_NOTE.md','CLAIMS.md','practical/README.md','research/HANDOFF_REPAIR_REPORT.md','research/handoff_controls/README.md','research/handoff_repair/README.md',
+ 'README.uk.md','BOOK_EN.md','ontology/README.md','ontology/FOUNDATION.md','research/CLOSED_LOOP_STUDY.md',
  'CHANGELOG.md','BOOK_UA.md','examples/README.md','research/comparison-notes.md','research/README.md','research/SCOPED_CONTINUITY_STUDY.md','research/PROFILE_PARTICIPATION_STUDY.md','research/READING_TRANSFER_STUDY.md','research/TRANSFER_STUDY_DESIGN.md','research/transfer_reading/THIRD_PARTY_READING.md',...edition.source_files.map(f=>f.path)];
 for(const f of markdown){
  const s=read(f);
@@ -95,7 +101,7 @@ for(const f of markdown){
   }
  }
 }
-assert(!/<script[^>]+src="https?:|<link[^>]+href="https?:/.test(html),'remote executable/style dependency');
+assert(!/<script[^>]+src="https?:|<link(?=[^>]+rel="stylesheet")[^>]+href="https?:/.test(html),'remote executable/style dependency');
 const renderInputs=paths=>paths.map(f=>fs.readFileSync(path.join(root,f)));
 const fontInputs=['docs/assets/serif.ttf','docs/assets/serif-italic.ttf','docs/assets/serif-bold.ttf'];
 const bookPdfKey=sha(Buffer.concat([Buffer.from(book),...renderInputs(['edition.json','scripts/build_pdf.py','requirements.txt',...fontInputs])])).slice(0,12);

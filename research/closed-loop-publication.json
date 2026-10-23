@@ -1,0 +1,9 @@
+{
+  "schema": "closed-loop-source-publication/1",
+  "local_pre_inference_commit": "907e304830d260e66f64f5bd949779986e6b73c7",
+  "public_source_commit": "1477065f722333756be0e9b4a5d09d4f709b68b5",
+  "tree_sha1": "d4653a1e7935ba61e07f0e963c7341a3880122ab",
+  "freeze_sha256": "66e110c392ba142ac671d029a45fccf9550c37505b17195b15ba9c92f4b12480",
+  "same_source_tree": true,
+  "boundary": "The local source commit preceded scored calls. The identical tree was later uploaded through the GitHub connector, whose commit metadata changes its commit ID. This is developer-controlled chronology, not external preregistration or independent timestamp attestation."
+}

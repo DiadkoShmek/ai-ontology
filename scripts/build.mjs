@@ -76,7 +76,8 @@ edition.additional_evaluations=[
  ['research/transfer_calibration_v2/results.json','transfer-calibration-v2','captured_calls'],
  ['research/transfer_calibration_v3/results.json','transfer-calibration-v3','captured_calls'],
  ['research/transfer_reading/results.json','reading-mediated-transfer','captured_calls'],
- ['research/handoff_repair/results.json','exact-transport-repair','captured_calls']
+ ['research/handoff_repair/results.json','exact-transport-repair','captured_calls'],
+ ['research/closed_loop/results.json','executable-method-return-cycle','scored_calls']
 ].map(([file,kind,key])=>{const raw=fs.readFileSync(path.join(root,file));return {kind,path:file,sha256:sha(raw),captured_turns:JSON.parse(raw)[key]};});
 edition.total_captured_model_turns_scope='Sum of listed evaluation archives; excludes unscored warmups, canaries, length probes and integration smoke calls. Turns are not independent samples.';
 edition.total_captured_model_turns=edition.scored_model_calls+edition.additional_evaluations.reduce((n,r)=>n+r.captured_turns,0);

@@ -49,8 +49,12 @@ Actor names and `approved_by` are trusted caller assertions, not authenticated i
 
 The reference implementation is bounded to 4096 operations, 64 KiB per operation and 512–65536 bytes per context. Full replay and immutable dictionary copies favor inspectability at this size. They are not a million-record implementation. The book specifies a distinct indexed scaling path.
 
-`research/runtime-results.json` records the checked Python source and JSON fixture hashes, test names and measured run. Publication checks reject missing inputs and changed fixture bytes. Reproduction overwrites only that report and may produce different timing and environment metadata. Neither hashes nor 49 passing checks establish consciousness, identity or general behavioral benefit.
+`research/runtime-results.json` records the checked Python source and JSON fixture hashes, test names and measured run. Publication checks reject missing inputs and changed fixture bytes. Reproduction overwrites only that report and may produce different timing and environment metadata. Neither hashes nor 68 current passing checks establish consciousness, identity or general behavioral benefit.
 
 Full explanation: [finite reducer](../book/ua/08-model.md), [runtime architecture](../book/ua/09-runtime.md), [behavioral research protocol](../book/ua/05-research.md).
 
 The separately operated [research adapter and study](../research/README.md) contain actual local model calls. They are not invoked by these examples or systems tests.
+
+## Executable participation methods
+
+`participation.py` interprets scoped dependency worlds and persists actual model attempts, refusals and local simulated effects in the existing SQLite/CAS journal. `participation_method.py` supplies a bounded decision-table language and operational budget planner; it never calls the study oracle. These add 19 checks to the earlier 49. [Full finite profile and source mapping](../ontology/FOUNDATION.md) · [32-call closed-loop study](../research/CLOSED_LOOP_STUDY.md). The graph adapter leaves unsupported semantic revision links absent. Neither a stored effect nor changed prose establishes beneficial formation.

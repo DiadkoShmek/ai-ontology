@@ -1,12 +1,18 @@
 # Research materials: continuity and participation
 
-**Working paper · 22 October 2026 · accompanying book v3.5.0**
+**Working paper · 22 October 2026 · accompanying book v3.6.0**
 
 [Scoped-continuity paper](SCOPED_CONTINUITY_STUDY.md) · [PDF](../docs/downloads/scoped-continuity-study-en.pdf) · [Reading-transfer paper](READING_TRANSFER_STUDY.md) · [Transfer PDF](../docs/downloads/reading-transfer-study-en.pdf) · [Book](https://diadkoshmek.github.io/ai-ontology/#study)
 
+## New: executable methods and an observed return cycle
+
+The [closed-loop report](CLOSED_LOOP_STUDY.md) publishes 32 GPT-6.1 Sol/high calls and 768 frozen-method executions, with a strong ordinary baseline and actual durable feedback. Both arms completed 8/8 trajectories; M0 already passed all transfer worlds, and M1 changed no selected transfer plans. This is a ceiling, with no observed added-view advantage or beneficial revision. The typed [ontology profile](../ontology/README.md), actual interpreter/store adapter and [foundation map](../ontology/FOUNDATION.md) keep conceptual representation, implemented flow and measured outcome separate. [Supplement](closed-loop-supplement.json) · [source-publication mapping](closed-loop-publication.json).
+
+Offline replay: `python3 -O research/closed_loop/analyze.py`; descriptive grouping: `python3 research/closed_loop_report.py`. Neither calls a model. `foundation-checks.json` records ontology and instrument checks, including an explicitly authored no-model full-loop fixture.
+
 ## Original scoped-continuity result and scope
 
-Two local quantized models, 24 authored cases in six dependent families, four conditions. There are **384 scored model calls across two cohorts**, four unscored warm-ups and two separate integration smoke calls. These counts are distinct from the 49 systems tests and ten design tests.
+Two local quantized models, 24 authored cases in six dependent families, four conditions. There are **384 scored model calls across two cohorts**, four unscored warm-ups and two separate integration smoke calls. These counts are distinct from the 68 current systems tests and ten design tests.
 
 The first 192 calls reached an output-encoding floor. The exploratory follow-up clarified the instruction and introduced separate schema-constrained fields on the same cases. Exact follow-up scores were 20/16/16/20 for Qwen3 4B and 5/2/12/12 for Granite 3.3 2B across journal, ontology wrapper, compiled context and simple index. No aggregate advantage of compiled ontology presentation over the information-matched simple index was observed. The study does not measure voice, consciousness, book-reading effects or natural-task benefit.
 

@@ -1,0 +1,11 @@
+{
+  "schema": "closed-loop-completion/2",
+  "status": "complete",
+  "calls": 32,
+  "source_commit": "907e304830d260e66f64f5bd949779986e6b73c7",
+  "freeze_sha256": "66e110c392ba142ac671d029a45fccf9550c37505b17195b15ba9c92f4b12480",
+  "raw_sha256": "0e537f7bd5877ec4014f8274eaeaede44cd9955989827db21dd6dcf1766b746d",
+  "transfer_executions": 768,
+  "wall_seconds": 456.397,
+  "completed_at": "2026-10-23T07:55:38.700765+00:00"
+}

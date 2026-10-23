@@ -1,5 +1,15 @@
 # v3.5.0 — 2026-10-23
 
+## 3.6.0 — 2026-10-23
+
+- Full separate English edition of all sixteen chapters, PDF and Markdown, retaining the Ukrainian authorial source. Translation manifests bind both source sets.
+- Finite participation ontology: 18 classes, 34 relations, eight competency queries, JSON-LD/Turtle exports, adversarial checks and actual interpreter/store adapter. Unsupported semantic-revision links remain absent.
+- Frozen executable-method return-cycle study: 32 GPT-6.1 Sol/high calls, 768 unchanged-method executions. Both arms reached the ceiling; no beneficial behavioral revision or added-view advantage. Raw outputs and independent mechanical replay preserved.
+- Current runtime report expands 49 checks to 68 without changing historical model cohorts. Separate ontology/instrument reports label all authored fixtures.
+- Bilingual canonical/hreflang metadata, structured book descriptions, research/vocabulary landing pages and sitemap. No search indexing, ranking or revenue claim.
+- English repository entry, bilingual citation and explicit concept-to-code/evidence map. No private House messages or service changes.
+
+
 - Developed formation through a new part, “Experience that changes participation”: event, interpretation, lesson, situated judgment and consequence. A correct but insufficient lesson supplies the central counterexample; a shared lesson library is not treated as a complete agent state.
 - Grounded the exposition in already public source-excerpt repairs, the negative reading-transfer cohort and the separate transport repair. Preserved the evidence class and limit of each; no private conversation or hidden reasoning is published.
 - Distinguished inherited history from current contribution, refusal from a useful bounded next step, and revision of a rule from repair of its earlier effects. Rejected the claims that judgment is universally untransferable or that formation necessarily requires sacrifice.
