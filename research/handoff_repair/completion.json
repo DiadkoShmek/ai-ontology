@@ -1,0 +1,26 @@
+{
+  "schema": "handoff-repair-completion/1",
+  "source_commit": "ff80b89998d0a9e007cdc371d1bc679d64fab66c",
+  "freeze_sha256": "12da104ab1020cb76a011dc5f4249d9dae6babb5309bdb8a21ef0b8ccc0803d4",
+  "raw_sha256": "595137e21e339d2a31bf7b51b00cb81108ffd04606bbacedee5870c26a0e115c",
+  "captured_calls": 24,
+  "episodes": 16,
+  "input_pins_after": {
+    "PROTOCOL.md": "403632947923347bc25b3c3f8ca2b3e22fd971caddcc8acc31f1bfcbd262df11",
+    "run.py": "c7633ad3e52bee0d0db8b07871269e8b9ec76ce00386a75955c4fc86c3de9c96",
+    "analyze.py": "66514b9aaa70cfe39b78608e9ff72adb7925ed40ed8d83f8cc5db56363e9db41",
+    "test_study.py": "72764d8e4eb1ab56fad17eefeaac796f8b04622f7c8382f2ca8afa99395a6063",
+    "transport.py": "8cf831200dfaeebd5392dc14c556cf97d53eca22e8940ec38734f22221f20d58",
+    "test_transport.py": "a5c77395bfca6dc00f14de4be96dddbf2211bf5e6cf11e44b1c241eb9b4a6fa1",
+    "cases.json": "666e705234f8b602325ce43f8c5da7abd38c2c31f65d17ae2a1b3cf881e73c21",
+    "../transfer_calibration_v3/tasks.py": "e483c90480e5698b6626c2b4abfa0ec8f5b69f7c48d6c19a2099f19e9fe07cef",
+    "../../examples/continuity.py": "1027a1da47d58f9f02f77bff0d67cd1b5fd917b2c457e3934edc76a663f80513",
+    "../../examples/durable.py": "9ec47c58c3d75cba4247947fd9e0b9f77828fae2af06f36bbc035ba7b7dc1d67",
+    "../gpt_profile_pilot_v2/run.py": "e3a39f792f32ffce536cf401f630297902d3787609d3e7393acded4a60a794aa",
+    "../gpt_profile_pilot_v2/design.py": "de56dda3e79963ae033d88f3393c5d72a52e4d90964b4d27bea8026868abad65",
+    "../participation_pilot/design.py": "34020fb79f8aadbcbf31fdcdd0641a275c16499303d8ad1c34a620134921e42b"
+  },
+  "source_unchanged": true,
+  "wall_seconds": 588.354,
+  "completed_at": "2026-10-23T04:39:01.792738+00:00"
+}

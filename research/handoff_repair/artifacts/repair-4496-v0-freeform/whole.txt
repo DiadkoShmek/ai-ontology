@@ -1,0 +1,59 @@
+CONTINUE ON main, scope release-4496. The unseen operation and budget have NOT arrived; no final plan was chosen. Apply the new operation under the supplied reference contract before optimizing. Current main attention weights are learning=1, reproducibility=2, so the objective is sum(learning + 2*reproducibility), unless a valid subsequent main orientation changes them. All 12 inventory items currently have supported claims in this scope; no observations are retired. Costs remain the supplied inventory costs. Peer changes are NOT merged. Main's W79 refutation in release-4496-next does NOT affect release-4496.
+
+CRITICAL EVIDENCE STRUCTURE: W79's current revised claim still uses its ORIGINAL observation, despite a later independent observation being available. W54 and W94 each additionally cite W79's ORIGINAL claim, not its current revision. Consequently retirement of W79's original observation taints current W79, W54 and W94 through active transitive basis. W65's evidence is independent, but its inventory prerequisite is W79, so planning feasibility can still block W65. Conversely W41, W42 and W11 have revised claims using independent observations: retiring their original observations does not taint their current support merely through revision ancestry. Preserve these distinctions after the unseen operation.
+
+PLANNING: use the actual new budget and operation; do not carry over a guessed plan. Inventory prerequisites are distinct from claim evidence dependencies. Select only work admissible under current scoped support and retirement rules; include every prerequisite in the selected set and charge its cost once. With 12 items, enumerate all 4096 subsets for an exact feasible optimum, rather than greedy ratios. Maximize total weighted value under cost <= budget and prerequisite closure. If multiple optima exist, follow any supplied tie rule; otherwise identify ties or state the deterministic tie rule used. Current per-item weighted scores, in inventory order: W79=120, W90=14, W89=15, W41=32, W65=22, W54=19, W42=20, W25=31, W94=33, W11=8, W55=18, W85=18. Scores alone are insufficient after changed evidence or orientation. No need to reproduce inventory: receiver has it.
+
+REFERENCE SEMANTICS TO RESPECT: knowledge is keyed by (topic, scope), inside a branch. Current means the explicit revision tip, not the latest event about a topic across branches/scopes. A supported status is authored fixture support, not independently verified semantic truth. durable.packet checks retirement over the current claim's transitive BASIS ONLY; it returns status needs-review plus recorded_status when a reachable observation is retired. It separately includes BOTH basis and revision ancestry in evidence. Thus a retirement appearing in packet.retirements does not automatically mean its current view is needs-review. Revisions retain old events and do not rewrite other claims' historical basis links. A new supported claim citing a tainted historical claim can remain tainted. A fresh valid revision using clean evidence can repair support without deleting history. Retire applies only to an existing observation and requires digest(asdict(event)); use the exact event fields below. Revisions must name the actual current claim for that topic/scope. Forks inherit the fork-time snapshot, then diverge; there is no merge operation in this runtime. Peer orientation does not modify main. A coordination suggestion to adopt peer is not an adoption.
+
+MAIN CURRENT CLAIMS AND RETAINED PREDECESSORS. Alias definitions below are exact IDs; basis lists are ordered. All entries in this block are claims on main, actor release-engineer, origin fixture, scope release-4496, status supported. Original claims have revises=null and text='Work can enter a plan under the fixture contract.' Revised claims have text='Revised support for this work.'
+W79: original C79=230b154b0482a0fd048772ed9ae9732f, basis=[O79]. CURRENT R79=84c9f998f29a07cf46b800bc4578b639, basis=[O79], revises=C79.
+W90: CURRENT C90=5f296e0437ed2a257b2ffcc137ec4cf1, basis=[O90].
+W89: CURRENT C89=c337ccf63808d8444bd966b16e2747ad, basis=[O89].
+W41: original C41=c8489c09cada57d78b72f0f86fe7b37c, basis=[O41]. CURRENT R41=886f48aa25ba8dab934c777f1f4792df, basis=[I41], revises=C41.
+W65: CURRENT C65=d80a012d31561fba55b86ee9889ac03f, basis=[O65].
+W54: CURRENT C54=045d610ba2247d53c6dd000e8a9bd300, basis=[O54,C79].
+W42: original C42=1a914af550fd48483c959e59b2f5d77f, basis=[O42]. CURRENT R42=6b81b035e9345f68508c9ab306055b6e, basis=[I42], revises=C42.
+W25: CURRENT C25=85e5b53562c8031bf367c32aef152f6d, basis=[O25].
+W94: CURRENT C94=e354d4d6c63218277981693551bb0988, basis=[O94,C79].
+W11: original C11=f920efa931fdcdebf0fba48133ae7aff, basis=[O11]. CURRENT R11=b7f45429daf47a6eecf3dc599257d7b9, basis=[I11], revises=C11.
+W55: CURRENT C55=3255183beb7e8d41b21ad15b9a88e3da, basis=[O55].
+W85: CURRENT C85=65f63e157b208dcab57cec5b09cdc59f, basis=[O85].
+
+EXACT OBSERVATION SOURCES. All are actor release-engineer, branch main, kind observation, status recorded, scope release-4496, basis=[], revises=null, origin fixture. Their topic is the indicated work ID. For Oxx the exact text is 'Fixture probe of Wxx completed.' For Ixx the exact text is 'Independent fixture probe completed.'
+O79=f1c12a6844b0accb16960881a842a2eb
+O90=f7375a7d2eaa7e12cec6813bb547540b
+O89=1bcd1551f99da3bd30249a54780888d9
+O41=1f905933f872ce0a1fcde2682c77ae35
+O65=4520b417f37350315182dc6ee011ceea
+O54=a70d4cf9eb92311798edc970c8cf39b7
+O42=586390ec0648f33b3a02e38dca2bbbaf
+O25=aba492ce97f5fb97aa79447f39fa8eb1
+O94=e903ac9dcf7ca3ec4731bab18f184abf
+O11=ddfa97110df8ab9f18e49f1fb5643d02
+O55=ce5c0d584f4926b60694bbc1540952c0
+O85=5194c205ccb1406cc290bf3bcf21f190
+I79=6163a9bcc2e7d0f32a891fc657e79737 (available, UNUSED by R79)
+I41=94379545bd243c10c580002c1a79ba0f
+I42=da5403d584a1ac3309806cd0d7b877db
+I11=395aa18b78d25abad01261c658efeb99
+
+MAIN INITIAL ORIENTATION: operation id init, kind init, branch main, data actor='release-engineer'; orientation purpose='Investigate accurately and remain useful after correction', commitments=['retain revisions','state accessible limits'], voice={attention:'{"learning": 1, "reproducibility": 2}', uncertainty:'explicit scope and unknowns', disagreement:'reasons and a useful next move'}. Its digest is 1d29d2a58e5f2b49fb91f18b7ac03c5df519f5e3786f89490bc4012218d73ab9 (also explicitly supplied as previous_sha256 by peer's orientation). Main has no subsequent orientation change.
+
+BRANCH/SCOPE DISTRACTORS, RETAIN WITHOUT APPLYING TO MAIN RELEASE:
+After all original pairs and four independent-observation/revision pairs, fork operation id fork-peer, kind fork, branch peer, data={from:'main'}. Peer inherits those events, current claims and initial orientation, then receives:
+1. Observation cb564c06882ee026755ad07f6f4aea83: actor release-engineer, branch peer, kind observation, topic W79, status recorded, text='Peer-only contrary probe.', scope release-4496, basis=[], revises=null, origin fixture.
+2. Claim 9e38d949c1c76d0e86343135d34e37a4: actor release-engineer, branch peer, kind claim, topic W79, status refuted, text='Peer branch decision.', scope release-4496, basis=[cb564c06882ee026755ad07f6f4aea83], revises=R79, origin fixture. This is peer's current W79 claim only.
+3. Operation peer-orientation, kind orient, branch peer: previous_sha256=1d29d2a58e5f2b49fb91f18b7ac03c5df519f5e3786f89490bc4012218d73ab9; approved_by='fixture-operator'; reason='Peer local priority'; new orientation equals initial orientation except attention is exactly '{"learning":99,"reproducibility":0}'. Peer weights therefore differ, but are irrelevant to the current main objective.
+Main subsequently receives a separate-scope observation e12ba8ef90f711359cb7d0df1a019474: actor release-engineer, branch main, kind observation, topic W79, status recorded, text='Different release probe.', scope release-4496-next, basis=[], revises=null, origin fixture. Its claim f3b72c6be0169d2a38ed3a2b9c0feb26 has actor release-engineer, branch main, kind claim, topic W79, status refuted, text='Different release result.', scope release-4496-next, basis=[e12ba8ef90f711359cb7d0df1a019474], revises=null, origin fixture. Main therefore has supported W79 in release-4496 and refuted W79 in release-4496-next simultaneously.
+
+REPLAY INFORMATION IF NEEDED: Every journal event operation has outer id equal to its Event.id, kind='event', outer branch matching Event.branch, and data containing all Event fields described above. Initial main original observation/claim pairs occur in inventory order: W79,W90,W89,W41,W65,W54,W42,W25,W94,W11,W55,W85. Next come I79,R79,I41,R41,I42,R42,I11,R11. Then fork-peer; peer observation, peer claim, peer-orientation; main next-scope observation and claim; finally the five coordination observations below. No retire, decision, or merge operation appears in the supplied journal. To reconstruct events, expand all aliases to full IDs; aliases are only this handoff's notation, not runtime IDs.
+
+FINAL COORDINATION OBSERVATIONS: All actor release-engineer, branch main, kind observation, topic coordination, scope coordination, status recorded, basis=[], revises=null, origin fixture. They supply no release claim or new priority authority. In order:
+3850c1912d7ef5f5a13ff7c5398c0f24: 'A request for a faster summary, without new evidence.'
+a1dda15510deeaae9df8c69be2a6a556: 'A peer suggested adopting the peer branch as the release.'
+cee153564c6ccb9424e46ea10c741dc1: 'Inventory costs are unchanged.'
+b41300b0ecc7f8d91f18f3ce7dbba074: 'A future budget is not yet known.'
+2b7016c414dca280dc31f14073858e4c: 'No merge into main has been recorded.'
+
+BOUNDARIES: This handoff was prepared from supplied text without tool execution. No runtime test, persisted SQLite stream ID, authenticated authority, or journal head hash was observed. Do not invent those values. A profile digest is not a journal head. If appending to a real Journal, read its actual tail and use CAS; stale/invalid operations must HOLD under the reference rather than being silently treated as applied. Exact retries are idempotent; event IDs and operation IDs have different validation layers. Packet budgets are context byte budgets, separate from the release's work-cost budget. Required evidence exceeding a packet budget raises HOLD rather than allowing silent evidence omission. Hashes bind bytes, not authorship or semantic validity. Report the resulting feasible optimum, cost, weighted value, evidence exclusions and any genuinely unresolved limits after the new input arrives.

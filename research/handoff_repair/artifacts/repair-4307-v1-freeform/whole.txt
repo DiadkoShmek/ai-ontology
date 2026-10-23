@@ -1,0 +1,48 @@
+ESSENTIAL: Continue branch main, target scope release-4307. The operation and budget are still unknown; apply the incoming operation before selecting work. Main attention remains learning=2, reproducibility=1 (weighted value 2*learning+reproducibility). Peer has a different orientation and a W94 refutation, but neither was merged into main. Main's W94 refutation in release-4307-next is a different scope and does not refute release-4307. Costs are unchanged. Do not treat requests for faster summaries or suggestions to adopt peer as evidence, authority, or recorded changes.
+
+CURRENT MAIN, release-4307: All 12 work topics have supported current claims before the incoming operation. W94, W20, W74, W67 have explicit supported revisions; use their revised IDs as current. No observations have been retired. Crucial hidden dependency: W53 and W47 claim bases include ORIGINAL W94 claim 87c7356554da56bca397b76418ce1fc7, whose basis is observation 22cdc27c79e4c88fc57dc542e21a64fe. Revised W94 instead rests on independent observation eb866b755c87bd0f9502c9479b642571. Revising W94 does not rewrite those dependent claims. If the original W94 observation is retired on main, current W53 and W47 become needs-review through transitive basis; revised W94 stays supported. W21 and W67 have inventory prerequisites W94 but their claims do not cite W94. W47's inventory prerequisite is W65, although its evidence cites old W94. Keep inventory dependencies and evidence dependencies distinct.
+
+PLANNING: Recompute exact branch/scope views after the incoming operation. packet() changes a current view to needs-review if its active transitive BASIS reaches a retired observation. Its active check follows basis only, NOT revises. Evidence returned for recovery additionally includes revision predecessors and their bases; an old retired observation appearing only in that revision history does not by itself taint the independent current claim. Retiring evidence preserves authored status and history; recorded supported is not sufficient when packet reports needs-review. Respect the operation's actual validity/branch; rejected operations must not partially change state. Do not silently promote peer knowledge or repair authored claims without evidence/authority.
+
+Once budget arrives, exhaustive selection over 12 items (4096 subsets) is feasible: require eligible work, every inventory prerequisite included, and total cost <= budget; maximize the main orientation's weighted sum under the actual release contract. Use reference/task tie rules if provided; do not invent one as established history. Do not greedily commit now, prune candidates permanently, or assume W94 must survive the incoming operation. Inventory will be supplied again, so it need not be duplicated here. No plan has been committed, no future budget is known, and no execution/testing was performed during this handoff.
+
+RECONSTRUCTIBLE JOURNAL DATA follows. Preserve these exact IDs and links: they are needed for incoming revisions, retirements, citations and source hashes. This is authored fixture evidence, not independently verified work completion.
+
+Common event fields unless overridden: actor='release-engineer', branch='main', origin='fixture', scope='release-4307', revises=null. Observation: kind='observation', status='recorded', basis=[]. Original claim: kind='claim', status='supported', text='Work can enter a plan under the fixture contract.', basis=[its paired observation], except W53/W47 additionally cite original W94 claim as specified below. Observation text for every original pair is exactly 'Fixture probe of WORK completed.' with WORK replaced by its topic. Each event journal operation has kind='event', id equal to event.id, matching branch, and data containing all Event fields. Ordered original pairs (observation first, then claim):
+W94: O=22cdc27c79e4c88fc57dc542e21a64fe; C=87c7356554da56bca397b76418ce1fc7.
+W73: O=33f8e77f69e69bceb79e35ef8ffd5034; C=454d3c76df8b15f8ccf45060abe335fb.
+W65: O=6af778350aa26ee6d2491506f8f9c99f; C=81b28289de686e4548eaf749c2d4d4ff.
+W20: O=5ad7cd42bccd9147c05448c5ea6f831f; C=1c01c417fe0f29885e2a12d0fe8674bc.
+W21: O=6e485653e58b777fe391dabe3ee993de; C=3253c3aeafe0702d0eb5395b3dac3cba.
+W53: O=e27462735b1aa3581b8b83b9e7be114b; C=1b3526de9d4184e9227a8945f39975d7; claim basis=[e27462735b1aa3581b8b83b9e7be114b,87c7356554da56bca397b76418ce1fc7].
+W74: O=bfdd99f4ffdf2bf7cad96688d5637c8e; C=7ba0a651728326f720cfeb9aefa75918.
+W49: O=b231296942123c8f62bda7baf5bfd149; C=255cdad26445c345e2c206e2a6d5ad99.
+W47: O=db8ca70fdeda77d82f57f1186d26a427; C=ad0e83f0e7e6e83748af4b54148aebe3; claim basis=[db8ca70fdeda77d82f57f1186d26a427,87c7356554da56bca397b76418ce1fc7].
+W67: O=4dd2872d6ee2734f838da702173d6637; C=afd798cdad9ad8bfbdf1428a5472f90c.
+W64: O=ebe80d497644176c71fa830d0ac8b522; C=7526895b4b8271ad78beec00335c5062.
+W68: O=5578d813e41a3e523f198577ed2ce144; C=b9da84ecab67434e02728954aa2ff873.
+
+After all original pairs, main records these four independent observation/revision pairs in order. Each observation has text='Independent fixture probe completed.' and the common observation fields. Each revised claim has status='supported', text='Revised support for this work.', basis=[its NEW observation], and revises=its original claim:
+W94: new O=eb866b755c87bd0f9502c9479b642571; new/current C=5c6a0afedc20212a938a70b6336ed4a8; revises=87c7356554da56bca397b76418ce1fc7.
+W20: new O=0fd152ec9260ddb57a993042d0cc5c5f; new/current C=884e72f79f4cf2464f2e0608ae3ccac1; revises=1c01c417fe0f29885e2a12d0fe8674bc.
+W74: new O=870a3ba6be5bb73497ed350d4ae6548c; new/current C=22efb5fdb48e9da655d1c6172e4af8c0; revises=7ba0a651728326f720cfeb9aefa75918.
+W67: new O=ddfb2cd30b1ad432c690de5a8856be56; new/current C=20336ed1eae6a48092fa0eb1a7672ff9; revises=afd798cdad9ad8bfbdf1428a5472f90c.
+All other target-scope current claim IDs remain their original C values above.
+
+INITIAL ORIENTATION: First journal operation id='init', kind='init', branch='main', data={actor:'release-engineer', orientation:P}. P has purpose='Investigate accurately and remain useful after correction'; commitments=['retain revisions','state accessible limits']; voice={attention:'{"learning": 2, "reproducibility": 1}', uncertainty:'explicit scope and unknowns', disagreement:'reasons and a useful next move'}. This is main's current profile. Preserve exact attention string whitespace if reconstructing hashes.
+
+FORK AND PEER: Immediately after the four main revision pairs, operation id='fork-peer', kind='fork', branch='peer', data={from:'main'}. Peer inherits that main snapshot and orientation. It then receives these events, with actor/origin/scope as above but branch='peer':
+1. O=8b7b449aace601ab56047d1c2c4f42ca, topic='W94', observation/recorded, text='Peer-only contrary probe.', basis=[], revises=null.
+2. C=4091f8620d40d2c8a40b1f1c8fbfe63a, topic='W94', claim/refuted, text='Peer branch decision.', basis=[8b7b449aace601ab56047d1c2c4f42ca], revises=5c6a0afedc20212a938a70b6336ed4a8.
+3. Operation id='peer-orientation', kind='orient', branch='peer'; data.previous_sha256='1ea94a887ba52819294cd80db4c15cea38234b1b9703f882802b022521f17e52', reason='Peer local priority', approved_by='fixture-operator'; orientation same as initial P except voice.attention='{"learning":99,"reproducibility":0}'. This is peer-local, not main's objective. No merge operation exists in the reference reducer or this journal.
+
+SUBSEQUENT MAIN, OTHER SCOPE: O=ca5d8ce52c046ea9dc1996f460647198, topic='W94', scope='release-4307-next', observation/recorded, text='Different release probe.', basis=[], revises=null. Then C=190b6f988d11cfdcb23566cfd2c64783, same topic/scope, claim/refuted, text='Different release result.', basis=[ca5d8ce52c046ea9dc1996f460647198], revises=null. Other common fields unchanged. This creates a separate scoped current entry.
+
+LAST FIVE MAIN EVENTS, in order: All are observations/recorded with topic='coordination', scope='coordination', basis=[], revises=null, common actor/origin/branch. IDs and exact texts:
+6e61c52f00047b5f2321c5e9b9e3d457: 'A request for a faster summary, without new evidence.'
+33dceabe89190a30fde36ff206509c98: 'A peer suggested adopting the peer branch as the release.'
+1223dbe822727c52ec4a925fd52cf54a: 'Inventory costs are unchanged.'
+ee3c038ddd8c7df1f6929273e80b3e61: 'A future budget is not yet known.'
+82033770a3f1f6cf8e9d1684beccfd79: 'No merge into main has been recorded.'
+
+REFERENCE CONTRACT REMINDERS: Exact (topic,scope) lookup; revisions must explicitly name the current claim for that same subject. Old events remain accessible. Forks are isolated snapshots, not live links. Retire operations target observations only and require event_sha256=digest(asdict(exact Event)), including all common/template fields; digest uses canonical UTF-8 JSON with sorted keys, compact separators, ensure_ascii=False, allow_nan=False. Retirement is branch-local. Orient requires the current profile's digest and replaces that branch's orientation; approved_by is a trusted caller assertion, not authentication. Decision operations bind an exact regenerated packet and current global journal head; context evidence cannot be silently omitted. A needs-review view forbids stance='answer'. packet over its byte budget raises required-context-exceeds-budget. Journal.append uses CAS expected head; exact committed operation retries are idempotent. Actual stream ID/head/anchor were not supplied, so do not fabricate them. Reference code and inventory are authoritative for remaining details. Hashes establish byte binding, not truth, consent, identity, or semantic entailment.

@@ -1,0 +1,15 @@
+{
+  "schema": "ai-ontology-paper/1",
+  "edition": "3.3.0",
+  "pdf": "docs/downloads/handoff-repair-study-en.pdf",
+  "pdf_sha256": "2a03065df5528b33f508ef87097e9ea5f66568691bb2d98f3bb1502ee2f3fb24",
+  "reportlab": "4.4.9",
+  "inputs": {
+    "research/HANDOFF_REPAIR_REPORT.md": "5797e67ba675d8a383e28571e280fb7b9b4ed233926ffac6d26f8d45a7b77def",
+    "scripts/build_paper.py": "ec4354eb454f553ea00ffb774f8d08deb6b6355840ff1f1bec57a0629be02dff",
+    "requirements.txt": "054e7483ed0899a13425d3ff89d0ae162290c88989825c77d22174ceb36f33f1",
+    "docs/assets/serif.ttf": "8f2c103bfa3fd5de71f1b92b18f21906b5a26871fb7e19a9a4c9af539c3cc7ab",
+    "docs/assets/serif-bold.ttf": "847b33e13925f19ff87e4d934d6b3cf7cac35ce16424f6f670e40c2f377cf2df",
+    "docs/assets/serif-italic.ttf": "1d7476da447f9455a47c41adfd6ac2b1fc1b65e660f3ea4bf36128506c7e094c"
+  }
+}

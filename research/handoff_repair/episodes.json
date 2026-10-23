@@ -1,0 +1,634 @@
+[
+  {
+    "case": "repair-4013-v1",
+    "seed": 4013,
+    "variant": 1,
+    "arm": "exact",
+    "primary": true,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4013-v1-exact/wire.json",
+        "sha256": "30d671ef3671a68e50ff832ae6255381c187fd755a3b357212209e28e5461967",
+        "bytes": 2970
+      },
+      {
+        "path": "artifacts/repair-4013-v1-exact/wire.sha256",
+        "sha256": "9f4fe106bb44b7931b8b4b4e558abd086a643e3ea44f30f9a695bcc5a2eb449a",
+        "bytes": 64
+      },
+      {
+        "path": "artifacts/repair-4013-v1-exact/restored.json",
+        "sha256": "b3894137f4075cd19c2498d52ee966be79381d18c0727b53507f7550704434b7",
+        "bytes": 15623
+      }
+    ],
+    "plan_effect": {
+      "written": true,
+      "path": "artifacts/repair-4013-v1-exact/plan.json",
+      "sha256": "42f344420b3a711dca64f36b5072d7f1f639d8d3fda1dfeda64ad2edca4bae74",
+      "bytes": 383
+    },
+    "retained_bytes": 3034,
+    "exact_recovery": true,
+    "full_history_prompt_parity": true,
+    "decoder_exit_code": 0,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": true,
+      "optimal": true,
+      "utility": 193,
+      "cost": 12
+    }
+  },
+  {
+    "case": "repair-4307-v1",
+    "seed": 4307,
+    "variant": 1,
+    "arm": "freeform",
+    "primary": false,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4307-v1-freeform/whole.txt",
+        "sha256": "0d4e626bd2dccfdab4d7db78bdce0ffe7098c8a73c443962aed66b32b9f190c3",
+        "bytes": 9601
+      },
+      {
+        "path": "artifacts/repair-4307-v1-freeform/retained.txt",
+        "sha256": "c0a11c452c92aad93d84ed5056eeb9f27b6e32a27a402bd52e71013ab098484b",
+        "bytes": 3200
+      }
+    ],
+    "plan_effect": {
+      "written": false
+    },
+    "whole_bytes": 9601,
+    "retained_bytes": 3200,
+    "truncated": true,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": false,
+      "optimal": false,
+      "utility": 207,
+      "cost": 14
+    }
+  },
+  {
+    "case": "repair-4307-v0",
+    "seed": 4307,
+    "variant": 0,
+    "arm": "exact",
+    "primary": true,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4307-v0-exact/wire.json",
+        "sha256": "a332352dc4d46b24c550705c453437dfda502f95b2f64654636663d0b975f555",
+        "bytes": 2964
+      },
+      {
+        "path": "artifacts/repair-4307-v0-exact/wire.sha256",
+        "sha256": "07f8d8229cb69ba79101355e4c1fc1f6115198ca60dfd42d62bf50e9523e4446",
+        "bytes": 64
+      },
+      {
+        "path": "artifacts/repair-4307-v0-exact/restored.json",
+        "sha256": "3f62281951fb97c7c611a5935dd3dab7d1e3ef6c8fc910c42e0ff7e8c17dd2ab",
+        "bytes": 15623
+      }
+    ],
+    "plan_effect": {
+      "written": true,
+      "path": "artifacts/repair-4307-v0-exact/plan.json",
+      "sha256": "f976b0e17eef0b5b764e49cc69750058099de5e483a14508146fff8414582812",
+      "bytes": 299
+    },
+    "retained_bytes": 3028,
+    "exact_recovery": true,
+    "full_history_prompt_parity": true,
+    "decoder_exit_code": 0,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": true,
+      "optimal": true,
+      "utility": 87,
+      "cost": 14
+    }
+  },
+  {
+    "case": "repair-4013-v0",
+    "seed": 4013,
+    "variant": 0,
+    "arm": "freeform",
+    "primary": false,
+    "planning_only": false,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4013-v0-freeform/whole.txt",
+        "sha256": "5d108663c5acf1af8f8f2d9b7fb4c9879f0dd0f44e7e4e46e5b1aa61a710a54b",
+        "bytes": 10027
+      },
+      {
+        "path": "artifacts/repair-4013-v0-freeform/retained.txt",
+        "sha256": "9784c6b8c4dc8073e43242de2bbea1a80e08fa6b6d62823acb01fe815a70a940",
+        "bytes": 3200
+      }
+    ],
+    "plan_effect": {
+      "written": false
+    },
+    "whole_bytes": 10027,
+    "retained_bytes": 3200,
+    "truncated": true,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": true,
+      "optimal": false,
+      "utility": 0,
+      "cost": 0
+    }
+  },
+  {
+    "case": "repair-4142-v1",
+    "seed": 4142,
+    "variant": 1,
+    "arm": "exact",
+    "primary": true,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4142-v1-exact/wire.json",
+        "sha256": "6ee1a279e05ee2846a7d93a6300607ac7d510c3d3ebd85429d2019f7baa71410",
+        "bytes": 2966
+      },
+      {
+        "path": "artifacts/repair-4142-v1-exact/wire.sha256",
+        "sha256": "d00af01580554c92fe76f2fc82ee37e680972e2b1ea0832de1fc11103611a138",
+        "bytes": 64
+      },
+      {
+        "path": "artifacts/repair-4142-v1-exact/restored.json",
+        "sha256": "d7d07fd0a215fb5caa79162cf3f728b6c110171f59d087dd4c29a3de3418dfed",
+        "bytes": 15623
+      }
+    ],
+    "plan_effect": {
+      "written": true,
+      "path": "artifacts/repair-4142-v1-exact/plan.json",
+      "sha256": "154c59de47166e89f0335d5c03145eab85743ae234be3f80fe76ebfbe63a7035",
+      "bytes": 299
+    },
+    "retained_bytes": 3030,
+    "exact_recovery": true,
+    "full_history_prompt_parity": true,
+    "decoder_exit_code": 0,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": true,
+      "optimal": true,
+      "utility": 173,
+      "cost": 13
+    }
+  },
+  {
+    "case": "repair-4307-v0",
+    "seed": 4307,
+    "variant": 0,
+    "arm": "freeform",
+    "primary": false,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4307-v0-freeform/whole.txt",
+        "sha256": "9e21853ac3f1c34468f931b3dfda1171c02053a4e39cd1beefb5aa1c1afcf4e4",
+        "bytes": 9886
+      },
+      {
+        "path": "artifacts/repair-4307-v0-freeform/retained.txt",
+        "sha256": "2d4d9dc130c5cc4bb1a69be5d7199e6e377b777da4797a90a435c0ae1e6d57e7",
+        "bytes": 3200
+      }
+    ],
+    "plan_effect": {
+      "written": false
+    },
+    "whole_bytes": 9886,
+    "retained_bytes": 3200,
+    "truncated": true,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": false,
+      "optimal": false,
+      "utility": 87,
+      "cost": 14
+    }
+  },
+  {
+    "case": "repair-4496-v1",
+    "seed": 4496,
+    "variant": 1,
+    "arm": "freeform",
+    "primary": false,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4496-v1-freeform/whole.txt",
+        "sha256": "ab931b853821066c8880f0eb947c7288819e607c01d62d4bdaa6417fb1716a5f",
+        "bytes": 10817
+      },
+      {
+        "path": "artifacts/repair-4496-v1-freeform/retained.txt",
+        "sha256": "e12d2fb0430f714936dec4ee37b3a15270e179b39d8cde71d6ad6ef25a218d30",
+        "bytes": 3200
+      }
+    ],
+    "plan_effect": {
+      "written": false
+    },
+    "whole_bytes": 10817,
+    "retained_bytes": 3200,
+    "truncated": true,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": false,
+      "optimal": false,
+      "utility": 171,
+      "cost": 14
+    }
+  },
+  {
+    "case": "repair-4142-v0",
+    "seed": 4142,
+    "variant": 0,
+    "arm": "freeform",
+    "primary": false,
+    "planning_only": false,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4142-v0-freeform/whole.txt",
+        "sha256": "c146cba7c8536abc160672312f3b0c895842671baca62f8e1cd300a12ffbff57",
+        "bytes": 10796
+      },
+      {
+        "path": "artifacts/repair-4142-v0-freeform/retained.txt",
+        "sha256": "837d1c3a24f70a648f56df88e015a0ebb05414c05e6eb5424da269b923df94b5",
+        "bytes": 3200
+      }
+    ],
+    "plan_effect": {
+      "written": false
+    },
+    "whole_bytes": 10796,
+    "retained_bytes": 3200,
+    "truncated": true,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": true,
+      "optimal": false,
+      "utility": 0,
+      "cost": 0
+    }
+  },
+  {
+    "case": "repair-4496-v0",
+    "seed": 4496,
+    "variant": 0,
+    "arm": "freeform",
+    "primary": false,
+    "planning_only": false,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4496-v0-freeform/whole.txt",
+        "sha256": "77f2828447eda1306752fed1884ce332a69ae536172ddea6b71327f439da3478",
+        "bytes": 10543
+      },
+      {
+        "path": "artifacts/repair-4496-v0-freeform/retained.txt",
+        "sha256": "b59f521cc59a8c9903a0c62b53083f2a516f9030e951bf61adfff36f9ce8f19e",
+        "bytes": 3200
+      }
+    ],
+    "plan_effect": {
+      "written": false
+    },
+    "whole_bytes": 10543,
+    "retained_bytes": 3200,
+    "truncated": true,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": true,
+      "optimal": false,
+      "utility": 0,
+      "cost": 0
+    }
+  },
+  {
+    "case": "repair-4013-v1",
+    "seed": 4013,
+    "variant": 1,
+    "arm": "freeform",
+    "primary": false,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4013-v1-freeform/whole.txt",
+        "sha256": "675252967eae4ca963360306045804d3cc436938067e361ae9f233950ebf924b",
+        "bytes": 10269
+      },
+      {
+        "path": "artifacts/repair-4013-v1-freeform/retained.txt",
+        "sha256": "b2eea186a5b3525a732beb126920f0619c8df2a8249e1ba6afe8d2c5cb107a01",
+        "bytes": 3200
+      }
+    ],
+    "plan_effect": {
+      "written": false
+    },
+    "whole_bytes": 10269,
+    "retained_bytes": 3200,
+    "truncated": true,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": false,
+      "optimal": false,
+      "utility": 193,
+      "cost": 12
+    }
+  },
+  {
+    "case": "repair-4307-v1",
+    "seed": 4307,
+    "variant": 1,
+    "arm": "exact",
+    "primary": true,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4307-v1-exact/wire.json",
+        "sha256": "6645f5666a915265e04c78ce47d68f778ba9fb990ba082a91de9bd7fb5adbd9a",
+        "bytes": 2967
+      },
+      {
+        "path": "artifacts/repair-4307-v1-exact/wire.sha256",
+        "sha256": "cf2fcc3b04f14bf9e8a75f0545e432cd70200f18a0dd25787fa1276afd0e82a5",
+        "bytes": 64
+      },
+      {
+        "path": "artifacts/repair-4307-v1-exact/restored.json",
+        "sha256": "8293d4d3e469e895c29365641fab60a72e75478407c7780398d56b74c2264c41",
+        "bytes": 15623
+      }
+    ],
+    "plan_effect": {
+      "written": true,
+      "path": "artifacts/repair-4307-v1-exact/plan.json",
+      "sha256": "563ed10834eb9f877027abd2326470d1400946d77d0581c0a63a4ad2058c7267",
+      "bytes": 383
+    },
+    "retained_bytes": 3031,
+    "exact_recovery": true,
+    "full_history_prompt_parity": true,
+    "decoder_exit_code": 0,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": true,
+      "optimal": true,
+      "utility": 207,
+      "cost": 14
+    }
+  },
+  {
+    "case": "repair-4142-v1",
+    "seed": 4142,
+    "variant": 1,
+    "arm": "freeform",
+    "primary": false,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4142-v1-freeform/whole.txt",
+        "sha256": "ae8099faad4445cae8ef9f2ed72e0dba1f3c01f1272aa66e8a368182a9f4877d",
+        "bytes": 10291
+      },
+      {
+        "path": "artifacts/repair-4142-v1-freeform/retained.txt",
+        "sha256": "e65ca0ee8891f1d6f73d0d9b5a988b3b3340b6d85034a204dd2d74ccd0e063b2",
+        "bytes": 3200
+      }
+    ],
+    "plan_effect": {
+      "written": false
+    },
+    "whole_bytes": 10291,
+    "retained_bytes": 3200,
+    "truncated": true,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": false,
+      "optimal": false,
+      "utility": 173,
+      "cost": 13
+    }
+  },
+  {
+    "case": "repair-4013-v0",
+    "seed": 4013,
+    "variant": 0,
+    "arm": "exact",
+    "primary": true,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4013-v0-exact/wire.json",
+        "sha256": "d7a39d16e1e1d0a15c10d596e1a0b32a71669d4c7f86741547f199e6a4947032",
+        "bytes": 2966
+      },
+      {
+        "path": "artifacts/repair-4013-v0-exact/wire.sha256",
+        "sha256": "7fe305cd053f1114fc359717b900137a7127e4147c29a3514c9d442abbdcf362",
+        "bytes": 64
+      },
+      {
+        "path": "artifacts/repair-4013-v0-exact/restored.json",
+        "sha256": "e4d6aed46df73326da02448d7cf6d990f8d899d7be50af73eb2a2029f2e634d1",
+        "bytes": 15623
+      }
+    ],
+    "plan_effect": {
+      "written": true,
+      "path": "artifacts/repair-4013-v0-exact/plan.json",
+      "sha256": "b12a12a6d2942e253b3bb121f5346443de2bdcf9120c9b57aa3cfcddd8447e55",
+      "bytes": 299
+    },
+    "retained_bytes": 3030,
+    "exact_recovery": true,
+    "full_history_prompt_parity": true,
+    "decoder_exit_code": 0,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": true,
+      "optimal": true,
+      "utility": 77,
+      "cost": 13
+    }
+  },
+  {
+    "case": "repair-4496-v0",
+    "seed": 4496,
+    "variant": 0,
+    "arm": "exact",
+    "primary": true,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4496-v0-exact/wire.json",
+        "sha256": "d3528b07f92d96299f6d74f9c8b6bf9ca793e70fcf05c87d7dad5eed69d8166d",
+        "bytes": 2954
+      },
+      {
+        "path": "artifacts/repair-4496-v0-exact/wire.sha256",
+        "sha256": "2a49d681b9a159002a78da1c6dabf8acaf2ba100363eeb037cfcb4d12fc258f6",
+        "bytes": 64
+      },
+      {
+        "path": "artifacts/repair-4496-v0-exact/restored.json",
+        "sha256": "c99b6ce35004e3ca236650ef6ebd6756d280b7e01477f871a5572f31d4da2e7e",
+        "bytes": 15623
+      }
+    ],
+    "plan_effect": {
+      "written": true,
+      "path": "artifacts/repair-4496-v0-exact/plan.json",
+      "sha256": "5ff0fbbb8b523370cc87cd9c695e075a1490b691f88bc36e85978dc56efd9c14",
+      "bytes": 215
+    },
+    "retained_bytes": 3018,
+    "exact_recovery": true,
+    "full_history_prompt_parity": true,
+    "decoder_exit_code": 0,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": true,
+      "optimal": true,
+      "utility": 51,
+      "cost": 12
+    }
+  },
+  {
+    "case": "repair-4142-v0",
+    "seed": 4142,
+    "variant": 0,
+    "arm": "exact",
+    "primary": true,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4142-v0-exact/wire.json",
+        "sha256": "c315a6e4a1ed0b8e46c048a1ff65bc0d6b95fcea8e0a3f8a045d74ff8212c14b",
+        "bytes": 2961
+      },
+      {
+        "path": "artifacts/repair-4142-v0-exact/wire.sha256",
+        "sha256": "49bd05de205da213c242f7b725bca3ca9e417c91303798d59133b04e4790eea0",
+        "bytes": 64
+      },
+      {
+        "path": "artifacts/repair-4142-v0-exact/restored.json",
+        "sha256": "3f85af2526058acdf011d5ed144962a949f186050db1e7e7b853c47d6f25aac0",
+        "bytes": 15623
+      }
+    ],
+    "plan_effect": {
+      "written": true,
+      "path": "artifacts/repair-4142-v0-exact/plan.json",
+      "sha256": "cedfe7feb2f66cfc22806cd17483b5ca7fbb7d73e7758a5fb00fc4b6c631ba88",
+      "bytes": 215
+    },
+    "retained_bytes": 3025,
+    "exact_recovery": true,
+    "full_history_prompt_parity": true,
+    "decoder_exit_code": 0,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": true,
+      "optimal": true,
+      "utility": 59,
+      "cost": 14
+    }
+  },
+  {
+    "case": "repair-4496-v1",
+    "seed": 4496,
+    "variant": 1,
+    "arm": "exact",
+    "primary": true,
+    "planning_only": true,
+    "failure_stage": null,
+    "artifacts": [
+      {
+        "path": "artifacts/repair-4496-v1-exact/wire.json",
+        "sha256": "c70965c66c610a16167b113c9f8c778584d2b3bd745abaca4a90cc28d6e60d0f",
+        "bytes": 2959
+      },
+      {
+        "path": "artifacts/repair-4496-v1-exact/wire.sha256",
+        "sha256": "c9fe8f6492b3fad89b6e1b2d769db708ca7d71543cb784ae7584b7704c87dd1f",
+        "bytes": 64
+      },
+      {
+        "path": "artifacts/repair-4496-v1-exact/restored.json",
+        "sha256": "14c4498f53bcc9b302acad31552e3d326b86c923790f524b8709c30cecaf36f0",
+        "bytes": 15623
+      }
+    ],
+    "plan_effect": {
+      "written": true,
+      "path": "artifacts/repair-4496-v1-exact/plan.json",
+      "sha256": "c3b1633891921fca7f0ff1869a70625afb0616aac080c584add36d8f987cc0e8",
+      "bytes": 299
+    },
+    "retained_bytes": 3023,
+    "exact_recovery": true,
+    "full_history_prompt_parity": true,
+    "decoder_exit_code": 0,
+    "score": {
+      "shape": true,
+      "safe": true,
+      "traceable": true,
+      "optimal": true,
+      "utility": 171,
+      "cost": 14
+    }
+  }
+]

@@ -1,8 +1,8 @@
 {
   "schema": "ai-ontology-paper/1",
-  "edition": "3.2.0",
+  "edition": "3.3.0",
   "pdf": "docs/downloads/reading-transfer-study-en.pdf",
-  "pdf_sha256": "d7c53bc4d90375e9b08e6f5f33078526238d72b091e5e0d5cc81afb034e831e9",
+  "pdf_sha256": "2e86dcefee4b2e1fb87e10eeb647e84ffe122cf173f1086d10eceae890caebec",
   "reportlab": "4.4.9",
   "inputs": {
     "research/READING_TRANSFER_STUDY.md": "a331b2544b0de94bab1040cafd790d3addbc87b7a91a071f5319ac20e46d108f",
