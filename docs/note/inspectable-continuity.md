@@ -169,8 +169,9 @@ must not be pooled into one measure of ontology quality.
 | Exact evidence handoff repair | 8/8 fully traced optimal completions versus 0/8 freeform on new instances of one known class. | Unique codec benefit: an accessible shared file restores the same evidence |
 | Executable-method return cycle | Both arms reached the ceiling; M0 and M1 each achieved 192/192 optimal transfer choices per arm. | Beneficial revision: zero transfer plans changed |
 | Scoped evidence return | Actual-feedback free notes achieved 77/80 full-information-optimal transfer choices; linked notes 71/80. | Whether a different organization can earn its resource cost |
+| Scoped-contract adaptation | Separate reproduction: M0 achieved 120/160 NEW-correct artifacts; every revised/fresh set 160/160. | Original interrupted, primary null; no added scaffold or diagnostic-feedback score observed |
 
-The latest pilot captured 72 scored GPT-6.1 Sol/high calls and one canary across
+The evidence-return pilot captured 72 scored GPT-6.1 Sol/high calls and one canary across
 eight instances of one authored class. Under the same 2048-byte allowance,
 6/8 unrestricted notes and 2/8 linked actual-feedback notes were admitted.
 Over-budget records were explicitly unavailable. Actual feedback changed
@@ -182,6 +183,17 @@ reasoning or proof of beneficial method formation. [Report and limits](https://g
 The earlier [closed-loop report](https://github.com/DiadkoShmek/ai-ontology/blob/main/research/CLOSED_LOOP_STUDY.md) establishes a
 working finite execution/return pipeline but cannot show revision gain when
 the initial methods already solve the transfer set.
+
+The separate [scoped-contract report](https://github.com/DiadkoShmek/ai-ontology/blob/main/research/SCOPED_CLEARANCE_STUDY.md)
+records 48 scored source generations plus one canary. The original execution
+was interrupted and its registered primary remains null. A separately planned
+960-episode offline reproduction verified all fixed programs: M0 was OLD-correct
+but achieved 120/160 under NEW; every revised/fresh set achieved 160/160.
+All eight paired organization differences were zero, as were actual-minus-masked
+score differences. All revised/fresh conditions received the full new clause.
+This establishes bounded contract adaptation, with no observed added scaffold
+benefit or feedback necessity for the achieved score; it does not establish
+formation, book benefit or universal equivalence.
 
 ## 7. Relation to prior work
 

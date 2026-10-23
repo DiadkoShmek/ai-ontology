@@ -26,6 +26,8 @@ jobs:
       - run: python3 -W error::ResourceWarning -m unittest discover -s research/epistemic_return -p 'test_*.py' -q
       - run: python3 -O research/epistemic_return/analyze.py
       - run: python3 research/epistemic_return_diagnosis.py
+      - name: Regrade separate scoped-contract reproduction without models
+        run: python3 -I -S -B research/scoped_clearance/verify_projection.py research/scoped_clearance/projection.json.gz
       - run: git diff --exit-code -- research/epistemic_return/results.json research/epistemic-return-diagnosis.json
       - run: python3 -O research/closed_loop/analyze.py
       - run: git diff --exit-code -- research/closed_loop/results.json
