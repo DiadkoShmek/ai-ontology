@@ -28,6 +28,9 @@ jobs:
       - run: python3 research/epistemic_return_diagnosis.py
       - name: Regrade separate scoped-contract reproduction without models
         run: python3 -I -S -B research/scoped_clearance/verify_projection.py research/scoped_clearance/projection.json.gz
+      - name: Regrade saved induction forecasts without executing candidates
+        run: python3 -I -S -B research/program_induction/verify_projection.py
+      - run: python3 -O -m unittest discover -s research/program_induction -p 'test_projection.py' -q
       - run: git diff --exit-code -- research/epistemic_return/results.json research/epistemic-return-diagnosis.json
       - run: python3 -O research/closed_loop/analyze.py
       - run: git diff --exit-code -- research/closed_loop/results.json

@@ -11,7 +11,30 @@ is a new entry to existing relations, not a new positive model result.
 
 ## New: executable methods and an observed return cycle
 
-### Latest supplementary observation: scoped-contract adaptation
+### Latest supplementary observation: own-source induction
+
+The [English report](PROGRAM_INDUCTION_STUDY.md) and
+[Ukrainian report](PROGRAM_INDUCTION_STUDY.uk.md) describe one own-M0 trajectory,
+ten completed calls and 100 saved source executions. Actual evidence improves
+both ordinary and linked forecasts; transfer Brier loss is 0.25174 versus
+0.25249, with fresh ordinary induction at 0.00869 (lower is better). No
+incremental linked advantage is observed. All required truth operators already
+existed in M0. A post-hoc same-data analysis shows that the diagnostic leaves
+component/global alternatives indistinguishable; harmful anchoring is not
+established by the fresh rival's better score.
+
+[Selected evidence and limits](program_induction/README.md):
+
+```sh
+python3 -I -S -B research/program_induction/verify_projection.py
+python3 -O -m unittest discover -s research/program_induction -p 'test_projection.py' -q
+```
+
+These regrade saved forecast distributions, prompt facts and exact request/output
+links without model or candidate execution. Predictive loss, source changes and
+incomplete identification remain separate. Book and claim statuses are unchanged.
+
+### Earlier supplementary observation: scoped-contract adaptation
 
 The [English report](SCOPED_CLEARANCE_STUDY.md) and
 [Ukrainian report](SCOPED_CLEARANCE_STUDY.uk.md) distinguish an interrupted
