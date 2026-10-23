@@ -1,15 +1,15 @@
 {
   "title": "Онтологія AI",
   "volume": 1,
-  "edition": "3.3.0",
+  "edition": "3.4.0",
   "author": "Artur Onysko",
-  "metadata_sha256": "3e848fd1d32075ee55064203a62a300f5a797a1ff68b0b7658e75c3e693dc1c0",
-  "source_sha256": "21709039ad2a95a8e808c081f92301d810f03d4496c139c47f38e0fc945cd3b2",
-  "book_sha256": "73cdad730458cdb6fa008a66646e3e78a96ca865de28bbfcd3db2d8d6797d44a",
+  "metadata_sha256": "d1db87ced8f1f761d1139573ebd3d6c9095af99d91ac6ffdc34a12718a145ed6",
+  "source_sha256": "7243455814e29ff1664f33d9e2aae11a5d939dc8c1a3fafce4e91ccb9f4687be",
+  "book_sha256": "5e240d56108806c1d70aaaf963dea0030356a44e0949bd23cccccaee7c7cb0a8",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
-      "sha256": "a5e13939e31ae289eee499114067d699863431826d9ffe24571cc68028014b15"
+      "sha256": "c698d37890dda03bd2c575e9bc87da19ab52d8d5fd59b03bf5474499e78f6ef7"
     },
     {
       "path": "book/ua/01-core.md",
@@ -18,6 +18,10 @@
     {
       "path": "book/ua/02-foundations.md",
       "sha256": "38b5e5f7229b1f4ddbbd2d5f57ea8f0faaa15fd22f24769e857e85fe27adbc9c"
+    },
+    {
+      "path": "book/ua/03-living.md",
+      "sha256": "b3a3019eb516c45809f2cb635c44a21c65e48f06b8e6e4a099912f3455efd18a"
     },
     {
       "path": "book/ua/03-relations.md",
@@ -49,7 +53,7 @@
     },
     {
       "path": "book/ua/10-method.md",
-      "sha256": "3ea0bf99772d50e5d3a773597ba0ffd69f808333554faa5b45e26d2317990a32"
+      "sha256": "5f9008f910719b893c0c3edfcb84bc92a50c2da09c8baf516637d90e4d3e8502"
     },
     {
       "path": "book/ua/11-study.md",
@@ -61,7 +65,7 @@
     },
     {
       "path": "book/ua/06-references.md",
-      "sha256": "cd8cfc28abcc465e42967ce1ae45648af148d53bfb42ec524c74febdec1d198c"
+      "sha256": "4f8e6c30a2a41cf970403e187b6b93905e04beffc87baa6b6efd8e3ef0ebbef2"
     }
   ],
   "scored_model_calls": 384,
