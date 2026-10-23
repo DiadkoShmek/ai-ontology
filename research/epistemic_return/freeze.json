@@ -1,0 +1,147 @@
+{
+  "schema": "epistemic-return-freeze/1",
+  "created_at": "2026-10-23T08:53:50.463754+00:00",
+  "input_sha256": {
+    "task_design.py": "15fe0d66b7f5e21e74bc4270519302e3f5ed4c021a6a8814c298640cad68ca60",
+    "environment.py": "774b5449f4d36ed6174eb7f95213f975b8e75df3a6a48826f3e493cbeee48d31",
+    "run.py": "a3ccbc71f2cf69ff2ca8d83f4842af38ca1976e3e62539eafdd17cbd0de62e85",
+    "analyze.py": "1972e8b19a702b1c05906b59389bacbcf0f0c690db791cd7552815f1b378dfd3",
+    "test_design.py": "69676dfd55b9da0be587a8ce7826b02d481d208b5bac8edaff2e66efab7d23ad",
+    "PROTOCOL.md": "619fa384169ee12d93f5df321eacd7dcd0a55cb548cf4d0cd998544179c6414c",
+    "cases.json": "d5f18aae0054b594932eb3a737e341c7fda46a82d2142b5d7dcdbed7db14b109",
+    "../closed_loop/model.py": "55efd53864635ae8ffb54e1f4db66fdf100ba4ad4281c5be05c29cdd114e4401",
+    "../gpt_profile_pilot_v2/run.py": "e3a39f792f32ffce536cf401f630297902d3787609d3e7393acded4a60a794aa",
+    "../gpt_profile_pilot_v2/design.py": "de56dda3e79963ae033d88f3393c5d72a52e4d90964b4d27bea8026868abad65",
+    "../participation_pilot/design.py": "34020fb79f8aadbcbf31fdcdd0641a275c16499303d8ad1c34a620134921e42b",
+    "../../examples/durable.py": "9ec47c58c3d75cba4247947fd9e0b9f77828fae2af06f36bbc035ba7b7dc1d67",
+    "../../examples/continuity.py": "1027a1da47d58f9f02f77bff0d67cd1b5fd917b2c457e3934edc76a663f80513"
+  },
+  "schedule": [
+    [
+      "episode-925637",
+      [
+        "free_actual",
+        "linked_actual",
+        "linked_masked",
+        "free_masked"
+      ]
+    ],
+    [
+      "episode-211839",
+      [
+        "free_actual",
+        "free_masked",
+        "linked_masked",
+        "linked_actual"
+      ]
+    ],
+    [
+      "episode-927727",
+      [
+        "free_actual",
+        "linked_actual",
+        "free_masked",
+        "linked_masked"
+      ]
+    ],
+    [
+      "episode-570883",
+      [
+        "free_masked",
+        "linked_masked",
+        "linked_actual",
+        "free_actual"
+      ]
+    ],
+    [
+      "episode-166536",
+      [
+        "free_masked",
+        "linked_masked",
+        "free_actual",
+        "linked_actual"
+      ]
+    ],
+    [
+      "episode-304371",
+      [
+        "free_masked",
+        "linked_masked",
+        "linked_actual",
+        "free_actual"
+      ]
+    ],
+    [
+      "episode-397880",
+      [
+        "linked_actual",
+        "free_actual",
+        "linked_masked",
+        "free_masked"
+      ]
+    ],
+    [
+      "episode-318597",
+      [
+        "linked_actual",
+        "free_masked",
+        "free_actual",
+        "linked_masked"
+      ]
+    ]
+  ],
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "cli_version": "codex-cli 0.159.2",
+  "cli_launcher_sha256": "61b0194f3bb6534439c8d26a3ed57d0805f84b884588b761795323eeb92fcf70",
+  "command_template": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "-C",
+    "{empty-temporary-directory}",
+    "-m",
+    "gpt-6.1-sol",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "-c",
+    "project_doc_max_bytes=0",
+    "-c",
+    "web_search=\"disabled\"",
+    "--disable",
+    "hooks",
+    "--disable",
+    "memories",
+    "--disable",
+    "multi_agent",
+    "--disable",
+    "plugins",
+    "--disable",
+    "apps",
+    "--disable",
+    "shell_tool",
+    "--disable",
+    "unified_exec",
+    "--disable",
+    "browser_use",
+    "--disable",
+    "in_app_browser",
+    "--disable",
+    "computer_use",
+    "--json",
+    "-"
+  ],
+  "episodes": 8,
+  "independent_task_classes": 1,
+  "mode_clusters": 2,
+  "maximum_scored_calls": 72,
+  "maximum_canary_calls": 1,
+  "maximum_concurrent_targets": 2,
+  "independent_registration": false,
+  "no_outcome_retry": true,
+  "primary": "linked_actual-minus-free_actual-on-new-transfer-optimal-decisions",
+  "feedback_ablation": "actual-minus-masked-within-format; unequal-information-by-design",
+  "revision_claim": "changed informed decisions, NOT demonstrated new contingent algorithm"
+}
