@@ -1,0 +1,10 @@
+{
+  "schema": "epistemic-return-source-publication/1",
+  "local_pre_inference_commit": "7ba497b08c5081ef6855740f61095415ce20221f",
+  "public_same_tree_commit": "60bd08594c265bcb95a959e8fea5ae558460a7b5",
+  "source_tree": "70678ae652c91ec7da8ea2dc11b894f9034db931",
+  "freeze_sha256": "a6052170624381d07c2de88fd1bb3e79f030b296dd813f5126c0a41e0660515c",
+  "chronology": "Local source commit preceded inference. The same-tree public commit was published after inference began; this is not external preregistration.",
+  "independent_registration": false,
+  "public_source_url": "https://github.com/DiadkoShmek/ai-ontology/tree/60bd08594c265bcb95a959e8fea5ae558460a7b5"
+}

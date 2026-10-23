@@ -17,9 +17,15 @@ jobs:
       - run: npm run check
       - run: python3 -m unittest discover -s scripts -p test_claim_history.py -q
       - run: python3 -m unittest discover -s examples -v
+      - run: python3 -m unittest audit.test_audit -q
+      - run: python3 -O -m unittest audit.test_audit -q
       - run: python3 ontology/export.py --check
       - run: python3 -m unittest discover -s ontology -p 'test_*.py' -q
       - run: python3 -m unittest discover -s research/closed_loop -q
+      - run: python3 -W error::ResourceWarning -m unittest discover -s research/epistemic_return -p 'test_*.py' -q
+      - run: python3 -O research/epistemic_return/analyze.py
+      - run: python3 research/epistemic_return_diagnosis.py
+      - run: git diff --exit-code -- research/epistemic_return/results.json research/epistemic-return-diagnosis.json
       - run: python3 -O research/closed_loop/analyze.py
       - run: git diff --exit-code -- research/closed_loop/results.json
       - run: python3 -m unittest discover -s research/continuity_pilot -q
@@ -50,4 +56,4 @@ jobs:
       - run: python3 -m unittest discover -s research/handoff_controls -q
       - run: python3 -O research/verify_handoff_controls.py
       - run: git bundle verify research/handoff-repair-history.bundle
-      - run: git diff --exit-code -- BOOK_UA.md BOOK_EN.md docs/index.html docs/en/index.html docs/research/index.html docs/ontology/index.html docs/downloads/BOOK_UA.md docs/downloads/BOOK_EN.md docs/edition.json docs/en-edition.json docs/discovery.json docs/sitemap.xml
+      - run: git diff --exit-code -- BOOK_UA.md BOOK_EN.md docs/index.html docs/en/index.html docs/research/index.html docs/ontology/index.html docs/downloads/BOOK_UA.md docs/downloads/BOOK_EN.md docs/edition.json docs/en-edition.json docs/discovery.json docs/sitemap.xml docs/llms.txt docs/note

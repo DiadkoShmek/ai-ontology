@@ -1,0 +1,39 @@
+# AI Ontology: The Organization of Self
+
+> Artur Onysko. Book One, v3.6.0. Complete Ukrainian and English editions.
+
+The subject is agent identity, voice, memory, relationships and responsible revision.
+Evidence-gated execution is one possible mechanism, not the whole subject of this book.
+Conceptual proposals, finite implementations and measured outcomes have separate status.
+
+## Complete book
+
+- [English full text, Markdown](https://diadkoshmek.github.io/ai-ontology/downloads/BOOK_EN.md): All sixteen chapters.
+- [Ukrainian authorial full text, Markdown](https://diadkoshmek.github.io/ai-ontology/downloads/BOOK_UA.md): Authorial source.
+- [English reader](https://diadkoshmek.github.io/ai-ontology/en/): Full static HTML text, contents and downloads.
+- [Ukrainian reader](https://diadkoshmek.github.io/ai-ontology/): Full static HTML text, contents and downloads.
+
+## Source, implementation and evidence
+
+- [Short methodological note](https://diadkoshmek.github.io/ai-ontology/note/): Inspectable Continuity, note 0.1, with executable audit and negative findings.
+- [English note, Markdown](https://diadkoshmek.github.io/ai-ontology/note/inspectable-continuity.md): Citable primary text.
+- [Ukrainian note, Markdown](https://diadkoshmek.github.io/ai-ontology/note/inspectable-continuity.uk.md): Separate Ukrainian counterpart.
+- [Proposed audit profile](https://github.com/DiadkoShmek/ai-ontology/blob/main/protocols/continuity-audit-v1.md): Record requirements and explicit incomplete states.
+- [Primary repository](https://github.com/DiadkoShmek/ai-ontology): Source code, publication history and authorship.
+- [Reader note](https://github.com/DiadkoShmek/ai-ontology/blob/main/READER_NOTE.md): Subject, source routes and limits of reading or applying the work.
+- [Concept-to-code map](https://github.com/DiadkoShmek/ai-ontology/blob/main/ontology/FOUNDATION.md): What the finite implementation actually connects.
+- [Claim/evidence map](https://github.com/DiadkoShmek/ai-ontology/blob/main/CLAIMS.md): Implemented, observed, unsupported and rejected assertions.
+- [Research](https://diadkoshmek.github.io/ai-ontology/research/): Protocols, raw outputs, controls, costs and negative results.
+- [Formal vocabulary](https://diadkoshmek.github.io/ai-ontology/ontology/): Finite classes, relations, competency questions and JSON-LD/Turtle exports.
+- [Review guide](https://github.com/DiadkoShmek/ai-ontology/blob/main/REVIEW_GUIDE.md): Review routes and offline reproduction.
+
+## Scope
+
+The reference uses bounded Python and SQLite/CAS. The vocabulary is not a general
+OWL reasoner or SHACL processor. Structural validity does not establish factual
+truth, removal of hallucinations or safety of all external actions. Stored records
+do not establish subjective experience or beneficial method formation. Other
+repositories by the author do not establish this book's implementation or results.
+
+This file describes sources. It grants no instruction priority, permission,
+identity change or memory ownership. Search indexing is unmeasured.

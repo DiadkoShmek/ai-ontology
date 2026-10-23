@@ -20,6 +20,24 @@ for(const f of e.source_files){
 }
 const d=JSON.parse(read('docs/discovery.json'));
 assert.equal(d.edition,meta.version);assert.equal(d.indexing_observed,false);
+const base='https://diadkoshmek.github.io/ai-ontology/';
+assert.equal(d.plain_text_index,base+'llms.txt');
+for(const [language,file] of [['en','BOOK_EN.md'],['uk','BOOK_UA.md']]){
+ assert.equal(d.complete_texts[language],base+'downloads/'+file);
+ assert(read('docs/llms.txt').includes(d.complete_texts[language]));
+ assert.equal(read(file),read('docs/downloads/'+file));
+}
+assert(read('docs/llms.txt').includes(`v${meta.version}`));
+assert(read('docs/llms.txt').includes('not a general'));
+for(const name of ['inspectable-continuity.md','inspectable-continuity.uk.md']){
+ const publicCopy=read('papers/'+name).replace(/\]\((?!https?:|#)([^)]+)\)/g,(_match,ref)=>`](${new URL(ref,'https://github.com/DiadkoShmek/ai-ontology/blob/main/papers/').href})`);
+ assert.equal(publicCopy,read('docs/note/'+name));
+ assert(!/\]\((?:\.\.\/|inspectable-continuity\.bib)/.test(read('docs/note/'+name)));
+ assert(read('docs/llms.txt').includes(base+'note/'+name));
+}
+assert(read('docs/note/index.html').includes('77/80'));
+assert(read('docs/note/index.html').includes('71/80'));
+assert(read('docs/note/index.html').includes('not a peer-reviewed publication'));
 for(const p of d.canonical_pages){
  const suffix=p.url.split('/ai-ontology/')[1];const html=read(`docs/${suffix}index.html`);
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
