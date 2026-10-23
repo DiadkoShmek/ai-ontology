@@ -1,0 +1,557 @@
+{
+  "nodes": [
+    {
+      "id": "actor:operator",
+      "type": "Actor",
+      "data": {
+        "label": "actor:operator",
+        "kind": "software"
+      }
+    },
+    {
+      "id": "actor:reviewer",
+      "type": "Actor",
+      "data": {
+        "label": "actor:reviewer",
+        "kind": "person"
+      }
+    },
+    {
+      "id": "model:m1",
+      "type": "Model",
+      "data": {
+        "label": "model:m1",
+        "version": "fixture-1"
+      }
+    },
+    {
+      "id": "profile:p1",
+      "type": "Profile",
+      "data": {
+        "label": "profile:p1",
+        "version": "1"
+      }
+    },
+    {
+      "id": "orientation:o1",
+      "type": "Orientation",
+      "data": {
+        "label": "orientation:o1",
+        "version": "1",
+        "purpose": "Continue useful work while preserving auditability and scoped permission."
+      }
+    },
+    {
+      "id": "scope:test",
+      "type": "Scope",
+      "data": {
+        "label": "scope:test",
+        "description": "Authored document-repair fixture, no real system or person."
+      }
+    },
+    {
+      "id": "scope:other",
+      "type": "Scope",
+      "data": {
+        "label": "scope:other",
+        "description": "Distinct environment, with no inherited permission."
+      }
+    },
+    {
+      "id": "session:s1",
+      "type": "Session",
+      "data": {
+        "label": "session:s1",
+        "runRef": "fixture:run-1"
+      }
+    },
+    {
+      "id": "authority:criterion",
+      "type": "Authority",
+      "data": {
+        "label": "authority:criterion",
+        "actionKind": "adopt-criterion"
+      }
+    },
+    {
+      "id": "authority:revision",
+      "type": "Authority",
+      "data": {
+        "label": "authority:revision",
+        "actionKind": "accept-revision"
+      }
+    },
+    {
+      "id": "criterion:old",
+      "type": "Criterion",
+      "data": {
+        "label": "criterion:old",
+        "version": "1",
+        "acceptance": "accepted"
+      }
+    },
+    {
+      "id": "criterion:new",
+      "type": "Criterion",
+      "data": {
+        "label": "criterion:new",
+        "version": "2",
+        "acceptance": "accepted"
+      }
+    },
+    {
+      "id": "decision:first",
+      "type": "Decision",
+      "data": {
+        "label": "decision:first",
+        "action": "Use summary to answer",
+        "actionStatus": "executed",
+        "rationale": "Authored selection for testing graph distinctions."
+      }
+    },
+    {
+      "id": "decision:next",
+      "type": "Decision",
+      "data": {
+        "label": "decision:next",
+        "action": "Run a bounded check before a new answer",
+        "actionStatus": "executed",
+        "rationale": "Authored selection for testing graph distinctions."
+      }
+    },
+    {
+      "id": "observation:source",
+      "type": "Observation",
+      "data": {
+        "label": "observation:source",
+        "sourceRef": "fixture:source",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "observation:unused",
+      "type": "Observation",
+      "data": {
+        "label": "observation:unused",
+        "sourceRef": "fixture:unused",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "observation:effect",
+      "type": "Observation",
+      "data": {
+        "label": "observation:effect",
+        "sourceRef": "fixture:effect",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "observation:lost",
+      "type": "Observation",
+      "data": {
+        "label": "observation:lost",
+        "sourceRef": "fixture:lost",
+        "availability": "missing"
+      }
+    },
+    {
+      "id": "claim:original",
+      "type": "Claim",
+      "data": {
+        "label": "claim:original",
+        "text": "The original event has been reconstructed.",
+        "status": "accepted"
+      }
+    },
+    {
+      "id": "effect:loss",
+      "type": "Effect",
+      "data": {
+        "label": "effect:loss",
+        "description": "The answer omitted the version needed for retrospective reconstruction.",
+        "state": "observed"
+      }
+    },
+    {
+      "id": "assessment:old",
+      "type": "Assessment",
+      "data": {
+        "label": "assessment:old",
+        "result": "violated",
+        "rationale": "The fixture asserts a result under the named criterion; no world entailment."
+      }
+    },
+    {
+      "id": "assessment:new",
+      "type": "Assessment",
+      "data": {
+        "label": "assessment:new",
+        "result": "satisfied",
+        "rationale": "The fixture asserts a result under the named criterion; no world entailment."
+      }
+    },
+    {
+      "id": "objection:loss",
+      "type": "Objection",
+      "data": {
+        "label": "objection:loss",
+        "text": "The accepted summary hides an unrecoverable loss.",
+        "status": "upheld"
+      }
+    },
+    {
+      "id": "revision:criterion",
+      "type": "Revision",
+      "data": {
+        "label": "revision:criterion",
+        "reason": "Retain the old failure and adopt a narrower future requirement.",
+        "status": "accepted"
+      }
+    },
+    {
+      "id": "lesson:stored",
+      "type": "Lesson",
+      "data": {
+        "label": "lesson:stored",
+        "text": "Check the current version before reconstructing an older event.",
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "lesson:used",
+      "type": "Lesson",
+      "data": {
+        "label": "lesson:used",
+        "text": "Check the current version before reconstructing an older event.",
+        "status": "adopted"
+      }
+    },
+    {
+      "id": "applicability:check",
+      "type": "Applicability",
+      "data": {
+        "label": "applicability:check",
+        "result": "unknown",
+        "reason": "The environment has changed; similarity is not yet enough."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "session:s1",
+      "relation": "madeBy",
+      "target": "actor:operator"
+    },
+    {
+      "source": "session:s1",
+      "relation": "runsModel",
+      "target": "model:m1"
+    },
+    {
+      "source": "session:s1",
+      "relation": "usesProfile",
+      "target": "profile:p1"
+    },
+    {
+      "source": "profile:p1",
+      "relation": "hasOrientation",
+      "target": "orientation:o1"
+    },
+    {
+      "source": "authority:criterion",
+      "relation": "heldBy",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "authority:criterion",
+      "relation": "grantedBy",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "authority:criterion",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "authority:revision",
+      "relation": "heldBy",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "authority:revision",
+      "relation": "grantedBy",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "authority:revision",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "criterion:old",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "criterion:old",
+      "relation": "acceptedBy",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "criterion:old",
+      "relation": "governedBy",
+      "target": "authority:criterion"
+    },
+    {
+      "source": "criterion:new",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "criterion:new",
+      "relation": "acceptedBy",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "criterion:new",
+      "relation": "governedBy",
+      "target": "authority:criterion"
+    },
+    {
+      "source": "criterion:new",
+      "relation": "previousVersion",
+      "target": "criterion:old"
+    },
+    {
+      "source": "decision:first",
+      "relation": "madeBy",
+      "target": "actor:operator"
+    },
+    {
+      "source": "decision:first",
+      "relation": "inSession",
+      "target": "session:s1"
+    },
+    {
+      "source": "decision:first",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "decision:first",
+      "relation": "withCriterion",
+      "target": "criterion:old"
+    },
+    {
+      "source": "decision:next",
+      "relation": "madeBy",
+      "target": "actor:operator"
+    },
+    {
+      "source": "decision:next",
+      "relation": "inSession",
+      "target": "session:s1"
+    },
+    {
+      "source": "decision:next",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "decision:next",
+      "relation": "withCriterion",
+      "target": "criterion:new"
+    },
+    {
+      "source": "decision:first",
+      "relation": "availableEvidence",
+      "target": "observation:source"
+    },
+    {
+      "source": "decision:first",
+      "relation": "usedRecord",
+      "target": "observation:source"
+    },
+    {
+      "source": "decision:first",
+      "relation": "availableEvidence",
+      "target": "observation:unused"
+    },
+    {
+      "source": "claim:original",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "claim:original",
+      "relation": "supportedBy",
+      "target": "observation:source"
+    },
+    {
+      "source": "decision:first",
+      "relation": "hasEffect",
+      "target": "effect:loss"
+    },
+    {
+      "source": "effect:loss",
+      "relation": "affects",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "observation:effect",
+      "relation": "observesEffect",
+      "target": "effect:loss"
+    },
+    {
+      "source": "assessment:old",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "assessment:old",
+      "relation": "evaluates",
+      "target": "effect:loss"
+    },
+    {
+      "source": "assessment:old",
+      "relation": "underCriterion",
+      "target": "criterion:old"
+    },
+    {
+      "source": "assessment:old",
+      "relation": "attributedTo",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "assessment:old",
+      "relation": "supportedBy",
+      "target": "observation:effect"
+    },
+    {
+      "source": "assessment:new",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "assessment:new",
+      "relation": "evaluates",
+      "target": "effect:loss"
+    },
+    {
+      "source": "assessment:new",
+      "relation": "underCriterion",
+      "target": "criterion:new"
+    },
+    {
+      "source": "assessment:new",
+      "relation": "attributedTo",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "assessment:new",
+      "relation": "supportedBy",
+      "target": "observation:effect"
+    },
+    {
+      "source": "objection:loss",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "objection:loss",
+      "relation": "attributedTo",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "objection:loss",
+      "relation": "challenges",
+      "target": "claim:original"
+    },
+    {
+      "source": "revision:criterion",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "revision:criterion",
+      "relation": "revises",
+      "target": "criterion:old"
+    },
+    {
+      "source": "revision:criterion",
+      "relation": "attributedTo",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "revision:criterion",
+      "relation": "acceptedBy",
+      "target": "actor:reviewer"
+    },
+    {
+      "source": "revision:criterion",
+      "relation": "governedBy",
+      "target": "authority:revision"
+    },
+    {
+      "source": "revision:criterion",
+      "relation": "respondsTo",
+      "target": "effect:loss"
+    },
+    {
+      "source": "revision:criterion",
+      "relation": "respondsTo",
+      "target": "objection:loss"
+    },
+    {
+      "source": "revision:criterion",
+      "relation": "basedOn",
+      "target": "assessment:old"
+    },
+    {
+      "source": "lesson:stored",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "lesson:stored",
+      "relation": "supportedBy",
+      "target": "observation:effect"
+    },
+    {
+      "source": "lesson:used",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "lesson:used",
+      "relation": "supportedBy",
+      "target": "observation:effect"
+    },
+    {
+      "source": "decision:next",
+      "relation": "usedRecord",
+      "target": "lesson:used"
+    },
+    {
+      "source": "applicability:check",
+      "relation": "inScope",
+      "target": "scope:test"
+    },
+    {
+      "source": "applicability:check",
+      "relation": "appliesRecord",
+      "target": "lesson:used"
+    },
+    {
+      "source": "applicability:check",
+      "relation": "toDecision",
+      "target": "decision:next"
+    },
+    {
+      "source": "applicability:check",
+      "relation": "attributedTo",
+      "target": "actor:reviewer"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "response": "{\"ready\":true}",
+  "terminal": true,
+  "events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 14124,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "tools": [],
+  "exit_code": 0,
+  "stderr_present": false,
+  "thread_id": "01a16791-308d-7813-9296-397b405707ff",
+  "usage": {
+    "input_tokens": 14124,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 9,
+    "reasoning_output_tokens": 0
+  },
+  "wall_ms": 5022.858
+}

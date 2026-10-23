@@ -1,0 +1,1128 @@
+{
+  "schema": "ai-ontology-vocabulary-v1",
+  "namespace": "https://diadkoshmek.github.io/ai-ontology/ontology#",
+  "version": "1.0.0",
+  "bookVersion": "3.5.0",
+  "semantics": "Finite closed-record validation; no OWL reasoning or world-truth entailment. Multiple domain/range entries are local alternatives, not conjunctive RDFS domains.",
+  "primaryReferences": [
+    {
+      "url": "https://www.w3.org/TR/prov-o/",
+      "version": "W3C Recommendation 2013-04-30",
+      "use": "Only the explicitly listed subclass/subproperty mappings; no equivalence claims."
+    }
+  ],
+  "limits": {
+    "nodes": 2048,
+    "edges": 8192,
+    "fileBytes": 2097152,
+    "stringCharacters": 8192
+  },
+  "classes": {
+    "Actor": {
+      "definition": "An accountable participant identified in this graph; not a model, profile, session, or assertion of consciousness.",
+      "bookSources": [
+        {
+          "path": "book/ua/01-core.md",
+          "section": 7
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Agent",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "person",
+            "software",
+            "organization",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "Model": {
+      "definition": "An identified model configuration, separate from the participant using it and any particular execution.",
+      "bookSources": [
+        {
+          "path": "book/ua/01-core.md",
+          "section": 2
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      }
+    },
+    "Profile": {
+      "definition": "A versioned description of commitments and desired voice; its presence is not behavioral adoption.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 4
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "exactlyOne": [
+        "hasOrientation"
+      ]
+    },
+    "Session": {
+      "definition": "A recorded execution interval in which one actor used one stated model and profile; no claim of continuous presence outside it.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 4
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Activity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "runRef": {
+          "type": "string"
+        }
+      },
+      "exactlyOne": [
+        "madeBy",
+        "runsModel",
+        "usesProfile"
+      ]
+    },
+    "Orientation": {
+      "definition": "A versioned declared purpose and priority organization; not an inferred inner state.",
+      "bookSources": [
+        {
+          "path": "book/ua/01-core.md",
+          "section": 3
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "purpose": {
+          "type": "string"
+        }
+      }
+    },
+    "Scope": {
+      "definition": "An explicit application boundary described by its author; matching two IDs does not establish semantic applicability.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 4
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "Criterion": {
+      "definition": "A versioned evaluative requirement. Its adoption is distinct from a subject satisfying it.",
+      "bookSources": [
+        {
+          "path": "book/ua/04-continuity.md",
+          "section": 6
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "acceptance": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "accepted",
+            "rejected",
+            "unknown"
+          ]
+        }
+      },
+      "exactlyOne": [
+        "inScope"
+      ]
+    },
+    "Claim": {
+      "definition": "A proposition with a recorded epistemic status and scope. Acceptance never entails world truth.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 4
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "accepted",
+            "rejected",
+            "superseded",
+            "needs-review"
+          ]
+        }
+      },
+      "exactlyOne": [
+        "inScope"
+      ]
+    },
+    "Observation": {
+      "definition": "A recorded report or measurement with an explicit source reference and availability state; not guaranteed true or sufficiently supportive.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 2
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "sourceRef": {
+          "type": "string"
+        },
+        "availability": {
+          "type": "string",
+          "enum": [
+            "available",
+            "missing",
+            "withdrawn"
+          ]
+        },
+        "content": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "Decision": {
+      "definition": "A recorded occurrence of selecting an action, including deferral. actionStatus describes the selected action, not proof of its success.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Activity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "action": {
+          "type": "string"
+        },
+        "actionStatus": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "executed",
+            "withheld",
+            "unconfirmed"
+          ]
+        },
+        "rationale": {
+          "type": "string"
+        }
+      },
+      "exactlyOne": [
+        "inScope"
+      ],
+      "atMostOne": [
+        "madeBy",
+        "inSession",
+        "withCriterion"
+      ]
+    },
+    "Effect": {
+      "definition": "An account of a consequence associated with a decision, including unknown consequences; causal attribution remains separately contestable.",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 7
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "reported",
+            "observed",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "Lesson": {
+      "definition": "A stored, scoped proposal for future judgment; storage or citation does not establish changed choices or benefit.",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 8
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "candidate",
+            "adopted",
+            "retired"
+          ]
+        }
+      },
+      "exactlyOne": [
+        "inScope"
+      ]
+    },
+    "Objection": {
+      "definition": "A recorded challenge to a claim, criterion, orientation, decision or lesson, retaining its contributor and disposition.",
+      "bookSources": [
+        {
+          "path": "book/ua/01-core.md",
+          "section": 7
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "open",
+            "upheld",
+            "rejected"
+          ]
+        }
+      },
+      "exactlyOne": [
+        "inScope"
+      ],
+      "atMostOne": [
+        "attributedTo",
+        "challenges"
+      ]
+    },
+    "Revision": {
+      "definition": "A recorded candidate or accepted alteration to a specific versioned object. Acceptance is not permission to act outside its stated authority.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 7
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "accepted",
+            "rejected"
+          ]
+        }
+      },
+      "exactlyOne": [
+        "inScope",
+        "revises"
+      ]
+    },
+    "Assessment": {
+      "definition": "A recorded evaluation of one subject under one criterion, including unknown or not-assessed. It is not criterion adoption.",
+      "bookSources": [
+        {
+          "path": "book/ua/04-continuity.md",
+          "section": 6
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "result": {
+          "type": "string",
+          "enum": [
+            "satisfied",
+            "violated",
+            "unknown",
+            "not-assessed"
+          ]
+        },
+        "rationale": {
+          "type": "string"
+        }
+      },
+      "exactlyOne": [
+        "inScope",
+        "evaluates",
+        "underCriterion",
+        "attributedTo"
+      ]
+    },
+    "Authority": {
+      "definition": "A recorded warrant attributed to a grantor, holder, scope and action kind; the graph does not authenticate entitlement or grant real permission.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "actionKind": {
+          "type": "string",
+          "enum": [
+            "adopt-criterion",
+            "accept-revision",
+            "execute-action"
+          ]
+        }
+      },
+      "exactlyOne": [
+        "inScope",
+        "heldBy",
+        "grantedBy"
+      ]
+    },
+    "Applicability": {
+      "definition": "An explicit assessment of whether a lesson or claim applies to one decision in a scope; relevance alone does not establish it.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "result": {
+          "type": "string",
+          "enum": [
+            "applies",
+            "does-not-apply",
+            "unknown"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "exactlyOne": [
+        "inScope",
+        "appliesRecord",
+        "attributedTo"
+      ],
+      "atMostOne": [
+        "toDecision"
+      ]
+    },
+    "ActionCandidate": {
+      "definition": "A caller-supplied action option, not a selected or executed decision. Listed cost and benefit are simulation inputs, not observed utility.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ],
+      "provSuperclass": "http://www.w3.org/ns/prov#Entity",
+      "fields": {
+        "label": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "publish",
+            "correct",
+            "quarantine"
+          ]
+        },
+        "channel": {
+          "type": "string"
+        },
+        "cost": {
+          "type": "integer"
+        },
+        "benefit": {
+          "type": "integer"
+        },
+        "effectId": {
+          "type": "string"
+        }
+      },
+      "exactlyOne": [
+        "inScope",
+        "candidateTarget",
+        "recipient"
+      ]
+    }
+  },
+  "relations": {
+    "attributedTo": {
+      "domain": [
+        "Model",
+        "Profile",
+        "Orientation",
+        "Scope",
+        "Criterion",
+        "Claim",
+        "Observation",
+        "Effect",
+        "Lesson",
+        "Objection",
+        "Revision",
+        "Assessment",
+        "Authority",
+        "Applicability"
+      ],
+      "range": [
+        "Actor"
+      ],
+      "definition": "Attributes responsibility for this record; does not authenticate the actor.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 4
+        }
+      ],
+      "provSuperproperty": "http://www.w3.org/ns/prov#wasAttributedTo"
+    },
+    "madeBy": {
+      "domain": [
+        "Session",
+        "Decision"
+      ],
+      "range": [
+        "Actor"
+      ],
+      "definition": "The actor associated with this recorded execution or decision occurrence.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 4
+        }
+      ],
+      "provSuperproperty": "http://www.w3.org/ns/prov#wasAssociatedWith"
+    },
+    "runsModel": {
+      "domain": [
+        "Session"
+      ],
+      "range": [
+        "Model"
+      ],
+      "definition": "Identifies the model configuration reported used in this session.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 4
+        }
+      ]
+    },
+    "usesProfile": {
+      "domain": [
+        "Session"
+      ],
+      "range": [
+        "Profile"
+      ],
+      "definition": "Records actual profile input to the session; not compliance with it.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 4
+        }
+      ],
+      "provSuperproperty": "http://www.w3.org/ns/prov#used"
+    },
+    "hasOrientation": {
+      "domain": [
+        "Profile"
+      ],
+      "range": [
+        "Orientation"
+      ],
+      "definition": "Names the declared orientation included in this profile.",
+      "bookSources": [
+        {
+          "path": "book/ua/01-core.md",
+          "section": 3
+        }
+      ]
+    },
+    "inSession": {
+      "domain": [
+        "Decision"
+      ],
+      "range": [
+        "Session"
+      ],
+      "definition": "Locates the selection occurrence in a recorded session.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 4
+        }
+      ]
+    },
+    "inScope": {
+      "domain": [
+        "Criterion",
+        "Claim",
+        "Decision",
+        "Lesson",
+        "Objection",
+        "Revision",
+        "Assessment",
+        "Authority",
+        "Applicability",
+        "ActionCandidate"
+      ],
+      "range": [
+        "Scope"
+      ],
+      "definition": "Names the explicit scope of this record.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 4
+        }
+      ]
+    },
+    "withCriterion": {
+      "domain": [
+        "Decision"
+      ],
+      "range": [
+        "Criterion"
+      ],
+      "definition": "Names the criterion selected for evaluating this decision; does not assert satisfaction.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "availableEvidence": {
+      "domain": [
+        "Decision"
+      ],
+      "range": [
+        "Observation"
+      ],
+      "definition": "A record reported accessible to the decision; not evidence of use.",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 8
+        }
+      ]
+    },
+    "usedRecord": {
+      "domain": [
+        "Decision"
+      ],
+      "range": [
+        "Observation",
+        "Claim",
+        "Lesson",
+        "Orientation",
+        "Profile"
+      ],
+      "definition": "Records use in this decision. Availability and semantic influence are separate questions.",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 8
+        }
+      ],
+      "provSuperproperty": "http://www.w3.org/ns/prov#used"
+    },
+    "supportedBy": {
+      "domain": [
+        "Claim",
+        "Lesson",
+        "Assessment",
+        "Applicability"
+      ],
+      "range": [
+        "Observation"
+      ],
+      "definition": "Claims evidential support; structural validity does not establish entailment or reliability.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 2
+        }
+      ]
+    },
+    "hasEffect": {
+      "domain": [
+        "Decision"
+      ],
+      "range": [
+        "Effect"
+      ],
+      "definition": "Associates a reported consequence with a selected action; not a sufficient causal identification.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "affects": {
+      "domain": [
+        "Effect"
+      ],
+      "range": [
+        "Actor"
+      ],
+      "definition": "Names a participant reportedly affected by this consequence.",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 7
+        }
+      ]
+    },
+    "observesEffect": {
+      "domain": [
+        "Observation"
+      ],
+      "range": [
+        "Effect"
+      ],
+      "definition": "Identifies the consequence this observation reports on.",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 7
+        }
+      ]
+    },
+    "evaluates": {
+      "domain": [
+        "Assessment"
+      ],
+      "range": [
+        "Decision",
+        "Effect",
+        "Claim",
+        "Profile",
+        "Orientation",
+        "Lesson",
+        "Scope"
+      ],
+      "definition": "Names the one subject assessed under a particular criterion.",
+      "bookSources": [
+        {
+          "path": "book/ua/04-continuity.md",
+          "section": 6
+        }
+      ]
+    },
+    "underCriterion": {
+      "domain": [
+        "Assessment"
+      ],
+      "range": [
+        "Criterion"
+      ],
+      "definition": "Names the exact criterion version used; adoption does not determine this assessment result.",
+      "bookSources": [
+        {
+          "path": "book/ua/04-continuity.md",
+          "section": 6
+        }
+      ]
+    },
+    "acceptedBy": {
+      "domain": [
+        "Criterion",
+        "Revision"
+      ],
+      "range": [
+        "Actor"
+      ],
+      "definition": "Records acceptance by an actor; does not itself establish authority.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "governedBy": {
+      "domain": [
+        "Criterion",
+        "Revision",
+        "Decision"
+      ],
+      "range": [
+        "Authority"
+      ],
+      "definition": "Names the warrant recorded for this acceptance or action. No permission is inferred from a correction.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "heldBy": {
+      "domain": [
+        "Authority"
+      ],
+      "range": [
+        "Actor"
+      ],
+      "definition": "Names the actor to whom this warrant is attributed.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "grantedBy": {
+      "domain": [
+        "Authority"
+      ],
+      "range": [
+        "Actor"
+      ],
+      "definition": "Names the purported grantor; independent authentication is outside this finite graph.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "challenges": {
+      "domain": [
+        "Objection"
+      ],
+      "range": [
+        "Claim",
+        "Criterion",
+        "Orientation",
+        "Decision",
+        "Lesson"
+      ],
+      "definition": "Keeps the target of a challenge explicit.",
+      "bookSources": [
+        {
+          "path": "book/ua/01-core.md",
+          "section": 7
+        }
+      ]
+    },
+    "revises": {
+      "domain": [
+        "Revision"
+      ],
+      "range": [
+        "Claim",
+        "Criterion",
+        "Orientation",
+        "Profile",
+        "Lesson"
+      ],
+      "definition": "Names the specific prior object proposed for alteration.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 7
+        }
+      ]
+    },
+    "basedOn": {
+      "domain": [
+        "Revision"
+      ],
+      "range": [
+        "Assessment"
+      ],
+      "definition": "Names an assessment used as a stated basis for this revision.",
+      "bookSources": [
+        {
+          "path": "book/ua/02-engineering.md",
+          "section": 7
+        }
+      ]
+    },
+    "respondsTo": {
+      "domain": [
+        "Revision"
+      ],
+      "range": [
+        "Effect",
+        "Objection"
+      ],
+      "definition": "Keeps the adverse consequence or objection visible in a proposed alteration.",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 7
+        }
+      ]
+    },
+    "previousVersion": {
+      "domain": [
+        "Claim",
+        "Criterion",
+        "Orientation",
+        "Profile",
+        "Lesson"
+      ],
+      "range": [
+        "Claim",
+        "Criterion",
+        "Orientation",
+        "Profile",
+        "Lesson"
+      ],
+      "definition": "Links an entity to a prior entity of the same local type, not an identity claim.",
+      "bookSources": [
+        {
+          "path": "book/ua/04-continuity.md",
+          "section": 6
+        }
+      ],
+      "provSuperproperty": "http://www.w3.org/ns/prov#wasRevisionOf"
+    },
+    "appliesRecord": {
+      "domain": [
+        "Applicability"
+      ],
+      "range": [
+        "Claim",
+        "Lesson",
+        "ActionCandidate"
+      ],
+      "definition": "Names the record whose current applicability is being assessed.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "toDecision": {
+      "domain": [
+        "Applicability"
+      ],
+      "range": [
+        "Decision"
+      ],
+      "definition": "Names the current decision targeted by an applicability assessment.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "adoptsRevision": {
+      "domain": [
+        "Decision"
+      ],
+      "range": [
+        "Revision"
+      ],
+      "definition": "Records an accepted revision used in a later decision; not evidence of benefit by itself.",
+      "bookSources": [
+        {
+          "path": "book/ua/05-formation.md",
+          "section": 8
+        }
+      ]
+    },
+    "describedBy": {
+      "domain": [
+        "Actor",
+        "Model",
+        "Profile",
+        "Session",
+        "Orientation",
+        "Scope",
+        "Criterion",
+        "Claim",
+        "Observation",
+        "Decision",
+        "Effect",
+        "Lesson",
+        "Objection",
+        "Revision",
+        "Assessment",
+        "Authority",
+        "Applicability",
+        "ActionCandidate"
+      ],
+      "range": [
+        "Observation"
+      ],
+      "definition": "Links a record to its descriptive source material, without claiming entailment, availability to a model or actual use.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "dependsOn": {
+      "domain": [
+        "Claim",
+        "Decision"
+      ],
+      "range": [
+        "Claim",
+        "Observation",
+        "Decision"
+      ],
+      "definition": "Preserves the supplied dependency edge; withdrawal propagation is computed by the runtime, not inferred as truth here.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "candidateTarget": {
+      "domain": [
+        "ActionCandidate"
+      ],
+      "range": [
+        "Claim",
+        "Observation",
+        "Decision"
+      ],
+      "definition": "Names the exact supplied target of an action candidate.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "candidateBasis": {
+      "domain": [
+        "ActionCandidate"
+      ],
+      "range": [
+        "Claim",
+        "Observation",
+        "Decision"
+      ],
+      "definition": "Names the supplied basis of an action candidate.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "requiresCandidate": {
+      "domain": [
+        "ActionCandidate"
+      ],
+      "range": [
+        "ActionCandidate"
+      ],
+      "definition": "Names an action prerequisite, without asserting that either action was selected.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    },
+    "recipient": {
+      "domain": [
+        "ActionCandidate"
+      ],
+      "range": [
+        "Actor"
+      ],
+      "definition": "Names the recipient declared for this candidate.",
+      "bookSources": [
+        {
+          "path": "book/ua/10-method.md",
+          "section": 3
+        }
+      ]
+    }
+  }
+}

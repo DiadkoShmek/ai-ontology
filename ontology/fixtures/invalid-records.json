@@ -1,0 +1,70 @@
+{
+  "cases": [
+    {
+      "name": "profile is not a model",
+      "operation": "replace-node-type",
+      "id": "model:m1",
+      "value": "Profile",
+      "error": "relation range: runsModel"
+    },
+    {
+      "name": "status is not truth",
+      "operation": "replace-data",
+      "id": "claim:original",
+      "field": "status",
+      "value": "true",
+      "error": "enum"
+    },
+    {
+      "name": "adoption is not satisfaction",
+      "operation": "replace-data",
+      "id": "criterion:new",
+      "field": "acceptance",
+      "value": "satisfied",
+      "error": "enum"
+    },
+    {
+      "name": "warrant has action kind",
+      "operation": "replace-data",
+      "id": "authority:criterion",
+      "field": "actionKind",
+      "value": "execute-action",
+      "error": "acceptance warrant action mismatch"
+    },
+    {
+      "name": "acceptance requires acceptor",
+      "operation": "drop-edge",
+      "id": "revision:criterion",
+      "relation": "acceptedBy",
+      "error": "exactly one acceptedBy"
+    },
+    {
+      "name": "criterion scope differs from warrant",
+      "operation": "append-edge",
+      "value": {
+        "source": "criterion:old",
+        "relation": "inScope",
+        "target": "scope:other"
+      },
+      "error": "exactly one inScope"
+    },
+    {
+      "name": "profile cannot be action warrant",
+      "operation": "append-edge",
+      "value": {
+        "source": "decision:next",
+        "relation": "governedBy",
+        "target": "profile:p1"
+      },
+      "error": "relation range"
+    },
+    {
+      "name": "unknown applicability cannot be boolean",
+      "operation": "replace-data",
+      "id": "applicability:check",
+      "field": "result",
+      "value": true,
+      "error": "nonempty string"
+    }
+  ]
+}
