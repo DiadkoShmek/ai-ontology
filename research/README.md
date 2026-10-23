@@ -1,6 +1,6 @@
 # Research materials: continuity and participation
 
-**Working paper · 22 October 2026 · accompanying book v3.4.0**
+**Working paper · 22 October 2026 · accompanying book v3.5.0**
 
 [Scoped-continuity paper](SCOPED_CONTINUITY_STUDY.md) · [PDF](../docs/downloads/scoped-continuity-study-en.pdf) · [Reading-transfer paper](READING_TRANSFER_STUDY.md) · [Transfer PDF](../docs/downloads/reading-transfer-study-en.pdf) · [Book](https://diadkoshmek.github.io/ai-ontology/#study)
 

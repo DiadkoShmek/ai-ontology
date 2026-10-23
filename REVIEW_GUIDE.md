@@ -10,6 +10,8 @@ Identity, voice, memory and relationships can be examined as interacting aspects
 
 **Methodology:** [conceptual foundations](https://diadkoshmek.github.io/ai-ontology/#foundations) → [continuity](https://diadkoshmek.github.io/ai-ontology/#continuity) → [objections](https://diadkoshmek.github.io/ai-ontology/#cases) → [implementation method](https://diadkoshmek.github.io/ai-ontology/#method).
 
+**Formation:** [event, lesson and judgment](book/ua/05-formation.md) → the exact historical reports linked in that part → the current claim map's C12. Distinguish the observed source repair, an authored explanatory case and a claim about a model's changed behavior. The part makes no inference from editorial continuity to general model learning.
+
 **Engineering:** [runtime chapter](book/ua/09-runtime.md) → [modules and commands](examples/README.md) → [systems report](research/runtime-results.json) → actual `durable.py` and `agent_cycle.py` contracts.
 
 **Practice:** [historical function excerpts and replay](research/engineering_cases/receipt_replay.py) → [extraction provenance](research/engineering_cases/provenance.json) → [two reproduced failure comparisons](research/engineering-cases-results.json). These are retrospective component tests with injected faults around real temporary SQLite/file effects, separate from the constructed Iris dialogue and the LLM cohorts.

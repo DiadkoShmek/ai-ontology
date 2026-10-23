@@ -1,5 +1,5 @@
 {
-  "version": "3.4.0",
+  "version": "3.5.0",
   "label": "Перше завершене видання",
   "date": "2026-10-23",
   "title": "Онтологія AI",
@@ -35,6 +35,11 @@
       "id": "continuity",
       "title": "Тяглість без незмінності",
       "file": "04-continuity.md"
+    },
+    {
+      "id": "formation",
+      "title": "Досвід, який змінює участь",
+      "file": "05-formation.md"
     },
     {
       "id": "engineering",

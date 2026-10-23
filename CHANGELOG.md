@@ -1,3 +1,12 @@
+# v3.5.0 — 2026-10-23
+
+- Developed formation through a new part, “Experience that changes participation”: event, interpretation, lesson, situated judgment and consequence. A correct but insufficient lesson supplies the central counterexample; a shared lesson library is not treated as a complete agent state.
+- Grounded the exposition in already public source-excerpt repairs, the negative reading-transfer cohort and the separate transport repair. Preserved the evidence class and limit of each; no private conversation or hidden reasoning is published.
+- Distinguished inherited history from current contribution, refusal from a useful bounded next step, and revision of a rule from repair of its earlier effects. Rejected the claims that judgment is universally untransferable or that formation necessarily requires sacrifice.
+- Separated forward action, correction of earlier effects and the right to contest. The new cases distinguish a sound standing procedure from evidence that experience changed its application.
+- Expanded the core and connected the new part to the opening, method and reviewer route. Added C12 to the existing claim map with a new editorial history entry and a source at the prior published commit.
+- Rebuilt the Ukrainian book and web edition. All experimental protocols, raw responses, scores and three research PDFs remain unchanged. There are no new model or human trials, and no new general learning or ontology-reading benefit claim.
+
 # v3.4.0 — 2026-10-23
 
 - Added a conceptual chapter on what remains open to change in long-term human–AI participation: the other's position, revision of ends, support, time, exit and difference. Constructed comparisons at the institutional and workshop levels distinguish exact continuity from influence over the purpose of collaboration, including unauthorized goal substitution under an appeal to care and the separate right to decline assistance. Added a conditional feedback account spanning economic demands, infrastructure, technical selection, habits and institutional revision; no deterministic geopolitical forecast.
