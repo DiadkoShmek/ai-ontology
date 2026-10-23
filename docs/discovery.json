@@ -1,0 +1,26 @@
+{
+  "schema": "ai-ontology-discovery/1",
+  "edition": "3.6.0",
+  "canonical_pages": [
+    {
+      "url": "https://diadkoshmek.github.io/ai-ontology/",
+      "language": "uk"
+    },
+    {
+      "url": "https://diadkoshmek.github.io/ai-ontology/en/",
+      "language": "en"
+    },
+    {
+      "url": "https://diadkoshmek.github.io/ai-ontology/research/",
+      "language": "en"
+    },
+    {
+      "url": "https://diadkoshmek.github.io/ai-ontology/ontology/",
+      "language": "en"
+    }
+  ],
+  "sitemap": "https://diadkoshmek.github.io/ai-ontology/sitemap.xml",
+  "indexing_observed": false,
+  "search_traffic_observed": false,
+  "boundary": "Static discoverability metadata and crawlable content; no search-engine indexing, ranking, AI citation or income guarantee."
+}

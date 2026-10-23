@@ -1,0 +1,93 @@
+{
+  "schema": "ontology-foundation-checks/1",
+  "observed_at": "2026-10-23T08:09:16.145965+00:00",
+  "python": "3.13.7",
+  "llm_calls": 0,
+  "authored_fixture": true,
+  "success": true,
+  "runs": [
+    {
+      "args": [
+        "ontology/export.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "vocabulary artifacts match\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "ontology",
+        "-p",
+        "test_*.py",
+        "-q"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "----------------------------------------------------------------------\nRan 29 tests in 0.323s\n\nOK\n"
+    },
+    {
+      "args": [
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "ontology",
+        "-p",
+        "test_*.py",
+        "-q"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "----------------------------------------------------------------------\nRan 29 tests in 0.315s\n\nOK\n"
+    },
+    {
+      "args": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/closed_loop",
+        "-q"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "----------------------------------------------------------------------\nRan 11 tests in 6.984s\n\nOK\n"
+    }
+  ],
+  "sources": {
+    "ontology/FOUNDATION.md": "9151c3cb76d4d48c82dfc33dfb5df6665f646574312a78c4c35c5de6b07d4a73",
+    "ontology/README.md": "e073f489ccd1d8242fb46a43424888467eef8f10cf96fec6ce86f39c9e3a8d3c",
+    "ontology/competency-questions.json": "952645e383e3f1dc8fed9b5061ce0d6e5cbc775d21a2bdb5f0085d83d413e345",
+    "ontology/context.jsonld": "cdce3391846f10fa1ee10123088ef5cddeb062c91a390a81ef337f2a1ccbc0e3",
+    "ontology/export.py": "db95806b0a576a4e02f2bd1ced77155ad49b50d2d9f00d00395dc21a98912802",
+    "ontology/fixtures/closed-loop.json": "4c5892821dd51db2d367395d9f2fff9d08f4ca7d30b54c30de8dede97f4606fb",
+    "ontology/fixtures/invalid-records.json": "c95b0c692837683489c87a161adba92e63ac5ea960970cb06c2225b7a532529a",
+    "ontology/fixtures/open-loop.json": "6cf0ca4ebfe1c02fa900f1bb37a4e51d511e5418d2d599f9516a32a86d972547",
+    "ontology/graph.py": "6fc92afa9cb24573d1a17c0d93b43a5cab057b96561e303fc51ce3644c0ac83b",
+    "ontology/runtime_adapter.py": "2077bfb9a29f9b15c225257956962ffe8c3d3048ff9fab773942ba4c1b19fd25",
+    "ontology/test_graph.py": "5fdd779b2d0b4ad13db827b65887e58c0f2993df265fdabc9f5ea6bf1f537544",
+    "ontology/test_runtime_adapter.py": "c84f1be706ae0d5fa479d965f5cd311f5d16c176377c894ccfd08b7468445267",
+    "ontology/vocabulary.json": "d0f045261fbfa0dc5de3d62d64c486475caf72c886fa7db916f86af741bb8389",
+    "ontology/vocabulary.ttl": "1e6500ce15221d77213dc6d9a76314a5ac2a969063a82fae63bf73e63336e22c",
+    "research/closed_loop/PROTOCOL.md": "a97992f732db29b5b04ce9d2902f20f30ecaec5f13a6b5e367b3221708d60293",
+    "research/closed_loop/analyze.py": "f8c3456043378220132b3c0cd1b00d4675e6cb18852f6a5d18d175b18574ad5e",
+    "research/closed_loop/canary.json": "f0df8cd26deffdc70b366ba8028b9184bc1b284346f73abdad406dfdc573cce9",
+    "research/closed_loop/cases.json": "9229b7a24bc783ae91eeaef17f17e0b122d5316e2da56c0a02c14541bbaa0549",
+    "research/closed_loop/freeze.json": "66e110c392ba142ac671d029a45fccf9550c37505b17195b15ba9c92f4b12480",
+    "research/closed_loop/model.py": "55efd53864635ae8ffb54e1f4db66fdf100ba4ad4281c5be05c29cdd114e4401",
+    "research/closed_loop/run.py": "a16786c76a02bbfa622e497cfdf4395a5eef57d8cbe60218756df34f26c1c551",
+    "research/closed_loop/tasks.py": "a32042ac85cc9edae2a10dccf64c9aada65557ad7ba57824116a88fee3433ff6",
+    "research/closed_loop/test_integrity.py": "5a28f213d7786af4d62d4cbd2862564c40015b09dc93d902be54c191556f07a5",
+    "research/closed_loop/test_study.py": "872377a28e0f9139069463fafa3bf993c5bc2c92c51873921c2300886e11fdb3",
+    "research/run_foundation_checks.py": "829b001bbc6786ba53958eced5ee2befda3474b2694e767af2844bd6a8c32b40",
+    "examples/participation.py": "0b11fe1047bc10cb077d8671f0431ae18acc917cdc8f9bbedc40334959cfc7cd",
+    "examples/participation_method.py": "8d45ce102cfd3d7e95f663c5013a76487fa4582f6f0114cdd57e49c58a074e72"
+  },
+  "boundary": "Mechanical developer checks; the authored full-loop test double is not model evidence. Optimized-mode repeats are not additional independent tests."
+}

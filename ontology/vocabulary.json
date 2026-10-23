@@ -2,7 +2,7 @@
   "schema": "ai-ontology-vocabulary-v1",
   "namespace": "https://diadkoshmek.github.io/ai-ontology/ontology#",
   "version": "1.0.0",
-  "bookVersion": "3.5.0",
+  "bookVersion": "3.6.0",
   "semantics": "Finite closed-record validation; no OWL reasoning or world-truth entailment. Multiple domain/range entries are local alternatives, not conjunctive RDFS domains.",
   "primaryReferences": [
     {

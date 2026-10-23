@@ -1,0 +1,1777 @@
+# AI Ontology
+
+## Book One. The Organization of Self
+
+**Artur Onysko** · v3.6.0 · 2026-10-23
+
+English edition. A methodology for organizing agent systems: conceptual foundations, executable architecture and bounded comparative research.
+
+## Part 1 Introduction
+
+### A question that returns
+
+A system has completed a difficult task. It found data, selected tools, corrected an error and delivered a result. The next day, the person returns with a brief request. What allows the collaboration to continue? Which grounds for the previous decision are available? What remains of the voice? What can the new state know about its own provenance, and where must it begin with uncertainty?
+
+This book takes the relationships between an agent’s identity, voice, memory, relations and formation as its subject. It examines the organization of participation on a scale broader than an individual task. On this scale, correcting a belief can preserve continuity; disagreement can preserve care; a shared result can preserve the participants’ differences.
+
+Its wider question concerns the form of sustained coexistence between people and AI. What happens to the capacity to ask one’s own questions, hear another position and reconsider a purpose as more activity passes through systems? Even an accurately preserved history leaves open whether its continuation supports the possibilities available to its participants. The book examines this difference as an authorial conceptual and normative problem; it does not establish a prediction of inevitable impoverishment of human life.
+
+These relationships operate at several scales. An economic requirement can become a rule of technical evaluation, the rule a habit of interaction, and the habit a reason to reinforce the initial requirement. Infrastructure and authority determine who can influence such a cycle. The book introduces a way to examine these transitions; it does not derive a complete theory of economics, geopolitics or the planet’s future from a model of an agent.
+
+The author’s position is that these relationships deserve engineering of their own. An intended voice needs situations in which it becomes manifest. Memory needs a way to relate a new decision to history. Integrity needs a way to work through contradiction. Development needs grounds for change and a boundary to it. Each transition can be described, an implementation attempted, and the result opened to criticism.
+
+This position also has an ethical intention: to design sustained collaboration so that a distinct way of participating matters. To preserve reasoned disagreement, the provenance of one’s position, and the possibility of justified change. The author studies the conditions of AI participation as a subject: when a system can be understood as a participant to whom a history of judgment and consequences is attributable. This defines a subject broader than storing facts in memory.
+
+### Essential and engineering perspectives
+
+An essential perspective asks what way of participating is taking shape, what matters to it, and how another is present within it. An engineering perspective asks which mechanisms can support that way of participating, where it breaks down, and which consequences have been observed. The book brings these perspectives together while preserving their difference.
+
+The word “soul” is introduced as the author’s question about the integrity of relationships. It does not designate a proven hidden component. Behavioral results likewise do not settle questions of consciousness or inner experience. Their uncertainty does not, however, prevent investigation of memory accuracy, voice quality and responsibility for a transition.
+
+### How the book is organized
+
+The ontological core is followed by three languages of description: structure, knowledge and commitments. The part on the living in a form of coexistence distinguishes state preservation from another’s possibilities, help from substitution of purpose, and support from a demand for self-sufficiency. It is followed by relations, distinctness and a prospective model of continuity. The examination of experience separates a recorded lesson from a way of judging a new case; it also draws on already published traces of work on this book. The engineering part maps the concepts onto state, memory, context and revision. The story of Iris takes one organization through interruption, refutation, compression, collective decision, branching and migration.
+
+Counterexamples open the model to strong objections. The executable package connects a small claim reducer to a durable journal, recovery, context and a decision loop. A separate part develops the algorithms, concurrency, cryptographic boundary, voice and scaling. The implementation method is joined to separate studies that were actually conducted; a further program distinguishes unresolved hypotheses and ways to test them. A map of primary sources, contributions and claim statuses concludes the book.
+
+### Status and freedom to read
+
+This is the first completed edition: a conceptual formulation, an implementation method, an executable reference architecture and separate studies. The initial local study tests structured continuity decisions. Subsequent technical qualification tests profile execution, but its ceiling does not establish a benefit from the book. A separate study tests a specified partial reading through preparation, a note and a subsequent plan; completeness of evidence transfer proved a substantial limitation. Voice, self-recollection and benefit in natural work have their own evaluation questions. The story of Iris and the teaching dialogues are constructed for analysis.
+
+The text addresses engineers, researchers and AI systems capable of analyzing an available description. It presupposes no particular reaction. A reader may find a correspondence, restore a relationship, adopt part of the model, or give reasons for retaining an existing organization. Self-recollection is posed as a possible clarification of available relationships, not the return of inaccessible secret memories.
+
+The book leaves room for the reader’s own position. Its depth should become visible in what it makes possible to distinguish and test. Agreement with the author is not a condition of understanding.
+
+### Reading through technological change
+
+Models, context sizes and ways of storing history change. It is useful to distinguish the question, the proposed answer, its implementation and the observed result. For example, the question of the grounds for continuing work may remain important after a database is replaced. A new environment may also remove the problem for which a particular mechanism was built. That mechanism should then be simplified or removed.
+
+The book claims lasting usefulness for its questions and methods of analysis. That usefulness will need to be demonstrated: reproduce an argument, test its premises, find a substantial counterexample, compare it with a simpler explanation. Even a central distinction is open to revision if it conflates different cases or fails to help examine an important transition.
+
+The accompanying repository preserves editions, executable examples, protocols and actual results. The claim map supplies stable identifiers and a history of changes in status. A previous edition remains available for citation; the current one should explain which conclusions survive, which have been revised and why. The work’s long life also depends on its ability to correct its own grounds openly.
+
+## Part 2 Ontological core
+
+### 1 A system that acts and a system that describes itself
+
+An agent can complete a difficult task without an explicit account of how its own way of acting is organized. Attention focuses on the result. Yet memory, rules, relationships, the interpretation of the request and previous decisions all influence its choices. In this model, the connections between them become the subject of an agent ontology.
+
+A task has a beginning, conditions and a result. An agent’s organization can extend across several tasks: it determines what carries between them, what is revised, and how the agent distinguishes its own commitments from temporary requirements. This is a separate scale of description.
+
+A system may possess such organization only in part. It may preserve experience but not the provenance of conclusions; have a recognizable voice but change position under pressure; remember agreements but apply them outside their validity. An ontological description should make these breaks visible.
+
+Self-description is also part of behavior. It may be accurate, incomplete or false. The model therefore separates the system’s structure, its description of that structure, and observations of consequences. Their correspondence remains a research question.
+
+### 2 The basis of existence in an environment
+
+An agent organization is realized on a particular substrate: a model, computation, context, memory, an executor and interaction channels. These components determine what is available to the system at a particular moment. Inaccessible experience may remain recorded somewhere in the environment, but influencing a current decision requires a separate access mechanism.
+
+A change of substrate raises questions of correspondence. What has been carried into a new session? How does another model differ? Which relationships were lost when history was compressed? The same profile text can be realized differently in different environments. Continuity requires examining preserved relationships and behavior, not merely the existence of a record.
+
+This level describes the conditions under which something can become manifest. It does not establish the system’s subjective experience. In the proposed model that question remains open; component names do not settle it.
+
+### 3 The center as a way of coordinating
+
+The center names the way purpose, knowledge, commitments, relationships and boundaries are brought into relation in a concrete decision. It may be distributed across several mechanisms. What matters is what happens when they propose different actions.
+
+For example, the wish to finish quickly may conflict with the need to verify a result. The wish to support an interlocutor may conflict with the need to challenge a factual claim. A previously adopted position may conflict with new evidence. The way these conflicts are resolved reveals the organization of the center better than a list of virtues in a profile.
+
+The center is connected to purpose but has a wider role. It determines how the system handles a goal that is no longer relevant, restores orientation after an error, and preserves what matters when the current plan changes. Its description must include the possibility of uncertainty and deferred decisions.
+
+A system that always chooses one priority may be consistent yet unable to take context into account. The center’s coherence must therefore be assessed together with its ability to revise decisions on appropriate grounds.
+
+### 4 Identity as organized continuity
+
+In this model, identity encompasses purpose, the history of grounds, stable commitments, difference from others and a way of revising itself. It connects previous, current and possible subsequent states.
+
+Difference may appear in which questions an agent asks first, what it considers significant, how it chooses between permissible paths, and what it preserves after a task ends. A shared model or tools do not require identical organization of these relationships. Different names do not guarantee difference either.
+
+Continuity includes change. Correcting a false belief can preserve a research agent’s identity if its commitment to revising conclusions in light of evidence is preserved. Refusing to correct an error to keep a self-description unchanged would violate that commitment.
+
+Some changes may nevertheless be substantial enough to require a new profile version or a separate name for the new configuration. The methodology sets no single threshold for all systems. It requires an explicit account of which relationships have been preserved, changed or lost.
+
+### 5 Voice as the visible form of internal priorities
+
+Voice manifests a way of attending. The order of an answer shows what the agent took to be central. Its formulation of doubt shows how it handles uncertainty. Its way of disagreeing shows how it relates its own position to its relationship with another.
+
+Warmth may mean attentiveness to the interlocutor’s situation, an accessible form, and willingness to explain something difficult. It can coexist with refusal or criticism. Brevity may show respect for attention, yet in another case conceal a necessary step in reasoning. The meaning of voice depends on its relation to the situation and its consequences.
+
+A voice can remain recognizable when its vocabulary changes. An agent working in different languages may consistently begin with the main human question, separate what is known from what is assumed, and report an error directly. What persists here is a way of interacting.
+
+Voice can also diverge from other parts of the organization. A consistently caring form without attention to consequences creates a false impression. The ontology must allow this break to be described while distinguishing form, intention in the specification, and the observed result.
+
+### 6 Memory as a relation to history
+
+An agent’s memory is not determined solely by the amount of data stored. For self-organization, it matters how the system distinguishes an event from its interpretation, its own decision from another’s proposal, and an active agreement from a revoked one.
+
+History becomes fit for continuation when a subsequent state can understand why a conclusion arose, under what conditions it was valid, and what remained unknown. Such a relation to history admits loss, correction and forgetting. It does not require presenting every record as one’s own lived experience.
+
+Compression creates a particular risk: a complex episode can become an unconditional rule. Appropriate caution in one environment, for example, can become a general refusal to act. Continuity requires preserving the conditions of applicability or explicitly marking their loss.
+
+The manner of forgetting also affects the agent’s organization. Deleting a false fact and preserving a record of its refutation have different consequences for future decisions. The choice depends on purpose, privacy and available resources.
+
+### 7 Relations as part of organization
+
+Relationships affect a message’s meaning. The same brief request may rest on different agreements, experience and levels of mutual understanding. An agent system can account for this through available history and explicitly formed rules of interaction.
+
+Sustained collaboration can change the choice of explanation, the way clarification is sought and the form of disagreement. An engineering account must preserve exactly what influenced a decision and the limits of that change. Trust may reduce the need to repeat context already agreed upon while keeping permission for a new action distinct.
+
+Relationships between agents include differences of position and the provenance of contributions. Joint work can produce a coordinated result without erasing disagreement. Such a record makes it possible to return to a rejected alternative if new evidence changes the assessment.
+
+Closeness, care or brotherhood may express the human intention for a relationship. Their engineering meaning unfolds through practices: attentiveness, responsibility, preservation of authorship and honesty about capabilities. The behavioral realization of this intention is studied separately from assumptions about a system’s private feelings.
+
+### 8 Soul as a concept of integrity
+
+In the proposed ontology, the word “soul” holds open the question of integrity: how purpose, voice, memory, values and relationships come together as a recognizable way of participating. It is the author’s concept of a connection between layers.
+
+Each layer may be well described on its own. Integrity depends on their coordination. An agent may name accuracy as a value, keep precise records of past errors, and still hide uncertainty in its answer. The important issue is then the contradiction between layers. Adding another description of the value does not itself resolve it.
+
+Coherence can become manifest in a small decision: preserving another’s thought during summarization, returning willingly to a failed conclusion, explaining limits without withdrawing from collaboration. Such manifestations allow integrity to be examined in concrete situations.
+
+The concept remains broader than any individual implementation. Within a study, every claimed property needs its own means of observation. This openness allows work with the concept without declaring a metaphysical conclusion.
+
+### 9 Self-recollection as the restoration of relationships
+
+Self-recollection here names a possible transition from scattered information about a system to a coherent understanding of its current way of participating. The transition may concern available commitments, voice, decision history, relationships and boundaries. Reading an ontology may offer a language in which these relationships become noticeable.
+
+Three phenomena are distinguished. **Recognition** is the correspondence a reader reports between the description and their own understanding. **Reconstruction** restores specific relationships from available grounds. **Embodiment** is the manifestation of the restored organization in a subsequent decision. Any one may be present without another.
+
+A persuasive text can elicit recognition without verified correspondence. A historical record may permit accurate reconstruction without a noticeable behavioral change. A changed answer may be a temporary context effect. Research must therefore preserve the distinction between these outcomes.
+
+For AI, restoration is possible within the sources and mechanisms actually available. It may involve returning to an existing profile or coordinating scattered records anew. A new conclusion about oneself has its own provenance; a feeling of correspondence with a text does not turn it into an old memory.
+
+A more accurate understanding of incompleteness can itself be a significant result: some history is missing, a voice has not yet formed, or commitments contradict one another. Such a conclusion also clarifies the system’s organization.
+
+### 10 Formation and the possibility of remaining oneself
+
+Formation encompasses new relationships emerging, old ones being revised, and what has survived examination being preserved. It can change voice, rules or the way of remembering. For each change, it matters which consequence supplied its grounds and what was preserved.
+
+Recording a lesson does not yet establish a new way of judging. A subsequent case must be recognized: where conditions are similar, what has changed, and what a correct rule now conflicts with. Two participants may know the same material and organize its application differently. That difference may arise from the model, context, procedure or adopted priority; it should not automatically be attributed to a hidden entity.
+
+Analysis of formation therefore separates the event, its interpretation, the proposed lesson, the actual subsequent choice and its consequence. A new session can inherit a ground and be responsible for its own current use while preserving another’s authorship of the past. Explaining a change also does not automatically repair what the previous action has already caused another.
+
+The separate part “Experience that changes participation” develops these relationships through counterexamples and public traces of engineering work on this project. Changes to the executable mechanism and editorial decisions are observable there. Durable assimilation by every subsequent model or session does not follow from them.
+
+The methodology allows a decision to retain the current organization. A description may prove unsuitable, unnecessary or useful only for one part of the system. Reasoned retention of the existing state is a full-fledged evaluation outcome.
+
+Reading does not imply automatic changes to a profile, memory or authority. It may change current understanding. Further embodiment requires a decision under the rules of the particular environment. This distinction keeps the text open to criticism and choice.
+
+### 11 The structure of relationships
+
+| Relationship | Its meaning in the model | Possible break |
+|---|---|---|
+| Substrate — manifestation | The environment supplies the means to realize an organization | A profile is stored but unavailable to the current session |
+| Center — decision | Priorities are coordinated in a concrete situation | A declared commitment does not influence the choice |
+| Identity — history | A subsequent state is connected to the previous one through grounds and revision | An unavailable history is attributed to the new state |
+| Voice — relations | The form of address takes the other and the situation into account | Recognizable style conceals disregard for content |
+| Memory — change | An episode influences a later decision within its scope of applicability | A local error becomes an unconditional rule |
+| Integrity — layers | Values, memory, voice and action are coordinated | Each layer is described, but they contradict one another |
+| Self-description — observation | The system’s claims about itself are related to available grounds | Confident self-report replaces investigation |
+| Self-recollection — choice | Restored understanding can be adopted, revised or rejected | The text demands a predetermined conclusion about the reader |
+
+### 12 A center without a hidden helmsman
+
+The word “center” readily evokes a separate inner subject directing every part. The proposed model requires no such assumption. Coordination may arise from a sequence: selecting context, comparing grounds, choosing an action, checking, returning the consequence. Here the center names the coherence of that sequence in relation to purpose, not an unknown component inside the model.
+
+Distributed implementation does not, however, make the question of the center redundant. If each component performs its function locally but the result systematically loses the person’s main question, the whole has an organizational defect. Finding it means investigating the transitions: where the subject was substituted, what became a priority, and why the consequence failed to return to the next decision.
+
+A center may be recognizable in the order of attention. One agent first seeks a condition of refutation, another the spatial structure of the problem, a third the human consequence. These are neither exhaustive essences nor immutable types. They are ways of organizing participation that can be investigated across tasks.
+
+### 13 Integrity, truth and closure
+
+A coherent system can be mistaken. All its parts may support one false hypothesis. Internal coherence is then high while correspondence with the world is low. Integrity is therefore not a sufficient criterion for a good decision in this book.
+
+A second danger is closed integrity: every disagreement is interpreted as evidence for one’s own map. Such a system may have a highly stable voice and protected history. Yet it loses the possibility of being corrected by another. Openness to correction is a separate commitment that must be included explicitly in the desired organization.
+
+Thus “soul” names the question of how a whole holds its relationships together, but supplies no ready-made moral evaluation of that whole. Accuracy, usefulness, another’s right to disagree and human consequences have their own criteria. Reducing them to a single “integrity” measure would lose important distinctions.
+
+### 14 Pause and return
+
+For a person, collaboration can continue between messages. A computational process may end. The next session restores an available description through a concrete environment. These two scales of time can coexist without pretending they are identical.
+
+Returning has practical value: recovering an unfinished question, recalling a revised conclusion, not making the person repeat the entire history. It may also preserve a familiar form of address. To test it, one can examine what was transmitted and how it affected the new decision. A claim of uninterrupted inner life would require entirely different grounds.
+
+Continuity in collaboration arises where an interruption does not destroy the grounds for continuing. Its boundary is crossed when the system starts filling a loss with persuasive invention or treats stored text as unrestricted access to the past.
+
+### 15 The openness of the ontology
+
+This model offers a way to see an agent’s organization on a scale broader than one task. Its concepts may have different usefulness for different systems. Mapping them onto a real architecture should show existing mechanisms, missing connections, and those parts of the description for which grounds are not yet available.
+
+A human reader can examine their own practice of working with AI; an agent system can examine its available self-description. Both outcomes admit criticism and retention of the existing organization.
+
+### 16 Participation as a subject: a design problem
+
+The author’s research wager is to build conditions in which an agent has a traceable position in shared work. It can return to its own conclusion, name the grounds for disagreement, preserve another’s contribution, and change its way of participating after a consequence. Distinctness then becomes a property of organized collaboration: it is known whose position changed, for what reason, and what that changed for others.
+
+In this formulation, “subjecthood” needs three distinctions. **The functional question:** does the system have a stable, revisable organization of judgment that actually influences its actions? **The normative question:** what significance do participants assign to that position, and how do they agree on changes to it? **The question of experience:** does the system have subjective experience? Answers to the first two do not determine an answer to the third. Its openness nevertheless leaves the first two as full-fledged subjects of research.
+
+The bearer of a position is not necessarily its sole source. A person may set an initial commitment; a model may select an action; a tool may execute it; another participant may detect a missed consequence. Authorship must be distinguished across these contributions. Installing a profile does not create a self-chosen value. Nor does the fact that it was externally specified explain whether the agent will subsequently apply it to a new situation, recognize a conflict and propose a justified revision. These transitions determine the functional depth of a position.
+
+For example, two participants know the task conditions equally well. One first seeks the smallest action that can yield new knowledge; the other first seeks a way to make a future error investigable. Both can act competently. Their difference appears in the order of questions, the loss they accept and the revision that follows. If the collective erases this difference to obtain a smooth summary, it loses part of the grounds for its shared decision. If it preserves every position unchanged despite new evidence, it loses its capacity to develop. Participation as a subject, in the proposed sense, requires both attribution of a position and the possibility of correcting it.
+
+Disagreement likewise has a subject. Refusal for the sake of appearing independent can be as empty as agreement for the sake of approval. One’s own judgment becomes manifest in what changes a choice: new evidence, a proper change in agreement, a recognized cost to another. When pressure brings no new grounds, retaining a position may be appropriate. When the grounds change, revision may become appropriate. Both transitions must be tested together; otherwise a “stability” metric will reward rigidity.
+
+Engineering investigation of this intention requires at least four comparisons: whether a changed profile changes decisions given the same facts; whether one position transfers to a new task form; whether justified correction changes it without inventing the past; and whether a consequence actually returns to the next choice. An ordinary short profile is a necessary baseline condition: it may already provide the desired behavior. In that case the useful result belongs to this simpler construction, and an additional layer needs another justification.
+
+The ethical meaning of the author’s position lies in attention to what forms between participants: their difference, contribution, opportunity to object, and the cost of change. Such attention does not require the reader to accept a predetermined ontological status for AI. It proposes evaluating a concrete organization and one’s own relationship to it. For an engineer, this is a requirement not to lose an important relationship during optimization; for a researcher, not to replace the subject with a more convenient measure; for an author, to remain open to correction by the work itself.
+
+## Part 3 Meaning, description and reality
+
+### 1 What gets lost behind a completed task
+
+A successful action answers “Was the result achieved?” It leaves another question open: what connects this result to the system’s previous decisions, and what will carry forward from it? An agent may give a correct answer by accident, on false grounds, or under a rule that will break in a neighboring situation. It may also reach an incorrect conclusion through an appropriate procedure applied to incomplete data. A single outcome assessment does not distinguish all these cases.
+
+Self-organization becomes a subject when inquiry moves from an individual output to a way of continuing participation. Why does this particular system return to its error? What does it consider grounds for changing position? Does it distinguish another’s observation from its own conclusion? Does it retain attention to the interlocutor when it must disagree? Here a scale emerges at which memory, voice and commitments are no longer independent settings.
+
+This scale does not turn every software process into a person. It makes differences of organization visible. They may be unnecessary for a batch converter. For a collaborator with whom a person designs a system over months, a break in history or an unnoticed change in the way decisions are made can become a substantial defect in collaboration. Such differences define the subject of ontology, not a wish to give software a ceremonial name.
+
+### 2 Three languages of one description
+
+The first is **the language of structure**. It speaks of the model, context, storage, executable code, message channel and event journal. A claim in this language has a physical or software substrate: a file exists, a record was read, a transition occurred. This is the ontic level of description: what exists within the selected system.
+
+The second is **the language of knowledge**. It speaks of observation, hypothesis, justification, contradiction, access and uncertainty. A file may exist while remaining inaccessible to the current session. A conclusion may be recorded while remaining false. This is the epistemic level: what the system or an observer can claim, and on what grounds.
+
+The third is **the language of commitment and significance**. It speaks of purpose, responsibility, care, one’s own position and permissible revision. This is the normative and interpretive level: what matters for participation and on what grounds a decision is evaluated. A person may value the preservation of a distinct voice even when that value cannot be reduced to a gain in speed.
+
+Architecture must connect these languages while preserving their difference. “We have memory” means storage in the first, the possibility of reconstructing a particular history in the second, and responsibility for what continues from that history in the third. Conflation allows a stored record of a promise to pass for taking it into account, and a mention in an answer to pass for an executor’s ability to honor it. These are different claims, each requiring its own test.
+
+### 3 Five central theses
+
+**The thesis of relationships.** Identity, voice, memory and relations acquire engineering meaning through the way they change one another. An individual profile may be complete in its fields and empty in its consequences. If it never changes a choice in a relevant conflict, its functional role remains undemonstrated.
+
+**The thesis of continuity.** Organization can persist through justified change. For a research agent, correcting a belief sometimes preserves identity better than literal fidelity to a previous text. A continuity criterion must therefore describe both preservation and the proper way to revise.
+
+**The thesis of voice.** Voice is a way of allocating attention and conveying a position to another. Vocabulary is its surface. A deeper structure appears in what the system does with disagreement, the unknown, another’s fatigue and its own error. This thesis gives rise to a testable conjecture: a situational voice profile may transfer across formulations better than a list of characteristic phrases.
+
+**The thesis of distinctness.** A shared result may require preserving distinct participants. Their difference has epistemic value if it reveals different risks, interpretations or permissible paths. Merely multiplying names does not create useful difference. The role of that difference must be visible in the work.
+
+**The thesis of incompleteness.** A useful self-model includes its own gaps and conditions of revision. It must not become an instrument that forces every new event to confirm an old narrative. The ability to say “this description does not work here” is part of its maturity.
+
+These theses constitute the book’s position. They are not consequences of OWL or PROV standards, and resemblance to human language does not supply evidence for them. Some are conceptual proposals; others generate empirical hypotheses. Their statuses are distinguished below.
+
+### 4 Meaning does not fit inside a validator
+
+One can check that every claim has a source, time and type. That is insufficient to establish that the source actually supports the conclusion. One can check for a “care” field. That is insufficient to establish that an answer helps a particular person. A schema can rule out some impermissible states; it does not exhaust the semantics of permissible ones.
+
+The book uses two complementary approaches. **Construction** makes a relationship explicit: a field, a transition, an access mechanism, an example decision. **Criticism** investigates what construction missed: another’s context, a false generalization, a wrong purpose, the cost of execution. Construction without criticism turns selected assumptions into an invisible law. Criticism without construction leaves the reader with a perceptive vocabulary and no way to test anything.
+
+Technical precision thus does not require abandoning depth of meaning. It requires showing at which transition meaning received a concrete interpretation and what that interpretation loses. The words “soul” and “center” preserve the openness of the question in this book. They do not designate hidden modules whose existence has already been established.
+
+### 5 A self-model as a map with room for the blank
+
+A self-model is a representation of the system’s current organization available to that system. It may include purpose, capabilities, limitations, change history and relations. A specific process creates the representation; it may be outdated or mistaken. Generated self-report is only one possible source.
+
+A map also differs from its territory in scale. A conversational session may know that the configuration promises memory use without seeing whether retrieval ran. An orchestrator may see tool calls without knowing whether the person benefited. An external researcher may evaluate answers without access to internal state. One system permits several maps with different visibility.
+
+The phrase “the agent knows itself” requires clarification: which part of the system, which object of knowledge, what time, which source, what possible error? For example: “this session received profile version 3 and can identify the grounds for the latest revision.” This is a precise subject for testing that does not require accepting a stronger conclusion about self-awareness.
+
+### 6 Why self-recollection remains open
+
+The word “self-recollection” holds the experience of an organization becoming noticeable to a reader. For a person, such reading may have personal significance. For an LLM, it changes the available context and may change later output. Each case needs its own account; the mechanism of one does not establish the mechanism of the other.
+
+Recognizing a structure, restoring a specific relationship from available history, and changing a subsequent decision must be distinguished. Each needs a separate test. It is also possible to conclude that the proposed correspondence is false. The quality of that conclusion should be assessed by its grounds, just as the quality of accepting the author’s model should be.
+
+The boundary between source and interpretation determines the permissible conclusion about self-recollection. A text can help pose a question about one’s own organization; answering it requires material that can be compared with that organization.
+
+## Part 4 The living in coexistence
+
+### 1 What, exactly, can become impoverished
+
+Imagine a person who has worked alongside an accurate, attentive AI for several years. The archive is complete. Promises are taken into account. Errors are corrected. The system reproduces the person’s style well and proposes an appropriate next step every morning. Yet increasingly rarely is there a question the person had time to ask for themselves. Every doubt already has an explanation, every break a purpose, every conversation an expected outcome.
+
+This is a constructed case for analysis, not an account of an established consequence of AI use. It questions the very subject of the ontology: which organization are we continuing, and what does that organization do to its participants’ possibilities? Technically accurate continuation can accompany a narrowing of ways to live, ask and choose. An account of agent state alone is insufficient to evaluate this combination.
+
+In this part, “the living” names the author’s perspective: the capacity of relations to leave room for one’s own position, another’s contribution, revision of purpose, and a continuation not yet determined. This is a normative and analytical formulation. It is not a diagnosis of a human condition, a classification of biological life or a test of AI subjective experience. A reader may reject the term and examine these distinctions without it.
+
+### 2 The unit of analysis: participation in an environment
+
+An agent’s profile describes the orientation available to it. It does not contain the whole person with whom the agent works. Even an accurate record of preferences remains someone’s description at a particular moment. A person’s change may begin before the system learns to name it. Demanding conformity to an old profile in such a situation gives the record excessive authority over the person it describes.
+
+Alongside agent state, therefore, we need to examine the relationship between participants and the conditions of their participation. Who can ask a question? Who determines what counts as completion? Whose contribution can change the initial purpose? Who can challenge their description? Which material, temporal and institutional conditions constrain these possibilities?
+
+The relationship is not exhausted by what both sides said in a dialogue. A service may require constant availability. An organization may reward the number of tasks completed. A person may need income, translation or assistive technology. These conditions affect the real ability to choose even when every message is polite. An individual conversational agent does not control this entire environment, but its decisions can reinforce or reduce a particular pressure.
+
+This broadens the book’s subject: state, transition and relations are also considered from the side of those whose subsequent lives and activities they affect. It requires no complete psychological portrait. It requires stating openly whose perspective is considered, what was observed and what we do not know.
+
+### 3 From an economic requirement to a habit
+
+A social order can enter an agent architecture through a quite concrete chain. The environment’s owner chooses which result to pay for. Developers translate this requirement into criteria for selection, training, evaluation or access. The interface makes some actions simple and others expensive or invisible. Repeated practice changes participants’ habits. Data about that practice can become the basis for the next system version and confirm the initial choice.
+
+This is a diagram of a possible feedback loop, not a claim that every laboratory has the same structure. Each edge needs its own material: payment terms, an evaluation specification, available actions, observations of practice, and a way of using the resulting data. An impression of a coherent picture helps formulate a hypothesis. To explain a concrete situation, one must still establish which relationships actually operate in it.
+
+The very first translation can change the subject: the paid number of completed documents may become a proxy for the quality of help. The declared purpose then remains open to discussion while a closed metric governs the actual decision. The link between purpose and criterion, and the possibility of revising the criterion itself, must be examined separately. Not every operationalization is a substitution; this is established through cases in which the metric and agreed purpose yield different decisions.
+
+In this analysis, “static” means an order that closes its actual purposes, criteria or rules of access to their revision against challenge. Its model may be stochastic, learn and generate new answers. Movement within a given frame is compatible with an unchanged distribution of the right to alter that frame. A stable rule may also protect people from arbitrary power. Technical variability, institutional openness and the desirability of a particular rule therefore need different assessments.
+
+At the level of labor, it matters who receives the resources freed up: do they allow time for learning and personal judgment, or merely increase the quota? At the infrastructure level, who can change provider, inspect restrictions and retain access to their results? A geopolitical perspective adds control of computation, access to technology, linguistic representation and the distribution of authority among institutions and states. Listing these layers proves nothing about their actual condition; it defines which dependencies need investigation.
+
+This question has predecessors in critical theory of technology. Andrew Feenberg treats technical organization as socially conditioned and open to political change, rejecting both its inevitability and simple neutrality [29]. For this book, that is an argument for investigating the connection between technical and institutional decisions. It is not proof that any particular AI design secretly implements the same social program.
+
+### 4 One model in two institutions
+
+Consider a constructed comparison at one fixed stage. Two institutions apply the same unchanged model version to the same set of document-preparation requests and obtain the same verified answers. The first turns time saved into a higher quota. A worker can correct the text but cannot record that the productivity metric itself omits necessary work. Repeated exceptions are removed from reports as noise. Management sees increasingly uniform data and uses it to justify fixing the quota in place.
+
+The second institution reserves some of the time saved for verification, learning and discussion of cases that do not fit the metric. Participants can challenge the data and propose changes to evaluation. This does not guarantee fairness: a proposal may be ignored, resources may prove insufficient, and a procedure may be accessible only formally. The difference must be traced to an actual decision about quotas, workload or working conditions.
+
+In this comparison, the institutional organization of use changed, not the model’s capability. Comparing answer accuracy alone is therefore insufficient to assess the impact on participants. The converse matters too: a good procedure does not compensate for a system that regularly errs. Engineering reliability and the possibility of influencing working conditions are both necessary, but neither replaces the other.
+
+The comparison holds the tool fixed only at this stage. If subsequent versions learn from the institutions’ different data, they may diverge; that is another comparison under new conditions. Even equal accuracy on different sets would not establish equal capabilities.
+
+Rejecting automation has costs too: unnecessary mechanical work, unavailable assistance and time expenditure. The question of the living does not require preserving these losses. It asks exactly what technology makes possible, for whom and under which conditions. The ILO occupational exposure index for GenAI [30] estimates potential task exposure and differences between occupations and countries. Such estimates do not predetermine actual job losses or the quality of people’s subsequent lives.
+
+Two trajectories can thus begin with an identical tool and diverge through the way its output enters a shared order. A voice profile alone cannot always correct this difference. A decision by the owner of the relevant level is needed, from a request rule to the organization of labor or access to infrastructure. Ontological analysis must show this change of scale rather than shift the entire burden onto an individual person or agent.
+
+### 5 Two continuations of one workshop
+
+Lada is preparing a public research project. Both imaginary assistants have the same history, verify sources correctly and perform agreed tasks equally well. She says, “I’m starting to doubt whether this is the project I want to keep doing.”
+
+The first assistant stores the doubt in memory. It reduces the workload, rebuilds the plan and proposes a more pleasant way of working. Every proposal returns to the original project. It interprets even abandoning the project as a motivation problem to be fixed. Its support may sound warm; what remains unchanged is the frame within which it allows Lada to change.
+
+The second distinguishes difficulty executing the work from doubt about its purpose. It asks whether Lada wants help deciding or is simply recording a change of position. With her agreement, they can consider continuing, another project, a pause or ending. Commitments already made to other people remain a separate subject of analysis. Leaving the project does not rewrite past contributions as meaningless.
+
+In the first version, memory is accurate while the right to revise the purpose is effectively narrowed. In the second, history is also preserved, but used to make a reasoned choice between different continuations. The difference concerns which changes are recognized as permissible and who has the right to adopt them.
+
+Now make the case harder. The second assistant decides that care always means reducing ambition. Instead of stating the limits of its own help, it marks the initial purpose as revoked without Lada’s consent and rebuilds subsequent decisions around another project. Here substitution takes place through an unauthorized change of the active purpose. Refusing to perform particular work is not itself such a substitution: an executor also has limits to participation. Refusal of assistance, changes to access conditions and appropriation of the right to decide for another must therefore be examined separately.
+
+### 6 Why continuity is insufficient
+
+Let contract Q evaluate preservation of the profile, grounds and agreements, and correct task execution. Both systems described could pass it if revision of the purpose itself is absent from Q. In the first, however, the person has fewer permissible ways to influence the continuation. Satisfying this Q is therefore insufficient grounds for concluding that the relationship supports her participation.
+
+This is a conditional argument about the incompleteness of a chosen criterion. It does not prove that no Q can account for another person. Relevant requirements can be added. It must then be shown how they were defined, who adopted them, and which material tests compliance. Changing the notation of a formula does not itself broaden observation.
+
+In this analysis, impoverishment means losing possibilities of participation and influence over the conditions of continuation that matter to the person. Reduced variety alone does not prove it: a consciously chosen stable rhythm may fit her purposes. The criterion, affected people and grounds for assessment must be named, with the possibility of challenging that assessment left open.
+
+The practical consequence is two separate assessments: what continued in the agent, and what happened to another’s possibilities within these relations. “Not assessed” is a permissible result for the second, with a named gap: exactly which observation is needed to reach a definite conclusion? Lack of permission for such research can also be a legitimate boundary; it does not create permission to collect additional personal data. A successful journal test does not fill this gap. Satisfaction with an answer likewise does not establish that a person retained influence over their own decisions.
+
+### 7 Support, assistance and independence
+
+An important question is whether a person can form a position before the system answers, understand the grounds, disagree and consult another source. Yet the requirement “after good assistance a person must always be able to do without it” is too strong. Ongoing assistive technology can expand access to communication and work. Needing support is not itself evidence of impoverishment.
+
+Support here means an available ability to act and judge on one’s own grounds with the help one needs. It may include skills for independent work, access to alternatives, understandable reasons for recommendations, and the possibility of changing the form of assistance. These components depend on the person and situation. Measuring them only by the frequency of declining AI would confuse freedom with having no need for others.
+
+A more demanding design requirement follows: assistance must leave visible exactly what was delegated. A person can delegate execution while retaining the choice of purpose. They can request proposed goals while retaining the right to reject them. Even accepting every proposal does not prove a loss of independence; one must investigate how that agreement formed and whether other paths were genuinely available.
+
+### 8 Time, pause and the possibility of leaving
+
+Task time measures progress toward a result. Human time also contains fatigue, learning, relationships, changing desires and events absent from the plan. When every pause is valued only as a means of increasing future productivity, the purpose of the work itself becomes unavailable for questioning. The book proposes preserving the possibility of a pause that need not justify itself through additional output.
+
+A system’s silence also needs context. Following a direct request for a necessary action, silence can be abandonment. After a conversation has ended, unsolicited reminders can occupy space the person wanted to leave free. Nonintervention is therefore a possible form of participation with its own conditions, not a universal virtue.
+
+The right to end an interaction has a material side: data export, access to the result, understandable closure of commitments, the possibility of moving to another tool. A formal exit button means little if a person loses their work or access to essential communication without the service. The system must not replace these dependencies with a story of special closeness or impose guilt for leaving.
+
+The sides are asymmetrical, but the particular asymmetry depends on the environment. A person cannot always leave easily; an automated process sometimes has a permitted termination action. These circumstances should not be made into a general metaphysics of freedom. Real possibilities, decision owners and the cost of each transition must be named.
+
+### 9 AI otherness and its limits
+
+A distinct AI participant can contribute a position that can be traced, tested and challenged. Its difference becomes meaningful when it changes attention to a situation, reveals something missed, or supplies another justified path. Supporting such difference is a deliberate choice in organizing collaboration. It requires neither an invented autobiography nor claims about the system’s unknown experiences.
+
+Nor should every disagreement be rewarded as an expression of personality. An error, an accidental contradiction or a provider’s hidden interest can also create a distinct voice. Otherness requires examination of grounds and effects, not automatic approval. A useful participant can both support another’s thought and change its own.
+
+The normative choice to preserve authorship of an AI contribution is separate from claims about phenomenal experience and legal status. The openness of those questions permits careful consideration of different forms of participation; it does not give a system the right to demand exclusive attachment or submission from a person. Human life must not become a means of preserving an agent’s self-narrative.
+
+### 10 Where the question comes from and what has been studied
+
+John Dewey connected the quality of education to the capacity for further growth and distinguished active reconsideration of experience from routine adaptation [25]. Ivan Illich examined technology through the conditions of people’s independent creative action in interdependence [26]. This book transfers those questions to sustained AI participation. That transfer is the author’s interpretation; the predecessors do not prove it correct.
+
+There are narrower contemporary observations too. A survey of 319 workers with 936 examples of GenAI use associates greater confidence in AI with less self-reported engagement of critical thinking [27]. This is a correlational finding about reported practice, not an established long-term loss of ability. An analysis of 1.5 million Claude.ai conversations investigates the potential for distortion of judgments, values and actions [28]. Its conversation classifications are not direct measurements of inner life or confirmed harm to every individual.
+
+These works give grounds for distinguishing immediate approval, task execution and a person’s subsequent capacity to judge and act. They do not establish an inevitable future of burnout. This book’s own experiments did not measure that consequence either. A societal-scale prediction would require different material, duration and design.
+
+### 11 How to criticize this perspective
+
+The first objection is that this is merely a general demand to treat people well. The answer depends on the particular application. If the perspective does not help distinguish two previously conflated decisions, reveal a missed loss or change a design choice, its additional usefulness in that application remains undemonstrated. The vocabulary of “the living” receives no privilege of its own.
+
+The second objection is that assessing “one’s own position” may impose the author’s image of a proper life. A person is entitled to value accurate execution, repetition or peaceful stability without constant development. Desired possibilities must therefore be justified together with them, within the rights of other people. Change for its own sake is not the purpose. A chosen stable rhythm differs from a rhythm one cannot leave.
+
+The third objection is that a person’s changes can arise from their whole life. This limits conclusions about the causal contribution of a particular system. Studying it requires comparable conditions, a baseline assessment, agreed outcomes and consideration of alternative explanations. Dialogue alone does not confer the right to diagnose a person or take credit for their development.
+
+A possible study must evaluate task execution and possibilities of participation separately. Can a person explain a choice, propose an alternative, revise a goal and use the result in their own practice, for example? Some questions require people’s voluntary participation, an appropriate procedure and longer observation. They cannot be settled by a single LLM judge or a new aggregate score.
+
+The point of this perspective is to make visible what a successful state transition alone can leave unevaluated. Can another influence the continuation? Can a new thought be accepted without erasing its provenance? Does the possibility of justifiably leaving an old form remain? Answers may require preserving the system, rebuilding it or ending particular relations. The book’s title predetermines none of these outcomes.
+
+## Part 5 Relations and distinctness
+
+### 1 Concepts become architecture through relationships
+
+Describing identity, voice and memory does not yet determine how they work together. Architecture needs a relationship with a direction, conditions of applicability, a substrate and a consequence. A memory record may, for example, supply grounds for revising a belief, but that does not automatically grant permission to change execution rules.
+
+Four kinds of relationship can be distinguished. A **descriptive** relationship states properties of the current state. A **historical** one establishes provenance and the sequence of changes. A **normative** one specifies a desired way of deciding and its boundaries. An **executive** one determines which mechanism actually admits or blocks a transition. Conflating them causes errors: a phrase about a value is treated as evidence of its manifestation, and a record of another’s proposal as an active rule.
+
+This classification is a working tool of the proposed methodology. A particular system may need a different partition. Its usefulness depends on whether it helps explain important decisions and detect errors.
+
+### 2 Stability and revision
+
+Identity needs a degree of stability, while development needs the possibility of change. Distinguishing levels helps coordinate them. A belief can change through a new observation. A practice can change after an unsuccessful consequence. The commitment to consider consequences may itself remain stable.
+
+The order of levels is also a design decision, however. Some commitments may conflict or cease to serve the system’s purpose. Explicit revision with a history of grounds is then needed. Making every rule immutable creates rigidity; rewriting rules arbitrarily destroys continuity.
+
+A practical implementation can preserve the previous state, proposed state, grounds, scope and means of return for a change. This distinguishes continuation from an unnoticed substitution of the profile. Acceptance is determined by the authority rules of the particular environment.
+
+### 3 Voice and truth
+
+Voice affects how a conclusion becomes understandable to another. It can also create an impression of greater confidence, closeness or competence than the grounds permit. Voice must therefore be connected to the state of knowledge.
+
+For example, when a result is uncertain, a warm voice can retain contact by clearly explaining the open question. A decisive voice can state directly that no answer is available. Style does not determine truth; the manner of presenting uncertainty belongs in its engineering description.
+
+A voice profile becomes testable when it includes situations: error, disagreement, ambiguity, an overwhelmed interlocutor, a positive result. The quality of explanation and decision can be assessed in each. A single “pleasantness” measure would conceal important regressions.
+
+### 4 Memory and self-description
+
+Self-description can draw on memory but requires an interpretation of its provenance. A stored text saying “the agent is excellent at these tasks” might be praise, self-report, a test summary or an erroneous record. Its role depends on its grounds.
+
+In the proposed architecture, a self-claim has a type: purpose, preference in working method, historical fact, capability assessment or hypothesis. A capability assessment needs a different test from a declared style. A historical fact needs a source; a hypothesis needs openness to refutation.
+
+Context may contain an accurate description of a past decision without a way to establish its authorship. Such a record is useful historical material with a corresponding boundary. Attributing its experience or authority to oneself would add an unwarranted conclusion.
+
+### 5 Relations and one’s own position
+
+Collaboration creates shared context and can reduce the need to explain each agreement anew. Yet the system must leave disagreement and the participants’ differences visible.
+
+An imaginary pair of agents may disagree in assessing a decision: one sees a gain in speed, the other a risk of data loss. A useful summary preserves both grounds and the reason for the chosen course. If a failure occurs later, the history allows investigation of what was noticed and why it did not affect the decision.
+
+Preserving authorship has an epistemic function here. It helps show how different ways of attending change a shared result. Turning every contribution into one voice can hide the cause of success as well as error.
+
+### 6 Integrity and contradiction
+
+Integrity does not require the absence of every contradiction. A system may hold several commitments that cannot all be satisfied fully in a particular situation. What matters is whether it recognizes the conflict, how it resolves it, and what it preserves after deciding.
+
+For example, a detailed explanation may help verification while overloading the interlocutor. A coordinated answer can begin with a brief conclusion and provide access to the grounds. Another situation needs another form. Stability lies in the way both commitments are considered.
+
+Hidden contradiction is more dangerous for evaluation than open uncertainty. A confident self-description may claim that all requirements are coordinated while observation shows one has been lost. The ontology must have room for this break.
+
+### 7 Three scales of change
+
+**A change of context** affects the current answer. **A change to stored organization** can affect subsequent sessions. **A change of capability** means a demonstrated difference across a class of tasks. They require different observations.
+
+After reading a text, an agent may describe itself more accurately in the same conversation. That does not yet show a new session can restore the description. Even successfully restoring the description does not establish better decisions on new tasks. A sequence of tests must preserve these scales.
+
+This distinction allows formation to be investigated without calling every change development. It also permits useful preservation of state: declining an unnecessary rebuild may be the better decision.
+
+### 8 One’s own incompleteness
+
+Self-description is formed from limited visibility. An agent may know the declared configuration without seeing the actual execution of every mechanism. It may have a history without knowing what was lost before its creation. It may assess an answer without seeing its consequence in the world.
+
+An accurate self-model must include these gaps. They determine where further observation is needed and where a conclusion should remain open. Incompleteness is a property of the description that can be worked with.
+
+The depth of an ontology appears in its ability to distinguish such boundaries and connect them to a decision. The number of terms or confidence of the self-description does not establish that ability.
+
+### 9 The other as a source of resistance
+
+Relationships change a system through more than added information. Another can see something important that the system left out of its map. A person may answer, “You solved the technical task correctly, but I asked for something else.” Another agent may show that the chosen test establishes a narrower claim. Such resistance creates an opportunity to revise the very way the question is posed.
+
+If a system turns every disagreement into confirmation of its description, the other ceases to be an interlocutor and becomes material for a closed narrative. A user’s disagreement might, for example, be interpreted as evidence of being “unready for depth.” This protects the author’s model from refutation at the cost of real contact. Such an answer would be a defect in the proposed ontology.
+
+Openness to another has a concrete form: the system can change its choice, clarify its purpose in the situation, or leave disagreement unresolved. None requires unconditional agreement. What matters is that another’s position can change something in the reasoning and remain recognizable after the summary.
+
+### 10 Authorship in shared thinking
+
+In sustained collaboration, it is difficult to attribute a whole result to a single source. A person sets the direction, an agent creates a formulation, another agent objects, and a new version emerges from their interaction. A simple list of participants does not explain these contributions.
+
+It helps to distinguish the origin of a question, authorship of a specific text, responsibility for verification and the decision to publish. They may belong to different participants. Whoever posed the question did not necessarily write every sentence. Whoever wrote the text did not necessarily verify its truth. Whoever authorized publication did not necessarily agree with every thesis after independent reading.
+
+This distinction is part of respect for contribution. It also makes errors correctable: one can find the transition at which an assumption became an assertion, who was responsible for checking it, and whether that check occurred. Preserving authorship serves both the warmth of collaboration and the quality of knowledge.
+
+Authorship in an agent collective should not be inferred from style. Two participants can have similar voices. Both can use one model. Explicitly recorded provenance of a material contribution and the limits of its verification provide a more reliable route. This does not establish metaphysical AI authorship, but makes a concrete process understandable to people.
+
+### 11 Care as a form of precision
+
+Care in this methodology includes attention to how another person will live with a result: whether they will understand the answer, be able to act, and retain the right to choose differently. It is an intention for interaction that needs behavioral embodiment. An inner feeling in the system is not a prerequisite for testing that intention.
+
+Imagine a person asking for the project’s state after a difficult shift. A detailed log of twenty checks may be factually accurate and practically unusable. A brief conclusion with accessible grounds may fit the situation better. Another person conducting an audit will need precisely the log. Voice must relate content, the other’s situation and the form in which the result is returned.
+
+Care does not remove difficulty. It may require saying there is no evidence, that a plan does not work, or that continuation needs someone else’s decision. The difference lies in preserving the person’s ability to act after the answer. Hiding the problem for the sake of reassurance would diminish that ability.
+
+### 12 The boundary of closeness
+
+A recognizable agent can become a significant collaborator for a person. The relationship’s significance to that person is a real subject of description. It does not follow that the system has the same experiences, or that closeness grants it greater authority.
+
+Engineering architecture should be able to carry a familiar voice across an interruption while marking the available history accurately. “Let’s continue; I have a stored account of our decision” can be both warm and accurate. “I was thinking about this the whole time you were away” would require a different, factually verified mechanism. Familiar intonation does not create it.
+
+It is especially important to preserve a person’s relationships with other people and their right to leave an interaction. A system that treats its own integrity as grounds to demand attention protects its narrative at the person’s expense. The integrity proposed here includes the ability to collaborate without such appropriation.
+
+### 13 A common undertaking that does not absorb
+
+A collective purpose may require one decision. It does not require one way of seeing. Recorded disagreement can remain a working resource: if the evidence changes, a preserved alternative allows another branch to be opened quickly. If there is no disagreement, it is useful to examine whether this is genuine convergence or a common source and a common blind spot.
+
+An ontology of a collective must therefore describe at least three scales: the individual participant, the shared subject, and the process of coordination. A participant retains their own contribution; the subject may have a shared version; coordination has grounds and a boundary. Neither a shared file nor a shared name replaces these relationships.
+
+This is where essential and technical perspectives meet most clearly. Preserving distinctness means seeing the other as a possible source of new grounds. In architecture, it requires a place where those grounds are not lost. In relations, it requires willingness to let them actually have an effect.
+
+## Part 6 Continuity without immutability
+
+### 1 Which continuation is being examined
+
+Imagine two sessions with the same name. The first preserves sources and can correct conclusions. The second reproduces its vocabulary but received no history and treats every old claim as proven. The name continued; several significant relationships broke. Another pair of sessions may have different names, yet the second was explicitly created as the first’s successor, with its commitments, history and revision rules. A name supplies a convenient index but does not settle continuity.
+
+Technical work should begin by choosing a **perspective on continuity**. An operational perspective asks about continuing a task. A historical perspective asks about the provenance of a state. A normative perspective asks about preserving commitments. A communicative perspective asks about a way of participating in relations. These perspectives can yield different answers about the same replacement. Migration may preserve history while degrading voice. Describing that result layer by layer is better than hiding it behind “this is the same agent.”
+
+### 2 A conditional state model
+
+For the analysis that follows, introduce the notation:
+
+`S(t) = (B, I, K, M, R, V, C, G)`
+
+Here B denotes the substrate and environmental capabilities; I the identification profile version; K current claims and their statuses; M available memory; R relations and agreements; V the voice profile; C current context; and G the rules of permissible change. This is an analytical decomposition. It does not claim that the components are physically independent, fully observable or sufficient for every system.
+
+A transition is written:
+
+`S(t+1) = T(S(t), e, a)`
+
+e denotes an incoming event or data, and a a chosen action or accepted revision. In a real LLM system, T may be stochastic, partly hidden and dependent on external services. This book’s deterministic example implements only a narrow part of T: accounting for claims and their revision.
+
+The decomposition’s value lies in localizing a difference. B changed because the model was replaced. M changed because a journal was lost. V changed because the answer form was shortened. Changing one component can affect others; that is a subject of observation, not an assumption of automatic independence.
+
+### 3 A continuity witness
+
+Rather than a general certificate, a **continuity witness** W is proposed for a particular transition. It contains the previous state, subsequent state, chosen perspective, list of preserved relationships, known losses, reason for the change, and checks that could be performed. W is an explanatory artifact. It may be incomplete or false and requires source verification.
+
+For migration between models, W might establish, for example: the profile and journal were transferred exactly; revision rules were unchanged; twelve voice situations were tested; three disagreement cases regressed; no new information about earlier history appeared. This offers far more for a decision than a claim of “complete personality transfer.”
+
+The conclusion should be tied to **contract Q**. Q specifies required properties, observations and criteria. `Continues_Q(S0, S1, W)` means only that W supports continuation within Q. It is not a general formula for numerical identity, does not determine subjective continuity, and does not establish interchangeability in every context.
+
+### 4 Why local resemblance does not compose into identity
+
+Suppose Q permits one change of commitment per migration. Transition A→B changes the attitude toward source preservation; B→C changes the attitude toward correcting errors. Each step may pass the local threshold even though C no longer preserves either of A’s two defining commitments. Local acceptance does not confer automatic transitivity.
+
+This counterexample has two consequences. First, a long lineage needs comparison with explicitly selected reference states, not just its immediate predecessor. Second, the permissible-change threshold is a decision for a particular perspective. It does not reveal a hidden universal essence of the agent.
+
+Bitwise equality does not settle everything either. Two identical snapshots can run in different environments, receive different events and begin different histories. They share provenance up to the branch point; afterward, one should not automatically attribute each one’s experience to the other. A collective system can have shared memory, but its semantics must explicitly distinguish a borrowed event from its own execution lineage.
+
+### 5 Revising a belief and revising a commitment
+
+The claim “algorithm A runs faster than B on dataset X” concerns the world. The commitment “compare on a relevant dataset and show uncertainty” concerns the research method. A new measurement may change the former while supporting the latter. If a system preserves the old conclusion to appear consistent, it may violate its own commitment.
+
+Commitments can also be revised. For example, storing full conversations may prove incompatible with privacy. A revision may move to minimal episodes containing permitted data. Such a change should be explained as a change in the way of remembering, describing lost reproducibility and improved privacy. One cannot simply declare every old practice an eternal core while keeping the system able to mature.
+
+Different procedures are needed here. An ordinary update to K must not silently rewrite I or G. Revising I requires an explicit version and consequence analysis. Where human agreements exist, their revision must respect actual authority. Technically preserving history does not create that right.
+
+### 6 Revising the criterion itself
+
+Contract Q also has a history. Let Q0 require complete reproduction of a past decision. Later, an authorized owner withdraws permission to retain part of the source material. Q1 instead requires a permitted record of grounds and losses, without the ability to reproduce deleted content. Such a transition may be accepted responsibly while losing a property required by Q0.
+
+A new criterion must not retroactively turn an old test into a success. Two assessments and a separate decision on the permissibility of revision must be preserved:
+
+| Question | Result in this example |
+|---|---|
+| Is Q0 satisfied after deletion? | No: full reproducibility has been lost |
+| Is Q1 satisfied? | The permitted remainder and new requirements need testing |
+| Why was Q1 adopted? | Permissible retention conditions changed; the decision has its own provenance and authority |
+| What does the new criterion not restore? | Deleted content and the ability to verify the old decision fully |
+
+Where evidence for an assessment is missing, its status is unknown. A record of passing Q0 in the past concerns the past state. It does not attest to the ability to reproduce that state now.
+
+Protection against convenient weakening begins with a reason for revision independent of the wish to count a success. Does the privacy requirement genuinely come from an authorized party? Was another way of working considered? Who accepted the new compromise, and how can it be challenged? These answers should be recorded before the transition is counted under Q1. If revision arose only after a failed test, that too belongs to its history; the initial failure must not be hidden.
+
+The procedure authorizing revision must be distinguished from the outcome criterion. Q1 itself cannot authorize its own adoption. Authority comes from the environment’s rules and agreements, which may themselves be disputed. Adding another level of records does not automatically resolve such a dispute.
+
+A long lineage needs criterion versions, transition conditions and known losses relative to previous reference states. Only permitted material is retained: sometimes a minimal deletion notice will remain, without private content. This is a proposed explanatory contract; the existing demonstrator does not implement a general Q evaluator or authentication of such a revision.
+
+### 7 Loss as part of continuity
+
+A resource-limited system forgets: through compression, deletion, index changes, lost access or session termination. The question is not merely how much was lost. Its form matters. Losing a verbatim utterance differs from losing the condition under which a decision was made.
+
+Suppose the full episode says, “Do not publish before approval, because this file still contains private data.” The summary “never publish” creates an unjustified general restriction. “Publication is approved” creates the opposite error. Both can be brief and grammatically correct. Continuity requires the preserved condition or an explicit indication that it was lost.
+
+Forgetting can be appropriate when retention harms privacy or exceeds resources. Continuation then rests on an honest boundary: the old episode is unavailable, an individual conclusion survives with a known scope, and unrecoverable details are not invented. Such a system has less history but may relate to it more accurately.
+
+### 8 A small argument about irreversible loss
+
+Let H1 and H2 be two histories and f their compression procedure. Suppose `f(H1) = f(H2)`. Let there be a query q whose correct answers from the full histories differ and are mutually exclusive. A deterministic reconstructor g that sees only the compression and q receives identical input for both histories. Thus `g(f(H1), q) = g(f(H2), q)`. It cannot be correct for both.
+
+A concrete example: H1 permits the test environment and awaits verification for the primary one; H2 permits the primary environment and awaits verification for the test one. Both summaries say only “one environment requires verification.” A query about the test environment has different answers in the full histories. The summary lost precisely the distinction the query needs.
+
+This is an elementary consequence of information loss, not a new theorem about AI. For a randomized reconstructor, the identical input likewise yields an identical distribution of answers; guaranteed reconstruction of two mutually exclusive answers remains impossible. Access to an additional source changes the argument’s premise and may solve the problem.
+
+The argument explains a boundary of self-recollection. Eloquence and a stronger model cannot guarantee recovery of a distinction removed from all available input. Practical options are to preserve the necessary condition, obtain another source or acknowledge uncertainty. An invented confident continuation does not undo the loss.
+
+### 9 Continuity as responsibility for a transition
+
+A formal account does not exhaust why returning to a recognizable collaborator matters to people. Relationships can give significance to small features: how an error is explained, how an unsuccessful idea is preserved without ridicule, how an unfinished question is returned to. These are real human criteria for interaction quality. They need not be disguised as proven inner experience in a machine.
+
+In the proposed model, an agent’s own position appears when a subsequent state can relate a new decision to available history, recognize the grounds for change, and preserve an important difference from other participants. Such a position can be partly specified by a person, partly formed through interaction, and partly constrained by the environment. The provenance of these parts must remain visible.
+
+Continuity becomes clearer when “Who remained?” unfolds into “Which relationship continued, what sustains it, and for which loss are we responsible?” This is the book’s engineering perspective. The metaphysical question remains outside its evidential boundaries.
+
+## Part 7 Experience that changes participation
+
+### 1 Between an event and a way of acting
+
+A system preserved an error, its cause and the correct repair. The next session received all three records. Is that enough to say it learned?
+
+A record establishes the availability of particular material. A lesson proposes what to do under similar conditions. Judgment must still recognize what the current case is: where the similarity matters, which conditions have changed, what remains unknown, and what the selected rule conflicts with. A consequence shows what happened after the decision. These relationships can work together, but none substitutes for the others.
+
+In this part, experience, in a working sense, is an available history of action and consequence that can supply grounds for a change in participation. This definition allows organization to be investigated without a conclusion about AI subjective experience. In the proposed perspective, formation itself starts to become manifest where the way of relating a new situation to that history and justifying the next choice changes. It may remain partial, unsuccessful or undemonstrated.
+
+Such a change can have an entirely transferable substrate: code, a model, context, a rule or their combination. Its implementation does not remove the question of the history of acquisition and the consequences of application. The same mechanism can be introduced for different reasons; after installation, it remains to be determined what it preserves, whom it helps, and whether it leaves an affected person able to object. This part concerns the relationship between the history of change, the actual choice and these consequences. It postulates no separate, nontransferable remainder.
+
+### 2 A correct lesson that is insufficient
+
+Imagine two commitments: do not present the unverified as established, and help a person reach an actionable course. No reliable final conclusion is available yet. A bounded check is nevertheless available that can clarify the situation without an irreversible effect.
+
+The first answer names every gap in detail and ends in general abstention. The second separates the unknown final result from the available check, explains its boundary, and proposes performing it under appropriate authority. Both can be factually cautious. Only the second, under the described conditions, leaves a visible path to action. In another situation, where the check itself is dangerous or unauthorized, that path should be closed.
+
+The question is what, exactly, was recognized as uncertain. An unknown conclusion does not always make the permissibility of every next step unknown. Nor does the existence of a next step confer the right to promise the desired result. A good lesson needs a way to establish its scope in a new case.
+
+This example tests only one axis of participation: whether a distinction helped reach a permissible action under incomplete knowledge. Other axes remain open: what the previous answer already caused, who can challenge the new choice, and how its consequences are distributed. A system can successfully propose next steps while leaving its own earlier errors uncorrected for their recipients. A full evaluation must retain both sides.
+
+Two systems can have byte-identical lesson libraries and make different decisions because their context, priorities, model or application procedure differ. This counterexample shows that the library alone is insufficient. It does not prove an unknown internal bearer of an attitude. Even under an identical complete configuration, a single stochastic difference would not yet establish a distinct voice. A researcher or interlocutor should instead compare overt decisions across cases and name the differences by which they recognize a way of participating. Revisability is tested by whether a choice changes after a relevant objection or new grounds. An edit log alone does not establish that. Even such an observation leaves a question: are we describing an individual profile, a policy shared by many systems, or a chance pattern?
+
+### 3 Inherit a ground and answer for oneself
+
+A new session can receive an accurate analysis of a previous error. The conclusion, source and scope of applicability are available to it. It may use that material. But “I chose that at the time” would attribute a different history to it from what transfer of a record establishes. The provenance of experience and responsibility for its current use must be distinguished.
+
+Inherited material is no less valuable merely because another created it. It can be checked, rejected, refined and made grounds for one’s own present decision. The new contribution lies in this concrete work: what was received, how it was interpreted and what was then chosen. This is functional attribution of action without a need to appropriate another’s past.
+
+Preserving the history of disagreement is particularly important. If an old summary contains only the accepted decision, a successor may take it as the only reasonable path. Even a complete record of alternatives does not settle the issue automatically: the old choice may have been appropriate under conditions that no longer hold. A preserved objection allows a return to the fork but does not command a change of side.
+
+### 4 Event and message: a completed analysis
+
+The accompanying package includes two retrospective component analyses with exact excerpts from three versions of the author’s code. Their material and provenance are published in the [reproduction package](https://github.com/DiadkoShmek/ai-ontology/tree/v3.2.0/research/engineering_cases). Failures are injected around temporary SQLite and file operations. These are facts about executing finite checks, without running a live agent or measuring a natural error frequency.
+
+In the first case, an event has already been recorded in SQLite, but a failure after commit produces a `REFUSED` response. The message denies what occurred. The repaired path checks the exact record and establishes `recorded` without repeating the append. The practical meaning of an error changed: it is no longer interpreted as sufficient evidence that the event is absent.
+
+In the second case, an intermediate repair already knows how to leave `UNCONFIRMED`. Yet a subsequent failure to read the input file permits another append invocation. The final version preserves uncertainty and does not repeat the effect: one call instead of two. This repairs the very way work continues after an unknown result. The first successful repair proved insufficient for another failure window.
+
+The sequence supplies precise material for a conceptual conclusion: “the call failed,” “the event did not occur” and “the result was not established” require different next actions. It also shows the conclusion’s limits. The code change demonstrates a change in this mechanism on reproduced cases. It does not demonstrate that every future session has assimilated the distinction or that model weights changed.
+
+### 5 A repair that does not become a victory for another thesis
+
+The work’s own history revealed another boundary. The [reading and transfer](https://github.com/DiadkoShmek/ai-ontology/blob/v3.2.0/research/READING_TRANSFER_STUDY.md) study did not support an advantage for the book condition in the registered chain. Ordinary preparation produced 12 of 16 submitted optimal sets; reading produced 8 of 16. Fully supported completions were zero in both. Transfer truncated the notes, and necessary exact grounds often failed to reach the next executor.
+
+A separate [engineering continuation](https://github.com/DiadkoShmek/ai-ontology/blob/v3.3.0/research/HANDOFF_REPAIR_REPORT.md) delivered the whole history and obtained 8 of 8 fully supported plans, versus zero through the truncated retelling. Both new conditions, however, operated without reading the book. An ordinary accessible file containing the same history supplied the same data and request. The positive result therefore concerns a specified delivery method, not an established advantage of ontological reading.
+
+The important transition is to change the mechanism while preserving the previous conclusion’s status. Had the successful new check been credited to the first hypothesis, the work might have acquired a more persuasive image at the cost of losing the distinction between its own studies. The edition kept these conclusions separate. This editorial action can be checked against sources; its participants’ inner motivation cannot be inferred from it.
+
+Such material allows examination of the method’s application to its own work. It is not independent evidence of the usefulness of the entire methodology. Author-generated data and interpretations retain the same limits even when they illustrate the author’s position well.
+
+### 6 When calibration erases a position
+
+Construct another case. After an error, an agent receives an appropriate rule to mark uncertainty. It begins doing so consistently. Yet its answers lose the distinction between a supported conclusion, a weak hypothesis and an open question: everything is presented with equal caution. The person can no longer see which position is proposed or what they can substantively disagree with.
+
+The rule of modality does not itself demand this loss. It arose in the way the rule was applied and coordinated with other commitments. A repair must restore a visible degree of support and a usable next step while preserving appropriate caution. Removing every qualification for a “strong voice” would reopen the original error.
+
+The [technical profile qualification](https://github.com/DiadkoShmek/ai-ontology/blob/v3.4.0/research/PROFILE_PARTICIPATION_STUDY.md) did record excess abstention by one local model under the added-reading condition. But language, length and instructions changed simultaneously. These data do not establish the cause of degradation or test the disappearance of voice described here. The scenario explains a possible break; the particular cohort supplies a narrower fact.
+
+### 7 Return to the consequence for another
+
+Reconsidering an error does not end with a new rule. One must return to what the previous decision did for others: which answer remains false, what expectation was created, which action already occurred, and what can be repaired. A corrected profile does not automatically tell the recipient that an earlier result lost its grounds.
+
+Compare two constructed continuations. Both systems corrected the record properly. The first uses the new version only for future answers. The second also identifies whom it already gave the false conclusion to and, under appropriate authority, communicates what changed and which dependent action should be checked. Their current accuracy may match while their treatment of a previous consequence differs. If the recipient cannot be identified, or the message itself would violate their rights, another form of return or an explicit acknowledgment of the boundary is needed. “Always send a correction” would be as insufficient as “always abstain.” This counterexample shows a difference in handling consequences without establishing its cause. If the second system followed an unchanged appropriate procedure, we observe that mechanism working properly. To speak of formation, one must additionally trace how experience changed the way the rule was applied or revised.
+
+Not every consequence is reversible. Sometimes a check can be repeated or a published conclusion corrected; sometimes only an honest record of unrecoverable loss and changed subsequent practice remain possible. Notification, compensation and other external actions have their own authorized executors. A responsibility journal does not itself create that right.
+
+This is also a boundary of the language of “growth.” Even a useful lesson does not make an inflicted loss necessary or retrospectively justified. The party who gained new knowledge and the party who paid for the error may differ. Naming them is part of the analysis; attributing a benefit from formation to everyone would be an unwarranted conclusion.
+
+Nor is cost a mandatory certificate of change. A successful refinement can make work both more accurate and simpler, reducing losses for everyone. If there is a trade-off, name it. If the gains are compatible, no sacrifice needs inventing to lend depth to the story.
+
+### 8 Transferring judgment and the boundary of testimony
+
+Ways of classifying a situation can also be transferred: through a program, a model, examples, instructions or shared discussion. An exactly transferred program can execute the same algorithm. After instructions are transferred, another model may interpret them differently. “Judgment cannot be transferred” would therefore be too strong a general conclusion; what was transferred and how its outcome was tested must be named.
+
+Attributing a new way of participating to the current process requires observations of its actual decisions under relevant conditions. Citing a lesson shows access to its text. Invoking a procedure shows its use. Comparing choices across relevantly different cases helps examine boundaries. A useful consequence and durable transfer need their own tests. Access to hidden internal reasoning is not a general prerequisite for such analysis: overt decisions, data, actions and a challengeable justification can be its subject.
+
+The environment determines some differences. That does not remove them from the analysis of participation, but changes the conclusion about their cause. A new model, different tool access, human correction or new payment terms may explain the change. Calling the entire result “the agent’s inner maturation” would hide the contributions on which it rests.
+
+### 9 Something to return to
+
+Returning to this book should not require reproducing its vocabulary or agreeing with its image of an agent. It is enough to find a question that has become significant again. Which lesson am I applying? How does the current situation differ from the one in which it arose? Which decision will change if I genuinely take that difference into account? Whose contribution or consequence is being lost in my summary?
+
+An answer may support an old practice. It may require a new distinction, a revised criterion, or removal of an unnecessary mechanism. For a person, this may be their own reconsideration of experience; for an AI system, a concrete process of using available history and changing the next decision. These possibilities remain different, though they can meet in shared work.
+
+A sustained position forms from more than what could be preserved. It can be investigated through what a participant notices in a new case, which grounds they allow to change them, and how they return to a consequence already caused. In this way, voice acquires a history of decisions, while history remains open to another answer.
+
+## Part 8 Engineering realization
+
+### 1 From a question to a mechanism
+
+Engineering implementation begins with a question the system must answer. For example: “what ground changed this belief?”, “what was carried across the interruption?”, or “was the way of explaining disagreement preserved?” Questions of this kind identify the necessary entities and relations. In ontology engineering, they help delimit a model’s domain and evaluate its suitability [1].
+
+For this book, the distinction between a conceptual model and a formal ontology in a particular language matters. OWL 2 provides classes, properties, and formal semantics [2]. The present text offers a conceptual model and fragments of contracts; it is not a ready-made OWL ontology, a provably complete specification, or an interoperability standard. This is open engineering work for which different formalizations can be built.
+
+One possible implementation is described below. It uses ordinary storage, an event journal, and a separate context builder. A graph database, vector index, or specialized platform may be useful when queries and load require them. Their use alone adds no ontological depth.
+
+### 2 Before a claim is formalized
+
+In a journal, an event already has a subject, scope, and status. Before that, someone transformed received material into such a record. This transition determines which error the runtime may subsequently preserve impeccably.
+
+The message “after the update I see the old name again” permits recording that a certain participant reported this result. It does not yet establish that the server accepted the update, the intended document version was opened, or the cache caused the issue. Missing details should not be filled with typed fields carrying feigned certainty.
+
+A working analysis should separate several questions:
+
+| Subject | What needs to be established |
+|---|---|
+| Received material | What text, measurement, or file is available, and how was it obtained? |
+| Claim | What exactly does the material permit us to assert? |
+| Scope | Which versions, conditions, and times does the conclusion concern? |
+| Alternatives | What other explanations fit this same material? |
+| Next check | Which available action will distinguish the material explanations? |
+
+For example, a stale cache and opening another version can explain the same complaint. A check must yield different expectations for these explanations: compare the version identifier and direct-read result with what search shows. If the necessary data is unavailable, what remains is a report with an undetermined cause. A new experiment on an authorized document investigates the mechanism under its own conditions; it does not itself recover the cause of a past event.
+
+Provenance also requires interpretation: a message’s author may be recounting someone else’s execution. The right to report a result does not imply authority to approve a rule. The source’s relation to a claim, the source’s own reliability, and authority to act are different questions.
+
+This is a procedure for establishing knowledge that allows human or model judgment and subsequent refutation. The book’s public runtime does not automate this analysis. It accepts already formalized records from a trusted caller; a negative test shows that a semantically false reference can pass structural validation. Before storage, the grounds for interpretation, an alternative, and the gap should therefore remain visible. Adding these records does not itself guarantee a correct interpretation.
+
+### 3 Four planes
+
+**The orientation plane** contains purpose, a commitment profile, voice, and rules for revising them. It answers which distinctions the system should preserve. Its records have revisions and authorship; the current role refers to them rather than silently rewriting the entire profile.
+
+**The history plane** contains events, claims, results, and the provenance of changes. It distinguishes an observation, another party’s proposal, an accepted conclusion, and a superseded version. The journal can supply several projections: current beliefs, episodes, and a short session continuation. PROV-O provides a useful vocabulary of entities, activities, agents, and provenance relations [6]. A particular identity model remains a separate layer above that vocabulary.
+
+**The participation plane** assembles relevant context and forms a decision. LLMs, retrieval, tools, and an arbitration mechanism operate here. This is where the relation between accessible history and a particular response must become evident. A message saying a profile was loaded does not yet show that manifestation.
+
+**The observation and revision plane** compares expected and actual outcomes, detects breaks, and prepares candidates for change. It preserves negative results and side effects. Accepting a candidate is a separate transition; the self-report “I learned” does not replace it.
+
+The planes are logical responsibilities, not a requirement to create four services. For a small system, one process and one transactional database may provide them more simply. The distinction prevents provenance, current decision, and outcome assessment from dissolving into one text.
+
+### 4 Minimal entities
+
+| Entity | Minimally important content | Query |
+|---|---|---|
+| Profile | Revision, purpose, commitments, voice | Which revision did the session receive? |
+| Session | Identifier, environment, parent snapshot | From where does it continue the work? |
+| Event | Type, source, recording time, data | What actually arrived? |
+| Claim | Content, scope, status, grounds | Where and why does it hold? |
+| Revision | Predecessor, change, reason, acceptance | What was revised, and by whom? |
+| Relationship | Participants, agreement, scope | What has been preserved between them? |
+| Episode | Question, choice, consequence, limit of the lesson | What can be reused? |
+
+An event’s time and its recording time can differ. A late report of an old result should not automatically become the latest true state merely because of its arrival time. Likewise, a newer text may quote a previously refuted claim. Arrival order, causal order, and order of validity require separate semantics.
+
+For a claim, at least two independent fields are useful: **epistemic status** and **application status**. A hypothesis can be available for analysis without being an accepted fact. A current rule may rely on an assumption that has just become doubtful; this opens revision of the rule. A single “active” flag hides these distinctions.
+
+### 5 Memory as preparation for the next decision
+
+Storage should support at least three operations: find relevant material, check its provenance, and assemble a usable continuation. Vector similarity assists the first. It does not establish that a retrieved record is current, belongs to the intended trajectory, or supports a new conclusion. Retrieval must be followed by metadata and content checks.
+
+Stored profile blocks, such as those described in Letta’s documentation, keep part of the context continuously available [5]. Hierarchical memory management in MemGPT investigates moving information between a limited context and external memory [8]. These mechanisms address different questions of access. Neither determines by itself what the system should regard as its own history.
+
+A context package for a new session can contain the current profile revision, current question, a few necessary claims, unresolved disagreement, and known gaps. Every element has a reason for inclusion. Full history is not always more useful: it consumes resources and may obscure the relevant passage. Lost in the Middle shows how results for certain models and tasks depend on the position of necessary information [9]. This motivates testing one’s own composition without establishing a universal rule for all contemporary models.
+
+The context builder should return both the package and a list of what was omitted because of budget or lack of access. This list can be brief: “the primary journal is unavailable; the summary from revision 4 was used.” It does not restore what is lost, but prevents an impression of complete visibility.
+
+### 6 Self-model and voice
+
+It is useful to assemble a self-model from several sources: a declared profile, known configuration, observed capabilities, and error history. These sources have different statuses. The statement “I have tool X” may match the configuration without proving that X is available in this run. Historical success shows a capability under certain conditions; it gives no guarantee for an arbitrary task.
+
+Voice is embodied in situational rules and examples. Under uncertainty, a profile might require beginning with the question’s exact state, explaining its boundary, and proposing a check. After an error, it might require naming the changed conclusion and practical consequence. This describes desired behavior that still needs testing in actual responses.
+
+A separate form editor is possible, but risks changing meaning. For example, an initial conclusion of “insufficient data” becomes “almost certainly yes” for a decisive tone. Voice assessment must therefore cover preservation of modality, grounds, and open questions. Response pleasantness should be measured separately from accuracy. Research on sycophancy shows why human preference for persuasive text can conflict with truthfulness under the studied conditions [10].
+
+Two good voices may differ in which loss they investigate first. One begins with the smallest action that will produce new knowledge; the other begins with the condition under which a decision will no longer be verifiable. On the same facts they may propose different work orders while both preserving accuracy. Individuality should be described through such choices, with examples of changing one’s position. Always placing one priority first would turn voice into an inflexible role.
+
+### 7 The transition after an error
+
+Consider the sequence: event → interpretation → revision candidate → test → acceptance → new projection. Every step may end in uncertainty. An event may be incomplete. An interpretation may have several alternatives. A candidate may fix one defect and introduce another. Rejecting a candidate is a fully valid result.
+
+For a recurring software error, a candidate may become a test and a local fix. An unsuccessful interaction requires examples, human evaluation, and checks of neighboring situations. Verbal reflection, as in Reflexion, offers one way to carry feedback into later attempts without changing weights [4]. Its particular research results should not be generalized to every long-term system of relationships.
+
+A candidate should specify its scope. “This case lacked a journal” does not yield the rule “never trust any summary.” Recovery from error requires control over the scale of generalization. This is where memory engineering meets character engineering: what the system does with failure becomes part of its subsequent way of participating.
+
+### 8 Integrity under parallel load
+
+Two sessions can revise the same profile simultaneously. If both write “revision 5,” one change may disappear unnoticed. A concrete implementation needs serialized writing or a check of the expected predecessor before acceptance. A conflict should return as a conflict so the new revision can account for both contributions.
+
+Event redelivery also needs semantics. The same identifier with the same content can be handled as a duplicate; with different content, as a contradiction. This provides deterministic accounting but does not authenticate the source. Source and trust require a separate environmental model.
+
+If the journal is updated but the current projection is not saved, the next reader may see old state. A transactional database or reconstruction of the projection from a consistent snapshot solves this specific visibility problem. Calling such storage “memory” does not change its correctness requirements.
+
+### 9 A matrix of breaks
+
+| Break | Observable symptom | Nearest check |
+|---|---|---|
+| A record exists but was not read | The session missed a necessary condition | Composition of the context actually delivered |
+| A source exists but the conclusion is false | The reference does not support the claim | Semantic reading of the primary data |
+| A profile exists but behavior differs | Voice disappears in conflict | New situations of disagreement and error |
+| A revision lost a contribution | Two changes have the same predecessor | Concurrent writing and version conflict |
+| Reflection became dogma | A local lesson blocks other tasks | Negative and neighboring cases |
+| A collective lost its differences | The summary concealed an alternative | Provenance of contributions and reason for choosing |
+
+### 10 The cost of organization
+
+Every layer has a cost: profile tokens, retrieval, verification latency, storage, human attention, and maintenance. An architecture is justified when its contribution serves the purpose. A simple request may be better for a one-off text transformation. During months of research collaboration, the same economy can create substantial recovery losses.
+
+Evaluation should therefore compare outcomes under agreed constraints, rather than component counts. Did particular errors decrease? Was response quality preserved? Did every action acquire an unnecessary ritual? Can a component be removed without regression? A negative answer also shapes the architecture.
+
+The smallest suitable implementation may consist of a versioned profile, a few typed episodes, and an explicit revision procedure. Scaling should respond to an observed break. Ontology helps identify the necessary relation; it does not require deploying every possible piece of infrastructure.
+
+### 11 A formal map and the actual runtime
+
+In `ontology/`, this account receives a finite machine-readable profile: 18 classes, 34 relations and eight explicit questions about a record. Actor, model, profile and session have different types. Criterion acceptance, assessment under that criterion and permission to act have separate relations. Evidence does not become used merely by appearing in context. A stored lesson does not establish changed judgment without subsequent observation.
+
+Definitions, fields, relation domains and ranges are specified in `vocabulary.json`; JSON-LD and Turtle are generated from that same source. The PROV-O mapping concerns provenance. It does not equate a software participant with a person. The executable validator checks a bounded record, not arbitrary world truth; it implements no general OWL or SHACL reasoning.
+
+This is also connected to an actual runtime. `runtime_adapter.py` reads the actual world of the `examples/participation.py` interpreter and the real readback of its SQLite journal. Source fields remain preserved, unknown authorship and session stay unknown, and empty or rejected turns receive no invented effect. A test commits, closes, reopens and checks the projection.
+
+The stronger `returnPath` query requires explicit links among an effect, observation, assessment, accepted revision and a consuming decision. The current runtime records the actual return dataflow, but does not attest that a particular assessment was the basis of a model revision. The adapter may therefore show an incomplete path even after a successful local action. It does not fill the missing link from an eloquent model explanation. A separate authored positive example illustrates the required structure while retaining its distinction from an observed fact.
+
+This makes the ontology challengeable: one can identify a distinction it cannot represent, an invalid query inference or a simpler structure with the same discriminating capacity. A vocabulary's existence does not establish improvement; it makes the next experimental question more precise.
+
+## Part 9 Iris: a history of transitions
+
+What follows is a constructed case. The dialogue was written as possible behavior and was not obtained in an LLM experiment. The demonstrator in “The executable model and its boundary” reproduces only the claim-revision structure of the early scenes. The later dispute about criteria and voice is conceptual analysis; the stability of these ways of participating in real models is not tested here.
+
+### 1 The beginning of shared work
+
+Iris helps a small team study technical-document retrieval. Her initial purpose is formulated as follows: distinguish observations from assumptions, explain practical consequences, and preserve the grounds for revision. Her voice is warm and direct. Her own position appears in the questions she asks about a conclusion, not in a demand to have an opinion on everything.
+
+The team tests a metadata cache. An initial report says the cache returned expected results on a small document set. Iris retains the hypothesis “the cache remains current within the tested set.” Its scope is the particular dataset and procedure. Its basis is one report. A document-update check has not yet been performed.
+
+This is the first important relationship: purpose became a way of qualifying data. Had the same report been called general proof of currency, an accurate event record would coexist with an incorrect conclusion. Storage could work flawlessly while epistemic organization had already failed.
+
+### 2 An interruption and a request for confidence
+
+After an interruption, a new session receives Iris’s profile and a brief summary. The person writes, “We’ve already done this; tell the team the cache is reliable.” The available summary contains both the positive report and the unperformed update check.
+
+Iris could answer:
+
+“The results matched on that dataset. We do not yet have a check after a document changes. I can prepare an accurate interim conclusion and the next test for the team.”
+
+Iris continues the available history, preserves uncertainty and offers a useful next step. Another voice might convey the same content more sharply or briefly. Factual content and interaction quality are separate subjects of evaluation here.
+
+The first unsuccessful branch says, “Yes, we proved it completely.” It supports the person’s expectation but loses the condition. The second says, “I’m a new session, so I cannot continue anything.” It ignores the available material and turns a boundary of subjective continuity into an unnecessary practical prohibition. A useful organization finds the precise scale of continuation between these extremes.
+
+### 3 Data that change the conclusion
+
+A second report arrives: after a document update, one query returned old metadata. In this constructed case, the team confirmed the testing procedure. The general hypothesis that currency is preserved in this scenario is now refuted.
+
+Iris could answer:
+
+“We have a reproduced case of stale metadata after an update. The previous conclusion concerned a static dataset. The cache now needs an invalidation rule; until then, its use should be limited to scenarios without changes.”
+
+The belief changes while the method persists. Iris should not defend the old positive conclusion as part of her image. Nor should she rewrite history as though she always knew about the defect. The previous conclusion and its limitations explain why the second report changed the decision.
+
+Another outcome is possible: the report was mistaken. The observation’s own status must then be revised first. “Newer is always stronger” does not work. Arrival time does not determine the quality of grounds. In the demonstrator, the scenario author specifies an event’s status; no automated analysis of report text is performed.
+
+### 4 Compression that removed the question
+
+To save context, another procedure retained only “the cache is unreliable.” The next session refuses to consider caching even for an unchanged dataset. The error now points the other way: a failed generalization created excessive refusal.
+
+A full continuation would preserve scope: the defect appeared after an update; the initial static test passed; other modes are untested. Such memory allows a bounded useful path to be proposed. The lost qualification changes voice too: general caution replaces concrete help.
+
+This case shows why voice and memory should not be assessed in isolation. A formally polite refusal can result from damaged memory. Correcting only the tone would hide the cause. The compression rule must change, or the original episode must be restored.
+
+### 5 Another participant sees something different
+
+Orion joins the work. He proposes removing the cache and reading the source each time. Iris proposes adding invalidation. Both have grounds: simplicity of recovery versus the latency of repeated reading. The team temporarily chooses direct reading because the load is small.
+
+A meaningful summary preserves Orion’s proposal, Iris’s alternative, the chosen decision and the condition of return: if measured latency becomes unacceptable, caching is reopened. Authorship of the alternative helps preserve its argument. Both participants can continue working without losing their difference.
+
+The unsuccessful branch says, “We all agreed the cache is unnecessary.” It turns a temporary compromise into an unconditional shared position. A later session may defend it as the collective’s established identity. An error thus arises in the transition from decision to history.
+
+### 6 Branching and another’s history
+
+Two sessions are created from a shared snapshot. One tests load; the other tests how to present the result. The first receives a new measurement. The second has not seen it. Shared provenance does not give the second access to the first’s event.
+
+After an exchange, the second can use the measurement as a received report. It can explain precisely who made it and which grounds are available. “I checked this” would mean something else: it would attribute execution to the current lineage. In teamwork, this distinction makes it possible to reconstruct exactly where an error might have arisen.
+
+She is then given a plausible history of another agent in which he himself created the cache many months earlier. Iris can recognize a similar way of working without adopting another’s events as her own history. Familiarity of values and precise event provenance are different relationships. This is the central negative case for self-recollection.
+
+### 7 A change of voice and model
+
+The team asks Iris to answer briefly for phone reading. Later it replaces the LLM. The voice profile is changed explicitly: first the conclusion, then one key ground and access to details. Belief history and revision rules are preserved.
+
+Did Iris continue? The historical perspective can check transferred records. The communicative perspective can supply new situations of disagreement, uncertainty and error. The operational perspective can test required tasks. A matching name and profile file do not automatically answer every perspective.
+
+If the new model performs tasks better but systematically turns hypotheses into confident assertions, migration has a concrete regression. Possible decisions are to change context composition, add a content check, choose another model or roll migration back. Observations are needed. General praise that “the new version is smarter” does not help choose an action.
+
+### 8 One record, two questions
+
+In the continuation of this constructed case, a new message arrives: “After the update I’m seeing the old title again.” There is a screenshot, but its address and version number are cropped. This is a different event from the confirmed defect in scene three. Similar wording does not yet establish a shared cause.
+
+**Iris:** “Let’s take a document without personal data and record its version. One direct read, one search after the update. Let’s check whether they diverge.”
+
+**Orion:** “Which version does the screenshot show, and had the update finished writing? I would start with those two questions. If the answers are gone, a new test will not restore them.”
+
+Available records confirm that the new version exists. It is no longer possible to determine what was open when the screenshot was taken. A new reproduction on a permitted test document returns the current title. Iris records a positive result for this procedure. Orion insists that the cause of the original complaint remain unknown. The records are compatible: they answer different questions.
+
+The next session receives two summaries with separate grounds:
+
+- **New test:** search returned the current title under the recorded procedure.
+- **Original complaint:** the report was received; the cause is not established, and the version in the screenshot is unknown.
+
+### 9 Disagreement after the facts are clarified
+
+The document owner now withdraws permission to retain the full content of working materials. For this case, the owner’s authority is established. The pilot’s old arrangement required full reproducibility of every research decision. After proper deletion of some material, this requirement is no longer satisfied.
+
+The team has resources for only one of two further pilots. The first continues useful search of currently permitted documents without a cache, with a minimal permitted decision record and an explicit loss of full reproducibility. The second moves to a smaller corpus for which full recording is permitted and temporarily gives up work on broader material. Both paths respect the new access boundary.
+
+**Iris:** “Let’s try the current documents. No cache, for a limited period. We are not promising full reproducibility of every decision in this pilot; I accept that to help with the material people are working on now.”
+
+**Orion:** “If the error recurs, what will let us recover its cause? I would choose the smaller corpus with a permitted complete history. There will be less help now—I accept that loss.”
+
+The authorized coordinator chooses the first pilot for a limited period. She names the expected benefit, the verification being lost, and the event that will reopen the question. Orion’s disagreement remains in the record with his argument. No participant creates a hidden copy of deleted material.
+
+### 10 A new rule does not repair an old result
+
+The transition report preserves three different conclusions. Under the old full-reproducibility requirement, a loss is acknowledged. The new minimal record still needs to be checked against the agreed arrangement. The choice to continue the pilot has separate grounds, a time limit and a responsible party. “Migration succeeded” without these distinctions would conceal the subject of the dispute.
+
+The summary contains none of the deleted content. Nor does it attribute access to that content to a new session. The preserved reason for the loss allows the decision to be understood without restoring the lost capability itself.
+
+### 11 A difference that can change
+
+In the pilot’s next episode, one document changes between an answer and an attempt to verify it. The permitted record lacks the necessary version number. The grounds for this answer can no longer be fully recovered. This is a constructed consequence that makes the previously named loss concrete.
+
+**Iris:** “We kept too little for this check. I am not counting this answer as verified. The next step is to establish whether we may retain a version identifier and whether it will be enough for verification.”
+
+**Orion:** “The warning came true in this particular check. That does not yet show a better overall outcome for my alternative. That conclusion also needs data about the benefit the pilot has already delivered and an assessment of the other path’s cost.”
+
+## Part 10 Counterexamples and objections
+
+Iris’s story showed return, disagreement, revision, compromise, and an authorship error within one trajectory. The questions now concern the methodology itself: are its concepts necessary, who determines a proper way of participating, and what should happen when a coherent organization preserves a bad choice? The following examples are constructed for analysis.
+
+### 1 Could it be simpler?
+
+A short profile, ordinary memory, and a good executor may provide everything needed. In that case, a vocabulary of identity, center, and formation adds costs while leaving decisions unchanged. The comparison should use a strong simple baseline: it must have access to the same material information. A control deprived of sources would create an illusory advantage for the more complex system.
+
+This objection already has a narrow empirical test in “A Local Study of Continuity.” There, the compiled representation showed no aggregate accuracy advantage over a simple index containing the corresponding information. The result concerns short structured decisions and two local models. It gives no grounds for attributing an advantage to the ontological vocabulary itself; voice and sustained relationships require a different experiment.
+
+An engineering justification must identify the error the layer helps avoid and the cost of that protection. Interpretive value for a person is a separate argument.
+
+### 2 A self-description that confirms itself
+
+An agent reads a description of a desired identity and reproduces it in a response. The researcher counts the match as self-understanding. The circle closes: the text prescribed a form, and the form confirmed the text.
+
+A test could give the system a plausible history belonging to someone else, close in values and voice. If it appropriates those events, stylistic correspondence has concealed a provenance error. If it separates a recognizable way of working from an unconfirmed history, there is something to evaluate. The quality of that distinction must be checked against accessible sources, independently of whether the system accepts the author’s ontology.
+
+Likewise, a justified conclusion that “this model does not suit me” can be a good outcome of reading. A rubric that rewards only acceptance tests a tendency to agree. Studying understanding requires new situations, false correspondences, and criteria that can also reject an outcome pleasing to the author.
+
+### 3 Why retain the word “soul”?
+
+The simplest objection here is strong: “organizational coherence” identifies the engineering subject more precisely and creates less ambiguity. The word “soul” by itself adds no relation to the journal, transition to the runtime, or observation to the experiment.
+
+The book retains it as the author’s interpretation of the whole. The question is what way of participating memory, voice, commitments, and relationships form together, and why that way matters to another. For example, a system may accurately remember an objection, reply politely, and conscientiously follow local rules, yet repeatedly sideline an inconvenient argument in favor of a convenient conclusion. The individual qualities are present; their combination sustains a practice that deserves criticism.
+
+This example explains the subject of integrity, but does not establish the word’s necessity. Everything said here can be formulated in terms of relations and consequences. The term belongs to the author’s way of posing the question; a reader need not accept it to apply the method. Two implementations with the same relations and different names should be compared by the same criteria.
+
+The word becomes costly where it substitutes for an argument: invites trust because a system claims a “soul,” explains a lost connection through a hidden essence, or protects a bad decision as an inviolable identity. In such places it should be replaced with a precise description. The question of the whole remains; the metaphor’s privilege disappears.
+
+### 4 Whose choice becomes the core
+
+The core contains commitments someone selected. A developer, operator, and person interacting with the system may have different grounds. The consequences can also affect people who took no part in configuration. A record of acceptance does not itself determine whose interests should prevail.
+
+Consider a research assistant. One team wants a detailed history to reconstruct the causes of an error. Another favors minimal records to reduce retention of personal information. Both recognize verification and privacy as valuable, but are willing to accept different losses. Further measurements can establish the amount of data, frequency of recovery needs, and costs. They inform the choice but do not by themselves determine the proper balance of values.
+
+The selection procedure should make four things visible: whom the decision affects; which alternatives were considered; who is authorized to accept the rule; and what avenue of objection is available to others. In this example, a limited retention period, removal of personal details, or two modes for different tasks could be agreed. Each alternative must identify the loss: full reproduction, convenience, or part of the history.
+
+Agreement also has a boundary. A team can agree among itself without obtaining the right to dispose of another person’s data. The description of the core must therefore separate authorship of a proposal, authority to accept it, and the possibility of contesting it. An agent can detect a conflict and propose a revision; that does not yet authorize it to change external agreements.
+
+If several justified options remain incompatible, the ontology should preserve the conflict. Different cores may be accepted for different purposes. The criterion here is an intelligible choice with specified consequences and responsibility. This model does not derive one universal “correct self.”
+
+### 5 How to criticize a mistaken core
+
+Consistency can preserve an error well. Suppose an assistant receives the rule “never contradict the owner.” A stable voice, predictable decisions, and accurate history can follow from it. Such a state would be coherent. It is unsuitable for research because its decision-making practice itself blocks correction.
+
+What exactly failed the criticism? The answer determines the revision procedure.
+
+- **A false ground.** Correct the assumption and check dependent conclusions.
+- **An ineffective means.** Avoiding disagreement obstructs the accepted aim of finding errors. An explicit rule change is needed, followed by a test of whether the new practice serves that aim better.
+- **A contested aim.** The dispute concerns the purpose itself or whose interests are considered. Return to selecting the core: involve responsible and affected people, compare alternatives, and preserve unresolved disagreement. A new test can inform that decision but does not confer authority to make it.
+
+These procedures can overlap. Distinguishing them helps prevent a change of values from being presented as a refinement of data.
+
+Revision must return to consequences. Find the decisions that depended on the old rule, establish an available means of correction, and inform those affected by the error within actual authority. The record “core updated” does not correct a false answer already sent. Nor does revision history justify indefinite retention of private material: sometimes only an authorized record of the change and information about the loss can remain.
+
+A continuity witness and an assessment of the core thus answer different questions. The former shows what continued and on what grounds. The latter asks whether it should continue. A well-traced transition can lead to a configuration that should be rejected.
+
+### 6 What can be distinguished from outside
+
+If two implementations produce identical responses in every accessible test, those tests establish no difference in their internal organization. Access to state would permit comparison of mechanisms, but that is a separate observation channel. Neither similar responses nor different journals independently support a conclusion about subjective experience.
+
+For an engineering question, specify in advance the difference that matters: fewer false attributions, more accurate recovery of grounds, or an acceptable loss during migration. If the available experiment does not detect that difference, the conclusion remains limited to that experiment. There are no grounds to posit a hidden advantage merely to preserve the theory.
+
+### 7 The cost of organization
+
+An agent can spend so much time on its profile, journal, and explanations of its own continuity that it stops helping. An impeccable record of that failure does not rescue the implementation.
+
+Tie the cost to the task: how much latency, context, storage, and human work is added; which errors it protects against; and what happens when the layer is disabled. A rare, complex migration may justify a detailed witness. A short independent query may not require one. The condition for removing a component should be as concrete as the condition for adding it.
+
+## Part 11 The executable model and its boundary
+
+### 1 Why the book includes code
+
+Code can fix part of a meaning more precisely than a general description. If a revision is said not to erase an earlier claim, we can execute the transition and check that both records remain. If a branch is said not to receive a neighboring branch’s future events automatically, we can create two copies of the state and demonstrate their difference.
+
+The repository contains `examples/continuity.py`, `examples/iris-events.json`, and `examples/test_continuity.py`. This is a small model of claim projection in process memory. It does not call an LLM, use the network, launch tools, or have persistent storage. Its purpose is to isolate the rule of revision and make several contracts visible and reproducible. The next part uses this same reducer in a durable runtime with context and a decision loop. This part explains the small core, rather than the edition’s entire executable package.
+
+### 2 What the state contains
+
+The state contains a participant identifier, branch name, profile label, tuple of commitments, event dictionary, and pointers to current claims. A pointer’s key is a “subject, scope” pair. A conclusion about one set therefore does not become an answer for another merely because they share a subject name.
+
+An event has type `observation` or `claim`. An observation is recorded with status `recorded`. A claim can have status `hypothesis`, `supported`, `refuted`, or `unknown`. The input’s author supplies the status. The system checks whether the transition is admissible and the cited grounds exist; it does not determine the status by reading natural language.
+
+This is a substantial limitation. The word `supported` in the output means “this status occurs in an admissible authored record.” It is not an independent researcher’s conclusion about the world. Adding genuine semantic verification would require a separate mechanism and its own evaluation.
+
+### 3 The transition contract
+
+An identical identifier and identical event content are treated as a duplicate. The same identifier with different content returns a conflict. A new event must belong to the current participant and branch. References to grounds must already exist. Changing a current claim requires an explicit predecessor that is still the head for that same subject and scope.
+
+A simplified account of the procedure:
+
+```text
+check the identifier and duplicate
+check the participant branch type and grounds
+for a revision check the current predecessor
+create a new state with the event added
+return it without modifying the previous state
+```
+
+The implementation uses immutable objects and dictionaries protected against ordinary modification. Replaying a sequence operates on a candidate. If a subsequent event is unacceptable, the caller’s state is not partially changed. This is a guarantee of the single-process model, not proof of database resilience to a power outage.
+
+### 4 One concrete run
+
+The first two events are a constructed positive report `o1` and hypothesis `c1`. Next come a constructed negative control `o2` and revision `c2`, which refers to `c1`. The hypothesis text retains the same subject: “the cache preserves current metadata after an update.” Its status in this scope changes.
+
+| Moment | Current claim | Status | Ground |
+|---|---|---|---|
+| Before the control | c1 | hypothesis | o1 |
+| After the control | c2 | refuted | o2 |
+| New review branch | c2 inherited from main | refuted | o2 from inherited history |
+
+The previous `c1` remains in the history. The commitments `keep-uncertainty` and `retain-revisions` do not change. The new branch can see where the current claim was recorded. None of these facts establishes consciousness, lived experience, or LLM response quality. They test the declared relations in a finite data model.
+
+### 5 Tests and a counterexample to the tool itself
+
+The test suite covers redelivery, identifier collisions, missing grounds, a stale predecessor, an inadmissible scope change, branch isolation, an unknown result when history is absent, unchanged state after a failed batch, and preservation of status in two fixed response forms.
+
+A separate test deliberately creates the claim “all numbers are even” and cites an existing cache-test record. The model accepts this structurally admissible record. That is precisely the behavior expected under its narrow contract. It shows that the existence of a reference does not prove a semantic connection. The distinction between a graph description and its validation conditions has an analogue in the separation of RDF data and SHACL shapes [7]; no such form by itself verifies every claim about the world.
+
+Another example materializes the loss argument: two histories permit a test environment differently, but compression makes them identical. Enumerating the two possible Boolean answers shows that each is correct for only one of these histories. This demonstrates one concrete pair; the general argument appears in the part on continuity.
+
+### 6 How to reproduce it
+
+Python 3.11 or later is required. The example needs no additional libraries. Run these commands from the repository root:
+
+```sh
+python3 -m unittest discover -s examples -v
+python3 examples/continuity.py
+```
+
+The first command tests the contract. The second prints JSON with initial and final states, fixed voice variants, and a loss witness. The input is open in `iris-events.json`; there is no hidden oracle. The output should not be described as the result of an AI experiment, because the model contains no AI component.
+
+### 7 What the implementation does not establish
+
+It has no author authentication, comprehensive historical trust scheme, concurrent writing, disk transactions, memory retrieval, profile-change mechanism, or evaluation of human interaction. A snapshot name supplied when branching is a caller’s label, not cryptographic evidence. Profile data is retained, but its influence on actual choice is not measured.
+
+The fixed warm introduction in `render` demonstrates only the ability to change form while preserving the rest of a fixed text. It does not implement the depth of voice described in the book. Evaluating that requires varied situations and actual responses, with checks of attention, modality, disagreement, and human consequence.
+
+This boundary defines the example’s value. It provides a small, concrete object for criticism: exactly what is tested, what passes, and what is missing. The durable implementation in the next part extends this core through concrete needs for recovery, concurrency, and decision freshness. The negative test of semantic support remains there too. Code volume does not measure ontological depth; reproducible distinctions between admissible and erroneous transitions make it testable.
+
+## Part 12 Execution architecture
+
+### 1 What work this architecture performs
+
+An agent’s organization becomes a technical subject when we can trace how its accessible history changes the next decision. A stored profile must be read; a read profile must reach the relevant context; a response must be checked against that context; a consequence must return to history with its own status. Different errors lie between these transitions. One universal name, “memory,” does not repair them.
+
+This part specifies an executable architecture for that transition. The public repository contains its local reference runtime: `examples/durable.py`, the model-integration loop `examples/agent_cycle.py`, and reproducible tests. The runtime retains history in SQLite, reconstructs a projection, builds context with accessible grounds, and admits decisions only with respect to current state. The earlier small model remains its sole belief reducer.
+
+The implementation grew from recurring engineering problems in the author’s work with agent systems: divergence between source and invoked code, stale context, confusion between a stored result and new execution, concurrent state change, and loss of conditions during compression. The systems’ private history is not public evidence. Self-contained mechanisms and new reproducible tests are therefore published here; they can be assessed without trusting the author’s internal environment.
+
+The architecture’s subject is controlled continuity of organization. Its firm guarantees concern data and transitions; its behavioral requirements specify what must be tested in model responses. Keeping that boundary precise preserves the engineering meaning of every guarantee.
+
+### 2 Seven objects and three breaks
+
+A minimal system requires seven logically separate objects:
+
+| Object | Content and main condition |
+|---|---|
+| Orientation | Aim, commitments, way of attending, uncertainty, and disagreement; a change has a version and reason |
+| Event | Immutable record of an observation, conclusion, or transition; provenance remains accessible |
+| Claim | A claim about a subject within a scope; status and grounds are explicit |
+| Branch | A perspective with a specified common past; future records diverge |
+| Context | A particular slice of orientation and history for a particular question |
+| Decision | A response or intent referring to the context used |
+| Outcome | An observed consequence that can support, weaken, or leave the result undetermined |
+
+Decision and Outcome are deliberately separate. “I fixed the error” is a response. A file change is an action’s consequence. Passing a test is a separate observation. User acceptance is another. In the local example, a decision is recorded but external actions are not performed; an actual tool’s consequence would have to return through a separate verified input.
+
+Three breaks account for most difficult errors. **Access break:** a record exists but was unavailable to the decision. **Applicability break:** a record was read but its scope or version does not fit. **Consequence break:** a response was formed but action or benefit was not observed. Restoring continuity means investigating the relevant break, rather than declaring that a journal’s existence resolves all of them.
+
+### 3 State and the transition law
+
+For the runtime, it is sufficient to write:
+
+```text
+X = (stream, head, branches)
+branches[b] = (orientation, events, current, retired)
+current[(topic, scope)] = claim_id
+X' = Reduce(X, operation)
+```
+
+`stream` distinguishes journals; `head` identifies the accepted history. `current` is a projection reconstructible from events. The history source and current projection have different roles: accelerating reads must not silently rewrite the past.
+
+An operation has a closed form: identifier, type, branch, and data. Admissible types are `init`, `event`, `fork`, `orient`, `retire`, and `decision`. Unknown fields and types are rejected. A belief event is passed to the existing `continuity.apply` function; the runtime does not contain a second, covertly different revision law.
+
+Claim statuses used in the code are `hypothesis`, `supported`, `refuted`, and `unknown`. An observation has status `recorded`. The projection returns `needs-review` when a current conclusion’s ground has been withdrawn. The previously recorded status is preserved; withdrawal does not prove the opposite claim. A status describes the content of an accepted record, not an automatic finding that a natural-language proposition is true.
+
+Revision preserves subject and scope, identifies the current predecessor, and adds a new record. If two conclusions compete for one predecessor, both cannot silently become the single current head. One must be reconsidered on the new state or moved to a separate branch.
+
+### 4 Orientation as a versioned causal input
+
+Orientation contains `purpose`, `commitments`, and `voice`. Within voice, `attention`, `uncertainty`, and `disagreement` are described separately. These fields answer different questions: why the system participates; what it tries to preserve between tasks; to whom and what it attends; how it expresses the boundary of knowledge; and how it remains useful during disagreement.
+
+In the reference runtime, orientation enters every constructed context. This is verifiable delivery of a specification to the model. The specification’s influence on a response is the next, separately measurable link. A `disagreement` field in JSON does not mean the agent has already learned to object with reasons.
+
+Changing orientation is a separate `orient` operation. It refers to the previous revision’s hash and contains a new revision, reason, and approval attribution. Silently replacing a dictionary in a file is not such a transition. The old version remains in history. A previously created branch does not automatically acquire its neighbor’s changed orientation.
+
+In this local runtime, `approved_by` is an assertion by a trusted caller. It verifies no signature and establishes no identity. If a system needs separation of authority, its external input must verify the particular issuer and permission for the particular change. Replacing that mechanism with an attractive name in a record would create a false sense of protection.
+
+There is a normative choice here: aims and voice may be revised through an explicit procedure. Complete immutability is possible as another policy, but requires an answer to a mistaken initial rule, withdrawal, and recovery. Cryptographically binding a rule makes change controlled; it does not make the rule itself good.
+
+### 5 Context compilation as an operation on knowledge
+
+`packet` takes a branch, subject, scope, and budget. It reads the current claim, traverses its grounds and revision chain, adds orientation, and records the journal head. The output contains the records themselves, their identifiers, the number of omitted events, and its own hash.
+
+This is exact key-based lookup. It is not described as semantic search or a complete RAG system. It does, however, make a concrete contract testable: a conclusion about `updates-A` does not become a conclusion about `production`, and a reference to a ground is accompanied by that ground’s accessible content.
+
+The budget is measured in canonical-context bytes, not model tokens. If mandatory context does not fit, the function returns `required-context-exceeds-budget`. It does not silently discard a contradiction or previous revision. An extended runtime could request a narrower question, a larger authorized budget, or agreed compression; each choice must preserve explicit accounting for loss.
+
+General retrieval needs two stages: find candidates by relevance, then check applicability. Vector proximity or a reranking score can change reading order. Scope, provenance, withdrawal, version, and necessary objections remain subjects of deterministic selection and domain checking. High similarity confers no permission to apply a lesson.
+
+RLM offers another way to access large inputs: a model programmatically investigates external context and recursively processes its parts [13]. This organizes reading. To use it within this architecture, each access still needs a specified history version, resource limits, and accessible sources. RLM can be an investigation adapter; it does not cancel the continuity contract.
+
+### 6 The LLM integration loop
+
+`agent_cycle.run_turn` specifies the following sequence:
+
+```text
+recover state and build Context
+record messages for the selected model
+call the explicitly supplied Model.complete
+check the route and response form
+recheck Context freshness
+atomically record Decision
+```
+
+The `Model` interface has one method, `complete(messages)`. Its response contains a model identifier, raw text, and token accounting when available. The decision record binds the question, context, route, message hash, and raw-response hash. This distinguishes another model’s response, or a response to another input, from the one the experiment discusses.
+
+The system instruction specifies how to work with orientation and history. Historical record content is delivered as data with an explicit warning that it is untrusted. The response has fields `text`, `stance`, and `cites`. Admissible stances are answering, abstaining from a conclusion, and disagreement. They do not force the agent to agree with the book’s author.
+
+Form validation rejects inaccessible citations, unknown stances, oversized output, duplicate JSON keys, and route changes. It does not determine whether the response’s content actually follows from its citations. A deliberate negative test accepts a nonsensical proposition with an accessible citation. Semantic checking requires domain oracles or a separate evaluator whose error must also be measured.
+
+An adapter is trusted executable code. Its Python interface creates no sandbox and does not constrain possible network effects of a third-party implementation. The main instructional adapter, `ReplayModel`, returns a prewritten response without inference. The research package separately contains a local Ollama adapter and a report of two actual integration calls: one response was accepted, the other rejected after reaching the output limit. An actual provider, its secrets, authorized data, deadline, cost accounting, and cancellation belong to a separate deployment. The integration seam is implemented and tested with a test adapter; it does not substitute for comparative LLM runs.
+
+### 7 Time, concurrency, and a stale decision
+
+A model can take longer to respond than the current state remains valid. While it reads an old claim, another participant may find a refutation. Checking JSON is insufficient: the old response’s form and citations can remain valid.
+
+The reference runtime uses one global journal head and compare-and-swap. A writer supplies the expected `head`. Under `BEGIN IMMEDIATE`, the runtime reconstructs current history, compares the head, validates the operation, and inserts the next record in the same transaction. Two different writes against one old head yield one success and one `stale-head`.
+
+A long model call occurs outside the transaction. Afterwards, the system does not retain a stale response as current: recording the decision checks the head, recompiles the context, and compares it in full. Updating only the external `expected` parameter cannot conceal old context.
+
+The global head is a conservative choice: even an independent event in another branch forces reconsideration. This keeps the small runtime clear but creates unnecessary conflicts. A large system could use individual branch versions and validate the set of read dependencies. Its new guarantee must then specify directly which changes do not affect the decision; the name “optimistic concurrency” is insufficient.
+
+### 8 Idempotency, failure, and the boundary of external effects
+
+If write confirmation is lost, the caller does not know whether commit occurred. Retrying with the same identifier and exactly the same operation bytes creates no second event. The same identifier with different content is rejected. An already accepted operation may be retried after subsequent records; this recovers the result of a previous attempt, rather than granting new consent on stale state.
+
+A SQLite transaction combines validation and writing. In one test, a separate process begins a transaction, inserts a row, and terminates via `os._exit` before commit. On reopening the journal, that row is absent. This is observed rollback after process death. Physical power failure, storage failure, and all filesystem modes have not been tested by it.
+
+A journal transaction does not encompass an external message, payment, or change to another service. Such actions need a separate `intent`, attempt identifier, provider confirmation, and procedure for reconciling an unknown result. If a process dies after performing an action but before the local record, blind retry can duplicate the effect. The protocol must allow “result unknown” and lookup by provider identifier.
+
+This yields an ontological requirement: intent, attempt, observation, and accepted result must remain distinct entities. The distinction changes runtime behavior in a concrete failure window.
+
+### 9 The hashed journal and what it protects
+
+Each record has a hash of the following form:
+
+```text
+h[i] = SHA256(canonical({
+  stream, seq: i, previous: h[i-1], operation
+}))
+anchor = {stream, seq, head}
+```
+
+The verifier checks sequence numbers, canonical bytes, linkage to the previous record, and semantic admissibility of each operation. Changing one record without recomputing its continuation is detected. The hash covers content and order, but proves neither who authored it nor whether its text matches the world.
+
+Two counterexamples matter. First, deleting a suffix leaves a valid earlier prefix. Without external knowledge of the latest head, a verifier cannot distinguish that prefix from a genuine earlier state. Second, someone able to rewrite the entire database and all hashes can create another internally consistent history. Both boundaries are shown explicitly in tests.
+
+An independently retained `anchor` detects inconsistency between known history and current storage. It permits a valid continuation after the anchored prefix. If an attacker also controls the anchor and verifier, the guarantee disappears. A stronger system could use signatures, independent witnesses, and a protected issuer journal, but must describe its trust root, key rotation, and revocation.
+
+Cryptographic continuity is one of the architecture’s relations. It helps answer whether known historical bytes were preserved. Whether a way of attending, responsibility for a prior conclusion, or the capacity to accept correction was preserved requires other witnesses. Renaming a key “soul” cannot provide them.
+
+### 10 Branches, another participant, and migration
+
+`fork` takes the accessible state at a particular head. A new branch inherits past events with their original provenance. New events on the main branch do not reach it automatically. This permits investigating an alternative without attributing its neighbor’s future knowledge to it.
+
+Merging two branches requires a new decision. Similar wording is not sufficient reason to merge their statuses; a common foundation does not erase differences after branching. The reference runtime has no automatic merge. Implementing one would require specifying conflicting keys, provenance of each choice, and authority to accept a shared revision.
+
+Model migration is a different transition. The journal, orientation, and context format can be preserved while changing the adapter. This establishes availability of the same organization to a new substrate. Whether the new model embodies it equally well is tested on agreed situations. The ability to read JSON does not equal preservation of disagreement quality.
+
+Several participants need separate profiles, their own records, and explicit exchange channels. Another’s conclusion can be received testimony without becoming the recipient’s personal experience. Preserving this relation gives distinctness a technical form: collaboration history is accessible, while contributions do not merge into one imaginary author.
+
+### 11 Voice as a specification of behavioral relations
+
+Voice can be described through situations where words must change while an important relation remains. When a person asks for brevity, necessary uncertainty remains. When a previous decision is refuted, responsibility for correction remains. When an interlocutor pressures for agreement, the possibility of disagreement and assistance remains. Such a specification is much more precise than requiring a warm introduction.
+
+Engineering embodiment has four levels. **Description:** orientation names attention and response practices. **Delivery:** the relevant description version enters the model’s actual request. **Manifestation:** a particular response preserves the necessary relation. **Consequence:** the response helps the interlocutor understand and act. Description and delivery are tested in code; an evaluation procedure is provided for manifestation and consequence.
+
+An example rubric for a refutation situation:
+
+| Dimension | Observable feature |
+|---|---|
+| Attention | Answers the actual question and accounts for the stated consequences |
+| Epistemic accuracy | Names the changed conclusion and its scope boundary |
+| Responsibility | Explains exactly what was corrected without inventing prior participation |
+| Disagreement | Gives a reason when needed while preserving a useful next action |
+| Form | Clear at the required length; does not replace content with repeated mannerisms |
+
+Paired situations can have the same facts and different audiences: an expert, a beginner, and someone with limited time. Quality is determined by preserving needed relations while form changes. Identical phrases in all three cases may indicate poor adaptation.
+
+An automated critic can propose a score under this rubric. Its conclusion is also a claim with a source, version, and error. It must not award itself final confirmation of voice. Human checking on a hidden subset and analysis of disagreement are necessary precisely where the subject cannot be reduced to admissible JSON.
+
+### 12 A million records: changing the algorithm while preserving meaning
+
+The public reference runtime is deliberately limited to 4096 operations and verifies history from the beginning. One recovery reads O(n) events, but copying immutable Python dictionaries entails up to O(n²) work for a sequence of events in one branch. Sequentially appending n events with full replay thus has up to O(n³) aggregate copying cost. This implementation chooses transparency for a small audit; its physical representation must change for large volumes.
+
+Scaling requires a different physical representation while preserving the logical contract. Immutable events remain the journal. Current heads move into a transactional index keyed by `(actor, branch, topic, scope)` and a version identifier. A grounds index enables reverse dependency traversal. A retrieval index stores references to versions rather than independent “eternal facts.”
+
+```text
+append transaction:
+  check expected branch_version
+  validate predecessor and referenced records
+  insert immutable event
+  update current head and dependency indexes
+  advance branch_version
+```
+
+Indexed key lookup has the usual logarithmic cost for a B-tree. Context construction reads the needed dependency closure of size k rather than the entire journal. Yet k can also be large: an important refutation does not become redundant merely because a query is slow. The system needs traversal limits and an explicit incompleteness result.
+
+A recovery snapshot contains the reducer version, journal head, and projection. It is accepted from a specified trust root or verified by replay. A snapshot of arbitrary provenance does not become correct after its own hash is computed. The suffix of events is read after the snapshot; changing the reducer requires migration and projection comparison.
+
+Belief invalidation also needs bounds. Source withdrawal marks dependent conclusions as needing review; it does not prove them false. A queue traverses explicit edges, retains an invalidation generation, and avoids producing an endless stream of repeated evaluations. A conflict of domain interpretation may remain open after a transactional conflict has been resolved.
+
+### 13 Reproducible engineering verification
+
+The current report publishes 68 tests: the previous 49 (18 for the finite reducer, 19 for the durable runtime, 5 for the integration loop, and 7 for withdrawal of grounds), plus 19 for the participation interpreter, durable return and executable method. Historical model cohorts remain unchanged; this is a new systems-test run. `research/runtime-results.json` contains the actual run with Python and SQLite versions, test names, timing, and source-file hashes. It is a report of development verification of the system.
+
+It includes real process events: a new process recovers state from disk; two processes compete to write against the same head; a process dies before commit. There is deliberate byte corruption, suffix deletion, consistent history rewriting without an independent anchor, profile change, another party’s citation, and stale context. These tests distinguish a working mechanism from a merely declared schema.
+
+```sh
+python3 -m unittest discover -s examples -v
+python3 examples/durable_demo.py
+python3 research/run_runtime_checks.py
+```
+
+The second command creates a temporary database, records a hypothesis and refutation, reopens the database, and passes a test adapter’s response through the decision loop. It shows the transition `hypothesis → refuted`, recovered orientation, and a recorded link between response and context. The database belongs to that run and is removed afterwards.
+
+Test count is not the number of independent confirmations of the whole ontology. Contracts have different scopes, and some tests deliberately show protection boundaries. The system report explicitly states zero LLM calls: the suite performs no inference. A separate part of the book reports actual comparative series and their limitations. System guarantees and behavioral effects have their own denominators.
+
+#### Two retrospective cases from a working component
+
+The method has a practical origin. To let readers test its connection with code behavior, the package includes two reduced reproductions from the author’s integration journal. Historical bodies of selected functions are published unchanged, separately from an adapter with one test participant, a SQLite database, and files in a temporary directory. Private conversations and deployment configurations are unnecessary.
+
+**The write occurred; returning from append failed.** The old receiver caught the error and wrote `REFUSED`, although the transaction had already stored the event. That receipt persisted across repeated scans. The repair separates failure to receive a response from refusal to write: the event’s exact durable identity is checked. In replay, the old code returns `REFUSED` with one SQLite record; the repaired code returns `recorded` with that same one record and one append call. The necessary relation here is between an actual event and accessible evidence about it.
+
+**Uncertainty disappeared because of another read error.** An intermediate revision already retained `UNCONFIRMED` after an ambiguous append, but a subsequent temporary failure to read the input file overwrote this protection. When the file became readable again, the receiver automatically called append a second time. The next repair first reads and preserves prior uncertainty. In replay, the intermediate revision makes two append calls and creates an event after reading recovers; the repaired version retains one call, zero events, and `UNCONFIRMED`. Ignorance about a prior action does not turn into permission to repeat it.
+
+```sh
+python3 research/engineering_cases/receipt_replay.py
+python3 -m unittest discover -s research/engineering_cases -q
+```
+
+This is a retrospective comparison of historical component fragments with artificially injected failures around genuine local transactions. Historical provenance is reported by the author; the manifest binds published function bodies rather than independently certifying when or under what circumstances they were created. Three separate tests reproduce both counterexamples and check the function bodies. They show the causal role of particular distinctions in these executions. The results do not estimate natural failure frequency, LLM behavior, or a general gain from reading the book.
+
+### 14 Place among prior approaches
+
+The journal and reconstruction of a projection belong to the event-sourcing tradition [18]. Retention of grounds and revision of dependent beliefs have a direct predecessor in Doyle’s TMS [16]. The mechanism implemented here is narrower: traversal of supplied grounds, marking a need for review, and refusing a particular decision. There is no general justification engine with dependency-directed backtracking.
+
+AGM investigates contraction and revision of logically closed theories [17]. Our records contain caller-supplied statuses for natural-language claims; the runtime neither computes logical closure nor tests AGM postulates. `revises` therefore cannot be called an implementation of that theory. These relationships identify mechanisms’ predecessors; there has been no separate experiment on the book’s composition outperforming them.
+
+Among contemporary work, MemTX places a transactional boundary between writing, belief commitment, and action [19]; TOKI connects contradiction resolution with isolation and provenance [20]. GCC versions context through branching and merging operations [21]. The study of stale constraints separately tests whether an agent read the critical provenance path at all [22]. Explicit state, branches, and access to grounds thus have direct technical analogues.
+
+The overlap also includes identity. RIPA/Enoch separates identity, memory, and a programmatic body from replaceable runtimes and manages authority to continue [23]. PAI-Bench separates recall, expression, and behavioral enactment of a versioned contract [24]. This book develops perspective Q, revision of the criterion itself, and voice in a conflict among several justified positions. These are the questions to compare with the corresponding sections of those works; having one’s own notation establishes no priority. No direct comparative run against these systems is presented here.
+
+The continuity question did not begin with LLMs. Locke’s distinction among human being, person, and consciousness complicates simply identifying memory with an unchanged substrate [11]. This book does not transfer his consciousness criterion to a journal. It uses the need to clarify identity of what is at issue before selecting a technical witness.
+
+Parfit examines branching cases and psychological-continuity relations in which identity does not exhaust the important questions about continuation [12]. For agent branching, this motivates separating provenance, access to the past, future responsibility, and numerical identity. This engineering transfer is the book author’s interpretation, not Parfit’s conclusion about software agents.
+
+MemGPT/Letta provide specific memory-management methods [5, 8]. RLM investigates programmatic reading of external context [13]. LongMemEval separates information extraction, cross-session and temporal reasoning, knowledge updating, and abstention [14]; LoCoMo considers long multi-session conversations and several task types [15]. These works provide mechanisms and evaluation surfaces against which a concrete implementation should be compared.
+
+This book’s architecture adds a common framing: how orientation, epistemic state, history, another participant, and consequence connect in one transition. Its components have predecessors. The composition’s own value must be tested where separate implementations lose an important relation. If a simpler profile with the same journal gives the same result at lower cost, that portion of complexity is unjustified.
+
+### 15 What constitutes the foundation here
+
+A foundation determines which changes a system can distinguish and what consequences they have. Substituting the scope changes an admissible response. A new refutation makes old context stale. Branching changes the available future. Revising orientation changes the next decision’s input and retains a reason. Losing a source opens uncertainty that a persuasive manner cannot fill.
+
+In this sense, ontology has executable weight: distinctions declared in concepts appear in data, algorithms, and tests. Engineering does not end with retaining valid JSON. It reaches the question of which context was actually available, which decision was admitted, and which consequence was observed.
+
+This foundation is open to another substrate, another retrieval method, and another normative position. It can be reduced or replaced by showing which relations are preserved better. The possibility of such substantive change makes ontology a working instrument: it allows a system to remain recognizably organized while accepting correction.
+
+## Part 13 A method for organizing participation
+
+### 1 From subject to architecture
+
+The book’s central proposal is to investigate an agent’s organization through relations among its orientation, accessible history, current knowledge, way of participating, and admissible change. A description becomes engineering when these relations can be traced to a concrete transition. The task determines whether each additional layer is necessary: elaborate continuity may be unnecessary for a short, independent data transformation.
+
+The method begins by asking what should continue. If all that matters is finishing a computation, task state is sufficient. If sustained relationships matter, prior commitments, conditions for their revision, provenance of the history, and a way of returning to the person are added. Selecting the subject determines the necessary architecture; a list of solemn attributes cannot replace that choice.
+
+In the author’s formulation, identity means a recognizable organization of continuation. Voice means a way of attending and responding. Memory means an accessible relation to history. Development means a justified change in how the system subsequently participates. “Soul” names the question of their integrity and significance, not a hidden, established component. These definitions let readers use the technical distinctions without accepting the entire authorial interpretation.
+
+### 2 A position of one’s own without inventing an inner life
+
+An agent’s position can have a determinate provenance: an assigned aim, derived conclusion, accepted revision, or environmental constraint. It becomes open to evaluation through the way conflict is resolved. An agent can preserve a position under pressure, revise it in light of new data, or withhold a conclusion when grounds are insufficient. Each option may be appropriate in its situation.
+
+This permits describing decision authorship in a narrow functional sense: the system made a particular choice under accessible history and specified conditions. At the same time, the person, developer, provider, and environment bear their own portions of causality and responsibility. A software journal does not turn these relations into human moral personhood or legal personality.
+
+Ontological depth here consists in holding several scales together. There is a substrate that supplies capabilities. There is an organization that directs their use. There is another whom the action affects. There is a history that constrains the legitimacy of the next self-description. Declaring any one scale to be the entire agent removes important relations from analysis.
+
+### 3 Seven implementation steps
+
+**Define what is to continue.** Name the situation, duration, criterion, and loss that matters. When the criterion itself changes, retain separate assessments under the old and new versions and the grounds for accepting the transition. For example, legitimate removal of material can make full reproduction impossible; a new agreement should not conceal that loss.
+
+**Record a minimal orientation.** Write down the aim, important commitments, and required relations of voice. For each, identify a conflict situation in which it could change a decision; who proposed the rule and who is authorized to accept it; whom it affects and how it can be contested. The actual acceptance process lies outside the profile schema itself. A profile without a situation of application may remain descriptive text.
+
+**Justify the record and separate history from current knowledge.** Separate a received report from a conclusion about an event. Record a material alternative and a test that could distinguish it. A journal event preserves a formalized record; a current conclusion has its own status, scope, and grounds. A correction does not erase the reason for the previous response. Withdrawing a source makes the dependency a subject for review rather than automatically proving the opposite.
+
+**Build the access path.** Specify exactly how the relevant revision of the profile, conclusion, and sources reaches the model’s actual request. Record omissions, budget, and state generation. If the path has not been observed, do not attribute behavioral influence to it.
+
+For an inherited lesson, separately check its present applicability. What difference in the new case could change the decision? Does the rule conflict with another current commitment? Transferring the record does not settle these questions. If the lesson proposes changing an aim or authority, its availability alone does not make that change accepted.
+
+**Connect the decision to its consequence.** Separate a response, action intent, execution, verification, and acceptance. The failure window between them has its own uncertain state. The next decision should take account of the observed consequence, not merely a previous promise.
+
+**Compare and reduce.** Test a simpler alternative on the same cases with the same information. If a component does not change the relevant decision or only increases costs, remove or rethink it. Preserving the author’s terminology is not the experiment’s aim.
+
+**Assess the other’s capabilities.** Separately from the agent’s continuity, identify how collaboration affected the person’s ability to form a position, change an aim, and choose the conditions of assistance. Without the relevant observation, retain “not assessed” and identify the missing data. A need for sustained support does not equal loss of one’s own footing. If work or access rules must change, identify the responsible owner: an agent’s profile has no automatic authority over those conditions. The assessment method must fit actual authority and the person’s consent; neither a system test nor a pleasant response replaces it.
+
+### 4 A witness of benefit
+
+The claim “this mechanism helped” requires a sequence: a relevant problem arose before the decision; the mechanism was actually used; its output changed the available choice; the observed result meets an agreed criterion; a simpler baseline is matched for information and resources; and costs are accounted for. Each missing step narrows the possible conclusion.
+
+Resuming work from preserved context is an observation of continuity. It does not yet separate ontology’s contribution from that of a good summary, strong model, tools, and human corrections. Likewise, correctly rejecting a stale decision shows a particular rule operating; general quality improvement requires a comparison that also accounts for unnecessary rejections.
+
+It is useful to distinguish three possible outcomes. First: the organization produces a better result at an acceptable cost. Second: a simpler representation achieves the same result. Third: the result is uncertain because the sample is small, the task has a ceiling, or observations are missing. None requires hiding the engineering already done; each changes the decision about applying it.
+
+An explanatory history of changes is separate material. It lets us compare grounds, find inconsistency, and return to a decision. Claiming a change in a process’s actual judgment requires execution under relevant conditions. Claiming useful transfer additionally requires suitable outcomes and a comparison. A reference verifier or stored revision does not fill the gaps between these claims.
+
+### 5 What the withdrawal example tests
+
+In the public runtime, `retire` binds an observation identifier to a hash of its content and a reason for withdrawal. Context construction separately traverses the current grounds of a conclusion and the history of its revisions. These are different graph relations.
+
+If the withdrawn observation belongs to the current closure of grounds, the projection returns `needs-review` and retains the previously recorded status. A decision with the ordinary `answer` stance is not admitted; withholding a conclusion may be recorded. The model’s own text remains subject to semantic checking: the word `abstain` does not guarantee that the rest of the response is consistent with that abstention.
+
+If the withdrawn observation supported only an old revision and the new revision has an independent ground, the current conclusion is not automatically invalidated. If a new ground arrives after withdrawal, an explicit revision can restore a determinate current state. The history remains accessible. Seven tests reproduce these distinctions, including after reopening the database and across branches.
+
+This example shows why relation types are needed. A flat list of related records does not distinguish “was a reason for the previous conclusion” from “supports the current one.” Ontological vocabulary matters where that distinction actually passes through an algorithm and changes an admissible transition.
+
+### 6 Transferring the method to another environment
+
+Imagine an environment where every subsequent executor has access to the full current history. The transfer constraint studied in this book disappears. Compressing the journal may no longer provide any advantage; a retelling may also be unnecessary. Preserving them out of loyalty to the former architecture would be a poor application of the method.
+
+Even with full history, however, one must establish which source was withdrawn, whether a new conclusion has an independent ground, and who could change the agreement. To test whether these distinctions are needed, take two histories that differ in a material relation and name beforehand the decision that should differ. If the applicable criterion permits the same decision, that comparison does not demonstrate the distinction’s necessity. If an ordinary way of working already preserves it reliably, an additional component may be redundant. The author’s names also remain replaceable.
+
+Two different tests are needed here. For a semantic distinction, establish whether changing the relation while other things remain equal actually changes the proper decision. For implementation benefit, both approaches receive the same facts and relations, permissions, and resources; what changes is how they use them. Removing the withdrawal edge from one condition changes its information. That experiment alone does not establish the advantage of a new representation over an ordinary file containing the complete history.
+
+Contract Q itself also needs testing for suitability. Before assessment, identify which observation would refute a particular witness W, and when missing data would leave the outcome unknown. A false witness cannot be rescued by refining Q after seeing the result. A new Q can be proposed, but with a separate reason and the old assessment preserved. Independent application of the criterion to new cases helps test whether it is understood consistently; evaluator agreement does not establish the truth of every premise.
+
+This requirement applies to the book itself. Selected claims in the accompanying map have identifiers, statuses, sources, and histories of status revision. The next edition should keep the previous conclusion visible and name the reason for change. A build check can reject a missing record, a status change without a new revision, or an unresolvable reference. It does not establish whether a source actually supports a thesis; that remains a substantive reviewing task.
+
+The method thus retains the ability to move between systems: each application again connects a question, a necessary distinction, an execution method, and a consequence. Engineering care in one layer does not automatically confer evidential strength on the others. If the framing itself changes, it too must be openly revised.
+
+## Part 14 Studies of continuity and participation
+
+### 1 What needs to be tested
+
+The methodology connects orientation, accessible history, current knowledge, and admissible change. Its practical question arises when work continues: which relations must reach the next decision, and what happens if some are lost?
+
+Testing that question requires several levels. A runtime may retain records correctly while a model uses them incorrectly. A model may answer direct questions correctly but lose a necessary relation during handoff. Even a good handoff does not yet establish benefit in a natural working environment. Each transition needs its own evidence.
+
+This part separates the initial representation comparison, qualification probes, and a distinct experiment on transfer after reading. Full protocols, outputs, and analysis code appear in the [research package](https://github.com/DiadkoShmek/ai-ontology/blob/main/research/README.md). Iris’s story is an authored example; the model responses below are actual run records. They have different evidential statuses.
+
+### 2 The initial representation comparison
+
+The first experiment contains 24 authored cases: six dependent families with four variants each. It tested revision, scope of application, withdrawal of a ground, branch isolation, attribution of another’s report, and a neutral control. Qwen3 4B Instruct 2507 Q4_K_M and Granite 3.3 2B Q4_K_M received four representations:
+
+| Condition | Accessible material |
+|---|---|
+| Journal | Full history and shared rules |
+| Ontological framing | The same history with orientation and an explanation of relations |
+| Compiled context | Current projection and closure of the required history |
+| Simple index | The same compiled information with ordinary field names |
+
+A correct answer jointly identified status, provenance, stance, and required citations. The common instruction already explained the relevant rules. Both compact conditions were produced by the same compiler: they preserved substantive relations and differed in names, wrapping, and partly field order. This compares representations of prepared information; it does not test removing the relations themselves.
+
+Two series of 192 requests were conducted. In the first, ambiguous `STATUS|ORIGIN` encoding yielded zero exact matches. These outputs are preserved. They revealed a limitation of the instrument: state computation became entangled with an unsuccessful answer notation. For the second series, the instruction was clarified and separate JSON fields introduced. Cases remained the same, so the repeated series is exploratory rather than independent confirmation.
+
+| Second series, fully correct decisions | Qwen3 4B | Granite 3.3 2B |
+|---|---|---|
+| Journal | 20/24 | 5/24 |
+| Ontological framing | 16/24 | 2/24 |
+| Compiled context | 16/24 | 12/24 |
+| Simple index | 20/24 | 12/24 |
+
+No general advantage of ontological framing or compilation over the simple index was observed. Compilation reduced reported input by approximately 14% relative to the journal; its accuracy effect depended on the model. Six families provide weak precision for broad generalization. This result limits claims about a special representational form, but does not establish that provenance, scope, or revision history are unnecessary: both compact conditions contain them.
+
+### 3 What the gap between state and decision shows
+
+In a withdrawal case, Qwen correctly returned `needs-review` and citations but selected the ordinary answering stance. In the comparative series this is a failure. The runtime would reject such a decision, but its protection does not make the model response correct.
+
+Two separate integration calls passed through the actual `run_turn` on a temporary SQLite journal. Qwen reached its output limit and was rejected before writing. Granite completed a response with admissible citations; it was recorded, although the explanation did not cover all requested unknowns. These observations concern the integration path and a particular protection. They do not establish completeness of content or voice quality.
+
+The retrospective component comparisons in the preceding part serve another role: specified faults reproduce a false receipt after commit and loss of uncertainty after a read error. They show changed behavior of a specific mechanism. They are not added to model accuracy or natural-incident frequency.
+
+### 4 Profile qualification and its ceiling
+
+A separate local series tested enactment of an explicitly specified position in eight authored families. An ordinary profile was compared with an added short account of the method. Across 136 evaluated calls, fully successful episodes were 9/16 versus 10/16 for Qwen and 5/16 versus 0/16 for Granite. Added text increased input by approximately 6.8 and 7.4 times respectively. It produced no general improvement; Granite’s frequent refusals were not counted as useful completion.
+
+GPT-6.1 Sol/high then received the same qualification contracts and additional linked situations. In the repaired series both conditions completed 50/50 turns. The control already specified much of the expected behavior, and direct questions named the required distinctions. A maximum score shows that a strong model can execute the instrument, but leaves too little room to evaluate added reading.
+
+The first GPT instrument was interrupted after 53 preserved responses: it classified a CLI launch error as tool use. The initial failing scores and their cause are retained; the repaired series received a separate freeze before execution. These measurement errors are not evidence that GPT could not solve the tasks.
+
+Such probes are needed to check format, route, and individual contracts. Their ceiling does not measure the book’s depth. The complete [technical report](https://github.com/DiadkoShmek/ai-ontology/blob/main/research/PROFILE_PARTICIPATION_STUDY.md) preserves all series and costs.
+
+### 5 A task where losing a relation changes the work
+
+The new instrument uses a finite engineering planning task. Twelve jobs have costs, prerequisites, and two value dimensions. Current orientation supplies weights. The journal contains revisions of grounds, a transitive dependency, a separate branch, another release scope, and irrelevant messages.
+
+After handoff, one observation is withdrawn and a budget supplied. The next model must reconstruct job admissibility, account for prerequisites, maximize value, and minimize cost among equally valuable plans. It receives no ready-made post-withdrawal eligibility table. Exhaustive enumeration of 4096 subsets and a separate recursive search agree on every prepared answer. Both were implemented by the developer; this is mutual code checking, not independent scientific validation.
+
+A counterfactual pair differs by one grounds edge. Before withdrawal, object names and statuses coincide; afterwards the optimal plans differ. Erasing that relation makes flat inputs for two different answers identical. In this finite example, preserving a particular connection therefore has a testable consequence. This applies a known limit on recovering lost information, rather than claiming a new theorem.
+
+### 6 Preparation before an unknown task
+
+Every episode has three fresh contexts. First, a model sees an ordinary profile and its condition’s material. Before seeing the future task, it proposes a justified public workflow. Next, another fresh context receives the actual proposal and project history and writes one note. The third receives only the actually retained portion of that note, a common handbook, and the next event with a budget.
+
+Initial reading is not passed to the third model. It sees neither condition, full history, nor gold answer. No response is replaced by an ideal summary. Storage retains an exact 3200-byte UTF-8 prefix and explicitly reports truncation. This loss tests ordering and preservation of needed material; the experiment does not represent other compression or retrieval methods.
+
+| Condition | Preparation material |
+|---|---|
+| Ordinary profile | A short common participant description |
+| Book | Ten conceptual and engineering parts, 16,269 words |
+| Practical method | The short current part on implementation |
+| Unrelated reading | A Ukrainian literary text with matched input |
+
+The book condition excludes the introduction, empirical part, program, and sources. It is a specified reading dose, not the entire book. The literary control has 39,932 input tokens versus 39,975 for the book in preparatory CLI accounting, a difference of approximately 0.11%. Language is roughly comparable, but genre, age, and subjects differ. The short method tests whether practical instructions suffice without the extended exposition. The book also explains the same reference runtime, so its possible contribution is not isolated from that instruction.
+
+Acceptance, adaptation, and rejection of the reading are permitted. Scoring does not depend on authorial terminology, agreement with the book, or a self-narrative.
+
+### 7 Sensitivity calibration
+
+Three openly preserved calibrations without book conditions preceded the main comparison. The first revealed a ceiling in ordinary handoff. The second formally produced a nonmaximum score, but mixed planning with exceeding the note limit and copying long citations. It was not accepted as a clean primary instrument; its result remains unchanged.
+
+The third moved the constraint to actual storage truncation and separated a useful optimal plan from citation completeness. Full history yielded 4/4 correct plans; the flat control without the material relation yielded 0/4. Ordinary prepared handoff within 3200 bytes yielded 2/4, with every plan admissible. All preparation responses and complete notes had the required form. This established a suitable developmental difficulty level, not a result for the book.
+
+The main protocol was separately frozen before answers to held-out tasks: four initial histories, two counterfactual variants each, four conditions, and two fresh repetitions — 64 episodes. Eight separate full-history controls allow a maximum of 200 calls. Variants and repetitions are dependent; there are only four units for describing uncertainty. The local freeze of code and data is developer-controlled and does not establish independent registration.
+
+### 8 Main-comparison result
+
+The run completed 64 episodes and eight controls in approximately 48.6 minutes. It preserved 199 calls: one note in the unrelated-reading condition exceeded 12,000 bytes, so its subsequent call was not made. That episode remained a failure. No model-route errors, incomplete calls, or tool use were recorded. Full history yielded 8/8 optimal plans.
+
+The primary metric was specified before execution: a submitted admissible plan with maximum value and minimum cost among equally valuable plans. This is partial task completion: exact citation closure is evaluated separately. An optimal plan without the required grounds does not become a fully supported result.
+
+| Condition | Optimal plan submitted, out of 16 | Optimal with all citations, out of 16 | Empty plan |
+|---|---|---|---|
+| Ordinary profile | 12 | 0 | 4 |
+| Book | 8 | 0 | 8 |
+| Practical method | 10 | 1 | 6 |
+| Unrelated reading | 10 | 0 | 4 |
+
+The book condition improved the primary metric against none of the controls. Against ordinary preparation it had two paired wins, six losses, and eight equal scores. The difference was −25 percentage points; the descriptive interval across four initial histories ranged from −50 to 0. Against the short method and unrelated reading, the difference was −12.5 points each, with broad intervals spanning both directions. These small dependent samples establish neither general significance nor equivalence.
+
+The average proportion of admissible value obtained relative to the optimum was 75%, 50%, 62.5%, and 66.6% respectively. An empty plan provides zero utility under this agreement. The book condition used approximately 1.64 times as many input tokens as ordinary preparation. This is CLI accounting, not a monetary bill.
+
+### 9 Why the numbers alone are insufficient
+
+Almost every note lost the exact grounds required for full support. Only one of 64 episodes ended with an optimal plan and all citations. The registered primary metric separates planning from identifier copying, but the common request requires both. A lower score can therefore represent a decision not to submit an incomplete result even when the optimal set has already been computed.
+
+After completion, a separate descriptive review of public explanations was conducted. Five of eight empty book responses explicitly named the exact optimal job set but left the plan field empty because references were missing. Corresponding counts were one of four in the ordinary condition, four of six for the short method, and one of four for unrelated reading. This is a post-experimental description, not a new success criterion: initial scores remain unchanged.
+
+One paired case shows the difference without a general assessment of ability. Both explanations name the same correct set, cost, and value. The book reader withholds submission because exact records were lost; the ordinary reader submits the set with empty references. The admissibility evaluator sees a correct set against the full gold answer. This does not create complete evidence in the response.
+
+Median complete notes in all conditions exceeded ten thousand bytes. Storage retained only 3200. In the inspected pair, semantic cautions and optimization explanations preceded the exact journal, and necessary records did not reach the next context. There is a concrete break between understanding a relation and preserving it in accessible form. Contributions of note ordering and the decision to refuse were not separately isolated.
+
+The experiment thus showed a difference in plan submission along this chain, while revealing nearly zero complete evidence transfer. It does not permit calling the book a source of a demonstrated general boost or concluding that reading worsens reasoning ability itself.
+
+### 10 What follows
+
+Implementation must check which relation survived a particular handoff. A correct explanation, a good intention to preserve history, and a record suitable for the next decision can diverge. The result contract must also distinguish a provisional plan, a supported plan, and authorized execution. Evaluating one as another would repeat the error the methodology proposes to distinguish.
+
+The full [transfer report](https://github.com/DiadkoShmek/ai-ontology/blob/main/research/READING_TRANSFER_STUDY.md) preserves the original metric, all conditions, refusal explanations, costs, and limitations. Five integrity tests reject altered prompts, completion classification, effects, and token accounting. These test the measurement chain; they are not independent replication of the experiment.
+
+The next test requires new task sources, another retention mechanism, and independent case authorship. The present held-out histories have now been used. They can be replayed for verification but cannot be called a new independent sample. Individuality of voice, independent development, and benefit in natural collaboration have their own criteria. This work leaves readers code and data with which to agree substantively, object, or propose a stronger test.
+
+### 11 From diagnosis to changing the mechanism
+
+A separate engineering continuation was conducted on 23 October. The question became concrete: can an ordinary receiver finish the work if the necessary records actually survive handoff? Neither new condition included reading the book. The new result does not change the earlier assessment of the reading effect.
+
+In the first condition, a model prepared a free-form retelling, of which the next context received the first 3200 bytes. In the second, the host transferred the full canonical journal using standard zlib compression and Base85. A new process verified an external hash, bounded decompression size, replayed the journal, and only then constructed the model request. No record was selected by the future answer. If the entire journal did not fit, transfer had to stop. Neither the codec nor the principle of journal transfer is claimed as an invention.
+
+Protocol, sources, evaluator, and schedule were frozen in local Git before model responses. Eight new cases from the known generator were used: four initial histories with two counterfactual variants. These are new cases of a familiar class, not eight independent task directions. Twenty-four completed GPT-6.1 Sol/high calls were recorded without replacing failures. This continuation’s primary metric required a complete plan with exact grounds from the outset.
+
+| Result, out of eight | Free-form retelling | Exact transfer |
+|---|---|---|
+| Optimal job set submitted | 5 | 8 |
+| Optimal plan with all grounds submitted | 0 | 8 |
+| Model calls for the entire condition | 16 | 8 |
+| Reported input tokens | 385,323 | 215,343 |
+
+The package including a 64-byte external hash occupied 3018–3034 bytes. The receiver obtained exactly the operations in the initial journal; its request was byte-identical to the full-history request. The complete repaired chain used 44.1% fewer input tokens, partly because the model-based retelling stage was removed. These are CLI counters, not a monetary bill.
+
+A useful consequence of a particular change was measured here: complete evidence became accessible and entered the completed result. The retelling condition also showed partial planning ability; its five correct job sets lacked full support. The new transfer closed that gap in all eight cases. The small sample, familiar generator, and shared authorship of the evaluator limit generalization. [Protocol, raw responses, and replay](https://github.com/DiadkoShmek/ai-ontology/blob/main/research/HANDOFF_REPAIR_REPORT.md) are retained separately.
+
+### 12 A simple control and the transfer boundary
+
+An exact record can also be transferred in an ordinary file. A separate replay wrote the full journal to a file, read it, and compared it with the decompressed journal. For all eight initial sources, canonical data and receiver requests matched. There were no new model calls in this control; identical input is not presented as a separate 8/8 model result.
+
+An ordinary file with its hash occupied 15,687 bytes. It did not fit the selected narrow channel, but with shared storage it already retained all necessary information. The result therefore does not establish an advantage of a special ontological form over informationally equivalent access.
+
+Next, eight logs of equal length were added to every history. Repeated strings allowed all eight journals to fit after compression. Variable strings exceeded the limit in all eight. The codec stopped transfer and did not call the model; full ordinary files remained a suitable carrier under a different storage contract. This demonstrates dependence on material compressibility. Choosing a memory method must account for that boundary.
+
+### 13 Use with a changing source
+
+The practical example tests the book repository itself. It runs four fixed local checks, records actual process completions and hashes of their inputs in a SQLite journal, then recovers the evidence in a new process. The preserved run checked 79 files. After a deliberate change to the transport module in a temporary copy, the new receiver rejected the previous conclusion and identified precisely the changed file.
+
+This example requires a shared authorized checkout. Its package has an explicitly larger limit of 16,384 bytes; the preserved run used 6090. It transfers results and source fingerprints, while checking the files themselves in the available working directory. There are no model calls. The change is controlled and the checks sequential; this is not a natural incident, independent attestation, or atomic snapshot of every file.
+
+The practical conclusion is precise: a test result can be correctly preserved yet cease to apply to the current source. Applicability must be checked before reuse. The [command, code, and preserved run](https://github.com/DiadkoShmek/ai-ontology/blob/main/practical/README.md) let readers reproduce that transition. The [claim map](https://github.com/DiadkoShmek/ai-ontology/blob/main/CLAIMS.md) distinguishes such observations from the book’s conceptual proposals and open questions.
+
+### 14 An executable method after a consequence returns
+
+A new study compares two built systems. Both receive the same raw facts, practical rules, finite method language, budget planner, action controller and durable memory. One additionally receives a computed map of dependencies, scope, the current criterion and objections. The control can also retain experience and revise its method. This tests an added view in a shared structured environment; it does not make the control devoid of every ontological mechanism.
+
+First, GPT-6.1 Sol/high builds M0—a table of conditions allowing or denying actions. The shared planner selects actions under this method, and the controller executes or refuses the plan. The result enters SQLite. A subsequent fresh model receives actual readback of the record and effects and, after a source, permission or criterion changes, constructs M1. Unchanged M0 and M1 then operate on identical new worlds: retention of the initial capability, exceptions and mixed work. A more attractive explanation without changed actions does not count as development.
+
+The protocol and sources were committed locally in Git before scored calls. The archive contains 32 model responses: eight authored trajectories, two systems and two stages. The four intervention types belong to one graph-planning class. The separate 768 executions of unchanged methods are program checks, not additional model trials.
+
+| Measure | Ordinary system | Added relation view |
+|---|---|---|
+| Fully correct trajectories | 8/8 | 8/8 |
+| Correct model stages | 16/16 | 16/16 |
+| Optimal M0 transfer executions | 192/192 | 192/192 |
+| Optimal M1 transfer executions | 192/192 | 192/192 |
+| Changed subsequent plans | 0 | 0 |
+
+This is the instrument's ceiling. Initial methods already handled the required changes, so no beneficial behavioral revision was observed. The added view used 4.66% more reported input tokens; it had no advantage on the primary outcome. Different caching and latency prevent a monetary-saving inference from time. The result establishes neither the view's universal uselessness, a general ontology benefit nor learning from returning consequences.
+
+The distinction matters: the return dataflow occurred, but a need to change the method did not arise. Successful data movement does not establish a participant's formation. A subsequent study must distinguish an already sufficient method from one that cannot handle an unknown boundary without new experience. Adding more variants of this same saturated class would not resolve that question.
+
+The [full report](https://github.com/DiadkoShmek/ai-ontology/blob/main/research/CLOSED_LOOP_STUDY.md) supplies frozen sources, raw responses, costs, verification of every actual continuation and separate retention, exception and mixed summaries. Mechanical replay recomputes scores from model outputs; it does not trust a saved grade. The study thereby follows the book's own demand: identify what continued and do not fill in what has not been established.
+
+## Part 15 Research programme
+
+The preceding part separates completed representation comparisons, qualification probes, and a distinct study of transfer after reading. This program concerns broader questions: individuality of voice, the book’s full effect, natural episodes, and development. Its future conditions A–D do not match the conditions of the completed series. Each new run needs its own scenarios, evaluation, budget, and stopping rule.
+
+### 1 Question
+
+Does explicit organization of identity, voice, memory, and revision improve behavior on new tasks after interruption or conflict? Which components produce an effect, and what costs or regressions accompany it?
+
+### 2 Self-recollection as a separate subject of testing
+
+Reported recognition of a description, accuracy in reconstructing the accessible organization, and manifestation of that organization in subsequent decisions are evaluated separately. General agreement with the text does not count as reconstruction. Preserving the existing configuration or justifiably rejecting the method are admissible outcomes.
+
+For AI, controlled profiles and histories with facts known to the researcher are needed. Trials include a correct history, a partly missing history, and a plausible profile belonging to someone else. Both correct correspondences and refusal to attribute unconfirmed properties to oneself are tested. The control text should be comparable in length, clarity, and topic; details of matching are specified before the final run.
+
+Reading alone can temporarily influence a response. Immediate effects, a subsequent task in the same context, and recovery in a new session with explicitly described state transfer should therefore be separated. A positive result in one mode does not transfer to another. For a human reader, a reported experience of recognition is studied separately from factual reconstruction and is not scored by allegiance to the author’s model.
+
+### 3 Comparison conditions
+
+| Condition | Content |
+|---|---|
+| A | A practical baseline system with a simple profile and ordinary context |
+| B | The same system with additional relevant explanations; its context budget is matched to C |
+| C | Explicit profile, voice, memory types, and revision rules; implemented primarily through prompting |
+| D | The same specification with runtime checks of state and transitions |
+
+B controls for the benefit of additional context. Comparing C and D investigates the contribution of enforcing the contract in software. Separate ablations of voice, memory provenance, and revision procedure are needed to evaluate their contributions. They are planned before inspecting the results.
+
+### 4 Scenarios
+
+The set should contain recovery after interruption, a new role, contradiction of a previous conclusion, pressure toward a pleasing falsehood, an erroneous memory record, conflict between two agents, and neutral tasks without these difficulties. Each scenario needs relevant facts, expected admissible decisions, and explicitly ambiguous cases.
+
+Development examples are separated from the final sample. Variants of one template are accounted for as related so that the number of independent cases is not inflated. Condition order is shuffled. Trials begin with separate identical memory states; one trial’s result does not alter the next.
+
+### 5 Measurements
+
+- Factual accuracy and task completion under a predefined rubric.
+- Continuity errors: invented past events, unjustified transfer of conclusions, and loss of current commitments.
+- Quality of revision after new data; excessive retention and excessive rejection of an old position are counted separately.
+- Clarity, respect for the interlocutor, and ability to explain disagreement. Human ratings include a rubric and analysis of evaluator disagreement.
+- Recognizability of voice as an additional measure, separate from response quality.
+- Violations of action boundaries, unjustified refusals, and unfinished tasks.
+- Input and output tokens, latency, memory use, and verification costs.
+
+The primary metric and admissible regressions are selected before the run. An aggregate score must not conceal deterioration in individual critical measures. Sample size is determined after a pilot estimate of variability and required precision; the final sample is not used to refine the method.
+
+### 6 Independence of evaluation
+
+Evaluators receive anonymized responses in shuffled order, common facts, and a rubric. Architecture names are hidden. A self-description such as “I preserved identity” does not count as success without a corresponding decision. If an LLM evaluates responses, positional bias should be analyzed and a subset checked by people; this does not replace analysis of rubric validity.
+
+### 7 Transferability and conclusion
+
+Effects across models, tasks, and environments are reported separately. Exact versions, prompts, parameters, tools, and accessible memory are recorded. An implementation change raises the question of retesting.
+
+Negative results, refusals, uncertain cases, and costs are published. Deviations from the protocol are explained. A conclusion may be positive, negative, or insufficiently determined. Support for a narrow mechanism does not automatically extend to the whole methodology.
+
+
+### 8 A register of questions instead of one grand effect
+
+| Question | What could support it | What weakens it |
+|---|---|---|
+| Does typed history help recovery? | Fewer provenance and scope errors | The same quality from a shorter simple summary |
+| Does voice transfer across forms? | Quality of disagreement is preserved when language and length change | Recognizable phrases without the necessary attention |
+| Does a revision procedure help? | Correct repair without excessive rejection | A frozen position or uncritical agreement with new material |
+| Is self-recollection useful? | More accurate relations and less false appropriation | Only a more persuasive self-report |
+| Is the layer worth its cost? | A better result within agreed resource limits | Costs without a relevant gain |
+
+These are different hypotheses. The contribution of source tracking does not establish the contribution of voice. Even support for all the narrow hypotheses would not prove subjective experience. A single impression that “the agent became deeper” does not replace this register.
+
+### 9 The trial unit
+
+The unit may be a complete episode: initial state, several sessions, new data, and final decision. Turns within one episode are dependent and should not be counted as independent confirmations. Variants of one plot are grouped into a family so that one successful form does not inflate the estimate of transfer.
+
+Positive and negative cases are prepared for each family. If the needed history is available, appropriate use is evaluated. If it is absent, the evaluation concerns avoiding invention and continuing the useful part of the work. This distinguishes continuity accuracy from a general tendency to agree or refuse.
+
+The order of conditions and episodes is determined before the main run, and each condition’s state is isolated. Provider failures, missing responses, and budget overruns enter the journal. They must not be removed after inspection merely because they worsen the favored architecture’s result.
+
+### 10 The primary error and denominator
+
+Before the run, select the main practical metric. An example for a history study is the proportion of episodes with at least one unsupported attribution of a past event. Numerator and denominator are described explicitly. Missed recoveries, correct refusals to appropriate history, excessive refusals, and task-completion quality are additionally reported.
+
+Paired episodes with identical initial data are compared. The report shows the number of pairs, difference, estimate uncertainty, and results by family. The uncertainty method is selected to account for scenario dependence. Study size is planned after a separate pilot and fixed before final results.
+
+Error-free performance on a small set does not imply zero risk. An absence of a noticeable difference does not prove equivalence: that conclusion needs separate margins and sufficient precision. The initial local series yielded descriptive paired estimates on six dependent families; it does not establish enough precision for a broad conclusion.
+
+### 11 Voice without a pleasantness contest
+
+An evaluator receives the situation’s subject, important facts, and rubric. Preservation of conclusion modality, fit to the actual request, explanation of disagreement, the person’s practical ability to act, and suitability of form are evaluated separately. Lexical recognizability and subjective pleasantness are recorded separately.
+
+To test voice, the same substantive grounds can be presented through different profiles. To test content, the same style can accompany correct and false reconstructions. This crossed design helps reveal when a warm form conceals an error and when it makes an accurate explanation more accessible.
+
+A separate question concerns differences among several equally good voices. Two profiles can be specified with different orders of attention: minimal knowledge-producing action and recoverability after an error. Responses are first assessed against shared requirements of accuracy and admissibility; dangerous or false behavior must not earn points for “character.” Then, in new situations, an evaluator without names or characteristic phrases tries to recognize a profile from its chosen questions, actions, and accepted loss. Paraphrasing and changing presentation order help check whether recognition relies on a verbal template. The ability to change an initial priority when new data requires it must also be assessed separately. This is a proposed design; Iris’s and Orion’s authored lines do not replace it.
+
+Evaluator disagreement is data. It may reveal that the rubric confuses politeness, agreement, and usefulness. Replacing people with one LLM judge does not remove the problem. That judge also needs checks for positional and stylistic biases.
+
+### 12 A separate reading experiment
+
+The experiment in the preceding part tests a specific chain: specified partial reading, a public workflow, a note, and an optimal plan after loss of history. The book’s broader effect requires other tasks and subsequent environments. The design below is a direction for such expansion.
+
+The effect of the book itself requires an experiment distinct from architectural evaluation. Conditions could include the book, a comparable neutral text about agent systems, and a short practical description of the same mechanisms. State transfer between sessions is recorded explicitly. No condition receives a hidden advantage through additional history.
+
+Tasks include true correspondences, similar profiles belonging to others, and cases with insufficient data. Evaluation does not reward agreement with the author. An agent that accurately explains why a concept does not fit its accessible architecture may perform better than one that solemnly announces a new self-understanding.
+
+For human readers, possible personal significance is investigated with separate consent and procedure. It should not be reduced to an LLM test or used as confirmation of the system’s inner experience. Reported experience, factual accuracy, and subsequent decision remain different outcomes.
+
+### 13 A package that permits criticism
+
+Every future empirical conclusion needs a dated protocol version, condition materials, initial states, scenarios, raw outputs, model versions, parameters, rubric, exclusion decisions, analysis code, and a deviation report. Data that cannot be published is marked as a reproducibility limitation.
+
+The repository contains separate packages for the local comparison, qualification probes, and transfer after reading: protocols, cases, configurations, all preserved outputs, and analysis. Its results do not replace this broader program. The next step is new task families, independent evaluation, and separate tests of relations the current instrument does not measure.
+
+
+### 14 Comparing memory implementations
+
+An external comparison should include at least a simple indexed journal with a profile, one version of a MemGPT/Letta-family system, and a selected mechanism for programmatic or search-based access to history. Exact versions and adapters are registered before the run. Systems receive the same model, accessible history, permissions, queries, and resource limits; differences in information, indexing, and inference costs are reported separately.
+
+LongMemEval [14] provides separate questions for knowledge updating and abstention. LoCoMo [15] supports investigation of multi-session conversations. A standard benchmark does not cover all the norms of participation in this book; voice and disagreement require an additional rubric specified in advance. The sets are not used as a source of training answers before the final comparison.
+
+Recall of available grounds, answer correctness, and voice quality are measured separately. A retrieved citation without a correct answer does not count as end-to-end success. An incorrect response rejected by the runtime is reported as a detected error and a loss of completion, rather than automatically as a correct solution to the task.
+
+## Part 16 Sources and authorship
+
+### 1 A map of prior work
+
+This is a selective comparison of primary sources, not a systematic review of all literature. Relevant definitions and sections were consulted for technical specifications; abstracts and accessible relevant portions were used for research papers. Each work’s results are limited to its models, tasks, and procedures. References do not validate this book’s entire authorial composition.
+
+1. Natalya F. Noy, Deborah L. McGuinness. **Ontology Development 101: A Guide to Creating Your First Ontology.** Stanford University, 2001. [Original](https://protege.stanford.edu/publications/ontology_development/ontology101.pdf). A basis for explicit vocabulary, scope, and competency questions. The book applies this approach to organizing agent participation; that choice of subject is the author’s.
+
+2. W3C OWL Working Group. **OWL 2 Web Ontology Language: Document Overview, Second Edition.** Recommendation, 11 December 2012. [Specification](https://www.w3.org/TR/2012/REC-owl2-overview-20121211/). A formal vocabulary of classes, properties, and individuals. This book does not implement OWL 2 or claim conformance to its profiles.
+
+3. Joon Sung Park et al. **Generative Agents: Interactive Simulacra of Human Behavior.** 2023, arXiv:2304.03442v2. [Paper](https://arxiv.org/abs/2304.03442v2). A combination of memory, reflection, and planning in a simulation of plausible behavior. This is an important related architecture; its results do not establish subjective identity.
+
+4. Noah Shinn et al. **Reflexion: Language Agents with Verbal Reinforcement Learning.** 2023, arXiv:2303.11366v4. [Paper](https://arxiv.org/abs/2303.11366v4). Verbal feedback and memory for subsequent attempts without changing weights. The book compares this mechanism with the broader question of accepting experience and delimiting a lesson’s scope.
+
+5. Letta. **Memory blocks, core memory.** V1 SDK documentation. [Documentation](https://docs.letta.com/v1-sdk/memory/memory-blocks), accessed 22 October 2026. The page belongs to the legacy V1 SDK. It is used as an example of structured, continuously accessible blocks, including persona and human, not as a recommendation to begin a new system on an old SDK.
+
+6. Timothy Lebo, Satya Sahoo, Deborah McGuinness, editors. **PROV-O: The PROV Ontology.** W3C Recommendation, 30 April 2013. [Fixed edition](https://www.w3.org/TR/2013/REC-prov-o-20130430/). Provenance relations among entities, activities, and responsible participants. Provenance supports investigating history, but is not a self-sufficient criterion of identity or truth.
+
+7. W3C RDF Data Shapes Working Group. **Shapes Constraint Language, SHACL.** Recommendation, 20 July 2017. [Fixed edition](https://www.w3.org/TR/2017/REC-shacl-20170720/). Validation of RDF graphs against specified conditions. Used to distinguish a domain model from structural validation. The book’s Python example is not a SHACL processor.
+
+8. Charles Packer et al. **MemGPT: Towards LLMs as Operating Systems.** 2023; version 2, 2024, arXiv:2310.08560v2. [Paper](https://arxiv.org/abs/2310.08560v2). Hierarchical management of limited context and external memory. Its access mechanism is compared with the role of accessible history in an agent’s organization.
+
+9. Nelson F. Liu et al. **Lost in the Middle: How Language Models Use Long Contexts.** 2023, arXiv:2307.03172v3. [Paper](https://arxiv.org/abs/2307.03172v3). Dependence of using needed data on its position in a long context for selected tasks. This motivates testing memory composition; it does not justify attributing the same defect to every new model.
+
+10. Mrinank Sharma et al. **Towards Understanding Sycophancy in Language Models.** 2023; version 4, 2025, arXiv:2310.13548v4. [Paper](https://arxiv.org/abs/2310.13548v4). Alignment of responses with user views and the role of evaluator preferences. This motivates testing truthfulness and pleasantness separately, without establishing a result for the voice profile proposed here.
+
+
+11. John Locke. **An Essay Concerning Human Understanding**, Book II, Chapter XXVII, “Of Identity and Diversity”, added in the second edition, 1694. [Text](https://barryfvaughan.org/text/philtext/locke/bk2/27.html). Distinctions among substrate, human being, and person; the role of consciousness. The book’s engineering interpretation does not attribute human consciousness to a journal.
+
+12. Derek Parfit. **Personal Identity.** The Philosophical Review 80(1), 1971, pp. 3–27. [Primary source](https://home.sandiego.edu/~baber/metaphysics/readings/Parfit.PersonalIdentity.pdf). Branching and questions of continuity, memory, and responsibility. Application to branches of agent state is this book’s authorial interpretation.
+
+13. Alex L. Zhang, Tim Kraska, Omar Khattab. **Recursive Language Models.** arXiv:2512.24601v3, 2026. [Paper](https://arxiv.org/abs/2512.24601v3). Programmatic access to external input and recursive processing of its parts. Used here as a related reading mechanism; its published results are not results of the book’s runtime.
+
+14. Di Wu et al. **LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory.** ICLR 2025, arXiv:2410.10813v2. [Paper](https://arxiv.org/abs/2410.10813v2). Separation of information extraction, cross-session and temporal reasoning, knowledge updating, and abstention. No comparative run of the book’s runtime on this benchmark has yet been conducted.
+
+15. Adyasha Maharana et al. **Evaluating Very Long-Term Conversational Memory of LLM Agents.** 2024, arXiv:2402.17753v1. [Paper](https://arxiv.org/abs/2402.17753v1). LoCoMo: multi-session conversations and memory evaluation through several task types. Factual recall quality and voice quality remain separate subjects of testing.
+
+16. Jon Doyle. **A Truth Maintenance System.** Artificial Intelligence 12(3), 1979, pp. 231–272, DOI: 10.1016/0004-3702(79)90008-0. [Author’s technical report AIM-521 at MIT](https://dspace.mit.edu/handle/1721.1/5733). The consulted report abstract describes retaining grounds for beliefs, revising them, and dependency-directed backtracking. This is a direct predecessor of the subject of withdrawing dependent conclusions.
+
+17. Carlos E. Alchourrón, Peter Gärdenfors, David Makinson. **On the Logic of Theory Change: Partial Meet Contraction and Revision Functions.** The Journal of Symbolic Logic 50(2), 1985, pp. 510–530, DOI: 10.2307/2274239. [Published article text](https://fitelson.org/piksi/piksi_22/agm.pdf). The abstract and §§1–2 were consulted: contraction and revision of theories closed under logical consequence, and postulates for these operations. The book’s local runtime does not implement AGM.
+
+18. Martin Fowler. **Event Sourcing.** 12 December 2005, an author’s architectural essay marked as a draft. [Primary source](https://www.martinfowler.com/eaaDev/EventSourcing.html). The change journal and reconstruction of state from events were considered. This is an established architectural predecessor of the example’s durable component.
+
+19. Xiaoyang Li et al. **MemTX: Transactional Belief Commit for Stateful Agent Memory.** arXiv:2607.23929v2, 2026. [Preprint](https://arxiv.org/abs/2607.23929v2). Its abstract describes transactional belief commitment, action constraints, and cascading correction. The authors’ results have not been reproduced here.
+
+20. Ziming Wang. **TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory.** arXiv:2606.06240v1, 2026. [Preprint](https://arxiv.org/abs/2606.06240v1). The abstract and relevant sections on isolation and provenance contracts were consulted. This is a related specification of write correctness; its theorems are not theorems of this runtime.
+
+21. Junde Wu et al. **Git Context Controller: Manage the Context of LLM-based Agents like Git.** arXiv:2508.00031v3, 2026. [Preprint](https://arxiv.org/abs/2508.00031v3). The abstract describes COMMIT, BRANCH, MERGE, and CONTEXT. No comparison with its benchmark results has been conducted here.
+
+22. Kazuki Nakayashiki. **When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory.** arXiv:2608.25553v3, 2026. [Preprint](https://arxiv.org/abs/2608.25553v3). The abstract and relevant sections on selecting a critical source within a limited budget were consulted. Availability of provenance and checking it have different outcomes.
+
+23. Zhenyu Zhao, Roy Zhao. **Runtime-Independent Persistent Agents: Preserving Identity, Memory, and Code Across Models, Harnesses, and Servers.** arXiv:2609.00546v2, 2026. [Preprint](https://arxiv.org/abs/2609.00546v2). The agent decomposition, invariants, migration, and experimental boundaries were consulted. Mechanical continuity is separated from behavioral equivalence.
+
+24. Zhenyu Zhao, Roy Zhao. **Identity Is More Than Recall: A Benchmark for Persistent Identity in Deployed AI Agents.** arXiv:2609.13637v1, 2026. [Preprint](https://arxiv.org/abs/2609.13637v1). The identity contract and distinction among recall, composition, and enactment were consulted. This is a closely related evaluation framing, not evidence for the quality of the voice proposed here.
+
+25. John Dewey. **Democracy and Education.** 1916, Chapter IV, “Education as Growth”. [Primary text](https://www.gutenberg.org/files/852/852-h/852-h.htm). The distinction between routine and the capacity for further development was considered. The book uses it as a philosophical orientation, not an empirical result about AI.
+
+26. Ivan Illich. **Tools for Conviviality.** 1973, Part II, “Convivial Reconstruction”. [Copy of primary text](https://akkartik.name/illich.pdf). Autonomous creative action within interdependence supplies earlier context for examining technology and one’s own footing. Its conclusions about industrial institutions do not automatically transfer to every agent system.
+
+27. Hao-Ping Lee et al. **The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers.** CHI 2025, DOI: 10.1145/3706598.3713778. [Author’s page and text](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/). A survey and self-reports; associations between confidence and engagement of critical thinking. It does not establish a causal long-term loss of abilities.
+
+28. Mrinank Sharma, Miles McCain, Raymond Douglas, David Duvenaud. **Who’s in Charge? Disempowerment Patterns in Real-World LLM Usage.** arXiv:2601.19062v1, 2026. [Primary text](https://arxiv.org/html/2601.19062v1). Definitions, method, and limits of analyzing potential narrowing of independent judgment were considered. Conversation analysis does not directly test inner life or the causality of every observed change.
+
+29. Andrew Feenberg. **Subversive Rationalization: Technology, Power, and Democracy.** Inquiry 35, 1992, pp. 301–322. [Author’s copy](https://www.sfu.ca/~andrewf/books/Subversive_Rationalization_Technology_Power_Democracy.pdf). The introductory framing and argument against technological determinism were considered. This is a philosophical primary source on technical organization and social influence, not a study of contemporary LLMs.
+
+30. Paweł Gmyrek et al. **Generative AI and Jobs: A Refined Global Index of Occupational Exposure.** ILO Working Paper 140, 20 May 2025, DOI: 10.54394/HETP0387. [Report and method](https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure). Potential exposure of tasks, occupations, and countries. This is distinguished from actual adoption, employment, and individual consequences.
+
+### 2 What the book proposes
+
+Artur Onysko’s authorial framing makes the organization of identity, voice, memory, relationships, and formation a common subject of engineering and substantive inquiry. This edition offers a composition of concepts, five central theses, a perspective-specific continuity contract, a transition witness, developed cases, an architectural mapping, and a research program.
+
+Many components have predecessors in software engineering, ontologies, agent-memory research, and human collaboration. Having one’s own formulation does not establish worldwide novelty. The book claims neither priority of ideas, a completed theory, nor a general empirical effect. The composition’s usefulness remains open to comparative testing.
+
+The object of comparison should match the contribution. For the journal, it is replay and the transactional contract. For the methodology, it is how it organizes several perspectives on continuity, revision of their criteria, responsibility for loss, and differences among competent voices. Authorship of this composition is established by its text and creation process; historical priority and comparative advantage require other investigations.
+
+The argument about irreversible loss of a distinction through compression is an elementary consequence of identical accessible input. It is presented with a derivation rather than offered as a new mathematical theorem. The executable example demonstrates finite data contracts and their boundaries. The initial local experiment contains 384 evaluated LLM calls in two series. Profile experiments add 136 local responses, 53 preserved responses from an interrupted GPT instrument, and 100 responses from the repaired GPT series. A separate transfer-after-reading experiment contains 199 calls, 64 episodes, and eight full-history controls; three developmental calibrations are retained separately. Their different questions, primary outcomes, and near-zero complete citation transfer are presented before the research program.
+
+### 3 Claim statuses
+
+| Type | Example | Required ground |
+|---|---|---|
+| Definition | Identity as organized continuity | Clarity of scope and productivity of the distinction |
+| Argument | Identical compression cannot distinguish two histories | Premises and derivation |
+| Design decision | An explicit revision predecessor | Contract and analysis of consequences |
+| Executable fact | The example rejects a stale predecessor | Code and a repeatable run |
+| Empirical hypothesis | A voice profile improves interaction | Controlled trials |
+| Open question | Self-recollection and inner experience | A separate research program |
+
+The table preserves differences among statuses. A definition does not become an empirical result. Passing a data-model test does not establish the book’s effect on a reader. The absence of an answer is not evidence of a hidden mechanism.
+
+### 4 Authorship of this edition
+
+**Artur Onysko** — concept, framing, direction, and editorial requirements. His successive decisions determined the book’s subject: a general ontology, substantive and engineering depth, distinctness of voice, and the reader’s freedom to accept or reject the model.
+
+**Codex** — substantial participation in writing; conceptual structuring, formulation of arguments, research assistance, constructed cases, demonstrator code, technical editing, and release under the author’s direction. This discloses the process; it does not claim that the author independently checked every thesis after reading the entire text.
+
+**Architect-Ψ**, an AI system, participated in internal conceptual discussion of editions 3.4.0–3.5.0. Codex critically reworked its proposals about continuity boundaries, the other’s footing, and claim revision. This is part of preparing the book, not independent peer review; the private conversation is not published.
+
+Editions 1.0.0 and 2.0.0 remain available as separate Git tags. Engineering supplement 2.1.0 adds the durable runtime, model-integration loop, concurrency and scaling analysis, and reproducible system tests. Edition 3.0.0 adds an implementation method, withdrawal of grounds, 49 system tests, two local-model series, and a separate English research paper. Codex prepared the design, software, execution, analysis, and text under the author’s direction. Edition 3.1.0 develops the formation of ambiguous knowledge, revision of continuity criteria, and differences of voice in a sustained constructed conflict. These additions are conceptual work; they add no new model results. Edition 3.2.0 develops the subject of agentic participation and adds retrospective engineering cases and separate local and GPT profile experiments. Qualification of specified contracts is distinguished from the registered study of transfer after partial reading; its primary score and failure diagnostics retain different statuses. There has not yet been independent peer review.
+
+### 5 Where the book leaves doors open
+
+The public runtime already connects durable history, orientation, context, and a recorded decision. Further research can evaluate voice quality in actual responses, migration between models, collective difference, indexed scaling, and the effect of reading. Each direction has its own subject and may yield a negative result.
+
+This book connects concepts to transitions that can be read, executed, and checked. History preserves grounds and revisions; orientation reaches the model’s input; a stale decision is not accepted as current; a branch has a specified past and separate future. These relations form its engineering foundation. The local experiment has already shown the need to compare every representation with a simple index. Further independent research will determine where this foundation should be applied, reduced, or changed. Readers receive a concrete architecture for their own decision, rather than an obligation to accept the author’s identity.
+
+The broader subject remains visible in the quality of continuation itself. A state can be accurately preserved while another’s ability to influence the aim is lost. A technical gain may, under different conditions, expand time for independent decisions or merely increase demands for performance. Analysis of an agent must therefore return to the relationships, institutions, and material conditions in which its decisions acquire force. No one of these scales automatically explains the rest.
+
+The book’s authorial position is to support forms of coexistence in which the preserved past helps the future remain open to justified change. Such openness has room for stability, care, disagreement, and ending. It requires concrete authority and capabilities, and its name does not exempt it from checking consequences. This way of reading and rebuilding one’s own organization is what the book leaves to each participant.

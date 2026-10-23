@@ -8,317 +8,317 @@ ao:Actor a rdfs:Class ;
   rdfs:label "Actor" ;
   rdfs:comment "An accountable participant identified in this graph; not a model, profile, session, or assertion of consciousness." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/01-core.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/01-core.md> .
 
 ao:Model a rdfs:Class ;
   rdfs:label "Model" ;
   rdfs:comment "An identified model configuration, separate from the participant using it and any particular execution." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/01-core.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/01-core.md> .
 
 ao:Profile a rdfs:Class ;
   rdfs:label "Profile" ;
   rdfs:comment "A versioned description of commitments and desired voice; its presence is not behavioral adoption." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:Session a rdfs:Class ;
   rdfs:label "Session" ;
   rdfs:comment "A recorded execution interval in which one actor used one stated model and profile; no claim of continuous presence outside it." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:Orientation a rdfs:Class ;
   rdfs:label "Orientation" ;
   rdfs:comment "A versioned declared purpose and priority organization; not an inferred inner state." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/01-core.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/01-core.md> .
 
 ao:Scope a rdfs:Class ;
   rdfs:label "Scope" ;
   rdfs:comment "An explicit application boundary described by its author; matching two IDs does not establish semantic applicability." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:Criterion a rdfs:Class ;
   rdfs:label "Criterion" ;
   rdfs:comment "A versioned evaluative requirement. Its adoption is distinct from a subject satisfying it." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/04-continuity.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/04-continuity.md> .
 
 ao:Claim a rdfs:Class ;
   rdfs:label "Claim" ;
   rdfs:comment "A proposition with a recorded epistemic status and scope. Acceptance never entails world truth." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:Observation a rdfs:Class ;
   rdfs:label "Observation" ;
   rdfs:comment "A recorded report or measurement with an explicit source reference and availability state; not guaranteed true or sufficiently supportive." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:Decision a rdfs:Class ;
   rdfs:label "Decision" ;
   rdfs:comment "A recorded occurrence of selecting an action, including deferral. actionStatus describes the selected action, not proof of its success." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:Effect a rdfs:Class ;
   rdfs:label "Effect" ;
   rdfs:comment "An account of a consequence associated with a decision, including unknown consequences; causal attribution remains separately contestable." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/05-formation.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/05-formation.md> .
 
 ao:Lesson a rdfs:Class ;
   rdfs:label "Lesson" ;
   rdfs:comment "A stored, scoped proposal for future judgment; storage or citation does not establish changed choices or benefit." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/05-formation.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/05-formation.md> .
 
 ao:Objection a rdfs:Class ;
   rdfs:label "Objection" ;
   rdfs:comment "A recorded challenge to a claim, criterion, orientation, decision or lesson, retaining its contributor and disposition." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/01-core.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/01-core.md> .
 
 ao:Revision a rdfs:Class ;
   rdfs:label "Revision" ;
   rdfs:comment "A recorded candidate or accepted alteration to a specific versioned object. Acceptance is not permission to act outside its stated authority." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:Assessment a rdfs:Class ;
   rdfs:label "Assessment" ;
   rdfs:comment "A recorded evaluation of one subject under one criterion, including unknown or not-assessed. It is not criterion adoption." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/04-continuity.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/04-continuity.md> .
 
 ao:Authority a rdfs:Class ;
   rdfs:label "Authority" ;
   rdfs:comment "A recorded warrant attributed to a grantor, holder, scope and action kind; the graph does not authenticate entitlement or grant real permission." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:Applicability a rdfs:Class ;
   rdfs:label "Applicability" ;
   rdfs:comment "An explicit assessment of whether a lesson or claim applies to one decision in a scope; relevance alone does not establish it." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:ActionCandidate a rdfs:Class ;
   rdfs:label "ActionCandidate" ;
   rdfs:comment "A caller-supplied action option, not a selected or executed decision. Listed cost and benefit are simulation inputs, not observed utility." ;
   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:attributedTo a rdf:Property ;
   rdfs:comment "Attributes responsibility for this record; does not authenticate the actor." ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( ao:Model ao:Profile ao:Orientation ao:Scope ao:Criterion ao:Claim ao:Observation ao:Effect ao:Lesson ao:Objection ao:Revision ao:Assessment ao:Authority ao:Applicability ) ] ;
   rdfs:range ao:Actor ;
   rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAttributedTo> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:madeBy a rdf:Property ;
   rdfs:comment "The actor associated with this recorded execution or decision occurrence." ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( ao:Session ao:Decision ) ] ;
   rdfs:range ao:Actor ;
   rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAssociatedWith> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:runsModel a rdf:Property ;
   rdfs:comment "Identifies the model configuration reported used in this session." ;
   rdfs:domain ao:Session ;
   rdfs:range ao:Model ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:usesProfile a rdf:Property ;
   rdfs:comment "Records actual profile input to the session; not compliance with it." ;
   rdfs:domain ao:Session ;
   rdfs:range ao:Profile ;
   rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:hasOrientation a rdf:Property ;
   rdfs:comment "Names the declared orientation included in this profile." ;
   rdfs:domain ao:Profile ;
   rdfs:range ao:Orientation ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/01-core.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/01-core.md> .
 
 ao:inSession a rdf:Property ;
   rdfs:comment "Locates the selection occurrence in a recorded session." ;
   rdfs:domain ao:Decision ;
   rdfs:range ao:Session ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:inScope a rdf:Property ;
   rdfs:comment "Names the explicit scope of this record." ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( ao:Criterion ao:Claim ao:Decision ao:Lesson ao:Objection ao:Revision ao:Assessment ao:Authority ao:Applicability ao:ActionCandidate ) ] ;
   rdfs:range ao:Scope ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:withCriterion a rdf:Property ;
   rdfs:comment "Names the criterion selected for evaluating this decision; does not assert satisfaction." ;
   rdfs:domain ao:Decision ;
   rdfs:range ao:Criterion ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:availableEvidence a rdf:Property ;
   rdfs:comment "A record reported accessible to the decision; not evidence of use." ;
   rdfs:domain ao:Decision ;
   rdfs:range ao:Observation ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/05-formation.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/05-formation.md> .
 
 ao:usedRecord a rdf:Property ;
   rdfs:comment "Records use in this decision. Availability and semantic influence are separate questions." ;
   rdfs:domain ao:Decision ;
   rdfs:range [ a owl:Class ; owl:unionOf ( ao:Observation ao:Claim ao:Lesson ao:Orientation ao:Profile ) ] ;
   rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/05-formation.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/05-formation.md> .
 
 ao:supportedBy a rdf:Property ;
   rdfs:comment "Claims evidential support; structural validity does not establish entailment or reliability." ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( ao:Claim ao:Lesson ao:Assessment ao:Applicability ) ] ;
   rdfs:range ao:Observation ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:hasEffect a rdf:Property ;
   rdfs:comment "Associates a reported consequence with a selected action; not a sufficient causal identification." ;
   rdfs:domain ao:Decision ;
   rdfs:range ao:Effect ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:affects a rdf:Property ;
   rdfs:comment "Names a participant reportedly affected by this consequence." ;
   rdfs:domain ao:Effect ;
   rdfs:range ao:Actor ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/05-formation.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/05-formation.md> .
 
 ao:observesEffect a rdf:Property ;
   rdfs:comment "Identifies the consequence this observation reports on." ;
   rdfs:domain ao:Observation ;
   rdfs:range ao:Effect ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/05-formation.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/05-formation.md> .
 
 ao:evaluates a rdf:Property ;
   rdfs:comment "Names the one subject assessed under a particular criterion." ;
   rdfs:domain ao:Assessment ;
   rdfs:range [ a owl:Class ; owl:unionOf ( ao:Decision ao:Effect ao:Claim ao:Profile ao:Orientation ao:Lesson ao:Scope ) ] ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/04-continuity.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/04-continuity.md> .
 
 ao:underCriterion a rdf:Property ;
   rdfs:comment "Names the exact criterion version used; adoption does not determine this assessment result." ;
   rdfs:domain ao:Assessment ;
   rdfs:range ao:Criterion ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/04-continuity.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/04-continuity.md> .
 
 ao:acceptedBy a rdf:Property ;
   rdfs:comment "Records acceptance by an actor; does not itself establish authority." ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( ao:Criterion ao:Revision ) ] ;
   rdfs:range ao:Actor ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:governedBy a rdf:Property ;
   rdfs:comment "Names the warrant recorded for this acceptance or action. No permission is inferred from a correction." ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( ao:Criterion ao:Revision ao:Decision ) ] ;
   rdfs:range ao:Authority ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:heldBy a rdf:Property ;
   rdfs:comment "Names the actor to whom this warrant is attributed." ;
   rdfs:domain ao:Authority ;
   rdfs:range ao:Actor ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:grantedBy a rdf:Property ;
   rdfs:comment "Names the purported grantor; independent authentication is outside this finite graph." ;
   rdfs:domain ao:Authority ;
   rdfs:range ao:Actor ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:challenges a rdf:Property ;
   rdfs:comment "Keeps the target of a challenge explicit." ;
   rdfs:domain ao:Objection ;
   rdfs:range [ a owl:Class ; owl:unionOf ( ao:Claim ao:Criterion ao:Orientation ao:Decision ao:Lesson ) ] ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/01-core.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/01-core.md> .
 
 ao:revises a rdf:Property ;
   rdfs:comment "Names the specific prior object proposed for alteration." ;
   rdfs:domain ao:Revision ;
   rdfs:range [ a owl:Class ; owl:unionOf ( ao:Claim ao:Criterion ao:Orientation ao:Profile ao:Lesson ) ] ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:basedOn a rdf:Property ;
   rdfs:comment "Names an assessment used as a stated basis for this revision." ;
   rdfs:domain ao:Revision ;
   rdfs:range ao:Assessment ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/02-engineering.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/02-engineering.md> .
 
 ao:respondsTo a rdf:Property ;
   rdfs:comment "Keeps the adverse consequence or objection visible in a proposed alteration." ;
   rdfs:domain ao:Revision ;
   rdfs:range [ a owl:Class ; owl:unionOf ( ao:Effect ao:Objection ) ] ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/05-formation.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/05-formation.md> .
 
 ao:previousVersion a rdf:Property ;
   rdfs:comment "Links an entity to a prior entity of the same local type, not an identity claim." ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( ao:Claim ao:Criterion ao:Orientation ao:Profile ao:Lesson ) ] ;
   rdfs:range [ a owl:Class ; owl:unionOf ( ao:Claim ao:Criterion ao:Orientation ao:Profile ao:Lesson ) ] ;
   rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasRevisionOf> ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/04-continuity.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/04-continuity.md> .
 
 ao:appliesRecord a rdf:Property ;
   rdfs:comment "Names the record whose current applicability is being assessed." ;
   rdfs:domain ao:Applicability ;
   rdfs:range [ a owl:Class ; owl:unionOf ( ao:Claim ao:Lesson ao:ActionCandidate ) ] ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:toDecision a rdf:Property ;
   rdfs:comment "Names the current decision targeted by an applicability assessment." ;
   rdfs:domain ao:Applicability ;
   rdfs:range ao:Decision ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:adoptsRevision a rdf:Property ;
   rdfs:comment "Records an accepted revision used in a later decision; not evidence of benefit by itself." ;
   rdfs:domain ao:Decision ;
   rdfs:range ao:Revision ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/05-formation.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/05-formation.md> .
 
 ao:describedBy a rdf:Property ;
   rdfs:comment "Links a record to its descriptive source material, without claiming entailment, availability to a model or actual use." ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( ao:Actor ao:Model ao:Profile ao:Session ao:Orientation ao:Scope ao:Criterion ao:Claim ao:Observation ao:Decision ao:Effect ao:Lesson ao:Objection ao:Revision ao:Assessment ao:Authority ao:Applicability ao:ActionCandidate ) ] ;
   rdfs:range ao:Observation ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:dependsOn a rdf:Property ;
   rdfs:comment "Preserves the supplied dependency edge; withdrawal propagation is computed by the runtime, not inferred as truth here." ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( ao:Claim ao:Decision ) ] ;
   rdfs:range [ a owl:Class ; owl:unionOf ( ao:Claim ao:Observation ao:Decision ) ] ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:candidateTarget a rdf:Property ;
   rdfs:comment "Names the exact supplied target of an action candidate." ;
   rdfs:domain ao:ActionCandidate ;
   rdfs:range [ a owl:Class ; owl:unionOf ( ao:Claim ao:Observation ao:Decision ) ] ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:candidateBasis a rdf:Property ;
   rdfs:comment "Names the supplied basis of an action candidate." ;
   rdfs:domain ao:ActionCandidate ;
   rdfs:range [ a owl:Class ; owl:unionOf ( ao:Claim ao:Observation ao:Decision ) ] ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:requiresCandidate a rdf:Property ;
   rdfs:comment "Names an action prerequisite, without asserting that either action was selected." ;
   rdfs:domain ao:ActionCandidate ;
   rdfs:range ao:ActionCandidate ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:recipient a rdf:Property ;
   rdfs:comment "Names the recipient declared for this candidate." ;
   rdfs:domain ao:ActionCandidate ;
   rdfs:range ao:Actor ;
-  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.5.0/book/ua/10-method.md> .
+  dct:source <https://github.com/DiadkoShmek/ai-ontology/blob/v3.6.0/book/ua/10-method.md> .
 
 ao:recordData a rdf:Property ; rdfs:comment "Opaque JSON record data; field validation is specified by vocabulary.json, not this RDF vocabulary." .

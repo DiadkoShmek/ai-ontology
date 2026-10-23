@@ -1,11 +1,11 @@
 {
   "title": "Онтологія AI",
   "volume": 1,
-  "edition": "3.5.0",
+  "edition": "3.6.0",
   "author": "Artur Onysko",
-  "metadata_sha256": "3ae2a5fefef479b9234cd1dad33127982a80989826366277f1895fb158aa83c9",
-  "source_sha256": "7de8040d4331e3a024693b72cf456310791329080124dc4a48a469232eb61797",
-  "book_sha256": "4129643bcd01657e38a68e14f9541794e9d091815e9d452fb5e3b6261829252d",
+  "metadata_sha256": "5e32d39e4c296aeedbba89bab009f3d2326d62baa2c53f24451360847d4a06fa",
+  "source_sha256": "985c1a7631b5184c86a733d89317b990435092d6ff6e12d7e602ea204fea9c0c",
+  "book_sha256": "d4331e54b91a0997f39ee3ba0975746faecc2068e95265fdaeb46699d358aba8",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
@@ -37,7 +37,7 @@
     },
     {
       "path": "book/ua/02-engineering.md",
-      "sha256": "3c5adef8ea8022ae26c81998fdbfe3c7caf61cbe7fb2b1db5df995c562d1d152"
+      "sha256": "b8f6827d4d82f90f9717fbf3fa325aa9dde7f55a9ac21b2f87d48d6f22f907e6"
     },
     {
       "path": "book/ua/07-iris.md",
@@ -53,7 +53,7 @@
     },
     {
       "path": "book/ua/09-runtime.md",
-      "sha256": "035b620ee6cd5acbfdaf9b8e155e44d1bc855bfd54ed9834b6c69e626558c181"
+      "sha256": "43442fb19966ab284cd562a0cc2422e493de6437d41721c46fb2bf6d91a677d2"
     },
     {
       "path": "book/ua/10-method.md",
@@ -61,7 +61,7 @@
     },
     {
       "path": "book/ua/11-study.md",
-      "sha256": "b77426c4292deaecbcf9fcbdf94459d8338643918f444977840566b450f80c04"
+      "sha256": "da8e9a09a688392d5eb751c7ab7efc033b3e902aa36892537a15d24d6dd163e3"
     },
     {
       "path": "book/ua/05-research.md",
@@ -77,8 +77,8 @@
   "unique_cases": 24,
   "integration_smoke_calls": 2,
   "study_summary_sha256": "e19cdf10f7faaba6e99b4d8fcca73c6db9b348bec6a10bf82258907dacd4460c",
-  "runtime_checks": 49,
-  "runtime_report_sha256": "ba99625a927376afcdef841128eaa1a540cdc561ab37ecc426ae2abc98daf77f",
+  "runtime_checks": 68,
+  "runtime_report_sha256": "e7a0438c7249ed99c8123052433c9aad6f06b8218ebf41bb4f5baf47d8e02180",
   "scored_model_calls_scope": "original-scoped-continuity-study-only",
   "model_cohorts_scope": "original-scoped-continuity-study-only",
   "additional_evaluations": [
@@ -129,8 +129,14 @@
       "path": "research/handoff_repair/results.json",
       "sha256": "19e18fd0529575eb4864e6c31ee8e73cfb2bfc0d9cc0973ac77cea911eab1242",
       "captured_turns": 24
+    },
+    {
+      "kind": "executable-method-return-cycle",
+      "path": "research/closed_loop/results.json",
+      "sha256": "e2e07b7e3ecd3ed07a432749c9ae0d494f47f99076f9567bb59a4644d2308959",
+      "captured_turns": 32
     }
   ],
   "total_captured_model_turns_scope": "Sum of listed evaluation archives; excludes unscored warmups, canaries, length probes and integration smoke calls. Turns are not independent samples.",
-  "total_captured_model_turns": 954
+  "total_captured_model_turns": 986
 }

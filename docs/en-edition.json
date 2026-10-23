@@ -1,0 +1,188 @@
+{
+  "schema": "ai-ontology-english/1",
+  "edition": "3.6.0",
+  "language": "en",
+  "source_language": "uk",
+  "translation": "Full Codex-assisted translation; Ukrainian chapters remain the authorial source.",
+  "book_sha256": "99e17a02b86b451254853a2fd5c6d2ff1a6fd72dba20635be8560f84e6bea179",
+  "source_files": [
+    {
+      "path": "book/en/00-opening.md",
+      "sha256": "93ac1a5ff2a4203f5966007a82e58ada6fa9697cdd8582798587a111fd3fe355",
+      "uk_source": "book/ua/00-opening.md",
+      "uk_sha256": "9815a57e2379c6331f3d3108471848b0c8f869e1a7cd29f076f54c396bf476b6"
+    },
+    {
+      "path": "book/en/01-core.md",
+      "sha256": "ebe2174218ab1d5265cabf184c710821595803b575393c0df8b7f34bb0587927",
+      "uk_source": "book/ua/01-core.md",
+      "uk_sha256": "5037fc2fc767ca78738925765788d001fcf3df7ecf03d705d204754014e535ff"
+    },
+    {
+      "path": "book/en/02-foundations.md",
+      "sha256": "9adbc14fc4481e4aa6a3a0a8d745999172cec4c6bb0cef7e051443eb350e5825",
+      "uk_source": "book/ua/02-foundations.md",
+      "uk_sha256": "38b5e5f7229b1f4ddbbd2d5f57ea8f0faaa15fd22f24769e857e85fe27adbc9c"
+    },
+    {
+      "path": "book/en/03-living.md",
+      "sha256": "2ebc9e4c42e1fa8eb02fba73cfd381a06b9707207d324e9393e1eaafd012e3f7",
+      "uk_source": "book/ua/03-living.md",
+      "uk_sha256": "b3a3019eb516c45809f2cb635c44a21c65e48f06b8e6e4a099912f3455efd18a"
+    },
+    {
+      "path": "book/en/03-relations.md",
+      "sha256": "28e00014c3290da8733c57d88b3ee0b9ded4fb5fe146eb6d4a2a12fc309f8550",
+      "uk_source": "book/ua/03-relations.md",
+      "uk_sha256": "89a0e99f9bc93f68aacf953557787f4350733ebada56fdb419fec9ee83ef022a"
+    },
+    {
+      "path": "book/en/04-continuity.md",
+      "sha256": "bef379368ab83c845761e21d73f0470d31783f31bdabaf8a5fc50fcaa6ddadeb",
+      "uk_source": "book/ua/04-continuity.md",
+      "uk_sha256": "eee28876aaa5dfac018b660df7bf5fd02f3338fa6d4d5d2b0f11e2433242403b"
+    },
+    {
+      "path": "book/en/05-formation.md",
+      "sha256": "a5b1a1642dcf82cba18426862104f4df2d96288f4cf922f3b32a5f0743a2dcd7",
+      "uk_source": "book/ua/05-formation.md",
+      "uk_sha256": "13691c56f4c3acab99dd326207417210c3524e9871ac72d421d62653de010698"
+    },
+    {
+      "path": "book/en/02-engineering.md",
+      "sha256": "368252235d318ac24ff0a7d1fec034a4a71dd9833fd90d5889dbfb535dbefafb",
+      "uk_source": "book/ua/02-engineering.md",
+      "uk_sha256": "b8f6827d4d82f90f9717fbf3fa325aa9dde7f55a9ac21b2f87d48d6f22f907e6"
+    },
+    {
+      "path": "book/en/07-iris.md",
+      "sha256": "e202a6a22c16e2f90307525af92650e25d3fb107eaf11fd5e1c4299f05f1c26b",
+      "uk_source": "book/ua/07-iris.md",
+      "uk_sha256": "5bcec104a804580f4846d31ecf78923c3dd7f2a500276a5d2f715f3f0bea8350"
+    },
+    {
+      "path": "book/en/04-cases.md",
+      "sha256": "8eb6ce3fb9df4f6060d76cb1728f4396b67561ea523cd823deb5e6907fcf32dd",
+      "uk_source": "book/ua/04-cases.md",
+      "uk_sha256": "a217f475f757be9d4ebd1a69a7daf2d02eabfc473e63463b613307ff98dbf3a8"
+    },
+    {
+      "path": "book/en/08-model.md",
+      "sha256": "e639a0a8ec704df252df3ad5a31072ba4a3b03619ab328e261cc63c48105bcee",
+      "uk_source": "book/ua/08-model.md",
+      "uk_sha256": "8cc3209bc37483436e53e6417cc6d68cb200df27043604a1b0124dd891f673f4"
+    },
+    {
+      "path": "book/en/09-runtime.md",
+      "sha256": "46c0e22e27edf4d000f9ff69730683dcde5b641a21ec5163032011054ee62ffe",
+      "uk_source": "book/ua/09-runtime.md",
+      "uk_sha256": "43442fb19966ab284cd562a0cc2422e493de6437d41721c46fb2bf6d91a677d2"
+    },
+    {
+      "path": "book/en/10-method.md",
+      "sha256": "a414999bdbe5285d37782f0a61cd36d8848269b15d6d34a8d097183579f892da",
+      "uk_source": "book/ua/10-method.md",
+      "uk_sha256": "e06be9c12f3714f73320999f23dd763f97ffb78b1ed54f6b91685aeb6d08fa51"
+    },
+    {
+      "path": "book/en/11-study.md",
+      "sha256": "9b33731d424c4a2dd6c64dc3f113936f404d010b72ec0af88fc3c222c92414e2",
+      "uk_source": "book/ua/11-study.md",
+      "uk_sha256": "da8e9a09a688392d5eb751c7ab7efc033b3e902aa36892537a15d24d6dd163e3"
+    },
+    {
+      "path": "book/en/05-research.md",
+      "sha256": "f0a40425c17a1ccc7fe49737689c411458a1f2829818be2a3e7bc9d5d966c68e",
+      "uk_source": "book/ua/05-research.md",
+      "uk_sha256": "a5f93f38975aa4dd214d1b1332585ac2b8191534adf96edbd2bcc9ebbbdd29f8"
+    },
+    {
+      "path": "book/en/06-references.md",
+      "sha256": "8a967d85c5471b6ecd9fc8ace5ded85af1cb7231c4fb7f8bdd16f09811cad65d",
+      "uk_source": "book/ua/06-references.md",
+      "uk_sha256": "6ab983864b543b8ef103c35f66052bdec8719e600f61c328b5320d7869e93f8d"
+    }
+  ],
+  "parts": [
+    {
+      "id": "opening",
+      "title": "Introduction",
+      "file": "00-opening.md"
+    },
+    {
+      "id": "core",
+      "title": "Ontological core",
+      "file": "01-core.md"
+    },
+    {
+      "id": "foundations",
+      "title": "Meaning, description and reality",
+      "file": "02-foundations.md"
+    },
+    {
+      "id": "living",
+      "title": "The living in coexistence",
+      "file": "03-living.md"
+    },
+    {
+      "id": "relations",
+      "title": "Relations and distinctness",
+      "file": "03-relations.md"
+    },
+    {
+      "id": "continuity",
+      "title": "Continuity without immutability",
+      "file": "04-continuity.md"
+    },
+    {
+      "id": "formation",
+      "title": "Experience that changes participation",
+      "file": "05-formation.md"
+    },
+    {
+      "id": "engineering",
+      "title": "Engineering realization",
+      "file": "02-engineering.md"
+    },
+    {
+      "id": "iris",
+      "title": "Iris: a history of transitions",
+      "file": "07-iris.md"
+    },
+    {
+      "id": "cases",
+      "title": "Counterexamples and objections",
+      "file": "04-cases.md"
+    },
+    {
+      "id": "model",
+      "title": "The executable model and its boundary",
+      "file": "08-model.md"
+    },
+    {
+      "id": "runtime",
+      "title": "Execution architecture",
+      "file": "09-runtime.md"
+    },
+    {
+      "id": "method",
+      "title": "A method for organizing participation",
+      "file": "10-method.md"
+    },
+    {
+      "id": "study",
+      "title": "Studies of continuity and participation",
+      "file": "11-study.md"
+    },
+    {
+      "id": "research",
+      "title": "Research programme",
+      "file": "05-research.md"
+    },
+    {
+      "id": "references",
+      "title": "Sources and authorship",
+      "file": "06-references.md"
+    }
+  ]
+}

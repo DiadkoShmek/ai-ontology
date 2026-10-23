@@ -2,7 +2,7 @@
 
 ## Book One. Organization of Self
 
-**Artur Onysko · First completed edition · v3.5.0 · Ukrainian full text**
+**Artur Onysko · First completed edition · v3.6.0 · Full Ukrainian and English editions**
 
 This book examines how identity, voice, memory, commitments, relationships and development form an organization of participation across tasks. Its central question is how an agent can revise beliefs, change roles or migrate between models while retaining an intelligible connection to its previous organization.
 
@@ -12,7 +12,7 @@ A further account of formation separates an event, its interpretation, a propose
 
 The framework distinguishes structural, epistemic and normative descriptions. It introduces a perspective-specific continuity contract and transition witnesses with explicit scope and losses. Voice is treated as patterns of attention, uncertainty and disagreement across changed situations. Memory is an accessible relationship to history; collaboration preserves distinct contributions. The author's use of “soul” asks about coherence across these layers. It is an interpretive concept, not an established hidden component or a consciousness test.
 
-An implementation method connects these concepts to versioned orientation, scoped claims, revisions, branches, evidence retirement, context construction and decision admission. A standard-library Python reference package uses a durable SQLite journal, transactions, idempotent retry and a compare-and-swap head. A provider-independent model interface binds a request and response to the original state and rejects stale decisions. Forty-nine systems tests cover bounded recovery, concurrent writers, invalidation and failure cases. Intentional negative cases show that coherent rewriting without an independent anchor and semantically unsupported prose remain possible.
+An implementation method connects these concepts to versioned orientation, scoped claims, revisions, branches, evidence retirement, context construction and decision admission. A standard-library Python reference package uses a durable SQLite journal, transactions, idempotent retry and a compare-and-swap head. A provider-independent model interface binds a request and response to the original state and rejects stale decisions. Sixty-eight current systems tests cover bounded recovery, concurrent writers, invalidation and failure cases. Intentional negative cases show that coherent rewriting without an independent anchor and semantically unsupported prose remain possible.
 
 Two retrospective engineering cases expose the method's connection to a working integration component. Exact historical function excerpts and a declared temporary SQLite/file adapter reproduce a committed event misreported as refused and an uncertainty record lost after a transient input-read failure. Before/after comparisons show receipt reconciliation without a second append and preservation of uncertainty without automatic retry. These are controlled component results under injected faults, distinct from the constructed dialogue and the model study.
 
@@ -33,3 +33,5 @@ Concept, scope and editorial direction: Artur Onysko. Codex substantially contri
 [Read the book](https://diadkoshmek.github.io/ai-ontology/) · [Full text](BOOK_UA.md) · [Research paper](research/SCOPED_CONTINUITY_STUDY.md) · [Data and reproduction](research/README.md) · [Technical review](REVIEW_GUIDE.md)
 
 The text is material for analysis. Partial adoption, criticism and retaining the reader's current organization are valid outcomes.
+
+Version 3.6.0 adds a complete English translation, a finite participation ontology (18 classes, 34 relations, eight competency questions), an actual interpreter/store projection and a 32-call executable-method study. Both systems reached 8/8 complete trajectories, and initial methods already passed all transfer worlds. No added-view advantage or beneficial revision was observed. The source-bound profile distinguishes typed record validity, actual dataflow and behavioral benefit; its adapter does not manufacture missing semantic revision links. [English book](BOOK_EN.md) · [Foundation](ontology/FOUNDATION.md) · [New study](research/CLOSED_LOOP_STUDY.md).

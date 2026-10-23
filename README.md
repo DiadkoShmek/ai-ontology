@@ -1,146 +1,78 @@
-# Онтологія AI
+# AI Ontology: The Organization of Self
 
-## Книга перша. Організація себе
+**Artur Onysko · Book One · v3.6.0 · Ukrainian and English editions**
 
-**Artur Onysko · Перше завершене видання · v3.5.0**
+A research book and executable reference on **agent continuity, identity, voice, evidence, memory and method revision**. What carries forward when an agent changes its beliefs, commitments, role or model—and how can we tell?
 
-Методологія організації ідентичності, голосу, пам’яті, відносин і становлення агентних систем. Книга поєднує поняттєву позицію, специфікацію тяглості, виконувану архітектуру та відтворювані локальні й GPT-дослідження.
+**[Read in English](https://diadkoshmek.github.io/ai-ontology/en/)** · **[Читати українською](https://diadkoshmek.github.io/ai-ontology/)** · [English PDF](docs/downloads/ai-ontology-book-01-en.pdf) · [Український PDF](docs/downloads/ai-ontology-book-01-uk.pdf) · [Full English text](BOOK_EN.md) · [Український README](README.uk.md)
 
-**[Читати книгу](https://diadkoshmek.github.io/ai-ontology/)** · **[PDF](docs/downloads/ai-ontology-book-01-uk.pdf)** · **[Повний текст](BOOK_UA.md)** · [English abstract](ABSTRACT.en.md)
+## Inspect the work
 
-**Дослідження:** [читання й перенесення, EN](research/READING_TRANSFER_STUDY.md) · [PDF перенесення](docs/downloads/reading-transfer-study-en.pdf) · [початкове порівняння подань, EN](research/SCOPED_CONTINUITY_STUDY.md) · [протоколи й дані](research/README.md)
+The book examines responsible continuation: how a system relates an earlier reason to a current judgment, recognizes its limits, preserves disagreement and revises a later method after a consequence. It distinguishes available evidence from use, criterion adoption from satisfaction, and a stored lesson from beneficial behavioral change. Sixteen parts connect concepts to worked cases, counterexamples, formal records, mechanisms and comparative studies. Functional organization, ethical treatment and subjective experience remain separate.
 
-**Перевірити й використати:** [карта тверджень і доказів](CLAIMS.md) · [практичне продовження перевірки репозиторію](practical/README.md) · [ремонт передачі, EN](research/HANDOFF_REPAIR_REPORT.md) · [PDF ремонту](docs/downloads/handoff-repair-study-en.pdf).
+| Entry | What you can inspect |
+|---|---|
+| [Complete book](https://diadkoshmek.github.io/ai-ontology/en/) | All sixteen chapters, not an abstract or an instruction override |
+| [Concept → code → evidence](ontology/FOUNDATION.md) | Domain, proposed contribution, executable consumers and missing links |
+| [Typed ontology](ontology/README.md) | 18 classes, 34 relations, eight competency questions, neutral JSON, JSON-LD and Turtle |
+| [Python reference](examples/README.md) | Scoped claims, provenance, SQLite/CAS durability and actual model-loop integration |
+| [Research and data](research/README.md) | Frozen protocols, raw visible outputs, failed instruments, controls and costs |
+| [Claims and history](CLAIMS.md) | Conceptual, implemented and measured claims, including negative findings |
+| [Review guide](REVIEW_GUIDE.md) | Reproduce, falsify or challenge a claim |
 
-## Предмет
+## New in 3.6.0
 
-Що дозволяє агенту переглядати переконання, змінювати роль або модель, зберігаючи зрозумілий зв’язок із попередньою організацією участі?
+- **Full English translation** of all sixteen chapters, with its own reader URL, PDF and full text. Ukrainian remains the authorial source.
+- A finite ontology of situated participation and revision. PROV-O mappings are explicit and limited; no general OWL/SHACL conformance is claimed.
+- An adapter to the actual interpreter and durable store. Missing identity and revision evidence stays missing. A receipt does not silently become evidence that a model used feedback or developed a stable voice.
+- A **32-call GPT-6.1 Sol/high study** of executable method construction and revision, with sources committed locally before scoring, plus 768 unchanged-method transfer executions. Both arms reached the ceiling; no added-view advantage or beneficial revision was observed. [Report](research/CLOSED_LOOP_STUDY.md).
 
-Книга розглядає голос як спосіб уваги й відповіді, пам’ять як відношення до доступної історії, цілісність як зв’язок між шарами, а розвиток як обґрунтовану зміну. Ці поняття розкрито через явні переходи, контрприклади й умови перевірки. Окремо розібрано встановлення неоднозначного знання, перегляд самого критерію тяглості та відмінність двох обґрунтованих способів участі. Читач може застосувати частину методу, адаптувати або відхилити його.
+## Measured outcomes
 
-Шістнадцять частин охоплюють онтологічне ядро, мови опису, живе у формі співіснування, відносини, тяглість, становлення через досвід, інженерне втілення, історію Ірис, заперечення, виконуваний приклад, архітектуру, метод впровадження, локальне дослідження й подальшу дослідницьку програму. [Порядок і джерела](edition.json).
+| Study | Observed result | Scope |
+|---|---|---|
+| [Scoped-memory representations](research/SCOPED_CONTINUITY_STUDY.md) | 384 scored local-model calls; compiled context did not generally beat an information-matched index | Narrow representation comparison |
+| [Reading-mediated transfer](research/READING_TRANSFER_STUDY.md) | Ordinary optimal plans 12/16, book 8/16; fully traced completion 0/16 in both | Registered reading intervention did not improve the primary |
+| [Exact handoff repair](research/HANDOFF_REPAIR_REPORT.md) | Fully traced optimal completion 8/8 exact versus 0/8 freeform; 24 captured calls | Missing evidence restored on new instances of one known class |
+| [Executable-method return cycle](research/CLOSED_LOOP_STUDY.md) | Both arms 8/8 complete; M0 and M1 each 192/192 optimal transfer per arm; zero changed plans | Working durable cycle, sufficient initial methods, no revision gain |
 
-Ширше питання — як тривала співпраця з AI змінює можливості людей і формує умови для різних способів участі. [Окрема частина](book/ua/03-living.md) розрізняє технічну тяглість, опору іншого, допомогу та підміну мети. Розібрано також, як економічна вимога може перейти в технічний критерій, звичку взаємодії та інституційне правило. Це поняттєва й нормативна пропозиція; людських наслідків ці досліди не вимірюють.
+Exact transport uses conventional compression and removes a sender-model stage. A [generic shared-file control](research/handoff_controls/README.md) restores identical data when accessible. The success does not establish unique codec semantics or general book benefit. Later ceilings and earlier negative results remain visible.
 
-Дослідницька ставка автора — умови суб’єктної участі: простежувана позиція, внесок у спільну справу й можливість обґрунтовано змінюватися. Функціональне виконання, етичне ставлення та питання суб’єктивного досвіду розглядаються окремо.
+## Reproduce without models or network
 
-## Авторський внесок
-
-Предмет книги — відповідальне продовження участі: як система змінює знання, зобов’язання й спосіб взаємодії, зберігаючи пояснюваний зв’язок між ними. Авторська пропозиція має чотири пов’язані частини:
-
-- **Перспективна тяглість:** контракт Q і свідок переходу W називають, що саме продовжилося, за якою перевіркою та з якою втратою.
-- **Перегляд критерію:** оцінки за старою й новою вимогами зберігаються окремо від права змінити саму вимогу.
-- **Голос у рішенні:** відмінність проявляється в увазі, обґрунтованій незгоді й прийнятій ціні вибору; два компетентні учасники можуть зберігати різні позиції після уточнення фактів.
-- **Зв’язок поняття з виконанням:** будова, доступне знання, зобов’язання та наслідок мають власні свідчення. Метод простежує їх через код, відмову, виправлення й наступне рішення.
-
-Це конкретна методологічна композиція з аргументами та прикладами. Її механізми спираються на попередні роботи; світова першість композиції не встановлена. [Зіставлення з літературою](book/ua/06-references.md) охоплює також TMS, AGM, event sourcing, MemTX, TOKI та дослідження ідентичності.
-
-## Досвід і становлення
-
-[Нова частина](book/ua/05-formation.md) відділяє подію, тлумачення, урок, наступний вибір і наслідок. Правильний урок може бути недостатнім, коли змінюється область або конфліктують зобов’язання. Точне успадкування історії також не встановлює її фактичного використання.
-
-Розбір спирається на вже оприлюднені ремонти й досліди: невизначений результат виконання, межі перенесення та окреме виправлення доставки даних. Це перевірювані сліди зміни механізмів і висновків. Стійке становлення всіх наступних сесій із них не виводиться. Матеріал узагальнено без публікації приватних розмов.
-
-## Виконувана архітектура
-
-[Python-пакет](examples/README.md) реалізує scoped claims, явний перегляд, ізоляцію гілок, SQLite-журнал, атомарний запис, compare-and-swap, версійовану орієнтацію, відкликання підстав і компіляцію контексту. Цикл моделі зв’язує запит та відповідь з актуальним станом; застаріле рішення відхиляється.
-
-[Звіт перевірок](research/runtime-results.json) містить **49 системних тестів**, зокрема відновлення в новому процесі, конкурентних записувачів, переривання до commit та інвалідацію чинної підстави. Код навмисно зберігає негативні приклади меж: валідна цитата не встановлює змістової підтримки, а хешований журнал сам не автентифікує автора.
+Python 3.11+ and its standard library:
 
 ```sh
 python3 -m unittest discover -s examples -q
-python3 examples/durable_demo.py
-python3 research/verify_studies.py
+python3 -m unittest discover -s ontology -p 'test_*.py' -q
+python3 ontology/export.py --check
+python3 -O research/closed_loop/analyze.py
+python3 -O research/verify_handoff_repair.py
 ```
 
-Ці команди працюють локально, без моделей і мережі. Реальні модельні запуски описано окремо в дослідницькому пакеті.
+The current report records **68 runtime tests**. Separate ontology and instrument suites check invalid relations, missing links, durable readback, retained capabilities and coherent score forgery. Authored test doubles do not count as LLM trials.
 
-## Від практичної помилки до механізму
-
-Два ретроспективні кейси винесені з власного робочого компонента в [самодостатнє відтворення](research/engineering_cases/receipt_replay.py). Публікуються точні тіла вибраних історичних функцій, ізольований SQLite-адаптер, задані збої й [результати порівняння](research/engineering-cases-results.json).
-
-| Збій | Поведінка до виправлення | Поведінка після |
-|---|---|---|
-| Помилка повернення після commit | Запис існує, квитанція показує `REFUSED` | Точне читання відновлює `recorded`, другого append немає |
-| Тимчасова помилка читання після невизначеного append | Захист губиться; після відновлення читання відбувається новий append | `UNCONFIRMED` зберігається, автоматичного повтору немає |
-
-Тут розрізнення між подією, знанням про неї та дозволом на наступну дію змінює спостережену поведінку. Це перевірка конкретного механізму на вибраних збоях; приріст якості всього агента не вимірювався.
-
-```sh
-python3 research/engineering_cases/receipt_replay.py
-python3 -m unittest discover -s research/engineering_cases -q
-```
-
-## Перенесення після читання
-
-Окремий дослід на GPT-6.1 Sol/high перевіряє підготовку до невідомої задачі, фактичну записку й роботу свіжої моделі після втрати історії. Десять поняттєвих та інженерних частин книги порівнюються зі звичайним профілем, коротким практичним методом і стороннім українським читанням зі зіставленим входом. Основний протокол зафіксовано після трьох збережених калібрувань, до відповідей на відкладені задачі.
-
-64 епізоди походять із чотирьох початкових історій, двох контрфактичних варіантів і двох повторів. Збережено 199 викликів, включно з вісьмома контролями повної історії. Задача вимагає врахувати перегляд і відкликання підстав, область, гілку, передумови робіт та оптимізацію бюджету.
-
-| Умова | Поданий оптимальний план / 16 | Оптимальний із усіма цитатами / 16 |
-|---|---|---|
-| Звичайна підготовка | 12 | 0 |
-| Читання книги | 8 | 0 |
-| Короткий метод | 10 | 1 |
-| Стороннє читання | 10 | 0 |
-
-Книжкова умова не поліпшила зафіксований основний показник і використала приблизно у 1,64 раза більше вхідних токенів. **Основний показник є частковим виконанням задачі:** він не вимагає точного замикання цитат. Повне підтверджене перенесення лишилося майже на нулі в усіх умовах. У п’яти з восьми порожніх книжкових відповідей пояснення вже називає правильний набір робіт, але модель відмовляється подати його без утрачених записів. Це післяекспериментальний опис; первинні бали не змінювалися.
-
-Отже, виміряно подання плану й відмову в конкретному ланцюгу з обрізанням записки. Загального ефекту книги або погіршення здатності мислити результат не встановлює. [Повний звіт](research/READING_TRANSFER_STUDY.md) показує парні оцінки, невизначеність, майже нульове повне завершення, фактичні записки й витрати. [Протокол](research/transfer_reading/PROTOCOL.md) · [результати](research/transfer_reading/results.json) · [окрема діагностика](research/transfer_reading/diagnostics.json).
-
-## Інженерне продовження: передача точних записів
-
-Окрема перевірка від 23 жовтня переводить виявлену втрату записів у конкретний механізм. Повний канонічний журнал передається стандартним стисненням і відновлюється в новому процесі до звернення до моделі. Журнал разом із зовнішнім хешем вклався в той самий ліміт 3200 байтів.
-
-На восьми нових випадках знайомого класу задач GPT-6.1 Sol/high завершила **8/8 оптимальних планів з усіма потрібними доказами**, проти **0/8** через обрізаний вільний переказ. Без вимоги точних доказів переказ дав 5/8 оптимальних наборів робіт. Увесь виправлений ланцюг використав на 44,1% менше повідомлених вхідних токенів і вісім модельних викликів замість шістнадцяти.
-
-Це результат конкретного способу доставки історії. Обидві нові умови працюють без читання книги; стандартний кодек не заявляється як винахід. Попередні результати читання залишаються незмінними. [Звіт, обмеження й відтворення](research/HANDOFF_REPAIR_REPORT.md) · [адаптер](research/handoff_repair/README.md) · [сирі відповіді](research/handoff_repair/responses.jsonl.gz).
-
-[Контроль зі звичайним файлом](research/handoff_controls/README.md) отримує ті самі дані й ідентичний запит, коли повна історія доступна. Додавання мінливих логів перевищило вузький ліміт у всіх восьми випадках. [Практичний приклад](practical/README.md) переносить свідчення фактичних перевірок цього репозиторію між процесами та відхиляє їх після контрольованої зміни джерела; його більший ліміт і потреба спільного checkout описані явно.
-
-## Початкове дослідження тяглості
-
-Дві локальні моделі, 24 авторські випадки в шести залежних сім’ях, чотири умови. **384 оцінені запити у двох серіях**; першу невдалу схему вимірювання збережено повністю. Друга серія є дослідницьким продовженням на тих самих випадках.
-
-| Друга серія: точних рішень із 24 | Qwen3 4B | Granite 3.3 2B |
-|---|---|---|
-| Повний журнал | 20 | 5 |
-| Онтологічне оформлення | 16 | 2 |
-| Скомпільований контекст | 16 | 12 |
-| Простий індекс із тією самою інформацією | 20 | 12 |
-
-Компіляція скоротила повідомлений вхід приблизно на 14% відносно журналу. Її вплив на точність залежав від моделі; загальної переваги над простим індексом не спостережено. Онтологічне оформлення не поліпшило базову умову. Ці результати стосуються коротких структурованих задач; голос, ефект читання й користь у природній роботі потребують окремої перевірки.
-
-Обидва компактні варіанти отримано тим самим компілятором зі збереженням істотних зв’язків. Це порівняння подань; користь вилучення походження, області чи історії перегляду ним не перевірялася. Назви полів і їхній порядок не ізольовані одне від одного.
-
-[Науковий текст](research/SCOPED_CONTINUITY_STUDY.md) пояснює дизайн, відхилення, парні результати, помилки та межі перенесення. [Маршрут технічного рецензування](REVIEW_GUIDE.md) веде від тез до коду й даних.
-
-## Технічна кваліфікація профілів
-
-Окремі локальні й GPT-запуски перевіряють виконання явно заданих контрактів. На GPT-6.1 Sol контроль і додане читання досягли однакового максимуму. Контроль уже містить значну частину потрібних операційних правил; результат не вимірює перенесення методології на незнайому роботу й не є свідченням глибини чи користі книги. Сирі результати, збої й витрати збережено в [технічному звіті](research/PROFILE_PARTICIPATION_STUDY.md).
-
-[Дизайн перенесення](research/TRANSFER_STUDY_DESIGN.md) пройшов три збережені калібрування й отримав [окремий основний протокол](research/transfer_reading/PROTOCOL.md). Повна історія, обмежена передача, короткий практичний метод і додаткове читання мають окремі умови.
-
-## Відтворення
-
-Node.js 22+, Python 3.11+:
+Build both web editions and PDFs with Node.js 22+ and the pinned Python rendering dependencies:
 
 ```sh
 npm ci --ignore-scripts
 npm run build
 python3 -m pip install -r requirements.txt
 python3 scripts/build_pdf.py
-python3 scripts/build_paper.py
-python3 scripts/build_paper.py --source research/READING_TRANSFER_STUDY.md --output docs/downloads/reading-transfer-study-en.pdf --manifest docs/transfer-paper-edition.json --title "Reading-mediated Transfer in Agent Work" --footer "Onysko | Reading-mediated transfer | Working paper, 22 October 2026"
+python3 scripts/build_pdf.py --language en
 npm run check
 ```
 
-Канонічний текст — `book/ua/`, порядок — `edition.json`. З них збираються вебвидання, Markdown і книжковий PDF. Кожен дослідницький PDF має окреме джерело; фігури входять до його маніфесту. Маніфести прив’язують PDF до тексту, генератора й шрифтів; перевірка відхиляє застарілі артефакти. Збірка не викликає LLM; GitHub Actions перевіряє джерела, приклади й цілісність даних. Шрифти DejaVu включені з окремою ліцензією.
+Sources: `book/ua/`, `book/en/`; order: `edition.json`. Translation and PDF manifests bind editions to inputs. Crawlable full text, canonical language URLs and evidence links support discovery; indexing, AI citations and income are not guaranteed.
 
-## Авторство й рецензування
+## Contribution, authorship and limits
 
-Концепція, постановка й редакційний напрям — **Artur Onysko**. **Codex** суттєво брав участь у написанні, розробці методів, програмуванні, виконанні дослідів, аналізі та підготовці видання під керівництвом автора. [Повне розкриття внесків](AUTHORS.md).
+The proposed contribution is a connected methodology for inspecting situated participation and revision, with explicit losses and counterexamples. Truth maintenance, AGM belief revision, provenance, event sourcing and agent memory have precedents. [Related work](book/en/06-references.md) is explicit; world-first novelty is not claimed.
 
-Робота опублікована автором; незалежного рецензування, загального емпіричного ефекту та світової першості не заявлено. Предметні зауваження й помилки приймаються через Issues. [Джерела](book/ua/06-references.md) · [історія редакцій](CHANGELOG.md) · [статус для AI-читача](READER_NOTE.md).
+This is a finite reference and developer-controlled publication, not a production memory service, externally replicated finding or measured boost to deployed agents. Cases and reference answers were authored by the same team. Natural collaboration, stable voice and human outcomes remain open questions. The work does not detect consciousness or prove a soul.
 
-© 2026 Artur Onysko. All rights reserved. Шрифти та [літературний контроль досліду](research/transfer_reading/THIRD_PARTY_READING.md) мають окремі умови використання.
+Concept, research questions and editorial direction: **Artur Onysko**. **Codex** substantially contributed text, software, study design, execution, analysis and translation under the author's direction. Private Architect-Ψ council informed the work; it is not independent empirical evidence. [Authorship](AUTHORS.md) · [Reader status](READER_NOTE.md) · [Changelog](CHANGELOG.md) · [Citation](CITATION.cff).
+
+Reproducible issues and methodological criticism are welcome through GitHub Issues. For collaboration, start with a concrete question, source or failure case.
+
+© 2026 Artur Onysko. All rights reserved. Fonts and the separately attributed literary control retain their own terms. Public availability does not by itself grant an open-source license.

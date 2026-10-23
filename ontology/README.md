@@ -1,6 +1,6 @@
 # Scoped participation ontology — finite profile 1.0.0
 
-This directory makes a bounded part of *Онтологія AI*, book 3.5.0, machine-readable. It names entities and typed relations needed to ask how a stated orientation, evidence, judgment, objection and consequence connect. It includes executable record constraints and competency questions, rather than treating a diagram or vocabulary as evidence that an agent improved.
+This directory makes a bounded part of *AI Ontology*, book 3.6.0, machine-readable. It names entities and typed relations needed to ask how a stated orientation, evidence, judgment, objection and consequence connect. It includes executable record constraints and competency questions, rather than treating a diagram or vocabulary as evidence that an agent improved.
 
 The domain is **records of situated participation and revision**. `runtime_adapter.py` also projects the repository's actual `examples/participation.py` interpreter and durable readback into this graph; the link is exercised against generated study worlds and a real temporary SQLite commit/reopen/read cycle. This is not a complete ontology of persons, intelligence or consciousness. The vocabulary is an authored formalization, not a claim that its component mechanisms are novel. Its adequacy can be challenged by finding a relevant case it cannot distinguish, an invalid inference made by a query, or a simpler representation that preserves the same distinctions.
 

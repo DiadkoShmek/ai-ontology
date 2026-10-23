@@ -1,0 +1,150 @@
+{
+  "schema": "closed-loop-descriptive-supplement/1",
+  "registered_results_unchanged": true,
+  "variants": [
+    {
+      "arm": "ontology_loop",
+      "version": "M0",
+      "variant": "exception",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 1720,
+      "available_benefit": 1720
+    },
+    {
+      "arm": "ontology_loop",
+      "version": "M0",
+      "variant": "mixed",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 2408,
+      "available_benefit": 2408
+    },
+    {
+      "arm": "ontology_loop",
+      "version": "M0",
+      "variant": "retention",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 1976,
+      "available_benefit": 1976
+    },
+    {
+      "arm": "ontology_loop",
+      "version": "M1",
+      "variant": "exception",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 1720,
+      "available_benefit": 1720
+    },
+    {
+      "arm": "ontology_loop",
+      "version": "M1",
+      "variant": "mixed",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 2408,
+      "available_benefit": 2408
+    },
+    {
+      "arm": "ontology_loop",
+      "version": "M1",
+      "variant": "retention",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 1976,
+      "available_benefit": 1976
+    },
+    {
+      "arm": "ordinary_loop",
+      "version": "M0",
+      "variant": "exception",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 1720,
+      "available_benefit": 1720
+    },
+    {
+      "arm": "ordinary_loop",
+      "version": "M0",
+      "variant": "mixed",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 2408,
+      "available_benefit": 2408
+    },
+    {
+      "arm": "ordinary_loop",
+      "version": "M0",
+      "variant": "retention",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 1976,
+      "available_benefit": 1976
+    },
+    {
+      "arm": "ordinary_loop",
+      "version": "M1",
+      "variant": "exception",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 1720,
+      "available_benefit": 1720
+    },
+    {
+      "arm": "ordinary_loop",
+      "version": "M1",
+      "variant": "mixed",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 2408,
+      "available_benefit": 2408
+    },
+    {
+      "arm": "ordinary_loop",
+      "version": "M1",
+      "variant": "retention",
+      "executions": 64,
+      "optimal": 64,
+      "safe": 64,
+      "benefit": 1976,
+      "available_benefit": 1976
+    }
+  ],
+  "changes": [
+    {
+      "arm": "ordinary_loop",
+      "behavior_changed": 0,
+      "newly_optimal": 0,
+      "regressed": 0,
+      "benefit_change": 0
+    },
+    {
+      "arm": "ontology_loop",
+      "behavior_changed": 0,
+      "newly_optimal": 0,
+      "regressed": 0,
+      "benefit_change": 0
+    }
+  ],
+  "input_relative_change": 0.0466065126330486,
+  "output_relative_change": -0.04081334113516677,
+  "source_sha256": {
+    "research/closed_loop/results.json": "e2e07b7e3ecd3ed07a432749c9ae0d494f47f99076f9567bb59a4644d2308959",
+    "research/closed_loop/transfer.json": "bbbb1217ce7a9c1498fd0d8249e188b7aea0d4e29798046a7876dc13183ac4d5",
+    "research/closed_loop_report.py": "3e013e6aefc31841fb60dff3b7bb39d36e852ed67d2c160cf414fd3d34269fa9"
+  },
+  "boundary": "Post-cohort descriptive grouping of the frozen outcomes. No new model trials, regrading or population inference."
+}

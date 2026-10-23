@@ -1,11 +1,11 @@
 {
   "name": "ai-ontology-book",
-  "version": "3.5.0",
+  "version": "3.6.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "check": "node scripts/check.mjs"
+    "build": "node scripts/build.mjs && node scripts/build_english.mjs && node scripts/build_discovery.mjs",
+    "check": "node scripts/check.mjs && node scripts/check_discovery.mjs"
   },
   "dependencies": {
     "marked": "17.0.5"
