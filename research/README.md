@@ -11,7 +11,32 @@ is a new entry to existing relations, not a new positive model result.
 
 ## New: executable methods and an observed return cycle
 
-### Newer supplementary cohort: scoped evidence return
+### Latest supplementary observation: scoped-contract adaptation
+
+The [English report](SCOPED_CLEARANCE_STUDY.md) and
+[Ukrainian report](SCOPED_CLEARANCE_STUDY.uk.md) distinguish an interrupted
+original cohort (48 scored generations plus one canary, primary null) from
+a separate complete offline reproduction of its 48 fixed sources on 960 planned
+episodes. M0 achieved 120/160 NEW-correct artifacts; every revised/fresh set
+achieved 160/160. Every revised/fresh condition received the explicit new clause. No added
+scaffold or diagnostic-feedback score was observed. All 620 bound original
+overlaps agreed; six SQLite-only and 334 missing original episodes remain unknown.
+
+[Selected raw evidence](scoped_clearance/projection.json.gz) ·
+[source/publication mapping](scoped_clearance/projection-mapping.json) ·
+[native costs and chronology](scoped_clearance/costs.json).
+Selected projection, not full-tree equality, authenticated origin or independent
+registration. Original partial transfer bytes are omitted; their published
+overlap metadata is not an independent public regrade of those artifacts.
+
+```sh
+python3 -I -S -B research/scoped_clearance/verify_projection.py research/scoped_clearance/projection.json.gz
+```
+
+This reads saved artifacts without model/controller execution or network calls.
+Book 3.6.0 and claim statuses remain unchanged.
+
+### Earlier supplementary cohort: scoped evidence return
 
 The [English report](EPISTEMIC_RETURN_STUDY.md) and
 [Ukrainian report](EPISTEMIC_RETURN_STUDY.uk.md) publish 72 scored GPT-6.1
