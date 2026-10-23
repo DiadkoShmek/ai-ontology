@@ -85,9 +85,12 @@ effects. This is a useful distinction, not an auditor failure.
 
 An exporter MAY project records from another runtime. It MUST preserve missing
 relationships as missing, distinguish source observation from interpretation,
-and state which evidence it cannot supply. This release has no exercised
-LangGraph, Letta or OpenTelemetry-specific exporter. An input JSONL file already
-declaring ontology relations is not evidence of automatic foreign-log integration.
+and state which evidence it cannot supply. The optional native LangGraph
+checkpoint route preserves actual snapshots as Observations and infers no
+participation links. Its authored local example is separate from an LLM trial,
+cross-process durability or external adoption. Letta and OpenTelemetry-specific
+exporters are not qualified here. An input JSONL file already declaring ontology
+relations is not evidence of automatic foreign-log integration.
 
 Changes to these requirements require a dated revision with compatibility and
 counterexample notes. Existing frozen studies retain their original contracts.

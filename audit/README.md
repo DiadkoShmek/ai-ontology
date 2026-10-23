@@ -37,4 +37,35 @@ orphan effects, available/use gaps and the limited graph Claim status counts.
 No URLs or file references are followed. Record completeness does not establish
 chronology, causal influence, behavioral change, benefit, permission or truth.
 The [runtime adapter](../ontology/runtime_adapter.py) separately projects actual
-compatible SQLite readback. A framework-specific exporter remains future work.
+compatible SQLite readback.
+
+## Native LangGraph checkpoint observations
+
+The optional [local example](../examples/integrations/langgraph_checkpoint.py)
+executes ordinary deterministic nodes in an installed LangGraph runtime,
+collects actual `get_state_history` snapshots and writes a JSON export to stdout.
+It invokes no model. The example was exercised with LangGraph 1.0.8,
+langgraph-checkpoint 4.0.0 and langchain-core 1.2.12. These optional packages are
+needed to run the example, not to audit an existing export.
+
+```sh
+python3 -B examples/integrations/langgraph_checkpoint.py > local-checkpoints.json
+python3 -m audit.cli report local-checkpoints.json --format langgraph
+python3 -m unittest audit.test_langgraph_checkpoint -q
+```
+
+Expected for that authored run: four native snapshots and four `Observation`
+records, no inferred edges, `no-recorded-effects`. Completed task outputs are
+retained in `tasks[*].result`; `metadata.writes` is not required. This is a
+working native-source ingestion route, not evidence of a complete revision
+path or of a learning agent. InMemorySaver is RAM storage, not a cross-process
+durability demonstration.
+
+The [adapter](adapters/langgraph_checkpoint.py) binds exact input bytes and
+checkpoint identity, preserves the permitted JSON payload and refuses unsupported
+types or size overflow. It does not turn a thread into a participant, scheduling
+into judgment, state updates into external effects, or prose about revision
+into an accepted revision. Source identifiers are supplied labels, not
+authenticated origin. The capture example uses authored nonsensitive data;
+full checkpoint payloads from another application require a separate privacy
+review before disclosure. The auditor itself does not upload them.

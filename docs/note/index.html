@@ -130,8 +130,12 @@ the existing ontology module. It accepts either the neutral graph JSON or
 explicit node/edge records in JSONL. The JSONL adapter preserves declared
 relations; it does <strong>not</strong> infer an assessment, permission or use relation from
 the order of arbitrary provider logs. A framework exporter must supply those
-relations, with its own provenance and limitations. No LangGraph, Letta or
-OpenTelemetry interoperability is claimed without an exercised adapter.</p>
+relations, with its own provenance and limitations. The optional
+<a href="https://github.com/DiadkoShmek/ai-ontology/blob/main/audit/README.md#native-langgraph-checkpoint-observations">LangGraph checkpoint adapter</a>
+preserves native state history as Observations with no inferred edges. Its
+authored deterministic example is a local runtime-integration check, not an
+LLM study, an external user trace or a demonstration of beneficial revision.
+Letta and OpenTelemetry interoperability remain unqualified here.</p>
 <p>Three local commands show the contract without models or network:</p>
 <pre><code class="language-sh">python3 -m audit.cli report ontology/fixtures/closed-loop.json
 python3 -m audit.cli report ontology/fixtures/open-loop.json

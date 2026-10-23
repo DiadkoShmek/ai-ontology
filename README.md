@@ -35,6 +35,8 @@ python3 -m unittest audit.test_audit -q
 
 Expected coverage: **complete** then **incomplete**. Both authored fixtures are valid and exit 0; invalid input exits 2. They are explanatory cases, not LLM trials. Reports include source SHA-256, missing links and eight competency queries. Projected JSONL is supported; arbitrary raw logs and framework-specific exports require an explicit adapter. [Contract and limits](protocols/continuity-audit-v1.md).
 
+An optional [native LangGraph example](audit/README.md) captures actual checkpoint history from authored deterministic nodes. Its adapter preserves Observations and leaves participation links unrecorded. No model or external effect is implied.
+
 ## What is implemented
 
 - [Finite ontology](ontology/README.md): 18 classes, 34 relations, eight queries, neutral JSON and JSON-LD/Turtle exports. No general OWL reasoner or SHACL processor.
