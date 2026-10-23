@@ -57,12 +57,28 @@ Python 3.11+ and Git. These checks make no network or model calls. The verifier 
 
 ## Useful objections
 
+The [living-participation chapter](book/ua/03-living.md) develops a conceptual
+and normative distinction between preserving the agent and sustaining another
+participant's possibilities. Its workshops are constructed cases, not human
+trials. Challenge the criterion itself: ongoing assistance can increase agency,
+and competent use of a system need not end in independence from it. The book's
+LLM cohorts do not measure these human outcomes.
+
+Claim IDs and their status history live in [the existing map](CLAIMS.md).
+To propose a status revision, preserve previous entries, name a newer edition,
+give a reason and cite evidence at an existing full Git commit. The build
+rejects broken history and unavailable source paths. It does not judge semantic
+support or silently validate a changed meaning. Nine editorial checks include
+an intentionally accepted unsupported assertion with an existing source path.
+
 - Which proposed distinction changes a relevant transition, and which can be removed without loss?
 - Does the continuity contract remain useful while leaving numerical identity unresolved?
 - Are deterministic state guarantees kept separate from model use and useful completion?
 - Does the simple index control preserve the information relevant to the stated question?
 - Does the reading result depend on preparation, reference-runtime rehearsal, truncation order or exact citation copying?
 - Which unseen cases would falsify the proposed practical interpretation?
+- Can continuity pass while the other participant loses influence over the ends?
+- Does an appeal to care itself override an informed, legitimate choice?
 
 A valid citation does not establish semantic support. An anchor detects inconsistency with a trusted prefix but does not authenticate every claim. The runtime uses bounded full replay; indexed scaling is a specified extension, not a million-record benchmark. The model adapter is trusted executable code, not a sandbox.
 

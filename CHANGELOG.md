@@ -1,3 +1,12 @@
+# v3.4.0 — 2026-10-23
+
+- Added a conceptual chapter on what remains open to change in long-term human–AI participation: the other's position, revision of ends, support, time, exit and difference. Constructed comparisons at the institutional and workshop levels distinguish exact continuity from influence over the purpose of collaboration, including unauthorized goal substitution under an appeal to care and the separate right to decline assistance. Added a conditional feedback account spanning economic demands, infrastructure, technical selection, habits and institutional revision; no deterministic geopolitical forecast.
+- Kept ongoing assistance distinct from loss of agency. Did not infer consciousness, human burnout or long-term benefit from the model cohorts. Added primary philosophical and empirical sources with their limits.
+- Connected this broader question to the opening and a seventh implementation step. Developed transfer of the method across environments and explicit falsifiers for particular Q/W assessments.
+- Added IDs and a status history for the eleven existing mapped claims, initialized from published v3.3.0 without invented earlier histories. The offline build compares the history with Git, rejects undocumented status edits and unresolved evidence paths, and preserves its semantic-verification limit. Nine adversarial editing checks include an unsupported assertion that a valid path cannot disprove.
+- Recorded Architect-Ψ's internal conceptual contribution and Codex's substantive revisions; this is not independent peer review. Private council material remains unpublished.
+- Rebuilt the book and reader. Existing research reports, PDFs, protocols, raw responses and scores retain their original contents and originating edition. No new model or human trials.
+
 # v3.3.0 — 2026-10-23
 
 - Added a separately frozen 24-call transport-repair cohort: exact handoff completed 8/8 fully traced optimal plans versus 0/8 freeform, with 5/8 freeform planning-only successes. Whole-workflow native input fell 44.1%; both arms received no book reading.
