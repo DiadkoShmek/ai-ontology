@@ -128,7 +128,7 @@ authenticate an experimenter or guarantee a true interpretation of a source.
 The bounded journal is an inspectable reference, not a production-scale memory
 service.
 
-The thin audit CLI delegates validation and all eight competency questions to
+The thin audit CLI delegates validation and all nine competency questions to
 the existing ontology module. It accepts either the neutral graph JSON or
 explicit node/edge records in JSONL. The JSONL adapter preserves declared
 relations; it does **not** infer an assessment, permission or use relation from
@@ -139,6 +139,13 @@ preserves native state history as Observations with no inferred edges. Its
 authored deterministic example is a local runtime-integration check, not an
 LLM study, an external user trace or a demonstration of beneficial revision.
 Letta and OpenTelemetry interoperability remain unqualified here.
+
+The additive `claimUse` query preserves the exact Claim version recorded as used
+by a Decision and its reported Effects/affected Actors. A current independent
+successor does not rewrite that historical use. Dependency or revision links
+alone do not establish use; reported effects do not establish delivery, remedy
+or permission. This inspection remains separate from Observation availability
+and recorded return-path coverage.
 
 Three local commands show the contract without models or network:
 

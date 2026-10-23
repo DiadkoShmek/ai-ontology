@@ -1,6 +1,6 @@
 {
   "schema": "ontology-foundation-checks/1",
-  "observed_at": "2026-10-23T08:09:16.145965+00:00",
+  "observed_at": "2026-10-23T17:57:51.678912+00:00",
   "python": "3.13.7",
   "llm_calls": 0,
   "authored_fixture": true,
@@ -28,7 +28,7 @@
       ],
       "exit_code": 0,
       "stdout": "",
-      "stderr": "----------------------------------------------------------------------\nRan 29 tests in 0.323s\n\nOK\n"
+      "stderr": "----------------------------------------------------------------------\nRan 35 tests in 0.387s\n\nOK\n"
     },
     {
       "args": [
@@ -44,7 +44,7 @@
       ],
       "exit_code": 0,
       "stdout": "",
-      "stderr": "----------------------------------------------------------------------\nRan 29 tests in 0.315s\n\nOK\n"
+      "stderr": "----------------------------------------------------------------------\nRan 35 tests in 0.406s\n\nOK\n"
     },
     {
       "args": [
@@ -57,21 +57,22 @@
       ],
       "exit_code": 0,
       "stdout": "",
-      "stderr": "----------------------------------------------------------------------\nRan 11 tests in 6.984s\n\nOK\n"
+      "stderr": "----------------------------------------------------------------------\nRan 11 tests in 8.493s\n\nOK\n"
     }
   ],
   "sources": {
-    "ontology/FOUNDATION.md": "9151c3cb76d4d48c82dfc33dfb5df6665f646574312a78c4c35c5de6b07d4a73",
-    "ontology/README.md": "e073f489ccd1d8242fb46a43424888467eef8f10cf96fec6ce86f39c9e3a8d3c",
-    "ontology/competency-questions.json": "952645e383e3f1dc8fed9b5061ce0d6e5cbc775d21a2bdb5f0085d83d413e345",
+    "ontology/FOUNDATION.md": "18399f0b1949adeb682861358837ca2c77c43f3ec33049f254c7f6af18c14ff2",
+    "ontology/README.md": "8158142516423cd30b3fbd580f677615a2f14458c00ea7ad5fc8b0ac318c63e6",
+    "ontology/competency-questions.json": "275663b291605fcf2164d3bd53c5b3181f9d77479b42f8f303222d442edf1836",
     "ontology/context.jsonld": "cdce3391846f10fa1ee10123088ef5cddeb062c91a390a81ef337f2a1ccbc0e3",
     "ontology/export.py": "db95806b0a576a4e02f2bd1ced77155ad49b50d2d9f00d00395dc21a98912802",
     "ontology/fixtures/closed-loop.json": "4c5892821dd51db2d367395d9f2fff9d08f4ca7d30b54c30de8dede97f4606fb",
+    "ontology/fixtures/historical-claim-use.json": "0fdcacdab68be408d5395988d227cac89c5dc0a9bc9da09a25833c84ac1d0d2e",
     "ontology/fixtures/invalid-records.json": "c95b0c692837683489c87a161adba92e63ac5ea960970cb06c2225b7a532529a",
     "ontology/fixtures/open-loop.json": "6cf0ca4ebfe1c02fa900f1bb37a4e51d511e5418d2d599f9516a32a86d972547",
-    "ontology/graph.py": "6fc92afa9cb24573d1a17c0d93b43a5cab057b96561e303fc51ce3644c0ac83b",
+    "ontology/graph.py": "edc06ac5337257036956f296a5870b2e9d99c04c4f710f2272b609e1dc24190d",
     "ontology/runtime_adapter.py": "2077bfb9a29f9b15c225257956962ffe8c3d3048ff9fab773942ba4c1b19fd25",
-    "ontology/test_graph.py": "5fdd779b2d0b4ad13db827b65887e58c0f2993df265fdabc9f5ea6bf1f537544",
+    "ontology/test_graph.py": "f14074ee148471b3bb9649569442b5b7090aeadf1eb1c24c449ff7aa2f579701",
     "ontology/test_runtime_adapter.py": "c84f1be706ae0d5fa479d965f5cd311f5d16c176377c894ccfd08b7468445267",
     "ontology/vocabulary.json": "d0f045261fbfa0dc5de3d62d64c486475caf72c886fa7db916f86af741bb8389",
     "ontology/vocabulary.ttl": "1e6500ce15221d77213dc6d9a76314a5ac2a969063a82fae63bf73e63336e22c",

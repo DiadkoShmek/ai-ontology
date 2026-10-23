@@ -196,6 +196,21 @@ def answer(graph, question):
                 result.append({'decision': d, 'effect': effect, 'observations': observations,
                                'assessments': assessments, 'acceptedRevisions': revisions, 'laterDecisions': later,
                                'recordedPathComplete': bool(observations and assessments and revisions and later)})
+    elif question == 'claimUse':
+        for claim in ids('Claim'):
+            used_in = []
+            for decision in ids('Decision'):
+                if claim not in ts(decision, 'usedRecord'):
+                    continue
+                effects = [{'effect': effect, 'state': nodes[effect]['data']['state'],
+                            'affectedActors': ts(effect, 'affects')}
+                           for effect in ts(decision, 'hasEffect')]
+                used_in.append({'decision': decision,
+                                'decisionActionStatus': nodes[decision]['data']['actionStatus'],
+                                'effects': effects})
+            result.append({'claim': claim, 'claimStatus': nodes[claim]['data']['status'],
+                           'previousVersions': ts(claim, 'previousVersion'),
+                           'supportingObservations': ts(claim, 'supportedBy'), 'usedIn': used_in})
     else:
         raise InvalidGraph('unknown competency question: ' + str(question))
     return result
@@ -205,7 +220,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('graph')
     parser.add_argument('--question', choices=['identity', 'criterionAssessment', 'evidenceUse', 'lessonUse',
-                                              'applicability', 'authority', 'objections', 'returnPath'])
+                                              'applicability', 'authority', 'objections', 'returnPath', 'claimUse'])
     args = parser.parse_args()
     try:
         graph = validate(load(args.graph))

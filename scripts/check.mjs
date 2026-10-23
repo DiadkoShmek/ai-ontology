@@ -94,7 +94,10 @@ for(const f of markdown){
  const s=read(f);
  assert(!/\/home\/pustota|itoken=|BEGIN (?:RSA |OPENSSH )?PRIVATE KEY|gh[pousr]_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{20,}/.test(s),`private material pattern in ${f}`);
  for(const m of s.matchAll(/\]\(([^)]+)\)/g)){
-  if(!/^(?:https?:|#)/.test(m[1]))assert(fs.existsSync(path.resolve(root,path.dirname(f),m[1])),`${f}: missing ${m[1]}`);
+  if(!/^(?:https?:|#)/.test(m[1])){
+   const localPath=m[1].split(/[?#]/,1)[0];
+   assert(fs.existsSync(path.resolve(root,path.dirname(f),localPath)),`${f}: missing ${m[1]}`);
+  }
   if(m[1].startsWith('https://diadkoshmek.github.io/ai-ontology/#')){
    const target=decodeURIComponent(new URL(m[1]).hash.slice(1));
    assert(ids.includes(target),`${f}: missing reader anchor ${target}`);

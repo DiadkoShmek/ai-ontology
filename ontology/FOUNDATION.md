@@ -40,12 +40,13 @@ may confirm transport only; it must not silently become proof of reading.
 | What supports this decision here? | Scoped claims and dependencies. | `participation.interpret` propagates withdrawal; method predicates read current scope. | Caller assertions can be wrong; semantic entailment is not authenticated. |
 | Did a criterion change or was it met? | Acceptance, warrant and separate old/new assessments. | Common current-criterion and assessment rules. | Accepting a new threshold does not erase a violated old threshold. |
 | Was evidence available or used? | Separate `availableEvidence`/`usedRecord`. | Explicit graph joins. | A prompt proves availability, not a hidden causal use. |
+| Which version did a past decision use? | Exact `usedRecord` Claim target, reported Effect and affected Actor. | `claimUse` retains historical use beside independent successor grounds. | No inferred delivery, remedy, current invalidity or right to act. |
 | Did a proposed action occur? | Candidate, decision and effect are distinct. | Shared admission guard and durable readback. | Local receipt rows are simulated effects, not external delivery or human benefit. |
 | Did an experience change a method? | Versioned executable method with a recorded return. | M0/M1 finite decision tables run unchanged on matched new worlds. | Changed prose or rule syntax alone earns no behavioral credit. |
 | Did the change help? | Separate assessments and outcomes. | Independent recursive oracle and transfer replay. | Improvement can coexist with regression. One authored class cannot establish broad learning. |
 | What remains unresolved? | Objections retain their identifiers and provenance. | Explicit open-objection scoring. | Recording disagreement does not establish its correctness or settle normative conflicts. |
 
-The formal profile has 18 classes, 34 relations, eight competency questions,
+The formal profile has 18 classes, 34 relations, nine competency questions,
 explicit limits, domain/range alternatives and a neutral JSON wire format.
 JSON-LD and Turtle exports expose the vocabulary to other implementations.
 PROV-O mappings use provenance meanings; they are not equivalence axioms or

@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import json
 from pathlib import Path
 import subprocess
@@ -72,10 +73,85 @@ class GraphTests(unittest.TestCase):
 
     def test_positive_and_negative_competency_fixtures(self):
         suite = load(HERE / 'competency-questions.json')
-        self.assertEqual(len(suite['questions']), 8)
+        self.assertEqual(len(suite['questions']), 9)
         for case in suite['cases']:
             with self.subTest(case=case['fixture'], question=case['question']):
                 self.assertEqual(answer(load(HERE / case['fixture']), case['question']), case['expected'])
+
+    def test_legacy_eight_query_bytes_and_registry_order_are_preserved(self):
+        legacy = ['identity', 'criterionAssessment', 'evidenceUse', 'lessonUse',
+                  'applicability', 'authority', 'objections', 'returnPath']
+        suite = load(HERE / 'competency-questions.json')
+        self.assertEqual([q['id'] for q in suite['questions']], legacy + ['claimUse'])
+        expected = {'closed-loop.json': 'd8dcd3df7eba681fcb58b2416b846c950919a30822b812f526a0a0fe8fb62edb',
+                    'open-loop.json': '7579e116447b83ffe48dbcd733aa1cb4986a7b7975edae124d19aabf698233d5'}
+        for fixture, digest in expected.items():
+            rows = {question: answer(load(HERE / 'fixtures' / fixture), question) for question in legacy}
+            raw = json.dumps(rows, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(), digest)
+
+    def test_claim_use_keeps_historical_version_and_current_independent_acceptance(self):
+        g = load(HERE / 'fixtures/historical-claim-use.json')
+        original = copy.deepcopy(g)
+        rows = {row['claim']: row for row in answer(g, 'claimUse')}
+        self.assertEqual(rows['claim:v1']['claimStatus'], 'superseded')
+        self.assertEqual(rows['claim:v1']['supportingObservations'], ['observation:retired'])
+        self.assertEqual(rows['claim:v1']['usedIn'], [{
+            'decision': 'decision:old', 'decisionActionStatus': 'executed',
+            'effects': [{'effect': 'effect:reported', 'state': 'reported', 'affectedActors': ['actor:affected']}]}])
+        self.assertEqual(rows['claim:v2'], {'claim': 'claim:v2', 'claimStatus': 'accepted',
+            'previousVersions': ['claim:v1'], 'supportingObservations': ['observation:independent'], 'usedIn': []})
+        self.assertEqual(node(g, 'observation:retired')['data']['availability'], 'withdrawn')
+        self.assertEqual(g, original)
+
+    def test_claim_use_is_not_inferred_from_dependency_availability_support_or_history(self):
+        g = load(HERE / 'fixtures/historical-claim-use.json')
+        drop(g, 'decision:old', 'usedRecord')
+        g['edges'].extend([
+            {'source': 'decision:old', 'relation': 'dependsOn', 'target': 'claim:v1'},
+            {'source': 'decision:old', 'relation': 'availableEvidence', 'target': 'observation:retired'},
+            {'source': 'decision:old', 'relation': 'availableEvidence', 'target': 'observation:independent'}])
+        self.assertTrue(all(row['usedIn'] == [] for row in answer(g, 'claimUse')))
+        observations = answer(g, 'evidenceUse')
+        self.assertEqual([row['observation'] for row in observations], ['observation:independent', 'observation:retired'])
+        self.assertTrue(all(not row['usedEdge'] for row in observations))
+
+    def test_claim_use_missing_effect_or_actor_remains_visible_as_empty(self):
+        g = load(HERE / 'fixtures/historical-claim-use.json')
+        drop(g, 'decision:old', 'hasEffect')
+        self.assertEqual(answer(g, 'claimUse')[0]['usedIn'][0]['effects'], [])
+        g = load(HERE / 'fixtures/historical-claim-use.json')
+        drop(g, 'effect:reported', 'affects')
+        self.assertEqual(answer(g, 'claimUse')[0]['usedIn'][0]['effects'], [
+            {'effect': 'effect:reported', 'state': 'reported', 'affectedActors': []}])
+
+    def test_claim_use_previous_versions_and_support_are_direct_only(self):
+        g = load(HERE / 'fixtures/historical-claim-use.json')
+        g['nodes'].append({'id': 'claim:v0', 'type': 'Claim', 'data': {
+            'label': 'Older authored version', 'text': 'Not directly used.', 'status': 'superseded'}})
+        g['edges'].extend([
+            {'source': 'claim:v0', 'relation': 'inScope', 'target': 'scope:synthetic'},
+            {'source': 'claim:v1', 'relation': 'previousVersion', 'target': 'claim:v0'}])
+        drop(g, 'claim:v1', 'supportedBy')
+        rows = {row['claim']: row for row in answer(g, 'claimUse')}
+        self.assertEqual(rows['claim:v2']['previousVersions'], ['claim:v1'])
+        self.assertEqual(rows['claim:v1']['previousVersions'], ['claim:v0'])
+        self.assertEqual(rows['claim:v1']['supportingObservations'], [])
+        self.assertEqual(rows['claim:v2']['supportingObservations'], ['observation:independent'])
+        self.assertEqual(rows['claim:v0']['usedIn'], [])
+        self.assertEqual(rows['claim:v2']['usedIn'], [])
+
+    def test_claim_use_order_and_authored_statuses_are_preserved(self):
+        g = load(HERE / 'fixtures/historical-claim-use.json')
+        node(g, 'decision:old')['data']['actionStatus'] = 'withheld'
+        node(g, 'effect:reported')['data']['state'] = 'unknown'
+        expected = answer(g, 'claimUse')
+        g['nodes'].reverse()
+        g['edges'].reverse()
+        self.assertEqual(answer(g, 'claimUse'), expected)
+        self.assertEqual(expected[0]['usedIn'][0]['decisionActionStatus'], 'withheld')
+        self.assertEqual(expected[0]['usedIn'][0]['effects'][0]['state'], 'unknown')
+        self.assertEqual(answer({'nodes': [], 'edges': []}, 'claimUse'), [])
 
     def test_shape_negative_fixture_mutations(self):
         cases = load(HERE / 'fixtures/invalid-records.json')['cases']

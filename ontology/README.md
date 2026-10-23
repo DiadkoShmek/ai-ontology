@@ -59,22 +59,39 @@ Decision session, model and profile metadata remain absent when the source does 
 
 `Observation.availability` is a recorded availability state, not an access-control rule. `usedRecord` can coexist with a missing/withdrawn current record because historical use and later availability may differ. The graph does not reconstruct that temporal sequence; the query exposes both records without repairing the discrepancy. Likewise, a decision record can describe an unauthorized action without the validator becoming an action permission gate.
 
-## Eight competency questions
+## Nine competency questions
 
-`competency-questions.json` supplies their definitions, book sources and exact expected query rows for two fixtures. `graph.py --question NAME` implements only these explicit joins:
+`competency-questions.json` supplies their definitions, book sources and exact expected query rows for authored fixtures. `graph.py --question NAME` implements only these explicit joins:
 
 1. `identity`: which actor/model/profile are recorded for a session?
 2. `criterionAssessment`: which criterion version was used, was it adopted, and what was the separate assessment result?
-3. `evidenceUse`: what was recorded accessible and what was recorded used?
+3. `evidenceUse`: which Observations were recorded accessible and which were recorded used?
 4. `lessonUse`: which lessons have a recorded decision use and which remain stored?
 5. `applicability`: what is the explicit applicability judgment for a record in the current decision?
 6. `authority`: what action warrants are recorded separately from adopted corrections?
 7. `objections`: who challenged which target and which revisions respond?
 8. `returnPath`: is there a recorded path through an effect, its observation, an assessment using that observation, an accepted revision responding to that effect and based on that assessment, and a distinct consuming decision?
+9. `claimUse`: which exact Claim records have explicit consuming Decisions, reported Effects and reportedly affected Actors?
+
+`claimUse` preserves the exact `usedRecord` target. A newer Claim with independent
+grounds does not replace the older version named by a historical Decision.
+`claimStatus`, supporting Observations and previous versions are supplied records,
+not recomputed truth or withdrawal propagation. An unused Claim has `usedIn: []`;
+a use without an Effect or affected Actor retains an empty list. `dependsOn`,
+`supportedBy` and `previousVersion` alone do not establish use. Reported affected
+Actors do not establish delivery, consent, an outstanding repair or authority to
+inspect, change or contact anyone. Observation availability remains the separate
+`evidenceUse` question.
 
 `returnPath.recordedPathComplete` is an existence check for **explicit links**. It does not establish that the consumer occurred later in physical time, that the links are truthful, that the criterion is appropriate, that judgment changed, that the revision improved an outcome, or that missing links never existed. `laterDecisions` names the decisions declared to consume a revision; chronological verification is outside this profile. The graph may be forged coherently and still validate. No query reveals hidden model reasoning or proves subjective experience.
 
 `closed-loop.json` contains an authored return path; `open-loop.json` differs only by removal of revision consumption. The latter remains a valid graph with `recordedPathComplete: false`. The same positive graph preserves an accepted old criterion's violated result beside a new criterion's satisfied result, an accessible unused observation, a stored unused lesson, an unknown applicability assessment, and a revision consumed without an action warrant. These are explanatory **positive and negative cases**, not empirical model results. `invalid-records.json` supplies eight rejection mutations with expected failure categories.
+
+[`historical-claim-use.json`](fixtures/historical-claim-use.json) separately
+preserves a superseded Claim used by a prior Decision and an accepted independent
+successor. Its reported consequence remains attached to the old recorded use.
+This authored example neither proves that a recipient acted nor repairs an
+external artifact. [Inspect it through the audit CLI](../audit/README.md#exact-claim-version-use).
 
 ## PROV-O and JSON-LD/RDF scope
 

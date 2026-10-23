@@ -33,13 +33,18 @@ python3 -m audit.cli report ontology/fixtures/open-loop.json
 python3 -m unittest audit.test_audit -q
 ```
 
-Expected coverage: **complete** then **incomplete**. Both authored fixtures are valid and exit 0; invalid input exits 2. They are explanatory cases, not LLM trials. Reports include source SHA-256, missing links and eight competency queries. Projected JSONL is supported; arbitrary raw logs and framework-specific exports require an explicit adapter. [Contract and limits](protocols/continuity-audit-v1.md).
+Expected coverage: **complete** then **incomplete**. Both authored fixtures are valid and exit 0; invalid input exits 2. They are explanatory cases, not LLM trials. Reports include source SHA-256, missing links and nine competency queries. Projected JSONL is supported; arbitrary raw logs and framework-specific exports require an explicit adapter. [Contract and limits](protocols/continuity-audit-v1.md).
 
 An optional [native LangGraph example](audit/README.md) captures actual checkpoint history from authored deterministic nodes. Its adapter preserves Observations and leaves participation links unrecorded. No model or external effect is implied.
 
+[Inspect exact historical Claim use](audit/README.md#exact-claim-version-use):
+a new conclusion can have independent grounds while an earlier recorded decision
+still names the old version. The query preserves its reported consequence and
+affected actor without inferring delivery, repair or permission.
+
 ## What is implemented
 
-- [Finite ontology](ontology/README.md): 18 classes, 34 relations, eight queries, neutral JSON and JSON-LD/Turtle exports. No general OWL reasoner or SHACL processor.
+- [Finite ontology](ontology/README.md): 18 classes, 34 relations, nine queries, neutral JSON and JSON-LD/Turtle exports. No general OWL reasoner or SHACL processor.
 - [Python reference](examples/README.md): scoped claims, provenance, bounded SQLite/CAS durability and a model cycle. The [actual-store adapter](ontology/runtime_adapter.py) preserves missing evidence.
 - [Book](BOOK_EN.md): sixteen parts on identity, voice, memory, relationships and revision, with separate Ukrainian and English editions.
 - [Concept-to-code map](ontology/FOUNDATION.md) and [review guide](REVIEW_GUIDE.md).

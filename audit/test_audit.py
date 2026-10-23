@@ -194,6 +194,25 @@ class AuditTests(unittest.TestCase):
         self.assertEqual(missing.returncode, 2)
         self.assertEqual(json.loads(missing.stderr)["status"], "invalid")
 
+    def test_real_cli_claim_use_is_source_bound_and_does_not_widen_observation_gaps(self):
+        value = self.fixture("historical-claim-use")
+        path = self.write(value, "historical-claim-use.json")
+        original = path.read_bytes()
+        completed = subprocess.run([
+            sys.executable, "-B", "-m", "audit.cli", "report", str(path), "--question", "claimUse"],
+            cwd=ROOT, capture_output=True, text=True, timeout=10)
+        self.assertEqual(completed.returncode, 0, completed.stderr)
+        report = json.loads(completed.stdout)
+        self.assertEqual(report["question"], "claimUse")
+        self.assertEqual(report["source"]["sha256"], hashlib.sha256(original).hexdigest())
+        self.assertEqual(report["source"]["bytes"], len(original))
+        self.assertEqual(report["queries"]["claimUse"], graph.answer(value, "claimUse"))
+        self.assertEqual(report["queries"]["evidenceUse"], [])
+        self.assertEqual(report["gaps"]["used_without_recorded_availability"], [])
+        self.assertFalse(report["inference_tested"])
+        self.assertEqual(report["claim_status_counts"]["accepted"], 1)
+        self.assertEqual(path.read_bytes(), original)
+
 
 if __name__ == "__main__":
     unittest.main()
