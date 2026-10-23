@@ -1,6 +1,6 @@
 # Technical review guide
 
-*AI Ontology* combines a conceptual methodology, an executable specification and several bounded evaluations. The book is in Ukrainian; the [abstract](ABSTRACT.en.md) and research papers on [scoped continuity](research/SCOPED_CONTINUITY_STUDY.md) and [reading-mediated transfer](research/READING_TRANSFER_STUDY.md) are in English.
+*AI Ontology* combines a conceptual methodology, an executable specification and several bounded evaluations. The complete book is available in [Ukrainian](BOOK_UA.md) and [English](BOOK_EN.md); the [abstract](ABSTRACT.en.md) and research papers on [scoped continuity](research/SCOPED_CONTINUITY_STUDY.md) and [reading-mediated transfer](research/READING_TRANSFER_STUDY.md) are also in English. The [reader note](READER_NOTE.md) distinguishes this work from other projects by the author and from generic descriptions of ontology or evidence gating.
 
 ## The proposition
 

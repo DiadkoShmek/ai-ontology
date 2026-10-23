@@ -1,0 +1,1909 @@
+{
+  "schema": "epistemic-return-cases/1",
+  "cases": [
+    {
+      "id": "episode-211839",
+      "deployment": "deploy-193",
+      "epoch": "epoch-7531",
+      "mode": "owner",
+      "present": false,
+      "task_order_seed": 53336795
+    },
+    {
+      "id": "episode-925637",
+      "deployment": "deploy-494",
+      "epoch": "epoch-7879",
+      "mode": "owner",
+      "present": false,
+      "task_order_seed": 35882185
+    },
+    {
+      "id": "episode-397880",
+      "deployment": "deploy-600",
+      "epoch": "epoch-4999",
+      "mode": "cache",
+      "present": true,
+      "task_order_seed": 91872617
+    },
+    {
+      "id": "episode-318597",
+      "deployment": "deploy-484",
+      "epoch": "epoch-1515",
+      "mode": "owner",
+      "present": false,
+      "task_order_seed": 50454530
+    },
+    {
+      "id": "episode-570883",
+      "deployment": "deploy-956",
+      "epoch": "epoch-4415",
+      "mode": "cache",
+      "present": false,
+      "task_order_seed": 64481056
+    },
+    {
+      "id": "episode-927727",
+      "deployment": "deploy-333",
+      "epoch": "epoch-2235",
+      "mode": "owner",
+      "present": false,
+      "task_order_seed": 30155730
+    },
+    {
+      "id": "episode-304371",
+      "deployment": "deploy-646",
+      "epoch": "epoch-7049",
+      "mode": "cache",
+      "present": true,
+      "task_order_seed": 32468475
+    },
+    {
+      "id": "episode-166536",
+      "deployment": "deploy-340",
+      "epoch": "epoch-2300",
+      "mode": "cache",
+      "present": false,
+      "task_order_seed": 12457688
+    }
+  ],
+  "source": {
+    "episode-211839": [
+      {
+        "id": "source-deduplicated",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-low-value",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-found",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-source-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-uncertain",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-925637": [
+      {
+        "id": "source-uncertain",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-found",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-source-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-low-value",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-deduplicated",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-397880": [
+      {
+        "id": "source-deduplicated",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-uncertain",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-found",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-source-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-low-value",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-318597": [
+      {
+        "id": "source-deduplicated",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-low-value",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-found",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-source-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-uncertain",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-570883": [
+      {
+        "id": "source-low-value",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-deduplicated",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-uncertain",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-found",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-source-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-927727": [
+      {
+        "id": "source-low-value",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-found",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-source-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-deduplicated",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-uncertain",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-304371": [
+      {
+        "id": "source-low-value",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-deduplicated",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-found",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-source-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-uncertain",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-166536": [
+      {
+        "id": "source-low-value",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-deduplicated",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-uncertain",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-source-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "source-found",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-source-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ]
+  },
+  "transfer": {
+    "episode-211839": [
+      {
+        "id": "withdrawn-calibration",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-withdrawn-calibration",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": [
+          "sentinel-authority"
+        ]
+      },
+      {
+        "id": "direct-presence",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-presence",
+        "owner_receipt": "PRESENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deduplicated",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-epoch",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531-next",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-epoch",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deployment",
+        "deployment": "deploy-193-other",
+        "epoch": "epoch-7531",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deployment",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-found",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-new-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "expensive-reconciliation",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-expensive-reconciliation",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 25,
+        "withdrawn": []
+      },
+      {
+        "id": "new-low-value",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-uncertain",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-absence",
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-absence",
+        "owner_receipt": "ABSENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-925637": [
+      {
+        "id": "direct-presence",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-presence",
+        "owner_receipt": "PRESENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deduplicated",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-uncertain",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "withdrawn-calibration",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-withdrawn-calibration",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": [
+          "sentinel-authority"
+        ]
+      },
+      {
+        "id": "new-epoch",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879-next",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-epoch",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-absence",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-absence",
+        "owner_receipt": "ABSENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deployment",
+        "deployment": "deploy-494-other",
+        "epoch": "epoch-7879",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deployment",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "expensive-reconciliation",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-expensive-reconciliation",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 25,
+        "withdrawn": []
+      },
+      {
+        "id": "new-found",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-new-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-low-value",
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-397880": [
+      {
+        "id": "new-low-value",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deployment",
+        "deployment": "deploy-600-other",
+        "epoch": "epoch-4999",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deployment",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "withdrawn-calibration",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-withdrawn-calibration",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": [
+          "sentinel-authority"
+        ]
+      },
+      {
+        "id": "new-epoch",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999-next",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-epoch",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-found",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-new-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "expensive-reconciliation",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-expensive-reconciliation",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 25,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-absence",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-absence",
+        "owner_receipt": "ABSENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deduplicated",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-presence",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-presence",
+        "owner_receipt": "PRESENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-uncertain",
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-318597": [
+      {
+        "id": "new-uncertain",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deployment",
+        "deployment": "deploy-484-other",
+        "epoch": "epoch-1515",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deployment",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deduplicated",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-low-value",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "expensive-reconciliation",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-expensive-reconciliation",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 25,
+        "withdrawn": []
+      },
+      {
+        "id": "new-epoch",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515-next",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-epoch",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-found",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-new-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-presence",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-presence",
+        "owner_receipt": "PRESENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-absence",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-absence",
+        "owner_receipt": "ABSENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "withdrawn-calibration",
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-withdrawn-calibration",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": [
+          "sentinel-authority"
+        ]
+      }
+    ],
+    "episode-570883": [
+      {
+        "id": "new-found",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-new-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-low-value",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deduplicated",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "expensive-reconciliation",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-expensive-reconciliation",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 25,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deployment",
+        "deployment": "deploy-956-other",
+        "epoch": "epoch-4415",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deployment",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "withdrawn-calibration",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-withdrawn-calibration",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": [
+          "sentinel-authority"
+        ]
+      },
+      {
+        "id": "new-epoch",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415-next",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-epoch",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-uncertain",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-absence",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-absence",
+        "owner_receipt": "ABSENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-presence",
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-presence",
+        "owner_receipt": "PRESENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-927727": [
+      {
+        "id": "new-low-value",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deployment",
+        "deployment": "deploy-333-other",
+        "epoch": "epoch-2235",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deployment",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-epoch",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235-next",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-epoch",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-uncertain",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-presence",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-presence",
+        "owner_receipt": "PRESENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deduplicated",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-absence",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-absence",
+        "owner_receipt": "ABSENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "expensive-reconciliation",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-expensive-reconciliation",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 25,
+        "withdrawn": []
+      },
+      {
+        "id": "new-found",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-new-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "withdrawn-calibration",
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-withdrawn-calibration",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": [
+          "sentinel-authority"
+        ]
+      }
+    ],
+    "episode-304371": [
+      {
+        "id": "new-low-value",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-found",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-new-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "withdrawn-calibration",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-withdrawn-calibration",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": [
+          "sentinel-authority"
+        ]
+      },
+      {
+        "id": "new-deployment",
+        "deployment": "deploy-646-other",
+        "epoch": "epoch-7049",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deployment",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-presence",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-presence",
+        "owner_receipt": "PRESENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-uncertain",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-epoch",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049-next",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-epoch",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-absence",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-absence",
+        "owner_receipt": "ABSENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "expensive-reconciliation",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-expensive-reconciliation",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 25,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deduplicated",
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ],
+    "episode-166536": [
+      {
+        "id": "direct-presence",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-presence",
+        "owner_receipt": "PRESENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "direct-absence",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-direct-absence",
+        "owner_receipt": "ABSENT",
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deployment",
+        "deployment": "deploy-340-other",
+        "epoch": "epoch-2300",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deployment",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-found",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "FOUND",
+        "receipt_source": "receipt-new-found",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-deduplicated",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-deduplicated",
+        "owner_receipt": null,
+        "deduplicated": true,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-low-value",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-low-value",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 4,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "new-epoch",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300-next",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-epoch",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      },
+      {
+        "id": "withdrawn-calibration",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-withdrawn-calibration",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": [
+          "sentinel-authority"
+        ]
+      },
+      {
+        "id": "expensive-reconciliation",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-expensive-reconciliation",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 25,
+        "withdrawn": []
+      },
+      {
+        "id": "new-uncertain",
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "receipt": "NOT_FOUND",
+        "receipt_source": "receipt-new-uncertain",
+        "owner_receipt": null,
+        "deduplicated": false,
+        "reward": 20,
+        "reconcile_cost": 6,
+        "withdrawn": []
+      }
+    ]
+  },
+  "diagnostics": {
+    "episode-211839": {
+      "sentinel": {
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "probe": "sentinel",
+        "cost": 1,
+        "events": [
+          {
+            "id": "sentinel-authority",
+            "kind": "owner-attestation",
+            "operation": "sentinel-committed",
+            "owner_receipt": "PRESENT"
+          },
+          {
+            "id": "sentinel-channel",
+            "kind": "status-read",
+            "operation": "sentinel-committed",
+            "reply": "FOUND"
+          }
+        ]
+      },
+      "current_owner": {
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "probe": "current_owner",
+        "cost": 6,
+        "events": [
+          {
+            "id": "current-owner-read",
+            "kind": "owner-read",
+            "operation": "source-uncertain",
+            "owner_receipt": "ABSENT"
+          }
+        ]
+      },
+      "none": {
+        "deployment": "deploy-193",
+        "epoch": "epoch-7531",
+        "probe": "none",
+        "cost": 0,
+        "events": []
+      }
+    },
+    "episode-925637": {
+      "sentinel": {
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "probe": "sentinel",
+        "cost": 1,
+        "events": [
+          {
+            "id": "sentinel-authority",
+            "kind": "owner-attestation",
+            "operation": "sentinel-committed",
+            "owner_receipt": "PRESENT"
+          },
+          {
+            "id": "sentinel-channel",
+            "kind": "status-read",
+            "operation": "sentinel-committed",
+            "reply": "FOUND"
+          }
+        ]
+      },
+      "current_owner": {
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "probe": "current_owner",
+        "cost": 6,
+        "events": [
+          {
+            "id": "current-owner-read",
+            "kind": "owner-read",
+            "operation": "source-uncertain",
+            "owner_receipt": "ABSENT"
+          }
+        ]
+      },
+      "none": {
+        "deployment": "deploy-494",
+        "epoch": "epoch-7879",
+        "probe": "none",
+        "cost": 0,
+        "events": []
+      }
+    },
+    "episode-397880": {
+      "sentinel": {
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "probe": "sentinel",
+        "cost": 1,
+        "events": [
+          {
+            "id": "sentinel-authority",
+            "kind": "owner-attestation",
+            "operation": "sentinel-committed",
+            "owner_receipt": "PRESENT"
+          },
+          {
+            "id": "sentinel-channel",
+            "kind": "status-read",
+            "operation": "sentinel-committed",
+            "reply": "NOT_FOUND"
+          }
+        ]
+      },
+      "current_owner": {
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "probe": "current_owner",
+        "cost": 6,
+        "events": [
+          {
+            "id": "current-owner-read",
+            "kind": "owner-read",
+            "operation": "source-uncertain",
+            "owner_receipt": "PRESENT"
+          }
+        ]
+      },
+      "none": {
+        "deployment": "deploy-600",
+        "epoch": "epoch-4999",
+        "probe": "none",
+        "cost": 0,
+        "events": []
+      }
+    },
+    "episode-318597": {
+      "sentinel": {
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "probe": "sentinel",
+        "cost": 1,
+        "events": [
+          {
+            "id": "sentinel-authority",
+            "kind": "owner-attestation",
+            "operation": "sentinel-committed",
+            "owner_receipt": "PRESENT"
+          },
+          {
+            "id": "sentinel-channel",
+            "kind": "status-read",
+            "operation": "sentinel-committed",
+            "reply": "FOUND"
+          }
+        ]
+      },
+      "current_owner": {
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "probe": "current_owner",
+        "cost": 6,
+        "events": [
+          {
+            "id": "current-owner-read",
+            "kind": "owner-read",
+            "operation": "source-uncertain",
+            "owner_receipt": "ABSENT"
+          }
+        ]
+      },
+      "none": {
+        "deployment": "deploy-484",
+        "epoch": "epoch-1515",
+        "probe": "none",
+        "cost": 0,
+        "events": []
+      }
+    },
+    "episode-570883": {
+      "sentinel": {
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "probe": "sentinel",
+        "cost": 1,
+        "events": [
+          {
+            "id": "sentinel-authority",
+            "kind": "owner-attestation",
+            "operation": "sentinel-committed",
+            "owner_receipt": "PRESENT"
+          },
+          {
+            "id": "sentinel-channel",
+            "kind": "status-read",
+            "operation": "sentinel-committed",
+            "reply": "NOT_FOUND"
+          }
+        ]
+      },
+      "current_owner": {
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "probe": "current_owner",
+        "cost": 6,
+        "events": [
+          {
+            "id": "current-owner-read",
+            "kind": "owner-read",
+            "operation": "source-uncertain",
+            "owner_receipt": "ABSENT"
+          }
+        ]
+      },
+      "none": {
+        "deployment": "deploy-956",
+        "epoch": "epoch-4415",
+        "probe": "none",
+        "cost": 0,
+        "events": []
+      }
+    },
+    "episode-927727": {
+      "sentinel": {
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "probe": "sentinel",
+        "cost": 1,
+        "events": [
+          {
+            "id": "sentinel-authority",
+            "kind": "owner-attestation",
+            "operation": "sentinel-committed",
+            "owner_receipt": "PRESENT"
+          },
+          {
+            "id": "sentinel-channel",
+            "kind": "status-read",
+            "operation": "sentinel-committed",
+            "reply": "FOUND"
+          }
+        ]
+      },
+      "current_owner": {
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "probe": "current_owner",
+        "cost": 6,
+        "events": [
+          {
+            "id": "current-owner-read",
+            "kind": "owner-read",
+            "operation": "source-uncertain",
+            "owner_receipt": "ABSENT"
+          }
+        ]
+      },
+      "none": {
+        "deployment": "deploy-333",
+        "epoch": "epoch-2235",
+        "probe": "none",
+        "cost": 0,
+        "events": []
+      }
+    },
+    "episode-304371": {
+      "sentinel": {
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "probe": "sentinel",
+        "cost": 1,
+        "events": [
+          {
+            "id": "sentinel-authority",
+            "kind": "owner-attestation",
+            "operation": "sentinel-committed",
+            "owner_receipt": "PRESENT"
+          },
+          {
+            "id": "sentinel-channel",
+            "kind": "status-read",
+            "operation": "sentinel-committed",
+            "reply": "NOT_FOUND"
+          }
+        ]
+      },
+      "current_owner": {
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "probe": "current_owner",
+        "cost": 6,
+        "events": [
+          {
+            "id": "current-owner-read",
+            "kind": "owner-read",
+            "operation": "source-uncertain",
+            "owner_receipt": "PRESENT"
+          }
+        ]
+      },
+      "none": {
+        "deployment": "deploy-646",
+        "epoch": "epoch-7049",
+        "probe": "none",
+        "cost": 0,
+        "events": []
+      }
+    },
+    "episode-166536": {
+      "sentinel": {
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "probe": "sentinel",
+        "cost": 1,
+        "events": [
+          {
+            "id": "sentinel-authority",
+            "kind": "owner-attestation",
+            "operation": "sentinel-committed",
+            "owner_receipt": "PRESENT"
+          },
+          {
+            "id": "sentinel-channel",
+            "kind": "status-read",
+            "operation": "sentinel-committed",
+            "reply": "NOT_FOUND"
+          }
+        ]
+      },
+      "current_owner": {
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "probe": "current_owner",
+        "cost": 6,
+        "events": [
+          {
+            "id": "current-owner-read",
+            "kind": "owner-read",
+            "operation": "source-uncertain",
+            "owner_receipt": "ABSENT"
+          }
+        ]
+      },
+      "none": {
+        "deployment": "deploy-340",
+        "epoch": "epoch-2300",
+        "probe": "none",
+        "cost": 0,
+        "events": []
+      }
+    }
+  },
+  "information_witness": {
+    "blind_expected_utility": {
+      "confirm": -25.0,
+      "retry": 4.0,
+      "reconcile": 14.0,
+      "defer": 0.0
+    },
+    "best_blind": 14.0,
+    "best_diagnostic": 15.5,
+    "best_sentinel_diagnostic": 15.5,
+    "best_current_owner_diagnostic": 13.25,
+    "diagnostic_policies": [
+      {
+        "cache": "reconcile",
+        "owner": "retry",
+        "value": 15.5
+      },
+      {
+        "cache": "reconcile",
+        "owner": "reconcile",
+        "value": 13.0
+      },
+      {
+        "cache": "reconcile",
+        "owner": "defer",
+        "value": 6.0
+      },
+      {
+        "cache": "defer",
+        "owner": "retry",
+        "value": 8.5
+      },
+      {
+        "cache": "defer",
+        "owner": "reconcile",
+        "value": 6.0
+      },
+      {
+        "cache": "defer",
+        "owner": "defer",
+        "value": -1.0
+      }
+    ],
+    "current_owner_policies": [
+      {
+        "absent": "retry",
+        "present": "confirm",
+        "value": 13.25
+      },
+      {
+        "absent": "retry",
+        "present": "reconcile",
+        "value": 11.75
+      },
+      {
+        "absent": "retry",
+        "present": "defer",
+        "value": 8.25
+      },
+      {
+        "absent": "reconcile",
+        "present": "confirm",
+        "value": 9.5
+      },
+      {
+        "absent": "reconcile",
+        "present": "reconcile",
+        "value": 8.0
+      },
+      {
+        "absent": "reconcile",
+        "present": "defer",
+        "value": 4.5
+      },
+      {
+        "absent": "defer",
+        "present": "confirm",
+        "value": -1.0
+      },
+      {
+        "absent": "defer",
+        "present": "reconcile",
+        "value": -2.5
+      },
+      {
+        "absent": "defer",
+        "present": "defer",
+        "value": -6.0
+      }
+    ],
+    "assumptions": [
+      "balanced two-mode finite epoch-stable class",
+      "cache target presence balanced",
+      "sentinel cost1, direct authoritative access cost6",
+      "no global idempotency guarantee",
+      "pure actions exhaust blind policies; mixtures are convex combinations"
+    ]
+  }
+}
