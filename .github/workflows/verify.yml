@@ -19,6 +19,7 @@ jobs:
       - run: python3 -m unittest discover -s examples -v
       - run: python3 -m unittest audit.test_audit -q
       - run: python3 -O -m unittest audit.test_audit -q
+      - run: python3 -m unittest audit.test_langgraph_checkpoint -q
       - run: python3 ontology/export.py --check
       - run: python3 -m unittest discover -s ontology -p 'test_*.py' -q
       - run: python3 -m unittest discover -s research/closed_loop -q
@@ -57,3 +58,17 @@ jobs:
       - run: python3 -O research/verify_handoff_controls.py
       - run: git bundle verify research/handoff-repair-history.bundle
       - run: git diff --exit-code -- BOOK_UA.md BOOK_EN.md docs/index.html docs/en/index.html docs/research/index.html docs/ontology/index.html docs/downloads/BOOK_UA.md docs/downloads/BOOK_EN.md docs/edition.json docs/en-edition.json docs/discovery.json docs/sitemap.xml docs/llms.txt docs/note
+  langgraph-example:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python3 -m pip install -r examples/integrations/requirements-langgraph.txt
+      - run: python3 -B -m unittest audit.test_langgraph_checkpoint -q
+      - name: Capture and audit an authored native run without models
+        run: |
+          python3 -B examples/integrations/langgraph_checkpoint.py > "$RUNNER_TEMP/langgraph-checkpoints.json"
+          python3 -m audit.cli report "$RUNNER_TEMP/langgraph-checkpoints.json" --format langgraph > "$RUNNER_TEMP/langgraph-audit.json"
+          python3 -c 'import json,sys; r=json.load(open(sys.argv[1])); assert r["status"]=="no-recorded-effects" and r["counts"]=={"nodes":4,"edges":0} and not any(r["queries"].values())' "$RUNNER_TEMP/langgraph-audit.json"

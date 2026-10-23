@@ -21,17 +21,21 @@ BOUNDARY = (
     "Recorded graph path coverage only; absence means unrecorded. Structural "
     "validity and complete paths do not establish truth, authenticated authority, "
     "chronology, actual learning, performance, consciousness or causal benefit. No references "
-    "are fetched; JSONL input is projected record interchange, not raw trace interpretation."
+    "are fetched; JSONL input is projected record interchange, not raw trace interpretation. "
+    "Native checkpoint observations do not establish participation or revision semantics."
 )
 
 
 def load_source(path, input_format="graph"):
     """Read once for a source-bound digest; all graph semantics remain canonical."""
-    graph.require(input_format in ("graph", "jsonl"), "unknown input format")
+    graph.require(input_format in ("graph", "jsonl", "langgraph"), "unknown input format")
     cap = graph.VOCABULARY["limits"]["fileBytes"]
     with Path(path).open("rb") as source:
         raw = source.read(cap + 1)
     graph.require(len(raw) <= cap, "file byte limit")
+    if input_format == "langgraph":
+        from audit.adapters.langgraph_checkpoint import project as project_native
+        return project_native(raw)
     try:
         text = raw.decode("utf-8", "strict")
     except UnicodeError as exc:
@@ -94,7 +98,7 @@ def main(argv=None):
     for name in ("validate", "report"):
         command = commands.add_parser(name)
         command.add_argument("file")
-        command.add_argument("--format", choices=("graph", "jsonl"), default="graph")
+        command.add_argument("--format", choices=("graph", "jsonl", "langgraph"), default="graph")
         if name == "report":
             command.add_argument("--question", choices=QUESTIONS, default="returnPath")
     args = parser.parse_args(argv)

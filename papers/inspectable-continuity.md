@@ -133,8 +133,12 @@ the existing ontology module. It accepts either the neutral graph JSON or
 explicit node/edge records in JSONL. The JSONL adapter preserves declared
 relations; it does **not** infer an assessment, permission or use relation from
 the order of arbitrary provider logs. A framework exporter must supply those
-relations, with its own provenance and limitations. No LangGraph, Letta or
-OpenTelemetry interoperability is claimed without an exercised adapter.
+relations, with its own provenance and limitations. The optional
+[LangGraph checkpoint adapter](../audit/README.md#native-langgraph-checkpoint-observations)
+preserves native state history as Observations with no inferred edges. Its
+authored deterministic example is a local runtime-integration check, not an
+LLM study, an external user trace or a demonstration of beneficial revision.
+Letta and OpenTelemetry interoperability remain unqualified here.
 
 Three local commands show the contract without models or network:
 

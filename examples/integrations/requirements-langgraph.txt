@@ -1,0 +1,4 @@
+# Optional authored native-runtime example; the audit CLI remains stdlib-only.
+langgraph==1.0.8
+langgraph-checkpoint==4.0.0
+langchain-core==1.2.12
