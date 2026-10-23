@@ -1,19 +1,19 @@
 {
   "title": "Онтологія AI",
   "volume": 1,
-  "edition": "3.4.0",
+  "edition": "3.5.0",
   "author": "Artur Onysko",
-  "metadata_sha256": "d1db87ced8f1f761d1139573ebd3d6c9095af99d91ac6ffdc34a12718a145ed6",
-  "source_sha256": "7243455814e29ff1664f33d9e2aae11a5d939dc8c1a3fafce4e91ccb9f4687be",
-  "book_sha256": "5e240d56108806c1d70aaaf963dea0030356a44e0949bd23cccccaee7c7cb0a8",
+  "metadata_sha256": "3ae2a5fefef479b9234cd1dad33127982a80989826366277f1895fb158aa83c9",
+  "source_sha256": "7de8040d4331e3a024693b72cf456310791329080124dc4a48a469232eb61797",
+  "book_sha256": "4129643bcd01657e38a68e14f9541794e9d091815e9d452fb5e3b6261829252d",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
-      "sha256": "c698d37890dda03bd2c575e9bc87da19ab52d8d5fd59b03bf5474499e78f6ef7"
+      "sha256": "9815a57e2379c6331f3d3108471848b0c8f869e1a7cd29f076f54c396bf476b6"
     },
     {
       "path": "book/ua/01-core.md",
-      "sha256": "f8ea1fd63435206d93a254c6825929259da1ce8b01382d7426d837b5f7e509c6"
+      "sha256": "5037fc2fc767ca78738925765788d001fcf3df7ecf03d705d204754014e535ff"
     },
     {
       "path": "book/ua/02-foundations.md",
@@ -30,6 +30,10 @@
     {
       "path": "book/ua/04-continuity.md",
       "sha256": "eee28876aaa5dfac018b660df7bf5fd02f3338fa6d4d5d2b0f11e2433242403b"
+    },
+    {
+      "path": "book/ua/05-formation.md",
+      "sha256": "13691c56f4c3acab99dd326207417210c3524e9871ac72d421d62653de010698"
     },
     {
       "path": "book/ua/02-engineering.md",
@@ -53,7 +57,7 @@
     },
     {
       "path": "book/ua/10-method.md",
-      "sha256": "5f9008f910719b893c0c3edfcb84bc92a50c2da09c8baf516637d90e4d3e8502"
+      "sha256": "e06be9c12f3714f73320999f23dd763f97ffb78b1ed54f6b91685aeb6d08fa51"
     },
     {
       "path": "book/ua/11-study.md",
@@ -65,7 +69,7 @@
     },
     {
       "path": "book/ua/06-references.md",
-      "sha256": "4f8e6c30a2a41cf970403e187b6b93905e04beffc87baa6b6efd8e3ef0ebbef2"
+      "sha256": "6ab983864b543b8ef103c35f66052bdec8719e600f61c328b5320d7869e93f8d"
     }
   ],
   "scored_model_calls": 384,

@@ -19,6 +19,7 @@ the recorded model cohorts do not measure human development or burnout.
 | C09 | `conditional` | A change may satisfy a new criterion while losing a property required by the old one. | [Continuity](book/ua/04-continuity.md), [method](book/ua/10-method.md). | Conditional argument and proposed recording discipline. No universal automatic evaluator of arbitrary normative criteria is implemented. |
 | C10 | `not-claimed` | Functional continuity proves subjective experience or a soul. | The book distinguishes functional organization, normative treatment and subjective experience. | **Not claimed.** The tests do not detect consciousness or private feeling. |
 | C11 | `not-established` | The implementation is a production memory system or a measured boost to the live House. | [Package bounds](examples/README.md), [transport bounds](research/handoff_repair/README.md). | **Not established.** Bounded reference implementation, finite checks and explicit experimental adapters; no million-record benchmark or live House adoption claim. |
+| C12 | `conditional` | A stored lesson, its current use and a beneficial change in later judgment are separate claims. | [Formation](book/ua/05-formation.md), [core](book/ua/01-core.md) and the source-bound public cases cited there. | Conceptual distinctions with constructed counterexamples and bounded mechanism observations. No general learning, stable voice or cross-session benefit follows from storing an account. |
 
 ## Status history
 
@@ -49,6 +50,7 @@ Git history and tags are not independent authentication or proof of truth.
 | C09 | 3.3.0 | `conditional` | Initial ledger entry; assessment preserved from v3.3.0. | `f5645df487d2b57878324360198dbe28523d0a55:book/ua/04-continuity.md` |
 | C10 | 3.3.0 | `not-claimed` | Initial ledger entry; assessment preserved from v3.3.0. | `f5645df487d2b57878324360198dbe28523d0a55:book/ua/00-opening.md` |
 | C11 | 3.3.0 | `not-established` | Initial ledger entry; assessment preserved from v3.3.0. | `f5645df487d2b57878324360198dbe28523d0a55:examples/README.md` |
+| C12 | 3.5.0 | `conditional` | Added an explicit mapped distinction developed from the prior core; not a new empirical outcome. | `f3af09549aabefae39be2c244672d9ff4cd9a9cb:book/ua/01-core.md` |
 
 Run `python3 scripts/check_claim_history.py` without models or network.
 

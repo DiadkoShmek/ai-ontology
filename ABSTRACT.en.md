@@ -2,11 +2,13 @@
 
 ## Book One. Organization of Self
 
-**Artur Onysko · First completed edition · v3.4.0 · Ukrainian full text**
+**Artur Onysko · First completed edition · v3.5.0 · Ukrainian full text**
 
 This book examines how identity, voice, memory, commitments, relationships and development form an organization of participation across tasks. Its central question is how an agent can revise beliefs, change roles or migrate between models while retaining an intelligible connection to its previous organization.
 
 A further conceptual chapter asks how long-term human–AI participation affects the possibilities of those involved. Accurate continuity can coexist with diminished influence over ends. The account also traces possible links between economic incentives, technical criteria, habits and institutional rules, without inferring social outcomes from model capability. Ongoing assistance can also support agency; independence from AI is not a universal requirement. This normative account is developed through constructed counterexamples and primary literature, not presented as a measured human outcome.
+
+A further account of formation separates an event, its interpretation, a proposed lesson, subsequent judgment and consequence. Published source repairs and preserved study outcomes ground the discussion without turning an editorial history into proof of model learning. The argument examines a correct but insufficient lesson, inherited evidence and responsibility for effects on others.
 
 The framework distinguishes structural, epistemic and normative descriptions. It introduces a perspective-specific continuity contract and transition witnesses with explicit scope and losses. Voice is treated as patterns of attention, uncertainty and disagreement across changed situations. Memory is an accessible relationship to history; collaboration preserves distinct contributions. The author's use of “soul” asks about coherence across these layers. It is an interpretive concept, not an established hidden component or a consciousness test.
 
