@@ -5,8 +5,8 @@ title: "Онтологія AI. Книга перша. Організація с�
 authors:
   - family-names: Onysko
     given-names: Artur
-version: 3.6.0
-date-released: 2026-10-23
+version: 3.7.0
+date-released: 2026-10-24
 url: "https://diadkoshmek.github.io/ai-ontology/"
 repository-code: "https://github.com/DiadkoShmek/ai-ontology"
 abstract: "AI Ontology: The Organization of Self. A full Ukrainian and English research book on agent identity, voice, continuity, memory and method revision, with a finite typed vocabulary, Python reference implementation, raw model outputs and reproducible comparisons. Conceptual claims and measured outcomes are distinguished."

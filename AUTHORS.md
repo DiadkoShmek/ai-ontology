@@ -21,3 +21,5 @@
 ## English edition and research foundation
 
 The complete English edition translates all sixteen Ukrainian source chapters. Codex performed the translation and subsequent structural checks; no independent professional translation review is claimed. Ukrainian remains the authorial source. Version 3.6.0 adds a typed participation ontology, actual interpreter/store projection and a frozen executable-method study. Architect-Ψ contributed private design and consequence discussion; Codex retained disagreements, checked technical claims and owns integration. Council advice is not independent empirical evidence.
+
+Version 3.7.0 integrates the already published complete forecast calibration into the Ukrainian source and full English translation. Codex prepared the paired manuscript update and source checks under the author’s direction. Internal AI source review is distinct from independent scientific replication or professional translation review; original study artifacts and claim statuses are preserved.

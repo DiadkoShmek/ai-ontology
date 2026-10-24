@@ -176,3 +176,27 @@ This is the instrument's ceiling. Initial methods already handled the required c
 The distinction matters: the return dataflow occurred, but a need to change the method did not arise. Successful data movement does not establish a participant's formation. A subsequent study must distinguish an already sufficient method from one that cannot handle an unknown boundary without new experience. Adding more variants of this same saturated class would not resolve that question.
 
 The [full report](https://github.com/DiadkoShmek/ai-ontology/blob/main/research/CLOSED_LOOP_STUDY.md) supplies frozen sources, raw responses, costs, verification of every actual continuation and separate retention, exception and mixed summaries. Mechanical replay recomputes scores from model outputs; it does not trust a saved grade. The study thereby follows the book's own demand: identify what continued and do not fill in what has not been established.
+
+## 15 New evidence with an unchanged method
+
+A separate calibration on 24 October asked whether organizing the same observations helps a participant revise its own forecasting program. The declared task was a two-level cache with 64 possible configurations. Two nonrandom authored worlds and sixteen episode templates were fixed before inference. One actual M0 was generated from initial evidence E0 and retained without screening for failure. The requested route was GPT-6.1 Sol/high; that request is not attestation of the resolved provider or model.
+
+The initial program made a valid uncertain prediction before the diagnostic outcome was supplied. New evidence E1 then reached eight fresh revision attempts: two worlds, flat or organized records, and two repeats per condition. The chronological and grouped views recovered the same literal records and conferred the same action rights. At execution, corresponding evidence and query packets were byte-identical across programs. All eight attempts finished before later transfer and retention evaluations.
+
+| Mean transfer Brier loss, lower is better | World u0 | World u1 |
+|---|---|---|
+| Actual M0 with E0 | 3/32 | 11/32 |
+| The same unchanged M0 with E1 | 1/16 | 3/16 |
+| Source returned after feedback, either format, each repeat | 1/16 | 3/16 |
+
+The unchanged M0 already enumerated the declared configurations and conditioned on the available evidence. E1 improved its measured predictions. Every one of the 96 revised-program distributions matched the corresponding M0(E1) distribution exactly; the registered flat-minus-organized contrast was zero in both worlds and overall. All 32 revised retention rows had zero loss, without a measured regression against the actual initial program. The unchanged controls also retained their predictions.
+
+There were eight revision opportunities, not eight established changes of method. Six returned source bodies were byte-identical to M0; two differed. A source change alone does not establish an operative change, and identical tested predictions do not establish identical procedures on other inputs or determine which particular records were used. In this family, the simpler explanation was sufficient: new facts reached a method that could already use them.
+
+All nine model calls and 133 program captures completed, with no missing outcomes, invalid forecasts, replacements or retries. The 146 scored rows comprise 144 evaluation rows and two comparisons of one shared diagnostic execution; they are not independent executions. Two dependent authored worlds and two repeats cannot establish a general equivalence of formats. This was a presentation comparison during source authoring, not an intervention in which participants read the book.
+
+Across four revision calls per format, organized records used 76,644 input tokens versus 74,156 for flat records: 2,488 more, or 3.3551%, with the same tested forecasts. All nine calls, including the common M0, used 166,694 input and 12,003 output tokens. The 61,824 cached input tokens are a subset of input, not an additional quantity. Summed model-observer time was 250.511765 seconds and summed program-capture time 8.118117 seconds. These are separate measured scopes; neither is calendar duration or full engineering cost. Billing and energy were not measured.
+
+The methodological consequence concerns the object of a revision claim. A changed supported judgment can follow from new evidence while the executable procedure remains adequate. Conversely, changing code or saving a lesson does not by itself show that the next decision changed or benefited. The comparison must retain competent M0s and allow ordinary organization to suffice. Selecting only failed M0s would change the population being estimated. A need for procedure repair and its benefit were not established here. Formation, voice and benefit to the other participant retain their own questions of evidence.
+
+The [complete study](https://github.com/DiadkoShmek/ai-ontology/blob/main/research/FORECAST_CALIBRATION_STUDY.md) and [selected evidence](https://github.com/DiadkoShmek/ai-ontology/tree/main/research/forecast_calibration) contain the protocol, outputs, scores, costs and limits. The verifier regrades saved data without executing candidate source and takes truth labels from authored data. It neither independently validates the simulated world nor authenticates the full private execution. This complete finite negative result does not refute the broader ontology or establish model-weight learning. C03 remains unsupported: book reading was not tested.

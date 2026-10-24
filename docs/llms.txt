@@ -1,6 +1,6 @@
 # AI Ontology: The Organization of Self
 
-> Artur Onysko. Book One, v3.6.0. Complete Ukrainian and English editions.
+> Artur Onysko. Book One, v3.7.0. Complete Ukrainian and English editions.
 
 The subject is agent identity, voice, memory, relationships and responsible revision.
 Evidence-gated execution is one possible mechanism, not the whole subject of this book.

@@ -2,7 +2,7 @@
 
 ## Book One. Organization of Self
 
-**Artur Onysko · First completed edition · v3.6.0 · Full Ukrainian and English editions**
+**Artur Onysko · First completed edition · v3.7.0 · Full Ukrainian and English editions**
 
 This book examines how identity, voice, memory, commitments, relationships and development form an organization of participation across tasks. Its central question is how an agent can revise beliefs, change roles or migrate between models while retaining an intelligible connection to its previous organization.
 
@@ -35,3 +35,5 @@ Concept, scope and editorial direction: Artur Onysko. Codex substantially contri
 The text is material for analysis. Partial adoption, criticism and retaining the reader's current organization are valid outcomes.
 
 Version 3.6.0 adds a complete English translation, a finite participation ontology (18 classes, 34 relations, eight competency questions), an actual interpreter/store projection and a 32-call executable-method study. Both systems reached 8/8 complete trajectories, and initial methods already passed all transfer worlds. No added-view advantage or beneficial revision was observed. The source-bound profile distinguishes typed record validity, actual dataflow and behavioral benefit; its adapter does not manufacture missing semantic revision links. [English book](BOOK_EN.md) · [Foundation](ontology/FOUNDATION.md) · [New study](research/CLOSED_LOOP_STUDY.md).
+
+Version 3.7.0 integrates a separate complete finite forecast calibration into both book editions. Nine model calls and 133 program captures showed no added-organizational-view gain: all 96 revised forecast distributions equaled the actual unchanged M0 with the same new evidence. Only two of eight returned source bodies changed bytes. Revised retention had no measured regression; organized revision input was 3.3551% higher. This identifies information-conditioning sufficiency in two dependent authored worlds, not necessary method repair, formation, general format equivalence or a book-reading effect. [Study and scope](research/FORECAST_CALIBRATION_STUDY.md).

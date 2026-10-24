@@ -1,4 +1,11 @@
-# v3.5.0 — 2026-10-23
+# Changelog
+
+## 3.7.0 — 2026-10-24
+
+- Integrated the already public same-information forecast calibration into both canonical study chapters: nine actual model calls, 133 program captures, D=0, exact unchanged-M0(E1) forecast equality, separate retention and measured cost. Eight revision attempts are distinguished from two source-byte changes.
+- Developed the distinction between new evidence, changed judgment, changed source and beneficial method revision. Retained competent initial methods and the sufficient simpler account; no formation, general format-equivalence or book-reading benefit claim.
+- Rebuilt both complete books, PDFs and web/discovery editions with source and translation bindings. Original study protocols, selected evidence, scores and originating editions remain unchanged. C03 remains unsupported.
+- Internal AI source and translation checks are not independent scientific replication. No new model or human trial was performed for this manuscript integration.
 
 ## 3.6.0 — 2026-10-23
 

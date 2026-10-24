@@ -1,6 +1,6 @@
 # AI Ontology: The Organization of Self
 
-**Artur Onysko · Book v3.6.0 · English and Ukrainian**
+**Artur Onysko · Book v3.7.0 · English and Ukrainian**
 
 A research book, proposed audit profile and executable reference for inspecting claims about **agent continuity, evidence and revision**. Which grounds reached a decision? What followed from it? Did a consequence enter a subsequent method, and what evidence supports that claim?
 
@@ -66,7 +66,7 @@ This is a developer-controlled research reference and proposed profile, not a pr
 
 The scoped evidence-return result is negative: over-budget notes were unavailable, and actual feedback changed source decisions while masked branches retained uncertainty. The separate contract-adaptation result is a ceiling: all revised and fresh programs solved the explicit new rule. Source changes and complete records do not establish beneficial formation or general ontology gain. Ukrainian reports: [evidence return](research/EPISTEMIC_RETURN_STUDY.uk.md) · [contract adaptation](research/SCOPED_CLEARANCE_STUDY.uk.md).
 
-[Protocols, raw outputs, costs and offline reanalysis](research/README.md) are available. The supplementary data do not change book v3.6.0. Claim IDs include **C03 unsupported**, **C06 refuted** and **C10 not-claimed**; see [the exact ledger and history](CLAIMS.md).
+[Protocols, raw outputs, costs and offline reanalysis](research/README.md) are available. Book v3.7.0 integrates the completed forecast calibration into both manuscript editions; the original study records retain their originating edition. Claim IDs include **C03 unsupported**, **C06 refuted** and **C10 not-claimed**; see [the exact ledger and history](CLAIMS.md).
 
 The latest [forecast-calibration readback](research/forecast_calibration/README.md)
 separates information conditioning, source revision and added organization.

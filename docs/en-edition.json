@@ -1,10 +1,10 @@
 {
   "schema": "ai-ontology-english/1",
-  "edition": "3.6.0",
+  "edition": "3.7.0",
   "language": "en",
   "source_language": "uk",
   "translation": "Full Codex-assisted translation; Ukrainian chapters remain the authorial source.",
-  "book_sha256": "99e17a02b86b451254853a2fd5c6d2ff1a6fd72dba20635be8560f84e6bea179",
+  "book_sha256": "5cd624e76e58fed6c365ef8afcf29d475db0c58e2040764572d41ede7717d8d2",
   "source_files": [
     {
       "path": "book/en/00-opening.md",
@@ -86,9 +86,9 @@
     },
     {
       "path": "book/en/11-study.md",
-      "sha256": "9b33731d424c4a2dd6c64dc3f113936f404d010b72ec0af88fc3c222c92414e2",
+      "sha256": "02b856e1c6079f9fdef154809a33cef0eb48766badf6c295d39d173d5c6f2240",
       "uk_source": "book/ua/11-study.md",
-      "uk_sha256": "da8e9a09a688392d5eb751c7ab7efc033b3e902aa36892537a15d24d6dd163e3"
+      "uk_sha256": "b75a6eb1bcf1aa59e419d3257c628f4d3d4a6a440484bcd793b42b28f67e2635"
     },
     {
       "path": "book/en/05-research.md",
