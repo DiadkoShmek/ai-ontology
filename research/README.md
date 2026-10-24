@@ -1,6 +1,6 @@
 # Research materials: continuity and participation
 
-**Research materials · updated 23 October 2026 · accompanying book v3.6.0**
+**Research materials · updated 24 October 2026 · accompanying book v3.6.0**
 
 [Scoped-continuity paper](SCOPED_CONTINUITY_STUDY.md) · [PDF](../docs/downloads/scoped-continuity-study-en.pdf) · [Reading-transfer paper](READING_TRANSFER_STUDY.md) · [Transfer PDF](../docs/downloads/reading-transfer-study-en.pdf) · [Book](https://diadkoshmek.github.io/ai-ontology/#study)
 
@@ -11,7 +11,30 @@ is a new entry to existing relations, not a new positive model result.
 
 ## New: executable methods and an observed return cycle
 
-### Latest supplementary observation: own-source induction
+### Latest supplementary observation: same-information forecast calibration
+
+[English report](FORECAST_CALIBRATION_STUDY.md) ·
+[Українською](FORECAST_CALIBRATION_STUDY.uk.md) ·
+[selected evidence and limits](forecast_calibration/README.md).
+
+Nine model calls and 133 saved source captures produced 146 known valid scored
+rows. The same unchanged M0 already incorporates E1: mean transfer Brier moves
+from 3/32 to 1/16 in u0 and 11/32 to 3/16 in u1. Every revised source matches that
+M0(E1) distribution on all 12 queries; all 96 revised comparisons tie. Registered
+flat-minus-organized D=0, with no measured predictive-retention regression.
+Organized input tokens were 3.3551% higher across four revision calls per format.
+This is a complete finite authored calibration, not necessary method repair,
+formation, general format equivalence or a refutation of the broader ontology.
+
+```sh
+python3 -I -S -B research/forecast_calibration/verify_projection.py
+python3 -O -m unittest discover -s research/forecast_calibration -p 'test_projection.py' -q
+```
+
+These verify selected saved data without executing candidates or private modules.
+Book 3.6.0 and claim statuses remain unchanged.
+
+### Earlier supplementary observation: own-source induction
 
 The [English report](PROGRAM_INDUCTION_STUDY.md) and
 [Ukrainian report](PROGRAM_INDUCTION_STUDY.uk.md) describe one own-M0 trajectory,
