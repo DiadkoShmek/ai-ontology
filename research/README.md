@@ -1,6 +1,6 @@
 # Research materials: continuity and participation
 
-**Research materials · updated 24 October 2026 · accompanying book v3.6.0**
+**Research materials · updated 24 October 2026 · accompanying book v3.7.0**
 
 [Scoped-continuity paper](SCOPED_CONTINUITY_STUDY.md) · [PDF](../docs/downloads/scoped-continuity-study-en.pdf) · [Reading-transfer paper](READING_TRANSFER_STUDY.md) · [Transfer PDF](../docs/downloads/reading-transfer-study-en.pdf) · [Book](https://diadkoshmek.github.io/ai-ontology/#study)
 
@@ -32,7 +32,7 @@ python3 -O -m unittest discover -s research/forecast_calibration -p 'test_projec
 ```
 
 These verify selected saved data without executing candidates or private modules.
-Book 3.6.0 and claim statuses remain unchanged.
+The calibration was published as a supplement to book v3.6.0. Book v3.7.0 integrates its result into the [English](../book/en/11-study.md) and [Ukrainian](../book/ua/11-study.md) study chapters. Original protocols, data, scores and claim statuses remain unchanged.
 
 ### Earlier supplementary observation: own-source induction
 
@@ -80,7 +80,7 @@ python3 -I -S -B research/scoped_clearance/verify_projection.py research/scoped_
 ```
 
 This reads saved artifacts without model/controller execution or network calls.
-Book 3.6.0 and claim statuses remain unchanged.
+At publication, this supplement left book v3.6.0 and claim statuses unchanged.
 
 ### Earlier supplementary cohort: scoped evidence return
 

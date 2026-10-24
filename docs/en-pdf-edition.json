@@ -1,13 +1,13 @@
 {
   "schema": "ai-ontology-pdf/1",
-  "edition": "3.6.0",
+  "edition": "3.7.0",
   "pdf": "docs/downloads/ai-ontology-book-01-en.pdf",
-  "pdf_sha256": "4e11185dc7050bdc490ee1781b9c27954f111bf43f97c530a761c38bbf56e9df",
+  "pdf_sha256": "6a16bf9d10ce49441dcc14ac34419963542711ccc972a62ac3f2f234f952a13c",
   "reportlab": "4.4.9",
   "inputs": {
-    "edition.json": "5e32d39e4c296aeedbba89bab009f3d2326d62baa2c53f24451360847d4a06fa",
-    "BOOK_EN.md": "99e17a02b86b451254853a2fd5c6d2ff1a6fd72dba20635be8560f84e6bea179",
-    "build/tokens-en.json": "30d9b812ea4f51b087c450f2ad3f9ac5e6ef945f3dc007b6f66db289a1d2864c",
+    "edition.json": "dac26640838e60e448bc223809186f94420800f51afedc1758639676b8b4f4ba",
+    "BOOK_EN.md": "5cd624e76e58fed6c365ef8afcf29d475db0c58e2040764572d41ede7717d8d2",
+    "build/tokens-en.json": "24c5892d51da023e4c599b47e1def8d4ad42ea1fb0a41907bc6c0fd5bac23981",
     "scripts/build_pdf.py": "b7a0e470dd2669f5a1cb70f908e36e7c849df3d03329b6e8ca91afc3489172af",
     "requirements.txt": "054e7483ed0899a13425d3ff89d0ae162290c88989825c77d22174ceb36f33f1",
     "docs/assets/serif.ttf": "8f2c103bfa3fd5de71f1b92b18f21906b5a26871fb7e19a9a4c9af539c3cc7ab",
