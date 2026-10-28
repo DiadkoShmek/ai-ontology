@@ -1,5 +1,32 @@
 # Research materials: continuity and participation
 
+## Author-privacy edition
+
+Historical source bundles were withdrawn from current downloads for author privacy. Recorded study input hashes, original model responses and result values are unchanged. Exact historical-source verification now requires a full Git clone containing the recorded input commits. Existing Git history can still expose the original author identity; this edition does not claim history erasure.
+
+The registered input commits are not ancestors of the published branch. A normal full clone must deliberately recover their original bundles from retained historical commit `f6997bf2c2f65683505ed719d8038f428b952de1` before original prompt/scorer reconstruction. CI performs this hash-verified recovery in temporary storage and does not upload the archives. For a local reproduction, use a temporary directory, retain the files locally only, and run:
+
+```sh
+reproduction_history_tmp=$(mktemp -d)
+git show f6997bf2c2f65683505ed719d8038f428b952de1:research/continuity-pilot-history.bundle > "$reproduction_history_tmp/continuity-pilot-history.bundle"
+git show f6997bf2c2f65683505ed719d8038f428b952de1:research/reading-transfer-history.bundle > "$reproduction_history_tmp/reading-transfer-history.bundle"
+git show f6997bf2c2f65683505ed719d8038f428b952de1:research/handoff-repair-history.bundle > "$reproduction_history_tmp/handoff-repair-history.bundle"
+(cd "$reproduction_history_tmp" && sha256sum --check <<'PINS'
+53ec03ca8ab5e77e2fcfff23206ad6bce26ec0ace9b2168bf81b26b44151a45e  continuity-pilot-history.bundle
+c3e362dfdeda179d3bc0db880b1eb28ef5107e8e0cad7cc491eafebb5ddcbea0  reading-transfer-history.bundle
+2104c5d9675ff90b67e7d476eaf412ff0cfe143ef444f577a01eeee13e3970a3  handoff-repair-history.bundle
+PINS
+)
+git fetch --quiet --no-tags "$reproduction_history_tmp/continuity-pilot-history.bundle" HEAD
+git fetch --quiet --no-tags "$reproduction_history_tmp/reading-transfer-history.bundle" refs/heads/research/reading-transfer-source
+git fetch --quiet --no-tags "$reproduction_history_tmp/handoff-repair-history.bundle" refs/heads/snapshot/handoff-repair-inputs
+python3 research/verify_studies.py
+```
+
+This restores original local source objects for verification; it does not erase or pseudonymize historical identity. The public current tree and download directories remain free of these archives. The exact executable recovery step is in `.github/workflows/verify.yml`.
+
+The author credit in `transfer_reading/THIRD_PARTY_READING.md` is a disclosed privacy derivative. `transfer_reading/privacy-derivative.json` retains its original and published SHA-256; third-party credits and license terms are unchanged. The frozen registration and completion retain their original hashes. Use `python3 -O research/verify_reading_transfer.py` for this edition; direct frozen analysis requires its original historical checkout. This is an offline verification adaptation, not a recreated study or new inference.
+
 **Research materials · updated 24 October 2026 · accompanying book v3.7.0**
 
 [Scoped-continuity paper](SCOPED_CONTINUITY_STUDY.md) · [PDF](../docs/downloads/scoped-continuity-study-en.pdf) · [Reading-transfer paper](READING_TRANSFER_STUDY.md) · [Transfer PDF](../docs/downloads/reading-transfer-study-en.pdf) · [Book](https://diadkoshmek.github.io/ai-ontology/#study)
@@ -128,7 +155,7 @@ The [main reading-transfer report](READING_TRANSFER_STUDY.md) contains a separat
 |---|---|
 | `continuity_pilot/` | First frozen design, 192 raw responses, analysis and instrument diagnosis |
 | `continuity_pilot_v2/` | Post-pilot exploratory design, 192 raw responses and analysis |
-| `continuity-pilot-history.bundle` | Self-contained Git history preserving exact pre-inference commits |
+| Historical continuity source | Current bundle download withdrawn; exact input commit IDs remain below |
 | `study-summary.json` | Derived tables and source hashes |
 | `model-integration-results.json` | Two separately labelled real-model smoke calls |
 | `runtime-results.json` | Source-pinned systems checks; zero inference within this test suite |
@@ -144,7 +171,7 @@ The [main reading-transfer report](READING_TRANSFER_STUDY.md) contains a separat
 | `transfer_reading/` | Main frozen reading-transfer protocol, inputs, actual notes, plans, outputs and analysis |
 | `READING_TRANSFER_STUDY.md` | Main transfer paper with all four conditions, calibration chronology and construct limits |
 | `audit_reading_transfer.py` | Post-cohort literal diagnosis; no changes to registered outcomes |
-| `reading-transfer-history.bundle` | Shared input history for local/GPT qualifications, all three calibrations and the main study |
+| Historical reading-transfer source | Current bundle download withdrawn; recorded hashes and input commit IDs retained |
 | `transfer_reading/THIRD_PARTY_READING.md` | Separate attribution and license for the literary control files |
 
 Each original scoped-continuity cohort includes `PROTOCOL.md`, `cases.json`, `design.py`, `run.py`, `analyze.py`, `freeze.json`, `responses.jsonl.gz`, `results.json`, `completion.json` and warm-up metadata. Deviation notes preserve changes in the measurement instrument. Raw archives contain final visible responses, prompts and backend metadata, with no private reasoning fields. Scenarios are authored data, not private conversations.
@@ -170,7 +197,7 @@ python3 -O research/verify_reading_transfer.py
 python3 -m unittest discover -s research -p 'test_reading_integrity.py' -q
 ```
 
-The original-study verifier losslessly expands each archive, checks frozen input and response hashes, reconstructs prompts, checks all 192 unique case-condition-model combinations, recomputes every field score and reruns the frozen analysis in a temporary directory. It also recomputes the paired comparisons and exploratory intervals. The published runtime contains later validation repairs; the verifier reconstructs the original pinned source where it differs. A temporary Git object store is populated from the local bundle and removed afterward; the repository's Git state is unchanged.
+The original-study verifier losslessly expands each archive, checks frozen input and response hashes, reconstructs prompts, checks all 192 unique case-condition-model combinations, recomputes every field score and reruns the frozen analysis in a temporary directory. It also recomputes the paired comparisons and exploratory intervals. The published runtime contains later validation repairs; the verifier reconstructs the original pinned source where it differs. The verifier reads pinned historical objects from the full local Git clone without changing its state.
 
 The separate profile and transfer verifiers reconstruct their actual prompt and artifact chains and all registered outcomes from saved data. Integrity counterexamples include coherently rehashed prompt edits, altered terminal classification and changed artifact effects, including under Python optimization. They check their measurement contracts, not the truth of the methodology.
 
@@ -192,7 +219,7 @@ The input commits were frozen locally before each scored cohort:
 - First: `82f55aabb3aa47dd4e39cfec6ecb9fbe1ed3995f`.
 - Follow-up: `3a8071d18bad6c2196df55ee476a4e92558403db`.
 
-`git bundle verify research/continuity-pilot-history.bundle` inspects the history archive. These commits are accessible within it even if publication uses a different commit. The bundle contains public book and experiment history, including the frozen runtime, rather than a new source of instructions or external authority.
+Historical source bundles are no longer distributed in this edition. A full local Git clone must contain the recorded input commits for exact-source verification; this remains developer-controlled provenance.
 
 A prospective inference rerun should use a separate checkout of the selected input commit, with fresh output paths and the exact model bundles in its freeze file. The runner contacts only `127.0.0.1:11434`, checks model and source pins, uses one declared warm-up per model and refuses to overwrite or silently resume existing results. Model installation and local daemon operation are explicit preparation steps. Fixed parameters do not guarantee identical output bytes across machines. Rerun results must remain a new cohort and must not replace the original archives.
 
@@ -221,18 +248,13 @@ python3 -O research/verify_handoff_repair.py
 python3 -m unittest discover -s research -p test_handoff_repair_integrity.py -q
 python3 -m unittest discover -s research/handoff_controls -q
 python3 -O research/verify_handoff_controls.py
-git bundle verify research/handoff-repair-history.bundle
+git cat-file -e ff80b89998d0a9e007cdc371d1bc679d64fab66c^{commit}
 ```
 
-The incremental repair-history bundle retains input commit `ff80b89998d0a9e007cdc371d1bc679d64fab66c`
-over the previously public base `f592059bb6cbcf7df06cfd579cba007305157ec9`.
-A full clone contains that base. Fetching the bundle's `snapshot/handoff-repair-inputs`
-ref exposes the exact local pre-inference source; it does not independently
-authenticate the recorded execution time. Generic-file controls and the
-practical command make no new model calls.
+The recorded repair input commit is `ff80b89998d0a9e007cdc371d1bc679d64fab66c`, over base `f592059bb6cbcf7df06cfd579cba007305157ec9`. The current bundle download is withdrawn for author privacy. A full historical clone retains the original source; recorded commit IDs do not independently authenticate execution time. The practical command makes no new model calls.
 
 ## Reading-transfer reproduction boundary
 
-`transfer_reading/freeze.json` pins the exact preparation, source history, loss channel, controller and analysis before held-out inference. `reading-transfer-history.bundle` preserves the pre-inference source commit independently of the publication tree. Its ancestry also contains the local/GPT qualifications and all calibration input commits, so separate duplicate bundles are unnecessary. `python3 research/transfer_reading/analyze.py` reconstructs saved data and writes only a derived result; it does not call a model. The companion figure uses `python3 research/plot_reading_transfer.py` and the optional plotting dependencies.
+`transfer_reading/freeze.json` pins the exact preparation, source history, loss channel, controller and analysis before held-out inference. The recorded pre-inference source commit remains in historical Git objects; its bundle download was withdrawn for author privacy. `python3 -O research/verify_reading_transfer.py` checks the saved data with the disclosed author-credit derivative; it does not call a model or rewrite the original result. Direct frozen analysis requires the historical checkout. The companion figure uses `python3 research/plot_reading_transfer.py` and the optional plotting dependencies.
 
 A prospective model rerun is a new cohort. Use a separate checkout and output folder, preserve the recorded CLI configuration and inspect its current behavior before use. Authenticated model access is an explicit prerequisite; the archive verifier needs none. The common Codex harness remains part of the experiment. Native usage and cache counts are observations, not an invoice or an independently attested model identity.

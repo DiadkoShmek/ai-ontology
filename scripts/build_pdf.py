@@ -71,10 +71,10 @@ tokens=json.loads((ROOT/TOKENS).read_text())
 story=[]
 deck='Identity, voice, memory, relations and the formation of agent systems' if EN else 'Ідентичність, голос, пам’ять, відносини та становлення агентних систем'
 edition_label='English edition' if EN else META['label']
-story += [Spacer(1,62),Paragraph(VOLUME,styles['SmallBook']),Spacer(1,18),Paragraph('AI<br/>Ontology' if EN else 'Онтологія<br/>AI',ParagraphStyle(name='Cover',fontName='Book',fontSize=48,leading=51,textColor=INK)),Spacer(1,22),Paragraph(SUBTITLE,styles['PartBook']),Spacer(1,16),Paragraph(deck,styles['BodyBook']),Spacer(1,30),Paragraph('Artur Onysko',styles['ChapterBook']),Paragraph(f"{edition_label} · v{META['version']} · 2026",styles['SmallBook']),PageBreak()]
-credits='Concept, research questions and editorial direction: Artur Onysko. Codex substantially assisted with writing, software, study design, execution, analysis, translation and publication under the author’s direction.' if EN else 'Автор концепції та постановки дослідження — Artur Onysko. Підготовка тексту, дослідницька допомога, технічне редагування та випуск — за участю Codex під керівництвом автора.'
+story += [Spacer(1,62),Paragraph(VOLUME,styles['SmallBook']),Spacer(1,18),Paragraph('AI<br/>Ontology' if EN else 'Онтологія<br/>AI',ParagraphStyle(name='Cover',fontName='Book',fontSize=48,leading=51,textColor=INK)),Spacer(1,22),Paragraph(SUBTITLE,styles['PartBook']),Spacer(1,16),Paragraph(deck,styles['BodyBook']),Spacer(1,30),Paragraph('DiadkoShmek',styles['ChapterBook']),Paragraph(f"{edition_label} · v{META['version']} · 2026",styles['SmallBook']),PageBreak()]
+credits='Concept, research questions and editorial direction: DiadkoShmek. Codex substantially assisted with writing, software, study design, execution, analysis, translation and publication under the author’s direction.' if EN else 'Автор концепції та постановки дослідження — DiadkoShmek. Підготовка тексту, дослідницька допомога, технічне редагування та випуск — за участю Codex під керівництвом автора.'
 scope='The book joins a conceptual account with executable architecture, a finite typed ontology and comparative research. Authored cases, mechanical checks and actual model outcomes are distinguished. Failed instruments, refusals and lost evidence remain published. No general benefit of reading the book is established. Voice, formation and subjective experience retain separate evidential questions. This full English translation follows the Ukrainian authorial source.' if EN else 'Книга поєднує поняттєву постановку, виконувану архітектуру, скінченну типізовану онтологію та порівняльні досліди. Авторські випадки, механічні перевірки й фактичні модельні результати розділено. Невдалі прилади, відмови й утрачені підстави залишаються опублікованими. Загального ефекту читання книги не встановлено. Голос, становлення та суб’єктивний досвід мають окремі питання перевірки.'
-story += [Paragraph('About this edition' if EN else 'Про видання',styles['PartBook']),Paragraph(credits,styles['BodyBook']),Paragraph(scope,styles['BodyBook']),Paragraph('© 2026 Artur Onysko. All rights reserved.',styles['SmallBook']),Paragraph('https://github.com/DiadkoShmek/ai-ontology',styles['SmallBook']),Spacer(1,20),Paragraph('Contents' if EN else 'Зміст',styles['ChapterBook'])]
+story += [Paragraph('About this edition' if EN else 'Про видання',styles['PartBook']),Paragraph(credits,styles['BodyBook']),Paragraph(scope,styles['BodyBook']),Paragraph('© 2026 DiadkoShmek. All rights reserved.',styles['SmallBook']),Paragraph('https://github.com/DiadkoShmek/ai-ontology',styles['SmallBook']),Spacer(1,20),Paragraph('Contents' if EN else 'Зміст',styles['ChapterBook'])]
 toc=TableOfContents()
 toc.levelStyles=[ParagraphStyle(name='ContentsBook',fontName='Book',fontSize=8.4,leading=12.5,spaceBefore=5,textColor=INK)]
 story.append(toc)
@@ -112,7 +112,7 @@ def page(canvas,doc):
     canvas.restoreState()
 
 output=ROOT/f'docs/downloads/ai-ontology-book-01-{LANG}.pdf'
-doc=BookDocument(str(output),pagesize=A5,rightMargin=40,leftMargin=40,topMargin=44,bottomMargin=49,title=f'{TITLE}. {SUBTITLE}',author='Artur Onysko',subject=deck)
+doc=BookDocument(str(output),pagesize=A5,rightMargin=40,leftMargin=40,topMargin=44,bottomMargin=49,title=f'{TITLE}. {SUBTITLE}',author='DiadkoShmek',subject=deck)
 doc.multiBuild(story,onFirstPage=page,onLaterPages=page)
 inputs=['edition.json',TEXT,TOKENS,'scripts/build_pdf.py',
         'requirements.txt','docs/assets/serif.ttf','docs/assets/serif-italic.ttf',

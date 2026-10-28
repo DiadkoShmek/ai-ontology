@@ -1,6 +1,6 @@
 # Continuity audit — proposed profile v1, draft 0.1
 
-**23 October 2026 · Artur Onysko · normative scope: supplied records only**
+**23 October 2026 · DiadkoShmek · normative scope: supplied records only**
 [Methodological note](../papers/inspectable-continuity.md) · [Terms](../docs/TERMS.md) · [Executable vocabulary](../ontology/vocabulary.json)
 
 The requirement identifiers below name this proposed profile. They do not

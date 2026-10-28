@@ -1,0 +1,7 @@
+{
+  "schema": "author-privacy-derivative/1",
+  "path": "THIRD_PARTY_READING.md",
+  "original_sha256": "324effab5cb0575384a152520cd25506d795920b832e8f03b94f4c9c0d50859d",
+  "published_sha256": "11f3330fc08702d4e760307fe3f7eda9ed20f17431a2f7b9325209a879d9d4be",
+  "change": "Author-credit pseudonymization only; third-party attribution and license terms unchanged."
+}

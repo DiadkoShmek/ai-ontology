@@ -47,9 +47,23 @@ for(const row of edition.additional_evaluations){
  assert.equal(row.captured_turns,report.scored_calls??report.observed_complete_rows??report.captured_calls);
 }
 assert.equal(edition.total_captured_model_turns,edition.scored_model_calls+edition.additional_evaluations.reduce((n,r)=>n+r.captured_turns,0));
+const privacyDerivative=JSON.parse(read('research/transfer_reading/privacy-derivative.json'));
+assert.deepEqual(privacyDerivative,{
+ schema:'author-privacy-derivative/1',path:'THIRD_PARTY_READING.md',
+ original_sha256:'324effab5cb0575384a152520cd25506d795920b832e8f03b94f4c9c0d50859d',
+ published_sha256:'11f3330fc08702d4e760307fe3f7eda9ed20f17431a2f7b9325209a879d9d4be',
+ change:'Author-credit pseudonymization only; third-party attribution and license terms unchanged.'
+});
 for(const dir of ['participation_pilot','gpt_profile_pilot','gpt_profile_pilot_v2','transfer_calibration','transfer_calibration_v2','transfer_calibration_v3','transfer_reading','handoff_repair','closed_loop']){
  const frozen=JSON.parse(read(`research/${dir}/freeze.json`));
- for(const [file,hash] of Object.entries(frozen.input_sha256))assert.equal(sha(read(`research/${dir}/${file}`)),hash,`frozen profile source drift: ${dir}/${file}`);
+ for(const [file,hash] of Object.entries(frozen.input_sha256)){
+  let expected=hash;
+  if(dir==='transfer_reading'&&file===privacyDerivative.path){
+   assert.equal(hash,privacyDerivative.original_sha256);
+   expected=privacyDerivative.published_sha256;
+  }
+  assert.equal(sha(read(`research/${dir}/${file}`)),expected,`frozen profile source drift: ${dir}/${file}`);
+ }
 }
 assert.equal(edition.unique_cases,study.unique_cases);
 assert.equal(edition.integration_smoke_calls,study.integration_smoke_calls);

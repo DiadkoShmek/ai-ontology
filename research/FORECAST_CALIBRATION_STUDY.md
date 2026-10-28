@@ -152,6 +152,6 @@ beneficial outcome and recorded return path remain separate claims.
 
 ## Citation
 
-Artur Onysko (2026). *Same information, revised source, unchanged forecasts*.
+DiadkoShmek (2026). *Same information, revised source, unchanged forecasts*.
 Supplementary calibration accompanying AI Ontology v3.6.0. Cite this study record
 separately from the book or proposed audit profile.

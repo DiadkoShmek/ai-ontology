@@ -206,7 +206,7 @@ before inference. The [publication mapping](epistemic-return-publication.json)
 distinguishes that local authoring commit from the same-tree public commit,
 which was published after inference began. No external preregistration is claimed.
 
-Concept and direction: Artur Onysko. Codex substantially contributed design,
+Concept and direction: DiadkoShmek. Codex substantially contributed design,
 code, execution, analysis and text. Private Architect-Ψ council and a separate
 local reviewer challenged the design. Their contribution is disclosed without
 publishing private conversations or treating advice as independent evidence.

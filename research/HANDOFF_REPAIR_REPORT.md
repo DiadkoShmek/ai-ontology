@@ -1,6 +1,6 @@
 # Exact journal delivery after a lossy handoff
 
-**Artur Onysko · Engineering follow-up · 23 October 2026**
+**DiadkoShmek · Engineering follow-up · 23 October 2026**
 
 An explicit transport repair completed **8/8** fully traced optimal plans,
 compared with **0/8** through model-written prefix-truncated notes. The repaired
@@ -57,12 +57,7 @@ before model inference at `ff80b89998d0a9e007cdc371d1bc679d64fab66c`.
 The [freeze](handoff_repair/freeze.json) binds their hashes. This is a
 developer-controlled precommitment, not independent preregistration.
 
-The [incremental source-history bundle](handoff-repair-history.bundle) preserves
-that exact input commit. It requires the previously public base commit
-`f592059bb6cbcf7df06cfd579cba007305157ec9`, which remains an ancestor of this
-edition. A full clone can inspect it with `git bundle verify` and fetch its
-`snapshot/handoff-repair-inputs` ref; the bundle is source provenance, not a
-separate timestamp authority or additional model trial.
+The original input commit remains a historical Git object. Its incremental source-history bundle was withdrawn from current downloads for author privacy. Exact source inspection requires a full historical clone containing `ff80b89998d0a9e007cdc371d1bc679d64fab66c` and its base `f592059bb6cbcf7df06cfd579cba007305157ec9`. Recorded scientific hashes and results are unchanged; historical commit IDs are not an independent timestamp authority or additional model trial.
 
 Four new generator seeds each have two counterfactual histories: eight source
 instances, sixteen episodes, one repetition per condition. These are new

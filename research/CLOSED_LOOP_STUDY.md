@@ -1,6 +1,6 @@
 # Executable methods through an observed return cycle: a ceiling result
 
-**Artur Onysko · developer-controlled study · 23 October 2026 · book v3.6.0**
+**DiadkoShmek · developer-controlled study · 23 October 2026 · book v3.6.0**
 
 ## 1 Question and result
 
@@ -234,7 +234,7 @@ fails. Do not run it in this sealed cohort. Any new inference requires a new
 registered cohort directory and a separately reviewed output guard. The offline
 analysis commands above do not invoke it and do not spend inference.
 
-Concept and research direction: Artur Onysko. Codex substantially contributed
+Concept and research direction: DiadkoShmek. Codex substantially contributed
 the ontology profile, software, study design, execution, analysis and writing.
 Private Architect-Ψ council informed design and interpretation; it is peer
 advice, not independent empirical evidence. Private House conversations and

@@ -1,6 +1,6 @@
 # Inspectable Continuity: Evidence Relations for Claims about Agent Revision
 
-**Artur Onysko · Methodological note 0.1 · 23 October 2026**
+**DiadkoShmek · Methodological note 0.1 · 23 October 2026**
 Accompanies *AI Ontology: The Organization of Self*, book v3.6.0.
 [Ukrainian](https://github.com/DiadkoShmek/ai-ontology/blob/main/papers/inspectable-continuity.uk.md) · [Audit profile](https://github.com/DiadkoShmek/ai-ontology/blob/main/protocols/continuity-audit-v1.md) · [Terms](https://github.com/DiadkoShmek/ai-ontology/blob/main/docs/TERMS.md) · [Book](https://github.com/DiadkoShmek/ai-ontology/blob/main/BOOK_EN.md)
 
@@ -249,13 +249,13 @@ independent replication and standardization remain unobserved here.
 
 ## Citation and authorship
 
-Suggested citation: **Onysko, A. (2026). *Inspectable Continuity: Evidence
+Suggested citation: **DiadkoShmek (2026). *Inspectable Continuity: Evidence
 Relations for Claims about Agent Revision*. Methodological note 0.1,
 AI Ontology repository.** Cite the commit inspected when exact reproducibility
 matters; [BibTeX](https://github.com/DiadkoShmek/ai-ontology/blob/main/papers/inspectable-continuity.bib) is supplied. This is a
 developer-controlled note, not a peer-reviewed publication or registered standard.
 
-Artur Onysko supplied the conceptual direction, research questions and editorial
+DiadkoShmek supplied the conceptual direction, research questions and editorial
 intent. Codex substantially contributed writing, software, study design,
 execution and analysis. Private Architect-Ψ council contributed criticism;
 it is not independent empirical replication. [Full authorship](https://github.com/DiadkoShmek/ai-ontology/blob/main/AUTHORS.md).

@@ -2,10 +2,10 @@
   "title": "Онтологія AI",
   "volume": 1,
   "edition": "3.7.0",
-  "author": "Artur Onysko",
-  "metadata_sha256": "dac26640838e60e448bc223809186f94420800f51afedc1758639676b8b4f4ba",
-  "source_sha256": "6572f265a8b1b7baa4c6dfcf08b74e777717c55ab6e3f0cc2879b589e26e756a",
-  "book_sha256": "226781b26e129e69c6d7f53b6f79e2ac036508c262d27c3178f2e7ee189b1c0e",
+  "author": "DiadkoShmek",
+  "metadata_sha256": "e98b85393c69f397abf6a51552d56b0385c84ad195e59cb9164b5576b9691d0e",
+  "source_sha256": "0ed1ef4890d2766e41a252633c8ff462b2d926abbb03fc8ee17f5c77116b5bad",
+  "book_sha256": "3df79c06d85867cf3280c6b87e5b7e24234aa8b0306212d2fe601bd8bc10ea1a",
   "source_files": [
     {
       "path": "book/ua/00-opening.md",
@@ -69,7 +69,7 @@
     },
     {
       "path": "book/ua/06-references.md",
-      "sha256": "6ab983864b543b8ef103c35f66052bdec8719e600f61c328b5320d7869e93f8d"
+      "sha256": "52afa0aa24b219ebf81b780b4e42b3201809500a950b03a3c87893ba43e8d484"
     }
   ],
   "scored_model_calls": 384,

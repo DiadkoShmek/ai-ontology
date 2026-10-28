@@ -90,12 +90,11 @@ def verify(folder, object_store):
 
 
 if __name__=='__main__':
-    with tempfile.TemporaryDirectory() as d:
-        objects=Path(d)/'objects.git'
-        subprocess.run(['git','init','--bare','--quiet',str(objects)],check=True)
-        subprocess.run(['git','--git-dir',str(objects),'fetch','--quiet','--no-tags',
-            str(ROOT/'research/continuity-pilot-history.bundle'),'HEAD'],check=True)
-        results=[verify(x,objects) for x in ['continuity_pilot','continuity_pilot_v2']]
-        from summarize_studies import build
-        require(build()==json.loads((ROOT/'research/study-summary.json').read_text()),'derived table drift')
-        print(json.dumps(results))
+    # Historical bundles were withdrawn from current downloads for author
+    # privacy. A full local Git clone supplies the same pinned source objects.
+    objects=Path(subprocess.check_output(['git','-C',str(ROOT),'rev-parse',
+        '--absolute-git-dir'],text=True).strip())
+    results=[verify(x,objects) for x in ['continuity_pilot','continuity_pilot_v2']]
+    from summarize_studies import build
+    require(build()==json.loads((ROOT/'research/study-summary.json').read_text()),'derived table drift')
+    print(json.dumps(results))

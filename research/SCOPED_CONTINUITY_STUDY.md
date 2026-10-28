@@ -2,7 +2,7 @@
 
 **History, compiled context and an information-matched simple index**
 
-Artur Onysko · Independent research · 22 October 2026
+DiadkoShmek · Independent research · 22 October 2026
 
 Working paper accompanying *AI Ontology. Book One: Organization of Self*, v3.3.0. Research, implementation, execution, analysis and manuscript preparation were substantially assisted by Codex under the author's direction. No independent peer review is claimed.
 
@@ -69,7 +69,7 @@ Compiled context directly includes the projected current status. Its contrast wi
 
 The compiler normally binds contexts to a store-specific head. For the published cases, the runner replaces that UUID-dependent head with a deterministic digest of case operations and recomputes the context hash. This normalized object is experiment data; it is never used as a live decision-admission token.
 
-The design, scenarios, prompts, scorer, runner and installed model digests were frozen and committed locally before each scored cohort. The exact input commits are preserved in the accompanying Git bundle. This is a developer-controlled precommitment, not an independently registered protocol, an independent timestamp or protection against author misconduct.
+The design, scenarios, prompts, scorer, runner and installed model digests were frozen and committed locally before each scored cohort. The exact input commits remain historical Git objects; bundle downloads were withdrawn from this edition for author privacy. This is a developer-controlled precommitment, not an independently registered protocol, an independent timestamp or protection against author misconduct.
 
 ## 5. Models and execution
 
@@ -142,9 +142,9 @@ The nearest confirmatory extension should use unseen scenario families and prere
 
 ## 11. Reproducibility and provenance
 
-The repository includes both frozen protocols, all cases and prompts, model pins, runners, scorers, completions, warm-up metadata, analyses and losslessly compressed raw responses. Local input commits are 82f55aabb3aa47dd4e39cfec6ecb9fbe1ed3995f for cohort one and 3a8071d18bad6c2196df55ee476a4e92558403db for the follow-up. The accompanying Git bundle preserves their ancestry even when the publication commit differs. They are local historical objects, not independent registration receipts.
+The repository includes both frozen protocols, all cases and prompts, model pins, runners, scorers, completions, warm-up metadata, analyses and losslessly compressed raw responses. Local input commits are 82f55aabb3aa47dd4e39cfec6ecb9fbe1ed3995f for cohort one and 3a8071d18bad6c2196df55ee476a4e92558403db for the follow-up. A full historical Git clone preserves their ancestry; current bundle downloads are withdrawn for author privacy. They are local historical objects, not independent registration receipts.
 
-The published runtime includes subsequent canonical-JSON and UTF-8 validation repairs. The experiment remains tied to its original source snapshots; the verifier reconstructs those pinned bytes from the self-contained bundle instead of silently substituting the newer runtime.
+The published runtime includes subsequent canonical-JSON and UTF-8 validation repairs. The experiment remains tied to its original source snapshots; the verifier reconstructs those pinned bytes from a full local historical Git clone instead of silently substituting the newer runtime.
 
 Offline consistency checks require Python 3.11+ and Git, with no network or model calls:
 
@@ -189,4 +189,4 @@ IBM Granite model family. *Granite 3.3 2B, Ollama distribution*. [Registry](http
 
 [Ollama chat API](https://docs.ollama.com/api/chat), for the local request and response interface. Backend version 0.20.3 was observed in this run.
 
-Artur Onysko established the conceptual direction, scope and editorial requirements. Codex substantially developed the executable specification, experiment materials, analysis and prose under that direction. AI-assisted production is disclosed throughout the accompanying edition. The work is an author-published working paper; methodological review, external replication and historical priority remain open. No funding or deployment outcome is claimed.
+DiadkoShmek established the conceptual direction, scope and editorial requirements. Codex substantially developed the executable specification, experiment materials, analysis and prose under that direction. AI-assisted production is disclosed throughout the accompanying edition. The work is an author-published working paper; methodological review, external replication and historical priority remain open. No funding or deployment outcome is claimed.

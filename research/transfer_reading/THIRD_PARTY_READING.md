@@ -14,7 +14,7 @@ newly authored or paraphrased version.
 Credit: **Ivan Franko; Ukrainian Wikisource contributors.** The original literary
 work is public domain. The source site's transcription attribution and
 [CC BY-SA 4.0 terms](https://creativecommons.org/licenses/by-sa/4.0/) are retained
-for these separate study-control files. Artur Onysko claims no authorship of
+for these separate study-control files. DiadkoShmek claims no authorship of
 this material. It is not incorporated into the ontology book or its PDFs.
 
 This is unrelated literary reading, not an assumed inert intervention. It

@@ -64,6 +64,6 @@ counterexample and a disagreement with a normative proposal call for different
 repairs. New outcomes remain separate from older cohorts; a later positive
 engineering result does not replace a negative reading result.
 
-Concept and editorial direction: Artur Onysko. Codex substantially contributed
+Concept and editorial direction: DiadkoShmek. Codex substantially contributed
 text, software, study design, execution and analysis under the author's direction.
 [Authorship](AUTHORS.md) and [review route](REVIEW_GUIDE.md) remain explicit.

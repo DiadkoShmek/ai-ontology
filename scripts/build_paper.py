@@ -43,7 +43,7 @@ def main():
     parser.add_argument('--output',default='docs/downloads/scoped-continuity-study-en.pdf')
     parser.add_argument('--manifest',default='docs/paper-edition.json')
     parser.add_argument('--title',default='Scoped Continuity in Agent Memory')
-    parser.add_argument('--footer',default='Onysko · Scoped continuity · Working paper, 22 October 2026')
+    parser.add_argument('--footer',default='DiadkoShmek · Scoped continuity · Working paper, 22 October 2026')
     args=parser.parse_args()
     source=ROOT/args.source
     figures=[]
@@ -86,7 +86,7 @@ def main():
         canvas.drawString(50,27,args.footer)
         canvas.drawRightString(A4[0]-50,27,str(doc.page));canvas.restoreState()
     SimpleDocTemplate(str(output),pagesize=A4,rightMargin=50,leftMargin=50,topMargin=43,bottomMargin=43,
-        title=args.title,author='Artur Onysko').build(story,onFirstPage=footer,onLaterPages=footer)
+        title=args.title,author='DiadkoShmek').build(story,onFirstPage=footer,onLaterPages=footer)
     inputs=[str(source.relative_to(ROOT)),*dict.fromkeys(figures),
         'scripts/build_paper.py','requirements.txt','docs/assets/serif.ttf',
         'docs/assets/serif-bold.ttf','docs/assets/serif-italic.ttf']

@@ -2,7 +2,7 @@
 
 ## Book One. The Organization of Self
 
-**Artur Onysko** · v3.7.0 · 2026-10-24
+**DiadkoShmek** · v3.7.0 · 2026-10-24
 
 English edition. A methodology for organizing agent systems: conceptual foundations, executable architecture and bounded comparative research.
 
@@ -1759,7 +1759,7 @@ This is a selective comparison of primary sources, not a systematic review of al
 
 ### 2 What the book proposes
 
-Artur Onysko’s authorial framing makes the organization of identity, voice, memory, relationships, and formation a common subject of engineering and substantive inquiry. This edition offers a composition of concepts, five central theses, a perspective-specific continuity contract, a transition witness, developed cases, an architectural mapping, and a research program.
+DiadkoShmek’s authorial framing makes the organization of identity, voice, memory, relationships, and formation a common subject of engineering and substantive inquiry. This edition offers a composition of concepts, five central theses, a perspective-specific continuity contract, a transition witness, developed cases, an architectural mapping, and a research program.
 
 Many components have predecessors in software engineering, ontologies, agent-memory research, and human collaboration. Having one’s own formulation does not establish worldwide novelty. The book claims neither priority of ideas, a completed theory, nor a general empirical effect. The composition’s usefulness remains open to comparative testing.
 
@@ -1782,7 +1782,7 @@ The table preserves differences among statuses. A definition does not become an 
 
 ### 4 Authorship of this edition
 
-**Artur Onysko** — concept, framing, direction, and editorial requirements. His successive decisions determined the book’s subject: a general ontology, substantive and engineering depth, distinctness of voice, and the reader’s freedom to accept or reject the model.
+**DiadkoShmek** — concept, framing, direction, and editorial requirements. His successive decisions determined the book’s subject: a general ontology, substantive and engineering depth, distinctness of voice, and the reader’s freedom to accept or reject the model.
 
 **Codex** — substantial participation in writing; conceptual structuring, formulation of arguments, research assistance, constructed cases, demonstrator code, technical editing, and release under the author’s direction. This discloses the process; it does not claim that the author independently checked every thesis after reading the entire text.
 

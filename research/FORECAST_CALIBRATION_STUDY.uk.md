@@ -149,6 +149,6 @@ Mapping перелічує оригінальні digests і вилучення.
 
 ## Цитування
 
-Artur Onysko (2026). *Same information, revised source, unchanged forecasts*.
+DiadkoShmek (2026). *Same information, revised source, unchanged forecasts*.
 Додаткова калібрація до AI Ontology v3.6.0. Цей дослід слід цитувати окремо
 від книги чи запропонованого профілю аудиту.

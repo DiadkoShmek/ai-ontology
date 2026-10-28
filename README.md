@@ -1,6 +1,6 @@
 # AI Ontology: The Organization of Self
 
-**Artur Onysko · Book v3.7.0 · English and Ukrainian**
+**DiadkoShmek · Book v3.7.0 · English and Ukrainian**
 
 A research book, proposed audit profile and executable reference for inspecting claims about **agent continuity, evidence and revision**. Which grounds reached a decision? What followed from it? Did a consequence enter a subsequent method, and what evidence supports that claim?
 
@@ -87,8 +87,8 @@ Book sources: `book/ua/`, `book/en/`; ordering: `edition.json`. Build both web e
 
 ## Authorship and participation
 
-Conceptual direction, research questions and editorial intent: **Artur Onysko**. **Codex** substantially contributed writing, software, study design, execution, analysis and translation. Private Architect-Ψ council informed the work; it is not independent empirical replication. [Authorship](AUTHORS.md) · [Reader note](READER_NOTE.md) · [Changelog](CHANGELOG.md) · [Book citation](CITATION.cff) · [Note citation](papers/inspectable-continuity.bib).
+Conceptual direction, research questions and editorial intent: **DiadkoShmek**. **Codex** substantially contributed writing, software, study design, execution, analysis and translation. Private Architect-Ψ council informed the work; it is not independent empirical replication. [Authorship](AUTHORS.md) · [Reader note](READER_NOTE.md) · [Changelog](CHANGELOG.md) · [Book citation](CITATION.cff) · [Note citation](papers/inspectable-continuity.bib).
 
 The proposed connected methodology has precedents in truth maintenance, AGM belief revision, provenance, event sourcing and reflective agents. World-first novelty is not claimed. Reproducible issues, objections and permitted failure cases are welcome through GitHub Issues.
 
-© 2026 Artur Onysko. All rights reserved. Public availability does not itself grant an open-source license.
+© 2026 DiadkoShmek. All rights reserved. Public availability does not itself grant an open-source license.

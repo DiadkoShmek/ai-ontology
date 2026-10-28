@@ -2,7 +2,7 @@
 
 ## Book One. Organization of Self
 
-**Artur Onysko · First completed edition · v3.7.0 · Full Ukrainian and English editions**
+**DiadkoShmek · First completed edition · v3.7.0 · Full Ukrainian and English editions**
 
 This book examines how identity, voice, memory, commitments, relationships and development form an organization of participation across tasks. Its central question is how an agent can revise beliefs, change roles or migrate between models while retaining an intelligible connection to its previous organization.
 
@@ -28,7 +28,7 @@ The completed transfer cohort captured 199 calls. Full history yielded 8/8 optim
 
 Natural voice, self-chosen values, long-run interaction and subjective experience remain separate questions. The methodological contribution links perspective-specific continuity, revision of evaluation criteria, distinct ways of attending to a shared problem, and evidence for each transition from representation to outcome. It is situated alongside truth maintenance, belief revision, event sourcing and current identity-contract research. Local precommitments, cases, software and scoring share developer provenance; independent registration, historical priority and external peer review are not claimed.
 
-Concept, scope and editorial direction: Artur Onysko. Codex substantially contributed to writing, methodology, software, experiment execution, analysis, editing and production under the author's direction. [Contribution statement](AUTHORS.md).
+Concept, scope and editorial direction: DiadkoShmek. Codex substantially contributed to writing, methodology, software, experiment execution, analysis, editing and production under the author's direction. [Contribution statement](AUTHORS.md).
 
 [Read the book](https://diadkoshmek.github.io/ai-ontology/) · [Full text](BOOK_UA.md) · [Research paper](research/SCOPED_CONTINUITY_STUDY.md) · [Data and reproduction](research/README.md) · [Technical review](REVIEW_GUIDE.md)
 
