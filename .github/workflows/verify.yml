@@ -15,6 +15,28 @@ jobs:
       - run: npm ci --ignore-scripts
       - run: npm run build
       - run: npm run check
+      - name: Recover exact historical source objects from retained Git history
+        run: |
+          python3 - <<'PY'
+          import hashlib, os, pathlib, subprocess
+          origin='f6997bf2c2f65683505ed719d8038f428b952de1'
+          target=pathlib.Path(os.environ['RUNNER_TEMP'])/'ai-ontology-original-history'
+          target.mkdir()
+          bundles=[
+            ('continuity-pilot-history.bundle','53ec03ca8ab5e77e2fcfff23206ad6bce26ec0ace9b2168bf81b26b44151a45e','HEAD'),
+            ('reading-transfer-history.bundle','c3e362dfdeda179d3bc0db880b1eb28ef5107e8e0cad7cc491eafebb5ddcbea0','refs/heads/research/reading-transfer-source'),
+            ('handoff-repair-history.bundle','2104c5d9675ff90b67e7d476eaf412ff0cfe143ef444f577a01eeee13e3970a3','refs/heads/snapshot/handoff-repair-inputs'),
+          ]
+          for name,digest,ref in bundles:
+            raw=subprocess.check_output(['git','show',origin+':research/'+name])
+            if hashlib.sha256(raw).hexdigest()!=digest:
+              raise ValueError('historical bundle hash mismatch: '+name)
+            path=target/name
+            path.write_bytes(raw)
+            subprocess.run(['git','bundle','verify',str(path)],check=True,capture_output=True)
+            subprocess.run(['git','fetch','--quiet','--no-tags',str(path),ref],check=True,capture_output=True)
+          print('Recovered three hash-verified historical source archives for local checking only; no artifact upload.')
+          PY
       - run: python3 -m unittest discover -s scripts -p test_claim_history.py -q
       - run: python3 -m unittest discover -s examples -v
       - run: python3 -m unittest audit.test_audit -q
@@ -64,7 +86,14 @@ jobs:
       - run: python3 -m unittest discover -s research -p 'test_handoff_repair_integrity.py' -q
       - run: python3 -m unittest discover -s research/handoff_controls -q
       - run: python3 -O research/verify_handoff_controls.py
-      - run: git bundle verify research/handoff-repair-history.bundle
+      - name: Verify recovered original handoff provenance
+        run: |
+          python3 - <<'PY'
+          import os,pathlib,subprocess
+          path=pathlib.Path(os.environ['RUNNER_TEMP'])/'ai-ontology-original-history/handoff-repair-history.bundle'
+          subprocess.run(['git','bundle','verify',str(path)],check=True,capture_output=True)
+          print('Original handoff bundle verified in temporary CI storage.')
+          PY
       - run: git diff --exit-code -- BOOK_UA.md BOOK_EN.md docs/index.html docs/en/index.html docs/research/index.html docs/ontology/index.html docs/downloads/BOOK_UA.md docs/downloads/BOOK_EN.md docs/edition.json docs/en-edition.json docs/discovery.json docs/sitemap.xml docs/llms.txt docs/note
   langgraph-example:
     runs-on: ubuntu-latest

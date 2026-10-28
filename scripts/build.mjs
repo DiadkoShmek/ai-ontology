@@ -23,8 +23,8 @@ const rewrite = text => text.replaceAll('](CORE.md)','](01-core.md)').replaceAll
 const body = source.map((s,i) => {
   let lines = rewrite(s).split('\n');
   lines.shift();
-  if (i===0) lines = lines.filter(l=>!/^## Книга перша|^\*\*Artur|^Ідентичність, голос|^Перша публічна/.test(l));
-  if (i===1) lines = lines.filter(l=>!/^## Організація себе|^\*\*Artur|^Робоча концептуальна/.test(l));
+  if (i===0) lines = lines.filter(l=>!/^## Книга перша|^\*\*DiadkoShmek|^Ідентичність, голос|^Перша публічна/.test(l));
+  if (i===1) lines = lines.filter(l=>!/^## Організація себе|^\*\*DiadkoShmek|^Робоча концептуальна/.test(l));
   return lines.join('\n').trim();
 });
 const compiled = `# ${meta.title}\n\n## ${meta.volume}\n\n**${meta.author}** · v${meta.version} · ${meta.date}\n\nМетодологія організації агентних систем: поняттєве ядро, виконувана архітектура та локальне порівняльне дослідження.\n\n`

@@ -249,7 +249,7 @@ independent replication and standardization remain unobserved here.
 
 ## Citation and authorship
 
-Suggested citation: **Onysko, A. (2026). *Inspectable Continuity: Evidence
+Suggested citation: **DiadkoShmek (2026). *Inspectable Continuity: Evidence
 Relations for Claims about Agent Revision*. Methodological note 0.1,
 AI Ontology repository.** Cite the commit inspected when exact reproducibility
 matters; [BibTeX](https://github.com/DiadkoShmek/ai-ontology/blob/main/papers/inspectable-continuity.bib) is supplied. This is a

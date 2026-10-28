@@ -38,6 +38,24 @@ class ReadingIntegrityTest(unittest.TestCase):
     def test_original_under_optimization(self):
         r=self.invoke(ROOT);self.assertEqual(r.returncode,0,r.stderr)
 
+    def test_privacy_derivative_document_drift_is_rejected(self):
+        root=self.copied();path=root/'research/transfer_reading/THIRD_PARTY_READING.md'
+        path.write_text(path.read_text()+'\nchanged license terms\n')
+        result=self.invoke(root)
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('author-privacy derivative drift',result.stderr)
+
+    def test_changed_privacy_registry_cannot_bless_document_drift(self):
+        root=self.copied();path=root/'research/transfer_reading/THIRD_PARTY_READING.md'
+        path.write_text(path.read_text()+'\nchanged license terms\n')
+        registry=root/'research/transfer_reading/privacy-derivative.json'
+        value=json.loads(registry.read_text())
+        value['published_sha256']=hashlib.sha256(path.read_bytes()).hexdigest()
+        registry.write_text(json.dumps(value))
+        result=self.invoke(root)
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('unrecognized author-privacy derivative',result.stderr)
+
     def test_rehashed_preparation_prompt_change_is_rejected(self):
         root=self.copied()
         def change(rows):

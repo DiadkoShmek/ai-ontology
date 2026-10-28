@@ -4,7 +4,7 @@
   "language": "en",
   "source_language": "uk",
   "translation": "Full Codex-assisted translation; Ukrainian chapters remain the authorial source.",
-  "book_sha256": "5cd624e76e58fed6c365ef8afcf29d475db0c58e2040764572d41ede7717d8d2",
+  "book_sha256": "2de8276e0eac14e7e157394bcbfc2dd7d2683965f7e819867443b347cfd3adbe",
   "source_files": [
     {
       "path": "book/en/00-opening.md",
@@ -98,9 +98,9 @@
     },
     {
       "path": "book/en/06-references.md",
-      "sha256": "8a967d85c5471b6ecd9fc8ace5ded85af1cb7231c4fb7f8bdd16f09811cad65d",
+      "sha256": "1ce454b961dc479f0bd1c4ff170a624dc950dc4c13318978da8caa706be646d1",
       "uk_source": "book/ua/06-references.md",
-      "uk_sha256": "6ab983864b543b8ef103c35f66052bdec8719e600f61c328b5320d7869e93f8d"
+      "uk_sha256": "52afa0aa24b219ebf81b780b4e42b3201809500a950b03a3c87893ba43e8d484"
     }
   ],
   "parts": [

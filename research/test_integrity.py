@@ -22,9 +22,12 @@ class ArchiveIntegrityTests(unittest.TestCase):
             shutil.copytree(ROOT / name, self.root / name,
                             ignore=shutil.ignore_patterns('__pycache__', '*.pyc', 'responses.jsonl'))
         for name in ('verify_studies.py', 'summarize_studies.py',
-                     'continuity-pilot-history.bundle', 'study-summary.json',
+                     'study-summary.json',
                      'model-integration-results.json'):
             shutil.copy2(ROOT / 'research' / name, self.root / 'research' / name)
+        subprocess.run(['git','init','--bare','--quiet',str(self.root/'.git')],check=True)
+        gitdir=subprocess.check_output(['git','-C',str(ROOT),'rev-parse','--absolute-git-dir'],text=True).strip()
+        (self.root/'.git/objects/info/alternates').write_text(str(Path(gitdir)/'objects')+'\n')
 
     def tamper(self, rehash=False):
         folder = self.root / 'research/continuity_pilot_v2'

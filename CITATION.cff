@@ -3,8 +3,7 @@ message: "Please cite this book if you use its conceptual or methodological fram
 type: book
 title: "Онтологія AI. Книга перша. Організація себе"
 authors:
-  - family-names: Onysko
-    given-names: Artur
+  - family-names: DiadkoShmek
 version: 3.7.0
 date-released: 2026-10-24
 url: "https://diadkoshmek.github.io/ai-ontology/"

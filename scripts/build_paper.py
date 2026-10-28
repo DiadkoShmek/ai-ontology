@@ -43,7 +43,7 @@ def main():
     parser.add_argument('--output',default='docs/downloads/scoped-continuity-study-en.pdf')
     parser.add_argument('--manifest',default='docs/paper-edition.json')
     parser.add_argument('--title',default='Scoped Continuity in Agent Memory')
-    parser.add_argument('--footer',default='Onysko · Scoped continuity · Working paper, 22 October 2026')
+    parser.add_argument('--footer',default='DiadkoShmek · Scoped continuity · Working paper, 22 October 2026')
     args=parser.parse_args()
     source=ROOT/args.source
     figures=[]

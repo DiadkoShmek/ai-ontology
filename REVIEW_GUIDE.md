@@ -55,7 +55,7 @@ python3 research/verify_gpt_profiles.py gpt_profile_pilot_v2
 python3 -O research/verify_reading_transfer.py
 ```
 
-Python 3.11+ and Git. These checks make no network or model calls. The verifier reconstructs frozen source from the local history bundle, checks all prompts and scores, and reruns the registered analysis in temporary storage.
+Python 3.11+ and Git. These checks make no network or model calls. The verifier reconstructs frozen source from the full local historical Git clone (bundle downloads withdrawn for author privacy), checks all prompts and scores, and reruns the registered analysis in temporary storage.
 
 ## Useful objections
 

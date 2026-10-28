@@ -287,7 +287,7 @@ verification but must not be relabelled as fresh evidence in a later study.
 The protocol, exact reading excerpts, source cases, requested route, shuffled
 schedule, actual approaches, notes, terminal metadata and plan effects accompany
 the [main archive](transfer_reading/PROTOCOL.md). A self-contained
-[Git bundle](reading-transfer-history.bundle) retains the local pre-inference
+Historical Git source (bundle download withdrawn for author privacy) retains the local pre-inference
 input history, including all three calibrations and earlier qualifications.
 The [literary control attribution](transfer_reading/THIRD_PARTY_READING.md) is
 separate from authorship of the ontology book.

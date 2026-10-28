@@ -264,7 +264,7 @@ M0 був правильним за СТАРИМ правилом, але дав
 
 ## Цитування й авторство
 
-Рекомендоване цитування: **Onysko, A. (2026). *Inspectable Continuity: Evidence
+Рекомендоване цитування: **DiadkoShmek (2026). *Inspectable Continuity: Evidence
 Relations for Claims about Agent Revision*. Methodological note 0.1,
 AI Ontology repository.** Коли важлива точна відтворюваність, посилайтеся
 на перевірений коміт; надано [BibTeX](inspectable-continuity.bib). Це
