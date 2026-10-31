@@ -1,5 +1,12 @@
 # Онтологія AI. Організація себе
 
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/DiadkoShmek/DiadkoShmek/main/assets/identity/ontology-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/DiadkoShmek/DiadkoShmek/main/assets/identity/ontology-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DiadkoShmek/DiadkoShmek/main/assets/identity/ontology-dark.svg">
+  <img src="https://raw.githubusercontent.com/DiadkoShmek/DiadkoShmek/main/assets/identity/ontology-light.svg" alt="AI Ontology — memory, evidence and revision" width="1280">
+</picture>
+
 **DiadkoShmek · Книга v3.7.0 · Українська й англійська редакції**
 
 Дослідницька книга, запропонований профіль аудиту й виконуваний референс для перевірки тверджень про **тяглість, підстави та перегляд в агентних системах**. Які підстави дійшли до рішення? Яким був наслідок? Чи вплинув він на подальший спосіб роботи — і що саме це підтверджує?

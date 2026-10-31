@@ -1,5 +1,12 @@
 # AI Ontology: The Organization of Self
 
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/DiadkoShmek/DiadkoShmek/main/assets/identity/ontology-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/DiadkoShmek/DiadkoShmek/main/assets/identity/ontology-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DiadkoShmek/DiadkoShmek/main/assets/identity/ontology-dark.svg">
+  <img src="https://raw.githubusercontent.com/DiadkoShmek/DiadkoShmek/main/assets/identity/ontology-light.svg" alt="AI Ontology — memory, evidence and revision" width="1280">
+</picture>
+
 **DiadkoShmek · Book v3.7.0 · English and Ukrainian**
 
 A research book, proposed audit profile and executable reference for inspecting claims about **agent continuity, evidence and revision**. Which grounds reached a decision? What followed from it? Did a consequence enter a subsequent method, and what evidence supports that claim?
