@@ -37,11 +37,14 @@ def verify(folder, object_store):
     # pre-inference bytes in a temporary tree; never substitute current code.
     snapshot=tempfile.TemporaryDirectory()
     source_root=Path(snapshot.name)
+    history=json.loads((ROOT/'research/public-history.json').read_text())
+    recorded=completion['input_commit']
+    source_commit=history['commit_aliases'].get(recorded,recorded)
     for name,h in freeze['input_sha256'].items():
         source=(ROOT/name).read_bytes()
         if sha(source)!=h:
             source=subprocess.check_output(['git','--git-dir',str(object_store),'show',
-                completion['input_commit']+':'+name])
+                source_commit+':'+name])
         require(sha(source)==h,'frozen source mismatch: '+name)
         dest=source_root/name;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(source)
     frozen_path=source_root/'research'/folder
@@ -90,8 +93,7 @@ def verify(folder, object_store):
 
 
 if __name__=='__main__':
-    # Historical bundles were withdrawn from current downloads for author
-    # privacy. A full local Git clone supplies the same pinned source objects.
+    # Recover the checked public archives first with recover_public_history.py.
     objects=Path(subprocess.check_output(['git','-C',str(ROOT),'rev-parse',
         '--absolute-git-dir'],text=True).strip())
     results=[verify(x,objects) for x in ['continuity_pilot','continuity_pilot_v2']]

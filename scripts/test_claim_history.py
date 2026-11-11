@@ -98,6 +98,8 @@ class ClaimHistoryTests(unittest.TestCase):
 
             git("init", "-q", "--template=")
             (root / "CLAIMS.md").write_text(document())
+            (root / "research").mkdir()
+            (root / "research/public-history.json").write_text('{"commit_aliases": {}}')
             (root / "edition.json").write_text(json.dumps({"version": "1.0.0"}))
             git("add", ".")
             git("commit", "-qm", "First edition")

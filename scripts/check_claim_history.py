@@ -110,7 +110,10 @@ def main():
     previous = git("show", f"{revision}:CLAIMS.md")
     previous_edition = json.loads(git("show", f"{revision}:edition.json"))["version"]
 
+    aliases = json.loads((ROOT / "research/public-history.json").read_text())["commit_aliases"]
+
     def resolve(commit, path):
+        commit = aliases.get(commit, commit)
         result = subprocess.run(["git", "-C", str(ROOT), "cat-file", "-t", f"{commit}:{path}"],
                                 capture_output=True, text=True, check=False)
         return result.returncode == 0 and result.stdout.strip() == "blob"

@@ -1,0 +1,24 @@
+{
+  "archive_commit": "69978e30a2ad9511e25759b1e2007552bc3bec36",
+  "archives": {
+    "continuity-pilot-history.bundle": {
+      "ref": "HEAD",
+      "sha256": "73e013cebeb4011b6067b68036db009ea504933d0608b3640c3114f8145e96ee"
+    },
+    "handoff-repair-history.bundle": {
+      "ref": "refs/heads/snapshot/handoff-repair-inputs",
+      "sha256": "474476ff13601d3891073f4ffb8f9fc1720784d8a474457ac2a1e1f76bc1c0ef"
+    },
+    "reading-transfer-history.bundle": {
+      "ref": "refs/heads/research/reading-transfer-source",
+      "sha256": "200487bd34d6ffc77781a05030c96c63d942c4b24b7dc177226a4cd3663462dc"
+    }
+  },
+  "commit_aliases": {
+    "1477065f722333756be0e9b4a5d09d4f709b68b5": "3d22c1ae75258b6f2ff8ce5ba6b80dd4e6e50fdd",
+    "3a8071d18bad6c2196df55ee476a4e92558403db": "7619dfb16ddfbdd038477da0cfd22ac57aff89aa",
+    "82f55aabb3aa47dd4e39cfec6ecb9fbe1ed3995f": "f741fa3377c42ccb353048b4bbd3c6f986880b35",
+    "f3af09549aabefae39be2c244672d9ff4cd9a9cb": "f13a9c948bdac9d596b8305f116cec9d68f7bfd2",
+    "f5645df487d2b57878324360198dbe28523d0a55": "7b94240eb1c2a9488a6a7e515a433a0baaaa6a8e"
+  }
+}

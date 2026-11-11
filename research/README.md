@@ -2,28 +2,19 @@
 
 ## Author-privacy edition
 
-Historical source bundles were withdrawn from current downloads for author privacy. Recorded study input hashes, original model responses and result values are unchanged. Exact historical-source verification now requires a full Git clone containing the recorded input commits. Existing Git history can still expose the original author identity; this edition does not claim history erasure.
-
-The registered input commits are not ancestors of the published branch. A normal full clone must deliberately recover their original bundles from retained historical commit `f6997bf2c2f65683505ed719d8038f428b952de1` before original prompt/scorer reconstruction. CI performs this hash-verified recovery in temporary storage and does not upload the archives. For a local reproduction, use a temporary directory, retain the files locally only, and run:
+The Git source archives use the author’s public handle and GitHub no-reply
+address. The archive index records the new Git object IDs and archive digests.
+Recorded input hashes, original model responses and result values are preserved.
+A full clone can import the three checked archives into its local object store
+before reproducing the continuity pilot:
 
 ```sh
-reproduction_history_tmp=$(mktemp -d)
-git show f6997bf2c2f65683505ed719d8038f428b952de1:research/continuity-pilot-history.bundle > "$reproduction_history_tmp/continuity-pilot-history.bundle"
-git show f6997bf2c2f65683505ed719d8038f428b952de1:research/reading-transfer-history.bundle > "$reproduction_history_tmp/reading-transfer-history.bundle"
-git show f6997bf2c2f65683505ed719d8038f428b952de1:research/handoff-repair-history.bundle > "$reproduction_history_tmp/handoff-repair-history.bundle"
-(cd "$reproduction_history_tmp" && sha256sum --check <<'PINS'
-53ec03ca8ab5e77e2fcfff23206ad6bce26ec0ace9b2168bf81b26b44151a45e  continuity-pilot-history.bundle
-c3e362dfdeda179d3bc0db880b1eb28ef5107e8e0cad7cc491eafebb5ddcbea0  reading-transfer-history.bundle
-2104c5d9675ff90b67e7d476eaf412ff0cfe143ef444f577a01eeee13e3970a3  handoff-repair-history.bundle
-PINS
-)
-git fetch --quiet --no-tags "$reproduction_history_tmp/continuity-pilot-history.bundle" HEAD
-git fetch --quiet --no-tags "$reproduction_history_tmp/reading-transfer-history.bundle" refs/heads/research/reading-transfer-source
-git fetch --quiet --no-tags "$reproduction_history_tmp/handoff-repair-history.bundle" refs/heads/snapshot/handoff-repair-inputs
+python3 research/recover_public_history.py
 python3 research/verify_studies.py
 ```
 
-This restores original local source objects for verification; it does not erase or pseudonymize historical identity. The public current tree and download directories remain free of these archives. The exact executable recovery step is in `.github/workflows/verify.yml`.
+The verifier still requires the original frozen SHA-256 for every executable
+input. The archive recovery step also checks the two other research bundles.
 
 The author credit in `transfer_reading/THIRD_PARTY_READING.md` is a disclosed privacy derivative. `transfer_reading/privacy-derivative.json` retains its original and published SHA-256; third-party credits and license terms are unchanged. The frozen registration and completion retain their original hashes. Use `python3 -O research/verify_reading_transfer.py` for this edition; direct frozen analysis requires its original historical checkout. This is an offline verification adaptation, not a recreated study or new inference.
 
