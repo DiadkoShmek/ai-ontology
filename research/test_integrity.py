@@ -22,7 +22,7 @@ class ArchiveIntegrityTests(unittest.TestCase):
             shutil.copytree(ROOT / name, self.root / name,
                             ignore=shutil.ignore_patterns('__pycache__', '*.pyc', 'responses.jsonl'))
         for name in ('verify_studies.py', 'summarize_studies.py',
-                     'study-summary.json',
+                     'study-summary.json', 'public-history.json',
                      'model-integration-results.json'):
             shutil.copy2(ROOT / 'research' / name, self.root / 'research' / name)
         subprocess.run(['git','init','--bare','--quiet',str(self.root/'.git')],check=True)
