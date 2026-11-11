@@ -11,9 +11,13 @@
 
 A research book, proposed audit profile and executable reference for inspecting claims about **agent continuity, evidence and revision**. Which grounds reached a decision? What followed from it? Did a consequence enter a subsequent method, and what evidence supports that claim?
 
-**[Short methodological note](papers/inspectable-continuity.md)** · **[Audit a projected run](audit/README.md)** · [Proposed profile](protocols/continuity-audit-v1.md) · [Terms](docs/TERMS.md) · [Claims](CLAIMS.md)
+## Start here
 
-**[Read the complete English book](https://diadkoshmek.github.io/ai-ontology/en/)** · **[Читати українською](https://diadkoshmek.github.io/ai-ontology/)** · [English PDF](docs/downloads/ai-ontology-book-01-en.pdf) · [Український PDF](docs/downloads/ai-ontology-book-01-uk.pdf) · [Український README](README.uk.md)
+- **Read** · [English book](https://diadkoshmek.github.io/ai-ontology/en/) · [Українська книга](https://diadkoshmek.github.io/ai-ontology/) · [English PDF](docs/downloads/ai-ontology-book-01-en.pdf) · [Український PDF](docs/downloads/ai-ontology-book-01-uk.pdf)
+- **Run** · [Try the local audit](#try-it-without-a-model) · [Audit contract](protocols/continuity-audit-v1.md)
+- **Review** · [Methodological note](papers/inspectable-continuity.md) · [Claims and evidence](CLAIMS.md) · [Glossary](docs/TERMS.md)
+
+[Український README](README.uk.md)
 
 ## Four distinctions
 

@@ -11,9 +11,13 @@
 
 Дослідницька книга, запропонований профіль аудиту й виконуваний референс для перевірки тверджень про **тяглість, підстави та перегляд в агентних системах**. Які підстави дійшли до рішення? Яким був наслідок? Чи вплинув він на подальший спосіб роботи — і що саме це підтверджує?
 
-**[Коротка методологічна стаття](papers/inspectable-continuity.uk.md)** · [Аудит записів](audit/README.md) · [Профіль аудиту](protocols/continuity-audit-v1.md) · [Словник](docs/TERMS.md) · [Твердження й докази](CLAIMS.md)
+## Почати тут
 
-**[Читати українську книгу](https://diadkoshmek.github.io/ai-ontology/)** · **[Read in English](https://diadkoshmek.github.io/ai-ontology/en/)** · [Український PDF](docs/downloads/ai-ontology-book-01-uk.pdf) · [English PDF](docs/downloads/ai-ontology-book-01-en.pdf) · [English README](README.md)
+- **Читати** · [Українська книга](https://diadkoshmek.github.io/ai-ontology/) · [English book](https://diadkoshmek.github.io/ai-ontology/en/) · [Український PDF](docs/downloads/ai-ontology-book-01-uk.pdf) · [English PDF](docs/downloads/ai-ontology-book-01-en.pdf)
+- **Запустити** · [Локальний аудит](#спробувати-без-моделі) · [Контракт аудиту](protocols/continuity-audit-v1.md)
+- **Перевірити** · [Методологічна стаття](papers/inspectable-continuity.uk.md) · [Твердження й докази](CLAIMS.md) · [Словник](docs/TERMS.md)
+
+[English README](README.md)
 
 ## Чотири розрізнення
 
